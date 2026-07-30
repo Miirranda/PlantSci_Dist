@@ -864,7 +864,7 @@ def test_read_chunk_emits_fixed_json_schema(tmp_path):
     result, log = reader.execute(context, chunk_ids=["1"])
     payload = json.loads(result)
 
-    assert payload["schema_version"] == "1.0"
+    assert payload["schema_version"] == "1.1"
     assert payload["claim_zh"] == "检索增强能把幻觉率降低一半"
     assert payload["verdict"] == VERDICT_SUPPORTED
     assert payload["evidence_count"] == 1
@@ -1042,7 +1042,7 @@ def test_read_chunk_without_board_still_returns_schema(tmp_path):
 
     result, _ = reader.execute(AgentContext(), chunk_ids=["0"])
     payload = json.loads(result)
-    assert payload["schema_version"] == "1.0"
+    assert payload["schema_version"] == "1.1"
     assert payload["evidence_count"] == 1
 
 

@@ -229,6 +229,9 @@ class CrossLingualRetrievalPipeline:
                     evidence_id="ev_%d" % index,
                     chunk_id=candidate.chunk_id,
                     evidence_en=candidate.sentence,
+                    sentence_id=int(candidate.sentence_index)
+                    if candidate.sentence_index >= 0
+                    else -1,
                     rerank_score=candidate.rerank_score,
                     embed_score=candidate.embed_score,
                     verdict=self.gate.label(candidate.rerank_score),

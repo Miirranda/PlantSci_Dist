@@ -2,8 +2,9 @@
 
 契约：
   arag claims.jsonl  : {"claim_id", "claim_zh", ...}
-  arag evidences.jsonl: RetrievalOutput（完整）
-  arag pairs.jsonl   : {"claim_zh", "paper_sentences": [...]}  或带 claim_id
+  arag evidences.jsonl: RetrievalOutput（完整，含 sentence_id）
+  arag pairs.jsonl   : {"claim_id", "claim_zh", "evidences": [{sentence_id, text}, ...]}
+                       兼容旧字段 paper_sentences: [str, ...]
   hallu retrieval    : {"claim_id", "claim_text", "evidence_sentences": [{rank, sentence, ...}]}
 """
 
@@ -45,7 +46,7 @@ def load_evidences_jsonl(path: str | Path) -> list[dict[str, Any]]:
 
 
 def load_claim_paper_pairs(path: str | Path) -> list[dict[str, Any]]:
-    """读取精简对照表 claim_paper_pairs.jsonl。"""
+    """读取精简对照表（claim_evidence_pairs / 旧 claim_paper_pairs）。"""
     records: list[dict[str, Any]] = []
     with Path(path).open("r", encoding="utf-8") as f:
         for line in f:
@@ -65,11 +66,12 @@ def _sentence_from_evidence(item: dict[str, Any]) -> str:
 
 
 def evidences_to_pairs(evidences: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """完整 RetrievalOutput → claim_paper_pairs 精简格式。"""
+    """完整 RetrievalOutput → claim_evidence_pairs 精简格式。"""
     pairs: list[dict[str, Any]] = []
     for record in evidences:
         claim = str(record.get("claim_zh") or "").strip()
         claim_id = str(record.get("claim_id") or "").strip()
+        evidence_rows: list[dict[str, Any]] = []
         sentences: list[str] = []
         seen: set[str] = set()
         for item in record.get("evidences") or []:
@@ -79,12 +81,18 @@ def evidences_to_pairs(evidences: list[dict[str, Any]]) -> list[dict[str, Any]]:
             if not sentence or sentence in seen:
                 continue
             seen.add(sentence)
+            try:
+                sid = int(item.get("sentence_id", -1))
+            except (TypeError, ValueError):
+                sid = -1
+            evidence_rows.append({"sentence_id": sid, "text": sentence})
             sentences.append(sentence)
         if not claim:
             continue
         pairs.append({
             "claim_id": claim_id,
             "claim_zh": claim,
+            "evidences": evidence_rows,
             "paper_sentences": sentences,
             "verdict": record.get("verdict", ""),
         })
@@ -124,17 +132,41 @@ def arag_pairs_to_retrieval_results(
         if not claim_id:
             claim_id = f"C{i + 1:02d}"
 
-        sentences = pair.get("paper_sentences") or []
-        evidence_sentences = [
-            {
-                "rank": rank,
-                "sentence": sent,
-                "relevance_score": None,
-                "relevance_reason": "arag retrieval",
-            }
-            for rank, sent in enumerate(sentences[:top_k], start=1)
-            if isinstance(sent, str) and sent.strip()
-        ]
+        evidence_sentences: list[dict[str, Any]] = []
+        structured = pair.get("evidences") or []
+        if structured:
+            for rank, item in enumerate(structured[:top_k], start=1):
+                if not isinstance(item, dict):
+                    continue
+                text = str(item.get("text") or "").strip()
+                if not text:
+                    continue
+                try:
+                    sid = int(item.get("sentence_id", -1))
+                except (TypeError, ValueError):
+                    sid = -1
+                evidence_sentences.append(
+                    {
+                        "rank": rank,
+                        "sentence": text,
+                        "sentence_id": sid,
+                        "relevance_score": None,
+                        "relevance_reason": "arag retrieval",
+                    }
+                )
+        else:
+            sentences = pair.get("paper_sentences") or []
+            evidence_sentences = [
+                {
+                    "rank": rank,
+                    "sentence": sent,
+                    "sentence_id": -1,
+                    "relevance_score": None,
+                    "relevance_reason": "arag retrieval",
+                }
+                for rank, sent in enumerate(sentences[:top_k], start=1)
+                if isinstance(sent, str) and sent.strip()
+            ]
 
         meta = claim_by_id.get(claim_id) or claim_by_text.get(claim_zh) or {}
         results.append({

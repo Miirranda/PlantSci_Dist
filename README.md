@@ -65,12 +65,33 @@ python batch_retrieval.py \
 
 ```
 outputs/P001/A001/
-├── claims.json / claims.jsonl   # LLM 观点句
-├── evidences.jsonl              # arag 完整检索
-├── claim_paper_pairs.jsonl      # 精简对照
+├── claims.json / claims.jsonl      # LLM 观点句
+├── evidences.jsonl                 # 完整检索（含 sentence_id）
+├── claim_evidence_pairs.jsonl      # 精简 claim ↔ 证据（sentence_id + text）
 ├── classification.json
-├── result.json                  # 终稿
+├── result.json                     # 运行终稿
 └── report.md
+```
+
+### 标注与评测（人工）
+
+```
+data/annotations/
+├── P001_sentences.csv                 # 句表（export_sentence_table）
+├── P001_A001_annotation_draft.json    # 标注初稿（保留 analysis；人工改 gold）
+└── P001_A001_benchmark.json           # 审核后导出的评测终稿
+```
+
+```bash
+# 导出句表
+cd arag-main && python scripts/export_sentence_table.py --paper-id P001 \
+  -o ../data/annotations/P001_sentences.csv
+
+# 旧标注 → 草稿（不合并流水线 claim）
+python scripts/migrate_annotation_draft.py
+
+# 审核后导出 benchmark（默认只要 human_verified=true）
+python scripts/export_benchmark.py
 ```
 
 ## 模块边界

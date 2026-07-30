@@ -1,20 +1,25 @@
 #!/usr/bin/env python3
-"""从完整检索结果中清洗出「观点句 + 多条论文原句」。
+"""从完整检索结果中清洗出精简「claim ↔ 英文证据句」对照表。
 
-不改动检索链路。完整 ``evidences.jsonl``（含 verdict / 元数据 / stats 等）继续保留，
-本脚本只做后处理，生成一份现阶段需要的精简对照表。
+不改动检索链路。完整 ``evidences.jsonl``（含 sentence_id / verdict / 元数据等）继续保留，
+本脚本只做后处理。
 
-输入：``batch_retrieval.py`` 产出的 JSONL（每行一条 RetrievalOutput）
-输出：同目录或指定路径下的 ``claim_paper_pairs.jsonl``，每行仅含::
+输出每行::
 
     {
+      "claim_id": "C01",
       "claim_zh": "<公众号观点句>",
-      "paper_sentences": ["<相关论文原句1>", "<相关论文原句2>", ...]
+      "evidences": [
+        {"sentence_id": 42, "text": "<论文原句>"}
+      ]
     }
 
+为兼容旧调用，仍接受输出文件名 ``claim_paper_pairs.jsonl``；
+推荐新名 ``claim_evidence_pairs.jsonl``。
+
 Usage:
-    python clean_retrieval_output.py results/20260727_191416/evidences.jsonl
-    python clean_retrieval_output.py results/20260727_191416/evidences.jsonl -o results/pairs.jsonl
+    python clean_retrieval_output.py results/.../evidences.jsonl
+    python clean_retrieval_output.py results/.../evidences.jsonl -o claim_evidence_pairs.jsonl
 """
 
 from __future__ import annotations
@@ -35,10 +40,19 @@ def _sentence_from_evidence(item: dict[str, Any]) -> str:
     return str(context.get("target_text") or "").strip()
 
 
+def _sentence_id_from_evidence(item: dict[str, Any]) -> int:
+    raw = item.get("sentence_id", -1)
+    try:
+        return int(raw)
+    except (TypeError, ValueError):
+        return -1
+
+
 def clean_record(record: dict[str, Any]) -> dict[str, Any]:
-    """把一条完整检索结果压成观点句 + 去重后的论文原句列表。"""
+    """把一条完整检索结果压成 claim + 带 sentence_id 的证据列表。"""
     claim = str(record.get("claim_zh") or "").strip()
-    sentences: list[str] = []
+    claim_id = str(record.get("claim_id") or record.get("id") or "").strip()
+    evidences: list[dict[str, Any]] = []
     seen: set[str] = set()
     for item in record.get("evidences") or []:
         if not isinstance(item, dict):
@@ -47,8 +61,21 @@ def clean_record(record: dict[str, Any]) -> dict[str, Any]:
         if not sentence or sentence in seen:
             continue
         seen.add(sentence)
-        sentences.append(sentence)
-    return {"claim_zh": claim, "paper_sentences": sentences}
+        evidences.append(
+            {
+                "sentence_id": _sentence_id_from_evidence(item),
+                "text": sentence,
+            }
+        )
+    row: dict[str, Any] = {
+        "claim_zh": claim,
+        "evidences": evidences,
+    }
+    if claim_id:
+        row["claim_id"] = claim_id
+    # 兼容旧 hallu 适配：仍提供 paper_sentences 纯文本列表
+    row["paper_sentences"] = [ev["text"] for ev in evidences]
+    return row
 
 
 def clean_file(input_path: Path, output_path: Path) -> int:
@@ -78,12 +105,12 @@ def clean_file(input_path: Path, output_path: Path) -> int:
 
 
 def default_output_path(input_path: Path) -> Path:
-    return input_path.with_name("claim_paper_pairs.jsonl")
+    return input_path.with_name("claim_evidence_pairs.jsonl")
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="清洗检索结果：只保留观点句与相关论文原句",
+        description="清洗检索结果：观点句 + 带 sentence_id 的论文原句",
     )
     parser.add_argument(
         "input",
@@ -95,7 +122,7 @@ def main() -> int:
         "--output",
         type=Path,
         default=None,
-        help="精简输出路径（默认写到同目录 claim_paper_pairs.jsonl）",
+        help="精简输出路径（默认同目录 claim_evidence_pairs.jsonl）",
     )
     args = parser.parse_args()
 

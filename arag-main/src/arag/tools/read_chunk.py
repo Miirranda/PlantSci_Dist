@@ -309,10 +309,15 @@ Note: chunks already read earlier are reported as such and not returned in full 
         score = float(candidate.rerank_score) if candidate is not None else 0.0
         verdict = self.gate.label(score) if candidate is not None else fallback_verdict
 
+        sentence_id = -1
+        if candidate is not None and getattr(candidate, "sentence_index", -1) >= 0:
+            sentence_id = int(candidate.sentence_index)
+
         return EvidenceRecord(
             evidence_id=evidence_id,
             chunk_id=chunk_id,
             evidence_en=candidate.sentence if candidate is not None else chunk_text[:500],
+            sentence_id=sentence_id,
             rerank_score=score,
             embed_score=float(candidate.embed_score) if candidate is not None else 0.0,
             verdict=verdict,

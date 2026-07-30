@@ -126,8 +126,56 @@ class IndexStore:
     def sentence(self, index: int) -> str:
         return self.sentences[index]
 
+    @staticmethod
+    def sentence_id(index: int) -> int:
+        """全局句子编号（整数），与 ``sentences`` 下标一致；文档级另存 paper_id。"""
+        return int(index)
+
     def chunk_id_of(self, index: int) -> str:
         return self.sentence_to_chunk[index]
+
+    def iter_sentence_rows(self) -> list[dict[str, Any]]:
+        """导出句表行：sentence_id / chunk_id / text，供人工标注勾选。"""
+        rows: list[dict[str, Any]] = []
+        for index, text in enumerate(self.sentences):
+            rows.append(
+                {
+                    "sentence_id": self.sentence_id(index),
+                    "chunk_id": self.chunk_id_of(index),
+                    "text": text,
+                }
+            )
+        return rows
+
+    def export_sentence_table(self, path: str | Path, *, paper_id: str = "") -> Path:
+        """写出 CSV 句表（sentence_id, chunk_id, text）。"""
+        import csv
+
+        out = Path(path)
+        out.parent.mkdir(parents=True, exist_ok=True)
+        with out.open("w", encoding="utf-8-sig", newline="") as handle:
+            writer = csv.DictWriter(
+                handle,
+                fieldnames=["sentence_id", "chunk_id", "text"]
+                + (["paper_id"] if paper_id else []),
+            )
+            writer.writeheader()
+            for row in self.iter_sentence_rows():
+                if paper_id:
+                    row = {**row, "paper_id": paper_id}
+                writer.writerow(row)
+        return out
+
+    def resolve_sentence_id(self, text: str) -> int:
+        """用规范化文本在索引中查找 sentence_id；找不到返回 -1。"""
+        needle = " ".join(str(text or "").split()).strip().lower()
+        if not needle:
+            return -1
+        for index, sentence in enumerate(self.sentences):
+            hay = " ".join(sentence.split()).strip().lower()
+            if hay == needle or needle in hay or hay in needle:
+                return self.sentence_id(index)
+        return -1
 
     def chunk(self, chunk_id: str) -> dict[str, Any]:
         return self.chunks.get(str(chunk_id), {})

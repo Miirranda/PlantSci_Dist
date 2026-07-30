@@ -203,7 +203,8 @@ def main() -> int:
         skip_retrieval = True
 
     model = args.model or QWEN_MODEL
-    pairs_path = output_dir / "claim_paper_pairs.jsonl"
+    pairs_path = output_dir / "claim_evidence_pairs.jsonl"
+    legacy_pairs_path = output_dir / "claim_paper_pairs.jsonl"
     clf_path = output_dir / "classification.json"
     result_path = output_dir / "result.json"
     report_path = output_dir / "report.md"
@@ -226,8 +227,12 @@ def main() -> int:
     print("  Phase 1–2/4: arag — LLM观点句 + RAG检索")
     print("=" * 60)
 
-    if do_arag and not (skip_extract and skip_retrieval and pairs_path.exists()):
-        if skip_retrieval and pairs_path.exists():
+    if do_arag and not (
+        skip_extract
+        and skip_retrieval
+        and (pairs_path.exists() or legacy_pairs_path.exists())
+    ):
+        if skip_retrieval and (pairs_path.exists() or legacy_pairs_path.exists()):
             print("  跳过 arag，复用 pairs")
         else:
             run_arag_article_pipeline(
@@ -247,8 +252,15 @@ def main() -> int:
         print("  --limit=%d，下游使用 %d 条" % (args.limit, len(claims)))
 
     evidences_path = output_dir / "evidences.jsonl"
-    if pairs_path.exists() and skip_retrieval:
-        pairs = load_claim_paper_pairs(pairs_path)
+    active_pairs = (
+        pairs_path
+        if pairs_path.exists()
+        else legacy_pairs_path
+        if legacy_pairs_path.exists()
+        else pairs_path
+    )
+    if active_pairs.exists() and skip_retrieval:
+        pairs = load_claim_paper_pairs(active_pairs)
     elif evidences_path.exists():
         evidences = load_evidences_jsonl(evidences_path)
         pairs = evidences_to_pairs(evidences)
@@ -257,12 +269,12 @@ def main() -> int:
                 pair["claim_id"] = claims[i].get("id")
         save_pairs_jsonl(pairs, pairs_path)
         try:
-            clean_arag_output(evidences_path, output_dir / "claim_paper_pairs_clean.jsonl")
+            clean_arag_output(evidences_path, pairs_path)
         except Exception as exc:
             print("  [warn] clean 可选失败: %s" % exc)
         print("  已保存: %s" % pairs_path)
-    elif pairs_path.exists():
-        pairs = load_claim_paper_pairs(pairs_path)
+    elif active_pairs.exists():
+        pairs = load_claim_paper_pairs(active_pairs)
     else:
         print("找不到检索结果: %s 或 %s" % (evidences_path, pairs_path))
         return 1

@@ -12,7 +12,7 @@
       "stop_reason":   "<终止原因>",
       "bilingual_terms": [{"zh": ..., "en": ..., "aliases": [...]}],
       "evidence_count": 2,
-      "evidences":     [<EvidenceRecord>, ...],
+      "evidences":     [<EvidenceRecord>, ...],  # 含 sentence_id（整数）
       "stats":         {...}
     }
 """
@@ -23,7 +23,7 @@ import json
 from dataclasses import dataclass, field
 from typing import Any
 
-SCHEMA_VERSION = "1.0"
+SCHEMA_VERSION = "1.1"  # 1.1: EvidenceRecord 增加整数 sentence_id
 
 # 证据强度判定，与双阈值规则一一对应
 VERDICT_SUPPORTED = "SUPPORTED"
@@ -142,6 +142,7 @@ class EvidenceRecord:
     evidence_id: str
     chunk_id: str
     evidence_en: str
+    sentence_id: int = -1
     rerank_score: float = 0.0
     embed_score: float = 0.0
     verdict: str = VERDICT_INCONCLUSIVE
@@ -153,6 +154,7 @@ class EvidenceRecord:
         return {
             "evidence_id": self.evidence_id,
             "chunk_id": self.chunk_id,
+            "sentence_id": int(self.sentence_id),
             "evidence_en": self.evidence_en,
             "rerank_score": round(float(self.rerank_score), 6),
             "embed_score": round(float(self.embed_score), 6),
