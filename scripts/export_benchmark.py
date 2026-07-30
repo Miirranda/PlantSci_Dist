@@ -2,14 +2,17 @@
 """从 annotation_draft 清洗导出评测用 benchmark.json。
 
 规则：
-  - 仅保留 annotation_meta.human_verified == true 的样本
+  - 仅保留已人工确认的样本（``human_verified`` 为 true）
     （可用 --include-unverified 导出全部，便于调试）
   - 终稿只保留评测字段；解释性 analysis 默认去掉（可用 --keep-analysis）
 
+草稿字段与终稿保持同名（gold_retrieval / gold_classification），
+同时兼容早期草稿的 gold / labels / annotation_meta 结构。
+
 Usage:
     python scripts/export_benchmark.py \\
-        --draft data/annotations/P001_A001_annotation_draft.json \\
-        --output data/annotations/P001_A001_benchmark.json
+        --draft data/annotations/P001/P001_A001_annotation_draft.json \\
+        --output data/annotations/P001/P001_A001_benchmark.json
 """
 
 from __future__ import annotations
@@ -23,6 +26,9 @@ from typing import Any
 _SCRIPT_DIR = Path(__file__).resolve().parent
 _PROJECT_ROOT = _SCRIPT_DIR.parent
 
+_DEFAULT_DRAFT = "data/annotations/P001/P001_A001_annotation_draft.json"
+_DEFAULT_OUTPUT = "data/annotations/P001/P001_A001_benchmark.json"
+
 
 def _resolve(path: str | Path) -> Path:
     p = Path(path)
@@ -32,54 +38,96 @@ def _resolve(path: str | Path) -> Path:
 
 
 def _is_verified(sample: dict[str, Any]) -> bool:
+    if "human_verified" in sample:
+        return bool(sample.get("human_verified"))
     meta = sample.get("annotation_meta") or {}
     return bool(meta.get("human_verified"))
 
 
-def _clean_sample(sample: dict[str, Any], *, keep_analysis: bool) -> dict[str, Any]:
-    gold = dict(sample.get("gold") or {})
-    labels = sample.get("labels") or {}
-    # 若 gold 分类为空，回退到旧 labels
-    primary = gold.get("primary_type")
-    if primary is None:
-        primary = labels.get("primary_hallucination_type")
-    secondary = gold.get("secondary_types")
-    if secondary is None:
-        secondary = list(labels.get("secondary_hallucination_types") or [])
-    evidence_level = gold.get("evidence_level")
-    if evidence_level is None:
-        evidence_level = labels.get("evidence_level")
-
-    sentence_ids = []
-    for item in gold.get("sentence_ids") or []:
+def _sentence_ids(raw: Any) -> list[int]:
+    ids: list[int] = []
+    for item in raw or []:
         try:
             sid = int(item)
         except (TypeError, ValueError):
             continue
-        if sid >= 0:
-            sentence_ids.append(sid)
+        if sid >= 0 and sid not in ids:
+            ids.append(sid)
+    return ids
+
+
+def _first(*values: Any) -> Any:
+    """返回第一个非 None 值。"""
+    for value in values:
+        if value is not None:
+            return value
+    return None
+
+
+def _clean_sample(sample: dict[str, Any], *, keep_analysis: bool) -> dict[str, Any]:
+    retrieval = sample.get("gold_retrieval") or {}
+    classification = sample.get("gold_classification") or {}
+    # 早期草稿结构
+    gold = sample.get("gold") or {}
+    labels = sample.get("labels") or {}
+
+    sentence_ids = _sentence_ids(
+        _first(retrieval.get("sentence_ids"), gold.get("sentence_ids"))
+    )
+    evidence_level = _first(
+        classification.get("evidence_level"),
+        gold.get("evidence_level"),
+        labels.get("evidence_level"),
+    )
+    is_answerable = _first(
+        retrieval.get("is_answerable"),
+        bool(sentence_ids) or str(evidence_level or "") != "No_Evidence",
+    )
 
     row: dict[str, Any] = {
         "sample_id": str(
-            sample.get("sample_id") or sample.get("id") or sample.get("claim_id") or ""
+            _first(
+                sample.get("sample_id"),
+                sample.get("id"),
+                sample.get("claim_id"),
+                "",
+            )
         ),
         "paper_id": str(sample.get("paper_id") or ""),
         "article_id": str(sample.get("article_id") or ""),
         "article_source_type": str(sample.get("article_source_type") or ""),
         "claim_zh": str(
-            sample.get("claim_zh") or sample.get("claim_text") or ""
+            _first(sample.get("claim_zh"), sample.get("claim_text"), "")
         ).strip(),
         "gold_retrieval": {
             "sentence_ids": sentence_ids,
-            "is_answerable": bool(sentence_ids)
-            or str(evidence_level or "") != "No_Evidence",
+            "is_answerable": bool(is_answerable),
         },
         "gold_classification": {
             "evidence_level": evidence_level,
-            "primary_type": primary,
-            "secondary_types": list(secondary or []),
-            "is_accurate": gold.get("is_accurate", labels.get("is_accurate")),
-            "severity": gold.get("severity", labels.get("severity")),
+            "primary_type": _first(
+                classification.get("primary_type"),
+                gold.get("primary_type"),
+                labels.get("primary_hallucination_type"),
+            ),
+            "secondary_types": list(
+                _first(
+                    classification.get("secondary_types"),
+                    gold.get("secondary_types"),
+                    labels.get("secondary_hallucination_types"),
+                )
+                or []
+            ),
+            "is_accurate": _first(
+                classification.get("is_accurate"),
+                gold.get("is_accurate"),
+                labels.get("is_accurate"),
+            ),
+            "severity": _first(
+                classification.get("severity"),
+                gold.get("severity"),
+                labels.get("severity"),
+            ),
         },
     }
     if keep_analysis and sample.get("analysis"):
@@ -115,18 +163,22 @@ def export_benchmark(
     }
 
 
+def _pending_review(draft: dict[str, Any]) -> list[str]:
+    """草稿中仍标记需人工复核、且尚未确认的样本。"""
+    pending: list[str] = []
+    for sample in draft.get("samples") or draft.get("claims") or []:
+        if not isinstance(sample, dict) or _is_verified(sample):
+            continue
+        analysis = sample.get("analysis") or {}
+        if analysis.get("needs_manual_review"):
+            pending.append(str(sample.get("sample_id") or sample.get("claim_id") or ""))
+    return pending
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="annotation_draft → benchmark.json")
-    parser.add_argument(
-        "--draft",
-        default="data/annotations/P001_A001_annotation_draft.json",
-        help="标注初稿路径",
-    )
-    parser.add_argument(
-        "--output",
-        default="data/annotations/P001_A001_benchmark.json",
-        help="终稿输出路径",
-    )
+    parser.add_argument("--draft", default=_DEFAULT_DRAFT, help="标注初稿路径")
+    parser.add_argument("--output", default=_DEFAULT_OUTPUT, help="终稿输出路径")
     parser.add_argument(
         "--include-unverified",
         action="store_true",
@@ -155,6 +207,11 @@ def main() -> int:
     out_path.write_text(json.dumps(bench, ensure_ascii=False, indent=2), encoding="utf-8")
     print("已导出 benchmark: %s" % out_path)
     print("  samples: %d" % bench["sample_count"])
+
+    pending = _pending_review(draft)
+    if pending:
+        print("  待复核（needs_manual_review 且未确认）: %d" % len(pending))
+        print("    %s" % ", ".join(pending[:10]) + (" ..." if len(pending) > 10 else ""))
     if bench["sample_count"] == 0 and not args.include_unverified:
         print("  提示: 当前无 human_verified=true；可用 --include-unverified 导出全部调试")
     return 0

@@ -13,7 +13,7 @@
 PlantSci_Hallu/
 ├── arag-main/             # 模块 A：LLM 抽句 + RAG+Agent 检索
 │   ├── retrieval_adaptor/
-│   │   ├── claim_extractor.py   # LLM 观点句提取
+│   │   ├── claim_extractor.py   # 规则分句 + LLM 核验观点句
 │   │   └── pipeline.py          # 检索流水线
 │   ├── batch_retrieval.py
 │   └── api_client/
@@ -77,18 +77,23 @@ outputs/P001/A001/
 
 ```
 data/annotations/
-├── P001_sentences.csv                 # 句表（export_sentence_table）
-├── P001_A001_annotation_draft.json    # 标注初稿（保留 analysis；人工改 gold）
-└── P001_A001_benchmark.json           # 审核后导出的评测终稿
+├── prompts/draft_from_pairs.md            # 生成标注初稿的提示词
+└── P001/
+    ├── P001_sentences.csv                 # 句表（export_sentence_table）
+    ├── P001_A001_annotation_draft.json    # 初稿：benchmark 字段 + analysis
+    └── P001_A001_benchmark.json           # 审核后导出的评测终稿
 ```
+
+草稿与终稿字段同名（`gold_retrieval` / `gold_classification`），初稿额外带
+`analysis`（判定理由、检索漏检 vs 观点句本身有误的诊断、人工重点核对提示）与
+`human_verified`。人工只需改这三处：金标 `sentence_ids`、分类标签、`human_verified`。
 
 ```bash
 # 导出句表
 cd arag-main && python scripts/export_sentence_table.py --paper-id P001 \
-  -o ../data/annotations/P001_sentences.csv
+  -o ../data/annotations/P001/P001_sentences.csv
 
-# 旧标注 → 草稿（不合并流水线 claim）
-python scripts/migrate_annotation_draft.py
+# 用 prompts/draft_from_pairs.md 让 LLM 从 claim_evidence_pairs.jsonl 生成初稿
 
 # 审核后导出 benchmark（默认只要 human_verified=true）
 python scripts/export_benchmark.py
@@ -96,8 +101,10 @@ python scripts/export_benchmark.py
 
 ## 模块边界
 
-- **arag-main**：中文文章 → LLM 观点句 → 英文论文证据
+- **arag-main**：中文文章 → 规则分句 + LLM 核验观点句 → 英文论文证据
 - **hallu**：claims + 证据 → 幻觉细分类 → 证据链
 - **scripts/run.py**：薄编排，不写业务逻辑
 
-> 注：新流水线默认 LLM 筛选约 15–30 条，与旧标注 `P001_claims.json`（54 条规则切句）条数不同，不可按 id 直接对齐。
+> 注：观点句默认路径为「按。！？；换行切句 → 规则粗滤 → LLM 批核验 keep/drop」。  
+> 可用环境变量 `CLAIM_VERIFY_BATCH_SIZE`（默认 25）控制核验批大小。  
+> 新抽句结果与旧标注 `P001_claims.json`（54 条规则切句）条数可能不同，不可按 id 直接对齐。

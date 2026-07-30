@@ -37,6 +37,7 @@ from .claim_extractor import (
     extract_claims_from_article,
     save_claims_json,
     save_claims_jsonl,
+    split_article_candidates,
 )
 from .pipeline import CrossLingualRetrievalPipeline, load_claims_from_file
 from .qwen_agent_adapter import QwenAgentAdapter
@@ -63,6 +64,7 @@ __all__ = [
     "extract_claims_from_article",
     "save_claims_json",
     "save_claims_jsonl",
+    "split_article_candidates",
     # 组件
     "QwenAgentAdapter",
     "IndexStore",
