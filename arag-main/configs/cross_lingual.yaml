@@ -1,0 +1,63 @@
+# 中英跨语言检索配置（阶段 2）
+# 密钥一律走 .env，本文件不放任何凭据。
+# 环境变量优先级：显式命令行参数 > 环境变量 > 本文件默认值
+
+# 主 LLM 固定为通义千问，模型与密钥见 .env 的 QWEN_* 项
+llm:
+  provider: qwen
+  # 实际取值来自 .env 的 QWEN_MODEL
+  temperature: 0.0
+  function_calling: true
+
+# 向量与重排固定走 SiliconFlow，见 .env 的 SILICONFLOW_* 项
+embedding:
+  provider: siliconflow
+  model: BAAI/bge-m3
+  # 在线调用，无需 device / 本地权重
+
+rerank:
+  provider: siliconflow
+  model: BAAI/bge-reranker-v2-m3
+  # 单轮默认返回条数（加大证据广度）
+  default_top_k: 10
+  # 向量层粗召回倍数：先取 top_k * recall_multiplier 条送进重排
+  recall_multiplier: 5
+  # 单条查询送入重排的候选上限
+  rerank_candidates: 80
+  # 命中句同 chunk 邻句扩展窗口
+  neighbor_window: 1
+  neighbor_score_decay: 0.85
+  # 多样性截断权重（与相关性折中）
+  diversity_lambda: 0.30
+  # 用双语术语额外并集一路向量召回
+  multi_query_from_terms: true
+  # 最终证据条数上限
+  max_evidences: 12
+
+# 双阈值检索终止规则
+thresholds:
+  # 高阈值：达到此分数即视为强证据
+  high: 0.70
+  # 低阈值：全部候选低于此分数即判定无支撑证据
+  low: 0.30
+  # 判 SUPPORTED 所需的强证据条数下限（2：单条高分不立刻停搜）
+  min_hits: 2
+  # 进入最终输出的最低分（略降以保留更多中等相关句）
+  keep_score: 0.08
+
+agent:
+  max_loops: 12
+  max_token_budget: 120000
+  verbose: false
+
+data:
+  papers_dir: data/papers
+  wechat_dir: data/wechat
+  chunks_file: data/corpus/chunks.json
+  index_dir: data/index
+  term_cache: data/cache/bilingual_terms.json
+  # 匹配句前后各取几句作为段落上下文
+  context_window: 2
+
+output:
+  results_dir: results/

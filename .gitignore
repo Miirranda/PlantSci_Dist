@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*~
+
+# Testing / cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+credentials.json
+
+# Large / generated outputs
+outputs/
+*.log
+*.pkl
+*.npy
+*.npz
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Nested git inside vendored arag (keep code, ignore its own git metadata if present)
+arag-main/.git/
+arag-main/.pytest_cache/
+arag-main/results/
+arag-main/data/index/
+arag-main/data/index_demo/
+arag-main/data/corpus/
+arag-main/data/cache/
+arag-main/__pycache__/
+
+# Accidental nested copy
+arag-main/arag-main/
+
+# Nested arag git metadata (do not commit)
+arag-main/.git_arag_backup/
+arag-main/.git/

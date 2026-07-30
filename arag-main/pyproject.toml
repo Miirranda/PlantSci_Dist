@@ -1,0 +1,74 @@
+[project]
+name = "arag"
+version = "0.1.0"
+description = "ARAG - Agentic Retrieval-Augmented Generation Framework"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Ayanami0730", email = "ayanami0730@gmail.com"}
+]
+keywords = ["rag", "llm", "retrieval", "agent", "nlp"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "requests>=2.28.0",
+    "tiktoken>=0.5.0",
+    "pyyaml>=6.0",
+    "tqdm>=4.65.0",
+    "numpy>=1.24.0",
+    "python-dotenv>=1.0.0",
+    # 英文论文 PDF 解析（在线检索链路不含任何本地模型推理依赖）
+    "pymupdf>=1.24.0",
+]
+
+[project.optional-dependencies]
+full = [
+    "sentence-transformers>=2.2.0",
+    "pandas>=2.0.0",
+    "pyarrow>=12.0.0",
+]
+dev = [
+    "pytest>=7.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Ayanami0730/arag"
+Repository = "https://github.com/Ayanami0730/arag"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/arag", "api_client", "retrieval_adaptor"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src/arag", "api_client", "retrieval_adaptor"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+# 显式固定规则集，否则会落到全局配置上，不同机器跑出的结果不一致
+select = ["E", "F", "W", "I", "B", "SIM", "RUF"]
+# 全项目统一用 % 格式化；中文注释里的全角标点不算歧义字符
+ignore = ["RUF001", "RUF002", "RUF003"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
