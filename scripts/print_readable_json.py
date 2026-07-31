@@ -1,45 +1,44 @@
 #!/usr/bin/env python
 """Generate a human-readable copy of an annotation draft JSON,
-with ``text`` fields line-wrapped at ~N English words per line
+with ``text_zh`` fields line-wrapped at ~N Chinese characters per line
 and real newlines so reviewers can read without horizontal scrolling.
 
 Usage::
 
     python scripts/print_readable_json.py data/annotations/P001/P001_A001_annotation_draft_smoke10.json
-    python scripts/print_readable_json.py data/annotations/P001/P001_A001_annotation_draft_smoke10.json 11
+    python scripts/print_readable_json.py data/annotations/P001/P001_A001_annotation_draft_smoke10.json 40
 """
 
 import json
 import sys
 from pathlib import Path
 
-WORDS_PER_LINE = 11
+CHARS_PER_LINE = 40
 
 
 # ── text wrapping ────────────────────────────────────────────────
 
-def wrap_english_text(text: str, words_per_line: int = WORDS_PER_LINE) -> str:
-    """Insert ``\\n`` every *words_per_line* words."""
+def wrap_chinese_text(text: str, chars_per_line: int = CHARS_PER_LINE) -> str:
+    """Insert ``\\n`` every *chars_per_line* characters (for Chinese text)."""
     if not text:
         return text
-    words = text.split()
-    lines = [' '.join(words[i:i + words_per_line])
-             for i in range(0, len(words), words_per_line)]
+    lines = [text[i:i + chars_per_line]
+             for i in range(0, len(text), chars_per_line)]
     return '\n'.join(lines)
 
 
-def transform_text_fields(obj, words_per_line: int = WORDS_PER_LINE):
-    """Recursively wrap every ``text`` key whose value is a non-empty string."""
+def transform_text_zh_fields(obj, chars_per_line: int = CHARS_PER_LINE):
+    """Recursively wrap every ``text_zh`` key whose value is a non-empty string."""
     if isinstance(obj, dict):
         result = {}
         for k, v in obj.items():
-            if k == 'text' and isinstance(v, str) and v:
-                result[k] = wrap_english_text(v, words_per_line)
+            if k == 'text_zh' and isinstance(v, str) and v:
+                result[k] = wrap_chinese_text(v, chars_per_line)
             else:
-                result[k] = transform_text_fields(v, words_per_line)
+                result[k] = transform_text_zh_fields(v, chars_per_line)
         return result
     if isinstance(obj, list):
-        return [transform_text_fields(item, words_per_line) for item in obj]
+        return [transform_text_zh_fields(item, chars_per_line) for item in obj]
     return obj
 
 
@@ -116,12 +115,12 @@ def main():
     if len(sys.argv) < 2:
         print(
             f'Usage: python {sys.argv[0]} <annotation_draft.json>'
-            f' [words_per_line={WORDS_PER_LINE}]'
+            f' [chars_per_line={CHARS_PER_LINE}]'
         )
         sys.exit(1)
 
     src = Path(sys.argv[1])
-    wpl = int(sys.argv[2]) if len(sys.argv) > 2 else WORDS_PER_LINE
+    cpl = int(sys.argv[2]) if len(sys.argv) > 2 else CHARS_PER_LINE
 
     if not src.exists():
         print(f'File not found: {src}', file=sys.stderr)
@@ -130,14 +129,14 @@ def main():
     with open(src, encoding='utf-8') as f:
         data = json.load(f)
 
-    data = transform_text_fields(data, wpl)
+    data = transform_text_zh_fields(data, cpl)
 
     out = src.parent / f'{src.stem}_readable{src.suffix}'
     with open(out, 'w', encoding='utf-8') as f:
         f.write(serialize_readable(data))
         f.write('\n')
 
-    print(f'Done → {out}')
+    print(f'Done -> {out}')
 
 
 if __name__ == '__main__':

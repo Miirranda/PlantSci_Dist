@@ -1,0 +1,416 @@
+[
+  {
+    "claim_zh": "说明黄瓜子房下位形成的必要条件为：（1）花分生组织膨大，改变花器官轮相对位置；",
+    "classify_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 59,
+        "text": "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 43,
+        "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 54,
+        "text": "After initiation, the cucumber floral meristem enlarges from the perimeter and becomes concave (Fig."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 42,
+        "text": "These data enabled us to identify distinct cell types involved in female flower and inferior ovary development."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 44,
+        "text": "In addition, we dissected the gene regulatory networks (GRNs) responsible for the rapid growth of the receptacle and identified key genes involved in these processes, including a duplicated class I KNOTTED-like homeobox (KNOX) transcription factor (TF), the knockout of which results in bisexual flowers with superior ovaries similar to those of tomato (Solanum lycopersicum L.)."
+      }
+    ],
+    "review_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 59,
+        "text": "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 43,
+        "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 54,
+        "text": "After initiation, the cucumber floral meristem enlarges from the perimeter and becomes concave (Fig."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 42,
+        "text": "These data enabled us to identify distinct cell types involved in female flower and inferior ovary development."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 44,
+        "text": "In addition, we dissected the gene regulatory networks (GRNs) responsible for the rapid growth of the receptacle and identified key genes involved in these processes, including a duplicated class I KNOTTED-like homeobox (KNOX) transcription factor (TF), the knockout of which results in bisexual flowers with superior ovaries similar to those of tomato (Solanum lycopersicum L.)."
+      },
+      {
+        "rank": 6,
+        "sentence_id": 265,
+        "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+      },
+      {
+        "rank": 7,
+        "sentence_id": 55,
+        "text": "1b), then sepal, petal, stamen and carpel primordia are initiated sequentially on the inner regions of this ‘enlarged floral meristem’ (EFM) (Fig."
+      },
+      {
+        "rank": 8,
+        "sentence_id": 53,
+        "text": "Based on previous studies, we defined the different stages of floral bud development in cucumber and tomato10,11 (Supplementary Table 1) and examined the morphology of female floral buds of cucumber from floral meristem initiation to carpel fusion completion."
+      },
+      {
+        "rank": 9,
+        "sentence_id": 151,
+        "text": "The expanded expression pattern of these two genes at the apex region offered support for the notion that the floral meristem enlarges during development in cucumber (Fig."
+      },
+      {
+        "rank": 10,
+        "sentence_id": 2,
+        "text": "However, the developmental mechanisms underlying inferior ovary formation remain largely unknown."
+      }
+    ],
+    "evidences": [
+      {
+        "sentence_id": 59,
+        "text": "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel."
+      },
+      {
+        "sentence_id": 43,
+        "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation."
+      },
+      {
+        "sentence_id": 54,
+        "text": "After initiation, the cucumber floral meristem enlarges from the perimeter and becomes concave (Fig."
+      },
+      {
+        "sentence_id": 42,
+        "text": "These data enabled us to identify distinct cell types involved in female flower and inferior ovary development."
+      },
+      {
+        "sentence_id": 44,
+        "text": "In addition, we dissected the gene regulatory networks (GRNs) responsible for the rapid growth of the receptacle and identified key genes involved in these processes, including a duplicated class I KNOTTED-like homeobox (KNOX) transcription factor (TF), the knockout of which results in bisexual flowers with superior ovaries similar to those of tomato (Solanum lycopersicum L.)."
+      },
+      {
+        "sentence_id": 265,
+        "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+      },
+      {
+        "sentence_id": 55,
+        "text": "1b), then sepal, petal, stamen and carpel primordia are initiated sequentially on the inner regions of this ‘enlarged floral meristem’ (EFM) (Fig."
+      },
+      {
+        "sentence_id": 53,
+        "text": "Based on previous studies, we defined the different stages of floral bud development in cucumber and tomato10,11 (Supplementary Table 1) and examined the morphology of female floral buds of cucumber from floral meristem initiation to carpel fusion completion."
+      },
+      {
+        "sentence_id": 151,
+        "text": "The expanded expression pattern of these two genes at the apex region offered support for the notion that the floral meristem enlarges during development in cucumber (Fig."
+      },
+      {
+        "sentence_id": 2,
+        "text": "However, the developmental mechanisms underlying inferior ovary formation remain largely unknown."
+      }
+    ],
+    "paper_sentences": [
+      "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel.",
+      "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation.",
+      "After initiation, the cucumber floral meristem enlarges from the perimeter and becomes concave (Fig.",
+      "These data enabled us to identify distinct cell types involved in female flower and inferior ovary development.",
+      "In addition, we dissected the gene regulatory networks (GRNs) responsible for the rapid growth of the receptacle and identified key genes involved in these processes, including a duplicated class I KNOTTED-like homeobox (KNOX) transcription factor (TF), the knockout of which results in bisexual flowers with superior ovaries similar to those of tomato (Solanum lycopersicum L.).",
+      "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig.",
+      "1b), then sepal, petal, stamen and carpel primordia are initiated sequentially on the inner regions of this ‘enlarged floral meristem’ (EFM) (Fig.",
+      "Based on previous studies, we defined the different stages of floral bud development in cucumber and tomato10,11 (Supplementary Table 1) and examined the morphology of female floral buds of cucumber from floral meristem initiation to carpel fusion completion.",
+      "The expanded expression pattern of these two genes at the apex region offered support for the notion that the floral meristem enlarges during development in cucumber (Fig.",
+      "However, the developmental mechanisms underlying inferior ovary formation remain largely unknown."
+    ],
+    "claim_id": "C11",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "claim_zh": "（2）花托迅速生长；",
+    "classify_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 56,
+        "text": "1b,c). With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 330,
+        "text": "Our findings revealed that the prolonged activity of the FIM at the base of the floral organs is responsible for the initiation and rapid growth of the receptacle, leading to female flower determination and the formation of an inferior ovary."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 43,
+        "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 244,
+        "text": "In female flowers, the receptacle and carpel continued to grow after S5, and the receptacle grew rapidly and wrapped around the carpel to form the inferior ovary (Extended Data Fig. 7b,d)."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 265,
+        "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+      }
+    ],
+    "review_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 56,
+        "text": "1b,c). With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 330,
+        "text": "Our findings revealed that the prolonged activity of the FIM at the base of the floral organs is responsible for the initiation and rapid growth of the receptacle, leading to female flower determination and the formation of an inferior ovary."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 43,
+        "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 244,
+        "text": "In female flowers, the receptacle and carpel continued to grow after S5, and the receptacle grew rapidly and wrapped around the carpel to form the inferior ovary (Extended Data Fig. 7b,d)."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 265,
+        "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+      },
+      {
+        "rank": 6,
+        "sentence_id": 44,
+        "text": "In addition, we dissected the gene regulatory networks (GRNs) responsible for the rapid growth of the receptacle and identified key genes involved in these processes, including a duplicated class I KNOTTED-like homeobox (KNOX) transcription factor (TF), the knockout of which results in bisexual flowers with superior ovaries similar to those of tomato (Solanum lycopersicum L.)."
+      },
+      {
+        "rank": 7,
+        "sentence_id": 57,
+        "text": "1b,c). The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c)."
+      },
+      {
+        "rank": 8,
+        "sentence_id": 329,
+        "text": "In this current study, we generated a comprehensive collection of spatially resolved transcriptomes and reconstructed the cellular territories and cell lineages for the continuously developing floral organs of cucumber."
+      },
+      {
+        "rank": 9,
+        "sentence_id": 331,
+        "text": "Characterization of the gene expression dynamics, for cell fate establishment and development of the receptacle, provided new insights into the molecular regulatory mechanisms underlying sex determination and inferior ovary formation in the cucurbits."
+      },
+      {
+        "rank": 10,
+        "sentence_id": 42,
+        "text": "These data enabled us to identify distinct cell types involved in female flower and inferior ovary development."
+      }
+    ],
+    "evidences": [
+      {
+        "sentence_id": 56,
+        "text": "1b,c). With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig."
+      },
+      {
+        "sentence_id": 330,
+        "text": "Our findings revealed that the prolonged activity of the FIM at the base of the floral organs is responsible for the initiation and rapid growth of the receptacle, leading to female flower determination and the formation of an inferior ovary."
+      },
+      {
+        "sentence_id": 43,
+        "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation."
+      },
+      {
+        "sentence_id": 244,
+        "text": "In female flowers, the receptacle and carpel continued to grow after S5, and the receptacle grew rapidly and wrapped around the carpel to form the inferior ovary (Extended Data Fig. 7b,d)."
+      },
+      {
+        "sentence_id": 265,
+        "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+      },
+      {
+        "sentence_id": 44,
+        "text": "In addition, we dissected the gene regulatory networks (GRNs) responsible for the rapid growth of the receptacle and identified key genes involved in these processes, including a duplicated class I KNOTTED-like homeobox (KNOX) transcription factor (TF), the knockout of which results in bisexual flowers with superior ovaries similar to those of tomato (Solanum lycopersicum L.)."
+      },
+      {
+        "sentence_id": 57,
+        "text": "1b,c). The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c)."
+      },
+      {
+        "sentence_id": 329,
+        "text": "In this current study, we generated a comprehensive collection of spatially resolved transcriptomes and reconstructed the cellular territories and cell lineages for the continuously developing floral organs of cucumber."
+      },
+      {
+        "sentence_id": 331,
+        "text": "Characterization of the gene expression dynamics, for cell fate establishment and development of the receptacle, provided new insights into the molecular regulatory mechanisms underlying sex determination and inferior ovary formation in the cucurbits."
+      },
+      {
+        "sentence_id": 42,
+        "text": "These data enabled us to identify distinct cell types involved in female flower and inferior ovary development."
+      }
+    ],
+    "paper_sentences": [
+      "1b,c). With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig.",
+      "Our findings revealed that the prolonged activity of the FIM at the base of the floral organs is responsible for the initiation and rapid growth of the receptacle, leading to female flower determination and the formation of an inferior ovary.",
+      "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation.",
+      "In female flowers, the receptacle and carpel continued to grow after S5, and the receptacle grew rapidly and wrapped around the carpel to form the inferior ovary (Extended Data Fig. 7b,d).",
+      "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig.",
+      "In addition, we dissected the gene regulatory networks (GRNs) responsible for the rapid growth of the receptacle and identified key genes involved in these processes, including a duplicated class I KNOTTED-like homeobox (KNOX) transcription factor (TF), the knockout of which results in bisexual flowers with superior ovaries similar to those of tomato (Solanum lycopersicum L.).",
+      "1b,c). The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c).",
+      "In this current study, we generated a comprehensive collection of spatially resolved transcriptomes and reconstructed the cellular territories and cell lineages for the continuously developing floral organs of cucumber.",
+      "Characterization of the gene expression dynamics, for cell fate establishment and development of the receptacle, provided new insights into the molecular regulatory mechanisms underlying sex determination and inferior ovary formation in the cucurbits.",
+      "These data enabled us to identify distinct cell types involved in female flower and inferior ovary development."
+    ],
+    "claim_id": "C12",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "claim_zh": "（3）花托和心皮融合。",
+    "classify_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 265,
+        "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 59,
+        "text": "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 266,
+        "text": "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 264,
+        "text": "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 56,
+        "text": "1b,c). With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig."
+      }
+    ],
+    "review_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 265,
+        "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 59,
+        "text": "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 266,
+        "text": "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 264,
+        "text": "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 56,
+        "text": "1b,c). With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig."
+      },
+      {
+        "rank": 6,
+        "sentence_id": 248,
+        "text": "6c,d and Extended Data Fig. 7e), as the floral receptacle of the ‘superior ovary flower’ did not fuse with the carpel and elongate, while the carpel continued to grow, resulting in upward growth of the carpels."
+      },
+      {
+        "rank": 7,
+        "sentence_id": 57,
+        "text": "1b,c). The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c)."
+      },
+      {
+        "rank": 8,
+        "sentence_id": 91,
+        "text": "We also observed three clusters (26, 27 and 28) situated between the carpel and receptacle at various stages of floral bud development, which we named conjunctive primordia, conjunctive tissue-early and conjunctive tissue-late, respectively (Fig."
+      },
+      {
+        "rank": 9,
+        "sentence_id": 249,
+        "text": "Developing ovules were observed after stage 10 (Fig."
+      },
+      {
+        "rank": 10,
+        "sentence_id": 247,
+        "text": "6c,d and Extended Data morphogenesis was observed (Fig."
+      }
+    ],
+    "evidences": [
+      {
+        "sentence_id": 265,
+        "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+      },
+      {
+        "sentence_id": 59,
+        "text": "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel."
+      },
+      {
+        "sentence_id": 266,
+        "text": "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning."
+      },
+      {
+        "sentence_id": 264,
+        "text": "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary."
+      },
+      {
+        "sentence_id": 56,
+        "text": "1b,c). With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig."
+      },
+      {
+        "sentence_id": 248,
+        "text": "6c,d and Extended Data Fig. 7e), as the floral receptacle of the ‘superior ovary flower’ did not fuse with the carpel and elongate, while the carpel continued to grow, resulting in upward growth of the carpels."
+      },
+      {
+        "sentence_id": 57,
+        "text": "1b,c). The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c)."
+      },
+      {
+        "sentence_id": 91,
+        "text": "We also observed three clusters (26, 27 and 28) situated between the carpel and receptacle at various stages of floral bud development, which we named conjunctive primordia, conjunctive tissue-early and conjunctive tissue-late, respectively (Fig."
+      },
+      {
+        "sentence_id": 249,
+        "text": "Developing ovules were observed after stage 10 (Fig."
+      },
+      {
+        "sentence_id": 247,
+        "text": "6c,d and Extended Data morphogenesis was observed (Fig."
+      }
+    ],
+    "paper_sentences": [
+      "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig.",
+      "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel.",
+      "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning.",
+      "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary.",
+      "1b,c). With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig.",
+      "6c,d and Extended Data Fig. 7e), as the floral receptacle of the ‘superior ovary flower’ did not fuse with the carpel and elongate, while the carpel continued to grow, resulting in upward growth of the carpels.",
+      "1b,c). The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c).",
+      "We also observed three clusters (26, 27 and 28) situated between the carpel and receptacle at various stages of floral bud development, which we named conjunctive primordia, conjunctive tissue-early and conjunctive tissue-late, respectively (Fig.",
+      "Developing ovules were observed after stage 10 (Fig.",
+      "6c,d and Extended Data morphogenesis was observed (Fig."
+    ],
+    "claim_id": "C13",
+    "verdict": "SUPPORTED"
+  }
+]

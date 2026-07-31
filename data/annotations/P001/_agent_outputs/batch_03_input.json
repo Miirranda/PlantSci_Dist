@@ -1,0 +1,416 @@
+[
+  {
+    "claim_zh": "S6-S8时期与心皮、花托以及连接组织相关的细胞聚类如图2d，其中连接组织不仅表达心皮和花托的标记基因（AG1、CRC），也特异性表达两性花发育基因ACS2（图2e），说明连接组织在子房发育和性别决定中可能同时起作用。",
+    "classify_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 93,
+        "text": "In contrast to previous recognition of expression in carpel, we observed that Cs1-aminocyclopropane-1-carboxylate synthase 2 (CsACS2)24, a gene for bisexual flower development, was specifically expressed in these clusters, suggesting that the conjunctive tissue plays a role in ovary development and sex determination (Fig."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 105,
+        "text": "The corresponding expression patterns of marker genes are shown."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 94,
+        "text": "2d,e and Supplementary The exclusive expression pattern of PROTODERMAL FACTOR 1 (PDF1), an epidermal marker gene, identified clusters 5, 7, 18, 29 and 30 as epidermis-related cells (Supplementary Fig. 18d)."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 92,
+        "text": "2a–c). Besides the expression of marker genes in both carpel (CsAG1) and receptacle (CsCRC), the marker gene CsHANABA TARANU (CsHAN1) was exclusively expressed in cluster 27 (ref."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 276,
+        "text": "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC."
+      }
+    ],
+    "review_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 93,
+        "text": "In contrast to previous recognition of expression in carpel, we observed that Cs1-aminocyclopropane-1-carboxylate synthase 2 (CsACS2)24, a gene for bisexual flower development, was specifically expressed in these clusters, suggesting that the conjunctive tissue plays a role in ovary development and sex determination (Fig."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 105,
+        "text": "The corresponding expression patterns of marker genes are shown."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 94,
+        "text": "2d,e and Supplementary The exclusive expression pattern of PROTODERMAL FACTOR 1 (PDF1), an epidermal marker gene, identified clusters 5, 7, 18, 29 and 30 as epidermis-related cells (Supplementary Fig. 18d)."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 92,
+        "text": "2a–c). Besides the expression of marker genes in both carpel (CsAG1) and receptacle (CsCRC), the marker gene CsHANABA TARANU (CsHAN1) was exclusively expressed in cluster 27 (ref."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 276,
+        "text": "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC."
+      },
+      {
+        "rank": 6,
+        "sentence_id": 266,
+        "text": "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning."
+      },
+      {
+        "rank": 7,
+        "sentence_id": 348,
+        "text": "Here, we identified novel genes, STM-like and KNAT2-like1, and new expression patterns that have emerged in the FIM and receptacle, contributing to the evolution of inferior ovaries in cucumber."
+      },
+      {
+        "rank": 8,
+        "sentence_id": 265,
+        "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+      },
+      {
+        "rank": 9,
+        "sentence_id": 267,
+        "text": "Given that KNAT2-like1, CRC and ER are in a coexpression module in the receptacle (Fig."
+      },
+      {
+        "rank": 10,
+        "sentence_id": 330,
+        "text": "Our findings revealed that the prolonged activity of the FIM at the base of the floral organs is responsible for the initiation and rapid growth of the receptacle, leading to female flower determination and the formation of an inferior ovary."
+      }
+    ],
+    "evidences": [
+      {
+        "sentence_id": 93,
+        "text": "In contrast to previous recognition of expression in carpel, we observed that Cs1-aminocyclopropane-1-carboxylate synthase 2 (CsACS2)24, a gene for bisexual flower development, was specifically expressed in these clusters, suggesting that the conjunctive tissue plays a role in ovary development and sex determination (Fig."
+      },
+      {
+        "sentence_id": 105,
+        "text": "The corresponding expression patterns of marker genes are shown."
+      },
+      {
+        "sentence_id": 94,
+        "text": "2d,e and Supplementary The exclusive expression pattern of PROTODERMAL FACTOR 1 (PDF1), an epidermal marker gene, identified clusters 5, 7, 18, 29 and 30 as epidermis-related cells (Supplementary Fig. 18d)."
+      },
+      {
+        "sentence_id": 92,
+        "text": "2a–c). Besides the expression of marker genes in both carpel (CsAG1) and receptacle (CsCRC), the marker gene CsHANABA TARANU (CsHAN1) was exclusively expressed in cluster 27 (ref."
+      },
+      {
+        "sentence_id": 276,
+        "text": "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC."
+      },
+      {
+        "sentence_id": 266,
+        "text": "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning."
+      },
+      {
+        "sentence_id": 348,
+        "text": "Here, we identified novel genes, STM-like and KNAT2-like1, and new expression patterns that have emerged in the FIM and receptacle, contributing to the evolution of inferior ovaries in cucumber."
+      },
+      {
+        "sentence_id": 265,
+        "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+      },
+      {
+        "sentence_id": 267,
+        "text": "Given that KNAT2-like1, CRC and ER are in a coexpression module in the receptacle (Fig."
+      },
+      {
+        "sentence_id": 330,
+        "text": "Our findings revealed that the prolonged activity of the FIM at the base of the floral organs is responsible for the initiation and rapid growth of the receptacle, leading to female flower determination and the formation of an inferior ovary."
+      }
+    ],
+    "paper_sentences": [
+      "In contrast to previous recognition of expression in carpel, we observed that Cs1-aminocyclopropane-1-carboxylate synthase 2 (CsACS2)24, a gene for bisexual flower development, was specifically expressed in these clusters, suggesting that the conjunctive tissue plays a role in ovary development and sex determination (Fig.",
+      "The corresponding expression patterns of marker genes are shown.",
+      "2d,e and Supplementary The exclusive expression pattern of PROTODERMAL FACTOR 1 (PDF1), an epidermal marker gene, identified clusters 5, 7, 18, 29 and 30 as epidermis-related cells (Supplementary Fig. 18d).",
+      "2a–c). Besides the expression of marker genes in both carpel (CsAG1) and receptacle (CsCRC), the marker gene CsHANABA TARANU (CsHAN1) was exclusively expressed in cluster 27 (ref.",
+      "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC.",
+      "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning.",
+      "Here, we identified novel genes, STM-like and KNAT2-like1, and new expression patterns that have emerged in the FIM and receptacle, contributing to the evolution of inferior ovaries in cucumber.",
+      "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig.",
+      "Given that KNAT2-like1, CRC and ER are in a coexpression module in the receptacle (Fig.",
+      "Our findings revealed that the prolonged activity of the FIM at the base of the floral organs is responsible for the initiation and rapid growth of the receptacle, leading to female flower determination and the formation of an inferior ovary."
+    ],
+    "claim_id": "C17",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "claim_zh": "利用空间转录组数据绘制了花器官发生轨迹，并根据cluster之间的关系重构细胞谱系（图3a）。",
+    "classify_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 115,
+        "text": "To identify the major cell lineages involved in cucumber floral bud organogenesis and the mechanisms of receptacle development, we used the spatial transcriptomic data (Extended Data Fig. 3c) to generate a trajectory of floral organogenesis (TOFO), drawing on methods from the trajectory of mammal embryogenesis (TOME) analysis30."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 116,
+        "text": "The reconstructed cell lineage reveals inferred relationships between clusters across sections from S1 to S8-4 (Fig."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 329,
+        "text": "In this current study, we generated a comprehensive collection of spatially resolved transcriptomes and reconstructed the cellular territories and cell lineages for the continuously developing floral organs of cucumber."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 114,
+        "text": "An understanding of the progression of cell lineages during a developmental process is necessary to elucidate the mechanisms of differentiation activity and their connection to pluripotency28,29."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 80,
+        "text": "From the spatial transcriptomic data, we identified the putative FIMs, which are located at the base of the floral organs, as consisting of clusters 36 (S1–S4) and 37 (S5–S8-2)."
+      }
+    ],
+    "review_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 115,
+        "text": "To identify the major cell lineages involved in cucumber floral bud organogenesis and the mechanisms of receptacle development, we used the spatial transcriptomic data (Extended Data Fig. 3c) to generate a trajectory of floral organogenesis (TOFO), drawing on methods from the trajectory of mammal embryogenesis (TOME) analysis30."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 116,
+        "text": "The reconstructed cell lineage reveals inferred relationships between clusters across sections from S1 to S8-4 (Fig."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 329,
+        "text": "In this current study, we generated a comprehensive collection of spatially resolved transcriptomes and reconstructed the cellular territories and cell lineages for the continuously developing floral organs of cucumber."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 114,
+        "text": "An understanding of the progression of cell lineages during a developmental process is necessary to elucidate the mechanisms of differentiation activity and their connection to pluripotency28,29."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 80,
+        "text": "From the spatial transcriptomic data, we identified the putative FIMs, which are located at the base of the floral organs, as consisting of clusters 36 (S1–S4) and 37 (S5–S8-2)."
+      },
+      {
+        "rank": 6,
+        "sentence_id": 3,
+        "text": "Comparative spatial transcriptome mapping and cell lineage reconstructions in developing floral buds of cucumber and tomato, which have inferior and superior ovaries, respectively, revealed that inferior ovaries develop from accelerated receptacle growth resulting from the continuous activity of meristematic stems cells at the base of the cucumber floral organs."
+      },
+      {
+        "rank": 7,
+        "sentence_id": 117,
+        "text": "3a and Extended Data Fig. 4a)."
+      },
+      {
+        "rank": 8,
+        "sentence_id": 328,
+        "text": "Gynoecium evolution is a key factor in the success and diversity of angiosperms, and the final derived feature of the gynoecium is the 871 evolution of an inferior ovary from a superior ovary."
+      },
+      {
+        "rank": 9,
+        "sentence_id": 81,
+        "text": "The FIMs were determined with high expression of homologues of CYP78A7 (ref."
+      },
+      {
+        "rank": 10,
+        "sentence_id": 2,
+        "text": "However, the developmental mechanisms underlying inferior ovary formation remain largely unknown."
+      }
+    ],
+    "evidences": [
+      {
+        "sentence_id": 115,
+        "text": "To identify the major cell lineages involved in cucumber floral bud organogenesis and the mechanisms of receptacle development, we used the spatial transcriptomic data (Extended Data Fig. 3c) to generate a trajectory of floral organogenesis (TOFO), drawing on methods from the trajectory of mammal embryogenesis (TOME) analysis30."
+      },
+      {
+        "sentence_id": 116,
+        "text": "The reconstructed cell lineage reveals inferred relationships between clusters across sections from S1 to S8-4 (Fig."
+      },
+      {
+        "sentence_id": 329,
+        "text": "In this current study, we generated a comprehensive collection of spatially resolved transcriptomes and reconstructed the cellular territories and cell lineages for the continuously developing floral organs of cucumber."
+      },
+      {
+        "sentence_id": 114,
+        "text": "An understanding of the progression of cell lineages during a developmental process is necessary to elucidate the mechanisms of differentiation activity and their connection to pluripotency28,29."
+      },
+      {
+        "sentence_id": 80,
+        "text": "From the spatial transcriptomic data, we identified the putative FIMs, which are located at the base of the floral organs, as consisting of clusters 36 (S1–S4) and 37 (S5–S8-2)."
+      },
+      {
+        "sentence_id": 3,
+        "text": "Comparative spatial transcriptome mapping and cell lineage reconstructions in developing floral buds of cucumber and tomato, which have inferior and superior ovaries, respectively, revealed that inferior ovaries develop from accelerated receptacle growth resulting from the continuous activity of meristematic stems cells at the base of the cucumber floral organs."
+      },
+      {
+        "sentence_id": 117,
+        "text": "3a and Extended Data Fig. 4a)."
+      },
+      {
+        "sentence_id": 328,
+        "text": "Gynoecium evolution is a key factor in the success and diversity of angiosperms, and the final derived feature of the gynoecium is the 871 evolution of an inferior ovary from a superior ovary."
+      },
+      {
+        "sentence_id": 81,
+        "text": "The FIMs were determined with high expression of homologues of CYP78A7 (ref."
+      },
+      {
+        "sentence_id": 2,
+        "text": "However, the developmental mechanisms underlying inferior ovary formation remain largely unknown."
+      }
+    ],
+    "paper_sentences": [
+      "To identify the major cell lineages involved in cucumber floral bud organogenesis and the mechanisms of receptacle development, we used the spatial transcriptomic data (Extended Data Fig. 3c) to generate a trajectory of floral organogenesis (TOFO), drawing on methods from the trajectory of mammal embryogenesis (TOME) analysis30.",
+      "The reconstructed cell lineage reveals inferred relationships between clusters across sections from S1 to S8-4 (Fig.",
+      "In this current study, we generated a comprehensive collection of spatially resolved transcriptomes and reconstructed the cellular territories and cell lineages for the continuously developing floral organs of cucumber.",
+      "An understanding of the progression of cell lineages during a developmental process is necessary to elucidate the mechanisms of differentiation activity and their connection to pluripotency28,29.",
+      "From the spatial transcriptomic data, we identified the putative FIMs, which are located at the base of the floral organs, as consisting of clusters 36 (S1–S4) and 37 (S5–S8-2).",
+      "Comparative spatial transcriptome mapping and cell lineage reconstructions in developing floral buds of cucumber and tomato, which have inferior and superior ovaries, respectively, revealed that inferior ovaries develop from accelerated receptacle growth resulting from the continuous activity of meristematic stems cells at the base of the cucumber floral organs.",
+      "3a and Extended Data Fig. 4a).",
+      "Gynoecium evolution is a key factor in the success and diversity of angiosperms, and the final derived feature of the gynoecium is the 871 evolution of an inferior ovary from a superior ovary.",
+      "The FIMs were determined with high expression of homologues of CYP78A7 (ref.",
+      "However, the developmental mechanisms underlying inferior ovary formation remain largely unknown."
+    ],
+    "claim_id": "C18",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "claim_zh": "各细胞谱系的空间分布与其发育轨迹相同（图3b）。",
+    "classify_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 119,
+        "text": "3a). We also examined their spatial distribution across sections, which revealed the spatiotemporal cell lineages for each supercluster (Fig."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 118,
+        "text": "Based on the annotation and relationship of clusters, the trajectories were divided into groups corresponding to different tissues (Fig."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 120,
+        "text": "3b). We found that although the production of sepal primordia was not captured, probably due to relatively small number of cells at the early stage, the cell lineage analysis indicated that the floral primordia sequentially differentiated into petal, stamen and carpel primordia (Fig."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 115,
+        "text": "To identify the major cell lineages involved in cucumber floral bud organogenesis and the mechanisms of receptacle development, we used the spatial transcriptomic data (Extended Data Fig. 3c) to generate a trajectory of floral organogenesis (TOFO), drawing on methods from the trajectory of mammal embryogenesis (TOME) analysis30."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 114,
+        "text": "An understanding of the progression of cell lineages during a developmental process is necessary to elucidate the mechanisms of differentiation activity and their connection to pluripotency28,29."
+      }
+    ],
+    "review_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 119,
+        "text": "3a). We also examined their spatial distribution across sections, which revealed the spatiotemporal cell lineages for each supercluster (Fig."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 118,
+        "text": "Based on the annotation and relationship of clusters, the trajectories were divided into groups corresponding to different tissues (Fig."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 120,
+        "text": "3b). We found that although the production of sepal primordia was not captured, probably due to relatively small number of cells at the early stage, the cell lineage analysis indicated that the floral primordia sequentially differentiated into petal, stamen and carpel primordia (Fig."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 115,
+        "text": "To identify the major cell lineages involved in cucumber floral bud organogenesis and the mechanisms of receptacle development, we used the spatial transcriptomic data (Extended Data Fig. 3c) to generate a trajectory of floral organogenesis (TOFO), drawing on methods from the trajectory of mammal embryogenesis (TOME) analysis30."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 114,
+        "text": "An understanding of the progression of cell lineages during a developmental process is necessary to elucidate the mechanisms of differentiation activity and their connection to pluripotency28,29."
+      },
+      {
+        "rank": 6,
+        "sentence_id": 116,
+        "text": "The reconstructed cell lineage reveals inferred relationships between clusters across sections from S1 to S8-4 (Fig."
+      },
+      {
+        "rank": 7,
+        "sentence_id": 329,
+        "text": "In this current study, we generated a comprehensive collection of spatially resolved transcriptomes and reconstructed the cellular territories and cell lineages for the continuously developing floral organs of cucumber."
+      },
+      {
+        "rank": 8,
+        "sentence_id": 328,
+        "text": "Gynoecium evolution is a key factor in the success and diversity of angiosperms, and the final derived feature of the gynoecium is the 871 evolution of an inferior ovary from a superior ovary."
+      },
+      {
+        "rank": 9,
+        "sentence_id": 330,
+        "text": "Our findings revealed that the prolonged activity of the FIM at the base of the floral organs is responsible for the initiation and rapid growth of the receptacle, leading to female flower determination and the formation of an inferior ovary."
+      },
+      {
+        "rank": 10,
+        "sentence_id": 2,
+        "text": "However, the developmental mechanisms underlying inferior ovary formation remain largely unknown."
+      }
+    ],
+    "evidences": [
+      {
+        "sentence_id": 119,
+        "text": "3a). We also examined their spatial distribution across sections, which revealed the spatiotemporal cell lineages for each supercluster (Fig."
+      },
+      {
+        "sentence_id": 118,
+        "text": "Based on the annotation and relationship of clusters, the trajectories were divided into groups corresponding to different tissues (Fig."
+      },
+      {
+        "sentence_id": 120,
+        "text": "3b). We found that although the production of sepal primordia was not captured, probably due to relatively small number of cells at the early stage, the cell lineage analysis indicated that the floral primordia sequentially differentiated into petal, stamen and carpel primordia (Fig."
+      },
+      {
+        "sentence_id": 115,
+        "text": "To identify the major cell lineages involved in cucumber floral bud organogenesis and the mechanisms of receptacle development, we used the spatial transcriptomic data (Extended Data Fig. 3c) to generate a trajectory of floral organogenesis (TOFO), drawing on methods from the trajectory of mammal embryogenesis (TOME) analysis30."
+      },
+      {
+        "sentence_id": 114,
+        "text": "An understanding of the progression of cell lineages during a developmental process is necessary to elucidate the mechanisms of differentiation activity and their connection to pluripotency28,29."
+      },
+      {
+        "sentence_id": 116,
+        "text": "The reconstructed cell lineage reveals inferred relationships between clusters across sections from S1 to S8-4 (Fig."
+      },
+      {
+        "sentence_id": 329,
+        "text": "In this current study, we generated a comprehensive collection of spatially resolved transcriptomes and reconstructed the cellular territories and cell lineages for the continuously developing floral organs of cucumber."
+      },
+      {
+        "sentence_id": 328,
+        "text": "Gynoecium evolution is a key factor in the success and diversity of angiosperms, and the final derived feature of the gynoecium is the 871 evolution of an inferior ovary from a superior ovary."
+      },
+      {
+        "sentence_id": 330,
+        "text": "Our findings revealed that the prolonged activity of the FIM at the base of the floral organs is responsible for the initiation and rapid growth of the receptacle, leading to female flower determination and the formation of an inferior ovary."
+      },
+      {
+        "sentence_id": 2,
+        "text": "However, the developmental mechanisms underlying inferior ovary formation remain largely unknown."
+      }
+    ],
+    "paper_sentences": [
+      "3a). We also examined their spatial distribution across sections, which revealed the spatiotemporal cell lineages for each supercluster (Fig.",
+      "Based on the annotation and relationship of clusters, the trajectories were divided into groups corresponding to different tissues (Fig.",
+      "3b). We found that although the production of sepal primordia was not captured, probably due to relatively small number of cells at the early stage, the cell lineage analysis indicated that the floral primordia sequentially differentiated into petal, stamen and carpel primordia (Fig.",
+      "To identify the major cell lineages involved in cucumber floral bud organogenesis and the mechanisms of receptacle development, we used the spatial transcriptomic data (Extended Data Fig. 3c) to generate a trajectory of floral organogenesis (TOFO), drawing on methods from the trajectory of mammal embryogenesis (TOME) analysis30.",
+      "An understanding of the progression of cell lineages during a developmental process is necessary to elucidate the mechanisms of differentiation activity and their connection to pluripotency28,29.",
+      "The reconstructed cell lineage reveals inferred relationships between clusters across sections from S1 to S8-4 (Fig.",
+      "In this current study, we generated a comprehensive collection of spatially resolved transcriptomes and reconstructed the cellular territories and cell lineages for the continuously developing floral organs of cucumber.",
+      "Gynoecium evolution is a key factor in the success and diversity of angiosperms, and the final derived feature of the gynoecium is the 871 evolution of an inferior ovary from a superior ovary.",
+      "Our findings revealed that the prolonged activity of the FIM at the base of the floral organs is responsible for the initiation and rapid growth of the receptacle, leading to female flower determination and the formation of an inferior ovary.",
+      "However, the developmental mechanisms underlying inferior ovary formation remain largely unknown."
+    ],
+    "claim_id": "C19",
+    "verdict": "INCONCLUSIVE"
+  }
+]

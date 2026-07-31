@@ -1,0 +1,416 @@
+[
+  {
+    "claim_zh": "3D UMAP散点图显示，这些细胞被重新聚类为6个cluster（图5b），根据标记基因，确定其中4个cluster与细胞周期相关（GO/G1、G2、S、M），另外2个分别为花托原基（RP）和花基部分生组织（FIM）（图5c）。",
+    "classify_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 173,
+        "text": "A UMAP three-dimensional (3D) scatterplot revealed six reclusters, four of which followed a cyclic pattern (S phase, G2 phase, G0/G1 phase and M phase) according to the assigned cell-cycle marker genes20, and the remaining two were annotated as receptacle primordium and FIM (Fig."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 280,
+        "text": "These clusters were annotated based on their distribution and the expression of marker genes (Fig."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 213,
+        "text": "c, A heat map showing the mean expression of marker genes in the RP, G0/G1 phase cells, S phase cells, G2 phase cells and M phase cells."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 135,
+        "text": "4a,b and Supplementary Table 4): cluster 0, epidermis (cluster E); cluster 1, pedicel (cluster P); cluster 2, floral primordia (cluster FP); cluster 3, receptacle primordium (cluster RP); and cluster 5, FIM."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 172,
+        "text": "5b and Extended Data Fig. 3f)."
+      }
+    ],
+    "review_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 173,
+        "text": "A UMAP three-dimensional (3D) scatterplot revealed six reclusters, four of which followed a cyclic pattern (S phase, G2 phase, G0/G1 phase and M phase) according to the assigned cell-cycle marker genes20, and the remaining two were annotated as receptacle primordium and FIM (Fig."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 280,
+        "text": "These clusters were annotated based on their distribution and the expression of marker genes (Fig."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 213,
+        "text": "c, A heat map showing the mean expression of marker genes in the RP, G0/G1 phase cells, S phase cells, G2 phase cells and M phase cells."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 135,
+        "text": "4a,b and Supplementary Table 4): cluster 0, epidermis (cluster E); cluster 1, pedicel (cluster P); cluster 2, floral primordia (cluster FP); cluster 3, receptacle primordium (cluster RP); and cluster 5, FIM."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 172,
+        "text": "5b and Extended Data Fig. 3f)."
+      },
+      {
+        "rank": 6,
+        "sentence_id": 279,
+        "text": "In total, seven clusters were identified for both the superior ovary mutant and tomato."
+      },
+      {
+        "rank": 7,
+        "sentence_id": 181,
+        "text": "of cell-cycle phases were observed at different developmental stages, with S phase cells primarily concentrated in S8-1 and S8-2 (Fig."
+      },
+      {
+        "rank": 8,
+        "sentence_id": 125,
+        "text": "3a). We determined that after S7, the FIM and receptacle primordia generate cells that are actively undergoing the cell cycle, while G1/S phase cells transition to receptacle cells, suggesting a mechanism to maintain cell proliferation and support rapid receptacle growth (Fig."
+      },
+      {
+        "rank": 9,
+        "sentence_id": 207,
+        "text": "867 a b G1/S phase cells G0/G1 FP S Placenta FIM Ovule (ovary wall) 2.0 Receptacle primordia Fold change 1.5 Receptacle-early Receptacle-late 1.0 G0/G1 G0/G1 phase cells 0.5 Conjunctive primordia Conjunctive tissue-early 0 Conjunctive tissue-late –0.5 Floral intercalary meristem Stage S1 S2 S3 S4–S5 S6−S7 S8_1−S8_2 S8_3−S8_4 Floral intercalary meristem-2 Floral intercalary meristem-3 d e G0/G1 S M G2 FIM RP S3 S5 S4 S1 S2 Receptacle NAC020 MGP AP2 GRF8 KTF1 GTB1 ARF6 HB-8 MP WRKY13 histoneH1 AT hook WHY2 Provascular SPL13A HB33 HMGB2 GTB1 MP Protoxylem HB6 ARF18 ARF2 ARF6 MGP G2/M phase cells G1/S phase cells S6 S7 S8-1 S8-2 S8-3 S8-4 Score f g Min Max MEE68 M11 ARR9 M5 WIP2 M8 DIN10 SNAK1 M3 CA1P M4 CIB1 YUC4 M13 CRC Peptide1 M14 ER M10 AGL42 M7 KNAT2-like1 M9 TPS1 M12 bHLH93 MGP AHK5 M2 ZPR2 M15 PPI1 M17 YAB2 Peptide2 M6 CYCD2;1 M1 LSH10 M16 a, A line graph showing the fold change in bin numbers (bin 50) for various clusters from S1 to S8."
+      },
+      {
+        "rank": 10,
+        "sentence_id": 187,
+        "text": "866 a b Low 0 E 4 EFM 1 P 5 FIM 2 FP 6 Unknown 3 RP S4 S3 S2 S1 LOX1 DWF1 c f STM-like S4 P clusters 1/5 Max Pseudotime FIM RP Min E PI EFM cluster 2 UMAP2 FP ACO2 cluster 3 UMAP1 d e g AP1 FP FIM RP S3 FIM PI EFM AP3 FP HTA7 RP ANT HMG 2 RIP5 STM LOS1 2 1 RPL16A LAX2 RPS11 S1 ROX3 STM Pseudotime AP1 Min Max LEAFY 3 CAL1 h Inner part STM-like EP ETTIN MP E AFO 2 1 CYP714A 4 CER1 WOX9 KNAT2-like1 S1 AG1 1 BAS1 ACO2 MIPS3 Group Min Max Pseudotime S5 visualization depicting the clustering of developing floral buds at the early stages."
+      }
+    ],
+    "evidences": [
+      {
+        "sentence_id": 173,
+        "text": "A UMAP three-dimensional (3D) scatterplot revealed six reclusters, four of which followed a cyclic pattern (S phase, G2 phase, G0/G1 phase and M phase) according to the assigned cell-cycle marker genes20, and the remaining two were annotated as receptacle primordium and FIM (Fig."
+      },
+      {
+        "sentence_id": 280,
+        "text": "These clusters were annotated based on their distribution and the expression of marker genes (Fig."
+      },
+      {
+        "sentence_id": 213,
+        "text": "c, A heat map showing the mean expression of marker genes in the RP, G0/G1 phase cells, S phase cells, G2 phase cells and M phase cells."
+      },
+      {
+        "sentence_id": 135,
+        "text": "4a,b and Supplementary Table 4): cluster 0, epidermis (cluster E); cluster 1, pedicel (cluster P); cluster 2, floral primordia (cluster FP); cluster 3, receptacle primordium (cluster RP); and cluster 5, FIM."
+      },
+      {
+        "sentence_id": 172,
+        "text": "5b and Extended Data Fig. 3f)."
+      },
+      {
+        "sentence_id": 279,
+        "text": "In total, seven clusters were identified for both the superior ovary mutant and tomato."
+      },
+      {
+        "sentence_id": 181,
+        "text": "of cell-cycle phases were observed at different developmental stages, with S phase cells primarily concentrated in S8-1 and S8-2 (Fig."
+      },
+      {
+        "sentence_id": 125,
+        "text": "3a). We determined that after S7, the FIM and receptacle primordia generate cells that are actively undergoing the cell cycle, while G1/S phase cells transition to receptacle cells, suggesting a mechanism to maintain cell proliferation and support rapid receptacle growth (Fig."
+      },
+      {
+        "sentence_id": 207,
+        "text": "867 a b G1/S phase cells G0/G1 FP S Placenta FIM Ovule (ovary wall) 2.0 Receptacle primordia Fold change 1.5 Receptacle-early Receptacle-late 1.0 G0/G1 G0/G1 phase cells 0.5 Conjunctive primordia Conjunctive tissue-early 0 Conjunctive tissue-late –0.5 Floral intercalary meristem Stage S1 S2 S3 S4–S5 S6−S7 S8_1−S8_2 S8_3−S8_4 Floral intercalary meristem-2 Floral intercalary meristem-3 d e G0/G1 S M G2 FIM RP S3 S5 S4 S1 S2 Receptacle NAC020 MGP AP2 GRF8 KTF1 GTB1 ARF6 HB-8 MP WRKY13 histoneH1 AT hook WHY2 Provascular SPL13A HB33 HMGB2 GTB1 MP Protoxylem HB6 ARF18 ARF2 ARF6 MGP G2/M phase cells G1/S phase cells S6 S7 S8-1 S8-2 S8-3 S8-4 Score f g Min Max MEE68 M11 ARR9 M5 WIP2 M8 DIN10 SNAK1 M3 CA1P M4 CIB1 YUC4 M13 CRC Peptide1 M14 ER M10 AGL42 M7 KNAT2-like1 M9 TPS1 M12 bHLH93 MGP AHK5 M2 ZPR2 M15 PPI1 M17 YAB2 Peptide2 M6 CYCD2;1 M1 LSH10 M16 a, A line graph showing the fold change in bin numbers (bin 50) for various clusters from S1 to S8."
+      },
+      {
+        "sentence_id": 187,
+        "text": "866 a b Low 0 E 4 EFM 1 P 5 FIM 2 FP 6 Unknown 3 RP S4 S3 S2 S1 LOX1 DWF1 c f STM-like S4 P clusters 1/5 Max Pseudotime FIM RP Min E PI EFM cluster 2 UMAP2 FP ACO2 cluster 3 UMAP1 d e g AP1 FP FIM RP S3 FIM PI EFM AP3 FP HTA7 RP ANT HMG 2 RIP5 STM LOS1 2 1 RPL16A LAX2 RPS11 S1 ROX3 STM Pseudotime AP1 Min Max LEAFY 3 CAL1 h Inner part STM-like EP ETTIN MP E AFO 2 1 CYP714A 4 CER1 WOX9 KNAT2-like1 S1 AG1 1 BAS1 ACO2 MIPS3 Group Min Max Pseudotime S5 visualization depicting the clustering of developing floral buds at the early stages."
+      }
+    ],
+    "paper_sentences": [
+      "A UMAP three-dimensional (3D) scatterplot revealed six reclusters, four of which followed a cyclic pattern (S phase, G2 phase, G0/G1 phase and M phase) according to the assigned cell-cycle marker genes20, and the remaining two were annotated as receptacle primordium and FIM (Fig.",
+      "These clusters were annotated based on their distribution and the expression of marker genes (Fig.",
+      "c, A heat map showing the mean expression of marker genes in the RP, G0/G1 phase cells, S phase cells, G2 phase cells and M phase cells.",
+      "4a,b and Supplementary Table 4): cluster 0, epidermis (cluster E); cluster 1, pedicel (cluster P); cluster 2, floral primordia (cluster FP); cluster 3, receptacle primordium (cluster RP); and cluster 5, FIM.",
+      "5b and Extended Data Fig. 3f).",
+      "In total, seven clusters were identified for both the superior ovary mutant and tomato.",
+      "of cell-cycle phases were observed at different developmental stages, with S phase cells primarily concentrated in S8-1 and S8-2 (Fig.",
+      "3a). We determined that after S7, the FIM and receptacle primordia generate cells that are actively undergoing the cell cycle, while G1/S phase cells transition to receptacle cells, suggesting a mechanism to maintain cell proliferation and support rapid receptacle growth (Fig.",
+      "867 a b G1/S phase cells G0/G1 FP S Placenta FIM Ovule (ovary wall) 2.0 Receptacle primordia Fold change 1.5 Receptacle-early Receptacle-late 1.0 G0/G1 G0/G1 phase cells 0.5 Conjunctive primordia Conjunctive tissue-early 0 Conjunctive tissue-late –0.5 Floral intercalary meristem Stage S1 S2 S3 S4–S5 S6−S7 S8_1−S8_2 S8_3−S8_4 Floral intercalary meristem-2 Floral intercalary meristem-3 d e G0/G1 S M G2 FIM RP S3 S5 S4 S1 S2 Receptacle NAC020 MGP AP2 GRF8 KTF1 GTB1 ARF6 HB-8 MP WRKY13 histoneH1 AT hook WHY2 Provascular SPL13A HB33 HMGB2 GTB1 MP Protoxylem HB6 ARF18 ARF2 ARF6 MGP G2/M phase cells G1/S phase cells S6 S7 S8-1 S8-2 S8-3 S8-4 Score f g Min Max MEE68 M11 ARR9 M5 WIP2 M8 DIN10 SNAK1 M3 CA1P M4 CIB1 YUC4 M13 CRC Peptide1 M14 ER M10 AGL42 M7 KNAT2-like1 M9 TPS1 M12 bHLH93 MGP AHK5 M2 ZPR2 M15 PPI1 M17 YAB2 Peptide2 M6 CYCD2;1 M1 LSH10 M16 a, A line graph showing the fold change in bin numbers (bin 50) for various clusters from S1 to S8.",
+      "866 a b Low 0 E 4 EFM 1 P 5 FIM 2 FP 6 Unknown 3 RP S4 S3 S2 S1 LOX1 DWF1 c f STM-like S4 P clusters 1/5 Max Pseudotime FIM RP Min E PI EFM cluster 2 UMAP2 FP ACO2 cluster 3 UMAP1 d e g AP1 FP FIM RP S3 FIM PI EFM AP3 FP HTA7 RP ANT HMG 2 RIP5 STM LOS1 2 1 RPL16A LAX2 RPS11 S1 ROX3 STM Pseudotime AP1 Min Max LEAFY 3 CAL1 h Inner part STM-like EP ETTIN MP E AFO 2 1 CYP714A 4 CER1 WOX9 KNAT2-like1 S1 AG1 1 BAS1 ACO2 MIPS3 Group Min Max Pseudotime S5 visualization depicting the clustering of developing floral buds at the early stages."
+    ],
+    "claim_id": "C29",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "claim_zh": "根据其空间分布，发现花托细胞增殖主要由激活S期细胞活动调控（图5d）。",
+    "classify_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 183,
+        "text": "These findings support the notion that cell proliferation in the receptacle is regulated by the activation of meristematic activities in S phase cells."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 184,
+        "text": "To pinpoint the key genes that regulate the cell proliferation and rapid growth of receptacles, we focused on those that were specifically upregulated or downregulated along the TOFO trajectory from each cluster (Fig."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 182,
+        "text": "5d). The target of rapamycin (TOR) kinase gene, which promotes the activation of S phase genes and meristems42, was found to predominantly expressed in S phase cells (Extended Data Fig. 6b)."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 125,
+        "text": "3a). We determined that after S7, the FIM and receptacle primordia generate cells that are actively undergoing the cell cycle, while G1/S phase cells transition to receptacle cells, suggesting a mechanism to maintain cell proliferation and support rapid receptacle growth (Fig."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 126,
+        "text": "3a). An analysis using Monocle2 (Extended Data Fig. 3d),"
+      }
+    ],
+    "review_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 183,
+        "text": "These findings support the notion that cell proliferation in the receptacle is regulated by the activation of meristematic activities in S phase cells."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 184,
+        "text": "To pinpoint the key genes that regulate the cell proliferation and rapid growth of receptacles, we focused on those that were specifically upregulated or downregulated along the TOFO trajectory from each cluster (Fig."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 182,
+        "text": "5d). The target of rapamycin (TOR) kinase gene, which promotes the activation of S phase genes and meristems42, was found to predominantly expressed in S phase cells (Extended Data Fig. 6b)."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 125,
+        "text": "3a). We determined that after S7, the FIM and receptacle primordia generate cells that are actively undergoing the cell cycle, while G1/S phase cells transition to receptacle cells, suggesting a mechanism to maintain cell proliferation and support rapid receptacle growth (Fig."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 126,
+        "text": "3a). An analysis using Monocle2 (Extended Data Fig. 3d),"
+      },
+      {
+        "rank": 6,
+        "sentence_id": 124,
+        "text": "The FIM also gives rise to the provascular tissue, which differentiates into protoxylem after the S5 stage (Fig."
+      },
+      {
+        "rank": 7,
+        "sentence_id": 233,
+        "text": "Based on these findings, we proposed that, in cucumber, the rapid growth of the receptacle is centred around sink capacity signalling and integration of KNAT2-like1, CRC and ER to regulate cell proliferation, ultimately promoting receptacle development."
+      },
+      {
+        "rank": 8,
+        "sentence_id": 232,
+        "text": "5g,h and Extended Data Fig. 6d,e)."
+      },
+      {
+        "rank": 9,
+        "sentence_id": 170,
+        "text": "5a). The cells transitioning between stem cells and differentiated cells are in a highly proliferative state and continue to divide several times before their differentiation41, suggesting that the cells of the rapidly growing receptacle are in this state."
+      },
+      {
+        "rank": 10,
+        "sentence_id": 231,
+        "text": "45) and CA1P phosphatase46 affect carbohydrate accumulation and enhance sink strength (Fig."
+      }
+    ],
+    "evidences": [
+      {
+        "sentence_id": 183,
+        "text": "These findings support the notion that cell proliferation in the receptacle is regulated by the activation of meristematic activities in S phase cells."
+      },
+      {
+        "sentence_id": 184,
+        "text": "To pinpoint the key genes that regulate the cell proliferation and rapid growth of receptacles, we focused on those that were specifically upregulated or downregulated along the TOFO trajectory from each cluster (Fig."
+      },
+      {
+        "sentence_id": 182,
+        "text": "5d). The target of rapamycin (TOR) kinase gene, which promotes the activation of S phase genes and meristems42, was found to predominantly expressed in S phase cells (Extended Data Fig. 6b)."
+      },
+      {
+        "sentence_id": 125,
+        "text": "3a). We determined that after S7, the FIM and receptacle primordia generate cells that are actively undergoing the cell cycle, while G1/S phase cells transition to receptacle cells, suggesting a mechanism to maintain cell proliferation and support rapid receptacle growth (Fig."
+      },
+      {
+        "sentence_id": 126,
+        "text": "3a). An analysis using Monocle2 (Extended Data Fig. 3d),"
+      },
+      {
+        "sentence_id": 124,
+        "text": "The FIM also gives rise to the provascular tissue, which differentiates into protoxylem after the S5 stage (Fig."
+      },
+      {
+        "sentence_id": 233,
+        "text": "Based on these findings, we proposed that, in cucumber, the rapid growth of the receptacle is centred around sink capacity signalling and integration of KNAT2-like1, CRC and ER to regulate cell proliferation, ultimately promoting receptacle development."
+      },
+      {
+        "sentence_id": 232,
+        "text": "5g,h and Extended Data Fig. 6d,e)."
+      },
+      {
+        "sentence_id": 170,
+        "text": "5a). The cells transitioning between stem cells and differentiated cells are in a highly proliferative state and continue to divide several times before their differentiation41, suggesting that the cells of the rapidly growing receptacle are in this state."
+      },
+      {
+        "sentence_id": 231,
+        "text": "45) and CA1P phosphatase46 affect carbohydrate accumulation and enhance sink strength (Fig."
+      }
+    ],
+    "paper_sentences": [
+      "These findings support the notion that cell proliferation in the receptacle is regulated by the activation of meristematic activities in S phase cells.",
+      "To pinpoint the key genes that regulate the cell proliferation and rapid growth of receptacles, we focused on those that were specifically upregulated or downregulated along the TOFO trajectory from each cluster (Fig.",
+      "5d). The target of rapamycin (TOR) kinase gene, which promotes the activation of S phase genes and meristems42, was found to predominantly expressed in S phase cells (Extended Data Fig. 6b).",
+      "3a). We determined that after S7, the FIM and receptacle primordia generate cells that are actively undergoing the cell cycle, while G1/S phase cells transition to receptacle cells, suggesting a mechanism to maintain cell proliferation and support rapid receptacle growth (Fig.",
+      "3a). An analysis using Monocle2 (Extended Data Fig. 3d),",
+      "The FIM also gives rise to the provascular tissue, which differentiates into protoxylem after the S5 stage (Fig.",
+      "Based on these findings, we proposed that, in cucumber, the rapid growth of the receptacle is centred around sink capacity signalling and integration of KNAT2-like1, CRC and ER to regulate cell proliferation, ultimately promoting receptacle development.",
+      "5g,h and Extended Data Fig. 6d,e).",
+      "5a). The cells transitioning between stem cells and differentiated cells are in a highly proliferative state and continue to divide several times before their differentiation41, suggesting that the cells of the rapidly growing receptacle are in this state.",
+      "45) and CA1P phosphatase46 affect carbohydrate accumulation and enhance sink strength (Fig."
+    ],
+    "claim_id": "C30",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "claim_zh": "在花发育轨迹中标注不同cluster上/下调表达基因，发现调控心皮器官决定和单性花表型的转录因子CRC在S4/5后的花托中高表达（图5e）。",
+    "classify_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 274,
+        "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i)."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 215,
+        "text": "after S4/5. CRC also serves as a marker gene for the receptacle (Fig."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 273,
+        "text": "These results indicated that CRC is epistatic to ER and KNAT2-like1, and ER is epistatic to KNAT2-like1."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 275,
+        "text": "Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j)."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 216,
+        "text": "2b)22, and we confirmed its expression in the receptacle during stages S5–S8-4 (Supplementary Fig. 18a)."
+      }
+    ],
+    "review_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 274,
+        "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i)."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 215,
+        "text": "after S4/5. CRC also serves as a marker gene for the receptacle (Fig."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 273,
+        "text": "These results indicated that CRC is epistatic to ER and KNAT2-like1, and ER is epistatic to KNAT2-like1."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 275,
+        "text": "Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j)."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 216,
+        "text": "2b)22, and we confirmed its expression in the receptacle during stages S5–S8-4 (Supplementary Fig. 18a)."
+      },
+      {
+        "rank": 6,
+        "sentence_id": 89,
+        "text": "16i and 17i). Clusters 9 and 10 were characterized as receptacle-early and receptacle-late, based on the specific expression of CsCRABS CLAW (CsCRC), a member of the YABBY TF that is required for female development in cucumber22 (Fig."
+      },
+      {
+        "rank": 7,
+        "sentence_id": 88,
+        "text": "Cluster 8 is located outside of the floral primordia, with high expression of KNOX1 TFs, such as STM-like and KNOTTED-LIKE FROM ARABIDOPSIS THALIANA 2 (KNAT2-like1), which may function to maintain the meristematic activities of stem cells21 (Supplementary Figs."
+      },
+      {
+        "rank": 8,
+        "sentence_id": 90,
+        "text": "2c and Supplementary Fig. 18a)."
+      },
+      {
+        "rank": 9,
+        "sentence_id": 164,
+        "text": "After S5, we observed the largest increase in the bin numbers of receptacle-related clusters (receptacle-early, cluster 9), indicating that 865 a b Basal sepal–abaxial Sepal epidermis Sepal mesophyll Sepal Unknown S1 Sepal mesophyll Unknown G0/G1 phase cells Epidermis Epidermis Trichome-base floral Trichome meristem Thicked epidermis Floral intercalary meristem FIM Floral intercalary meristem-2 Floral intercalary meristem-3 G2/M phase cells S1 G1/S phase cells Receptacle Receptacle primordia Receptacle-early Receptacle-late Provascular Protoxylem Conjunctive Conjunctive primordia Tissue Conjunctive tissue-early Conjunctive tissue-late Petal primordia Petal-early Petal S1 Petal-late Basal sepal-adaxial 1.00 Edge weight Floral primordia carpel 0.75 Placenta FP 0.50 Ovlue (ovary wall) 0.25 Stigma/transmitting tract S1 S2 S3 S4/S5 S6/S7 S8-1/2 S8-3/4 stage c Receptacle primordia Receptacle-early Receptacle-late Conjunctive primordia Conjunctive tissue-early UMAP2 UMAP2 Conjunctive tissue-late Floral intercalary meristem Floral intercalary meristem-2 Floral intercalary meristem-3 UMAP1 UMAP1 d 1.5 Bin50 density 1.0 0.5 0 0 2 4 6 Pesudotime a, A directed acyclic graph showing inferred relationships between cell states across cucumber female floral bud development."
+      },
+      {
+        "rank": 10,
+        "sentence_id": 165,
+        "text": "Each row corresponds to one of the cluster annotations, columns to developmental stages spanning from S1 to S8-4, nodes to cell trajectories and node colours to clusters."
+      }
+    ],
+    "evidences": [
+      {
+        "sentence_id": 274,
+        "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i)."
+      },
+      {
+        "sentence_id": 215,
+        "text": "after S4/5. CRC also serves as a marker gene for the receptacle (Fig."
+      },
+      {
+        "sentence_id": 273,
+        "text": "These results indicated that CRC is epistatic to ER and KNAT2-like1, and ER is epistatic to KNAT2-like1."
+      },
+      {
+        "sentence_id": 275,
+        "text": "Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j)."
+      },
+      {
+        "sentence_id": 216,
+        "text": "2b)22, and we confirmed its expression in the receptacle during stages S5–S8-4 (Supplementary Fig. 18a)."
+      },
+      {
+        "sentence_id": 89,
+        "text": "16i and 17i). Clusters 9 and 10 were characterized as receptacle-early and receptacle-late, based on the specific expression of CsCRABS CLAW (CsCRC), a member of the YABBY TF that is required for female development in cucumber22 (Fig."
+      },
+      {
+        "sentence_id": 88,
+        "text": "Cluster 8 is located outside of the floral primordia, with high expression of KNOX1 TFs, such as STM-like and KNOTTED-LIKE FROM ARABIDOPSIS THALIANA 2 (KNAT2-like1), which may function to maintain the meristematic activities of stem cells21 (Supplementary Figs."
+      },
+      {
+        "sentence_id": 90,
+        "text": "2c and Supplementary Fig. 18a)."
+      },
+      {
+        "sentence_id": 164,
+        "text": "After S5, we observed the largest increase in the bin numbers of receptacle-related clusters (receptacle-early, cluster 9), indicating that 865 a b Basal sepal–abaxial Sepal epidermis Sepal mesophyll Sepal Unknown S1 Sepal mesophyll Unknown G0/G1 phase cells Epidermis Epidermis Trichome-base floral Trichome meristem Thicked epidermis Floral intercalary meristem FIM Floral intercalary meristem-2 Floral intercalary meristem-3 G2/M phase cells S1 G1/S phase cells Receptacle Receptacle primordia Receptacle-early Receptacle-late Provascular Protoxylem Conjunctive Conjunctive primordia Tissue Conjunctive tissue-early Conjunctive tissue-late Petal primordia Petal-early Petal S1 Petal-late Basal sepal-adaxial 1.00 Edge weight Floral primordia carpel 0.75 Placenta FP 0.50 Ovlue (ovary wall) 0.25 Stigma/transmitting tract S1 S2 S3 S4/S5 S6/S7 S8-1/2 S8-3/4 stage c Receptacle primordia Receptacle-early Receptacle-late Conjunctive primordia Conjunctive tissue-early UMAP2 UMAP2 Conjunctive tissue-late Floral intercalary meristem Floral intercalary meristem-2 Floral intercalary meristem-3 UMAP1 UMAP1 d 1.5 Bin50 density 1.0 0.5 0 0 2 4 6 Pesudotime a, A directed acyclic graph showing inferred relationships between cell states across cucumber female floral bud development."
+      },
+      {
+        "sentence_id": 165,
+        "text": "Each row corresponds to one of the cluster annotations, columns to developmental stages spanning from S1 to S8-4, nodes to cell trajectories and node colours to clusters."
+      }
+    ],
+    "paper_sentences": [
+      "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i).",
+      "after S4/5. CRC also serves as a marker gene for the receptacle (Fig.",
+      "These results indicated that CRC is epistatic to ER and KNAT2-like1, and ER is epistatic to KNAT2-like1.",
+      "Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j).",
+      "2b)22, and we confirmed its expression in the receptacle during stages S5–S8-4 (Supplementary Fig. 18a).",
+      "16i and 17i). Clusters 9 and 10 were characterized as receptacle-early and receptacle-late, based on the specific expression of CsCRABS CLAW (CsCRC), a member of the YABBY TF that is required for female development in cucumber22 (Fig.",
+      "Cluster 8 is located outside of the floral primordia, with high expression of KNOX1 TFs, such as STM-like and KNOTTED-LIKE FROM ARABIDOPSIS THALIANA 2 (KNAT2-like1), which may function to maintain the meristematic activities of stem cells21 (Supplementary Figs.",
+      "2c and Supplementary Fig. 18a).",
+      "After S5, we observed the largest increase in the bin numbers of receptacle-related clusters (receptacle-early, cluster 9), indicating that 865 a b Basal sepal–abaxial Sepal epidermis Sepal mesophyll Sepal Unknown S1 Sepal mesophyll Unknown G0/G1 phase cells Epidermis Epidermis Trichome-base floral Trichome meristem Thicked epidermis Floral intercalary meristem FIM Floral intercalary meristem-2 Floral intercalary meristem-3 G2/M phase cells S1 G1/S phase cells Receptacle Receptacle primordia Receptacle-early Receptacle-late Provascular Protoxylem Conjunctive Conjunctive primordia Tissue Conjunctive tissue-early Conjunctive tissue-late Petal primordia Petal-early Petal S1 Petal-late Basal sepal-adaxial 1.00 Edge weight Floral primordia carpel 0.75 Placenta FP 0.50 Ovlue (ovary wall) 0.25 Stigma/transmitting tract S1 S2 S3 S4/S5 S6/S7 S8-1/2 S8-3/4 stage c Receptacle primordia Receptacle-early Receptacle-late Conjunctive primordia Conjunctive tissue-early UMAP2 UMAP2 Conjunctive tissue-late Floral intercalary meristem Floral intercalary meristem-2 Floral intercalary meristem-3 UMAP1 UMAP1 d 1.5 Bin50 density 1.0 0.5 0 0 2 4 6 Pesudotime a, A directed acyclic graph showing inferred relationships between cell states across cucumber female floral bud development.",
+      "Each row corresponds to one of the cluster annotations, columns to developmental stages spanning from S1 to S8-4, nodes to cell trajectories and node colours to clusters."
+    ],
+    "claim_id": "C31",
+    "verdict": "SUPPORTED"
+  }
+]

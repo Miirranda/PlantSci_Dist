@@ -1,0 +1,750 @@
+[
+  {
+    "claim_zh": "而子房下位黄瓜FIM或花托中特异性表达的基因（如STM-like、KNAT2-like1、CRC等），在番茄中表达缺失、表达量少或表达异位（图7c）。",
+    "classify_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 348,
+        "text": "Here, we identified novel genes, STM-like and KNAT2-like1, and new expression patterns that have emerged in the FIM and receptacle, contributing to the evolution of inferior ovaries in cucumber."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 345,
+        "text": "First, a duplicated homologue gene KNAT2-like2 was identified to be specifically expressed in the receptacle as KNAT2-like1, suggesting a gene functional redundancy of KNAT2-like1 (Extended Data produced some female flowers, we hypothesize that inferior ovary formation and sex determination in cucumber may also be regulated by age pathway."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 265,
+        "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 308,
+        "text": "In contrast with the predominant expression of CsCRC in the receptacle of cucumber, there is a lack of expression in the superior ovary mutant,"
+      },
+      {
+        "rank": 5,
+        "sentence_id": 349,
+        "text": "Our findings elucidate molecular mechanisms underlying inferior ovary development and highlight the importance of duplicated TFs in species diversification, adaptive genetic variation and the emergence of novel complex traits."
+      }
+    ],
+    "review_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 348,
+        "text": "Here, we identified novel genes, STM-like and KNAT2-like1, and new expression patterns that have emerged in the FIM and receptacle, contributing to the evolution of inferior ovaries in cucumber."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 345,
+        "text": "First, a duplicated homologue gene KNAT2-like2 was identified to be specifically expressed in the receptacle as KNAT2-like1, suggesting a gene functional redundancy of KNAT2-like1 (Extended Data produced some female flowers, we hypothesize that inferior ovary formation and sex determination in cucumber may also be regulated by age pathway."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 265,
+        "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 308,
+        "text": "In contrast with the predominant expression of CsCRC in the receptacle of cucumber, there is a lack of expression in the superior ovary mutant,"
+      },
+      {
+        "rank": 5,
+        "sentence_id": 349,
+        "text": "Our findings elucidate molecular mechanisms underlying inferior ovary development and highlight the importance of duplicated TFs in species diversification, adaptive genetic variation and the emergence of novel complex traits."
+      },
+      {
+        "rank": 6,
+        "sentence_id": 347,
+        "text": "For example, duplication events involving genes, such as MADS, SEU and YABBY, may have contributed to the evolution of the GRN for fruit development9."
+      },
+      {
+        "rank": 7,
+        "sentence_id": 276,
+        "text": "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC."
+      },
+      {
+        "rank": 8,
+        "sentence_id": 274,
+        "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i)."
+      },
+      {
+        "rank": 9,
+        "sentence_id": 344,
+        "text": "Two possibilities were proposed."
+      },
+      {
+        "rank": 10,
+        "sentence_id": 346,
+        "text": "The origins of novel complex traits are fundamental to evolutionary biology, and it has long been reported that gene duplication is an important source of genetic material for evolutionary novelty."
+      }
+    ],
+    "evidences": [
+      {
+        "sentence_id": 348,
+        "text": "Here, we identified novel genes, STM-like and KNAT2-like1, and new expression patterns that have emerged in the FIM and receptacle, contributing to the evolution of inferior ovaries in cucumber."
+      },
+      {
+        "sentence_id": 345,
+        "text": "First, a duplicated homologue gene KNAT2-like2 was identified to be specifically expressed in the receptacle as KNAT2-like1, suggesting a gene functional redundancy of KNAT2-like1 (Extended Data produced some female flowers, we hypothesize that inferior ovary formation and sex determination in cucumber may also be regulated by age pathway."
+      },
+      {
+        "sentence_id": 265,
+        "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+      },
+      {
+        "sentence_id": 308,
+        "text": "In contrast with the predominant expression of CsCRC in the receptacle of cucumber, there is a lack of expression in the superior ovary mutant,"
+      },
+      {
+        "sentence_id": 349,
+        "text": "Our findings elucidate molecular mechanisms underlying inferior ovary development and highlight the importance of duplicated TFs in species diversification, adaptive genetic variation and the emergence of novel complex traits."
+      },
+      {
+        "sentence_id": 347,
+        "text": "For example, duplication events involving genes, such as MADS, SEU and YABBY, may have contributed to the evolution of the GRN for fruit development9."
+      },
+      {
+        "sentence_id": 276,
+        "text": "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC."
+      },
+      {
+        "sentence_id": 274,
+        "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i)."
+      },
+      {
+        "sentence_id": 344,
+        "text": "Two possibilities were proposed."
+      },
+      {
+        "sentence_id": 346,
+        "text": "The origins of novel complex traits are fundamental to evolutionary biology, and it has long been reported that gene duplication is an important source of genetic material for evolutionary novelty."
+      }
+    ],
+    "paper_sentences": [
+      "Here, we identified novel genes, STM-like and KNAT2-like1, and new expression patterns that have emerged in the FIM and receptacle, contributing to the evolution of inferior ovaries in cucumber.",
+      "First, a duplicated homologue gene KNAT2-like2 was identified to be specifically expressed in the receptacle as KNAT2-like1, suggesting a gene functional redundancy of KNAT2-like1 (Extended Data produced some female flowers, we hypothesize that inferior ovary formation and sex determination in cucumber may also be regulated by age pathway.",
+      "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig.",
+      "In contrast with the predominant expression of CsCRC in the receptacle of cucumber, there is a lack of expression in the superior ovary mutant,",
+      "Our findings elucidate molecular mechanisms underlying inferior ovary development and highlight the importance of duplicated TFs in species diversification, adaptive genetic variation and the emergence of novel complex traits.",
+      "For example, duplication events involving genes, such as MADS, SEU and YABBY, may have contributed to the evolution of the GRN for fruit development9.",
+      "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC.",
+      "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i).",
+      "Two possibilities were proposed.",
+      "The origins of novel complex traits are fundamental to evolutionary biology, and it has long been reported that gene duplication is an important source of genetic material for evolutionary novelty."
+    ],
+    "claim_id": "C47",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "claim_zh": "通过黄瓜与其他几个代表性被子植物KNOX序列构建系统进化树，从而鉴定黄瓜KNOX转录因子，其中CsSTM-like在番茄中不存在直系同源基因（图7d）。",
+    "classify_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 296,
+        "text": "CsSTM-like, which does not have an orthologue in tomato, showed specific expression in the FIM of the cucumber WT and superior ovary mutant (Fig."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 295,
+        "text": "7d, Extended Data Fig. 10 and Supplementary Table 12)."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 297,
+        "text": "7c); KNAT2-like1 exhibited specific and"
+      },
+      {
+        "rank": 4,
+        "sentence_id": 315,
+        "text": "We also confirmed the absence of expression of the other receptacle marker genes, CsERECTA (ER), ACO2 and CsACS2, or of their orthologues, in the superior ovary mutant and tomato (Fig."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 314,
+        "text": "7c), suggesting that a distinct expression pattern has evolved in cucumber."
+      }
+    ],
+    "review_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 296,
+        "text": "CsSTM-like, which does not have an orthologue in tomato, showed specific expression in the FIM of the cucumber WT and superior ovary mutant (Fig."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 295,
+        "text": "7d, Extended Data Fig. 10 and Supplementary Table 12)."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 297,
+        "text": "7c); KNAT2-like1 exhibited specific and"
+      },
+      {
+        "rank": 4,
+        "sentence_id": 315,
+        "text": "We also confirmed the absence of expression of the other receptacle marker genes, CsERECTA (ER), ACO2 and CsACS2, or of their orthologues, in the superior ovary mutant and tomato (Fig."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 314,
+        "text": "7c), suggesting that a distinct expression pattern has evolved in cucumber."
+      },
+      {
+        "rank": 6,
+        "sentence_id": 316,
+        "text": "7c). Based on these findings, we propose that novel genes and new expression patterns were acquired C."
+      },
+      {
+        "rank": 7,
+        "sentence_id": 309,
+        "text": "870 a b C. sativus G ♂♀ 0 Epidermis 1 Receptacle 2 Sepal mesophyii (basal) 3 Sepal mesophyil 4 Stamen 5 Carpel 6 Sepal mesophyii (upper) Bright field Cell type c Cs G Sl Cs G Sl ♂♀ ♂♀ ♂♀ ♂♀ ♀ ♀ Max Expression Min CsSTM-like CsSTM-like SlSTM CsKNAT2-like1 CsKNAT2-like1 SlKN4 Cs G Sl Cs G Sl ♂♀ ♂♀ ♂♀ ♂♀ ♀ ♀ CsCRC CsCRC SlCRC CsACO2 CsACO2 SlACO2 ♂♀ ♂♀ Cs G Sl Cs ♂♀ G Sl ♂♀ ♀ ♀ CsACS2 CsACS2 SlACS2 CsER CsER SlER1 cucumber, superior ovary mutant and tomato."
+      },
+      {
+        "rank": 8,
+        "sentence_id": 310,
+        "text": "a, Left: a cryosection of tomato floral bud at S8."
+      },
+      {
+        "rank": 9,
+        "sentence_id": 306,
+        "text": "7c). Although there is an orthologue of CsKNAT2-like1 in tomato (SlKN4), in comparison, SlKN4 showed little expression in the floral receptacle (Fig."
+      },
+      {
+        "rank": 10,
+        "sentence_id": 307,
+        "text": "7c). In Arabidopsis thaliana and tomato, CRC is a key gene in carpel development, and its expression is reported to be regulated by AG22."
+      }
+    ],
+    "evidences": [
+      {
+        "sentence_id": 296,
+        "text": "CsSTM-like, which does not have an orthologue in tomato, showed specific expression in the FIM of the cucumber WT and superior ovary mutant (Fig."
+      },
+      {
+        "sentence_id": 295,
+        "text": "7d, Extended Data Fig. 10 and Supplementary Table 12)."
+      },
+      {
+        "sentence_id": 297,
+        "text": "7c); KNAT2-like1 exhibited specific and"
+      },
+      {
+        "sentence_id": 315,
+        "text": "We also confirmed the absence of expression of the other receptacle marker genes, CsERECTA (ER), ACO2 and CsACS2, or of their orthologues, in the superior ovary mutant and tomato (Fig."
+      },
+      {
+        "sentence_id": 314,
+        "text": "7c), suggesting that a distinct expression pattern has evolved in cucumber."
+      },
+      {
+        "sentence_id": 316,
+        "text": "7c). Based on these findings, we propose that novel genes and new expression patterns were acquired C."
+      },
+      {
+        "sentence_id": 309,
+        "text": "870 a b C. sativus G ♂♀ 0 Epidermis 1 Receptacle 2 Sepal mesophyii (basal) 3 Sepal mesophyil 4 Stamen 5 Carpel 6 Sepal mesophyii (upper) Bright field Cell type c Cs G Sl Cs G Sl ♂♀ ♂♀ ♂♀ ♂♀ ♀ ♀ Max Expression Min CsSTM-like CsSTM-like SlSTM CsKNAT2-like1 CsKNAT2-like1 SlKN4 Cs G Sl Cs G Sl ♂♀ ♂♀ ♂♀ ♂♀ ♀ ♀ CsCRC CsCRC SlCRC CsACO2 CsACO2 SlACO2 ♂♀ ♂♀ Cs G Sl Cs ♂♀ G Sl ♂♀ ♀ ♀ CsACS2 CsACS2 SlACS2 CsER CsER SlER1 cucumber, superior ovary mutant and tomato."
+      },
+      {
+        "sentence_id": 310,
+        "text": "a, Left: a cryosection of tomato floral bud at S8."
+      },
+      {
+        "sentence_id": 306,
+        "text": "7c). Although there is an orthologue of CsKNAT2-like1 in tomato (SlKN4), in comparison, SlKN4 showed little expression in the floral receptacle (Fig."
+      },
+      {
+        "sentence_id": 307,
+        "text": "7c). In Arabidopsis thaliana and tomato, CRC is a key gene in carpel development, and its expression is reported to be regulated by AG22."
+      }
+    ],
+    "paper_sentences": [
+      "CsSTM-like, which does not have an orthologue in tomato, showed specific expression in the FIM of the cucumber WT and superior ovary mutant (Fig.",
+      "7d, Extended Data Fig. 10 and Supplementary Table 12).",
+      "7c); KNAT2-like1 exhibited specific and",
+      "We also confirmed the absence of expression of the other receptacle marker genes, CsERECTA (ER), ACO2 and CsACS2, or of their orthologues, in the superior ovary mutant and tomato (Fig.",
+      "7c), suggesting that a distinct expression pattern has evolved in cucumber.",
+      "7c). Based on these findings, we propose that novel genes and new expression patterns were acquired C.",
+      "870 a b C. sativus G ♂♀ 0 Epidermis 1 Receptacle 2 Sepal mesophyii (basal) 3 Sepal mesophyil 4 Stamen 5 Carpel 6 Sepal mesophyii (upper) Bright field Cell type c Cs G Sl Cs G Sl ♂♀ ♂♀ ♂♀ ♂♀ ♀ ♀ Max Expression Min CsSTM-like CsSTM-like SlSTM CsKNAT2-like1 CsKNAT2-like1 SlKN4 Cs G Sl Cs G Sl ♂♀ ♂♀ ♂♀ ♂♀ ♀ ♀ CsCRC CsCRC SlCRC CsACO2 CsACO2 SlACO2 ♂♀ ♂♀ Cs G Sl Cs ♂♀ G Sl ♂♀ ♀ ♀ CsACS2 CsACS2 SlACS2 CsER CsER SlER1 cucumber, superior ovary mutant and tomato.",
+      "a, Left: a cryosection of tomato floral bud at S8.",
+      "7c). Although there is an orthologue of CsKNAT2-like1 in tomato (SlKN4), in comparison, SlKN4 showed little expression in the floral receptacle (Fig.",
+      "7c). In Arabidopsis thaliana and tomato, CRC is a key gene in carpel development, and its expression is reported to be regulated by AG22."
+    ],
+    "claim_id": "C48",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "claim_zh": "以上结果说明，FIM中新基因的出现和一些基因的新表达模式是黄瓜进化出子房下位这一性状的原因。",
+    "classify_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 348,
+        "text": "Here, we identified novel genes, STM-like and KNAT2-like1, and new expression patterns that have emerged in the FIM and receptacle, contributing to the evolution of inferior ovaries in cucumber."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 43,
+        "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 349,
+        "text": "Our findings elucidate molecular mechanisms underlying inferior ovary development and highlight the importance of duplicated TFs in species diversification, adaptive genetic variation and the emergence of novel complex traits."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 347,
+        "text": "For example, duplication events involving genes, such as MADS, SEU and YABBY, may have contributed to the evolution of the GRN for fruit development9."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 327,
+        "text": "in the FIM and receptacle, leading to the evolutionary innovation of an inferior ovary in the cucurbits."
+      }
+    ],
+    "review_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 348,
+        "text": "Here, we identified novel genes, STM-like and KNAT2-like1, and new expression patterns that have emerged in the FIM and receptacle, contributing to the evolution of inferior ovaries in cucumber."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 43,
+        "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 349,
+        "text": "Our findings elucidate molecular mechanisms underlying inferior ovary development and highlight the importance of duplicated TFs in species diversification, adaptive genetic variation and the emergence of novel complex traits."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 347,
+        "text": "For example, duplication events involving genes, such as MADS, SEU and YABBY, may have contributed to the evolution of the GRN for fruit development9."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 327,
+        "text": "in the FIM and receptacle, leading to the evolutionary innovation of an inferior ovary in the cucurbits."
+      },
+      {
+        "rank": 6,
+        "sentence_id": 60,
+        "text": "To dissect the underlying gene expression network driving the development of the inferior ovary of cucumber, we sampled floral buds at various stages, including S1–S8, and ovaries at 0 days post anthesis (DPA) for spatial transcriptomic analysis."
+      },
+      {
+        "rank": 7,
+        "sentence_id": 42,
+        "text": "These data enabled us to identify distinct cell types involved in female flower and inferior ovary development."
+      },
+      {
+        "rank": 8,
+        "sentence_id": 44,
+        "text": "In addition, we dissected the gene regulatory networks (GRNs) responsible for the rapid growth of the receptacle and identified key genes involved in these processes, including a duplicated class I KNOTTED-like homeobox (KNOX) transcription factor (TF), the knockout of which results in bisexual flowers with superior ovaries similar to those of tomato (Solanum lycopersicum L.)."
+      },
+      {
+        "rank": 9,
+        "sentence_id": 285,
+        "text": "We further analysed the expression patterns of important genes in inferior ovary development, such as KNOX1 TF genes, CRC, ACO2 and ACS2, which show specific expression in the FIM, receptacle or conjunctive"
+      },
+      {
+        "rank": 10,
+        "sentence_id": 326,
+        "text": "A more comprehensive phylogenetic tree including additional species is provided in Extended Data Fig. 10."
+      }
+    ],
+    "evidences": [
+      {
+        "sentence_id": 348,
+        "text": "Here, we identified novel genes, STM-like and KNAT2-like1, and new expression patterns that have emerged in the FIM and receptacle, contributing to the evolution of inferior ovaries in cucumber."
+      },
+      {
+        "sentence_id": 43,
+        "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation."
+      },
+      {
+        "sentence_id": 349,
+        "text": "Our findings elucidate molecular mechanisms underlying inferior ovary development and highlight the importance of duplicated TFs in species diversification, adaptive genetic variation and the emergence of novel complex traits."
+      },
+      {
+        "sentence_id": 347,
+        "text": "For example, duplication events involving genes, such as MADS, SEU and YABBY, may have contributed to the evolution of the GRN for fruit development9."
+      },
+      {
+        "sentence_id": 327,
+        "text": "in the FIM and receptacle, leading to the evolutionary innovation of an inferior ovary in the cucurbits."
+      },
+      {
+        "sentence_id": 60,
+        "text": "To dissect the underlying gene expression network driving the development of the inferior ovary of cucumber, we sampled floral buds at various stages, including S1–S8, and ovaries at 0 days post anthesis (DPA) for spatial transcriptomic analysis."
+      },
+      {
+        "sentence_id": 42,
+        "text": "These data enabled us to identify distinct cell types involved in female flower and inferior ovary development."
+      },
+      {
+        "sentence_id": 44,
+        "text": "In addition, we dissected the gene regulatory networks (GRNs) responsible for the rapid growth of the receptacle and identified key genes involved in these processes, including a duplicated class I KNOTTED-like homeobox (KNOX) transcription factor (TF), the knockout of which results in bisexual flowers with superior ovaries similar to those of tomato (Solanum lycopersicum L.)."
+      },
+      {
+        "sentence_id": 285,
+        "text": "We further analysed the expression patterns of important genes in inferior ovary development, such as KNOX1 TF genes, CRC, ACO2 and ACS2, which show specific expression in the FIM, receptacle or conjunctive"
+      },
+      {
+        "sentence_id": 326,
+        "text": "A more comprehensive phylogenetic tree including additional species is provided in Extended Data Fig. 10."
+      }
+    ],
+    "paper_sentences": [
+      "Here, we identified novel genes, STM-like and KNAT2-like1, and new expression patterns that have emerged in the FIM and receptacle, contributing to the evolution of inferior ovaries in cucumber.",
+      "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation.",
+      "Our findings elucidate molecular mechanisms underlying inferior ovary development and highlight the importance of duplicated TFs in species diversification, adaptive genetic variation and the emergence of novel complex traits.",
+      "For example, duplication events involving genes, such as MADS, SEU and YABBY, may have contributed to the evolution of the GRN for fruit development9.",
+      "in the FIM and receptacle, leading to the evolutionary innovation of an inferior ovary in the cucurbits.",
+      "To dissect the underlying gene expression network driving the development of the inferior ovary of cucumber, we sampled floral buds at various stages, including S1–S8, and ovaries at 0 days post anthesis (DPA) for spatial transcriptomic analysis.",
+      "These data enabled us to identify distinct cell types involved in female flower and inferior ovary development.",
+      "In addition, we dissected the gene regulatory networks (GRNs) responsible for the rapid growth of the receptacle and identified key genes involved in these processes, including a duplicated class I KNOTTED-like homeobox (KNOX) transcription factor (TF), the knockout of which results in bisexual flowers with superior ovaries similar to those of tomato (Solanum lycopersicum L.).",
+      "We further analysed the expression patterns of important genes in inferior ovary development, such as KNOX1 TF genes, CRC, ACO2 and ACS2, which show specific expression in the FIM, receptacle or conjunctive",
+      "A more comprehensive phylogenetic tree including additional species is provided in Extended Data Fig. 10."
+    ],
+    "claim_id": "C49",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "claim_zh": "本研究通过空间转录组分析和细胞谱系重建，揭示了黄瓜下位子房的形成依赖于花托快速生长，这一过程由花基部分生组织（FIM）驱动。",
+    "classify_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 43,
+        "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 3,
+        "text": "Comparative spatial transcriptome mapping and cell lineage reconstructions in developing floral buds of cucumber and tomato, which have inferior and superior ovaries, respectively, revealed that inferior ovaries develop from accelerated receptacle growth resulting from the continuous activity of meristematic stems cells at the base of the cucumber floral organs."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 59,
+        "text": "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 56,
+        "text": "1b,c). With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 335,
+        "text": "Accordingly, receptacle development and sex determination are closely linked in cucumber."
+      }
+    ],
+    "review_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 43,
+        "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 3,
+        "text": "Comparative spatial transcriptome mapping and cell lineage reconstructions in developing floral buds of cucumber and tomato, which have inferior and superior ovaries, respectively, revealed that inferior ovaries develop from accelerated receptacle growth resulting from the continuous activity of meristematic stems cells at the base of the cucumber floral organs."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 59,
+        "text": "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 56,
+        "text": "1b,c). With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 335,
+        "text": "Accordingly, receptacle development and sex determination are closely linked in cucumber."
+      },
+      {
+        "rank": 6,
+        "sentence_id": 32,
+        "text": "Accordingly, the genetic and developmental mechanisms underlying inferior ovary formation have economic, as well as developmental importance."
+      },
+      {
+        "rank": 7,
+        "sentence_id": 265,
+        "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+      },
+      {
+        "rank": 8,
+        "sentence_id": 244,
+        "text": "In female flowers, the receptacle and carpel continued to grow after S5, and the receptacle grew rapidly and wrapped around the carpel to form the inferior ovary (Extended Data Fig. 7b,d)."
+      },
+      {
+        "rank": 9,
+        "sentence_id": 329,
+        "text": "In this current study, we generated a comprehensive collection of spatially resolved transcriptomes and reconstructed the cellular territories and cell lineages for the continuously developing floral organs of cucumber."
+      },
+      {
+        "rank": 10,
+        "sentence_id": 60,
+        "text": "To dissect the underlying gene expression network driving the development of the inferior ovary of cucumber, we sampled floral buds at various stages, including S1–S8, and ovaries at 0 days post anthesis (DPA) for spatial transcriptomic analysis."
+      }
+    ],
+    "evidences": [
+      {
+        "sentence_id": 43,
+        "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation."
+      },
+      {
+        "sentence_id": 3,
+        "text": "Comparative spatial transcriptome mapping and cell lineage reconstructions in developing floral buds of cucumber and tomato, which have inferior and superior ovaries, respectively, revealed that inferior ovaries develop from accelerated receptacle growth resulting from the continuous activity of meristematic stems cells at the base of the cucumber floral organs."
+      },
+      {
+        "sentence_id": 59,
+        "text": "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel."
+      },
+      {
+        "sentence_id": 56,
+        "text": "1b,c). With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig."
+      },
+      {
+        "sentence_id": 335,
+        "text": "Accordingly, receptacle development and sex determination are closely linked in cucumber."
+      },
+      {
+        "sentence_id": 32,
+        "text": "Accordingly, the genetic and developmental mechanisms underlying inferior ovary formation have economic, as well as developmental importance."
+      },
+      {
+        "sentence_id": 265,
+        "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+      },
+      {
+        "sentence_id": 244,
+        "text": "In female flowers, the receptacle and carpel continued to grow after S5, and the receptacle grew rapidly and wrapped around the carpel to form the inferior ovary (Extended Data Fig. 7b,d)."
+      },
+      {
+        "sentence_id": 329,
+        "text": "In this current study, we generated a comprehensive collection of spatially resolved transcriptomes and reconstructed the cellular territories and cell lineages for the continuously developing floral organs of cucumber."
+      },
+      {
+        "sentence_id": 60,
+        "text": "To dissect the underlying gene expression network driving the development of the inferior ovary of cucumber, we sampled floral buds at various stages, including S1–S8, and ovaries at 0 days post anthesis (DPA) for spatial transcriptomic analysis."
+      }
+    ],
+    "paper_sentences": [
+      "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation.",
+      "Comparative spatial transcriptome mapping and cell lineage reconstructions in developing floral buds of cucumber and tomato, which have inferior and superior ovaries, respectively, revealed that inferior ovaries develop from accelerated receptacle growth resulting from the continuous activity of meristematic stems cells at the base of the cucumber floral organs.",
+      "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel.",
+      "1b,c). With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig.",
+      "Accordingly, receptacle development and sex determination are closely linked in cucumber.",
+      "Accordingly, the genetic and developmental mechanisms underlying inferior ovary formation have economic, as well as developmental importance.",
+      "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig.",
+      "In female flowers, the receptacle and carpel continued to grow after S5, and the receptacle grew rapidly and wrapped around the carpel to form the inferior ovary (Extended Data Fig. 7b,d).",
+      "In this current study, we generated a comprehensive collection of spatially resolved transcriptomes and reconstructed the cellular territories and cell lineages for the continuously developing floral organs of cucumber.",
+      "To dissect the underlying gene expression network driving the development of the inferior ovary of cucumber, we sampled floral buds at various stages, including S1–S8, and ovaries at 0 days post anthesis (DPA) for spatial transcriptomic analysis."
+    ],
+    "claim_id": "C50",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "claim_zh": "研究发现，黄瓜中一个花托特异表达的KNOX1转录因子（KNAT2-like1）在调控花托生长和子房位置中起关键作用。",
+    "classify_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 266,
+        "text": "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 274,
+        "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i)."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 345,
+        "text": "First, a duplicated homologue gene KNAT2-like2 was identified to be specifically expressed in the receptacle as KNAT2-like1, suggesting a gene functional redundancy of KNAT2-like1 (Extended Data produced some female flowers, we hypothesize that inferior ovary formation and sex determination in cucumber may also be regulated by age pathway."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 342,
+        "text": "Since 60% of the normal female flowers transformed into ‘superior ovary flowers’, and only some female flowers were present at the lower nodes, we determined that KNAT2-like1 is critical for receptacle development and inferior ovary formation."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 259,
+        "text": "6h). These results indicate that the expression activity of KNAT2-like1 is associated with receptacle development."
+      }
+    ],
+    "review_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 266,
+        "text": "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 274,
+        "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i)."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 345,
+        "text": "First, a duplicated homologue gene KNAT2-like2 was identified to be specifically expressed in the receptacle as KNAT2-like1, suggesting a gene functional redundancy of KNAT2-like1 (Extended Data produced some female flowers, we hypothesize that inferior ovary formation and sex determination in cucumber may also be regulated by age pathway."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 342,
+        "text": "Since 60% of the normal female flowers transformed into ‘superior ovary flowers’, and only some female flowers were present at the lower nodes, we determined that KNAT2-like1 is critical for receptacle development and inferior ovary formation."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 259,
+        "text": "6h). These results indicate that the expression activity of KNAT2-like1 is associated with receptacle development."
+      },
+      {
+        "rank": 6,
+        "sentence_id": 233,
+        "text": "Based on these findings, we proposed that, in cucumber, the rapid growth of the receptacle is centred around sink capacity signalling and integration of KNAT2-like1, CRC and ER to regulate cell proliferation, ultimately promoting receptacle development."
+      },
+      {
+        "rank": 7,
+        "sentence_id": 265,
+        "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+      },
+      {
+        "rank": 8,
+        "sentence_id": 278,
+        "text": "To investigate the specificity of cucumber receptacle development, floral buds of superior ovary mutants (knat2-like1) and tomato at S8 were collected to generate spatial transcriptomic data for comparative analysis (Supplementary Table 1)."
+      },
+      {
+        "rank": 9,
+        "sentence_id": 257,
+        "text": "We found the specific expression of KNAT2-like1 in the expanding receptacle of female flower buds (Fig."
+      },
+      {
+        "rank": 10,
+        "sentence_id": 297,
+        "text": "7c); KNAT2-like1 exhibited specific and"
+      }
+    ],
+    "evidences": [
+      {
+        "sentence_id": 266,
+        "text": "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning."
+      },
+      {
+        "sentence_id": 274,
+        "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i)."
+      },
+      {
+        "sentence_id": 345,
+        "text": "First, a duplicated homologue gene KNAT2-like2 was identified to be specifically expressed in the receptacle as KNAT2-like1, suggesting a gene functional redundancy of KNAT2-like1 (Extended Data produced some female flowers, we hypothesize that inferior ovary formation and sex determination in cucumber may also be regulated by age pathway."
+      },
+      {
+        "sentence_id": 342,
+        "text": "Since 60% of the normal female flowers transformed into ‘superior ovary flowers’, and only some female flowers were present at the lower nodes, we determined that KNAT2-like1 is critical for receptacle development and inferior ovary formation."
+      },
+      {
+        "sentence_id": 259,
+        "text": "6h). These results indicate that the expression activity of KNAT2-like1 is associated with receptacle development."
+      },
+      {
+        "sentence_id": 233,
+        "text": "Based on these findings, we proposed that, in cucumber, the rapid growth of the receptacle is centred around sink capacity signalling and integration of KNAT2-like1, CRC and ER to regulate cell proliferation, ultimately promoting receptacle development."
+      },
+      {
+        "sentence_id": 265,
+        "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+      },
+      {
+        "sentence_id": 278,
+        "text": "To investigate the specificity of cucumber receptacle development, floral buds of superior ovary mutants (knat2-like1) and tomato at S8 were collected to generate spatial transcriptomic data for comparative analysis (Supplementary Table 1)."
+      },
+      {
+        "sentence_id": 257,
+        "text": "We found the specific expression of KNAT2-like1 in the expanding receptacle of female flower buds (Fig."
+      },
+      {
+        "sentence_id": 297,
+        "text": "7c); KNAT2-like1 exhibited specific and"
+      }
+    ],
+    "paper_sentences": [
+      "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning.",
+      "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i).",
+      "First, a duplicated homologue gene KNAT2-like2 was identified to be specifically expressed in the receptacle as KNAT2-like1, suggesting a gene functional redundancy of KNAT2-like1 (Extended Data produced some female flowers, we hypothesize that inferior ovary formation and sex determination in cucumber may also be regulated by age pathway.",
+      "Since 60% of the normal female flowers transformed into ‘superior ovary flowers’, and only some female flowers were present at the lower nodes, we determined that KNAT2-like1 is critical for receptacle development and inferior ovary formation.",
+      "6h). These results indicate that the expression activity of KNAT2-like1 is associated with receptacle development.",
+      "Based on these findings, we proposed that, in cucumber, the rapid growth of the receptacle is centred around sink capacity signalling and integration of KNAT2-like1, CRC and ER to regulate cell proliferation, ultimately promoting receptacle development.",
+      "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig.",
+      "To investigate the specificity of cucumber receptacle development, floral buds of superior ovary mutants (knat2-like1) and tomato at S8 were collected to generate spatial transcriptomic data for comparative analysis (Supplementary Table 1).",
+      "We found the specific expression of KNAT2-like1 in the expanding receptacle of female flower buds (Fig.",
+      "7c); KNAT2-like1 exhibited specific and"
+    ],
+    "claim_id": "C51",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "claim_zh": "敲除KNAT2-like1，黄瓜花托生长受阻，导致下位子房转变为类似番茄的上位子房，同时部分雌花转变为两性花，表明KNAT2-like1不仅调控子房位置，还参与性别决定。",
+    "classify_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 333,
+        "text": "1a). The knockout of KNAT2-like1 resulted in the production of stamens and the development of a superior ovary due to the disrupted formation of the floral receptacle."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 264,
+        "text": "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 306,
+        "text": "7c). Although there is an orthologue of CsKNAT2-like1 in tomato (SlKN4), in comparison, SlKN4 showed little expression in the floral receptacle (Fig."
+      }
+    ],
+    "review_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 333,
+        "text": "1a). The knockout of KNAT2-like1 resulted in the production of stamens and the development of a superior ovary due to the disrupted formation of the floral receptacle."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 264,
+        "text": "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 306,
+        "text": "7c). Although there is an orthologue of CsKNAT2-like1 in tomato (SlKN4), in comparison, SlKN4 showed little expression in the floral receptacle (Fig."
+      }
+    ],
+    "evidences": [
+      {
+        "sentence_id": 333,
+        "text": "1a). The knockout of KNAT2-like1 resulted in the production of stamens and the development of a superior ovary due to the disrupted formation of the floral receptacle."
+      },
+      {
+        "sentence_id": 264,
+        "text": "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary."
+      },
+      {
+        "sentence_id": 306,
+        "text": "7c). Although there is an orthologue of CsKNAT2-like1 in tomato (SlKN4), in comparison, SlKN4 showed little expression in the floral receptacle (Fig."
+      }
+    ],
+    "paper_sentences": [
+      "1a). The knockout of KNAT2-like1 resulted in the production of stamens and the development of a superior ovary due to the disrupted formation of the floral receptacle.",
+      "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary.",
+      "7c). Although there is an orthologue of CsKNAT2-like1 in tomato (SlKN4), in comparison, SlKN4 showed little expression in the floral receptacle (Fig."
+    ],
+    "claim_id": "C52",
+    "verdict": "SUPPORTED"
+  }
+]

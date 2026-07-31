@@ -1,0 +1,138 @@
+{
+  "claim_zh": "此外，k-2果实胎座结构与黄瓜典型结构相反（图6g），这是由于野生型花托心皮近轴面融合，使内外侧模式发生变化，从而导致子房下位花性状（图6i）。",
+  "classify_evidences": [
+    {
+      "rank": 1,
+      "sentence_id": 265,
+      "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+    },
+    {
+      "rank": 2,
+      "sentence_id": 260,
+      "text": "In WT cucumber, the inferior ovary has a typical placenta, where the medial region is the abaxial side, and the lateral region is adaxial (Fig."
+    },
+    {
+      "rank": 3,
+      "sentence_id": 266,
+      "text": "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning."
+    },
+    {
+      "rank": 4,
+      "sentence_id": 264,
+      "text": "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary."
+    },
+    {
+      "rank": 5,
+      "sentence_id": 261,
+      "text": "6g and Extended Data Fig. 7h)17."
+    }
+  ],
+  "review_evidences": [
+    {
+      "rank": 1,
+      "sentence_id": 265,
+      "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+    },
+    {
+      "rank": 2,
+      "sentence_id": 260,
+      "text": "In WT cucumber, the inferior ovary has a typical placenta, where the medial region is the abaxial side, and the lateral region is adaxial (Fig."
+    },
+    {
+      "rank": 3,
+      "sentence_id": 266,
+      "text": "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning."
+    },
+    {
+      "rank": 4,
+      "sentence_id": 264,
+      "text": "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary."
+    },
+    {
+      "rank": 5,
+      "sentence_id": 261,
+      "text": "6g and Extended Data Fig. 7h)17."
+    },
+    {
+      "rank": 6,
+      "sentence_id": 59,
+      "text": "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel."
+    },
+    {
+      "rank": 7,
+      "sentence_id": 308,
+      "text": "In contrast with the predominant expression of CsCRC in the receptacle of cucumber, there is a lack of expression in the superior ovary mutant,"
+    },
+    {
+      "rank": 8,
+      "sentence_id": 307,
+      "text": "7c). In Arabidopsis thaliana and tomato, CRC is a key gene in carpel development, and its expression is reported to be regulated by AG22."
+    },
+    {
+      "rank": 9,
+      "sentence_id": 298,
+      "text": "e k-2 G ♂♀ WT ♂ ♀ Male_rate Female_rate Superior_rate S5 S7 k-2 C-1 C-2 St St S8 Ca Ca Ov Ov S11 0 DPA S12 k-1 G ♂♀ Sepal Petal Stamen Carpel Nectary S12 Calyx tube 7 DPA 8 DPA 8 DPA Receptacle Ab Ab FIM Ad -1 DPA Ov i Ab Receptacle Carpel Ad Superior ovary S9 Developmental stages S7 Acquisition of KNAT2-like1 activity Inferior ovary k-2 G ♂♀ Developmental stages abnormal superior ovary flowers, respectively."
+    },
+    {
+      "rank": 10,
+      "sentence_id": 300,
+      "text": "g, Longitudinal and transect-sectional images of the inferior ovaries and superior ovaries from the WT (left) and k-2 mutant (right), respectively."
+    }
+  ],
+  "evidences": [
+    {
+      "sentence_id": 265,
+      "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+    },
+    {
+      "sentence_id": 260,
+      "text": "In WT cucumber, the inferior ovary has a typical placenta, where the medial region is the abaxial side, and the lateral region is adaxial (Fig."
+    },
+    {
+      "sentence_id": 266,
+      "text": "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning."
+    },
+    {
+      "sentence_id": 264,
+      "text": "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary."
+    },
+    {
+      "sentence_id": 261,
+      "text": "6g and Extended Data Fig. 7h)17."
+    },
+    {
+      "sentence_id": 59,
+      "text": "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel."
+    },
+    {
+      "sentence_id": 308,
+      "text": "In contrast with the predominant expression of CsCRC in the receptacle of cucumber, there is a lack of expression in the superior ovary mutant,"
+    },
+    {
+      "sentence_id": 307,
+      "text": "7c). In Arabidopsis thaliana and tomato, CRC is a key gene in carpel development, and its expression is reported to be regulated by AG22."
+    },
+    {
+      "sentence_id": 298,
+      "text": "e k-2 G ♂♀ WT ♂ ♀ Male_rate Female_rate Superior_rate S5 S7 k-2 C-1 C-2 St St S8 Ca Ca Ov Ov S11 0 DPA S12 k-1 G ♂♀ Sepal Petal Stamen Carpel Nectary S12 Calyx tube 7 DPA 8 DPA 8 DPA Receptacle Ab Ab FIM Ad -1 DPA Ov i Ab Receptacle Carpel Ad Superior ovary S9 Developmental stages S7 Acquisition of KNAT2-like1 activity Inferior ovary k-2 G ♂♀ Developmental stages abnormal superior ovary flowers, respectively."
+    },
+    {
+      "sentence_id": 300,
+      "text": "g, Longitudinal and transect-sectional images of the inferior ovaries and superior ovaries from the WT (left) and k-2 mutant (right), respectively."
+    }
+  ],
+  "paper_sentences": [
+    "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig.",
+    "In WT cucumber, the inferior ovary has a typical placenta, where the medial region is the abaxial side, and the lateral region is adaxial (Fig.",
+    "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning.",
+    "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary.",
+    "6g and Extended Data Fig. 7h)17.",
+    "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel.",
+    "In contrast with the predominant expression of CsCRC in the receptacle of cucumber, there is a lack of expression in the superior ovary mutant,",
+    "7c). In Arabidopsis thaliana and tomato, CRC is a key gene in carpel development, and its expression is reported to be regulated by AG22.",
+    "e k-2 G ♂♀ WT ♂ ♀ Male_rate Female_rate Superior_rate S5 S7 k-2 C-1 C-2 St St S8 Ca Ca Ov Ov S11 0 DPA S12 k-1 G ♂♀ Sepal Petal Stamen Carpel Nectary S12 Calyx tube 7 DPA 8 DPA 8 DPA Receptacle Ab Ab FIM Ad -1 DPA Ov i Ab Receptacle Carpel Ad Superior ovary S9 Developmental stages S7 Acquisition of KNAT2-like1 activity Inferior ovary k-2 G ♂♀ Developmental stages abnormal superior ovary flowers, respectively.",
+    "g, Longitudinal and transect-sectional images of the inferior ovaries and superior ovaries from the WT (left) and k-2 mutant (right), respectively."
+  ],
+  "claim_id": "C40",
+  "verdict": "SUPPORTED"
+}

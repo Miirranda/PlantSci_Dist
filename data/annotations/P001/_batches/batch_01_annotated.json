@@ -1,0 +1,390 @@
+{
+  "samples": [
+    {
+      "sample_id": "P001-A001-C11",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "说明黄瓜子房下位形成的必要条件为：（1）花分生组织膨大，改变花器官轮相对位置；",
+      "system_retrieval": {
+        "classify_evidences": [
+          {"rank": 1, "sentence_id": 59, "text": "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel."},
+          {"rank": 2, "sentence_id": 43, "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation."},
+          {"rank": 3, "sentence_id": 54, "text": "After initiation, the cucumber floral meristem enlarges from the perimeter and becomes concave (Fig."},
+          {"rank": 4, "sentence_id": 42, "text": "These data enabled us to identify distinct cell types involved in female flower and inferior ovary development."},
+          {"rank": 5, "sentence_id": 44, "text": "In addition, we dissected the gene regulatory networks (GRNs) responsible for the rapid growth of the receptacle and identified key genes involved in these processes, including a duplicated class I KNOTTED-like homeobox (KNOX) transcription factor (TF), the knockout of which results in bisexual flowers with superior ovaries similar to those of tomato (Solanum lycopersicum L.)."}
+        ],
+        "review_evidences": [
+          {"rank": 1, "sentence_id": 59, "text": "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel."},
+          {"rank": 2, "sentence_id": 43, "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation."},
+          {"rank": 3, "sentence_id": 54, "text": "After initiation, the cucumber floral meristem enlarges from the perimeter and becomes concave (Fig."},
+          {"rank": 4, "sentence_id": 42, "text": "These data enabled us to identify distinct cell types involved in female flower and inferior ovary development."},
+          {"rank": 5, "sentence_id": 44, "text": "In addition, we dissected the gene regulatory networks (GRNs) responsible for the rapid growth of the receptacle and identified key genes involved in these processes, including a duplicated class I KNOTTED-like homeobox (KNOX) transcription factor (TF), the knockout of which results in bisexual flowers with superior ovaries similar to those of tomato (Solanum lycopersicum L.)."},
+          {"rank": 6, "sentence_id": 265, "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."},
+          {"rank": 7, "sentence_id": 55, "text": "1b), then sepal, petal, stamen and carpel primordia are initiated sequentially on the inner regions of this 'enlarged floral meristem' (EFM) (Fig."},
+          {"rank": 8, "sentence_id": 53, "text": "Based on previous studies, we defined the different stages of floral bud development in cucumber and tomato10,11 (Supplementary Table 1) and examined the morphology of female floral buds of cucumber from floral meristem initiation to carpel fusion completion."},
+          {"rank": 9, "sentence_id": 151, "text": "The expanded expression pattern of these two genes at the apex region offered support for the notion that the floral meristem enlarges during development in cucumber (Fig."},
+          {"rank": 10, "sentence_id": 2, "text": "However, the developmental mechanisms underlying inferior ovary formation remain largely unknown."}
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {"sentence_id": 59, "text": "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel."},
+          {"sentence_id": 54, "text": "After initiation, the cucumber floral meristem enlarges from the perimeter and becomes concave (Fig."},
+          {"sentence_id": 151, "text": "The expanded expression pattern of these two genes at the apex region offered support for the notion that the floral meristem enlarges during development in cucumber (Fig."}
+        ],
+        "sentence_ids": [59, 54, 151],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "primary_type": "accurate",
+        "secondary_types": [],
+        "is_accurate": true,
+        "severity": "none"
+      },
+      "analysis": {
+        "evidence_judgement": "Claim states that one necessary condition for inferior ovary formation is (1) enlargement of the floral meristem to change the relative position of floral organ whorls. Sentence 59 directly states this as condition (1): 'enlargement of the floral meristem to change the relative position of the floral whorls'. Sentence 54 describes the floral meristem enlarging and becoming concave, providing morphological detail. Sentence 151 provides gene expression evidence supporting floral meristem enlargement. The claim is a faithful Chinese translation of the paper's stated necessary condition.",
+        "classification_reason": "The claim accurately reproduces condition (1) from the paper's three necessary conditions. The Chinese phrasing '花分生组织膨大，改变花器官轮相对位置' is a precise translation of 'enlargement of the floral meristem to change the relative position of the floral whorls'. No distortion, amplification, or addition is present. This is a direct, accurate claim.",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "Classify top-5 captured the key evidence (sentence 59 directly matches). Sentence 151 in review pool (rank 9) adds supporting gene expression evidence for floral meristem enlargement, but the top-5 already provided sufficient coverage. Retrieval quality is good."
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "All claim elements are well supported by available evidence.",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "Verify that the Chinese article's claim about condition (1) is part of a multi-part claim (C11/C12/C13 together describe all three necessary conditions). Each sub-claim should be evaluated on its specific content.",
+        "needs_manual_review": false,
+        "review_focus": [],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P001-A001-C12",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "（2）花托迅速生长；",
+      "system_retrieval": {
+        "classify_evidences": [
+          {"rank": 1, "sentence_id": 56, "text": "1b,c). With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig."},
+          {"rank": 2, "sentence_id": 330, "text": "Our findings revealed that the prolonged activity of the FIM at the base of the floral organs is responsible for the initiation and rapid growth of the receptacle, leading to female flower determination and the formation of an inferior ovary."},
+          {"rank": 3, "sentence_id": 43, "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation."},
+          {"rank": 4, "sentence_id": 244, "text": "In female flowers, the receptacle and carpel continued to grow after S5, and the receptacle grew rapidly and wrapped around the carpel to form the inferior ovary (Extended Data Fig. 7b,d)."},
+          {"rank": 5, "sentence_id": 265, "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."}
+        ],
+        "review_evidences": [
+          {"rank": 1, "sentence_id": 56, "text": "1b,c). With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig."},
+          {"rank": 2, "sentence_id": 330, "text": "Our findings revealed that the prolonged activity of the FIM at the base of the floral organs is responsible for the initiation and rapid growth of the receptacle, leading to female flower determination and the formation of an inferior ovary."},
+          {"rank": 3, "sentence_id": 43, "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation."},
+          {"rank": 4, "sentence_id": 244, "text": "In female flowers, the receptacle and carpel continued to grow after S5, and the receptacle grew rapidly and wrapped around the carpel to form the inferior ovary (Extended Data Fig. 7b,d)."},
+          {"rank": 5, "sentence_id": 265, "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."},
+          {"rank": 6, "sentence_id": 44, "text": "In addition, we dissected the gene regulatory networks (GRNs) responsible for the rapid growth of the receptacle and identified key genes involved in these processes, including a duplicated class I KNOTTED-like homeobox (KNOX) transcription factor (TF), the knockout of which results in bisexual flowers with superior ovaries similar to those of tomato (Solanum lycopersicum L.)."},
+          {"rank": 7, "sentence_id": 57, "text": "1b,c). The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c)."},
+          {"rank": 8, "sentence_id": 329, "text": "In this current study, we generated a comprehensive collection of spatially resolved transcriptomes and reconstructed the cellular territories and cell lineages for the continuously developing floral organs of cucumber."},
+          {"rank": 9, "sentence_id": 331, "text": "Characterization of the gene expression dynamics, for cell fate establishment and development of the receptacle, provided new insights into the molecular regulatory mechanisms underlying sex determination and inferior ovary formation in the cucurbits."},
+          {"rank": 10, "sentence_id": 42, "text": "These data enabled us to identify distinct cell types involved in female flower and inferior ovary development."}
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {"sentence_id": 56, "text": "1b,c). With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig."},
+          {"sentence_id": 330, "text": "Our findings revealed that the prolonged activity of the FIM at the base of the floral organs is responsible for the initiation and rapid growth of the receptacle, leading to female flower determination and the formation of an inferior ovary."},
+          {"sentence_id": 43, "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation."}
+        ],
+        "sentence_ids": [56, 330, 43],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "primary_type": "accurate",
+        "secondary_types": [],
+        "is_accurate": true,
+        "severity": "none"
+      },
+      "analysis": {
+        "evidence_judgement": "Claim states that necessary condition (2) for inferior ovary formation is rapid growth of the receptacle. Multiple sentences directly support this: sentence 56 describes 'With the rapid growth of the receptacle...thereby forming inferior ovaries'; sentence 330 states FIM activity is responsible for 'initiation and rapid growth of the receptacle, leading to...formation of an inferior ovary'; sentence 43 states 'rapid growth of the receptacle, which results in inferior ovary formation'. The claim is a brief but accurate capture of condition (2) from the paper.",
+        "classification_reason": "The claim '花托迅速生长' (rapid growth of the receptacle) is a direct and accurate translation of the paper's condition (2) 'subsequent rapid growth of the receptacle'. The claim is very concise (it is part of a multi-part claim C11/C12/C13), but within that context it faithfully represents the paper. No distortion, no exaggeration, no fact addition.",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "Classify top-5 are all highly relevant to receptacle rapid growth. Review pool adds sentences 57 (arrested receptacle growth in male buds as contrast) and 331 (insights into cucurbit inferior ovary), which are useful additional context but not better than top-5 for direct support. Retrieval quality is good."
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "All claim elements are well supported by multiple evidence sentences.",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "This is part of a multi-part claim (C11/C12/C13). Verify that the Chinese article correctly presents these as three necessary conditions from the paper, and that the original paper's sentence 59 is the definitive source for all three conditions.",
+        "needs_manual_review": false,
+        "review_focus": [],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P001-A001-C13",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "（3）花托和心皮融合。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {"rank": 1, "sentence_id": 265, "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."},
+          {"rank": 2, "sentence_id": 59, "text": "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel."},
+          {"rank": 3, "sentence_id": 266, "text": "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning."},
+          {"rank": 4, "sentence_id": 264, "text": "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary."},
+          {"rank": 5, "sentence_id": 56, "text": "1b,c). With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig."}
+        ],
+        "review_evidences": [
+          {"rank": 1, "sentence_id": 265, "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."},
+          {"rank": 2, "sentence_id": 59, "text": "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel."},
+          {"rank": 3, "sentence_id": 266, "text": "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning."},
+          {"rank": 4, "sentence_id": 264, "text": "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary."},
+          {"rank": 5, "sentence_id": 56, "text": "1b,c). With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig."},
+          {"rank": 6, "sentence_id": 248, "text": "6c,d and Extended Data Fig. 7e), as the floral receptacle of the 'superior ovary flower' did not fuse with the carpel and elongate, while the carpel continued to grow, resulting in upward growth of the carpels."},
+          {"rank": 7, "sentence_id": 57, "text": "1b,c). The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c)."},
+          {"rank": 8, "sentence_id": 91, "text": "We also observed three clusters (26, 27 and 28) situated between the carpel and receptacle at various stages of floral bud development, which we named conjunctive primordia, conjunctive tissue-early and conjunctive tissue-late, respectively (Fig."},
+          {"rank": 9, "sentence_id": 249, "text": "Developing ovules were observed after stage 10 (Fig."},
+          {"rank": 10, "sentence_id": 247, "text": "6c,d and Extended Data morphogenesis was observed (Fig."}
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {"sentence_id": 59, "text": "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel."},
+          {"sentence_id": 265, "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."}
+        ],
+        "sentence_ids": [59, 265],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "primary_type": "accurate",
+        "secondary_types": [],
+        "is_accurate": true,
+        "severity": "none"
+      },
+      "analysis": {
+        "evidence_judgement": "Claim states that necessary condition (3) for inferior ovary formation is fusion of the receptacle and carpel. Sentence 59 directly lists this as the third necessary condition: 'fusion of the receptacle and the carpel'. Sentence 265 provides mechanistic detail: 'the receptacle is fused with the adaxial side of the carpel'. Both directly support the claim. The Chinese '花托和心皮融合' is an accurate translation of 'fusion of the receptacle and the carpel'.",
+        "classification_reason": "The claim is a direct and accurate translation of the paper's condition (3). No distortion, amplification, or omission. This is the final part of the C11/C12/C13 multi-part claim describing the three necessary conditions. All three sub-claims together accurately reproduce the paper's key finding about necessary conditions for inferior ovary formation.",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [248],
+          "notes": "Classify top-5 captured the key sentences (59, 265). However, sentence 248 in the review pool (rank 6) provides valuable negative evidence: in the superior ovary flower mutant, 'the floral receptacle did not fuse with the carpel and elongate'. This mutant phenotype evidence would be a useful addition for understanding the fusion condition, but the top-5 are already sufficient for direct support."
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "All claim elements are well supported.",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "Verify C11/C12/C13 together form a coherent statement of the three necessary conditions. Check that the Chinese article doesn't overstate these as proven facts (the paper uses 'we inferred').",
+        "needs_manual_review": false,
+        "review_focus": [],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P001-A001-C14",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "为解析黄瓜子房下位基因调控网络，对黄瓜花芽分化S1-S8时期的纵截面和S8-4时期、花后0天（0 DAP）子房的横截面进行了Stereo-seq空间转录组测序。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {"rank": 1, "sentence_id": 61, "text": "Longitudinal sections were analysed, as well as a transverse section of S8-4 and two 0 DPA samples (Extended Data Fig. 2a), using a standard analytical procedure8."},
+          {"rank": 2, "sentence_id": 60, "text": "To dissect the underlying gene expression network driving the development of the inferior ovary of cucumber, we sampled floral buds at various stages, including S1-S8, and ovaries at 0 days post anthesis (DPA) for spatial transcriptomic analysis."},
+          {"rank": 3, "sentence_id": 432, "text": "To construct floral developmental trajectory, we integrated and coembedded bin50 from different stages (all sample in cucumber from S1 to S8-4), at consecutive time points using Seurat with FindIntegrationAnchors and IntegrateData functions with default settings."},
+          {"rank": 4, "sentence_id": 62, "text": "Datasets for individual sections were aggregated into bin 50, which had a diameter equal to that of an entire cell at 0 DPA (Extended Data Fig. 2b-d and Supplementary Table 2)."},
+          {"rank": 5, "sentence_id": 278, "text": "To investigate the specificity of cucumber receptacle development, floral buds of superior ovary mutants (knat2-like1) and tomato at S8 were collected to generate spatial transcriptomic data for comparative analysis (Supplementary Table 1)."}
+        ],
+        "review_evidences": [
+          {"rank": 1, "sentence_id": 61, "text": "Longitudinal sections were analysed, as well as a transverse section of S8-4 and two 0 DPA samples (Extended Data Fig. 2a), using a standard analytical procedure8."},
+          {"rank": 2, "sentence_id": 60, "text": "To dissect the underlying gene expression network driving the development of the inferior ovary of cucumber, we sampled floral buds at various stages, including S1-S8, and ovaries at 0 days post anthesis (DPA) for spatial transcriptomic analysis."},
+          {"rank": 3, "sentence_id": 432, "text": "To construct floral developmental trajectory, we integrated and coembedded bin50 from different stages (all sample in cucumber from S1 to S8-4), at consecutive time points using Seurat with FindIntegrationAnchors and IntegrateData functions with default settings."},
+          {"rank": 4, "sentence_id": 62, "text": "Datasets for individual sections were aggregated into bin 50, which had a diameter equal to that of an entire cell at 0 DPA (Extended Data Fig. 2b-d and Supplementary Table 2)."},
+          {"rank": 5, "sentence_id": 278, "text": "To investigate the specificity of cucumber receptacle development, floral buds of superior ovary mutants (knat2-like1) and tomato at S8 were collected to generate spatial transcriptomic data for comparative analysis (Supplementary Table 1)."},
+          {"rank": 6, "sentence_id": 180, "text": "e, Schematic illustrations of the spatial distribution of superclusters of cucumber floral buds in transect sections (bottom) and longitudinal sections (top) from S1 to S8-4."},
+          {"rank": 7, "sentence_id": 433, "text": "After integration, edge weight between clusters across stages was calculated as described in TOME30."},
+          {"rank": 8, "sentence_id": 279, "text": "In total, seven clusters were identified for both the superior ovary mutant and tomato."},
+          {"rank": 9, "sentence_id": 277, "text": "The mutation of just KNAT2-like1 in cucumber simultaneously leads to the formation of bisexual flowers and superior ovaries, suggesting that during receptacle evolution a direct link was established between the development of the unisexual flowers and inferior ovaries."},
+          {"rank": 10, "sentence_id": 164, "text": "After S5, we observed the largest increase in the bin numbers of receptacle-related clusters (receptacle-early, cluster 9), indicating that 865 a b Basal sepal-abaxial..."}
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {"sentence_id": 60, "text": "To dissect the underlying gene expression network driving the development of the inferior ovary of cucumber, we sampled floral buds at various stages, including S1-S8, and ovaries at 0 days post anthesis (DPA) for spatial transcriptomic analysis."},
+          {"sentence_id": 61, "text": "Longitudinal sections were analysed, as well as a transverse section of S8-4 and two 0 DPA samples (Extended Data Fig. 2a), using a standard analytical procedure8."}
+        ],
+        "sentence_ids": [60, 61],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "primary_type": "accurate",
+        "secondary_types": [],
+        "is_accurate": true,
+        "severity": "none"
+      },
+      "analysis": {
+        "evidence_judgement": "The claim describes the Stereo-seq experimental design: sampling S1-S8 longitudinal sections and S8-4/0 DAP transverse sections. Sentence 60 states they sampled floral buds S1-S8 and 0 DPA ovaries for spatial transcriptomic analysis. Sentence 61 specifies longitudinal sections were analyzed plus a transverse section of S8-4 and two 0 DPA samples. Together, these fully support the claim. The claim uses 'Stereo-seq' explicitly while the evidence uses 'spatial transcriptomic analysis' — Stereo-seq is the specific technology platform used (confirmed by sentence 112 mentioning 'Stereo-seq signals'). The abbreviation '0 DAP' (days after pollination) vs '0 DPA' (days post anthesis) is a minor translational convention difference; both refer to the same developmental time point in cucumber where anthesis and pollination coincide.",
+        "classification_reason": "The claim accurately describes the sampling and sectioning strategy for the Stereo-seq experiment. '花芽分化S1-S8时期的纵截面' corresponds to longitudinal sections of S1-S8 floral buds. 'S8-4时期、花后0天（0 DAP）子房的横截面' corresponds to transverse section of S8-4 and 0 DPA samples. The phrase '进行了Stereo-seq空间转录组测序' is supported by the explicit mention of spatial transcriptomic analysis and Stereo-seq signals elsewhere. Minor terminology differences (DAP vs DPA) do not constitute factual distortion.",
+        "key_differences": ["The claim says 'S1-S8时期的纵截面' implying all S1-S8 stages were cut longitudinally. The paper says 'Longitudinal sections were analysed' without explicitly restricting which stages were longitudinal, but given context from sentence 60 this is a reasonable synthesis.", "The claim uses '0 DAP' (Chinese convention) while the paper uses '0 DPA' (days post anthesis). These are functionally equivalent in cucumber.", "The claim says '子房的横截面' (transverse section of ovary) for both S8-4 and 0 DAP; the paper says transverse of S8-4 and 'two 0 DPA samples' — the claim simplifies two 0 DPA samples to one transverse section."],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "Classify top-5 captured the two critical evidence sentences (60, 61) that directly describe the sampling strategy. Review pool adds sentence 180 (schematic of longitudinal sections from S1 to S8-4) which provides visual confirmation but isn't textually clearer than sentences 60-61. Retrieval quality is good."
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "All major claim elements are supported by sentence 60 and 61. The Stereo-seq naming is confirmed elsewhere in the paper.",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "Verify: (1) The abbreviation DAP vs DPA is a consistent translation choice in the Chinese article, not a factual error. (2) Confirm the paper does not have a separate section specifically naming the technology as 'Stereo-seq' near sentences 60-61 (it may be in the Methods section).",
+        "needs_manual_review": false,
+        "review_focus": [],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P001-A001-C15",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "经数据降维后，所有样品的细胞共被分为41个聚类（cluster）（图2a），通过特异性标记基因表达模式（图2b）及其空间分布（图2c）进一步验证了这些聚类的组织特异性。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {"rank": 1, "sentence_id": 105, "text": "The corresponding expression patterns of marker genes are shown."},
+          {"rank": 2, "sentence_id": 112, "text": "To confirm the accuracy of our annotation, we assessed the spatial distribution of several selected marker genes by RNA in situ hybridization, all of which confirmed the spatiotemporal expression patterns indicated by the Stereo-seq signals (Extended Data Fig. 2p)."},
+          {"rank": 3, "sentence_id": 280, "text": "These clusters were annotated based on their distribution and the expression of marker genes (Fig."},
+          {"rank": 4, "sentence_id": 106, "text": "d, A spatial depiction of the clusters related to carpel (cluster 3 and 4), conjunctive tissues (cluster 27 and 28) and receptacle tissues (cluster 9 and 10)."},
+          {"rank": 5, "sentence_id": 104, "text": "c, A spatial distribution of clusters on the sections of S8-2."}
+        ],
+        "review_evidences": [
+          {"rank": 1, "sentence_id": 105, "text": "The corresponding expression patterns of marker genes are shown."},
+          {"rank": 2, "sentence_id": 112, "text": "To confirm the accuracy of our annotation, we assessed the spatial distribution of several selected marker genes by RNA in situ hybridization, all of which confirmed the spatiotemporal expression patterns indicated by the Stereo-seq signals (Extended Data Fig. 2p)."},
+          {"rank": 3, "sentence_id": 280, "text": "These clusters were annotated based on their distribution and the expression of marker genes (Fig."},
+          {"rank": 4, "sentence_id": 106, "text": "d, A spatial depiction of the clusters related to carpel (cluster 3 and 4), conjunctive tissues (cluster 27 and 28) and receptacle tissues (cluster 9 and 10)."},
+          {"rank": 5, "sentence_id": 104, "text": "c, A spatial distribution of clusters on the sections of S8-2."},
+          {"rank": 6, "sentence_id": 76, "text": "Cluster 33 was identified as the stigma/transmitting tract and was characterized by spatial information and the expression of marker genes such as the basic Helix-Loop-Helix (bHLH) TF CsSPATULA (CsSPT), previously reported to be specifically expressed in stigmas17 (Extended Data Fig. 2n)."},
+          {"rank": 7, "sentence_id": 113, "text": "The data related to these spatially and temporally resolved transcriptomes and cell types of cucumber floral organ development can be browsed via the STOmicsDB27, an interactive data portal, at https://db.cngb.org/ stomics/ctsta."},
+          {"rank": 8, "sentence_id": 111, "text": "Clusters 12, 16, 20, 35 and 39 had no known marker genes and were unannotated."},
+          {"rank": 9, "sentence_id": 281, "text": "7a,b, Extended Data Fig. 9a-e and Supplementary Tables 10 and 11) and then integrated into superclusters (Fig."},
+          {"rank": 10, "sentence_id": 279, "text": "In total, seven clusters were identified for both the superior ovary mutant and tomato."}
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {"sentence_id": 112, "text": "To confirm the accuracy of our annotation, we assessed the spatial distribution of several selected marker genes by RNA in situ hybridization, all of which confirmed the spatiotemporal expression patterns indicated by the Stereo-seq signals (Extended Data Fig. 2p)."},
+          {"sentence_id": 76, "text": "Cluster 33 was identified as the stigma/transmitting tract and was characterized by spatial information and the expression of marker genes such as the basic Helix-Loop-Helix (bHLH) TF CsSPATULA (CsSPT), previously reported to be specifically expressed in stigmas17 (Extended Data Fig. 2n)."},
+          {"sentence_id": 280, "text": "These clusters were annotated based on their distribution and the expression of marker genes (Fig."}
+        ],
+        "sentence_ids": [112, 76, 280],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "primary_type": "accurate",
+        "secondary_types": [],
+        "is_accurate": true,
+        "severity": "none"
+      },
+      "analysis": {
+        "evidence_judgement": "The claim has three components: (1) dimensionality reduction and clustering into 41 clusters, (2) validation via marker gene expression patterns, (3) validation via spatial distribution. Component (2) is well supported by sentence 112 (in situ hybridization confirming spatial transcriptomic signals) and sentence 76 (cluster identification based on marker genes and spatial information). Component (3) is supported by sentence 280 (clusters annotated based on distribution). Component (1) '41个聚类' — the specific number 41 is not directly stated in any review evidence sentence. Sentence 111 mentions clusters up to 39 (clusters 12, 16, 20, 35, 39), and sentence 103 (noisy figure caption) shows cluster numbers up to 40, but no sentence in the review pool explicitly says '41 clusters'. This specific number is likely correct (the paper almost certainly states it) but is not verifiable from the provided evidence pool — a retrieval gap.",
+        "classification_reason": "The claim accurately describes the overall clustering and validation workflow used in the paper. The method of using marker gene expression patterns and spatial distribution to validate cluster tissue specificity is directly supported. The '41 clusters' specific number, while almost certainly correct, lacks direct evidence in the review pool. However, this does not constitute a factual error — it is a retrieval limitation. The overall classification remains 'accurate' because the methodological description is faithful to the paper. The figure panel references (图2a, 2b, 2c) refer to the Chinese science communication article's own figure organization, not the original paper's figure panels — this is a presentation adaptation, not a factual claim about the paper.",
+        "key_differences": ["The '41 clusters' specific number is not directly verifiable from the review evidence pool. This is a retrieval gap, not a claim error.", "The figure references (图2a, 图2b, 图2c) point to the Chinese article's figures, not the original paper's Figure 2 panel labels. This is a presentation adaptation."],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [76, 111],
+          "notes": "Top-5 classify results are relatively weak: sentences 105, 104, 106 are generic/figure-caption fragments. Sentence 76 in the review pool (rank 6) provides a concrete example of how marker genes and spatial information are used together for cluster annotation — this should have been in the top 5. Sentence 111 (rank 8) confirms the cluster numbering scheme goes up to at least 39, providing partial support for the '41 clusters' claim. The top-5 missed the most informative evidence sentences."
+        },
+        "unsupported_diagnosis": {
+          "verdict": "likely_retrieval_miss",
+          "reasoning": "The specific '41 clusters' number claim cannot be verified from the review pool. No sentence explicitly states the total number of clusters was 41. Sentence 111 (mentioning clusters up to 39) and sentence 103 (showing clusters up to 40) provide indirect hints but no definitive statement. The paper likely contains an explicit statement of '41 clusters' that the retrieval system missed.",
+          "suggested_keywords": ["41 clusters", "total clusters", "cell clustering", "UMAP", "dimensionality reduction", "unsupervised clustering"],
+          "suggested_sentence_ranges": "Look for sentences in the Results section describing the initial clustering results, likely near the description of Figure 2a. The sentence would contain the total cluster count (41) and mention UMAP or t-SNE dimensionality reduction."
+        },
+        "manual_check_hints": "1) Verify the paper explicitly states '41 clusters' — search for this specific number in the Results section. 2) Check whether the Chinese article's figure 2a/b/c correspond to the paper's Figure 2 or a re-organization. 3) Confirm '数据降维' (dimensionality reduction) refers to UMAP — the paper uses UMAP for visualization.",
+        "needs_manual_review": true,
+        "review_focus": ["Verify '41 clusters' number against paper text", "Confirm dimensionality reduction method (UMAP)", "Check figure panel correspondence between Chinese article and paper"],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P001-A001-C16",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "其中，cluster 26、27、28位于心皮和花托之间，分别将其命名为"连接原基""连接组织早期"和"连接组织晚期"。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {"rank": 1, "sentence_id": 91, "text": "We also observed three clusters (26, 27 and 28) situated between the carpel and receptacle at various stages of floral bud development, which we named conjunctive primordia, conjunctive tissue-early and conjunctive tissue-late, respectively (Fig."},
+          {"rank": 2, "sentence_id": 92, "text": "2a-c). Besides the expression of marker genes in both carpel (CsAG1) and receptacle (CsCRC), the marker gene CsHANABA TARANU (CsHAN1) was exclusively expressed in cluster 27 (ref."},
+          {"rank": 3, "sentence_id": 106, "text": "d, A spatial depiction of the clusters related to carpel (cluster 3 and 4), conjunctive tissues (cluster 27 and 28) and receptacle tissues (cluster 9 and 10)."},
+          {"rank": 4, "sentence_id": 103, "text": "Sepal mesophyll Trichome Floral intercalary meristem 24 30 36..."},
+          {"rank": 5, "sentence_id": 105, "text": "The corresponding expression patterns of marker genes are shown."}
+        ],
+        "review_evidences": [
+          {"rank": 1, "sentence_id": 91, "text": "We also observed three clusters (26, 27 and 28) situated between the carpel and receptacle at various stages of floral bud development, which we named conjunctive primordia, conjunctive tissue-early and conjunctive tissue-late, respectively (Fig."},
+          {"rank": 2, "sentence_id": 92, "text": "2a-c). Besides the expression of marker genes in both carpel (CsAG1) and receptacle (CsCRC), the marker gene CsHANABA TARANU (CsHAN1) was exclusively expressed in cluster 27 (ref."},
+          {"rank": 3, "sentence_id": 106, "text": "d, A spatial depiction of the clusters related to carpel (cluster 3 and 4), conjunctive tissues (cluster 27 and 28) and receptacle tissues (cluster 9 and 10)."},
+          {"rank": 4, "sentence_id": 103, "text": "Sepal mesophyll Trichome Floral intercalary meristem..."},
+          {"rank": 5, "sentence_id": 105, "text": "The corresponding expression patterns of marker genes are shown."},
+          {"rank": 6, "sentence_id": 107, "text": "e, A bubble plot showing AG1, ACS2 and CRC expression profiles in clusters 3 and 4 in carpel, in clusters 27 and 28 in conjunctive tissues and in clusters 9 and 10 in receptacle tissues, respectively."},
+          {"rank": 7, "sentence_id": 104, "text": "c, A spatial distribution of clusters on the sections of S8-2."},
+          {"rank": 8, "sentence_id": 108, "text": "The dot size indicates the percentage of bins expressing the genes at each cluster, and the colour intensity represents the relative average expression level."},
+          {"rank": 9, "sentence_id": 164, "text": "After S5, we observed the largest increase in the bin numbers of receptacle-related clusters..."},
+          {"rank": 10, "sentence_id": 165, "text": "Each row corresponds to one of the cluster annotations, columns to developmental stages spanning from S1 to S8-4, nodes to cell trajectories and node colours to clusters."}
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {"sentence_id": 91, "text": "We also observed three clusters (26, 27 and 28) situated between the carpel and receptacle at various stages of floral bud development, which we named conjunctive primordia, conjunctive tissue-early and conjunctive tissue-late, respectively (Fig."}
+        ],
+        "sentence_ids": [91],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "primary_type": "accurate",
+        "secondary_types": [],
+        "is_accurate": true,
+        "severity": "none"
+      },
+      "analysis": {
+        "evidence_judgement": "The claim states that clusters 26, 27, 28 are located between the carpel and receptacle, named '连接原基' (conjunctive primordia), '连接组织早期' (conjunctive tissue-early), and '连接组织晚期' (conjunctive tissue-late). Sentence 91 directly and fully supports this: 'We also observed three clusters (26, 27 and 28) situated between the carpel and receptacle at various stages of floral bud development, which we named conjunctive primordia, conjunctive tissue-early and conjunctive tissue-late, respectively.' The Chinese translations are accurate: '连接原基' = conjunctive primordia, '连接组织早期' = conjunctive tissue-early, '连接组织晚期' = conjunctive tissue-late.",
+        "classification_reason": "This is a direct, verbatim translation of sentence 91 from the paper. All elements match exactly: the cluster numbers (26, 27, 28), the spatial location (between carpel and receptacle), and the three names. No distortion, no addition, no omission. The Chinese naming is a faithful translation of the English cluster names.",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "Classify top-5 correctly ranked sentence 91 as #1 — it is the single most directly relevant sentence. The top-5 also includes sentence 92 (marker gene expression in cluster 27) and sentence 106 (spatial depiction of conjunctive tissues), which provide useful supporting context. Review pool adds sentences 107 (bubble plot description) but nothing substantively better than the top-5. Retrieval quality is excellent."
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "The claim is fully and directly supported by sentence 91.",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "No issues detected. The Chinese translations of the cluster names are accurate and conventional for this field.",
+        "needs_manual_review": false,
+        "review_focus": [],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    }
+  ]
+}

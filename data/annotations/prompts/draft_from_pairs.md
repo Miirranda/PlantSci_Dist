@@ -12,6 +12,9 @@
 - 幻觉分类只用 top-5（`classify_evidences`）
 - 人工审核池固定 10 条（`review_evidences`，且包含那 top-5）
 
+建议先做冒烟测试：`limit=10`，只生成前 10 条；格式与审核体验满意后，
+再把 `limit` 改为 `all`（或从第 11 条续跑）生成全文。
+
 ---
 
 ## 提示词
@@ -19,18 +22,24 @@
 ```
 ## 参数（请先填写）
 
-- 输入文件（claim ↔ 证据对照 JSONL）：【在此填写路径，如 outputs/P001/A001/claim_evidence_pairs.jsonl】
-- 输出文件（标注草稿 JSON）：【在此填写路径，如 data/annotations/P001/P001_A001_annotation_draft.json】
-- paper_id：【如 P001】
-- article_id：【如 A001】
-- article_source_type：【如 high_quality】
+- 输入文件（claim ↔ 证据对照 JSONL）：outputs/P001/A001/claim_evidence_pairs.jsonl
+- 输出文件（标注草稿 JSON）：data/annotations/P001/P001_A001_annotation_draft_smoke10.json
+- paper_id：P001
+- article_id：A001
+- article_source_type：high_quality
+- limit：10
+  （冒烟测试填 10：只处理输入文件前 10 行；
+   全文填 all；续跑可填 after:C10 表示从 C10 之后继续）
 
 ---
 
 ## 任务
 
-读取输入文件的每一行（一条中文观点句 + 系统检索结果），逐条判断该观点句
-相对论文是否存在信息失真，并把结果写入输出文件。
+按参数 `limit` 读取输入文件中的观点句（一条中文观点句 + 系统检索结果），
+逐条判断该观点句相对论文是否存在信息失真，并把结果写入输出文件。
+
+**冒烟测试（当前推荐）**：`limit=10` 时，只处理前 10 条，处理完第 10 条后立即停止，
+不要继续读后面的行。输出完整合法 JSON 即可，便于人工先检查格式与可读性。
 
 产出的是**供人工审核的草稿**：
 1. 原样保留系统检索对照（分类用 top-5 + 审核池 10 条）；
@@ -38,7 +47,6 @@
 3. 在 analysis 里写清「为什么这么判」和「人工该重点核对什么」。
 
 `human_verified` 一律为 false。
-
 ---
 
 ## 输入格式
@@ -76,13 +84,21 @@
   "article_id": "{参数}",
   "article_source_type": "{参数}",
   "generated_date": "{当天日期}",
-  "_description": "标注草稿：评测字段 + system_retrieval 对照 + analysis；人工审核后导出终稿。",
+  "generation_mode": "smoke | full | resume",
+  "limit": "10 | all | after:C10",
+  "sample_count": 10,
+  "_description": "标注草稿：评测字段 + system_retrieval 对照 + analysis；人工审核后导出终稿。冒烟测试仅含前 N 条。",
   "samples": [ /* 见下 */ ],
   "review_queue": {
     "must_review_sample_ids": [],
     "notes": "优先审这些；见各条 analysis.manual_check_hints"
   }
 }
+
+generation_mode 规则：
+- limit=10（或任意正整数 N）→ generation_mode=smoke，只写前 N 条
+- limit=all → generation_mode=full
+- limit=after:Cxx → generation_mode=resume，从该 claim_id 之后继续追加/写出后续样本
 
 ---
 
@@ -283,14 +299,20 @@ ai_confidence：high / medium / low（medium 与 low 通常要 needs_manual_revi
 
 ## 执行方式
 
-逐条处理：读一行 → 复制 system_retrieval → 判定金标与分类 → 写 analysis → 写入 samples。
-中断后可从已写入的最后一条 claim_id 之后继续。
-全部处理完后填 review_queue.must_review_sample_ids
-（所有 needs_manual_review=true 的 sample_id），并确保输出是合法完整 JSON。
+1. 先读参数 `limit`，确定本次要处理的行范围（默认冒烟：前 10 行）。
+2. 逐条处理范围内的行：读一行 → 复制 system_retrieval → 判定金标与分类 → 写 analysis → 写入 samples。
+3. **达到 limit 后立即停止**，不要处理后续观点句；写好顶层 sample_count / generation_mode / limit。
+4. 填 review_queue.must_review_sample_ids（本次 samples 里 needs_manual_review=true 的 id）。
+5. 确保输出是合法完整 JSON（即使只有 10 条也要有完整文件头尾）。
+
+冒烟通过后的续跑：
+- 把 limit 改为 after:C10（或上次最后一条 claim_id），输出可写正式 annotation_draft.json；
+- 或 limit=all 重新生成全文（若上下文允许）。
+- 续跑时保留已有 samples，只追加尚未生成的 claim，不要覆盖已人工改过的条目。
 
 ---
 
 ## 开始
 
-确认参数已填写，从输入文件第 1 行开始。
+确认参数已填写（冒烟：limit=10）。从输入文件第 1 行开始，只做前 10 条。
 ```

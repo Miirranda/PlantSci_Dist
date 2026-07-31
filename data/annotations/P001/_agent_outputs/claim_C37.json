@@ -1,0 +1,138 @@
+{
+  "claim_zh": "形态学观察显示，S5时期之前雄花、雌花和k-2（子房上位、双性花）之间并没有区别，而S5之后，k-2花托并没有快速生长并与心皮融合（图6c-d）。",
+  "classify_evidences": [
+    {
+      "rank": 1,
+      "sentence_id": 248,
+      "text": "6c,d and Extended Data Fig. 7e), as the floral receptacle of the ‘superior ovary flower’ did not fuse with the carpel and elongate, while the carpel continued to grow, resulting in upward growth of the carpels."
+    },
+    {
+      "rank": 2,
+      "sentence_id": 264,
+      "text": "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary."
+    },
+    {
+      "rank": 3,
+      "sentence_id": 4,
+      "text": "Genetic knockout of a receptacle-specific KNOX1 transcription factor in cucumber caused arrest in receptacle growth and yielded bisexual flowers with superior ovaries similar to those of tomato."
+    },
+    {
+      "rank": 4,
+      "sentence_id": 249,
+      "text": "Developing ovules were observed after stage 10 (Fig."
+    },
+    {
+      "rank": 5,
+      "sentence_id": 247,
+      "text": "6c,d and Extended Data morphogenesis was observed (Fig."
+    }
+  ],
+  "review_evidences": [
+    {
+      "rank": 1,
+      "sentence_id": 248,
+      "text": "6c,d and Extended Data Fig. 7e), as the floral receptacle of the ‘superior ovary flower’ did not fuse with the carpel and elongate, while the carpel continued to grow, resulting in upward growth of the carpels."
+    },
+    {
+      "rank": 2,
+      "sentence_id": 264,
+      "text": "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary."
+    },
+    {
+      "rank": 3,
+      "sentence_id": 4,
+      "text": "Genetic knockout of a receptacle-specific KNOX1 transcription factor in cucumber caused arrest in receptacle growth and yielded bisexual flowers with superior ovaries similar to those of tomato."
+    },
+    {
+      "rank": 4,
+      "sentence_id": 249,
+      "text": "Developing ovules were observed after stage 10 (Fig."
+    },
+    {
+      "rank": 5,
+      "sentence_id": 247,
+      "text": "6c,d and Extended Data morphogenesis was observed (Fig."
+    },
+    {
+      "rank": 6,
+      "sentence_id": 298,
+      "text": "e k-2 G ♂♀ WT ♂ ♀ Male_rate Female_rate Superior_rate S5 S7 k-2 C-1 C-2 St St S8 Ca Ca Ov Ov S11 0 DPA S12 k-1 G ♂♀ Sepal Petal Stamen Carpel Nectary S12 Calyx tube 7 DPA 8 DPA 8 DPA Receptacle Ab Ab FIM Ad -1 DPA Ov i Ab Receptacle Carpel Ad Superior ovary S9 Developmental stages S7 Acquisition of KNAT2-like1 activity Inferior ovary k-2 G ♂♀ Developmental stages abnormal superior ovary flowers, respectively."
+    },
+    {
+      "rank": 7,
+      "sentence_id": 333,
+      "text": "1a). The knockout of KNAT2-like1 resulted in the production of stamens and the development of a superior ovary due to the disrupted formation of the floral receptacle."
+    },
+    {
+      "rank": 8,
+      "sentence_id": 238,
+      "text": "Instead, a corresponding proportion of ‘superior ovary flowers’ appeared, exhibiting the phenotype of bisexual flowers with superior ovaries (Fig."
+    },
+    {
+      "rank": 9,
+      "sentence_id": 263,
+      "text": "6g). The spatial expression patterns of known abaxial-specific genes, KAN-1, KAN-2 and AFO/FIL47,48, and an adaxial-specific gene, PHAVOLUTA (PHV)49, in normal inferior ovaries and aberrant superior ovaries were consistent with this change in placenta morphology (Extended Data Fig. 7i–k)."
+    },
+    {
+      "rank": 10,
+      "sentence_id": 5,
+      "text": "Here we provide developmental and mechanistic insights into inferior ovary formation and sex determination in cucurbits."
+    }
+  ],
+  "evidences": [
+    {
+      "sentence_id": 248,
+      "text": "6c,d and Extended Data Fig. 7e), as the floral receptacle of the ‘superior ovary flower’ did not fuse with the carpel and elongate, while the carpel continued to grow, resulting in upward growth of the carpels."
+    },
+    {
+      "sentence_id": 264,
+      "text": "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary."
+    },
+    {
+      "sentence_id": 4,
+      "text": "Genetic knockout of a receptacle-specific KNOX1 transcription factor in cucumber caused arrest in receptacle growth and yielded bisexual flowers with superior ovaries similar to those of tomato."
+    },
+    {
+      "sentence_id": 249,
+      "text": "Developing ovules were observed after stage 10 (Fig."
+    },
+    {
+      "sentence_id": 247,
+      "text": "6c,d and Extended Data morphogenesis was observed (Fig."
+    },
+    {
+      "sentence_id": 298,
+      "text": "e k-2 G ♂♀ WT ♂ ♀ Male_rate Female_rate Superior_rate S5 S7 k-2 C-1 C-2 St St S8 Ca Ca Ov Ov S11 0 DPA S12 k-1 G ♂♀ Sepal Petal Stamen Carpel Nectary S12 Calyx tube 7 DPA 8 DPA 8 DPA Receptacle Ab Ab FIM Ad -1 DPA Ov i Ab Receptacle Carpel Ad Superior ovary S9 Developmental stages S7 Acquisition of KNAT2-like1 activity Inferior ovary k-2 G ♂♀ Developmental stages abnormal superior ovary flowers, respectively."
+    },
+    {
+      "sentence_id": 333,
+      "text": "1a). The knockout of KNAT2-like1 resulted in the production of stamens and the development of a superior ovary due to the disrupted formation of the floral receptacle."
+    },
+    {
+      "sentence_id": 238,
+      "text": "Instead, a corresponding proportion of ‘superior ovary flowers’ appeared, exhibiting the phenotype of bisexual flowers with superior ovaries (Fig."
+    },
+    {
+      "sentence_id": 263,
+      "text": "6g). The spatial expression patterns of known abaxial-specific genes, KAN-1, KAN-2 and AFO/FIL47,48, and an adaxial-specific gene, PHAVOLUTA (PHV)49, in normal inferior ovaries and aberrant superior ovaries were consistent with this change in placenta morphology (Extended Data Fig. 7i–k)."
+    },
+    {
+      "sentence_id": 5,
+      "text": "Here we provide developmental and mechanistic insights into inferior ovary formation and sex determination in cucurbits."
+    }
+  ],
+  "paper_sentences": [
+    "6c,d and Extended Data Fig. 7e), as the floral receptacle of the ‘superior ovary flower’ did not fuse with the carpel and elongate, while the carpel continued to grow, resulting in upward growth of the carpels.",
+    "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary.",
+    "Genetic knockout of a receptacle-specific KNOX1 transcription factor in cucumber caused arrest in receptacle growth and yielded bisexual flowers with superior ovaries similar to those of tomato.",
+    "Developing ovules were observed after stage 10 (Fig.",
+    "6c,d and Extended Data morphogenesis was observed (Fig.",
+    "e k-2 G ♂♀ WT ♂ ♀ Male_rate Female_rate Superior_rate S5 S7 k-2 C-1 C-2 St St S8 Ca Ca Ov Ov S11 0 DPA S12 k-1 G ♂♀ Sepal Petal Stamen Carpel Nectary S12 Calyx tube 7 DPA 8 DPA 8 DPA Receptacle Ab Ab FIM Ad -1 DPA Ov i Ab Receptacle Carpel Ad Superior ovary S9 Developmental stages S7 Acquisition of KNAT2-like1 activity Inferior ovary k-2 G ♂♀ Developmental stages abnormal superior ovary flowers, respectively.",
+    "1a). The knockout of KNAT2-like1 resulted in the production of stamens and the development of a superior ovary due to the disrupted formation of the floral receptacle.",
+    "Instead, a corresponding proportion of ‘superior ovary flowers’ appeared, exhibiting the phenotype of bisexual flowers with superior ovaries (Fig.",
+    "6g). The spatial expression patterns of known abaxial-specific genes, KAN-1, KAN-2 and AFO/FIL47,48, and an adaxial-specific gene, PHAVOLUTA (PHV)49, in normal inferior ovaries and aberrant superior ovaries were consistent with this change in placenta morphology (Extended Data Fig. 7i–k).",
+    "Here we provide developmental and mechanistic insights into inferior ovary formation and sex determination in cucurbits."
+  ],
+  "claim_id": "C37",
+  "verdict": "SUPPORTED"
+}

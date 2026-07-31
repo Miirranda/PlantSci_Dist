@@ -1,0 +1,1524 @@
+{
+  "schema_version": "1.1",
+  "status": "draft",
+  "paper_id": "P001",
+  "article_id": "A001",
+  "article_source_type": "high_quality",
+  "generated_date": "2026-07-31",
+  "generation_mode": "smoke",
+  "limit": "C20:C30",
+  "sample_count": 11,
+  "_description": "标注草稿：C20-C30 观点句（共11条）。评测字段(gold_retrieval/gold_classification) + system_retrieval 对照 + analysis；人工审核后导出终稿。\n本批次为续跑：C01-C19已在前批次处理。\n人工审核顺序：1.读claim_zh → 2.看classify(top-5) → 3.扫review第6-10条 → 4.改gold_retrieval → 5.改gold_classification → 6.改analysis → 7.human_verified=true",
+  "samples": [
+    {
+      "sample_id": "P001-A001-C20",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "研究发现，S7后花基部分生组织（FIM）与花托原基活跃地进行细胞分裂（图3a），可能是花托快速生长从而导致与心皮融合的原因。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 164,
+            "text": "After S5, we observed the largest increase in the bin numbers of receptacle-related clusters (receptacle-early, cluster 9), indicating that 865 a b Basal sepal–abaxial Sepal epidermis Sepal mesophyll Sepal Unknown S1 Sepal mesophyll Unknown G0/G1 phase cells Epidermis Epidermis Trichome-base floral Trichome meristem Thicked epidermis Floral intercalary meristem FIM Floral intercalary meristem-2 Floral intercalary meristem-3 G2/M phase cells S1 G1/S phase cells Receptacle Receptacle primordia Receptacle-early Receptacle-late Provascular Protoxylem Conjunctive Conjunctive primordia Tissue Conjunctive tissue-early Conjunctive tissue-late Petal primordia Petal-early Petal S1 Petal-late Basal sepal-adaxial 1.00 Edge weight Floral primordia carpel 0.75 Placenta FP 0.50 Ovlue (ovary wall) 0.25 Stigma/transmitting tract S1 S2 S3 S4/S5 S6/S7 S8-1/2 S8-3/4 stage c Receptacle primordia Receptacle-early Receptacle-late Conjunctive primordia Conjunctive tissue-early UMAP2 UMAP2 Conjunctive tissue-late Floral intercalary meristem Floral intercalary meristem-2 Floral intercalary meristem-3 UMAP1 UMAP1 d 1.5 Bin50 density 1.0 0.5 0 0 2 4 6 Pesudotime a, A directed acyclic graph showing inferred relationships between cell states across cucumber female floral bud development."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 125,
+            "text": "3a). We determined that after S7, the FIM and receptacle primordia generate cells that are actively undergoing the cell cycle, while G1/S phase cells transition to receptacle cells, suggesting a mechanism to maintain cell proliferation and support rapid receptacle growth (Fig."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 37,
+            "text": "b Petal prim Stamen prim Carpel prim Sepal prim Enlarged floral meristem Asparagales Dioscoreales-cladeA S1 S2 S3 S4 S5 S6 S7 S8 Dioscoreales-cladeB c Pandanales Liliales Sepal Petal Alismatales Stamen Acorales Carpel Magnoliales Enlarged receptacle Diﬀerentiating floral primordia Laurales Enlarged floral meristem Piperales Ceratophyllales Austrobaileyales Nymphaeales Amborellales Selaginellales S1 S2 S3 S4 S5 S7 S8 S6 d Brassicales Sepal prim Petal prim Stamen prim Carpel prim Malvales Floral meristem Sapindales Oxalidales Huerteales S1 S2 S3 S5 S6 S7 S8 S4 e Malpighiales Sepal Petal Stamen Carpel Diﬀerentiating floral primordia Receptacle S1 S2 S3 S4 S5 S6 S7 S8 the corresponding floral organs."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 165,
+            "text": "Each row corresponds to one of the cluster annotations, columns to developmental stages spanning from S1 to S8-4, nodes to cell trajectories and node colours to clusters."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 126,
+            "text": "3a). An analysis using Monocle2 (Extended Data Fig. 3d),"
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 164,
+            "text": "After S5, we observed the largest increase in the bin numbers of receptacle-related clusters (receptacle-early, cluster 9), indicating that 865 a b Basal sepal–abaxial Sepal epidermis Sepal mesophyll Sepal Unknown S1 Sepal mesophyll Unknown G0/G1 phase cells Epidermis Epidermis Trichome-base floral Trichome meristem Thicked epidermis Floral intercalary meristem FIM Floral intercalary meristem-2 Floral intercalary meristem-3 G2/M phase cells S1 G1/S phase cells Receptacle Receptacle primordia Receptacle-early Receptacle-late Provascular Protoxylem Conjunctive Conjunctive primordia Tissue Conjunctive tissue-early Conjunctive tissue-late Petal primordia Petal-early Petal S1 Petal-late Basal sepal-adaxial 1.00 Edge weight Floral primordia carpel 0.75 Placenta FP 0.50 Ovlue (ovary wall) 0.25 Stigma/transmitting tract S1 S2 S3 S4/S5 S6/S7 S8-1/2 S8-3/4 stage c Receptacle primordia Receptacle-early Receptacle-late Conjunctive primordia Conjunctive tissue-early UMAP2 UMAP2 Conjunctive tissue-late Floral intercalary meristem Floral intercalary meristem-2 Floral intercalary meristem-3 UMAP1 UMAP1 d 1.5 Bin50 density 1.0 0.5 0 0 2 4 6 Pesudotime a, A directed acyclic graph showing inferred relationships between cell states across cucumber female floral bud development."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 125,
+            "text": "3a). We determined that after S7, the FIM and receptacle primordia generate cells that are actively undergoing the cell cycle, while G1/S phase cells transition to receptacle cells, suggesting a mechanism to maintain cell proliferation and support rapid receptacle growth (Fig."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 37,
+            "text": "b Petal prim Stamen prim Carpel prim Sepal prim Enlarged floral meristem Asparagales Dioscoreales-cladeA S1 S2 S3 S4 S5 S6 S7 S8 Dioscoreales-cladeB c Pandanales Liliales Sepal Petal Alismatales Stamen Acorales Carpel Magnoliales Enlarged receptacle Diﬀerentiating floral primordia Laurales Enlarged floral meristem Piperales Ceratophyllales Austrobaileyales Nymphaeales Amborellales Selaginellales S1 S2 S3 S4 S5 S7 S8 S6 d Brassicales Sepal prim Petal prim Stamen prim Carpel prim Malvales Floral meristem Sapindales Oxalidales Huerteales S1 S2 S3 S5 S6 S7 S8 S4 e Malpighiales Sepal Petal Stamen Carpel Diﬀerentiating floral primordia Receptacle S1 S2 S3 S4 S5 S6 S7 S8 the corresponding floral organs."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 165,
+            "text": "Each row corresponds to one of the cluster annotations, columns to developmental stages spanning from S1 to S8-4, nodes to cell trajectories and node colours to clusters."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 126,
+            "text": "3a). An analysis using Monocle2 (Extended Data Fig. 3d),"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 124,
+            "text": "The FIM also gives rise to the provascular tissue, which differentiates into protoxylem after the S5 stage (Fig."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 38,
+            "text": "d, The paraffin-embedded sections showing the morphology of tomato floral development during S1–S8."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 207,
+            "text": "867 a b G1/S phase cells G0/G1 FP S Placenta FIM Ovule (ovary wall) 2.0 Receptacle primordia Fold change 1.5 Receptacle-early Receptacle-late 1.0 G0/G1 G0/G1 phase cells 0.5 Conjunctive primordia Conjunctive tissue-early 0 Conjunctive tissue-late –0.5 Floral intercalary meristem Stage S1 S2 S3 S4–S5 S6−S7 S8_1−S8_2 S8_3−S8_4 Floral intercalary meristem-2 Floral intercalary meristem-3 d e G0/G1 S M G2 FIM RP S3 S5 S4 S1 S2 Receptacle NAC020 MGP AP2 GRF8 KTF1 GTB1 ARF6 HB-8 MP WRKY13 histoneH1 AT hook WHY2 Provascular SPL13A HB33 HMGB2 GTB1 MP Protoxylem HB6 ARF18 ARF2 ARF6 MGP G2/M phase cells G1/S phase cells S6 S7 S8-1 S8-2 S8-3 S8-4 Score f g Min Max MEE68 M11 ARR9 M5 WIP2 M8 DIN10 SNAK1 M3 CA1P M4 CIB1 YUC4 M13 CRC Peptide1 M14 ER M10 AGL42 M7 KNAT2-like1 M9 TPS1 M12 bHLH93 MGP AHK5 M2 ZPR2 M15 PPI1 M17 YAB2 Peptide2 M6 CYCD2;1 M1 LSH10 M16 a, A line graph showing the fold change in bin numbers (bin 50) for various clusters from S1 to S8."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 221,
+            "text": "The presence c G2 RP G0/G1 M RP M S G2 S Max STM-like Expression ACO2 ETT MIPS3 UDP-glucosyl transferase G2 RP AS1 ASN1 Min LTP Kinetochore protein M RBCSIA EFB SRC2 RPL24A Intercalary meristem PPR protein GRP23 Vacuolar sorting protein tudor-like RNA binding GAPA-2 TSO2 Stigma/ S8-3/4 transmitting MCM3 Carpel S8-1/2 tract MCM2 SIP1 S6/7 AG S4/5 FIM MAD1 YAB1 S3 Histone H4 IND1 WRKY57 SPL13 NGA1 KNAT2-like1 GRF8 HEC3 S2 CRC SPL13A Floral primordia RAP2.2 HMG SHP1 STL bHLH94L CDC20 CDKB2 Placenta PLATZ ARF2 AT hook AP2 bHLH131-like AP2 conjunctive MYB1 Ovule Receptacle FZR3 CRC primordia primordia PIL5 CYCA1 AT hook CYCB2 conjunctive tissue-early MAD2 ACS2 Conjunctive SPL13A"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 208,
+            "text": "Each line, differentiated by colour, represents a distinct cluster."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 125,
+            "text": "3a). We determined that after S7, the FIM and receptacle primordia generate cells that are actively undergoing the cell cycle, while G1/S phase cells transition to receptacle cells, suggesting a mechanism to maintain cell proliferation and support rapid receptacle growth (Fig."
+          }
+        ],
+        "sentence_ids": [
+          125
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "primary_type": "accurate",
+        "secondary_types": [],
+        "is_accurate": true,
+        "severity": "none"
+      },
+      "analysis": {
+        "evidence_judgement": "【可核查分句1】「S7后FIM与花托原基活跃进行细胞分裂」— 由 sentence_id=125 强支撑：「after S7, the FIM and receptacle primordia generate cells that are actively undergoing the cell cycle」。\n【可核查分句2】「可能是花托快速生长从而导致与心皮融合的原因」— sentence_id=125 支撑前半「suggesting a mechanism to maintain cell proliferation and support rapid receptacle growth」；「与心皮融合」在125中未直接出现，但论文其他部分（如sent_id=265）提及 receptacle 包裹心皮形成下位子房，属于合理延伸。\nClassify top-5 质量：rank1(164)为图注噪声夹杂，rank2(125)命中关键句，rank3(37)、rank4(165)、rank5(126)均为图注碎片或方法句，噪声大。",
+        "classification_reason": "观点句使用「可能是」与论文「suggesting」语气匹配，核心发现（S7后FIM/花托原基活跃分裂支撑花托快速生长）准确传达。心皮融合部分虽非 sent 125 直接覆盖，但属论文后续论述的合理概括，且观点句以「可能」限定，不算事实添加。判定为 accurate。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [],
+          "notes": "top5 仅 rank2(sent_id=125) 命中；rank1/3/4/5 均为图注碎片或噪声，top-5 质量差。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "核心断言已被 sent_id=125 充分支撑。",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "1. 核对 gold sentence_id=125 是否确实覆盖 claim 全部断言；\n2. 确认「与心皮融合」是否需要补充 sent_id=265 等其他句；\n3. 留意 top-5 噪声极大，classify 若只用 top-5 可能误判。",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "rag_top5"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P001-A001-C21",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "拟时序分析发现，其发育顺序为：FIM-花托-连接组织（图3c-d）。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 127,
+            "text": "along with the pseudotime curve, demonstrated the cell lineage from FIM to receptacle and then to conjunctive tissue (Fig."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 128,
+            "text": "3c,d). These insights and the organization information of the cell clusters, as shown in the schematic diagrams (Extended Data Fig. 4b,c), highlight the spatiotemporal structure of these functional hubs in the transect section (bottom) and longitudinal section (top) at various developmental stages of cucumber floral buds (Fig."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 469,
+            "text": "We conducted pseudotime analysis with Monocle2 in S1 to S3, S6 and S8-1 to S8-4, designating the FIM from each developmental stage as the root."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 164,
+            "text": "After S5, we observed the largest increase in the bin numbers of receptacle-related clusters (receptacle-early, cluster 9), indicating that 865 a b Basal sepal–abaxial Sepal epidermis Sepal mesophyll Sepal Unknown S1 Sepal mesophyll Unknown G0/G1 phase cells Epidermis Epidermis Trichome-base floral Trichome meristem Thicked epidermis Floral intercalary meristem FIM Floral intercalary meristem-2 Floral intercalary meristem-3 G2/M phase cells S1 G1/S phase cells Receptacle Receptacle primordia Receptacle-early Receptacle-late Provascular Protoxylem Conjunctive Conjunctive primordia Tissue Conjunctive tissue-early Conjunctive tissue-late Petal primordia Petal-early Petal S1 Petal-late Basal sepal-adaxial 1.00 Edge weight Floral primordia carpel 0.75 Placenta FP 0.50 Ovlue (ovary wall) 0.25 Stigma/transmitting tract S1 S2 S3 S4/S5 S6/S7 S8-1/2 S8-3/4 stage c Receptacle primordia Receptacle-early Receptacle-late Conjunctive primordia Conjunctive tissue-early UMAP2 UMAP2 Conjunctive tissue-late Floral intercalary meristem Floral intercalary meristem-2 Floral intercalary meristem-3 UMAP1 UMAP1 d 1.5 Bin50 density 1.0 0.5 0 0 2 4 6 Pesudotime a, A directed acyclic graph showing inferred relationships between cell states across cucumber female floral bud development."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 168,
+            "text": "c, Superclusters (receptacle, conjunctive tissue and FIM) and pseudotime"
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 127,
+            "text": "along with the pseudotime curve, demonstrated the cell lineage from FIM to receptacle and then to conjunctive tissue (Fig."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 128,
+            "text": "3c,d). These insights and the organization information of the cell clusters, as shown in the schematic diagrams (Extended Data Fig. 4b,c), highlight the spatiotemporal structure of these functional hubs in the transect section (bottom) and longitudinal section (top) at various developmental stages of cucumber floral buds (Fig."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 469,
+            "text": "We conducted pseudotime analysis with Monocle2 in S1 to S3, S6 and S8-1 to S8-4, designating the FIM from each developmental stage as the root."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 164,
+            "text": "After S5, we observed the largest increase in the bin numbers of receptacle-related clusters (receptacle-early, cluster 9), indicating that 865 a b Basal sepal–abaxial Sepal epidermis Sepal mesophyll Sepal Unknown S1 Sepal mesophyll Unknown G0/G1 phase cells Epidermis Epidermis Trichome-base floral Trichome meristem Thicked epidermis Floral intercalary meristem FIM Floral intercalary meristem-2 Floral intercalary meristem-3 G2/M phase cells S1 G1/S phase cells Receptacle Receptacle primordia Receptacle-early Receptacle-late Provascular Protoxylem Conjunctive Conjunctive primordia Tissue Conjunctive tissue-early Conjunctive tissue-late Petal primordia Petal-early Petal S1 Petal-late Basal sepal-adaxial 1.00 Edge weight Floral primordia carpel 0.75 Placenta FP 0.50 Ovlue (ovary wall) 0.25 Stigma/transmitting tract S1 S2 S3 S4/S5 S6/S7 S8-1/2 S8-3/4 stage c Receptacle primordia Receptacle-early Receptacle-late Conjunctive primordia Conjunctive tissue-early UMAP2 UMAP2 Conjunctive tissue-late Floral intercalary meristem Floral intercalary meristem-2 Floral intercalary meristem-3 UMAP1 UMAP1 d 1.5 Bin50 density 1.0 0.5 0 0 2 4 6 Pesudotime a, A directed acyclic graph showing inferred relationships between cell states across cucumber female floral bud development."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 168,
+            "text": "c, Superclusters (receptacle, conjunctive tissue and FIM) and pseudotime"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 470,
+            "text": "The pseudotime for each cell was normalized to a scale of 0–1."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 165,
+            "text": "Each row corresponds to one of the cluster annotations, columns to developmental stages spanning from S1 to S8-4, nodes to cell trajectories and node colours to clusters."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 462,
+            "text": "The cluster of FIM was selected as the starting point for the development of the receptacle."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 167,
+            "text": "The spot colours correspond to the clusters shown in a."
+          },
+          {
+            "rank": 10,
+            "sentence_id": 461,
+            "text": "A dimensionality reduction was performed with the DDRTree method and finally visualized using the plot_cell_trajectory function."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 127,
+            "text": "along with the pseudotime curve, demonstrated the cell lineage from FIM to receptacle and then to conjunctive tissue (Fig."
+          },
+          {
+            "sentence_id": 128,
+            "text": "3c,d). These insights and the organization information of the cell clusters, as shown in the schematic diagrams (Extended Data Fig. 4b,c), highlight the spatiotemporal structure of these functional hubs in the transect section (bottom) and longitudinal section (top) at various developmental stages of cucumber floral buds (Fig."
+          }
+        ],
+        "sentence_ids": [
+          127,
+          128
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "primary_type": "accurate",
+        "secondary_types": [],
+        "is_accurate": true,
+        "severity": "none"
+      },
+      "analysis": {
+        "evidence_judgement": "【可核查分句】「发育顺序为 FIM→花托→连接组织」— 由 sentence_id=127 精准支撑：「demonstrated the cell lineage from FIM to receptacle and then to conjunctive tissue」。\n【图注】「图3c-d」由 sentence_id=128 确认。\n观点句为论文原文的忠实翻译，无额外渲染或推断。\nClassify top-5：rank1(127)直接命中，rank2(128)补充图号。",
+        "classification_reason": "观点句逐字对应论文句子「from FIM to receptacle and then to conjunctive tissue」，未添加任何论文未有的断言。判定 accurate。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "top-5 质量好：rank1(127)直接命中核心句，rank2(128)补充上下文。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "断言完全被支撑。",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "快速确认 sent_id=127 措辞即可；此条置信度高，审核优先级低。",
+        "needs_manual_review": false,
+        "review_focus": [
+          "none"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P001-A001-C22",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "基于以上结果，推测黄瓜心皮外的果肉是由花托发育而来（图3e），因此花托及其相关组织的研究对遗传改良意义重大。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 130,
+            "text": "We infer that in cucumber, the fruit flesh outside the carpel is mostly derived from the development of receptacle."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 131,
+            "text": "Accordingly, the receptacle-derived tissue is important for the genetic improvement."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 129,
+            "text": "3e) and advance our understanding of the development basis of cucurbit female flower buds."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 164,
+            "text": "After S5, we observed the largest increase in the bin numbers of receptacle-related clusters (receptacle-early, cluster 9), indicating that 865 a b Basal sepal–abaxial Sepal epidermis Sepal mesophyll Sepal Unknown S1 Sepal mesophyll Unknown G0/G1 phase cells Epidermis Epidermis Trichome-base floral Trichome meristem Thicked epidermis Floral intercalary meristem FIM Floral intercalary meristem-2 Floral intercalary meristem-3 G2/M phase cells S1 G1/S phase cells Receptacle Receptacle primordia Receptacle-early Receptacle-late Provascular Protoxylem Conjunctive Conjunctive primordia Tissue Conjunctive tissue-early Conjunctive tissue-late Petal primordia Petal-early Petal S1 Petal-late Basal sepal-adaxial 1.00 Edge weight Floral primordia carpel 0.75 Placenta FP 0.50 Ovlue (ovary wall) 0.25 Stigma/transmitting tract S1 S2 S3 S4/S5 S6/S7 S8-1/2 S8-3/4 stage c Receptacle primordia Receptacle-early Receptacle-late Conjunctive primordia Conjunctive tissue-early UMAP2 UMAP2 Conjunctive tissue-late Floral intercalary meristem Floral intercalary meristem-2 Floral intercalary meristem-3 UMAP1 UMAP1 d 1.5 Bin50 density 1.0 0.5 0 0 2 4 6 Pesudotime a, A directed acyclic graph showing inferred relationships between cell states across cucumber female floral bud development."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 165,
+            "text": "Each row corresponds to one of the cluster annotations, columns to developmental stages spanning from S1 to S8-4, nodes to cell trajectories and node colours to clusters."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 130,
+            "text": "We infer that in cucumber, the fruit flesh outside the carpel is mostly derived from the development of receptacle."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 131,
+            "text": "Accordingly, the receptacle-derived tissue is important for the genetic improvement."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 129,
+            "text": "3e) and advance our understanding of the development basis of cucurbit female flower buds."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 164,
+            "text": "After S5, we observed the largest increase in the bin numbers of receptacle-related clusters (receptacle-early, cluster 9), indicating that 865 a b Basal sepal–abaxial Sepal epidermis Sepal mesophyll Sepal Unknown S1 Sepal mesophyll Unknown G0/G1 phase cells Epidermis Epidermis Trichome-base floral Trichome meristem Thicked epidermis Floral intercalary meristem FIM Floral intercalary meristem-2 Floral intercalary meristem-3 G2/M phase cells S1 G1/S phase cells Receptacle Receptacle primordia Receptacle-early Receptacle-late Provascular Protoxylem Conjunctive Conjunctive primordia Tissue Conjunctive tissue-early Conjunctive tissue-late Petal primordia Petal-early Petal S1 Petal-late Basal sepal-adaxial 1.00 Edge weight Floral primordia carpel 0.75 Placenta FP 0.50 Ovlue (ovary wall) 0.25 Stigma/transmitting tract S1 S2 S3 S4/S5 S6/S7 S8-1/2 S8-3/4 stage c Receptacle primordia Receptacle-early Receptacle-late Conjunctive primordia Conjunctive tissue-early UMAP2 UMAP2 Conjunctive tissue-late Floral intercalary meristem Floral intercalary meristem-2 Floral intercalary meristem-3 UMAP1 UMAP1 d 1.5 Bin50 density 1.0 0.5 0 0 2 4 6 Pesudotime a, A directed acyclic graph showing inferred relationships between cell states across cucumber female floral bud development."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 165,
+            "text": "Each row corresponds to one of the cluster annotations, columns to developmental stages spanning from S1 to S8-4, nodes to cell trajectories and node colours to clusters."
+          },
+          {
+            "rank": 6,
+            "sentence_id": 91,
+            "text": "We also observed three clusters (26, 27 and 28) situated between the carpel and receptacle at various stages of floral bud development, which we named conjunctive primordia, conjunctive tissue-early and conjunctive tissue-late, respectively (Fig."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 92,
+            "text": "2a–c). Besides the expression of marker genes in both carpel (CsAG1) and receptacle (CsCRC), the marker gene CsHANABA TARANU (CsHAN1) was exclusively expressed in cluster 27 (ref."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 57,
+            "text": "1b,c). The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c)."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 265,
+            "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+          },
+          {
+            "rank": 10,
+            "sentence_id": 341,
+            "text": "3c,d). These results suggest that the developmental innovation of the receptacle in Cucumis species contributes to the evolution of unisexual flowers."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 130,
+            "text": "We infer that in cucumber, the fruit flesh outside the carpel is mostly derived from the development of receptacle."
+          },
+          {
+            "sentence_id": 131,
+            "text": "Accordingly, the receptacle-derived tissue is important for the genetic improvement."
+          }
+        ],
+        "sentence_ids": [
+          130,
+          131
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "primary_type": "accurate",
+        "secondary_types": [],
+        "is_accurate": true,
+        "severity": "none"
+      },
+      "analysis": {
+        "evidence_judgement": "【可核查分句1】「黄瓜心皮外的果肉是由花托发育而来」— 由 sentence_id=130 逐词对应支撑：「the fruit flesh outside the carpel is mostly derived from the development of receptacle」。\n【可核查分句2】「花托及其相关组织的研究对遗传改良意义重大」— 由 sentence_id=131 逐词对应支撑：「the receptacle-derived tissue is important for the genetic improvement」。\n观点句以「推测」对应论文「We infer」，语气匹配精准。",
+        "classification_reason": "观点句为论文 sent 130+131 的中文翻译，连「推测」/「We infer」的审慎措辞都原样保留。无任何失真。判定 accurate。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "top-5 质量优秀：rank1(130)和rank2(131)直接命中两个分句。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "全部断言被精准支撑。",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "核对 sent_id=130 与 131 即可；置信度极高。",
+        "needs_manual_review": false,
+        "review_focus": [
+          "none"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P001-A001-C23",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "为探究花托起始形成过程中的基因动态表达和细胞基础，对S1-S4时期花芽进行近单细胞分辨率的无监督聚类分析，共分为7个cluster（图4a-b），其中花托原基（RP）和扩展花分生组织（EFM）的起始和发育决定着“凹”形花分生组织的形态发生。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 139,
+            "text": "The distribution of cluster 3 (RP) and cluster 4 (EFM) indicates that their initiation and development determine the morphogenesis of the enlarged and concave floral meristem."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 160,
+            "text": "Based on the clusters, we classified the cells of floral buds into the inner part (cluster floral primordia) and peripheral part (clusters E, RP and EFM) and measured their cell area and cell numbers (Fig."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 132,
+            "text": "To understand the gene expression dynamics and cytological basis of the EFM in inferior ovary, we selected sections of floral buds from S1 to S4 stages and conducted unsupervised clustering analysis with near single-cell resolution (average cell diameter from S1 to S4 of 12.96 μm and bin30 diameter of 15 μm) (Fig."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 187,
+            "text": "866 a b Low 0 E 4 EFM 1 P 5 FIM 2 FP 6 Unknown 3 RP S4 S3 S2 S1 LOX1 DWF1 c f STM-like S4 P clusters 1/5 Max Pseudotime FIM RP Min E PI EFM cluster 2 UMAP2 FP ACO2 cluster 3 UMAP1 d e g AP1 FP FIM RP S3 FIM PI EFM AP3 FP HTA7 RP ANT HMG 2 RIP5 STM LOS1 2 1 RPL16A LAX2 RPS11 S1 ROX3 STM Pseudotime AP1 Min Max LEAFY 3 CAL1 h Inner part STM-like EP ETTIN MP E AFO 2 1 CYP714A 4 CER1 WOX9 KNAT2-like1 S1 AG1 1 BAS1 ACO2 MIPS3 Group Min Max Pseudotime S5 visualization depicting the clustering of developing floral buds at the early stages."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 87,
+            "text": "Clusters 8 (from S1 to S4), 9 (from S5 to S8-2) and 10 (from S8-3 to S8-4) were determined to correspond to receptacle primordia, receptacle-early and receptacle-late, respectively."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 139,
+            "text": "The distribution of cluster 3 (RP) and cluster 4 (EFM) indicates that their initiation and development determine the morphogenesis of the enlarged and concave floral meristem."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 160,
+            "text": "Based on the clusters, we classified the cells of floral buds into the inner part (cluster floral primordia) and peripheral part (clusters E, RP and EFM) and measured their cell area and cell numbers (Fig."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 132,
+            "text": "To understand the gene expression dynamics and cytological basis of the EFM in inferior ovary, we selected sections of floral buds from S1 to S4 stages and conducted unsupervised clustering analysis with near single-cell resolution (average cell diameter from S1 to S4 of 12.96 μm and bin30 diameter of 15 μm) (Fig."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 187,
+            "text": "866 a b Low 0 E 4 EFM 1 P 5 FIM 2 FP 6 Unknown 3 RP S4 S3 S2 S1 LOX1 DWF1 c f STM-like S4 P clusters 1/5 Max Pseudotime FIM RP Min E PI EFM cluster 2 UMAP2 FP ACO2 cluster 3 UMAP1 d e g AP1 FP FIM RP S3 FIM PI EFM AP3 FP HTA7 RP ANT HMG 2 RIP5 STM LOS1 2 1 RPL16A LAX2 RPS11 S1 ROX3 STM Pseudotime AP1 Min Max LEAFY 3 CAL1 h Inner part STM-like EP ETTIN MP E AFO 2 1 CYP714A 4 CER1 WOX9 KNAT2-like1 S1 AG1 1 BAS1 ACO2 MIPS3 Group Min Max Pseudotime S5 visualization depicting the clustering of developing floral buds at the early stages."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 87,
+            "text": "Clusters 8 (from S1 to S4), 9 (from S5 to S8-2) and 10 (from S8-3 to S8-4) were determined to correspond to receptacle primordia, receptacle-early and receptacle-late, respectively."
+          },
+          {
+            "rank": 6,
+            "sentence_id": 135,
+            "text": "4a,b and Supplementary Table 4): cluster 0, epidermis (cluster E); cluster 1, pedicel (cluster P); cluster 2, floral primordia (cluster FP); cluster 3, receptacle primordium (cluster RP); and cluster 5, FIM."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 459,
+            "text": "The data from epidermis, receptacle primordium and enlarged FIM were extracted."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 57,
+            "text": "1b,c). The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c)."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 134,
+            "text": "This revealed seven clusters with distinct locations and expressed marker genes during early floral organ development (Fig."
+          },
+          {
+            "rank": 10,
+            "sentence_id": 138,
+            "text": "1b,c), we annotated cluster 4 as an EFM."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 132,
+            "text": "To understand the gene expression dynamics and cytological basis of the EFM in inferior ovary, we selected sections of floral buds from S1 to S4 stages and conducted unsupervised clustering analysis with near single-cell resolution (average cell diameter from S1 to S4 of 12.96 μm and bin30 diameter of 15 μm) (Fig."
+          },
+          {
+            "sentence_id": 134,
+            "text": "This revealed seven clusters with distinct locations and expressed marker genes during early floral organ development (Fig."
+          },
+          {
+            "sentence_id": 139,
+            "text": "The distribution of cluster 3 (RP) and cluster 4 (EFM) indicates that their initiation and development determine the morphogenesis of the enlarged and concave floral meristem."
+          }
+        ],
+        "sentence_ids": [
+          132,
+          134,
+          139
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "primary_type": "accurate",
+        "secondary_types": [],
+        "is_accurate": true,
+        "severity": "none"
+      },
+      "analysis": {
+        "evidence_judgement": "【可核查分句1】「S1-S4近单细胞分辨率无监督聚类→7个cluster」— sentence_id=132 支撑方法：「unsupervised clustering analysis with near single-cell resolution」；sentence_id=134 支撑结果：「seven clusters」。\n【可核查分句2】「RP和EFM的起始和发育决定着凹形花分生组织的形态发生」— sentence_id=139 精准对应：「initiation and development determine the morphogenesis of the enlarged and concave floral meristem」。\n注意：观点句说「花托起始形成」而论文132句说「EFM in inferior ovary」，语义有细微偏移（花托 vs EFM），但整体准确。\nClassify top-5：rank1(139)命中分句2，rank2(160)不直接相关，rank3(132)命中分句1——top-5覆盖关键断言但分布分散。",
+        "classification_reason": "观点句准确转述论文实验设计（132+134）和核心发现（139）。「花托起始形成过程」与原文「EFM in inferior ovary」有轻微语境偏移，但核心信息不失真。判定 accurate。",
+        "key_differences": [
+          {
+            "type": "context_stripping",
+            "paper_expression": "gene expression dynamics and cytological basis of the EFM in inferior ovary",
+            "article_expression": "花托起始形成过程中的基因动态表达和细胞基础",
+            "description": "论文强调 EFM（扩展花分生组织）在下位子房中的角色，观点句转为「花托起始」，语境微调但不影响核心信息"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "top-5 覆盖良好：rank1(139)命中核心，rank3(132)提供方法细节，rank4/5噪声。rank2(160)有部分相关但与关键断言不直接匹配。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "所有断言均有明确支撑。",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "1. 核对「7个cluster」→ sent_id=134 确认；\n2. 核对「RP/EFM决定凹形花分生组织形态」→ sent_id=139 确认；\n3. 确认是否需要补充 sent_id=135（cluster列表详情）。",
+        "needs_manual_review": false,
+        "review_focus": [
+          "none"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P001-A001-C24",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "RNA速率分析和拟时序分析揭示了这些cluster的发育轨迹：起源于花基部分生组织（FIM），分为3条发育路径，其中一条分化为表皮（E），另外两条经过扩展花分生组织（EFM）分别分化为花原基（FP）和花托原基（RP）（图4c-d）。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 459,
+            "text": "The data from epidermis, receptacle primordium and enlarged FIM were extracted."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 144,
+            "text": "The other two originated from the FIM and passed through the EFM, with one leading to the formation of the floral primordia, then generating floral whorls, while the other gave rise to the receptacle primordium from the EFM (Fig."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 460,
+            "text": "The top marker genes of each cluster were calculated using the Seurat (v4.2.1) FindAllMarkers function and were selected for Monocle2 analysis."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 458,
+            "text": "Monocle2 (ref. 71) was used to analyse the development of the receptacle from S1 to S4."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 190,
+            "text": "c, RNA velocity streamline plots showing the predicted trajectory of cell lineage transition in the early stage of floral primordium (left) and UMAP (middle)."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 459,
+            "text": "The data from epidermis, receptacle primordium and enlarged FIM were extracted."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 144,
+            "text": "The other two originated from the FIM and passed through the EFM, with one leading to the formation of the floral primordia, then generating floral whorls, while the other gave rise to the receptacle primordium from the EFM (Fig."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 460,
+            "text": "The top marker genes of each cluster were calculated using the Seurat (v4.2.1) FindAllMarkers function and were selected for Monocle2 analysis."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 458,
+            "text": "Monocle2 (ref. 71) was used to analyse the development of the receptacle from S1 to S4."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 190,
+            "text": "c, RNA velocity streamline plots showing the predicted trajectory of cell lineage transition in the early stage of floral primordium (left) and UMAP (middle)."
+          },
+          {
+            "rank": 6,
+            "sentence_id": 143,
+            "text": "One involved the differentiation of the epidermis."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 145,
+            "text": "4c). A pseudotime analysis using Monocle2 confirmed the resulting trajectories (Fig."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 189,
+            "text": "The dot size indicates the percentage of bins expressing the genes at each cluster, and the colour intensity represents the relative average expression level."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 191,
+            "text": "Right: a pseudotime trajectory analysis corresponding to clusters, using Monocle3."
+          },
+          {
+            "rank": 10,
+            "sentence_id": 135,
+            "text": "4a,b and Supplementary Table 4): cluster 0, epidermis (cluster E); cluster 1, pedicel (cluster P); cluster 2, floral primordia (cluster FP); cluster 3, receptacle primordium (cluster RP); and cluster 5, FIM."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 143,
+            "text": "One involved the differentiation of the epidermis."
+          },
+          {
+            "sentence_id": 144,
+            "text": "The other two originated from the FIM and passed through the EFM, with one leading to the formation of the floral primordia, then generating floral whorls, while the other gave rise to the receptacle primordium from the EFM (Fig."
+          },
+          {
+            "sentence_id": 145,
+            "text": "4c). A pseudotime analysis using Monocle2 confirmed the resulting trajectories (Fig."
+          }
+        ],
+        "sentence_ids": [
+          143,
+          144,
+          145
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "primary_type": "accurate",
+        "secondary_types": [],
+        "is_accurate": true,
+        "severity": "none"
+      },
+      "analysis": {
+        "evidence_judgement": "【可核查分句1】「起源于FIM，分为3条发育路径」— sentence_id=143 支撑表皮路径（「One involved the differentiation of the epidermis」），sentence_id=144 支撑另两条经EFM到FP和RP的路径（「The other two originated from the FIM and passed through the EFM」）。三句合起来完整覆盖。\n【可核查分句2】「RNA速率+拟时序分析」— sentence_id=145确认Monocle2方法。\n⚠ 关键问题：sentence_id=143（表皮路径）在 review pool 中排 rank 6，不在 classify top-5 内！top-5（459/144/460/458/190）中仅有144命中核心路径，其余为方法细节或噪声。这意味着如果只送 top-5 给分类模型，可能因缺少「表皮」分句而无法完整验证该 claim。",
+        "classification_reason": "观点句准确概括了论文的发育轨迹发现。3条路径、FIM起源、经EFM到FP/RP的路线均与 sent 143+144 一致。判定 accurate，但 rag top-5 覆盖不完整。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [
+            143
+          ],
+          "notes": "sent_id=143（表皮路径）仅在 review rank6，未进 top-5。classify top-5 缺失了三条路径之一的支撑句，可能影响分类准确性。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "全部断言有支撑，但 gold 需要 review pool 中的句。",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "⚠ 重点核对：sent_id=143（review rank6）是否确实是「一条分化为表皮」的支撑；\n若确认，gold 应包含 [143,144,145]；rag_review 标明 top5_is_best=false。\n另外检查 sent_id=144 是否包含完整的「两条经EFM到FP和RP」信息。",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "rag_top5"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P001-A001-C25",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "在拟时序分析中筛选出一些关键基因，其表达热图及空间定位见图4e-f，并对其中一些基因进行了RNA原位杂交验证（图4g）。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 158,
+            "text": "Next, the expression patterns of selected key marker genes, such as STM, STM-like, KNAT2-like1, ETTIN, AP1 and LEAFY, were verified by RNA in situ hybridization (Fig."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 195,
+            "text": "e, A heat map of the dynamic changes in expression levels of pseudotime-dependent genes."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 157,
+            "text": "4f and Extended Data Fig. 5b)."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 159,
+            "text": "4g and Extended Data Fig. 5c)."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 194,
+            "text": "d, A DDRTree visualization of the cluster and pseudotime trajectory analysis of the various clusters."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 158,
+            "text": "Next, the expression patterns of selected key marker genes, such as STM, STM-like, KNAT2-like1, ETTIN, AP1 and LEAFY, were verified by RNA in situ hybridization (Fig."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 195,
+            "text": "e, A heat map of the dynamic changes in expression levels of pseudotime-dependent genes."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 157,
+            "text": "4f and Extended Data Fig. 5b)."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 159,
+            "text": "4g and Extended Data Fig. 5c)."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 194,
+            "text": "d, A DDRTree visualization of the cluster and pseudotime trajectory analysis of the various clusters."
+          },
+          {
+            "rank": 6,
+            "sentence_id": 196,
+            "text": "The full list of genes is provided in Supplementary Table 5."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 112,
+            "text": "To confirm the accuracy of our annotation, we assessed the spatial distribution of several selected marker genes by RNA in situ hybridization, all of which confirmed the spatiotemporal expression patterns indicated by the Stereo-seq signals (Extended Data Fig. 2p)."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 113,
+            "text": "The data related to these spatially and temporally resolved transcriptomes and cell types of cucumber floral organ development can be browsed via the STOmicsDB27, an interactive data portal, at https://db.cngb.org/ stomics/ctsta."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 111,
+            "text": "Clusters 12, 16, 20, 35 and 39 had no known marker genes and were unannotated."
+          },
+          {
+            "rank": 10,
+            "sentence_id": 476,
+            "text": "For RNA in situ hybridization experiments, each hybridization probe was repeated with the same results using at least three independent samples."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 158,
+            "text": "Next, the expression patterns of selected key marker genes, such as STM, STM-like, KNAT2-like1, ETTIN, AP1 and LEAFY, were verified by RNA in situ hybridization (Fig."
+          },
+          {
+            "sentence_id": 195,
+            "text": "e, A heat map of the dynamic changes in expression levels of pseudotime-dependent genes."
+          }
+        ],
+        "sentence_ids": [
+          158,
+          195
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "primary_type": "accurate",
+        "secondary_types": [],
+        "is_accurate": true,
+        "severity": "none"
+      },
+      "analysis": {
+        "evidence_judgement": "【可核查分句1】「筛选出一些关键基因，表达热图及空间定位见图4e-f」— sentence_id=195 支撑热图（「A heat map of the dynamic changes in expression levels of pseudotime-dependent genes」）。\n【可核查分句2】「对其中一些基因进行了RNA原位杂交验证」— sentence_id=158 精准支撑：「expression patterns of selected key marker genes... were verified by RNA in situ hybridization」。\n观点句为纯描述性转述，无主观渲染。\nClassify top-5：rank1(158)命中分句2，rank2(195)命中分句1，覆盖良好。",
+        "classification_reason": "观点句忠实转述论文方法性内容：拟时序筛选基因→热图→原位杂交验证。所有断言均被论文直接支撑，无额外推断。判定 accurate。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "top-5 覆盖良好：rank1(158)和rank2(195)分别支撑两个核心分句。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "描述性内容完全被支撑。",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "快审：确认 sent_id=158 列出的基因是否与观点句意图一致。",
+        "needs_manual_review": false,
+        "review_focus": [
+          "none"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P001-A001-C26",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "根据细胞聚类位置，将这些cluster分为内部区域（FP）和外部区域（E、RP和EFM）（图4h）。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 160,
+            "text": "Based on the clusters, we classified the cells of floral buds into the inner part (cluster floral primordia) and peripheral part (clusters E, RP and EFM) and measured their cell area and cell numbers (Fig."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 161,
+            "text": "4h). We determined that the initial morphological changes in the EFM reflect rapid cell proliferation in the peripheral region (Fig."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 135,
+            "text": "4a,b and Supplementary Table 4): cluster 0, epidermis (cluster E); cluster 1, pedicel (cluster P); cluster 2, floral primordia (cluster FP); cluster 3, receptacle primordium (cluster RP); and cluster 5, FIM."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 134,
+            "text": "This revealed seven clusters with distinct locations and expressed marker genes during early floral organ development (Fig."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 136,
+            "text": "Both cluster 3 and cluster 4 were distributed along the concave floral meristem, and cluster 4 showed preferential expression of the floral meristem marker gene LEAFY."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 160,
+            "text": "Based on the clusters, we classified the cells of floral buds into the inner part (cluster floral primordia) and peripheral part (clusters E, RP and EFM) and measured their cell area and cell numbers (Fig."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 161,
+            "text": "4h). We determined that the initial morphological changes in the EFM reflect rapid cell proliferation in the peripheral region (Fig."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 135,
+            "text": "4a,b and Supplementary Table 4): cluster 0, epidermis (cluster E); cluster 1, pedicel (cluster P); cluster 2, floral primordia (cluster FP); cluster 3, receptacle primordium (cluster RP); and cluster 5, FIM."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 134,
+            "text": "This revealed seven clusters with distinct locations and expressed marker genes during early floral organ development (Fig."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 136,
+            "text": "Both cluster 3 and cluster 4 were distributed along the concave floral meristem, and cluster 4 showed preferential expression of the floral meristem marker gene LEAFY."
+          },
+          {
+            "rank": 6,
+            "sentence_id": 187,
+            "text": "866 a b Low 0 E 4 EFM 1 P 5 FIM 2 FP 6 Unknown 3 RP S4 S3 S2 S1 LOX1 DWF1 c f STM-like S4 P clusters 1/5 Max Pseudotime FIM RP Min E PI EFM cluster 2 UMAP2 FP ACO2 cluster 3 UMAP1 d e g AP1 FP FIM RP S3 FIM PI EFM AP3 FP HTA7 RP ANT HMG 2 RIP5 STM LOS1 2 1 RPL16A LAX2 RPS11 S1 ROX3 STM Pseudotime AP1 Min Max LEAFY 3 CAL1 h Inner part STM-like EP ETTIN MP E AFO 2 1 CYP714A 4 CER1 WOX9 KNAT2-like1 S1 AG1 1 BAS1 ACO2 MIPS3 Group Min Max Pseudotime S5 visualization depicting the clustering of developing floral buds at the early stages."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 55,
+            "text": "1b), then sepal, petal, stamen and carpel primordia are initiated sequentially on the inner regions of this ‘enlarged floral meristem’ (EFM) (Fig."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 197,
+            "text": "Average expression Per cent expressed High 5 10 15 20 25 30 Unknown FIM EFM RP FP P E DC1 STM-like KNAT2-like1 ACO2 CYP714A1 MIPS3 CEL1 BAS1 EXPL3 KNAT2−like2 EXPR4 XTH5 KRP3 EXP1 KAN1 AP1 LEAFY ETTIN CAL1 GID1B SEP2 DRM1 PI PDF1 AP3 AFO STM Expression Min Max LEAFY AP1 clusters 4/5 clusters 1/5 AP3 KNAT2-like1 clusters 3/5 cluster 2 BAS1 MIPS3 cluster 3 cluster 3 KNAT2-like1 S4 S6 S3 S5 S1 S4 S3 S1 S6 STM-like LEAFY S6 S5 S5 S5 S4 S3 S2 S1 S2 i j Inner part Inner part Peripheral part Peripheral part Peripheral part RP and EFM Cell number growth rate (%) Vascular ************ n.s."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 188,
+            "text": "b, A bubble plot showing the expression levels of the specific markers in each of the clusters."
+          },
+          {
+            "rank": 10,
+            "sentence_id": 198,
+            "text": "n.s. 150 Cell region area µm2 500 400 100 S2 S4 300 200 50 100 0 0 S6 S1 S2 S4 S5 S6 S1 S2 S4 S5 S6 of selected genes obtained through Monocle2 analysis."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 160,
+            "text": "Based on the clusters, we classified the cells of floral buds into the inner part (cluster floral primordia) and peripheral part (clusters E, RP and EFM) and measured their cell area and cell numbers (Fig."
+          }
+        ],
+        "sentence_ids": [
+          160
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "primary_type": "accurate",
+        "secondary_types": [],
+        "is_accurate": true,
+        "severity": "none"
+      },
+      "analysis": {
+        "evidence_judgement": "【可核查分句】「分为内部区域（FP）和外部区域（E、RP和EFM）」— 由 sentence_id=160 逐词对应：「classified the cells... into the inner part (cluster floral primordia) and peripheral part (clusters E, RP and EFM)」。\n观点句为论文原句的中文翻译，无任何改写或添加。",
+        "classification_reason": "观点句与 sent 160 一一对应，措辞精准（「内部区域」=「inner part」, 「外部区域」=「peripheral part」）。判定 accurate。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "top-5 rank1(160)直接命中核心句，质量好。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "断言完全被支撑。",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "确认 sent_id=160 即可；置信度极高。",
+        "needs_manual_review": false,
+        "review_focus": [
+          "none"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P001-A001-C27",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "通过统计内部和外部区域的细胞数量及面积发现，EFM初始形态变化是由于外部区域细胞快速增殖（图4i-j），从而促进外侧分生组织后续扩大。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 161,
+            "text": "4h). We determined that the initial morphological changes in the EFM reflect rapid cell proliferation in the peripheral region (Fig."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 160,
+            "text": "Based on the clusters, we classified the cells of floral buds into the inner part (cluster floral primordia) and peripheral part (clusters E, RP and EFM) and measured their cell area and cell numbers (Fig."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 162,
+            "text": "4i) and that cell expansion in this region from S2 to S5 contributed to subsequent meristem enlargement (Fig."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 163,
+            "text": "4j). This finding was supported by the preferential expression of known cell expansion-related genes37–40 in the peripheral region at S4 (Extended Data Fig. 5d)."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 169,
+            "text": "the rapid growth of the receptacle after this stage is driven by another phase of cell proliferation (Fig."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 161,
+            "text": "4h). We determined that the initial morphological changes in the EFM reflect rapid cell proliferation in the peripheral region (Fig."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 160,
+            "text": "Based on the clusters, we classified the cells of floral buds into the inner part (cluster floral primordia) and peripheral part (clusters E, RP and EFM) and measured their cell area and cell numbers (Fig."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 162,
+            "text": "4i) and that cell expansion in this region from S2 to S5 contributed to subsequent meristem enlargement (Fig."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 163,
+            "text": "4j). This finding was supported by the preferential expression of known cell expansion-related genes37–40 in the peripheral region at S4 (Extended Data Fig. 5d)."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 169,
+            "text": "the rapid growth of the receptacle after this stage is driven by another phase of cell proliferation (Fig."
+          },
+          {
+            "rank": 6,
+            "sentence_id": 170,
+            "text": "5a). The cells transitioning between stem cells and differentiated cells are in a highly proliferative state and continue to divide several times before their differentiation41, suggesting that the cells of the rapidly growing receptacle are in this state."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 197,
+            "text": "Average expression Per cent expressed High 5 10 15 20 25 30 Unknown FIM EFM RP FP P E DC1 STM-like KNAT2-like1 ACO2 CYP714A1 MIPS3 CEL1 BAS1 EXPL3 KNAT2−like2 EXPR4 XTH5 KRP3 EXP1 KAN1 AP1 LEAFY ETTIN CAL1 GID1B SEP2 DRM1 PI PDF1 AP3 AFO STM Expression Min Max LEAFY AP1 clusters 4/5 clusters 1/5 AP3 KNAT2-like1 clusters 3/5 cluster 2 BAS1 MIPS3 cluster 3 cluster 3 KNAT2-like1 S4 S6 S3 S5 S1 S4 S3 S1 S6 STM-like LEAFY S6 S5 S5 S5 S4 S3 S2 S1 S2 i j Inner part Inner part Peripheral part Peripheral part Peripheral part RP and EFM Cell number growth rate (%) Vascular ************ n.s."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 198,
+            "text": "n.s. 150 Cell region area µm2 500 400 100 S2 S4 300 200 50 100 0 0 S6 S1 S2 S4 S5 S6 S1 S2 S4 S5 S6 of selected genes obtained through Monocle2 analysis."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 138,
+            "text": "1b,c), we annotated cluster 4 as an EFM."
+          },
+          {
+            "rank": 10,
+            "sentence_id": 140,
+            "text": "RNA velocity and Monocle3 were used to study the early differentiation trajectories of these clusters (Extended Data Fig. 3d,e)."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 161,
+            "text": "4h). We determined that the initial morphological changes in the EFM reflect rapid cell proliferation in the peripheral region (Fig."
+          },
+          {
+            "sentence_id": 162,
+            "text": "4i) and that cell expansion in this region from S2 to S5 contributed to subsequent meristem enlargement (Fig."
+          }
+        ],
+        "sentence_ids": [
+          161,
+          162
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "primary_type": "accurate",
+        "secondary_types": [],
+        "is_accurate": true,
+        "severity": "none"
+      },
+      "analysis": {
+        "evidence_judgement": "【可核查分句1】「EFM初始形态变化是由于外部区域细胞快速增殖」— 由 sentence_id=161 精准支撑：「initial morphological changes in the EFM reflect rapid cell proliferation in the peripheral region」。\n【可核查分句2】「从而促进外侧分生组织后续扩大」— 由 sentence_id=162 精准支撑：「cell expansion in this region from S2 to S5 contributed to subsequent meristem enlargement」。\n黄金句161+162完整覆盖观点句的两个分句，匹配精准。",
+        "classification_reason": "观点句为论文 sent 161+162 的中文转述，因果链条（增殖→扩大）、部位描述（外部区域=peripheral region）、时序（初始=S2-S5→后续）全部准确对应。判定 accurate。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "top-5 覆盖好：rank1(161)和rank3(162)分别命中两个核心分句，rank2(160)提供分类背景。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "全部断言精准支撑。",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "确认 sent_id=161+162 即可；置信度极高。",
+        "needs_manual_review": false,
+        "review_focus": [
+          "none"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P001-A001-C28",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "S5时期后，花托相关bin数量急剧上升（图5a），说明此阶段后花托快速生长。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 164,
+            "text": "After S5, we observed the largest increase in the bin numbers of receptacle-related clusters (receptacle-early, cluster 9), indicating that 865 a b Basal sepal–abaxial Sepal epidermis Sepal mesophyll Sepal Unknown S1 Sepal mesophyll Unknown G0/G1 phase cells Epidermis Epidermis Trichome-base floral Trichome meristem Thicked epidermis Floral intercalary meristem FIM Floral intercalary meristem-2 Floral intercalary meristem-3 G2/M phase cells S1 G1/S phase cells Receptacle Receptacle primordia Receptacle-early Receptacle-late Provascular Protoxylem Conjunctive Conjunctive primordia Tissue Conjunctive tissue-early Conjunctive tissue-late Petal primordia Petal-early Petal S1 Petal-late Basal sepal-adaxial 1.00 Edge weight Floral primordia carpel 0.75 Placenta FP 0.50 Ovlue (ovary wall) 0.25 Stigma/transmitting tract S1 S2 S3 S4/S5 S6/S7 S8-1/2 S8-3/4 stage c Receptacle primordia Receptacle-early Receptacle-late Conjunctive primordia Conjunctive tissue-early UMAP2 UMAP2 Conjunctive tissue-late Floral intercalary meristem Floral intercalary meristem-2 Floral intercalary meristem-3 UMAP1 UMAP1 d 1.5 Bin50 density 1.0 0.5 0 0 2 4 6 Pesudotime a, A directed acyclic graph showing inferred relationships between cell states across cucumber female floral bud development."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 165,
+            "text": "Each row corresponds to one of the cluster annotations, columns to developmental stages spanning from S1 to S8-4, nodes to cell trajectories and node colours to clusters."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 207,
+            "text": "867 a b G1/S phase cells G0/G1 FP S Placenta FIM Ovule (ovary wall) 2.0 Receptacle primordia Fold change 1.5 Receptacle-early Receptacle-late 1.0 G0/G1 G0/G1 phase cells 0.5 Conjunctive primordia Conjunctive tissue-early 0 Conjunctive tissue-late –0.5 Floral intercalary meristem Stage S1 S2 S3 S4–S5 S6−S7 S8_1−S8_2 S8_3−S8_4 Floral intercalary meristem-2 Floral intercalary meristem-3 d e G0/G1 S M G2 FIM RP S3 S5 S4 S1 S2 Receptacle NAC020 MGP AP2 GRF8 KTF1 GTB1 ARF6 HB-8 MP WRKY13 histoneH1 AT hook WHY2 Provascular SPL13A HB33 HMGB2 GTB1 MP Protoxylem HB6 ARF18 ARF2 ARF6 MGP G2/M phase cells G1/S phase cells S6 S7 S8-1 S8-2 S8-3 S8-4 Score f g Min Max MEE68 M11 ARR9 M5 WIP2 M8 DIN10 SNAK1 M3 CA1P M4 CIB1 YUC4 M13 CRC Peptide1 M14 ER M10 AGL42 M7 KNAT2-like1 M9 TPS1 M12 bHLH93 MGP AHK5 M2 ZPR2 M15 PPI1 M17 YAB2 Peptide2 M6 CYCD2;1 M1 LSH10 M16 a, A line graph showing the fold change in bin numbers (bin 50) for various clusters from S1 to S8."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 208,
+            "text": "Each line, differentiated by colour, represents a distinct cluster."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 244,
+            "text": "In female flowers, the receptacle and carpel continued to grow after S5, and the receptacle grew rapidly and wrapped around the carpel to form the inferior ovary (Extended Data Fig. 7b,d)."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 164,
+            "text": "After S5, we observed the largest increase in the bin numbers of receptacle-related clusters (receptacle-early, cluster 9), indicating that 865 a b Basal sepal–abaxial Sepal epidermis Sepal mesophyll Sepal Unknown S1 Sepal mesophyll Unknown G0/G1 phase cells Epidermis Epidermis Trichome-base floral Trichome meristem Thicked epidermis Floral intercalary meristem FIM Floral intercalary meristem-2 Floral intercalary meristem-3 G2/M phase cells S1 G1/S phase cells Receptacle Receptacle primordia Receptacle-early Receptacle-late Provascular Protoxylem Conjunctive Conjunctive primordia Tissue Conjunctive tissue-early Conjunctive tissue-late Petal primordia Petal-early Petal S1 Petal-late Basal sepal-adaxial 1.00 Edge weight Floral primordia carpel 0.75 Placenta FP 0.50 Ovlue (ovary wall) 0.25 Stigma/transmitting tract S1 S2 S3 S4/S5 S6/S7 S8-1/2 S8-3/4 stage c Receptacle primordia Receptacle-early Receptacle-late Conjunctive primordia Conjunctive tissue-early UMAP2 UMAP2 Conjunctive tissue-late Floral intercalary meristem Floral intercalary meristem-2 Floral intercalary meristem-3 UMAP1 UMAP1 d 1.5 Bin50 density 1.0 0.5 0 0 2 4 6 Pesudotime a, A directed acyclic graph showing inferred relationships between cell states across cucumber female floral bud development."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 165,
+            "text": "Each row corresponds to one of the cluster annotations, columns to developmental stages spanning from S1 to S8-4, nodes to cell trajectories and node colours to clusters."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 207,
+            "text": "867 a b G1/S phase cells G0/G1 FP S Placenta FIM Ovule (ovary wall) 2.0 Receptacle primordia Fold change 1.5 Receptacle-early Receptacle-late 1.0 G0/G1 G0/G1 phase cells 0.5 Conjunctive primordia Conjunctive tissue-early 0 Conjunctive tissue-late –0.5 Floral intercalary meristem Stage S1 S2 S3 S4–S5 S6−S7 S8_1−S8_2 S8_3−S8_4 Floral intercalary meristem-2 Floral intercalary meristem-3 d e G0/G1 S M G2 FIM RP S3 S5 S4 S1 S2 Receptacle NAC020 MGP AP2 GRF8 KTF1 GTB1 ARF6 HB-8 MP WRKY13 histoneH1 AT hook WHY2 Provascular SPL13A HB33 HMGB2 GTB1 MP Protoxylem HB6 ARF18 ARF2 ARF6 MGP G2/M phase cells G1/S phase cells S6 S7 S8-1 S8-2 S8-3 S8-4 Score f g Min Max MEE68 M11 ARR9 M5 WIP2 M8 DIN10 SNAK1 M3 CA1P M4 CIB1 YUC4 M13 CRC Peptide1 M14 ER M10 AGL42 M7 KNAT2-like1 M9 TPS1 M12 bHLH93 MGP AHK5 M2 ZPR2 M15 PPI1 M17 YAB2 Peptide2 M6 CYCD2;1 M1 LSH10 M16 a, A line graph showing the fold change in bin numbers (bin 50) for various clusters from S1 to S8."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 208,
+            "text": "Each line, differentiated by colour, represents a distinct cluster."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 244,
+            "text": "In female flowers, the receptacle and carpel continued to grow after S5, and the receptacle grew rapidly and wrapped around the carpel to form the inferior ovary (Extended Data Fig. 7b,d)."
+          },
+          {
+            "rank": 6,
+            "sentence_id": 245,
+            "text": "We noted that the ovaries of female flowers of the k-2 mutants were shorter than those of WT (Extended Data Fig. 7f)."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 243,
+            "text": "The development of male flowers in the k-2 mutants was identical to WT (Extended Data Fig. 7a,c,g), with carpel primordia development arresting after S5 and stamen primordia gradually enlarging until mature pollen formed before anthesis (Extended Data Fig. 7a,c)."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 169,
+            "text": "the rapid growth of the receptacle after this stage is driven by another phase of cell proliferation (Fig."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 216,
+            "text": "2b)22, and we confirmed its expression in the receptacle during stages S5–S8-4 (Supplementary Fig. 18a)."
+          },
+          {
+            "rank": 10,
+            "sentence_id": 170,
+            "text": "5a). The cells transitioning between stem cells and differentiated cells are in a highly proliferative state and continue to divide several times before their differentiation41, suggesting that the cells of the rapidly growing receptacle are in this state."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 164,
+            "text": "After S5, we observed the largest increase in the bin numbers of receptacle-related clusters (receptacle-early, cluster 9), indicating that 865 a b Basal sepal–abaxial Sepal epidermis Sepal mesophyll Sepal Unknown S1 Sepal mesophyll Unknown G0/G1 phase cells Epidermis Epidermis Trichome-base floral Trichome meristem Thicked epidermis Floral intercalary meristem FIM Floral intercalary meristem-2 Floral intercalary meristem-3 G2/M phase cells S1 G1/S phase cells Receptacle Receptacle primordia Receptacle-early Receptacle-late Provascular Protoxylem Conjunctive Conjunctive primordia Tissue Conjunctive tissue-early Conjunctive tissue-late Petal primordia Petal-early Petal S1 Petal-late Basal sepal-adaxial 1.00 Edge weight Floral primordia carpel 0.75 Placenta FP 0.50 Ovlue (ovary wall) 0.25 Stigma/transmitting tract S1 S2 S3 S4/S5 S6/S7 S8-1/2 S8-3/4 stage c Receptacle primordia Receptacle-early Receptacle-late Conjunctive primordia Conjunctive tissue-early UMAP2 UMAP2 Conjunctive tissue-late Floral intercalary meristem Floral intercalary meristem-2 Floral intercalary meristem-3 UMAP1 UMAP1 d 1.5 Bin50 density 1.0 0.5 0 0 2 4 6 Pesudotime a, A directed acyclic graph showing inferred relationships between cell states across cucumber female floral bud development."
+          },
+          {
+            "sentence_id": 169,
+            "text": "the rapid growth of the receptacle after this stage is driven by another phase of cell proliferation (Fig."
+          }
+        ],
+        "sentence_ids": [
+          164,
+          169
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "primary_type": "accurate",
+        "secondary_types": [],
+        "is_accurate": true,
+        "severity": "none"
+      },
+      "analysis": {
+        "evidence_judgement": "【可核查分句1】「S5后花托相关bin数量急剧上升」— 由 sentence_id=164 支撑：「After S5, we observed the largest increase in the bin numbers of receptacle-related clusters」。「急剧上升」=「largest increase」，措辞匹配。\n【可核查分句2】「说明此阶段后花托快速生长」— 由 sentence_id=169 支撑：「the rapid growth of the receptacle after this stage」。\n⚠ 注意：sent_id=164 文本末尾被大量图注标签污染，人工核对时请只看前半句。",
+        "classification_reason": "观点句准确转述论文定量发现（bin数上升）和定性结论（快速生长）。「急剧」对应「largest」无夸大。判定 accurate。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [
+            169
+          ],
+          "notes": "top-5 rank1(164)命中分句1但被图注严重污染；rank5(244)补充信息但未进核心。sent_id=169(快速生长)仅在review rank8，建议 gold 中加入。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "两个分句均有支撑。",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "1. sent_id=164 图注污染严重，人工确认前半句可用；\n2. 确认是否需补充 sent_id=169 来支撑「快速生长」结论；\n3. sent_id=244（review rank5）也可作为补充证据。",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "noisy_retrieval"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P001-A001-C29",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "3D UMAP散点图显示，这些细胞被重新聚类为6个cluster（图5b），根据标记基因，确定其中4个cluster与细胞周期相关（GO/G1、G2、S、M），另外2个分别为花托原基（RP）和花基部分生组织（FIM）（图5c）。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 173,
+            "text": "A UMAP three-dimensional (3D) scatterplot revealed six reclusters, four of which followed a cyclic pattern (S phase, G2 phase, G0/G1 phase and M phase) according to the assigned cell-cycle marker genes20, and the remaining two were annotated as receptacle primordium and FIM (Fig."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 280,
+            "text": "These clusters were annotated based on their distribution and the expression of marker genes (Fig."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 213,
+            "text": "c, A heat map showing the mean expression of marker genes in the RP, G0/G1 phase cells, S phase cells, G2 phase cells and M phase cells."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 135,
+            "text": "4a,b and Supplementary Table 4): cluster 0, epidermis (cluster E); cluster 1, pedicel (cluster P); cluster 2, floral primordia (cluster FP); cluster 3, receptacle primordium (cluster RP); and cluster 5, FIM."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 172,
+            "text": "5b and Extended Data Fig. 3f)."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 173,
+            "text": "A UMAP three-dimensional (3D) scatterplot revealed six reclusters, four of which followed a cyclic pattern (S phase, G2 phase, G0/G1 phase and M phase) according to the assigned cell-cycle marker genes20, and the remaining two were annotated as receptacle primordium and FIM (Fig."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 280,
+            "text": "These clusters were annotated based on their distribution and the expression of marker genes (Fig."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 213,
+            "text": "c, A heat map showing the mean expression of marker genes in the RP, G0/G1 phase cells, S phase cells, G2 phase cells and M phase cells."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 135,
+            "text": "4a,b and Supplementary Table 4): cluster 0, epidermis (cluster E); cluster 1, pedicel (cluster P); cluster 2, floral primordia (cluster FP); cluster 3, receptacle primordium (cluster RP); and cluster 5, FIM."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 172,
+            "text": "5b and Extended Data Fig. 3f)."
+          },
+          {
+            "rank": 6,
+            "sentence_id": 279,
+            "text": "In total, seven clusters were identified for both the superior ovary mutant and tomato."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 181,
+            "text": "of cell-cycle phases were observed at different developmental stages, with S phase cells primarily concentrated in S8-1 and S8-2 (Fig."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 125,
+            "text": "3a). We determined that after S7, the FIM and receptacle primordia generate cells that are actively undergoing the cell cycle, while G1/S phase cells transition to receptacle cells, suggesting a mechanism to maintain cell proliferation and support rapid receptacle growth (Fig."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 207,
+            "text": "867 a b G1/S phase cells G0/G1 FP S Placenta FIM Ovule (ovary wall) 2.0 Receptacle primordia Fold change 1.5 Receptacle-early Receptacle-late 1.0 G0/G1 G0/G1 phase cells 0.5 Conjunctive primordia Conjunctive tissue-early 0 Conjunctive tissue-late –0.5 Floral intercalary meristem Stage S1 S2 S3 S4–S5 S6−S7 S8_1−S8_2 S8_3−S8_4 Floral intercalary meristem-2 Floral intercalary meristem-3 d e G0/G1 S M G2 FIM RP S3 S5 S4 S1 S2 Receptacle NAC020 MGP AP2 GRF8 KTF1 GTB1 ARF6 HB-8 MP WRKY13 histoneH1 AT hook WHY2 Provascular SPL13A HB33 HMGB2 GTB1 MP Protoxylem HB6 ARF18 ARF2 ARF6 MGP G2/M phase cells G1/S phase cells S6 S7 S8-1 S8-2 S8-3 S8-4 Score f g Min Max MEE68 M11 ARR9 M5 WIP2 M8 DIN10 SNAK1 M3 CA1P M4 CIB1 YUC4 M13 CRC Peptide1 M14 ER M10 AGL42 M7 KNAT2-like1 M9 TPS1 M12 bHLH93 MGP AHK5 M2 ZPR2 M15 PPI1 M17 YAB2 Peptide2 M6 CYCD2;1 M1 LSH10 M16 a, A line graph showing the fold change in bin numbers (bin 50) for various clusters from S1 to S8."
+          },
+          {
+            "rank": 10,
+            "sentence_id": 187,
+            "text": "866 a b Low 0 E 4 EFM 1 P 5 FIM 2 FP 6 Unknown 3 RP S4 S3 S2 S1 LOX1 DWF1 c f STM-like S4 P clusters 1/5 Max Pseudotime FIM RP Min E PI EFM cluster 2 UMAP2 FP ACO2 cluster 3 UMAP1 d e g AP1 FP FIM RP S3 FIM PI EFM AP3 FP HTA7 RP ANT HMG 2 RIP5 STM LOS1 2 1 RPL16A LAX2 RPS11 S1 ROX3 STM Pseudotime AP1 Min Max LEAFY 3 CAL1 h Inner part STM-like EP ETTIN MP E AFO 2 1 CYP714A 4 CER1 WOX9 KNAT2-like1 S1 AG1 1 BAS1 ACO2 MIPS3 Group Min Max Pseudotime S5 visualization depicting the clustering of developing floral buds at the early stages."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 173,
+            "text": "A UMAP three-dimensional (3D) scatterplot revealed six reclusters, four of which followed a cyclic pattern (S phase, G2 phase, G0/G1 phase and M phase) according to the assigned cell-cycle marker genes20, and the remaining two were annotated as receptacle primordium and FIM (Fig."
+          }
+        ],
+        "sentence_ids": [
+          173
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "primary_type": "accurate",
+        "secondary_types": [],
+        "is_accurate": true,
+        "severity": "none"
+      },
+      "analysis": {
+        "evidence_judgement": "【可核查分句1】「3D UMAP散点图→6个cluster」— sentence_id=173：「A UMAP three-dimensional (3D) scatterplot revealed six reclusters」。\n【可核查分句2】「4个cluster与细胞周期相关(G0/G1, G2, S, M)」— sentence_id=173：「four of which followed a cyclic pattern (S phase, G2 phase, G0/G1 phase and M phase) according to the assigned cell-cycle marker genes」。\n【可核查分句3】「另外2个为RP和FIM」— sentence_id=173：「the remaining two were annotated as receptacle primordium and FIM」。\n观点句为论文 sent 173 的完整中文翻译，逐句对应，信息密度一致。",
+        "classification_reason": "观点句忠实翻译论文句子，无任何信息增删或扭曲。6 clusters、4 cell-cycle + 2 tissue 的数字和类别全部正确。判定 accurate。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "top-5 rank1(173)精准覆盖全部断言，质量极好。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "全部断言被一条句子完整覆盖。",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "确认 sent_id=173 即可；此条为论文原文直译，置信度极高。",
+        "needs_manual_review": false,
+        "review_focus": [
+          "none"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P001-A001-C30",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "根据其空间分布，发现花托细胞增殖主要由激活S期细胞活动调控（图5d）。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 183,
+            "text": "These findings support the notion that cell proliferation in the receptacle is regulated by the activation of meristematic activities in S phase cells."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 184,
+            "text": "To pinpoint the key genes that regulate the cell proliferation and rapid growth of receptacles, we focused on those that were specifically upregulated or downregulated along the TOFO trajectory from each cluster (Fig."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 182,
+            "text": "5d). The target of rapamycin (TOR) kinase gene, which promotes the activation of S phase genes and meristems42, was found to predominantly expressed in S phase cells (Extended Data Fig. 6b)."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 125,
+            "text": "3a). We determined that after S7, the FIM and receptacle primordia generate cells that are actively undergoing the cell cycle, while G1/S phase cells transition to receptacle cells, suggesting a mechanism to maintain cell proliferation and support rapid receptacle growth (Fig."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 126,
+            "text": "3a). An analysis using Monocle2 (Extended Data Fig. 3d),"
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 183,
+            "text": "These findings support the notion that cell proliferation in the receptacle is regulated by the activation of meristematic activities in S phase cells."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 184,
+            "text": "To pinpoint the key genes that regulate the cell proliferation and rapid growth of receptacles, we focused on those that were specifically upregulated or downregulated along the TOFO trajectory from each cluster (Fig."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 182,
+            "text": "5d). The target of rapamycin (TOR) kinase gene, which promotes the activation of S phase genes and meristems42, was found to predominantly expressed in S phase cells (Extended Data Fig. 6b)."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 125,
+            "text": "3a). We determined that after S7, the FIM and receptacle primordia generate cells that are actively undergoing the cell cycle, while G1/S phase cells transition to receptacle cells, suggesting a mechanism to maintain cell proliferation and support rapid receptacle growth (Fig."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 126,
+            "text": "3a). An analysis using Monocle2 (Extended Data Fig. 3d),"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 124,
+            "text": "The FIM also gives rise to the provascular tissue, which differentiates into protoxylem after the S5 stage (Fig."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 233,
+            "text": "Based on these findings, we proposed that, in cucumber, the rapid growth of the receptacle is centred around sink capacity signalling and integration of KNAT2-like1, CRC and ER to regulate cell proliferation, ultimately promoting receptacle development."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 232,
+            "text": "5g,h and Extended Data Fig. 6d,e)."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 170,
+            "text": "5a). The cells transitioning between stem cells and differentiated cells are in a highly proliferative state and continue to divide several times before their differentiation41, suggesting that the cells of the rapidly growing receptacle are in this state."
+          },
+          {
+            "rank": 10,
+            "sentence_id": 231,
+            "text": "45) and CA1P phosphatase46 affect carbohydrate accumulation and enhance sink strength (Fig."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 183,
+            "text": "These findings support the notion that cell proliferation in the receptacle is regulated by the activation of meristematic activities in S phase cells."
+          },
+          {
+            "sentence_id": 182,
+            "text": "5d). The target of rapamycin (TOR) kinase gene, which promotes the activation of S phase genes and meristems42, was found to predominantly expressed in S phase cells (Extended Data Fig. 6b)."
+          }
+        ],
+        "sentence_ids": [
+          182,
+          183
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "primary_type": "accurate",
+        "secondary_types": [],
+        "is_accurate": true,
+        "severity": "none"
+      },
+      "analysis": {
+        "evidence_judgement": "【可核查分句】「花托细胞增殖主要由激活S期细胞活动调控」— 由 sentence_id=183 支撑：「cell proliferation in the receptacle is regulated by the activation of meristematic activities in S phase cells」。\nsentence_id=182 补充了 TOR 激酶作为 S 期激活的上游机制。\n观点句省略了「meristematic」（分生组织）一词，简化为「S期细胞活动」，但核心因果方向（S期→花托增殖）保留准确。",
+        "classification_reason": "观点句将[activation of meristematic activities in S phase cells]简化为[激活S期细胞活动]，核心信息保留，提到[主要]对应论文[the notion that... is regulated by]的审慎表述。无实质性失真。判定 accurate。",
+        "key_differences": [
+          {
+            "type": "mechanism_simplification",
+            "paper_expression": "activation of meristematic activities in S phase cells",
+            "article_expression": "激活S期细胞活动",
+            "description": "观点句省略了「meristematic」（分生组织），但核心因果逻辑不变，属轻度简化"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "top-5 rank1(183)精准命中核心句，rank3(182)补充TOR机制细节。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "核心断言已有直接支撑。",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "1. 核对 sent_id=183 是否充分支撑「主要由S期调控」；\n2. 「meristematic activities」省略是否影响准确性——人工判断。",
+        "needs_manual_review": true,
+        "review_focus": [
+          "mechanism_simplification"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    }
+  ],
+  "review_queue": {
+    "must_review_sample_ids": [
+      "P001-A001-C20",
+      "P001-A001-C24",
+      "P001-A001-C28",
+      "P001-A001-C30"
+    ],
+    "notes": "优先审这些；见各条 analysis.manual_check_hints"
+  }
+}

@@ -1,0 +1,750 @@
+[
+  {
+    "claim_zh": "原位杂交显示，KNAT2-like1在雌花扩展花托中特异性表达（图6h）。",
+    "classify_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 345,
+        "text": "First, a duplicated homologue gene KNAT2-like2 was identified to be specifically expressed in the receptacle as KNAT2-like1, suggesting a gene functional redundancy of KNAT2-like1 (Extended Data produced some female flowers, we hypothesize that inferior ovary formation and sex determination in cucumber may also be regulated by age pathway."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 274,
+        "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i)."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 257,
+        "text": "We found the specific expression of KNAT2-like1 in the expanding receptacle of female flower buds (Fig."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 302,
+        "text": "h, In situ hybridization of KNAT2-like1 expression in male, female and superior ovary floral buds from the WT and k-2 mutant plants."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 297,
+        "text": "7c); KNAT2-like1 exhibited specific and"
+      }
+    ],
+    "review_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 345,
+        "text": "First, a duplicated homologue gene KNAT2-like2 was identified to be specifically expressed in the receptacle as KNAT2-like1, suggesting a gene functional redundancy of KNAT2-like1 (Extended Data produced some female flowers, we hypothesize that inferior ovary formation and sex determination in cucumber may also be regulated by age pathway."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 274,
+        "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i)."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 257,
+        "text": "We found the specific expression of KNAT2-like1 in the expanding receptacle of female flower buds (Fig."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 302,
+        "text": "h, In situ hybridization of KNAT2-like1 expression in male, female and superior ovary floral buds from the WT and k-2 mutant plants."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 297,
+        "text": "7c); KNAT2-like1 exhibited specific and"
+      },
+      {
+        "rank": 6,
+        "sentence_id": 259,
+        "text": "6h). These results indicate that the expression activity of KNAT2-like1 is associated with receptacle development."
+      },
+      {
+        "rank": 7,
+        "sentence_id": 344,
+        "text": "Two possibilities were proposed."
+      },
+      {
+        "rank": 8,
+        "sentence_id": 346,
+        "text": "The origins of novel complex traits are fundamental to evolutionary biology, and it has long been reported that gene duplication is an important source of genetic material for evolutionary novelty."
+      },
+      {
+        "rank": 9,
+        "sentence_id": 301,
+        "text": "Ad, adaxial; ab, abaxial; G, inferior ovary."
+      },
+      {
+        "rank": 10,
+        "sentence_id": 255,
+        "text": "However, the three carpels did not fuse to form a normal stigma, thus preventing pollination and seeds production (Fig."
+      }
+    ],
+    "evidences": [
+      {
+        "sentence_id": 345,
+        "text": "First, a duplicated homologue gene KNAT2-like2 was identified to be specifically expressed in the receptacle as KNAT2-like1, suggesting a gene functional redundancy of KNAT2-like1 (Extended Data produced some female flowers, we hypothesize that inferior ovary formation and sex determination in cucumber may also be regulated by age pathway."
+      },
+      {
+        "sentence_id": 274,
+        "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i)."
+      },
+      {
+        "sentence_id": 257,
+        "text": "We found the specific expression of KNAT2-like1 in the expanding receptacle of female flower buds (Fig."
+      },
+      {
+        "sentence_id": 302,
+        "text": "h, In situ hybridization of KNAT2-like1 expression in male, female and superior ovary floral buds from the WT and k-2 mutant plants."
+      },
+      {
+        "sentence_id": 297,
+        "text": "7c); KNAT2-like1 exhibited specific and"
+      },
+      {
+        "sentence_id": 259,
+        "text": "6h). These results indicate that the expression activity of KNAT2-like1 is associated with receptacle development."
+      },
+      {
+        "sentence_id": 344,
+        "text": "Two possibilities were proposed."
+      },
+      {
+        "sentence_id": 346,
+        "text": "The origins of novel complex traits are fundamental to evolutionary biology, and it has long been reported that gene duplication is an important source of genetic material for evolutionary novelty."
+      },
+      {
+        "sentence_id": 301,
+        "text": "Ad, adaxial; ab, abaxial; G, inferior ovary."
+      },
+      {
+        "sentence_id": 255,
+        "text": "However, the three carpels did not fuse to form a normal stigma, thus preventing pollination and seeds production (Fig."
+      }
+    ],
+    "paper_sentences": [
+      "First, a duplicated homologue gene KNAT2-like2 was identified to be specifically expressed in the receptacle as KNAT2-like1, suggesting a gene functional redundancy of KNAT2-like1 (Extended Data produced some female flowers, we hypothesize that inferior ovary formation and sex determination in cucumber may also be regulated by age pathway.",
+      "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i).",
+      "We found the specific expression of KNAT2-like1 in the expanding receptacle of female flower buds (Fig.",
+      "h, In situ hybridization of KNAT2-like1 expression in male, female and superior ovary floral buds from the WT and k-2 mutant plants.",
+      "7c); KNAT2-like1 exhibited specific and",
+      "6h). These results indicate that the expression activity of KNAT2-like1 is associated with receptacle development.",
+      "Two possibilities were proposed.",
+      "The origins of novel complex traits are fundamental to evolutionary biology, and it has long been reported that gene duplication is an important source of genetic material for evolutionary novelty.",
+      "Ad, adaxial; ab, abaxial; G, inferior ovary.",
+      "However, the three carpels did not fuse to form a normal stigma, thus preventing pollination and seeds production (Fig."
+    ],
+    "claim_id": "C41",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "claim_zh": "同时还构建了ER缺失突变体er和CRC缺失突变体crc，以及以上3个基因的双突、三突突变体。",
+    "classify_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 271,
+        "text": "To further elucidate the genetic interaction among KNAT2-like1, ER and CRC, we also generated double and triple mutants for phenotype analysis."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 272,
+        "text": "Here, all plants lacking CRC function were androecious, whereas knat2-like1/er double mutants exhibited the same subandroecious traits as the er mutant (Extended Data Fig. 8h)."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 273,
+        "text": "These results indicated that CRC is epistatic to ER and KNAT2-like1, and ER is epistatic to KNAT2-like1."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 275,
+        "text": "Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j)."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 276,
+        "text": "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC."
+      }
+    ],
+    "review_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 271,
+        "text": "To further elucidate the genetic interaction among KNAT2-like1, ER and CRC, we also generated double and triple mutants for phenotype analysis."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 272,
+        "text": "Here, all plants lacking CRC function were androecious, whereas knat2-like1/er double mutants exhibited the same subandroecious traits as the er mutant (Extended Data Fig. 8h)."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 273,
+        "text": "These results indicated that CRC is epistatic to ER and KNAT2-like1, and ER is epistatic to KNAT2-like1."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 275,
+        "text": "Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j)."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 276,
+        "text": "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC."
+      },
+      {
+        "rank": 6,
+        "sentence_id": 274,
+        "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i)."
+      },
+      {
+        "rank": 7,
+        "sentence_id": 268,
+        "text": "5f), we next investigated ER function by generating two ER-knockout mutants, erCR-1 (4 bp deletion) and erCR-2 (1 bp deletion) with a premature stop codon, using CRISPR–Cas9 (Extended Data shorter fruits compared with the WT, consistent with the previous study (Extended Data Fig. 8c,d)50."
+      },
+      {
+        "rank": 8,
+        "sentence_id": 219,
+        "text": "This module included CRC, KNAT2-like1, ERECTA (ER), DARK INDUCIBLE 10 (DIN10), CA1P phosphatase and a putative small peptide gene, and their codistributions were verified (Fig."
+      },
+      {
+        "rank": 9,
+        "sentence_id": 269,
+        "text": "Notably, in both er mutants, most female flowers transitioned to male flowers in the monoecious background (Extended Data Fig. 8b)."
+      },
+      {
+        "rank": 10,
+        "sentence_id": 220,
+        "text": "5h and Supplementary Table 9)."
+      }
+    ],
+    "evidences": [
+      {
+        "sentence_id": 271,
+        "text": "To further elucidate the genetic interaction among KNAT2-like1, ER and CRC, we also generated double and triple mutants for phenotype analysis."
+      },
+      {
+        "sentence_id": 272,
+        "text": "Here, all plants lacking CRC function were androecious, whereas knat2-like1/er double mutants exhibited the same subandroecious traits as the er mutant (Extended Data Fig. 8h)."
+      },
+      {
+        "sentence_id": 273,
+        "text": "These results indicated that CRC is epistatic to ER and KNAT2-like1, and ER is epistatic to KNAT2-like1."
+      },
+      {
+        "sentence_id": 275,
+        "text": "Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j)."
+      },
+      {
+        "sentence_id": 276,
+        "text": "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC."
+      },
+      {
+        "sentence_id": 274,
+        "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i)."
+      },
+      {
+        "sentence_id": 268,
+        "text": "5f), we next investigated ER function by generating two ER-knockout mutants, erCR-1 (4 bp deletion) and erCR-2 (1 bp deletion) with a premature stop codon, using CRISPR–Cas9 (Extended Data shorter fruits compared with the WT, consistent with the previous study (Extended Data Fig. 8c,d)50."
+      },
+      {
+        "sentence_id": 219,
+        "text": "This module included CRC, KNAT2-like1, ERECTA (ER), DARK INDUCIBLE 10 (DIN10), CA1P phosphatase and a putative small peptide gene, and their codistributions were verified (Fig."
+      },
+      {
+        "sentence_id": 269,
+        "text": "Notably, in both er mutants, most female flowers transitioned to male flowers in the monoecious background (Extended Data Fig. 8b)."
+      },
+      {
+        "sentence_id": 220,
+        "text": "5h and Supplementary Table 9)."
+      }
+    ],
+    "paper_sentences": [
+      "To further elucidate the genetic interaction among KNAT2-like1, ER and CRC, we also generated double and triple mutants for phenotype analysis.",
+      "Here, all plants lacking CRC function were androecious, whereas knat2-like1/er double mutants exhibited the same subandroecious traits as the er mutant (Extended Data Fig. 8h).",
+      "These results indicated that CRC is epistatic to ER and KNAT2-like1, and ER is epistatic to KNAT2-like1.",
+      "Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j).",
+      "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC.",
+      "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i).",
+      "5f), we next investigated ER function by generating two ER-knockout mutants, erCR-1 (4 bp deletion) and erCR-2 (1 bp deletion) with a premature stop codon, using CRISPR–Cas9 (Extended Data shorter fruits compared with the WT, consistent with the previous study (Extended Data Fig. 8c,d)50.",
+      "This module included CRC, KNAT2-like1, ERECTA (ER), DARK INDUCIBLE 10 (DIN10), CA1P phosphatase and a putative small peptide gene, and their codistributions were verified (Fig.",
+      "Notably, in both er mutants, most female flowers transitioned to male flowers in the monoecious background (Extended Data Fig. 8b).",
+      "5h and Supplementary Table 9)."
+    ],
+    "claim_id": "C42",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "claim_zh": "表型显示，CRC较其他两个基因呈显性上位，ER较KNAT2-like1呈显性上位。",
+    "classify_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 273,
+        "text": "These results indicated that CRC is epistatic to ER and KNAT2-like1, and ER is epistatic to KNAT2-like1."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 274,
+        "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i)."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 276,
+        "text": "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 267,
+        "text": "Given that KNAT2-like1, CRC and ER are in a coexpression module in the receptacle (Fig."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 272,
+        "text": "Here, all plants lacking CRC function were androecious, whereas knat2-like1/er double mutants exhibited the same subandroecious traits as the er mutant (Extended Data Fig. 8h)."
+      }
+    ],
+    "review_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 273,
+        "text": "These results indicated that CRC is epistatic to ER and KNAT2-like1, and ER is epistatic to KNAT2-like1."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 274,
+        "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i)."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 276,
+        "text": "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 267,
+        "text": "Given that KNAT2-like1, CRC and ER are in a coexpression module in the receptacle (Fig."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 272,
+        "text": "Here, all plants lacking CRC function were androecious, whereas knat2-like1/er double mutants exhibited the same subandroecious traits as the er mutant (Extended Data Fig. 8h)."
+      },
+      {
+        "rank": 6,
+        "sentence_id": 275,
+        "text": "Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j)."
+      },
+      {
+        "rank": 7,
+        "sentence_id": 222,
+        "text": "SCL28 ARF6 Receptacle-early tissue HB33 ENODL14 Conjunctive MAD2 tissue-late AP2 Receptacle-late h module 14 KNAT2-like1 Max HB22-like2 TPS1 ARF18 Score LSH10 CsaV3-6G037410 Min S7 S8 S7 S8 ER CRC ER CYCD2;1 Peptide3 DIN10 CRC LTP bHLH49 S7 S8 S7 S8 CA1P DIN10 CA1P Min KNAT2-like1 Expression HB33 ARR9 HAT3 HB22-like1 CsaV3-5G003580 Max S7 S8 S7 S8 in b from S1 to S8-4."
+      },
+      {
+        "rank": 8,
+        "sentence_id": 271,
+        "text": "To further elucidate the genetic interaction among KNAT2-like1, ER and CRC, we also generated double and triple mutants for phenotype analysis."
+      },
+      {
+        "rank": 9,
+        "sentence_id": 268,
+        "text": "5f), we next investigated ER function by generating two ER-knockout mutants, erCR-1 (4 bp deletion) and erCR-2 (1 bp deletion) with a premature stop codon, using CRISPR–Cas9 (Extended Data shorter fruits compared with the WT, consistent with the previous study (Extended Data Fig. 8c,d)50."
+      },
+      {
+        "rank": 10,
+        "sentence_id": 223,
+        "text": "e, The selected cellular trajectories from TOFO, showing the significant examples of candidate regulatory genes."
+      }
+    ],
+    "evidences": [
+      {
+        "sentence_id": 273,
+        "text": "These results indicated that CRC is epistatic to ER and KNAT2-like1, and ER is epistatic to KNAT2-like1."
+      },
+      {
+        "sentence_id": 274,
+        "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i)."
+      },
+      {
+        "sentence_id": 276,
+        "text": "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC."
+      },
+      {
+        "sentence_id": 267,
+        "text": "Given that KNAT2-like1, CRC and ER are in a coexpression module in the receptacle (Fig."
+      },
+      {
+        "sentence_id": 272,
+        "text": "Here, all plants lacking CRC function were androecious, whereas knat2-like1/er double mutants exhibited the same subandroecious traits as the er mutant (Extended Data Fig. 8h)."
+      },
+      {
+        "sentence_id": 275,
+        "text": "Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j)."
+      },
+      {
+        "sentence_id": 222,
+        "text": "SCL28 ARF6 Receptacle-early tissue HB33 ENODL14 Conjunctive MAD2 tissue-late AP2 Receptacle-late h module 14 KNAT2-like1 Max HB22-like2 TPS1 ARF18 Score LSH10 CsaV3-6G037410 Min S7 S8 S7 S8 ER CRC ER CYCD2;1 Peptide3 DIN10 CRC LTP bHLH49 S7 S8 S7 S8 CA1P DIN10 CA1P Min KNAT2-like1 Expression HB33 ARR9 HAT3 HB22-like1 CsaV3-5G003580 Max S7 S8 S7 S8 in b from S1 to S8-4."
+      },
+      {
+        "sentence_id": 271,
+        "text": "To further elucidate the genetic interaction among KNAT2-like1, ER and CRC, we also generated double and triple mutants for phenotype analysis."
+      },
+      {
+        "sentence_id": 268,
+        "text": "5f), we next investigated ER function by generating two ER-knockout mutants, erCR-1 (4 bp deletion) and erCR-2 (1 bp deletion) with a premature stop codon, using CRISPR–Cas9 (Extended Data shorter fruits compared with the WT, consistent with the previous study (Extended Data Fig. 8c,d)50."
+      },
+      {
+        "sentence_id": 223,
+        "text": "e, The selected cellular trajectories from TOFO, showing the significant examples of candidate regulatory genes."
+      }
+    ],
+    "paper_sentences": [
+      "These results indicated that CRC is epistatic to ER and KNAT2-like1, and ER is epistatic to KNAT2-like1.",
+      "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i).",
+      "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC.",
+      "Given that KNAT2-like1, CRC and ER are in a coexpression module in the receptacle (Fig.",
+      "Here, all plants lacking CRC function were androecious, whereas knat2-like1/er double mutants exhibited the same subandroecious traits as the er mutant (Extended Data Fig. 8h).",
+      "Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j).",
+      "SCL28 ARF6 Receptacle-early tissue HB33 ENODL14 Conjunctive MAD2 tissue-late AP2 Receptacle-late h module 14 KNAT2-like1 Max HB22-like2 TPS1 ARF18 Score LSH10 CsaV3-6G037410 Min S7 S8 S7 S8 ER CRC ER CYCD2;1 Peptide3 DIN10 CRC LTP bHLH49 S7 S8 S7 S8 CA1P DIN10 CA1P Min KNAT2-like1 Expression HB33 ARR9 HAT3 HB22-like1 CsaV3-5G003580 Max S7 S8 S7 S8 in b from S1 to S8-4.",
+      "To further elucidate the genetic interaction among KNAT2-like1, ER and CRC, we also generated double and triple mutants for phenotype analysis.",
+      "5f), we next investigated ER function by generating two ER-knockout mutants, erCR-1 (4 bp deletion) and erCR-2 (1 bp deletion) with a premature stop codon, using CRISPR–Cas9 (Extended Data shorter fruits compared with the WT, consistent with the previous study (Extended Data Fig. 8c,d)50.",
+      "e, The selected cellular trajectories from TOFO, showing the significant examples of candidate regulatory genes."
+    ],
+    "claim_id": "C43",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "claim_zh": "以上结果说明，KNAT2-like1在花托生长、子房下位发育中起关键性作用，CRC、ER也可能参与其相互调控机制。",
+    "classify_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 276,
+        "text": "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 266,
+        "text": "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 338,
+        "text": "For instance, in female flower buds, KNAT2-like1, CRC and ACO2 (ref."
+      }
+    ],
+    "review_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 276,
+        "text": "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 266,
+        "text": "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 338,
+        "text": "For instance, in female flower buds, KNAT2-like1, CRC and ACO2 (ref."
+      }
+    ],
+    "evidences": [
+      {
+        "sentence_id": 276,
+        "text": "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC."
+      },
+      {
+        "sentence_id": 266,
+        "text": "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning."
+      },
+      {
+        "sentence_id": 338,
+        "text": "For instance, in female flower buds, KNAT2-like1, CRC and ACO2 (ref."
+      }
+    ],
+    "paper_sentences": [
+      "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC.",
+      "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning.",
+      "For instance, in female flower buds, KNAT2-like1, CRC and ACO2 (ref."
+    ],
+    "claim_id": "C44",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "claim_zh": "整合细胞聚类发现，番茄花芽无花基部分生组织（FIM）结构，花托位于心皮下方；",
+    "classify_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 282,
+        "text": "7b). Unlike cucumber, tomato lacks a specific FIM, and the receptacle is located below the carpel rather than in the surrounding position for cucumber."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 281,
+        "text": "7a,b, Extended Data Fig. 9a–e and Supplementary Tables 10 and 11) and then integrated into superclusters (Fig."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 283,
+        "text": "Although the superior ovary mutant still has an FIM, the arrested receptacle and upward carpel growth were observed (Fig."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 58,
+        "text": "By contrast, the floral meristem of tomato is convex, and the floral primordia sequentially initiate on its flank, with the carpels growing upwards to form superior ovaries (Fig."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 91,
+        "text": "We also observed three clusters (26, 27 and 28) situated between the carpel and receptacle at various stages of floral bud development, which we named conjunctive primordia, conjunctive tissue-early and conjunctive tissue-late, respectively (Fig."
+      }
+    ],
+    "review_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 282,
+        "text": "7b). Unlike cucumber, tomato lacks a specific FIM, and the receptacle is located below the carpel rather than in the surrounding position for cucumber."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 281,
+        "text": "7a,b, Extended Data Fig. 9a–e and Supplementary Tables 10 and 11) and then integrated into superclusters (Fig."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 283,
+        "text": "Although the superior ovary mutant still has an FIM, the arrested receptacle and upward carpel growth were observed (Fig."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 58,
+        "text": "By contrast, the floral meristem of tomato is convex, and the floral primordia sequentially initiate on its flank, with the carpels growing upwards to form superior ovaries (Fig."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 91,
+        "text": "We also observed three clusters (26, 27 and 28) situated between the carpel and receptacle at various stages of floral bud development, which we named conjunctive primordia, conjunctive tissue-early and conjunctive tissue-late, respectively (Fig."
+      },
+      {
+        "rank": 6,
+        "sentence_id": 57,
+        "text": "1b,c). The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c)."
+      },
+      {
+        "rank": 7,
+        "sentence_id": 92,
+        "text": "2a–c). Besides the expression of marker genes in both carpel (CsAG1) and receptacle (CsCRC), the marker gene CsHANABA TARANU (CsHAN1) was exclusively expressed in cluster 27 (ref."
+      },
+      {
+        "rank": 8,
+        "sentence_id": 164,
+        "text": "After S5, we observed the largest increase in the bin numbers of receptacle-related clusters (receptacle-early, cluster 9), indicating that 865 a b Basal sepal–abaxial Sepal epidermis Sepal mesophyll Sepal Unknown S1 Sepal mesophyll Unknown G0/G1 phase cells Epidermis Epidermis Trichome-base floral Trichome meristem Thicked epidermis Floral intercalary meristem FIM Floral intercalary meristem-2 Floral intercalary meristem-3 G2/M phase cells S1 G1/S phase cells Receptacle Receptacle primordia Receptacle-early Receptacle-late Provascular Protoxylem Conjunctive Conjunctive primordia Tissue Conjunctive tissue-early Conjunctive tissue-late Petal primordia Petal-early Petal S1 Petal-late Basal sepal-adaxial 1.00 Edge weight Floral primordia carpel 0.75 Placenta FP 0.50 Ovlue (ovary wall) 0.25 Stigma/transmitting tract S1 S2 S3 S4/S5 S6/S7 S8-1/2 S8-3/4 stage c Receptacle primordia Receptacle-early Receptacle-late Conjunctive primordia Conjunctive tissue-early UMAP2 UMAP2 Conjunctive tissue-late Floral intercalary meristem Floral intercalary meristem-2 Floral intercalary meristem-3 UMAP1 UMAP1 d 1.5 Bin50 density 1.0 0.5 0 0 2 4 6 Pesudotime a, A directed acyclic graph showing inferred relationships between cell states across cucumber female floral bud development."
+      },
+      {
+        "rank": 9,
+        "sentence_id": 165,
+        "text": "Each row corresponds to one of the cluster annotations, columns to developmental stages spanning from S1 to S8-4, nodes to cell trajectories and node colours to clusters."
+      },
+      {
+        "rank": 10,
+        "sentence_id": 2,
+        "text": "However, the developmental mechanisms underlying inferior ovary formation remain largely unknown."
+      }
+    ],
+    "evidences": [
+      {
+        "sentence_id": 282,
+        "text": "7b). Unlike cucumber, tomato lacks a specific FIM, and the receptacle is located below the carpel rather than in the surrounding position for cucumber."
+      },
+      {
+        "sentence_id": 281,
+        "text": "7a,b, Extended Data Fig. 9a–e and Supplementary Tables 10 and 11) and then integrated into superclusters (Fig."
+      },
+      {
+        "sentence_id": 283,
+        "text": "Although the superior ovary mutant still has an FIM, the arrested receptacle and upward carpel growth were observed (Fig."
+      },
+      {
+        "sentence_id": 58,
+        "text": "By contrast, the floral meristem of tomato is convex, and the floral primordia sequentially initiate on its flank, with the carpels growing upwards to form superior ovaries (Fig."
+      },
+      {
+        "sentence_id": 91,
+        "text": "We also observed three clusters (26, 27 and 28) situated between the carpel and receptacle at various stages of floral bud development, which we named conjunctive primordia, conjunctive tissue-early and conjunctive tissue-late, respectively (Fig."
+      },
+      {
+        "sentence_id": 57,
+        "text": "1b,c). The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c)."
+      },
+      {
+        "sentence_id": 92,
+        "text": "2a–c). Besides the expression of marker genes in both carpel (CsAG1) and receptacle (CsCRC), the marker gene CsHANABA TARANU (CsHAN1) was exclusively expressed in cluster 27 (ref."
+      },
+      {
+        "sentence_id": 164,
+        "text": "After S5, we observed the largest increase in the bin numbers of receptacle-related clusters (receptacle-early, cluster 9), indicating that 865 a b Basal sepal–abaxial Sepal epidermis Sepal mesophyll Sepal Unknown S1 Sepal mesophyll Unknown G0/G1 phase cells Epidermis Epidermis Trichome-base floral Trichome meristem Thicked epidermis Floral intercalary meristem FIM Floral intercalary meristem-2 Floral intercalary meristem-3 G2/M phase cells S1 G1/S phase cells Receptacle Receptacle primordia Receptacle-early Receptacle-late Provascular Protoxylem Conjunctive Conjunctive primordia Tissue Conjunctive tissue-early Conjunctive tissue-late Petal primordia Petal-early Petal S1 Petal-late Basal sepal-adaxial 1.00 Edge weight Floral primordia carpel 0.75 Placenta FP 0.50 Ovlue (ovary wall) 0.25 Stigma/transmitting tract S1 S2 S3 S4/S5 S6/S7 S8-1/2 S8-3/4 stage c Receptacle primordia Receptacle-early Receptacle-late Conjunctive primordia Conjunctive tissue-early UMAP2 UMAP2 Conjunctive tissue-late Floral intercalary meristem Floral intercalary meristem-2 Floral intercalary meristem-3 UMAP1 UMAP1 d 1.5 Bin50 density 1.0 0.5 0 0 2 4 6 Pesudotime a, A directed acyclic graph showing inferred relationships between cell states across cucumber female floral bud development."
+      },
+      {
+        "sentence_id": 165,
+        "text": "Each row corresponds to one of the cluster annotations, columns to developmental stages spanning from S1 to S8-4, nodes to cell trajectories and node colours to clusters."
+      },
+      {
+        "sentence_id": 2,
+        "text": "However, the developmental mechanisms underlying inferior ovary formation remain largely unknown."
+      }
+    ],
+    "paper_sentences": [
+      "7b). Unlike cucumber, tomato lacks a specific FIM, and the receptacle is located below the carpel rather than in the surrounding position for cucumber.",
+      "7a,b, Extended Data Fig. 9a–e and Supplementary Tables 10 and 11) and then integrated into superclusters (Fig.",
+      "Although the superior ovary mutant still has an FIM, the arrested receptacle and upward carpel growth were observed (Fig.",
+      "By contrast, the floral meristem of tomato is convex, and the floral primordia sequentially initiate on its flank, with the carpels growing upwards to form superior ovaries (Fig.",
+      "We also observed three clusters (26, 27 and 28) situated between the carpel and receptacle at various stages of floral bud development, which we named conjunctive primordia, conjunctive tissue-early and conjunctive tissue-late, respectively (Fig.",
+      "1b,c). The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c).",
+      "2a–c). Besides the expression of marker genes in both carpel (CsAG1) and receptacle (CsCRC), the marker gene CsHANABA TARANU (CsHAN1) was exclusively expressed in cluster 27 (ref.",
+      "After S5, we observed the largest increase in the bin numbers of receptacle-related clusters (receptacle-early, cluster 9), indicating that 865 a b Basal sepal–abaxial Sepal epidermis Sepal mesophyll Sepal Unknown S1 Sepal mesophyll Unknown G0/G1 phase cells Epidermis Epidermis Trichome-base floral Trichome meristem Thicked epidermis Floral intercalary meristem FIM Floral intercalary meristem-2 Floral intercalary meristem-3 G2/M phase cells S1 G1/S phase cells Receptacle Receptacle primordia Receptacle-early Receptacle-late Provascular Protoxylem Conjunctive Conjunctive primordia Tissue Conjunctive tissue-early Conjunctive tissue-late Petal primordia Petal-early Petal S1 Petal-late Basal sepal-adaxial 1.00 Edge weight Floral primordia carpel 0.75 Placenta FP 0.50 Ovlue (ovary wall) 0.25 Stigma/transmitting tract S1 S2 S3 S4/S5 S6/S7 S8-1/2 S8-3/4 stage c Receptacle primordia Receptacle-early Receptacle-late Conjunctive primordia Conjunctive tissue-early UMAP2 UMAP2 Conjunctive tissue-late Floral intercalary meristem Floral intercalary meristem-2 Floral intercalary meristem-3 UMAP1 UMAP1 d 1.5 Bin50 density 1.0 0.5 0 0 2 4 6 Pesudotime a, A directed acyclic graph showing inferred relationships between cell states across cucumber female floral bud development.",
+      "Each row corresponds to one of the cluster annotations, columns to developmental stages spanning from S1 to S8-4, nodes to cell trajectories and node colours to clusters.",
+      "However, the developmental mechanisms underlying inferior ovary formation remain largely unknown."
+    ],
+    "claim_id": "C45",
+    "verdict": "SUPPORTED"
+  },
+  {
+    "claim_zh": "knat2-like1突变体虽然有FIM，但花托停止扩张，心皮也向上生长（图7a-b）。",
+    "classify_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 264,
+        "text": "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 283,
+        "text": "Although the superior ovary mutant still has an FIM, the arrested receptacle and upward carpel growth were observed (Fig."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 275,
+        "text": "Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j)."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 263,
+        "text": "6g). The spatial expression patterns of known abaxial-specific genes, KAN-1, KAN-2 and AFO/FIL47,48, and an adaxial-specific gene, PHAVOLUTA (PHV)49, in normal inferior ovaries and aberrant superior ovaries were consistent with this change in placenta morphology (Extended Data Fig. 7i–k)."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 265,
+        "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+      }
+    ],
+    "review_evidences": [
+      {
+        "rank": 1,
+        "sentence_id": 264,
+        "text": "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary."
+      },
+      {
+        "rank": 2,
+        "sentence_id": 283,
+        "text": "Although the superior ovary mutant still has an FIM, the arrested receptacle and upward carpel growth were observed (Fig."
+      },
+      {
+        "rank": 3,
+        "sentence_id": 275,
+        "text": "Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j)."
+      },
+      {
+        "rank": 4,
+        "sentence_id": 263,
+        "text": "6g). The spatial expression patterns of known abaxial-specific genes, KAN-1, KAN-2 and AFO/FIL47,48, and an adaxial-specific gene, PHAVOLUTA (PHV)49, in normal inferior ovaries and aberrant superior ovaries were consistent with this change in placenta morphology (Extended Data Fig. 7i–k)."
+      },
+      {
+        "rank": 5,
+        "sentence_id": 265,
+        "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+      },
+      {
+        "rank": 6,
+        "sentence_id": 282,
+        "text": "7b). Unlike cucumber, tomato lacks a specific FIM, and the receptacle is located below the carpel rather than in the surrounding position for cucumber."
+      },
+      {
+        "rank": 7,
+        "sentence_id": 284,
+        "text": "7b). We further compared the expression patterns of markers for each supercluster to compare their floral organ structures among cucumber, superior ovary mutant and tomato and found that in all the material AP3 and PI were expressed in petals and stamens, and AG showed specific expression in the carpel and stamen (Extended Data Fig. 9f)."
+      },
+      {
+        "rank": 8,
+        "sentence_id": 259,
+        "text": "6h). These results indicate that the expression activity of KNAT2-like1 is associated with receptacle development."
+      },
+      {
+        "rank": 9,
+        "sentence_id": 57,
+        "text": "1b,c). The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c)."
+      },
+      {
+        "rank": 10,
+        "sentence_id": 229,
+        "text": "of KNAT2-like1 in this module suggested its critical role not only in early receptacle initiation but also in subsequent cell proliferation."
+      }
+    ],
+    "evidences": [
+      {
+        "sentence_id": 264,
+        "text": "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary."
+      },
+      {
+        "sentence_id": 283,
+        "text": "Although the superior ovary mutant still has an FIM, the arrested receptacle and upward carpel growth were observed (Fig."
+      },
+      {
+        "sentence_id": 275,
+        "text": "Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j)."
+      },
+      {
+        "sentence_id": 263,
+        "text": "6g). The spatial expression patterns of known abaxial-specific genes, KAN-1, KAN-2 and AFO/FIL47,48, and an adaxial-specific gene, PHAVOLUTA (PHV)49, in normal inferior ovaries and aberrant superior ovaries were consistent with this change in placenta morphology (Extended Data Fig. 7i–k)."
+      },
+      {
+        "sentence_id": 265,
+        "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+      },
+      {
+        "sentence_id": 282,
+        "text": "7b). Unlike cucumber, tomato lacks a specific FIM, and the receptacle is located below the carpel rather than in the surrounding position for cucumber."
+      },
+      {
+        "sentence_id": 284,
+        "text": "7b). We further compared the expression patterns of markers for each supercluster to compare their floral organ structures among cucumber, superior ovary mutant and tomato and found that in all the material AP3 and PI were expressed in petals and stamens, and AG showed specific expression in the carpel and stamen (Extended Data Fig. 9f)."
+      },
+      {
+        "sentence_id": 259,
+        "text": "6h). These results indicate that the expression activity of KNAT2-like1 is associated with receptacle development."
+      },
+      {
+        "sentence_id": 57,
+        "text": "1b,c). The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c)."
+      },
+      {
+        "sentence_id": 229,
+        "text": "of KNAT2-like1 in this module suggested its critical role not only in early receptacle initiation but also in subsequent cell proliferation."
+      }
+    ],
+    "paper_sentences": [
+      "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary.",
+      "Although the superior ovary mutant still has an FIM, the arrested receptacle and upward carpel growth were observed (Fig.",
+      "Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j).",
+      "6g). The spatial expression patterns of known abaxial-specific genes, KAN-1, KAN-2 and AFO/FIL47,48, and an adaxial-specific gene, PHAVOLUTA (PHV)49, in normal inferior ovaries and aberrant superior ovaries were consistent with this change in placenta morphology (Extended Data Fig. 7i–k).",
+      "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig.",
+      "7b). Unlike cucumber, tomato lacks a specific FIM, and the receptacle is located below the carpel rather than in the surrounding position for cucumber.",
+      "7b). We further compared the expression patterns of markers for each supercluster to compare their floral organ structures among cucumber, superior ovary mutant and tomato and found that in all the material AP3 and PI were expressed in petals and stamens, and AG showed specific expression in the carpel and stamen (Extended Data Fig. 9f).",
+      "6h). These results indicate that the expression activity of KNAT2-like1 is associated with receptacle development.",
+      "1b,c). The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c).",
+      "of KNAT2-like1 in this module suggested its critical role not only in early receptacle initiation but also in subsequent cell proliferation."
+    ],
+    "claim_id": "C46",
+    "verdict": "SUPPORTED"
+  }
+]

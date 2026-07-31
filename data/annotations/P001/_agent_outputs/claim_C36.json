@@ -1,0 +1,138 @@
+{
+  "claim_zh": "k-1和k-2出现子房上位和双性花表型，而其回补株系（C-1、C-2）表型与野生型类似（图6b）。",
+  "classify_evidences": [
+    {
+      "rank": 1,
+      "sentence_id": 254,
+      "text": "6e). Post anthesis, the k-1 and k-2 mutant flowers continued to grow such that ultimately the ovaries were located above the other floral organs, resulting in bisexual flowers with superior ovaries, similar to those of tomato."
+    },
+    {
+      "rank": 2,
+      "sentence_id": 303,
+      "text": "i, A schematic diagram of the superior ovary and inferior ovary formation in knat2-like1 mutant and the WT."
+    },
+    {
+      "rank": 3,
+      "sentence_id": 255,
+      "text": "However, the three carpels did not fuse to form a normal stigma, thus preventing pollination and seeds production (Fig."
+    },
+    {
+      "rank": 4,
+      "sentence_id": 253,
+      "text": "The morphogenesis of ‘superior ovary flowers’ was also observed by 3D reconstruction using X-ray microcomputed tomo­graphy (micro-CT), which confirmed that, compared with female floral buds, the arrest of receptacle expansion and continuous upward growth of the carpel resulted in the formation of superior ovaries (Fig."
+    },
+    {
+      "rank": 5,
+      "sentence_id": 238,
+      "text": "Instead, a corresponding proportion of ‘superior ovary flowers’ appeared, exhibiting the phenotype of bisexual flowers with superior ovaries (Fig."
+    }
+  ],
+  "review_evidences": [
+    {
+      "rank": 1,
+      "sentence_id": 254,
+      "text": "6e). Post anthesis, the k-1 and k-2 mutant flowers continued to grow such that ultimately the ovaries were located above the other floral organs, resulting in bisexual flowers with superior ovaries, similar to those of tomato."
+    },
+    {
+      "rank": 2,
+      "sentence_id": 303,
+      "text": "i, A schematic diagram of the superior ovary and inferior ovary formation in knat2-like1 mutant and the WT."
+    },
+    {
+      "rank": 3,
+      "sentence_id": 255,
+      "text": "However, the three carpels did not fuse to form a normal stigma, thus preventing pollination and seeds production (Fig."
+    },
+    {
+      "rank": 4,
+      "sentence_id": 253,
+      "text": "The morphogenesis of ‘superior ovary flowers’ was also observed by 3D reconstruction using X-ray microcomputed tomo­graphy (micro-CT), which confirmed that, compared with female floral buds, the arrest of receptacle expansion and continuous upward growth of the carpel resulted in the formation of superior ovaries (Fig."
+    },
+    {
+      "rank": 5,
+      "sentence_id": 238,
+      "text": "Instead, a corresponding proportion of ‘superior ovary flowers’ appeared, exhibiting the phenotype of bisexual flowers with superior ovaries (Fig."
+    },
+    {
+      "rank": 6,
+      "sentence_id": 289,
+      "text": "c, Paraffin-embedded sections showing the morphology of flower buds with superior ovaries in the k-2 mutant from S6 to S11."
+    },
+    {
+      "rank": 7,
+      "sentence_id": 237,
+      "text": "6b). Only at the lower nodes were some female flowers present."
+    },
+    {
+      "rank": 8,
+      "sentence_id": 239,
+      "text": "6b), which means that 60% of normal female flowers transformed into ‘superior ovary flowers’ in the mutants."
+    },
+    {
+      "rank": 9,
+      "sentence_id": 288,
+      "text": "The bars represent means ± standard deviation (n = 10)."
+    },
+    {
+      "rank": 10,
+      "sentence_id": 290,
+      "text": "St, stamen; Ca, carpel; G, superior ovary; Ov, ovule."
+    }
+  ],
+  "evidences": [
+    {
+      "sentence_id": 254,
+      "text": "6e). Post anthesis, the k-1 and k-2 mutant flowers continued to grow such that ultimately the ovaries were located above the other floral organs, resulting in bisexual flowers with superior ovaries, similar to those of tomato."
+    },
+    {
+      "sentence_id": 303,
+      "text": "i, A schematic diagram of the superior ovary and inferior ovary formation in knat2-like1 mutant and the WT."
+    },
+    {
+      "sentence_id": 255,
+      "text": "However, the three carpels did not fuse to form a normal stigma, thus preventing pollination and seeds production (Fig."
+    },
+    {
+      "sentence_id": 253,
+      "text": "The morphogenesis of ‘superior ovary flowers’ was also observed by 3D reconstruction using X-ray microcomputed tomo­graphy (micro-CT), which confirmed that, compared with female floral buds, the arrest of receptacle expansion and continuous upward growth of the carpel resulted in the formation of superior ovaries (Fig."
+    },
+    {
+      "sentence_id": 238,
+      "text": "Instead, a corresponding proportion of ‘superior ovary flowers’ appeared, exhibiting the phenotype of bisexual flowers with superior ovaries (Fig."
+    },
+    {
+      "sentence_id": 289,
+      "text": "c, Paraffin-embedded sections showing the morphology of flower buds with superior ovaries in the k-2 mutant from S6 to S11."
+    },
+    {
+      "sentence_id": 237,
+      "text": "6b). Only at the lower nodes were some female flowers present."
+    },
+    {
+      "sentence_id": 239,
+      "text": "6b), which means that 60% of normal female flowers transformed into ‘superior ovary flowers’ in the mutants."
+    },
+    {
+      "sentence_id": 288,
+      "text": "The bars represent means ± standard deviation (n = 10)."
+    },
+    {
+      "sentence_id": 290,
+      "text": "St, stamen; Ca, carpel; G, superior ovary; Ov, ovule."
+    }
+  ],
+  "paper_sentences": [
+    "6e). Post anthesis, the k-1 and k-2 mutant flowers continued to grow such that ultimately the ovaries were located above the other floral organs, resulting in bisexual flowers with superior ovaries, similar to those of tomato.",
+    "i, A schematic diagram of the superior ovary and inferior ovary formation in knat2-like1 mutant and the WT.",
+    "However, the three carpels did not fuse to form a normal stigma, thus preventing pollination and seeds production (Fig.",
+    "The morphogenesis of ‘superior ovary flowers’ was also observed by 3D reconstruction using X-ray microcomputed tomo­graphy (micro-CT), which confirmed that, compared with female floral buds, the arrest of receptacle expansion and continuous upward growth of the carpel resulted in the formation of superior ovaries (Fig.",
+    "Instead, a corresponding proportion of ‘superior ovary flowers’ appeared, exhibiting the phenotype of bisexual flowers with superior ovaries (Fig.",
+    "c, Paraffin-embedded sections showing the morphology of flower buds with superior ovaries in the k-2 mutant from S6 to S11.",
+    "6b). Only at the lower nodes were some female flowers present.",
+    "6b), which means that 60% of normal female flowers transformed into ‘superior ovary flowers’ in the mutants.",
+    "The bars represent means ± standard deviation (n = 10).",
+    "St, stamen; Ca, carpel; G, superior ovary; Ov, ovule."
+  ],
+  "claim_id": "C36",
+  "verdict": "SUPPORTED"
+}
