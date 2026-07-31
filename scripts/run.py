@@ -2,7 +2,9 @@
 """植物科学公众号幻觉检测 — 统一编排入口。
 
 流程:
-  文章 → [arag] LLM抽观点句 + RAG+Agent检索 → [hallu] 幻觉分类 → 证据链 JSON
+  文章 → [arag] 规则分句+LLM核验观点句 + RAG+Agent检索
+       → 同一次检索拆成分类 top-5 / 审核池 10
+       → [hallu] 幻觉分类（只用 top-5）→ 证据链 JSON
 
 用法:
   python scripts/run.py \\
@@ -292,9 +294,16 @@ def main() -> int:
             "paper_sentences": [],
         }
         aligned.append(pair)
+    # 分类只用 top-5；pairs 中另保留 review_evidences（10 条）供标注审核
     retrieval_results = arag_pairs_to_retrieval_results(aligned, claims=claims, top_k=5)
     with_ev = sum(1 for r in retrieval_results if r.get("evidence_sentences"))
-    print("  检索对齐: %d/%d 条有证据句" % (with_ev, len(retrieval_results)))
+    review_n = sum(len(r.get("review_evidences") or []) for r in retrieval_results)
+    print("  检索对齐: %d/%d 条有分类证据（top-5）" % (with_ev, len(retrieval_results)))
+    if retrieval_results:
+        print(
+            "  审核池: 平均 %.1f 条/claim（目标 10）"
+            % (review_n / float(len(retrieval_results)))
+        )
 
     # ------------------------------------------------------------------
     # Phase 3: 幻觉细分类

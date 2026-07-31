@@ -4,7 +4,8 @@
 规则：
   - 仅保留已人工确认的样本（``human_verified`` 为 true）
     （可用 --include-unverified 导出全部，便于调试）
-  - 终稿只保留评测字段；解释性 analysis 默认去掉（可用 --keep-analysis）
+  - 终稿只保留评测字段；去掉 system_retrieval / analysis
+    （可用 --keep-analysis 保留 analysis）
 
 草稿字段与终稿保持同名（gold_retrieval / gold_classification），
 同时兼容早期草稿的 gold / labels / annotation_meta 结构。
@@ -56,8 +57,21 @@ def _sentence_ids(raw: Any) -> list[int]:
     return ids
 
 
+def _ids_from_evidences(evidences: Any) -> list[int]:
+    ids: list[int] = []
+    for item in evidences or []:
+        if not isinstance(item, dict):
+            continue
+        try:
+            sid = int(item.get("sentence_id", -1))
+        except (TypeError, ValueError):
+            continue
+        if sid >= 0 and sid not in ids:
+            ids.append(sid)
+    return ids
+
+
 def _first(*values: Any) -> Any:
-    """返回第一个非 None 值。"""
     for value in values:
         if value is not None:
             return value
@@ -67,13 +81,17 @@ def _first(*values: Any) -> Any:
 def _clean_sample(sample: dict[str, Any], *, keep_analysis: bool) -> dict[str, Any]:
     retrieval = sample.get("gold_retrieval") or {}
     classification = sample.get("gold_classification") or {}
-    # 早期草稿结构
     gold = sample.get("gold") or {}
     labels = sample.get("labels") or {}
 
     sentence_ids = _sentence_ids(
         _first(retrieval.get("sentence_ids"), gold.get("sentence_ids"))
     )
+    if not sentence_ids:
+        sentence_ids = _ids_from_evidences(
+            _first(retrieval.get("evidences"), gold.get("sentences"))
+        )
+
     evidence_level = _first(
         classification.get("evidence_level"),
         gold.get("evidence_level"),
@@ -151,7 +169,7 @@ def export_benchmark(
         selected.append(_clean_sample(sample, keep_analysis=keep_analysis))
 
     return {
-        "schema_version": "1.0",
+        "schema_version": "1.1",
         "status": "benchmark",
         "paper_id": draft.get("paper_id", ""),
         "article_id": draft.get("article_id", ""),
@@ -164,7 +182,6 @@ def export_benchmark(
 
 
 def _pending_review(draft: dict[str, Any]) -> list[str]:
-    """草稿中仍标记需人工复核、且尚未确认的样本。"""
     pending: list[str] = []
     for sample in draft.get("samples") or draft.get("claims") or []:
         if not isinstance(sample, dict) or _is_verified(sample):
@@ -204,16 +221,22 @@ def main() -> int:
         keep_analysis=args.keep_analysis,
     )
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(json.dumps(bench, ensure_ascii=False, indent=2), encoding="utf-8")
+    out_path.write_text(
+        json.dumps(bench, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
     print("已导出 benchmark: %s" % out_path)
     print("  samples: %d" % bench["sample_count"])
 
     pending = _pending_review(draft)
     if pending:
         print("  待复核（needs_manual_review 且未确认）: %d" % len(pending))
-        print("    %s" % ", ".join(pending[:10]) + (" ..." if len(pending) > 10 else ""))
+        print(
+            "    %s" % ", ".join(pending[:10]) + (" ..." if len(pending) > 10 else "")
+        )
     if bench["sample_count"] == 0 and not args.include_unverified:
-        print("  提示: 当前无 human_verified=true；可用 --include-unverified 导出全部调试")
+        print(
+            "  提示: 当前无 human_verified=true；可用 --include-unverified 导出全部调试"
+        )
     return 0
 
 

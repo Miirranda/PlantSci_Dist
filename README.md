@@ -65,13 +65,16 @@ python batch_retrieval.py \
 
 ```
 outputs/P001/A001/
-├── claims.json / claims.jsonl      # LLM 观点句
+├── claims.json / claims.jsonl      # 观点句
 ├── evidences.jsonl                 # 完整检索（含 sentence_id）
-├── claim_evidence_pairs.jsonl      # 精简 claim ↔ 证据（sentence_id + text）
-├── classification.json
-├── result.json                     # 运行终稿
+├── claim_evidence_pairs.jsonl      # 精简：classify top-5 + review 池 10
+├── classification.json             # 幻觉分类（只用 top-5）
+├── result.json
 └── report.md
 ```
+
+同一次检索，两套用途：`classify_evidences`（top-5，送分类）与
+`review_evidences`（固定 10 条，供人工判断 top-5 是否真相关）。
 
 ### 标注与评测（人工）
 
@@ -80,13 +83,15 @@ data/annotations/
 ├── prompts/draft_from_pairs.md            # 生成标注初稿的提示词
 └── P001/
     ├── P001_sentences.csv                 # 句表（export_sentence_table）
-    ├── P001_A001_annotation_draft.json    # 初稿：benchmark 字段 + analysis
+    ├── P001_A001_annotation_draft.json    # 初稿：评测字段 + system_retrieval + analysis
     └── P001_A001_benchmark.json           # 审核后导出的评测终稿
 ```
 
-草稿与终稿字段同名（`gold_retrieval` / `gold_classification`），初稿额外带
-`analysis`（判定理由、检索漏检 vs 观点句本身有误的诊断、人工重点核对提示）与
-`human_verified`。人工只需改这三处：金标 `sentence_ids`、分类标签、`human_verified`。
+草稿 = `gold_retrieval` / `gold_classification`（评测）
++ `system_retrieval`（分类 top-5 与审核池 10，对照用）
++ `analysis` + `human_verified`。  
+金标证据须同时带 `sentence_id` 与论文原文。导出 benchmark 时去掉
+`system_retrieval` / `analysis`，只留已确认样本。
 
 ```bash
 # 导出句表

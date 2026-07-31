@@ -4,18 +4,23 @@
 不改动检索链路。完整 ``evidences.jsonl``（含 sentence_id / verdict / 元数据等）继续保留，
 本脚本只做后处理。
 
+同一次检索，两套用途：
+  - classify_evidences：幻觉分类用 top-5
+  - review_evidences：人工审核池固定 10 条（包含 top-5）
+
 输出每行::
 
     {
       "claim_id": "C01",
       "claim_zh": "<公众号观点句>",
-      "evidences": [
-        {"sentence_id": 42, "text": "<论文原句>"}
-      ]
+      "classify_evidences": [
+        {"rank": 1, "sentence_id": 42, "text": "<论文原句>"}
+      ],
+      "review_evidences": [
+        {"rank": 1, "sentence_id": 42, "text": "<论文原句>"}
+      ],
+      "evidences": [ ... ]   # 兼容旧字段：等同 review_evidences（无 rank 亦可）
     }
-
-为兼容旧调用，仍接受输出文件名 ``claim_paper_pairs.jsonl``；
-推荐新名 ``claim_evidence_pairs.jsonl``。
 
 Usage:
     python clean_retrieval_output.py results/.../evidences.jsonl
@@ -30,10 +35,13 @@ import sys
 from pathlib import Path
 from typing import Any
 
+CLASSIFY_TOP_K = 5
+REVIEW_POOL_SIZE = 10
+
 
 def _sentence_from_evidence(item: dict[str, Any]) -> str:
     """优先取匹配句本身；evidence_en 为空时回退到 context.target_text。"""
-    text = str(item.get("evidence_en") or "").strip()
+    text = str(item.get("evidence_en") or item.get("text") or item.get("sentence") or "").strip()
     if text:
         return text
     context = item.get("context") or {}
@@ -48,33 +56,66 @@ def _sentence_id_from_evidence(item: dict[str, Any]) -> int:
         return -1
 
 
-def clean_record(record: dict[str, Any]) -> dict[str, Any]:
-    """把一条完整检索结果压成 claim + 带 sentence_id 的证据列表。"""
-    claim = str(record.get("claim_zh") or "").strip()
-    claim_id = str(record.get("claim_id") or record.get("id") or "").strip()
-    evidences: list[dict[str, Any]] = []
+def _ranked_evidences(items: list[Any], *, limit: int) -> list[dict[str, Any]]:
+    """去重保序，截到 limit，并写入 rank / sentence_id / text。"""
+    rows: list[dict[str, Any]] = []
     seen: set[str] = set()
-    for item in record.get("evidences") or []:
-        if not isinstance(item, dict):
+    for item in items:
+        if len(rows) >= limit:
+            break
+        if isinstance(item, str):
+            sentence = item.strip()
+            sid = -1
+        elif isinstance(item, dict):
+            sentence = _sentence_from_evidence(item)
+            sid = _sentence_id_from_evidence(item)
+        else:
             continue
-        sentence = _sentence_from_evidence(item)
         if not sentence or sentence in seen:
             continue
         seen.add(sentence)
-        evidences.append(
+        rows.append(
             {
-                "sentence_id": _sentence_id_from_evidence(item),
+                "rank": len(rows) + 1,
+                "sentence_id": sid,
                 "text": sentence,
             }
         )
+    return rows
+
+
+def clean_record(
+    record: dict[str, Any],
+    *,
+    classify_top_k: int = CLASSIFY_TOP_K,
+    review_pool_size: int = REVIEW_POOL_SIZE,
+) -> dict[str, Any]:
+    """把一条完整检索结果压成 claim + 分类用 top-k + 审核池。"""
+    claim = str(record.get("claim_zh") or "").strip()
+    claim_id = str(record.get("claim_id") or record.get("id") or "").strip()
+
+    raw_items = list(record.get("evidences") or record.get("review_evidences") or [])
+    if not raw_items and record.get("paper_sentences"):
+        raw_items = list(record.get("paper_sentences") or [])
+
+    review = _ranked_evidences(raw_items, limit=review_pool_size)
+    classify = review[:classify_top_k]
+
     row: dict[str, Any] = {
         "claim_zh": claim,
-        "evidences": evidences,
+        "classify_evidences": classify,
+        "review_evidences": review,
+        # 兼容：旧代码读 evidences 时拿到完整审核池
+        "evidences": [
+            {"sentence_id": ev["sentence_id"], "text": ev["text"]} for ev in review
+        ],
+        "paper_sentences": [ev["text"] for ev in review],
     }
     if claim_id:
         row["claim_id"] = claim_id
-    # 兼容旧 hallu 适配：仍提供 paper_sentences 纯文本列表
-    row["paper_sentences"] = [ev["text"] for ev in evidences]
+    verdict = record.get("verdict")
+    if verdict:
+        row["verdict"] = verdict
     return row
 
 
@@ -93,7 +134,9 @@ def clean_file(input_path: Path, output_path: Path) -> int:
             try:
                 record = json.loads(stripped)
             except json.JSONDecodeError as exc:
-                raise ValueError("%s 第 %d 行不是合法 JSON: %s" % (input_path, line_no, exc)) from exc
+                raise ValueError(
+                    "%s 第 %d 行不是合法 JSON: %s" % (input_path, line_no, exc)
+                ) from exc
             if not isinstance(record, dict):
                 raise ValueError("%s 第 %d 行不是 JSON 对象" % (input_path, line_no))
             cleaned = clean_record(record)
@@ -110,13 +153,9 @@ def default_output_path(input_path: Path) -> Path:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="清洗检索结果：观点句 + 带 sentence_id 的论文原句",
+        description="清洗检索结果：分类 top-5 + 审核池 10 条（含 sentence_id）",
     )
-    parser.add_argument(
-        "input",
-        type=Path,
-        help="完整 evidences.jsonl 路径",
-    )
+    parser.add_argument("input", type=Path, help="完整 evidences.jsonl 路径")
     parser.add_argument(
         "-o",
         "--output",
@@ -134,6 +173,7 @@ def main() -> int:
     output_path = args.output or default_output_path(input_path)
     count = clean_file(input_path, output_path)
     print("已清洗 %d 条 -> %s" % (count, output_path))
+    print("  classify_top_k=%d, review_pool_size=%d" % (CLASSIFY_TOP_K, REVIEW_POOL_SIZE))
     return 0
 
 

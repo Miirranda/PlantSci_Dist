@@ -1098,37 +1098,39 @@ def test_qwen_adapter_cost_uses_model_pricing():
     assert adapter.calculate_cost({"prompt_tokens": 0, "completion_tokens": 1_000_000}) == 9.6
 
 
-def test_clean_retrieval_output_keeps_only_claim_and_paper_sentences(tmp_path):
-    """后处理清洗：完整检索 JSON 压成观点句 + 多条论文原句，去重保序。"""
-    from clean_retrieval_output import clean_file, clean_record
+def test_clean_retrieval_output_splits_classify_and_review_pools(tmp_path):
+    """后处理清洗：同一次检索拆成分类 top-5 + 审核池 10，去重保序。"""
+    from clean_retrieval_output import CLASSIFY_TOP_K, REVIEW_POOL_SIZE, clean_file, clean_record
 
+    evidences = [
+        {
+            "evidence_en": "Sentence %d about KNOX1 and ovary position." % i,
+            "sentence_id": i,
+            "rerank_score": 1.0 - i * 0.01,
+        }
+        for i in range(12)
+    ]
+    # 重复句应被去重
+    evidences.insert(2, dict(evidences[0]))
     full = {
+        "claim_id": "C01",
         "claim_zh": "敲除 KNOX1 导致下位子房变为上位子房。",
         "verdict": "SUPPORTED",
-        "stop_reason": "high_threshold_met",
-        "bilingual_terms": [{"zh": "下位子房", "en": "inferior ovary"}],
-        "evidences": [
-            {"evidence_en": "Knockout of KNOX1 yielded superior ovaries.", "rerank_score": 0.9},
-            {"evidence_en": "Receptacle growth was arrested.", "rerank_score": 0.8},
-            {"evidence_en": "Knockout of KNOX1 yielded superior ovaries.", "rerank_score": 0.7},
-            {
-                "evidence_en": "",
-                "context": {"target_text": "Sex determination is linked to receptacle development."},
-            },
-        ],
-        "stats": {"agent_cost_cny": 0.01},
+        "evidences": evidences,
     }
     cleaned = clean_record(full)
-    assert set(cleaned) == {"claim_zh", "paper_sentences"}
+    assert cleaned["claim_id"] == "C01"
     assert cleaned["claim_zh"] == full["claim_zh"]
-    assert cleaned["paper_sentences"] == [
-        "Knockout of KNOX1 yielded superior ovaries.",
-        "Receptacle growth was arrested.",
-        "Sex determination is linked to receptacle development.",
-    ]
+    assert len(cleaned["review_evidences"]) == REVIEW_POOL_SIZE
+    assert len(cleaned["classify_evidences"]) == CLASSIFY_TOP_K
+    assert cleaned["classify_evidences"] == cleaned["review_evidences"][:CLASSIFY_TOP_K]
+    assert cleaned["classify_evidences"][0]["sentence_id"] == 0
+    assert cleaned["classify_evidences"][0]["rank"] == 1
+    assert cleaned["paper_sentences"] == [ev["text"] for ev in cleaned["review_evidences"]]
+    assert len(cleaned["evidences"]) == REVIEW_POOL_SIZE
 
     src = tmp_path / "evidences.jsonl"
-    dst = tmp_path / "claim_paper_pairs.jsonl"
+    dst = tmp_path / "claim_evidence_pairs.jsonl"
     src.write_text(json.dumps(full, ensure_ascii=False) + "\n", encoding="utf-8")
     assert clean_file(src, dst) == 1
     row = json.loads(dst.read_text(encoding="utf-8").strip())
