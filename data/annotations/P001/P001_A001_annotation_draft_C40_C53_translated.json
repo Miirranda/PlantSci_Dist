@@ -48,52 +48,62 @@
           {
             "rank": 1,
             "sentence_id": 345,
-            "text": "First, a duplicated homologue gene KNAT2-like2 was identified to be specifically expressed in the receptacle as KNAT2-like1, suggesting a gene functional redundancy of KNAT2-like1 (Extended Data produced some female flowers, we hypothesize that inferior ovary formation and sex determination in cucumber may also be regulated by age pathway."
+            "text": "First, a duplicated homologue gene KNAT2-like2 was identified to be specifically expressed in the receptacle as KNAT2-like1, suggesting a gene functional redundancy of KNAT2-like1 (Extended Data produced some female flowers, we hypothesize that inferior ovary formation and sex determination in cucumber may also be regulated by age pathway.",
+            "text_zh": "首先，发现了一个重复的同源基因KNAT2-like2在花托中特异性表达为KNAT2-like1，表明KNAT2-like1基因功能冗余（扩展数据产生了一些雌花），我们假设黄瓜的下位子房形成和性别决定也可能受年龄途径的调节。"
           },
           {
             "rank": 2,
             "sentence_id": 274,
-            "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i)."
+            "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i).",
+            "text_zh": "KNAT2-like1在受体中特异性表达；然而，除了在S5之后的受体中表达外，CRC和ER在S4和S5的心皮原基起始阶段也与AG1重叠表达（扩展数据图8i）。"
           },
           {
             "rank": 3,
             "sentence_id": 257,
-            "text": "We found the specific expression of KNAT2-like1 in the expanding receptacle of female flower buds (Fig."
+            "text": "We found the specific expression of KNAT2-like1 in the expanding receptacle of female flower buds (Fig.",
+            "text_zh": "我们发现KNAT2-like1在雌花芽扩张的花托中特异表达（图2）。"
           },
           {
             "rank": 4,
             "sentence_id": 302,
-            "text": "h, In situ hybridization of KNAT2-like1 expression in male, female and superior ovary floral buds from the WT and k-2 mutant plants."
+            "text": "h, In situ hybridization of KNAT2-like1 expression in male, female and superior ovary floral buds from the WT and k-2 mutant plants.",
+            "text_zh": "h， KNAT2-like1在WT和k-2突变体植株雄性、雌性和上位子房花蕾中的原位杂交表达。"
           },
           {
             "rank": 5,
             "sentence_id": 297,
-            "text": "7c); KNAT2-like1 exhibited specific and"
+            "text": "7c); KNAT2-like1 exhibited specific and",
+            "text_zh": "7 c);KNAT2-like1表现出特异性和"
           },
           {
             "rank": 6,
             "sentence_id": 259,
-            "text": "6h). These results indicate that the expression activity of KNAT2-like1 is associated with receptacle development."
+            "text": "6h). These results indicate that the expression activity of KNAT2-like1 is associated with receptacle development.",
+            "text_zh": "6 h)。这些结果表明KNAT2-like1的表达活性与受体发育有关。"
           },
           {
             "rank": 7,
             "sentence_id": 344,
-            "text": "Two possibilities were proposed."
+            "text": "Two possibilities were proposed.",
+            "text_zh": "提出了两种可能性。"
           },
           {
             "rank": 8,
             "sentence_id": 346,
-            "text": "The origins of novel complex traits are fundamental to evolutionary biology, and it has long been reported that gene duplication is an important source of genetic material for evolutionary novelty."
+            "text": "The origins of novel complex traits are fundamental to evolutionary biology, and it has long been reported that gene duplication is an important source of genetic material for evolutionary novelty.",
+            "text_zh": "新的复杂性状的起源是进化生物学的基础，长期以来一直报道基因复制是进化新颖性遗传物质的重要来源。"
           },
           {
             "rank": 9,
             "sentence_id": 301,
-            "text": "Ad, adaxial; ab, abaxial; G, inferior ovary."
+            "text": "Ad, adaxial; ab, abaxial; G, inferior ovary.",
+            "text_zh": "广告,向轴的;ab,远轴的;G，下卵巢。"
           },
           {
             "rank": 10,
             "sentence_id": 255,
-            "text": "However, the three carpels did not fuse to form a normal stigma, thus preventing pollination and seeds production (Fig."
+            "text": "However, the three carpels did not fuse to form a normal stigma, thus preventing pollination and seeds production (Fig.",
+            "text_zh": "然而，三个心皮并没有融合形成一个正常的柱头，从而阻碍了授粉和种子的产生（图2）。"
           }
         ]
       },
@@ -191,52 +201,62 @@
           {
             "rank": 1,
             "sentence_id": 271,
-            "text": "To further elucidate the genetic interaction among KNAT2-like1, ER and CRC, we also generated double and triple mutants for phenotype analysis."
+            "text": "To further elucidate the genetic interaction among KNAT2-like1, ER and CRC, we also generated double and triple mutants for phenotype analysis.",
+            "text_zh": "为了进一步阐明KNAT2-like1、ER和CRC之间的遗传相互作用，我们还生成了双突变体和三突变体进行表型分析。"
           },
           {
             "rank": 2,
             "sentence_id": 272,
-            "text": "Here, all plants lacking CRC function were androecious, whereas knat2-like1/er double mutants exhibited the same subandroecious traits as the er mutant (Extended Data Fig. 8h)."
+            "text": "Here, all plants lacking CRC function were androecious, whereas knat2-like1/er double mutants exhibited the same subandroecious traits as the er mutant (Extended Data Fig. 8h).",
+            "text_zh": "在这里，所有缺乏CRC功能的植株都是雄雄的，而knat2-like1/er双突变体表现出与er突变体相同的亚雄雄性状（扩展数据图8h）。"
           },
           {
             "rank": 3,
             "sentence_id": 273,
-            "text": "These results indicated that CRC is epistatic to ER and KNAT2-like1, and ER is epistatic to KNAT2-like1."
+            "text": "These results indicated that CRC is epistatic to ER and KNAT2-like1, and ER is epistatic to KNAT2-like1.",
+            "text_zh": "这些结果表明CRC对ER和KNAT2-like1具有上位性，ER对KNAT2-like1具有上位性。"
           },
           {
             "rank": 4,
             "sentence_id": 275,
-            "text": "Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j)."
+            "text": "Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j).",
+            "text_zh": "我们的研究结果支持一个模型，即这三个基因中的任何一个的功能丧失都会导致花托停滞并促进雄蕊发育；然而，与knat2-like1突变体相比，crc和er的心皮起始也受到抑制，导致女性向男性的性转变（扩展数据图8j）。"
           },
           {
             "rank": 5,
             "sentence_id": 276,
-            "text": "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC."
+            "text": "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC.",
+            "text_zh": "综上所述，这些发现表明KNAT2-like1在花托发育和下卵巢形成中起关键作用，并提示其调控机制涉及ER和CRC的遗传相互作用。"
           },
           {
             "rank": 6,
             "sentence_id": 274,
-            "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i)."
+            "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i).",
+            "text_zh": "KNAT2-like1在受体中特异性表达；然而，除了在S5之后的受体中表达外，CRC和ER在S4和S5的心皮原基起始阶段也与AG1重叠表达（扩展数据图8i）。"
           },
           {
             "rank": 7,
             "sentence_id": 268,
-            "text": "5f), we next investigated ER function by generating two ER-knockout mutants, erCR-1 (4 bp deletion) and erCR-2 (1 bp deletion) with a premature stop codon, using CRISPR–Cas9 (Extended Data shorter fruits compared with the WT, consistent with the previous study (Extended Data Fig. 8c,d)50."
+            "text": "5f), we next investigated ER function by generating two ER-knockout mutants, erCR-1 (4 bp deletion) and erCR-2 (1 bp deletion) with a premature stop codon, using CRISPR–Cas9 (Extended Data shorter fruits compared with the WT, consistent with the previous study (Extended Data Fig. 8c,d)50.",
+            "text_zh": "5f)，我们接下来通过使用CRISPR-Cas9产生两个ER敲除突变体erCR-1（缺失4 bp）和erCR-2（缺失1 bp）来研究ER功能，这些突变体具有一个过早停止密码子(与WT相比，扩展数据的果实较短，与先前的研究一致（扩展数据图8c，d）50。"
           },
           {
             "rank": 8,
             "sentence_id": 219,
-            "text": "This module included CRC, KNAT2-like1, ERECTA (ER), DARK INDUCIBLE 10 (DIN10), CA1P phosphatase and a putative small peptide gene, and their codistributions were verified (Fig."
+            "text": "This module included CRC, KNAT2-like1, ERECTA (ER), DARK INDUCIBLE 10 (DIN10), CA1P phosphatase and a putative small peptide gene, and their codistributions were verified (Fig.",
+            "text_zh": "该模块包括CRC、KNAT2-like1、ERECTA （ER）、DARK INDUCIBLE 10 （DIN10）、CA1P磷酸酶和一个推定的小肽基因，并验证了它们的共分布（图2）。"
           },
           {
             "rank": 9,
             "sentence_id": 269,
-            "text": "Notably, in both er mutants, most female flowers transitioned to male flowers in the monoecious background (Extended Data Fig. 8b)."
+            "text": "Notably, in both er mutants, most female flowers transitioned to male flowers in the monoecious background (Extended Data Fig. 8b).",
+            "text_zh": "值得注意的是，在这两个突变体中，在雌雄同株的背景下，大多数雌花都转变为雄花（扩展数据图8b）。"
           },
           {
             "rank": 10,
             "sentence_id": 220,
-            "text": "5h and Supplementary Table 9)."
+            "text": "5h and Supplementary Table 9).",
+            "text_zh": "5h和补充表9)。"
           }
         ]
       },
@@ -332,52 +352,62 @@
           {
             "rank": 1,
             "sentence_id": 273,
-            "text": "These results indicated that CRC is epistatic to ER and KNAT2-like1, and ER is epistatic to KNAT2-like1."
+            "text": "These results indicated that CRC is epistatic to ER and KNAT2-like1, and ER is epistatic to KNAT2-like1.",
+            "text_zh": "这些结果表明CRC对ER和KNAT2-like1具有上位性，ER对KNAT2-like1具有上位性。"
           },
           {
             "rank": 2,
             "sentence_id": 274,
-            "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i)."
+            "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i).",
+            "text_zh": "KNAT2-like1在受体中特异性表达；然而，除了在S5之后的受体中表达外，CRC和ER在S4和S5的心皮原基起始阶段也与AG1重叠表达（扩展数据图8i）。"
           },
           {
             "rank": 3,
             "sentence_id": 276,
-            "text": "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC."
+            "text": "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC.",
+            "text_zh": "综上所述，这些发现表明KNAT2-like1在花托发育和下卵巢形成中起关键作用，并提示其调控机制涉及ER和CRC的遗传相互作用。"
           },
           {
             "rank": 4,
             "sentence_id": 267,
-            "text": "Given that KNAT2-like1, CRC and ER are in a coexpression module in the receptacle (Fig."
+            "text": "Given that KNAT2-like1, CRC and ER are in a coexpression module in the receptacle (Fig.",
+            "text_zh": "考虑到KNAT2-like1、CRC和ER在受体中处于一个共表达模块（图2）。"
           },
           {
             "rank": 5,
             "sentence_id": 272,
-            "text": "Here, all plants lacking CRC function were androecious, whereas knat2-like1/er double mutants exhibited the same subandroecious traits as the er mutant (Extended Data Fig. 8h)."
+            "text": "Here, all plants lacking CRC function were androecious, whereas knat2-like1/er double mutants exhibited the same subandroecious traits as the er mutant (Extended Data Fig. 8h).",
+            "text_zh": "在这里，所有缺乏CRC功能的植株都是雄雄的，而knat2-like1/er双突变体表现出与er突变体相同的亚雄雄性状（扩展数据图8h）。"
           },
           {
             "rank": 6,
             "sentence_id": 275,
-            "text": "Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j)."
+            "text": "Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j).",
+            "text_zh": "我们的研究结果支持一个模型，即这三个基因中的任何一个的功能丧失都会导致花托停滞并促进雄蕊发育；然而，与knat2-like1突变体相比，crc和er的心皮起始也受到抑制，导致女性向男性的性转变（扩展数据图8j）。"
           },
           {
             "rank": 7,
             "sentence_id": 222,
-            "text": "SCL28 ARF6 Receptacle-early tissue HB33 ENODL14 Conjunctive MAD2 tissue-late AP2 Receptacle-late h module 14 KNAT2-like1 Max HB22-like2 TPS1 ARF18 Score LSH10 CsaV3-6G037410 Min S7 S8 S7 S8 ER CRC ER CYCD2;1 Peptide3 DIN10 CRC LTP bHLH49 S7 S8 S7 S8 CA1P DIN10 CA1P Min KNAT2-like1 Expression HB33 ARR9 HAT3 HB22-like1 CsaV3-5G003580 Max S7 S8 S7 S8 in b from S1 to S8-4."
+            "text": "SCL28 ARF6 Receptacle-early tissue HB33 ENODL14 Conjunctive MAD2 tissue-late AP2 Receptacle-late h module 14 KNAT2-like1 Max HB22-like2 TPS1 ARF18 Score LSH10 CsaV3-6G037410 Min S7 S8 S7 S8 ER CRC ER CYCD2;1 Peptide3 DIN10 CRC LTP bHLH49 S7 S8 S7 S8 CA1P DIN10 CA1P Min KNAT2-like1 Expression HB33 ARR9 HAT3 HB22-like1 CsaV3-5G003580 Max S7 S8 S7 S8 in b from S1 to S8-4.",
+            "text_zh": "SCL28 ARF6受体-早期组织HB33 ENODL14结合MAD2组织-晚期AP2受体-晚期h模块14 KNAT2-like1 Max HB22-like2 TPS1 ARF18 Score LSH10 CsaV3-6G037410 Min S7 S8 S7 S8 ER CRC ER CYCD2；1 Peptide3 DIN10 CRC LTP bHLH49 S7 S8 S7 S8 CA1P DIN10 CA1P Min KNAT2-like1表达HB33 ARR9 HAT3 HB22-like1 CsaV3-5G003580 Max S7 S8 S7 S8 S8 in b从S1到S8-4。"
           },
           {
             "rank": 8,
             "sentence_id": 271,
-            "text": "To further elucidate the genetic interaction among KNAT2-like1, ER and CRC, we also generated double and triple mutants for phenotype analysis."
+            "text": "To further elucidate the genetic interaction among KNAT2-like1, ER and CRC, we also generated double and triple mutants for phenotype analysis.",
+            "text_zh": "为了进一步阐明KNAT2-like1、ER和CRC之间的遗传相互作用，我们还生成了双突变体和三突变体进行表型分析。"
           },
           {
             "rank": 9,
             "sentence_id": 268,
-            "text": "5f), we next investigated ER function by generating two ER-knockout mutants, erCR-1 (4 bp deletion) and erCR-2 (1 bp deletion) with a premature stop codon, using CRISPR–Cas9 (Extended Data shorter fruits compared with the WT, consistent with the previous study (Extended Data Fig. 8c,d)50."
+            "text": "5f), we next investigated ER function by generating two ER-knockout mutants, erCR-1 (4 bp deletion) and erCR-2 (1 bp deletion) with a premature stop codon, using CRISPR–Cas9 (Extended Data shorter fruits compared with the WT, consistent with the previous study (Extended Data Fig. 8c,d)50.",
+            "text_zh": "5f)，我们接下来通过使用CRISPR-Cas9产生两个ER敲除突变体erCR-1（缺失4 bp）和erCR-2（缺失1 bp）来研究ER功能，这些突变体具有一个过早停止密码子(与WT相比，扩展数据的果实较短，与先前的研究一致（扩展数据图8c，d）50。"
           },
           {
             "rank": 10,
             "sentence_id": 223,
-            "text": "e, The selected cellular trajectories from TOFO, showing the significant examples of candidate regulatory genes."
+            "text": "e, The selected cellular trajectories from TOFO, showing the significant examples of candidate regulatory genes.",
+            "text_zh": "e，从TOFO中选择的细胞轨迹，显示了候选调节基因的重要例子。"
           }
         ]
       },
@@ -457,17 +487,20 @@
           {
             "rank": 1,
             "sentence_id": 276,
-            "text": "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC."
+            "text": "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC.",
+            "text_zh": "综上所述，这些发现表明KNAT2-like1在花托发育和下卵巢形成中起关键作用，并提示其调控机制涉及ER和CRC的遗传相互作用。"
           },
           {
             "rank": 2,
             "sentence_id": 266,
-            "text": "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning."
+            "text": "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning.",
+            "text_zh": "6我)。综上所述，这些发现强调了KNAT2-like1在花托发育和卵巢定位中的关键作用。"
           },
           {
             "rank": 3,
             "sentence_id": 338,
-            "text": "For instance, in female flower buds, KNAT2-like1, CRC and ACO2 (ref."
+            "text": "For instance, in female flower buds, KNAT2-like1, CRC and ACO2 (ref.",
+            "text_zh": "例如，在雌花芽中，KNAT2-like1， CRC和ACO2（参考文献）。"
           }
         ]
       },
@@ -570,52 +603,62 @@
           {
             "rank": 1,
             "sentence_id": 282,
-            "text": "7b). Unlike cucumber, tomato lacks a specific FIM, and the receptacle is located below the carpel rather than in the surrounding position for cucumber."
+            "text": "7b). Unlike cucumber, tomato lacks a specific FIM, and the receptacle is located below the carpel rather than in the surrounding position for cucumber.",
+            "text_zh": "7 b)。与黄瓜不同的是，番茄缺乏特定的膜，而且花托位于心皮下方，而不是黄瓜的周围位置。"
           },
           {
             "rank": 2,
             "sentence_id": 281,
-            "text": "7a,b, Extended Data Fig. 9a–e and Supplementary Tables 10 and 11) and then integrated into superclusters (Fig."
+            "text": "7a,b, Extended Data Fig. 9a–e and Supplementary Tables 10 and 11) and then integrated into superclusters (Fig.",
+            "text_zh": "7a,b，扩展数据图9a-e和补充表10和11)，然后整合到超簇中（图11）。"
           },
           {
             "rank": 3,
             "sentence_id": 283,
-            "text": "Although the superior ovary mutant still has an FIM, the arrested receptacle and upward carpel growth were observed (Fig."
+            "text": "Although the superior ovary mutant still has an FIM, the arrested receptacle and upward carpel growth were observed (Fig.",
+            "text_zh": "虽然上位子房突变体仍有一个FIM，但观察到花托阻滞和心皮向上生长（图2）。"
           },
           {
             "rank": 4,
             "sentence_id": 58,
-            "text": "By contrast, the floral meristem of tomato is convex, and the floral primordia sequentially initiate on its flank, with the carpels growing upwards to form superior ovaries (Fig."
+            "text": "By contrast, the floral meristem of tomato is convex, and the floral primordia sequentially initiate on its flank, with the carpels growing upwards to form superior ovaries (Fig.",
+            "text_zh": "相比之下，番茄的花分生组织是凸的，花原基依次在其侧面萌发，心皮向上生长形成上子房（图2）。"
           },
           {
             "rank": 5,
             "sentence_id": 91,
-            "text": "We also observed three clusters (26, 27 and 28) situated between the carpel and receptacle at various stages of floral bud development, which we named conjunctive primordia, conjunctive tissue-early and conjunctive tissue-late, respectively (Fig."
+            "text": "We also observed three clusters (26, 27 and 28) situated between the carpel and receptacle at various stages of floral bud development, which we named conjunctive primordia, conjunctive tissue-early and conjunctive tissue-late, respectively (Fig.",
+            "text_zh": "在花芽发育的不同阶段，我们还观察到位于心皮和花托之间的三个簇（26、27和28），我们分别将其命名为连接原基、连接组织早期和连接组织晚期（图2）。"
           },
           {
             "rank": 6,
             "sentence_id": 57,
-            "text": "1b,c). The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c)."
+            "text": "1b,c). The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c).",
+            "text_zh": "1 b, c)。AgNO3诱导的黄瓜雄花芽形成也呈现出增大和凹陷的花分生组织特征；然而，花托和心皮随后的生长被阻止（扩展数据图1c）。"
           },
           {
             "rank": 7,
             "sentence_id": 92,
-            "text": "2a–c). Besides the expression of marker genes in both carpel (CsAG1) and receptacle (CsCRC), the marker gene CsHANABA TARANU (CsHAN1) was exclusively expressed in cluster 27 (ref."
+            "text": "2a–c). Besides the expression of marker genes in both carpel (CsAG1) and receptacle (CsCRC), the marker gene CsHANABA TARANU (CsHAN1) was exclusively expressed in cluster 27 (ref.",
+            "text_zh": "2 a - c)。除了在心皮（CsAG1）和花托（CsCRC）中表达标记基因外，标记基因CsHANABA TARANU （CsHAN1）在第27簇中只表达（参考文献）。"
           },
           {
             "rank": 8,
             "sentence_id": 164,
-            "text": "After S5, we observed the largest increase in the bin numbers of receptacle-related clusters (receptacle-early, cluster 9), indicating that 865 a b Basal sepal–abaxial Sepal epidermis Sepal mesophyll Sepal Unknown S1 Sepal mesophyll Unknown G0/G1 phase cells Epidermis Epidermis Trichome-base floral Trichome meristem Thicked epidermis Floral intercalary meristem FIM Floral intercalary meristem-2 Floral intercalary meristem-3 G2/M phase cells S1 G1/S phase cells Receptacle Receptacle primordia Receptacle-early Receptacle-late Provascular Protoxylem Conjunctive Conjunctive primordia Tissue Conjunctive tissue-early Conjunctive tissue-late Petal primordia Petal-early Petal S1 Petal-late Basal sepal-adaxial 1.00 Edge weight Floral primordia carpel 0.75 Placenta FP 0.50 Ovlue (ovary wall) 0.25 Stigma/transmitting tract S1 S2 S3 S4/S5 S6/S7 S8-1/2 S8-3/4 stage c Receptacle primordia Receptacle-early Receptacle-late Conjunctive primordia Conjunctive tissue-early UMAP2 UMAP2 Conjunctive tissue-late Floral intercalary meristem Floral intercalary meristem-2 Floral intercalary meristem-3 UMAP1 UMAP1 d 1.5 Bin50 density 1.0 0.5 0 0 2 4 6 Pesudotime a, A directed acyclic graph showing inferred relationships between cell states across cucumber female floral bud development."
+            "text": "After S5, we observed the largest increase in the bin numbers of receptacle-related clusters (receptacle-early, cluster 9), indicating that 865 a b Basal sepal–abaxial Sepal epidermis Sepal mesophyll Sepal Unknown S1 Sepal mesophyll Unknown G0/G1 phase cells Epidermis Epidermis Trichome-base floral Trichome meristem Thicked epidermis Floral intercalary meristem FIM Floral intercalary meristem-2 Floral intercalary meristem-3 G2/M phase cells S1 G1/S phase cells Receptacle Receptacle primordia Receptacle-early Receptacle-late Provascular Protoxylem Conjunctive Conjunctive primordia Tissue Conjunctive tissue-early Conjunctive tissue-late Petal primordia Petal-early Petal S1 Petal-late Basal sepal-adaxial 1.00 Edge weight Floral primordia carpel 0.75 Placenta FP 0.50 Ovlue (ovary wall) 0.25 Stigma/transmitting tract S1 S2 S3 S4/S5 S6/S7 S8-1/2 S8-3/4 stage c Receptacle primordia Receptacle-early Receptacle-late Conjunctive primordia Conjunctive tissue-early UMAP2 UMAP2 Conjunctive tissue-late Floral intercalary meristem Floral intercalary meristem-2 Floral intercalary meristem-3 UMAP1 UMAP1 d 1.5 Bin50 density 1.0 0.5 0 0 2 4 6 Pesudotime a, A directed acyclic graph showing inferred relationships between cell states across cucumber female floral bud development.",
+            "text_zh": "在S5之后，我们观察到与花托相关的簇（花托-早期，簇9）的桶数增加最多；表明865 ab基部萼片-背面萼片表皮萼片叶肉萼片未知S1萼片叶肉未知G0/G1期细胞表皮表皮毛状基部花毛状分生组织厚表皮花茎间分生组织FIM花茎间分生组织-2花茎间分生组织-3 G2/M期细胞S1 G1/S期细胞花托花托原基花托-早期花托-晚期原木质部结合原基组织结合组织-早期花托原基花托-早期花托原基花托-早期花托原基花托-早期花托原基花托-早期花托-晚期花托原基花托-早期花托-晚期花托原基花托-早期花托-晚期花托原基花托-早期花托分生组织-2花托间分生组织-3花托间分生组织UMAP1 UMAP1 d 1.5 Bin50密度1.0 0.5 0 0 2 4 6伪时间a，一个有向无环图，显示了黄瓜雌花芽发育过程中细胞状态之间的推断关系。"
           },
           {
             "rank": 9,
             "sentence_id": 165,
-            "text": "Each row corresponds to one of the cluster annotations, columns to developmental stages spanning from S1 to S8-4, nodes to cell trajectories and node colours to clusters."
+            "text": "Each row corresponds to one of the cluster annotations, columns to developmental stages spanning from S1 to S8-4, nodes to cell trajectories and node colours to clusters.",
+            "text_zh": "每一行对应一个簇注释，列对应从S1到S8-4的发育阶段，节点对应细胞轨迹，节点颜色对应簇。"
           },
           {
             "rank": 10,
             "sentence_id": 2,
-            "text": "However, the developmental mechanisms underlying inferior ovary formation remain largely unknown."
+            "text": "However, the developmental mechanisms underlying inferior ovary formation remain largely unknown.",
+            "text_zh": "然而，下卵巢形成的发育机制在很大程度上仍然未知。"
           }
         ]
       },
@@ -705,52 +748,62 @@
           {
             "rank": 1,
             "sentence_id": 264,
-            "text": "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary."
+            "text": "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary.",
+            "text_zh": "我们推测，在优子房花突变体中，KNAT2-like1表达的缺失导致花托发育停滞，心皮的持续生长导致优子房的形成。"
           },
           {
             "rank": 2,
             "sentence_id": 283,
-            "text": "Although the superior ovary mutant still has an FIM, the arrested receptacle and upward carpel growth were observed (Fig."
+            "text": "Although the superior ovary mutant still has an FIM, the arrested receptacle and upward carpel growth were observed (Fig.",
+            "text_zh": "虽然上位子房突变体仍有一个FIM，但观察到花托阻滞和心皮向上生长（图2）。"
           },
           {
             "rank": 3,
             "sentence_id": 275,
-            "text": "Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j)."
+            "text": "Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j).",
+            "text_zh": "我们的研究结果支持一个模型，即这三个基因中的任何一个的功能丧失都会导致花托停滞并促进雄蕊发育；然而，与knat2-like1突变体相比，crc和er的心皮起始也受到抑制，导致女性向男性的性转变（扩展数据图8j）。"
           },
           {
             "rank": 4,
             "sentence_id": 263,
-            "text": "6g). The spatial expression patterns of known abaxial-specific genes, KAN-1, KAN-2 and AFO/FIL47,48, and an adaxial-specific gene, PHAVOLUTA (PHV)49, in normal inferior ovaries and aberrant superior ovaries were consistent with this change in placenta morphology (Extended Data Fig. 7i–k)."
+            "text": "6g). The spatial expression patterns of known abaxial-specific genes, KAN-1, KAN-2 and AFO/FIL47,48, and an adaxial-specific gene, PHAVOLUTA (PHV)49, in normal inferior ovaries and aberrant superior ovaries were consistent with this change in placenta morphology (Extended Data Fig. 7i–k).",
+            "text_zh": "6 g)。已知的腹轴特异性基因KAN-1、KAN-2和AFO/FIL47、48以及腹轴特异性基因PHAVOLUTA (PHV)49在正常下卵巢和异常上卵巢中的空间表达模式与胎盘形态的变化一致（扩展数据图7i-k）。"
           },
           {
             "rank": 5,
             "sentence_id": 265,
-            "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+            "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig.",
+            "text_zh": "相反，在获得KNAT2-like1活性的正常黄瓜雌花芽中，花托与心皮的正面融合，然后快速生长的花托包裹在心皮周围，导致外侧和内侧图案的变化，形成下胚房（图2）。"
           },
           {
             "rank": 6,
             "sentence_id": 282,
-            "text": "7b). Unlike cucumber, tomato lacks a specific FIM, and the receptacle is located below the carpel rather than in the surrounding position for cucumber."
+            "text": "7b). Unlike cucumber, tomato lacks a specific FIM, and the receptacle is located below the carpel rather than in the surrounding position for cucumber.",
+            "text_zh": "7 b)。与黄瓜不同的是，番茄缺乏特定的膜，而且花托位于心皮下方，而不是黄瓜的周围位置。"
           },
           {
             "rank": 7,
             "sentence_id": 284,
-            "text": "7b). We further compared the expression patterns of markers for each supercluster to compare their floral organ structures among cucumber, superior ovary mutant and tomato and found that in all the material AP3 and PI were expressed in petals and stamens, and AG showed specific expression in the carpel and stamen (Extended Data Fig. 9f)."
+            "text": "7b). We further compared the expression patterns of markers for each supercluster to compare their floral organ structures among cucumber, superior ovary mutant and tomato and found that in all the material AP3 and PI were expressed in petals and stamens, and AG showed specific expression in the carpel and stamen (Extended Data Fig. 9f).",
+            "text_zh": "7 b)。我们进一步比较了黄瓜、优越子房突变体和番茄各超簇标记的表达模式，比较了它们的花器官结构，发现AP3和PI在所有材料中都在花瓣和雄蕊中表达，AG在心皮和雄蕊中特异表达（扩展数据图9f）。"
           },
           {
             "rank": 8,
             "sentence_id": 259,
-            "text": "6h). These results indicate that the expression activity of KNAT2-like1 is associated with receptacle development."
+            "text": "6h). These results indicate that the expression activity of KNAT2-like1 is associated with receptacle development.",
+            "text_zh": "6 h)。这些结果表明KNAT2-like1的表达活性与受体发育有关。"
           },
           {
             "rank": 9,
             "sentence_id": 57,
-            "text": "1b,c). The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c)."
+            "text": "1b,c). The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c).",
+            "text_zh": "1 b, c)。AgNO3诱导的黄瓜雄花芽形成也呈现出增大和凹陷的花分生组织特征；然而，花托和心皮随后的生长被阻止（扩展数据图1c）。"
           },
           {
             "rank": 10,
             "sentence_id": 229,
-            "text": "of KNAT2-like1 in this module suggested its critical role not only in early receptacle initiation but also in subsequent cell proliferation."
+            "text": "of KNAT2-like1 in this module suggested its critical role not only in early receptacle initiation but also in subsequent cell proliferation.",
+            "text_zh": "KNAT2-like1在该模块中的表达表明它不仅在早期受体启动中起关键作用，而且在随后的细胞增殖中也起关键作用。"
           }
         ]
       },
@@ -840,52 +893,62 @@
           {
             "rank": 1,
             "sentence_id": 348,
-            "text": "Here, we identified novel genes, STM-like and KNAT2-like1, and new expression patterns that have emerged in the FIM and receptacle, contributing to the evolution of inferior ovaries in cucumber."
+            "text": "Here, we identified novel genes, STM-like and KNAT2-like1, and new expression patterns that have emerged in the FIM and receptacle, contributing to the evolution of inferior ovaries in cucumber.",
+            "text_zh": "在这里，我们发现了新的基因，STM-like和KNAT2-like1，以及在FIM和花托中出现的新的表达模式，有助于黄瓜下卵巢的进化。"
           },
           {
             "rank": 2,
             "sentence_id": 345,
-            "text": "First, a duplicated homologue gene KNAT2-like2 was identified to be specifically expressed in the receptacle as KNAT2-like1, suggesting a gene functional redundancy of KNAT2-like1 (Extended Data produced some female flowers, we hypothesize that inferior ovary formation and sex determination in cucumber may also be regulated by age pathway."
+            "text": "First, a duplicated homologue gene KNAT2-like2 was identified to be specifically expressed in the receptacle as KNAT2-like1, suggesting a gene functional redundancy of KNAT2-like1 (Extended Data produced some female flowers, we hypothesize that inferior ovary formation and sex determination in cucumber may also be regulated by age pathway.",
+            "text_zh": "首先，发现了一个重复的同源基因KNAT2-like2在花托中特异性表达为KNAT2-like1，表明KNAT2-like1基因功能冗余（扩展数据产生了一些雌花），我们假设黄瓜的下位子房形成和性别决定也可能受年龄途径的调节。"
           },
           {
             "rank": 3,
             "sentence_id": 265,
-            "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+            "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig.",
+            "text_zh": "相反，在获得KNAT2-like1活性的正常黄瓜雌花芽中，花托与心皮的正面融合，然后快速生长的花托包裹在心皮周围，导致外侧和内侧图案的变化，形成下胚房（图2）。"
           },
           {
             "rank": 4,
             "sentence_id": 308,
-            "text": "In contrast with the predominant expression of CsCRC in the receptacle of cucumber, there is a lack of expression in the superior ovary mutant,"
+            "text": "In contrast with the predominant expression of CsCRC in the receptacle of cucumber, there is a lack of expression in the superior ovary mutant,",
+            "text_zh": "与CsCRC在黄瓜花托中的显性表达相反，CsCRC在上位子房突变体中缺乏表达。"
           },
           {
             "rank": 5,
             "sentence_id": 349,
-            "text": "Our findings elucidate molecular mechanisms underlying inferior ovary development and highlight the importance of duplicated TFs in species diversification, adaptive genetic variation and the emergence of novel complex traits."
+            "text": "Our findings elucidate molecular mechanisms underlying inferior ovary development and highlight the importance of duplicated TFs in species diversification, adaptive genetic variation and the emergence of novel complex traits.",
+            "text_zh": "我们的研究结果阐明了下卵巢发育的分子机制，并强调了重复tf在物种多样化、适应性遗传变异和新的复杂性状出现中的重要性。"
           },
           {
             "rank": 6,
             "sentence_id": 347,
-            "text": "For example, duplication events involving genes, such as MADS, SEU and YABBY, may have contributed to the evolution of the GRN for fruit development9."
+            "text": "For example, duplication events involving genes, such as MADS, SEU and YABBY, may have contributed to the evolution of the GRN for fruit development9.",
+            "text_zh": "例如，涉及基因的复制事件，如MADS、SEU和YABBY，可能促进了果实发育的GRN进化。"
           },
           {
             "rank": 7,
             "sentence_id": 276,
-            "text": "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC."
+            "text": "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC.",
+            "text_zh": "综上所述，这些发现表明KNAT2-like1在花托发育和下卵巢形成中起关键作用，并提示其调控机制涉及ER和CRC的遗传相互作用。"
           },
           {
             "rank": 8,
             "sentence_id": 274,
-            "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i)."
+            "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i).",
+            "text_zh": "KNAT2-like1在受体中特异性表达；然而，除了在S5之后的受体中表达外，CRC和ER在S4和S5的心皮原基起始阶段也与AG1重叠表达（扩展数据图8i）。"
           },
           {
             "rank": 9,
             "sentence_id": 344,
-            "text": "Two possibilities were proposed."
+            "text": "Two possibilities were proposed.",
+            "text_zh": "提出了两种可能性。"
           },
           {
             "rank": 10,
             "sentence_id": 346,
-            "text": "The origins of novel complex traits are fundamental to evolutionary biology, and it has long been reported that gene duplication is an important source of genetic material for evolutionary novelty."
+            "text": "The origins of novel complex traits are fundamental to evolutionary biology, and it has long been reported that gene duplication is an important source of genetic material for evolutionary novelty.",
+            "text_zh": "新的复杂性状的起源是进化生物学的基础，长期以来一直报道基因复制是进化新颖性遗传物质的重要来源。"
           }
         ]
       },
@@ -998,52 +1061,62 @@
           {
             "rank": 1,
             "sentence_id": 296,
-            "text": "CsSTM-like, which does not have an orthologue in tomato, showed specific expression in the FIM of the cucumber WT and superior ovary mutant (Fig."
+            "text": "CsSTM-like, which does not have an orthologue in tomato, showed specific expression in the FIM of the cucumber WT and superior ovary mutant (Fig.",
+            "text_zh": "在番茄中没有同源基因的csstm样基因在黄瓜WT和优越子房突变体的FIM中有特异性表达（图2）。"
           },
           {
             "rank": 2,
             "sentence_id": 295,
-            "text": "7d, Extended Data Fig. 10 and Supplementary Table 12)."
+            "text": "7d, Extended Data Fig. 10 and Supplementary Table 12).",
+            "text_zh": "图10和补充表12)。"
           },
           {
             "rank": 3,
             "sentence_id": 297,
-            "text": "7c); KNAT2-like1 exhibited specific and"
+            "text": "7c); KNAT2-like1 exhibited specific and",
+            "text_zh": "7 c);KNAT2-like1表现出特异性和"
           },
           {
             "rank": 4,
             "sentence_id": 315,
-            "text": "We also confirmed the absence of expression of the other receptacle marker genes, CsERECTA (ER), ACO2 and CsACS2, or of their orthologues, in the superior ovary mutant and tomato (Fig."
+            "text": "We also confirmed the absence of expression of the other receptacle marker genes, CsERECTA (ER), ACO2 and CsACS2, or of their orthologues, in the superior ovary mutant and tomato (Fig.",
+            "text_zh": "我们也证实了其他受体标记基因，CsERECTA (ER)， ACO2和CsACS2，或它们的同源物，在上位子房突变体和番茄中没有表达（图2）。"
           },
           {
             "rank": 5,
             "sentence_id": 314,
-            "text": "7c), suggesting that a distinct expression pattern has evolved in cucumber."
+            "text": "7c), suggesting that a distinct expression pattern has evolved in cucumber.",
+            "text_zh": "7c)，表明在黄瓜中已经进化出了一种独特的表达模式。"
           },
           {
             "rank": 6,
             "sentence_id": 316,
-            "text": "7c). Based on these findings, we propose that novel genes and new expression patterns were acquired C."
+            "text": "7c). Based on these findings, we propose that novel genes and new expression patterns were acquired C.",
+            "text_zh": "7 c)。基于这些发现，我们提出新的基因和新的表达模式获得C。"
           },
           {
             "rank": 7,
             "sentence_id": 309,
-            "text": "870 a b C. sativus G ♂♀ 0 Epidermis 1 Receptacle 2 Sepal mesophyii (basal) 3 Sepal mesophyil 4 Stamen 5 Carpel 6 Sepal mesophyii (upper) Bright field Cell type c Cs G Sl Cs G Sl ♂♀ ♂♀ ♂♀ ♂♀ ♀ ♀ Max Expression Min CsSTM-like CsSTM-like SlSTM CsKNAT2-like1 CsKNAT2-like1 SlKN4 Cs G Sl Cs G Sl ♂♀ ♂♀ ♂♀ ♂♀ ♀ ♀ CsCRC CsCRC SlCRC CsACO2 CsACO2 SlACO2 ♂♀ ♂♀ Cs G Sl Cs ♂♀ G Sl ♂♀ ♀ ♀ CsACS2 CsACS2 SlACS2 CsER CsER SlER1 cucumber, superior ovary mutant and tomato."
+            "text": "870 a b C. sativus G ♂♀ 0 Epidermis 1 Receptacle 2 Sepal mesophyii (basal) 3 Sepal mesophyil 4 Stamen 5 Carpel 6 Sepal mesophyii (upper) Bright field Cell type c Cs G Sl Cs G Sl ♂♀ ♂♀ ♂♀ ♂♀ ♀ ♀ Max Expression Min CsSTM-like CsSTM-like SlSTM CsKNAT2-like1 CsKNAT2-like1 SlKN4 Cs G Sl Cs G Sl ♂♀ ♂♀ ♂♀ ♂♀ ♀ ♀ CsCRC CsCRC SlCRC CsACO2 CsACO2 SlACO2 ♂♀ ♂♀ Cs G Sl Cs ♂♀ G Sl ♂♀ ♀ ♀ CsACS2 CsACS2 SlACS2 CsER CsER SlER1 cucumber, superior ovary mutant and tomato.",
+            "text_zh": "870 a b c .巨大G♂♀0表皮1插座2萼片mesophyii(基底)3萼片mesophyil 4雄蕊5心皮6花萼mesophyii(上)亮视场细胞类型c Cs G Sl Cs G Sl♂♀♂♀♂♀♂♀♀♀最大表达最小CsSTM-like CsSTM-like SlSTM CsKNAT2-like1 CsKNAT2-like1 SlKN4 Cs G Sl Cs G Sl♂♀♂♀♂♀♂♀♀♀CsCRC CsCRC SlCRC CsACO2 CsACO2 SlACO2♂♀♂♀Cs G Sl Cs♂♀G Sl♂♀♀♀CsACS2 CsACS2 SlACS2研究会研究会SlER1黄瓜、优越的卵巢突变和番茄。"
           },
           {
             "rank": 8,
             "sentence_id": 310,
-            "text": "a, Left: a cryosection of tomato floral bud at S8."
+            "text": "a, Left: a cryosection of tomato floral bud at S8.",
+            "text_zh": "a，左：S8处的番茄花芽冷冻切片。"
           },
           {
             "rank": 9,
             "sentence_id": 306,
-            "text": "7c). Although there is an orthologue of CsKNAT2-like1 in tomato (SlKN4), in comparison, SlKN4 showed little expression in the floral receptacle (Fig."
+            "text": "7c). Although there is an orthologue of CsKNAT2-like1 in tomato (SlKN4), in comparison, SlKN4 showed little expression in the floral receptacle (Fig.",
+            "text_zh": "7 c)。虽然在番茄中存在CsKNAT2-like1的同源基因（SlKN4），但相比之下，SlKN4在花托中的表达很少（图4）。"
           },
           {
             "rank": 10,
             "sentence_id": 307,
-            "text": "7c). In Arabidopsis thaliana and tomato, CRC is a key gene in carpel development, and its expression is reported to be regulated by AG22."
+            "text": "7c). In Arabidopsis thaliana and tomato, CRC is a key gene in carpel development, and its expression is reported to be regulated by AG22.",
+            "text_zh": "7 c)。在拟南芥和番茄中，CRC是心皮发育的关键基因，据报道其表达受AG22调控。"
           }
         ]
       },
@@ -1133,52 +1206,62 @@
           {
             "rank": 1,
             "sentence_id": 348,
-            "text": "Here, we identified novel genes, STM-like and KNAT2-like1, and new expression patterns that have emerged in the FIM and receptacle, contributing to the evolution of inferior ovaries in cucumber."
+            "text": "Here, we identified novel genes, STM-like and KNAT2-like1, and new expression patterns that have emerged in the FIM and receptacle, contributing to the evolution of inferior ovaries in cucumber.",
+            "text_zh": "在这里，我们发现了新的基因，STM-like和KNAT2-like1，以及在FIM和花托中出现的新的表达模式，有助于黄瓜下卵巢的进化。"
           },
           {
             "rank": 2,
             "sentence_id": 43,
-            "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation."
+            "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation.",
+            "text_zh": "细胞系分析表明，黄瓜花器官基部的花萼间分生组织（FIM）活性延长，导致花托快速生长，形成下子房。"
           },
           {
             "rank": 3,
             "sentence_id": 349,
-            "text": "Our findings elucidate molecular mechanisms underlying inferior ovary development and highlight the importance of duplicated TFs in species diversification, adaptive genetic variation and the emergence of novel complex traits."
+            "text": "Our findings elucidate molecular mechanisms underlying inferior ovary development and highlight the importance of duplicated TFs in species diversification, adaptive genetic variation and the emergence of novel complex traits.",
+            "text_zh": "我们的研究结果阐明了下卵巢发育的分子机制，并强调了重复tf在物种多样化、适应性遗传变异和新的复杂性状出现中的重要性。"
           },
           {
             "rank": 4,
             "sentence_id": 347,
-            "text": "For example, duplication events involving genes, such as MADS, SEU and YABBY, may have contributed to the evolution of the GRN for fruit development9."
+            "text": "For example, duplication events involving genes, such as MADS, SEU and YABBY, may have contributed to the evolution of the GRN for fruit development9.",
+            "text_zh": "例如，涉及基因的复制事件，如MADS、SEU和YABBY，可能促进了果实发育的GRN进化。"
           },
           {
             "rank": 5,
             "sentence_id": 327,
-            "text": "in the FIM and receptacle, leading to the evolutionary innovation of an inferior ovary in the cucurbits."
+            "text": "in the FIM and receptacle, leading to the evolutionary innovation of an inferior ovary in the cucurbits.",
+            "text_zh": "在果皮和花托中，导致葫芦的下子房的进化创新。"
           },
           {
             "rank": 6,
             "sentence_id": 60,
-            "text": "To dissect the underlying gene expression network driving the development of the inferior ovary of cucumber, we sampled floral buds at various stages, including S1–S8, and ovaries at 0 days post anthesis (DPA) for spatial transcriptomic analysis."
+            "text": "To dissect the underlying gene expression network driving the development of the inferior ovary of cucumber, we sampled floral buds at various stages, including S1–S8, and ovaries at 0 days post anthesis (DPA) for spatial transcriptomic analysis.",
+            "text_zh": "为了剖析驱动黄瓜下卵巢发育的潜在基因表达网络，我们采样了黄瓜不同阶段的花蕾，包括S1-S8，以及开花后0天的卵巢，进行了空间转录组分析。"
           },
           {
             "rank": 7,
             "sentence_id": 42,
-            "text": "These data enabled us to identify distinct cell types involved in female flower and inferior ovary development."
+            "text": "These data enabled us to identify distinct cell types involved in female flower and inferior ovary development.",
+            "text_zh": "这些数据使我们能够识别不同类型的细胞参与雌花和下卵巢发育。"
           },
           {
             "rank": 8,
             "sentence_id": 44,
-            "text": "In addition, we dissected the gene regulatory networks (GRNs) responsible for the rapid growth of the receptacle and identified key genes involved in these processes, including a duplicated class I KNOTTED-like homeobox (KNOX) transcription factor (TF), the knockout of which results in bisexual flowers with superior ovaries similar to those of tomato (Solanum lycopersicum L.)."
+            "text": "In addition, we dissected the gene regulatory networks (GRNs) responsible for the rapid growth of the receptacle and identified key genes involved in these processes, including a duplicated class I KNOTTED-like homeobox (KNOX) transcription factor (TF), the knockout of which results in bisexual flowers with superior ovaries similar to those of tomato (Solanum lycopersicum L.).",
+            "text_zh": "此外，我们解剖了负责花托快速生长的基因调控网络（grn），并确定了参与这些过程的关键基因，包括重复的I类KNOX样同源盒（KNOX）转录因子（TF），敲除该转录因子可产生具有与番茄相似的优越子房的两性花（Solanum lycopersicum L.）。"
           },
           {
             "rank": 9,
             "sentence_id": 285,
-            "text": "We further analysed the expression patterns of important genes in inferior ovary development, such as KNOX1 TF genes, CRC, ACO2 and ACS2, which show specific expression in the FIM, receptacle or conjunctive"
+            "text": "We further analysed the expression patterns of important genes in inferior ovary development, such as KNOX1 TF genes, CRC, ACO2 and ACS2, which show specific expression in the FIM, receptacle or conjunctive",
+            "text_zh": "我们进一步分析了下卵巢发育中重要基因KNOX1 TF基因、CRC、ACO2和ACS2的表达模式，这些基因在FIM、花托或结合体中有特异性表达"
           },
           {
             "rank": 10,
             "sentence_id": 326,
-            "text": "A more comprehensive phylogenetic tree including additional species is provided in Extended Data Fig. 10."
+            "text": "A more comprehensive phylogenetic tree including additional species is provided in Extended Data Fig. 10.",
+            "text_zh": "扩展数据图10提供了一个包括其他物种的更全面的系统发育树。"
           }
         ]
       },
@@ -1275,52 +1358,62 @@
           {
             "rank": 1,
             "sentence_id": 43,
-            "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation."
+            "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation.",
+            "text_zh": "细胞系分析表明，黄瓜花器官基部的花萼间分生组织（FIM）活性延长，导致花托快速生长，形成下子房。"
           },
           {
             "rank": 2,
             "sentence_id": 3,
-            "text": "Comparative spatial transcriptome mapping and cell lineage reconstructions in developing floral buds of cucumber and tomato, which have inferior and superior ovaries, respectively, revealed that inferior ovaries develop from accelerated receptacle growth resulting from the continuous activity of meristematic stems cells at the base of the cucumber floral organs."
+            "text": "Comparative spatial transcriptome mapping and cell lineage reconstructions in developing floral buds of cucumber and tomato, which have inferior and superior ovaries, respectively, revealed that inferior ovaries develop from accelerated receptacle growth resulting from the continuous activity of meristematic stems cells at the base of the cucumber floral organs.",
+            "text_zh": "通过对黄瓜和番茄下生子房和上生子房花蕾的空间转录组定位和细胞系重建分析，揭示了下生子房是由黄瓜花器官基部分生干细胞持续活跃的花托加速生长而形成的。"
           },
           {
             "rank": 3,
             "sentence_id": 59,
-            "text": "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel."
+            "text": "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel.",
+            "text_zh": "根据这些观察，我们推断黄瓜下子房形成的三个必要条件：(1)花分生组织的扩大改变了花轮的相对位置；(2)花托随后快速生长；(3)花托与心皮融合。"
           },
           {
             "rank": 4,
             "sentence_id": 56,
-            "text": "1b,c). With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig."
+            "text": "1b,c). With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig.",
+            "text_zh": "1 b, c)。随着花托的快速生长，萼片、花瓣和雄蕊原基上升到花尖，心皮留在花托内，形成下子房（图2）。"
           },
           {
             "rank": 5,
             "sentence_id": 335,
-            "text": "Accordingly, receptacle development and sex determination are closely linked in cucumber."
+            "text": "Accordingly, receptacle development and sex determination are closely linked in cucumber.",
+            "text_zh": "因此，黄瓜的花托发育与性别决定密切相关。"
           },
           {
             "rank": 6,
             "sentence_id": 32,
-            "text": "Accordingly, the genetic and developmental mechanisms underlying inferior ovary formation have economic, as well as developmental importance."
+            "text": "Accordingly, the genetic and developmental mechanisms underlying inferior ovary formation have economic, as well as developmental importance.",
+            "text_zh": "因此，下卵巢形成的遗传和发育机制具有经济和发育意义。"
           },
           {
             "rank": 7,
             "sentence_id": 265,
-            "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+            "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig.",
+            "text_zh": "相反，在获得KNAT2-like1活性的正常黄瓜雌花芽中，花托与心皮的正面融合，然后快速生长的花托包裹在心皮周围，导致外侧和内侧图案的变化，形成下胚房（图2）。"
           },
           {
             "rank": 8,
             "sentence_id": 244,
-            "text": "In female flowers, the receptacle and carpel continued to grow after S5, and the receptacle grew rapidly and wrapped around the carpel to form the inferior ovary (Extended Data Fig. 7b,d)."
+            "text": "In female flowers, the receptacle and carpel continued to grow after S5, and the receptacle grew rapidly and wrapped around the carpel to form the inferior ovary (Extended Data Fig. 7b,d).",
+            "text_zh": "雌花中花托和心皮在S5之后继续生长，花托迅速生长并包裹心皮形成下子房（扩展数据图7b，d）。"
           },
           {
             "rank": 9,
             "sentence_id": 329,
-            "text": "In this current study, we generated a comprehensive collection of spatially resolved transcriptomes and reconstructed the cellular territories and cell lineages for the continuously developing floral organs of cucumber."
+            "text": "In this current study, we generated a comprehensive collection of spatially resolved transcriptomes and reconstructed the cellular territories and cell lineages for the continuously developing floral organs of cucumber.",
+            "text_zh": "在本研究中，我们收集了完整的空间分解转录组，并重建了连续发育的黄瓜花器官的细胞区域和细胞系。"
           },
           {
             "rank": 10,
             "sentence_id": 60,
-            "text": "To dissect the underlying gene expression network driving the development of the inferior ovary of cucumber, we sampled floral buds at various stages, including S1–S8, and ovaries at 0 days post anthesis (DPA) for spatial transcriptomic analysis."
+            "text": "To dissect the underlying gene expression network driving the development of the inferior ovary of cucumber, we sampled floral buds at various stages, including S1–S8, and ovaries at 0 days post anthesis (DPA) for spatial transcriptomic analysis.",
+            "text_zh": "为了剖析驱动黄瓜下卵巢发育的潜在基因表达网络，我们采样了黄瓜不同阶段的花蕾，包括S1-S8，以及开花后0天的卵巢，进行了空间转录组分析。"
           }
         ]
       },
@@ -1410,52 +1503,62 @@
           {
             "rank": 1,
             "sentence_id": 266,
-            "text": "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning."
+            "text": "6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning.",
+            "text_zh": "6我)。综上所述，这些发现强调了KNAT2-like1在花托发育和卵巢定位中的关键作用。"
           },
           {
             "rank": 2,
             "sentence_id": 274,
-            "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i)."
+            "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i).",
+            "text_zh": "KNAT2-like1在受体中特异性表达；然而，除了在S5之后的受体中表达外，CRC和ER在S4和S5的心皮原基起始阶段也与AG1重叠表达（扩展数据图8i）。"
           },
           {
             "rank": 3,
             "sentence_id": 345,
-            "text": "First, a duplicated homologue gene KNAT2-like2 was identified to be specifically expressed in the receptacle as KNAT2-like1, suggesting a gene functional redundancy of KNAT2-like1 (Extended Data produced some female flowers, we hypothesize that inferior ovary formation and sex determination in cucumber may also be regulated by age pathway."
+            "text": "First, a duplicated homologue gene KNAT2-like2 was identified to be specifically expressed in the receptacle as KNAT2-like1, suggesting a gene functional redundancy of KNAT2-like1 (Extended Data produced some female flowers, we hypothesize that inferior ovary formation and sex determination in cucumber may also be regulated by age pathway.",
+            "text_zh": "首先，发现了一个重复的同源基因KNAT2-like2在花托中特异性表达为KNAT2-like1，表明KNAT2-like1基因功能冗余（扩展数据产生了一些雌花），我们假设黄瓜的下位子房形成和性别决定也可能受年龄途径的调节。"
           },
           {
             "rank": 4,
             "sentence_id": 342,
-            "text": "Since 60% of the normal female flowers transformed into ‘superior ovary flowers’, and only some female flowers were present at the lower nodes, we determined that KNAT2-like1 is critical for receptacle development and inferior ovary formation."
+            "text": "Since 60% of the normal female flowers transformed into ‘superior ovary flowers’, and only some female flowers were present at the lower nodes, we determined that KNAT2-like1 is critical for receptacle development and inferior ovary formation.",
+            "text_zh": "由于60%的正常雌花转化为“上位子房花”，只有部分雌花出现在下节，我们确定KNAT2-like1对花托发育和下位子房形成至关重要。"
           },
           {
             "rank": 5,
             "sentence_id": 259,
-            "text": "6h). These results indicate that the expression activity of KNAT2-like1 is associated with receptacle development."
+            "text": "6h). These results indicate that the expression activity of KNAT2-like1 is associated with receptacle development.",
+            "text_zh": "6 h)。这些结果表明KNAT2-like1的表达活性与受体发育有关。"
           },
           {
             "rank": 6,
             "sentence_id": 233,
-            "text": "Based on these findings, we proposed that, in cucumber, the rapid growth of the receptacle is centred around sink capacity signalling and integration of KNAT2-like1, CRC and ER to regulate cell proliferation, ultimately promoting receptacle development."
+            "text": "Based on these findings, we proposed that, in cucumber, the rapid growth of the receptacle is centred around sink capacity signalling and integration of KNAT2-like1, CRC and ER to regulate cell proliferation, ultimately promoting receptacle development.",
+            "text_zh": "基于这些发现，我们提出，在黄瓜中，受体的快速生长以sink capacity信号传导和KNAT2-like1、CRC和ER的整合为中心，以调节细胞增殖，最终促进受体发育。"
           },
           {
             "rank": 7,
             "sentence_id": 265,
-            "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+            "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig.",
+            "text_zh": "相反，在获得KNAT2-like1活性的正常黄瓜雌花芽中，花托与心皮的正面融合，然后快速生长的花托包裹在心皮周围，导致外侧和内侧图案的变化，形成下胚房（图2）。"
           },
           {
             "rank": 8,
             "sentence_id": 278,
-            "text": "To investigate the specificity of cucumber receptacle development, floral buds of superior ovary mutants (knat2-like1) and tomato at S8 were collected to generate spatial transcriptomic data for comparative analysis (Supplementary Table 1)."
+            "text": "To investigate the specificity of cucumber receptacle development, floral buds of superior ovary mutants (knat2-like1) and tomato at S8 were collected to generate spatial transcriptomic data for comparative analysis (Supplementary Table 1).",
+            "text_zh": "为了研究黄瓜花托发育的特异性，我们收集了S8时子房优势突变体（knat2-like1）和番茄的花蕾，生成空间转录组数据进行对比分析（补充表1）。"
           },
           {
             "rank": 9,
             "sentence_id": 257,
-            "text": "We found the specific expression of KNAT2-like1 in the expanding receptacle of female flower buds (Fig."
+            "text": "We found the specific expression of KNAT2-like1 in the expanding receptacle of female flower buds (Fig.",
+            "text_zh": "我们发现KNAT2-like1在雌花芽扩张的花托中特异表达（图2）。"
           },
           {
             "rank": 10,
             "sentence_id": 297,
-            "text": "7c); KNAT2-like1 exhibited specific and"
+            "text": "7c); KNAT2-like1 exhibited specific and",
+            "text_zh": "7 c);KNAT2-like1表现出特异性和"
           }
         ]
       },
@@ -1540,17 +1643,20 @@
           {
             "rank": 1,
             "sentence_id": 333,
-            "text": "1a). The knockout of KNAT2-like1 resulted in the production of stamens and the development of a superior ovary due to the disrupted formation of the floral receptacle."
+            "text": "1a). The knockout of KNAT2-like1 resulted in the production of stamens and the development of a superior ovary due to the disrupted formation of the floral receptacle.",
+            "text_zh": "1)。KNAT2-like1基因的敲除导致雄蕊的产生，并由于花托的形成被破坏而形成上位子房。"
           },
           {
             "rank": 2,
             "sentence_id": 264,
-            "text": "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary."
+            "text": "We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary.",
+            "text_zh": "我们推测，在优子房花突变体中，KNAT2-like1表达的缺失导致花托发育停滞，心皮的持续生长导致优子房的形成。"
           },
           {
             "rank": 3,
             "sentence_id": 306,
-            "text": "7c). Although there is an orthologue of CsKNAT2-like1 in tomato (SlKN4), in comparison, SlKN4 showed little expression in the floral receptacle (Fig."
+            "text": "7c). Although there is an orthologue of CsKNAT2-like1 in tomato (SlKN4), in comparison, SlKN4 showed little expression in the floral receptacle (Fig.",
+            "text_zh": "7 c)。虽然在番茄中存在CsKNAT2-like1的同源基因（SlKN4），但相比之下，SlKN4在花托中的表达很少（图4）。"
           }
         ]
       },
@@ -1657,52 +1763,62 @@
           {
             "rank": 1,
             "sentence_id": 233,
-            "text": "Based on these findings, we proposed that, in cucumber, the rapid growth of the receptacle is centred around sink capacity signalling and integration of KNAT2-like1, CRC and ER to regulate cell proliferation, ultimately promoting receptacle development."
+            "text": "Based on these findings, we proposed that, in cucumber, the rapid growth of the receptacle is centred around sink capacity signalling and integration of KNAT2-like1, CRC and ER to regulate cell proliferation, ultimately promoting receptacle development.",
+            "text_zh": "基于这些发现，我们提出，在黄瓜中，受体的快速生长以sink capacity信号传导和KNAT2-like1、CRC和ER的整合为中心，以调节细胞增殖，最终促进受体发育。"
           },
           {
             "rank": 2,
             "sentence_id": 277,
-            "text": "The mutation of just KNAT2-like1 in cucumber simultaneously leads to the formation of bisexual flowers and superior ovaries, suggesting that during receptacle evolution a direct link was established between the development of the unisexual flowers and inferior ovaries."
+            "text": "The mutation of just KNAT2-like1 in cucumber simultaneously leads to the formation of bisexual flowers and superior ovaries, suggesting that during receptacle evolution a direct link was established between the development of the unisexual flowers and inferior ovaries.",
+            "text_zh": "黄瓜中just KNAT2-like1的突变同时导致两性花和上子房的形成，这表明在花托进化过程中，单性花和下子房的发育之间建立了直接的联系。"
           },
           {
             "rank": 3,
             "sentence_id": 267,
-            "text": "Given that KNAT2-like1, CRC and ER are in a coexpression module in the receptacle (Fig."
+            "text": "Given that KNAT2-like1, CRC and ER are in a coexpression module in the receptacle (Fig.",
+            "text_zh": "考虑到KNAT2-like1、CRC和ER在受体中处于一个共表达模块（图2）。"
           },
           {
             "rank": 4,
             "sentence_id": 276,
-            "text": "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC."
+            "text": "Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC.",
+            "text_zh": "综上所述，这些发现表明KNAT2-like1在花托发育和下卵巢形成中起关键作用，并提示其调控机制涉及ER和CRC的遗传相互作用。"
           },
           {
             "rank": 5,
             "sentence_id": 265,
-            "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig."
+            "text": "By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig.",
+            "text_zh": "相反，在获得KNAT2-like1活性的正常黄瓜雌花芽中，花托与心皮的正面融合，然后快速生长的花托包裹在心皮周围，导致外侧和内侧图案的变化，形成下胚房（图2）。"
           },
           {
             "rank": 6,
             "sentence_id": 345,
-            "text": "First, a duplicated homologue gene KNAT2-like2 was identified to be specifically expressed in the receptacle as KNAT2-like1, suggesting a gene functional redundancy of KNAT2-like1 (Extended Data produced some female flowers, we hypothesize that inferior ovary formation and sex determination in cucumber may also be regulated by age pathway."
+            "text": "First, a duplicated homologue gene KNAT2-like2 was identified to be specifically expressed in the receptacle as KNAT2-like1, suggesting a gene functional redundancy of KNAT2-like1 (Extended Data produced some female flowers, we hypothesize that inferior ovary formation and sex determination in cucumber may also be regulated by age pathway.",
+            "text_zh": "首先，发现了一个重复的同源基因KNAT2-like2在花托中特异性表达为KNAT2-like1，表明KNAT2-like1基因功能冗余（扩展数据产生了一些雌花），我们假设黄瓜的下位子房形成和性别决定也可能受年龄途径的调节。"
           },
           {
             "rank": 7,
             "sentence_id": 43,
-            "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation."
+            "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation.",
+            "text_zh": "细胞系分析表明，黄瓜花器官基部的花萼间分生组织（FIM）活性延长，导致花托快速生长，形成下子房。"
           },
           {
             "rank": 8,
             "sentence_id": 259,
-            "text": "6h). These results indicate that the expression activity of KNAT2-like1 is associated with receptacle development."
+            "text": "6h). These results indicate that the expression activity of KNAT2-like1 is associated with receptacle development.",
+            "text_zh": "6 h)。这些结果表明KNAT2-like1的表达活性与受体发育有关。"
           },
           {
             "rank": 9,
             "sentence_id": 342,
-            "text": "Since 60% of the normal female flowers transformed into ‘superior ovary flowers’, and only some female flowers were present at the lower nodes, we determined that KNAT2-like1 is critical for receptacle development and inferior ovary formation."
+            "text": "Since 60% of the normal female flowers transformed into ‘superior ovary flowers’, and only some female flowers were present at the lower nodes, we determined that KNAT2-like1 is critical for receptacle development and inferior ovary formation.",
+            "text_zh": "由于60%的正常雌花转化为“上位子房花”，只有部分雌花出现在下节，我们确定KNAT2-like1对花托发育和下位子房形成至关重要。"
           },
           {
             "rank": 10,
             "sentence_id": 341,
-            "text": "3c,d). These results suggest that the developmental innovation of the receptacle in Cucumis species contributes to the evolution of unisexual flowers."
+            "text": "3c,d). These results suggest that the developmental innovation of the receptacle in Cucumis species contributes to the evolution of unisexual flowers.",
+            "text_zh": "3 c, d)。这些结果表明，黄瓜花托的发育创新促进了单性花的进化。"
           }
         ]
       },
