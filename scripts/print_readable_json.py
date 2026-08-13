@@ -81,6 +81,7 @@ _WRAP_TEXT_KEYS = frozenset({
     "classification_reason",
     "manual_check_hints",
     "notes",
+    "reason",
     "reasoning",
     "suggested_sentence_ranges",
     "description",

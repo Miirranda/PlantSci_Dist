@@ -1,21 +1,51 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "status": "benchmark",
   "paper_id": "P001",
   "article_id": "A001",
   "article_source_type": "high_quality",
-  "index_version": "2026-07-30 13:55:09",
-  "exported_at": "2026-07-30T18:21:22",
-  "sample_count": 54,
+  "index_version": "",
+  "exported_at": "2026-08-01T21:50:05",
+  "sample_count": 53,
   "samples": [
     {
       "sample_id": "P001-A001-C01",
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
-      "claim_zh": "2025年4月，中国农业科学院蔬菜花卉研究所杨学勇团队联合华大生命科学研究院在Nature Plants期刊上发表了题为「Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits」的研究论文。",
+      "claim_zh": "该研究通过空间转录组技术和细胞谱系追踪，首次揭示了黄瓜下位子房的发育机制，并阐明了KNOX1转录因子在葫芦科植物花器官发育和性别决定中的核心作用。",
       "gold_retrieval": {
-        "sentence_ids": [],
+        "sentence_ids": [
+          3,
+          4,
+          43,
+          329,
+          2
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "primary_type": "fact_addition",
+        "secondary_types": [
+          "certainty_amplification"
+        ],
+        "is_accurate": false,
+        "severity": "moderate"
+      }
+    },
+    {
+      "sample_id": "P001-A001-C02",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "在开花植物中，子房相对于其他花器官的位置是重要分类学特征之一。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          8,
+          9,
+          1
+        ],
         "is_answerable": true
       },
       "gold_classification": {
@@ -27,41 +57,15 @@
       }
     },
     {
-      "sample_id": "P001-A001-C02",
-      "paper_id": "P001",
-      "article_id": "A001",
-      "article_source_type": "high_quality",
-      "claim_zh": "该研究通过空间转录组技术和细胞谱系追踪，首次揭示了黄瓜下位子房的发育机制，并阐明了KNOX1转录因子在葫芦科植物花器官发育和性别决定中的核心作用。",
-      "gold_retrieval": {
-        "sentence_ids": [
-          5,
-          3,
-          4
-        ],
-        "is_answerable": true
-      },
-      "gold_classification": {
-        "evidence_level": "With_Evidence",
-        "primary_type": "fact_addition",
-        "secondary_types": [
-          "certainty_amplification",
-          "mechanism_simplification",
-          "scope_generalization"
-        ],
-        "is_accurate": false,
-        "severity": "moderate"
-      }
-    },
-    {
       "sample_id": "P001-A001-C03",
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
-      "claim_zh": "在开花植物中，子房相对于其他花器官的位置是重要分类学特征之一。",
+      "claim_zh": "根据子房与其他外轮花器官（萼片、花瓣、雄蕊）的相对位置关系，可分为上位子房（superior ovary）和下位子房（inferior ovary）。",
       "gold_retrieval": {
         "sentence_ids": [
-          8,
-          10
+          9,
+          8
         ],
         "is_answerable": true
       },
@@ -78,11 +82,13 @@
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
-      "claim_zh": "根据子房与其他外轮花器官（萼片、花瓣、雄蕊）的相对位置关系，可分为上位子房（superior ovary）和下位子房（inferior ovary）。",
+      "claim_zh": "下位子房被认为是被子植物多次独立进化出的关键创新性状，其结构可更好地保护雌蕊并为胚珠发育分配更多能量。",
       "gold_retrieval": {
         "sentence_ids": [
-          8,
-          9
+          12,
+          10,
+          49,
+          1
         ],
         "is_answerable": true
       },
@@ -99,12 +105,14 @@
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
-      "claim_zh": "下位子房被认为是被子植物多次独立进化出的关键创新性状，其结构可更好地保护雌蕊并为胚珠发育分配更多能量。",
+      "claim_zh": "葫芦科（Cucurbitaceae）植物（如黄瓜、西瓜、甜瓜等）果实均来源于下位子房，且多为单性花，但下位子房形成机制及其与性别决定机制的关系还尚未明确。",
       "gold_retrieval": {
         "sentence_ids": [
-          12,
-          10,
-          1
+          2,
+          30,
+          31,
+          331,
+          332
         ],
         "is_answerable": true
       },
@@ -121,12 +129,12 @@
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
-      "claim_zh": "葫芦科（Cucurbitaceae）植物（如黄瓜、西瓜、甜瓜等）果实均来源于下位子房，且多为单性花，但下位子房形成机制及其与性别决定机制的关系还尚未明确。",
+      "claim_zh": "黄瓜（Cucumis sativus）和番茄（Solanum lycopersicum）具有相似花器官结构，但前者为下位子房和单性花，后者为上位子房和两性花，是研究子房位置和性别决定机制的理想模式植物。",
       "gold_retrieval": {
         "sentence_ids": [
-          30,
-          2,
-          5
+          52,
+          3,
+          4
         ],
         "is_answerable": true
       },
@@ -143,10 +151,13 @@
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
-      "claim_zh": "黄瓜（Cucumis sativus）和番茄（Solanum lycopersicum）具有相似花器官结构，但前者为下位子房和单性花，后者为上位子房和两性花，是研究子房位置和性别决定机制的理想模式植物。",
+      "claim_zh": "本研究首先构建了502个被子植物物种进化树，包含花性别和子房位置信息（图1a），其中单性花和子房下位性状在进化过程中独立出现多次，但在葫芦科植物及其近缘种中连锁出现，说明这两个性状可能来自于同一进化事件。",
       "gold_retrieval": {
         "sentence_ids": [
-          52
+          47,
+          24,
+          49,
+          332
         ],
         "is_answerable": true
       },
@@ -163,11 +174,14 @@
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
-      "claim_zh": "本研究首先构建了502个被子植物物种进化树，包含花性别和子房位置信息（图1a），其中单性花和子房下位性状在进化过程中独立出现多次，但在葫芦科植物及其近缘种中连锁出现，说明这两个性状可能来自于同一进化事件。",
+      "claim_zh": "为探究葫芦科植物子房下位发育进程，对黄瓜花发育过程进行了石蜡切片观察（图1b），同时以子房上位的番茄作为对比进行观察（图1d）。",
       "gold_retrieval": {
         "sentence_ids": [
-          49,
-          332
+          27,
+          40,
+          289,
+          3,
+          52
         ],
         "is_answerable": true
       },
@@ -184,11 +198,12 @@
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
-      "claim_zh": "为探究葫芦科植物子房下位发育进程，对黄瓜花发育过程进行了石蜡切片观察（图1b），同时以子房上位的番茄作为对比进行观察（图1d）。",
+      "claim_zh": "结果发现，黄瓜发育过程中，分生组织边缘膨大、中间凹陷，并在膨大分生组织内部分化出萼片、花瓣、雄蕊和心皮原基（图1c）；",
       "gold_retrieval": {
         "sentence_ids": [
-          25,
-          52
+          54,
+          55,
+          57
         ],
         "is_answerable": true
       },
@@ -202,26 +217,6 @@
     },
     {
       "sample_id": "P001-A001-C10",
-      "paper_id": "P001",
-      "article_id": "A001",
-      "article_source_type": "high_quality",
-      "claim_zh": "结果发现，黄瓜发育过程中，分生组织边缘膨大、中间凹陷，并在膨大分生组织内部分化出萼片、花瓣、雄蕊和心皮原基（图1c）；",
-      "gold_retrieval": {
-        "sentence_ids": [
-          54
-        ],
-        "is_answerable": true
-      },
-      "gold_classification": {
-        "evidence_level": "With_Evidence",
-        "primary_type": "accurate",
-        "secondary_types": [],
-        "is_accurate": true,
-        "severity": "none"
-      }
-    },
-    {
-      "sample_id": "P001-A001-C11",
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
@@ -241,7 +236,7 @@
       }
     },
     {
-      "sample_id": "P001-A001-C12",
+      "sample_id": "P001-A001-C11",
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
@@ -261,7 +256,47 @@
       }
     },
     {
+      "sample_id": "P001-A001-C12",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "（2）花托迅速生长；",
+      "gold_retrieval": {
+        "sentence_ids": [
+          59
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "primary_type": "accurate",
+        "secondary_types": [],
+        "is_accurate": true,
+        "severity": "none"
+      }
+    },
+    {
       "sample_id": "P001-A001-C13",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "（3）花托和心皮融合。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          59
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "primary_type": "accurate",
+        "secondary_types": [],
+        "is_accurate": true,
+        "severity": "none"
+      }
+    },
+    {
+      "sample_id": "P001-A001-C14",
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
@@ -278,11 +313,11 @@
         "primary_type": "accurate",
         "secondary_types": [],
         "is_accurate": true,
-        "severity": "mild"
+        "severity": "none"
       }
     },
     {
-      "sample_id": "P001-A001-C14",
+      "sample_id": "P001-A001-C15",
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
@@ -290,8 +325,10 @@
       "gold_retrieval": {
         "sentence_ids": [
           68,
-          280,
-          69
+          65,
+          69,
+          70,
+          66
         ],
         "is_answerable": true
       },
@@ -304,7 +341,7 @@
       }
     },
     {
-      "sample_id": "P001-A001-C15",
+      "sample_id": "P001-A001-C16",
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
@@ -324,14 +361,15 @@
       }
     },
     {
-      "sample_id": "P001-A001-C16",
+      "sample_id": "P001-A001-C17",
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
       "claim_zh": "S6-S8时期与心皮、花托以及连接组织相关的细胞聚类如图2d，其中连接组织不仅表达心皮和花托的标记基因（AG1、CRC），也特异性表达两性花发育基因ACS2（图2e），说明连接组织在子房发育和性别决定中可能同时起作用。",
       "gold_retrieval": {
         "sentence_ids": [
-          93
+          93,
+          92
         ],
         "is_answerable": true
       },
@@ -344,7 +382,7 @@
       }
     },
     {
-      "sample_id": "P001-A001-C17",
+      "sample_id": "P001-A001-C18",
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
@@ -365,15 +403,15 @@
       }
     },
     {
-      "sample_id": "P001-A001-C18",
+      "sample_id": "P001-A001-C19",
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
       "claim_zh": "各细胞谱系的空间分布与其发育轨迹相同（图3b）。",
       "gold_retrieval": {
         "sentence_ids": [
-          166,
-          119
+          119,
+          118
         ],
         "is_answerable": true
       },
@@ -386,7 +424,7 @@
       }
     },
     {
-      "sample_id": "P001-A001-C19",
+      "sample_id": "P001-A001-C20",
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
@@ -406,13 +444,15 @@
       }
     },
     {
-      "sample_id": "P001-A001-C20",
+      "sample_id": "P001-A001-C21",
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
       "claim_zh": "拟时序分析发现，其发育顺序为：FIM-花托-连接组织（图3c-d）。",
       "gold_retrieval": {
         "sentence_ids": [
+          125,
+          129,
           127
         ],
         "is_answerable": true
@@ -426,7 +466,7 @@
       }
     },
     {
-      "sample_id": "P001-A001-C21",
+      "sample_id": "P001-A001-C22",
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
@@ -447,13 +487,15 @@
       }
     },
     {
-      "sample_id": "P001-A001-C22",
+      "sample_id": "P001-A001-C23",
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
-      "claim_zh": "为探究花托起始形成过程中的基因动态表达和细胞基础，对S1-S4时期花芽进行近单细胞分辨率的无监督聚类分析，共分为7个cluster（图4a-b），其中花托原基（RP）和扩展花分生组织（EFM）的起始和发育决定着凹形花分生组织的形态发生。",
+      "claim_zh": "为探究花托起始形成过程中的基因动态表达和细胞基础，对S1-S4时期花芽进行近单细胞分辨率的无监督聚类分析，共分为7个cluster（图4a-b），其中花托原基（RP）和扩展花分生组织（EFM）的起始和发育决定着“凹”形花分生组织的形态发生。",
       "gold_retrieval": {
         "sentence_ids": [
+          132,
+          134,
           139
         ],
         "is_answerable": true
@@ -467,15 +509,18 @@
       }
     },
     {
-      "sample_id": "P001-A001-C23",
+      "sample_id": "P001-A001-C24",
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
       "claim_zh": "RNA速率分析和拟时序分析揭示了这些cluster的发育轨迹：起源于花基部分生组织（FIM），分为3条发育路径，其中一条分化为表皮（E），另外两条经过扩展花分生组织（EFM）分别分化为花原基（FP）和花托原基（RP）（图4c-d）。",
       "gold_retrieval": {
         "sentence_ids": [
+          141,
+          142,
           143,
-          144
+          144,
+          145
         ],
         "is_answerable": true
       },
@@ -488,7 +533,7 @@
       }
     },
     {
-      "sample_id": "P001-A001-C24",
+      "sample_id": "P001-A001-C25",
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
@@ -509,7 +554,7 @@
       }
     },
     {
-      "sample_id": "P001-A001-C25",
+      "sample_id": "P001-A001-C26",
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
@@ -529,7 +574,7 @@
       }
     },
     {
-      "sample_id": "P001-A001-C26",
+      "sample_id": "P001-A001-C27",
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
@@ -550,34 +595,15 @@
       }
     },
     {
-      "sample_id": "P001-A001-C27",
+      "sample_id": "P001-A001-C28",
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
       "claim_zh": "S5时期后，花托相关bin数量急剧上升（图5a），说明此阶段后花托快速生长。",
       "gold_retrieval": {
         "sentence_ids": [
+          164,
           169
-        ],
-        "is_answerable": true
-      },
-      "gold_classification": {
-        "evidence_level": "With_Evidence",
-        "primary_type": "accurate",
-        "secondary_types": [],
-        "is_accurate": true,
-        "severity": "none"
-      }
-    },
-    {
-      "sample_id": "P001-A001-C28",
-      "paper_id": "P001",
-      "article_id": "A001",
-      "article_source_type": "high_quality",
-      "claim_zh": "为探究花托快速生长的调控机制，对花托及FIM相关cluster进行了细胞轨迹重建。",
-      "gold_retrieval": {
-        "sentence_ids": [
-          171
         ],
         "is_answerable": true
       },
@@ -606,7 +632,7 @@
         "primary_type": "accurate",
         "secondary_types": [],
         "is_accurate": true,
-        "severity": "mild"
+        "severity": "none"
       }
     },
     {
@@ -617,6 +643,7 @@
       "claim_zh": "根据其空间分布，发现花托细胞增殖主要由激活S期细胞活动调控（图5d）。",
       "gold_retrieval": {
         "sentence_ids": [
+          182,
           183
         ],
         "is_answerable": true
@@ -637,16 +664,20 @@
       "claim_zh": "在花发育轨迹中标注不同cluster上/下调表达基因，发现调控心皮器官决定和单性花表型的转录因子CRC在S4/5后的花托中高表达（图5e）。",
       "gold_retrieval": {
         "sentence_ids": [
-          215
+          274,
+          89,
+          216
         ],
         "is_answerable": true
       },
       "gold_classification": {
         "evidence_level": "With_Evidence",
         "primary_type": "accurate",
-        "secondary_types": [],
+        "secondary_types": [
+          "certainty_amplification"
+        ],
         "is_accurate": true,
-        "severity": "none"
+        "severity": "mild"
       }
     },
     {
@@ -657,6 +688,7 @@
       "claim_zh": "通过空间共表达模块分析筛选与CRC共表达的基因，结果显示共聚类到17个模块中（M1-M17）（图5f），其中M14分布于花托（图5h）。",
       "gold_retrieval": {
         "sentence_ids": [
+          217,
           468,
           218
         ],
@@ -678,16 +710,20 @@
       "claim_zh": "在M14中与CRC高度相关的基因包括KNAT2-like1、ER、DIN10、CA1P等（图5g），其中KNAT2-like1和ER在细胞分裂S期富集表达，DIN10和CA1P影响碳水积累并加强吸收。",
       "gold_retrieval": {
         "sentence_ids": [
-          230
+          219,
+          230,
+          231
         ],
         "is_answerable": true
       },
       "gold_classification": {
         "evidence_level": "With_Evidence",
         "primary_type": "accurate",
-        "secondary_types": [],
+        "secondary_types": [
+          "mechanism_simplification"
+        ],
         "is_accurate": true,
-        "severity": "none"
+        "severity": "mild"
       }
     },
     {
@@ -695,7 +731,7 @@
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
-      "claim_zh": "以上结果说明，花托的快速生长以库容量信号为核心，整合KNAT2-like1、CRC和ER来调节细胞增殖。",
+      "claim_zh": "以上结果说明，花托的快速生长以“库”容量信号为核心，整合KNAT2-like1、CRC和ER来调节细胞增殖。",
       "gold_retrieval": {
         "sentence_ids": [
           233
@@ -717,7 +753,9 @@
       "article_source_type": "high_quality",
       "claim_zh": "为探究KNAT2-like1基因功能，构建了黄瓜KNAT2-like1敲除突变体k-1和k-2（图6a）。",
       "gold_retrieval": {
-        "sentence_ids": [],
+        "sentence_ids": [
+          234
+        ],
         "is_answerable": true
       },
       "gold_classification": {
@@ -736,7 +774,8 @@
       "claim_zh": "k-1和k-2出现子房上位和双性花表型，而其回补株系（C-1、C-2）表型与野生型类似（图6b）。",
       "gold_retrieval": {
         "sentence_ids": [
-          254
+          254,
+          238
         ],
         "is_answerable": true
       },
@@ -756,7 +795,8 @@
       "claim_zh": "形态学观察显示，S5时期之前雄花、雌花和k-2（子房上位、双性花）之间并没有区别，而S5之后，k-2花托并没有快速生长并与心皮融合（图6c-d）。",
       "gold_retrieval": {
         "sentence_ids": [
-          246
+          248,
+          264
         ],
         "is_answerable": true
       },
@@ -775,7 +815,10 @@
       "article_source_type": "high_quality",
       "claim_zh": "利用micro-CT技术对花发育过程进行3D重建，发现花托在S5后的停止扩展和心皮持续向上生长导致k-2黄瓜出现类似于番茄的子房上位性状（图6e）。",
       "gold_retrieval": {
-        "sentence_ids": [],
+        "sentence_ids": [
+          253,
+          254
+        ],
         "is_answerable": true
       },
       "gold_classification": {
@@ -815,7 +858,8 @@
       "gold_retrieval": {
         "sentence_ids": [
           265,
-          260
+          260,
+          59
         ],
         "is_answerable": true
       },
@@ -836,6 +880,7 @@
       "gold_retrieval": {
         "sentence_ids": [
           257,
+          259,
           302
         ],
         "is_answerable": true
@@ -856,7 +901,8 @@
       "claim_zh": "同时还构建了ER缺失突变体er和CRC缺失突变体crc，以及以上3个基因的双突、三突突变体。",
       "gold_retrieval": {
         "sentence_ids": [
-          271
+          271,
+          268
         ],
         "is_answerable": true
       },
@@ -876,7 +922,8 @@
       "claim_zh": "表型显示，CRC较其他两个基因呈显性上位，ER较KNAT2-like1呈显性上位。",
       "gold_retrieval": {
         "sentence_ids": [
-          273
+          273,
+          272
         ],
         "is_answerable": true
       },
@@ -903,9 +950,11 @@
       "gold_classification": {
         "evidence_level": "With_Evidence",
         "primary_type": "accurate",
-        "secondary_types": [],
+        "secondary_types": [
+          "certainty_amplification"
+        ],
         "is_accurate": true,
-        "severity": "none"
+        "severity": "mild"
       }
     },
     {
@@ -913,10 +962,11 @@
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
-      "claim_zh": "为探究黄瓜花托发育的特殊性，作者又将S8时期knat2-like1缺失突变体花芽和番茄花芽一起进行空间转录组测序。",
+      "claim_zh": "整合细胞聚类发现，番茄花芽无花基部分生组织（FIM）结构，花托位于心皮下方；",
       "gold_retrieval": {
         "sentence_ids": [
-          278
+          282,
+          58
         ],
         "is_answerable": true
       },
@@ -930,26 +980,6 @@
     },
     {
       "sample_id": "P001-A001-C46",
-      "paper_id": "P001",
-      "article_id": "A001",
-      "article_source_type": "high_quality",
-      "claim_zh": "整合细胞聚类发现，番茄花芽无花基部分生组织（FIM）结构，花托位于心皮下方；",
-      "gold_retrieval": {
-        "sentence_ids": [
-          282
-        ],
-        "is_answerable": true
-      },
-      "gold_classification": {
-        "evidence_level": "With_Evidence",
-        "primary_type": "accurate",
-        "secondary_types": [],
-        "is_accurate": true,
-        "severity": "none"
-      }
-    },
-    {
-      "sample_id": "P001-A001-C47",
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
@@ -970,28 +1000,32 @@
       }
     },
     {
-      "sample_id": "P001-A001-C48",
+      "sample_id": "P001-A001-C47",
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
       "claim_zh": "而子房下位黄瓜FIM或花托中特异性表达的基因（如STM-like、KNAT2-like1、CRC等），在番茄中表达缺失、表达量少或表达异位（图7c）。",
       "gold_retrieval": {
         "sentence_ids": [
+          348,
+          308,
           306,
-          348
+          296
         ],
         "is_answerable": true
       },
       "gold_classification": {
         "evidence_level": "With_Evidence",
         "primary_type": "accurate",
-        "secondary_types": [],
+        "secondary_types": [
+          "mechanism_simplification"
+        ],
         "is_accurate": true,
-        "severity": "none"
+        "severity": "mild"
       }
     },
     {
-      "sample_id": "P001-A001-C49",
+      "sample_id": "P001-A001-C48",
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
@@ -1012,23 +1046,45 @@
       }
     },
     {
-      "sample_id": "P001-A001-C50",
+      "sample_id": "P001-A001-C49",
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
       "claim_zh": "以上结果说明，FIM中新基因的出现和一些基因的新表达模式是黄瓜进化出子房下位这一性状的原因。",
       "gold_retrieval": {
         "sentence_ids": [
-          348
+          348,
+          327
         ],
         "is_answerable": true
       },
       "gold_classification": {
         "evidence_level": "With_Evidence",
-        "primary_type": "certainty_amplification",
+        "primary_type": "accurate",
         "secondary_types": [],
-        "is_accurate": false,
-        "severity": "mild"
+        "is_accurate": true,
+        "severity": "none"
+      }
+    },
+    {
+      "sample_id": "P001-A001-C50",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "本研究通过空间转录组分析和细胞谱系重建，揭示了黄瓜下位子房的形成依赖于花托快速生长，这一过程由花基部分生组织（FIM）驱动。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          3,
+          43
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "primary_type": "accurate",
+        "secondary_types": [],
+        "is_accurate": true,
+        "severity": "none"
       }
     },
     {
@@ -1036,11 +1092,12 @@
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
-      "claim_zh": "本研究通过空间转录组分析和细胞谱系重建，揭示了黄瓜下位子房的形成依赖于花托快速生长，这一过程由花基部分生组织（FIM）驱动。",
+      "claim_zh": "研究发现，黄瓜中一个花托特异表达的KNOX1转录因子（KNAT2-like1）在调控花托生长和子房位置中起关键作用。",
       "gold_retrieval": {
         "sentence_ids": [
-          43,
-          329
+          274,
+          266,
+          342
         ],
         "is_answerable": true
       },
@@ -1057,19 +1114,22 @@
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
-      "claim_zh": "研究发现，黄瓜中一个花托特异表达的KNOX1转录因子（KNAT2-like1）在调控花托生长和子房位置中起关键作用。",
+      "claim_zh": "敲除KNAT2-like1，黄瓜花托生长受阻，导致下位子房转变为类似番茄的上位子房，同时部分雌花转变为两性花，表明KNAT2-like1不仅调控子房位置，还参与性别决定。",
       "gold_retrieval": {
         "sentence_ids": [
-          276
+          333,
+          277
         ],
         "is_answerable": true
       },
       "gold_classification": {
         "evidence_level": "With_Evidence",
         "primary_type": "accurate",
-        "secondary_types": [],
+        "secondary_types": [
+          "scope_generalization"
+        ],
         "is_accurate": true,
-        "severity": "none"
+        "severity": "mild"
       }
     },
     {
@@ -1077,42 +1137,22 @@
       "paper_id": "P001",
       "article_id": "A001",
       "article_source_type": "high_quality",
-      "claim_zh": "敲除KNAT2-like1，黄瓜花托生长受阻，导致下位子房转变为类似番茄的上位子房，同时部分雌花转变为两性花，表明KNAT2-like1不仅调控子房位置，还参与性别决定。",
-      "gold_retrieval": {
-        "sentence_ids": [
-          333,
-          277,
-          334
-        ],
-        "is_answerable": true
-      },
-      "gold_classification": {
-        "evidence_level": "With_Evidence",
-        "primary_type": "accurate",
-        "secondary_types": [],
-        "is_accurate": true,
-        "severity": "none"
-      }
-    },
-    {
-      "sample_id": "P001-A001-C54",
-      "paper_id": "P001",
-      "article_id": "A001",
-      "article_source_type": "high_quality",
       "claim_zh": "本研究揭示了KNAT2-like1与CRC和ER共表达调控花托快速生长从而导致子房下位及单性花的机制，为作物育种提供了新靶点。",
       "gold_retrieval": {
         "sentence_ids": [
+          233,
+          277,
           276
         ],
         "is_answerable": true
       },
       "gold_classification": {
         "evidence_level": "With_Evidence",
-        "primary_type": "certainty_amplification",
+        "primary_type": "accurate",
         "secondary_types": [
           "fact_addition"
         ],
-        "is_accurate": false,
+        "is_accurate": true,
         "severity": "mild"
       }
     }

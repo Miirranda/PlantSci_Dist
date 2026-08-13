@@ -1,11 +1,13 @@
-# 植物科学公众号科普文章幻觉检测
+# 植物科学公众号科普文章信息失真检测
 
 输入一篇中文公众号文章 + 一篇英文学术论文，自动完成：
 
 1. **LLM 观点句筛选**（arag）— 约 15–30 条事实性科学断言
 2. **跨语言 RAG+Agent 检索**（arag）
-3. **幻觉细分类**（hallu）
+3. **信息失真细分类**（hallu）— 论文→公众号转述失真，不是生成式幻觉
 4. **证据链输出**（hallu）
+
+标签权威：[`README_1.md`](README_1.md)（冻结口径）+ 仓库根目录两份规范 md。
 
 ## 目录结构
 
@@ -17,7 +19,7 @@ PlantSci_Hallu/
 │   │   └── pipeline.py          # 检索流水线
 │   ├── batch_retrieval.py
 │   └── api_client/
-├── hallu/                 # 模块 B：幻觉分类 + 证据链
+├── hallu/                 # 模块 B：信息失真分类 + 证据链
 │   ├── classifier.py
 │   ├── evidence_chain.py
 │   ├── arag_bridge.py     # 调用 arag 子进程
@@ -68,7 +70,7 @@ outputs/P001/A001/
 ├── claims.json / claims.jsonl      # 观点句
 ├── evidences.jsonl                 # 完整检索（含 sentence_id）
 ├── claim_evidence_pairs.jsonl      # 精简：classify top-5 + review 池 10
-├── classification.json             # 幻觉分类（只用 top-5）
+├── classification.json             # 信息失真分类（只用 top-5）
 ├── result.json
 └── report.md
 ```
@@ -93,6 +95,9 @@ data/annotations/
 金标证据须同时带 `sentence_id` 与论文原文。导出 benchmark 时去掉
 `system_retrieval` / `analysis`，只留已确认样本。
 
+新标注使用 `distortion-v0.1`（`primary_label.level1/level2`）。
+已有 P001 金标仍为旧 9 类扁平标签，评测脚本可读取，但**不要自动改写**。
+
 ```bash
 # 导出句表
 cd arag-main && python scripts/export_sentence_table.py --paper-id P001 \
@@ -107,7 +112,7 @@ python scripts/export_benchmark.py
 ## 模块边界
 
 - **arag-main**：中文文章 → 规则分句 + LLM 核验观点句 → 英文论文证据
-- **hallu**：claims + 证据 → 幻觉细分类 → 证据链
+- **hallu**：claims + 证据 → 信息失真细分类 → 证据链
 - **scripts/run.py**：薄编排，不写业务逻辑
 
 > 注：观点句默认路径为「按。！？；换行切句 → 规则粗滤 → LLM 批核验 keep/drop」。  

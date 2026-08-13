@@ -1814,8 +1814,6 @@
         ],
         "sentence_ids": [
           59,
-          54,
-          55
         ],
         "is_answerable": true
       },
@@ -1854,7 +1852,7 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": true//把rag召回的句子精简为s59(rank1)即最佳匹配句，直接包含三个必要条件的完整陈述
     },
     {
       "sample_id": "P001-A001-C12",
@@ -1980,8 +1978,6 @@
         ],
         "sentence_ids": [
           59,
-          330,
-          43
         ],
         "is_answerable": true
       },
@@ -2018,7 +2014,7 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": true//把rag召回的句子精简为s59(rank1)即最佳匹配句，直接包含三个必要条件的完整陈述
     },
     {
       "sample_id": "P001-A001-C13",
@@ -2140,8 +2136,6 @@
         ],
         "sentence_ids": [
           59,
-          265,
-          248
         ],
         "is_answerable": true
       },
@@ -2173,14 +2167,14 @@
           "suggested_keywords": [],
           "suggested_sentence_ranges": ""
         },
-        "manual_check_hints": "轻量核对。s248为反面证据（突变体），可选择性加入gold。",
+        "manual_check_hints": "轻量核对。s248为反面证据（突变体），可选择性加入gold。",//没必要   s248(rank6,审核池)为反面证据（突变体中不融合），是强补充但非必需。top-5覆盖充分。
         "needs_manual_review": false,
         "review_focus": [
           "none"
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": true//把rag召回的句子精简为s59(rank1)即最佳匹配句，直接包含三个必要条件的完整陈述
     },
     {
       "sample_id": "P001-A001-C14",
@@ -2310,14 +2304,13 @@
         ],
         "sentence_ids": [
           60,
-          61,
-          112
+          61,//112无效
         ],
         "is_answerable": true
       },
       "gold_classification": {
         "evidence_level": "With_Evidence",
-        "primary_type": "accurate",
+        "primary_type": "accurate",//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1待定，考虑DPA和DAP之间的细微区别
         "secondary_types": [],
         "is_accurate": true,
         "severity": "none"
@@ -2352,7 +2345,7 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": true
     },
     {
       "sample_id": "P001-A001-C15",
@@ -2473,14 +2466,16 @@
           }
         ],
         "sentence_ids": [
-          280,
-          112,
-          111
-        ],
+          68，
+          65，
+          69，
+          70，
+          66
+        ],//审核表明：这条数据检索效果极差
         "is_answerable": true
       },
       "gold_classification": {
-        "evidence_level": "Weak_Evidence",
+        "evidence_level": "With_Evidence",
         "primary_type": "accurate",
         "secondary_types": [],
         "is_accurate": true,
@@ -2526,7 +2521,7 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": true
     },
     {
       "sample_id": "P001-A001-C16",
@@ -2690,7 +2685,7 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": true
     },
     {
       "sample_id": "P001-A001-C17",
@@ -2853,7 +2848,7 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": true//检索发现，论文原句切分时经常会将Fig和对应图编号且分开
     },
     {
       "sample_id": "P001-A001-C18",
@@ -2976,7 +2971,6 @@
         "sentence_ids": [
           115,
           116,
-          329
         ],
         "is_answerable": true
       },
@@ -3016,7 +3010,7 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": true//s329提到了重建重构，但他属于论文最后的总结句，在此处不是必要的
     },
     {
       "sample_id": "P001-A001-C19",
@@ -3173,7 +3167,7 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": true
     },
     {
       "sample_id": "P001-A001-C20",
@@ -3359,7 +3353,7 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": true
     },
     {
       "sample_id": "P001-A001-C21",
@@ -3480,8 +3474,9 @@
           }
         ],
         "sentence_ids": [
-          127,
-          128
+          125,
+          129,
+          127//这三句话，总结可以得到观点句中所描述的发育流程
         ],
         "is_answerable": true
       },
@@ -3516,7 +3511,7 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": true
     },
     {
       "sample_id": "P001-A001-C22",
@@ -3675,7 +3670,7 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": true
     },
     {
       "sample_id": "P001-A001-C23",
@@ -3851,7 +3846,7 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": true
     },
     {
       "sample_id": "P001-A001-C24",
@@ -3969,6 +3964,8 @@
           }
         ],
         "sentence_ids": [
+          141,
+          142,
           143,
           144,
           145
@@ -4164,7 +4161,7 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": true
     },
     {
       "sample_id": "P001-A001-C26",
@@ -4325,7 +4322,7 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": true
     },
     {
       "sample_id": "P001-A001-C27",
@@ -4487,7 +4484,7 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": true
     },
     {
       "sample_id": "P001-A001-C28",
@@ -4664,7 +4661,7 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": true
     },
     {
       "sample_id": "P001-A001-C29",
@@ -4833,7 +4830,7 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": true
     },
     {
       "sample_id": "P001-A001-C30",
@@ -4956,7 +4953,7 @@
       },
       "gold_classification": {
         "evidence_level": "With_Evidence",
-        "primary_type": "accurate",
+        "primary_type": "accurate",//轻微幻觉，主语不知道是不是一致的
         "secondary_types": [],
         "is_accurate": true,
         "severity": "none"
@@ -4993,7 +4990,7 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": true
     },
     {
       "sample_id": "P001-A001-C31",
@@ -5178,7 +5175,7 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": true
     },
     {
       "sample_id": "P001-A001-C32",
@@ -5353,7 +5350,7 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": true
     },
     {
       "sample_id": "P001-A001-C33",
@@ -5404,7 +5401,8 @@
         ],
         "sentence_ids": [
           219,
-          230
+          230,
+          231
         ],
         "is_answerable": true
       },
@@ -5462,7 +5460,7 @@
         ],
         "ai_confidence": "low"
       },
-      "human_verified": false
+      "human_verified": true
     },
     {
       "sample_id": "P001-A001-C34",
@@ -5533,7 +5531,7 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": true
     },
     {
       "sample_id": "P001-A001-C35",
@@ -5695,7 +5693,7 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": true
     },
     {
       "sample_id": "P001-A001-C36",

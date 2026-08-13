@@ -9,7 +9,7 @@
 人工审核后导出：去掉 `system_retrieval` / `analysis`，只留 `human_verified=true` 的样本，即为 benchmark。
 
 流水线约定（同一次检索，两套用途）：
-- 幻觉分类只用 top-5（`classify_evidences`）
+- 信息失真分类只用 top-5（`classify_evidences`）
 - 人工审核池固定 10 条（`review_evidences`，且包含那 top-5）
 
 建议先做冒烟测试：`limit=10`，只生成前 10 条；格式与审核体验满意后，
@@ -27,9 +27,10 @@
 - paper_id：P001
 - article_id：A001
 - article_source_type：high_quality
-- limit：10
+- limit：C10：CC
   （冒烟测试填 10：只处理输入文件前 10 行；
    全文填 all；续跑可填 after:C10 表示从 C10 之后继续）
+   
 
 ---
 
@@ -69,7 +70,7 @@
 
 说明：
 - sentence_id 是论文句级索引里的整数编号
-- classify_evidences：实际送进幻觉分类的 top-5
+- classify_evidences：实际送进信息失真分类的 top-5
 - review_evidences：固定 10 条审核池（包含 top-5），可能有噪声
 - 金标句要从审核池中精选，也可标注「池外更优句」（见 analysis.rag_review），但 gold 编号须能在句表中核对
 
@@ -141,10 +142,19 @@ generation_mode 规则：
 
   "gold_classification": {
     "evidence_level": "With_Evidence",
-    "primary_type": "fact_addition",
-    "secondary_types": ["certainty_amplification"],
-    "is_accurate": false,
-    "severity": "moderate"
+    "has_distortion": true,
+    "primary_label": {
+      "level1": "addition",
+      "level2": "significance_addition"
+    },
+    "secondary_label": {
+      "level1": "omission",
+      "level2": "evidence_uncertainty_omission"
+    },
+    "severity": "moderate",
+    "needs_manual_review": false,
+    "uncovered_phenomenon": "",
+    "reason": "论文未声称 first；公众号加了「首次」并去掉审慎措辞"
   },
 
   "analysis": {
@@ -152,7 +162,7 @@ generation_mode 规则：
     "classification_reason": "为什么给这个 primary/secondary；引用论文原措辞与公众号措辞对照。",
     "key_differences": [
       {
-        "type": "fact_addition",
+        "type": "significance_addition",
         "paper_expression": "provide developmental and mechanistic insights into",
         "article_expression": "首次揭示了…阐明了核心作用",
         "description": "论文用审慎措辞，公众号加了『首次』并强化为定论"
@@ -195,7 +205,10 @@ generation_mode 规则：
 
 ### gold_classification
 - 必须与 analysis 结论一致
+- 使用 `distortion-v0.1`：`primary_label` / `secondary_label`（level1+level2 slug）
 - With_Evidence 时才做细粒度失真标签
+- 权威：仓库根目录《植物科学科普文本信息失真标注规范 v0.1.md》与《信息失真标签优先级和冲突决策树.md》
+- 不要使用旧 9 类扁平标签（accurate / fact_addition / certainty_amplification 等）
 
 ### 人工可读性
 1. 输出必须是 pretty-printed JSON（缩进 2 空格），禁止整文件压成单行
@@ -211,40 +224,42 @@ generation_mode 规则：
 
 ## 判定规范
 
-### 证据级别
-- With_Evidence：论文有明确对应，可做细粒度失真判断
-- Weak_Evidence：主题相关但核心断言无法核实
+### 证据级别（与失真类型正交）
+- With_Evidence：论文有明确对应（对象+关系/结果），可做细粒度失真判断
+- Weak_Evidence：主题相关，但核心断言既不能充分证真也不能充分证伪
 - No_Evidence：找不到任何对应 → sentence_ids 为空，is_answerable=false
 
-### 失真检查（With_Evidence 时逐项过）
-1. 确定性：may / suggest / provide insights → 揭示 / 阐明 / 证实？
-2. 程度：partially / a key role → 核心 / 决定性？
-3. 范围：物种、组织、发育阶段等限定被省略或推广？
-4. 因果：相关性说成因果？方向颠倒？
-5. 数值：改动、模糊化、选择性引用？
-6. 语境：实验条件、方法局限被剥离？
-7. 机制：多层调控被压成单一因子？
-8. 事实添加：论文没有的断言（首次、突破、唯一）？
-9. 语义相反？
+**不可核实 ≠ 已判定失真类型。** Weak / No 时 `has_distortion=null`，`primary_label=null`，不要标 8 类，也不要写成「这就是幻觉」。
 
-### 标签
+### 失真判定（仅 With_Evidence；决策树顺序）
+1. 是否完全支持论文（含合理压缩/同义转述/术语通俗化）？是 → `no_distortion`
+2. 是否改变已有科学关系（相关→因果、间接→直接、机制被换成另一种）？→ substitution
+3. 是否增加论文没有的功能/应用或「首次/突破」？→ addition
+4. 是否删除重要限定（物种/条件/不确定性/关键机制）？→ omission
+5. 是否存在第二个独立错误？最多一条 secondary_label；同一变化禁止重复标
+6. Level-1 冲突：substitution > addition > omission
 
-| primary_type | 中文 |
-|---|---|
-| accurate | 准确传达 |
-| certainty_amplification | 确定性放大 |
-| mechanism_simplification | 机制简化 |
-| scope_generalization | 范围泛化 |
-| numerical_distortion | 数值失真 |
-| causality_distortion | 因果扭曲 |
-| context_stripping | 语境剥离 |
-| fact_addition | 事实添加 |
-| semantic_contradiction | 反义矛盾 |
+### 标签（slug 必须用下列英文，level1 小写）
 
-- 无失真：primary_type=accurate，secondary_types=[]，is_accurate=true，severity=none
-- No_Evidence：primary_type=""，secondary_types=[]
-- 现有标签覆盖不了：primary_type 填 candidate_英文名，并设 needs_manual_review=true
+| level1 | level2 | 中文 |
+|---|---|---|
+| omission | context_omission | 背景限定删减 |
+| omission | evidence_uncertainty_omission | 证据与不确定性删减 |
+| omission | mechanism_omission | 机制删减 |
+| addition | function_application_addition | 功能/应用添加 |
+| addition | significance_addition | 意义/重要性添加 |
+| substitution | relation_substitution | 关系替换 |
+| substitution | magnitude_substitution | 作用程度替换 |
+| substitution | mechanism_substitution | 机制替换 |
+| — | no_distortion | 无失真 |
+
+- 无失真：has_distortion=false，primary_label.level2=no_distortion，secondary_label=null，severity=none
+- No_Evidence / Weak_Evidence：has_distortion=null，primary_label=null，secondary_label=null
+- 8 类覆盖不了（数值方向性改动、纯正负反义等）：needs_manual_review=true，uncovered_phenomenon 取 numerical_change / semantic_contradiction / other，不要自造第 9 类
 - severity：none / mild / moderate / severe
+- 不要输出 is_hallucination
+
+N0–N5 不标：合理机制压缩、术语通俗化、同义表达、非关键实验细节、正常程度弱化、一般背景补充。
 
 ---
 
@@ -255,7 +270,8 @@ generation_mode 规则：
 哪些分句完全没有证据；同时说明 top-5 是否覆盖关键断言。
 
 **classification_reason**
-说明为什么是这个 primary_type，以及为什么不是相近的另一类；必须落到措辞对比。
+说明为什么是这个 primary_label.level2，以及为什么不是相邻类；必须落到措辞对比。
+若走决策树优先级（substitution > addition > omission），写明竞争项为何落败。
 
 **rag_review**（重点：服务后期 RAG 对比）
 - top5_is_best：classify 的 top-5 是否已包含最相关句
@@ -278,8 +294,8 @@ generation_mode 规则：
 复合观点句、出现新类型、置信度不高。
 
 review_focus 从这些里选 1–3 个：
-evidence_level / gold_sentence_ids / rag_top5 / primary_type / secondary_types /
-noisy_retrieval / composite_claim / new_type / none
+evidence_level / gold_sentence_ids / rag_top5 / primary_label / secondary_label /
+noisy_retrieval / composite_claim / uncovered_phenomenon / none
 
 ai_confidence：high / medium / low（medium 与 low 通常要 needs_manual_review=true）
 

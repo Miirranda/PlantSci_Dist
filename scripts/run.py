@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""植物科学公众号幻觉检测 — 统一编排入口。
+"""植物科学公众号信息失真检测 — 统一编排入口。
 
 流程:
   文章 → [arag] 规则分句+LLM核验观点句 + RAG+Agent检索
        → 同一次检索拆成分类 top-5 / 审核池 10
-       → [hallu] 幻觉分类（只用 top-5）→ 证据链 JSON
+       → [hallu] 信息失真分类（只用 top-5）→ 证据链 JSON
 
 用法:
   python scripts/run.py \\
@@ -105,13 +105,27 @@ def _print_summary(classification_results: list[dict]) -> None:
     total = len(classification_results)
     level_counts: dict[str, int] = {}
     type_counts: dict[str, int] = {}
+    distortion_n = 0
+    unverifiable_n = 0
     for r in classification_results:
         clf = r.get("classification", {})
         lvl = clf.get("evidence_level", "Unknown")
         level_counts[lvl] = level_counts.get(lvl, 0) + 1
-        ptype = clf.get("primary_type", "")
+        ptype = clf.get("primary_type") or ""
+        if not ptype:
+            pl = clf.get("primary_label") or {}
+            if isinstance(pl, dict):
+                ptype = str(pl.get("level2") or "")
         if ptype:
             type_counts[ptype] = type_counts.get(ptype, 0) + 1
+        has_d = clf.get("has_distortion")
+        if has_d is True:
+            distortion_n += 1
+        elif has_d is None and clf.get("evidence_level") in (
+            "No_Evidence",
+            "Weak_Evidence",
+        ):
+            unverifiable_n += 1
 
     print("\n" + "=" * 60)
     print("  运行摘要")
@@ -120,20 +134,20 @@ def _print_summary(classification_results: list[dict]) -> None:
     print("  With_Evidence: %d" % level_counts.get("With_Evidence", 0))
     print("  Weak_Evidence: %d" % level_counts.get("Weak_Evidence", 0))
     print("  No_Evidence:   %d" % level_counts.get("No_Evidence", 0))
-    print("  accurate:      %d" % type_counts.get("accurate", 0))
-    hallu_n = sum(c for t, c in type_counts.items() if t and t != "accurate")
-    print("  存在失真:      %d" % hallu_n)
-    if hallu_n:
+    print("  no_distortion: %d" % type_counts.get("no_distortion", 0))
+    print("  存在失真:      %d" % distortion_n)
+    print("  未判定失真类型: %d" % unverifiable_n)
+    if distortion_n:
         print("  失真分布:")
         for ptype, count in sorted(type_counts.items(), key=lambda x: -x[1]):
-            if ptype == "accurate":
+            if ptype in ("no_distortion", "accurate"):
                 continue
             print("    - %s: %d" % (ptype, count))
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="植物科学公众号科普文章幻觉检测 Pipeline",
+        description="植物科学公众号科普文章信息失真检测 Pipeline",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument("--article", "-a", required=True, help="公众号文章 Markdown 路径")
@@ -212,7 +226,7 @@ def main() -> int:
     report_path = output_dir / "report.md"
 
     print("=" * 60)
-    print("  植物科学公众号幻觉检测 Pipeline")
+    print("  植物科学公众号信息失真检测 Pipeline")
     print("=" * 60)
     print("  文章: %s" % article_path)
     print("  论文: %s" % paper_path)
@@ -306,10 +320,10 @@ def main() -> int:
         )
 
     # ------------------------------------------------------------------
-    # Phase 3: 幻觉细分类
+    # Phase 3: 信息失真细分类
     # ------------------------------------------------------------------
     print("\n" + "=" * 60)
-    print("  Phase 3/4: hallu — 幻觉细分类")
+    print("  Phase 3/4: hallu — 信息失真细分类")
     print("=" * 60)
 
     if do_classify:
