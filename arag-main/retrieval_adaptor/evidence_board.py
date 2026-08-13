@@ -156,7 +156,7 @@ class EvidenceBoard:
         max_rounds: int | None = None,
         extra_stats: dict[str, Any] | None = None,
     ) -> RetrievalOutput:
-        """汇总成最终交付给幻觉判定模块的结构。"""
+        """汇总成最终交付给下游信息失真分类模块的结构。"""
         decision = self.gate.evaluate(
             self.scores(), round_index=max(1, self.search_rounds), max_rounds=max_rounds
         )

@@ -5,7 +5,7 @@
 本脚本只做后处理。
 
 同一次检索，两套用途：
-  - classify_evidences：幻觉分类用 top-5
+  - classify_evidences：信息失真分类用 top-5
   - review_evidences：人工审核池固定 10 条（包含 top-5）
 
 输出每行::

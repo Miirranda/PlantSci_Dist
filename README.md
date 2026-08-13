@@ -82,7 +82,8 @@ outputs/P001/A001/
 
 ```
 data/annotations/
-├── prompts/draft_from_pairs.md            # 生成标注初稿的提示词
+├── prompts/draft_from_pairs_api.md        # 生产：API 系统提示词
+├── prompts/draft_from_pairs.md            # 人类改规则（勿整份贴进聊天）
 └── P001/
     ├── P001_sentences.csv                 # 句表（export_sentence_table）
     ├── P001_A001_annotation_draft.json    # 初稿：评测字段 + system_retrieval + analysis
@@ -103,7 +104,11 @@ data/annotations/
 cd arag-main && python scripts/export_sentence_table.py --paper-id P001 \
   -o ../data/annotations/P001/P001_sentences.csv
 
-# 用 prompts/draft_from_pairs.md 让 LLM 从 claim_evidence_pairs.jsonl 生成初稿
+# 生产：API 脚本从 pairs 生成初稿（聊天框不要一次贴整份 JSONL）
+python scripts/generate_draft_from_pairs.py \
+  --paper P001 --article A001 --source-type high_quality \
+  --limit 10 --batch-size 3
+# 提示词：data/annotations/prompts/draft_from_pairs_api.md
 
 # 审核后导出 benchmark（默认只要 human_verified=true）
 python scripts/export_benchmark.py

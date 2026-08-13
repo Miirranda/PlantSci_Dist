@@ -10,7 +10,7 @@
 * 旧规则切句（``--wechat --legacy-split``，仅调试）
 
 输出：``results/<时间戳>/evidences.jsonl``，每行一条 ``RetrievalOutput`` 的 JSON，
-字段结构固定，可直接送入下游幻觉判定模块。
+字段结构固定，可直接送入下游信息失真分类模块。
 
 Usage:
     # 单篇文章：LLM 抽句 + 检索（推荐）
