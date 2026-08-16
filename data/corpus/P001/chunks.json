@@ -1,0 +1,548 @@
+[
+  {
+    "text": "In flowering plants, inferior ovaries are key morphological innovations that evolved multiple times from superior ovaries to protect female parts of the flower. However, the developmental mechanisms underlying inferior ovary formation remain largely unknown. Comparative spatial transcriptome mapping and cell lineage reconstructions in developing floral buds of cucumber and tomato, which have inferior and superior ovaries, respectively, revealed that inferior ovaries develop from accelerated receptacle growth resulting from the continuous activity of meristematic stems cells at the base of the cucumber floral organs. Genetic knockout of a receptacle-specific KNOX1 transcription factor in cucumber caused arrest in receptacle growth and yielded bisexual flowers with superior ovaries similar to those of tomato. Here we provide developmental and mechanistic insights into inferior ovary formation and sex determination in cucurbits. A typical flower consists of four distinct types of floral organ: sepals, petals, stamens and carpels. These organs are arranged on the receptacle in sequential whorls, from the outer region to the centre1. The spatial arrangement of the outer floral organs relative to the ovary determines whether the ovary is classified as superior or inferior2. Inferior ovaries are located below the attachment points of the sepals, petals and stamens, whereas superior ovaries are positioned above these other floral organs. Inferior ovaries have independently evolved from superior ovaries multiple times throughout angiosperm evolution The adaptive advantage of an inferior ovary includes providing increased protection to developing gynoecia and allocating more energy to developing ovules4.",
+    "section": "Front Matter",
+    "page": "1",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "0"
+  },
+  {
+    "text": "Based on anatomical and comparative studies, several early theories regarding the development and evolution of the inferior ovary have been proposed, while no single theory completely explains all morphological aspects of the inferior ovary. Some studies suggest that the evolution of floral organs was not linear but rather a gradual process from simplicity to complexity, with various parts of the floral Agricultural Genomics Institute at Shenzhen, Chinese Academy of Agricultural Sciences, Shenzhen, China. 3BGI Research, Wuhan, China. 4State Key Laboratory of Agricultural Genomics, BGI Research, Shenzhen, China. 5College of Life Sciences, University of Chinese Academy of Sciences, Beijing, China. 6State Key Laboratory of Plant Genomics, Institute of Genetics and Developmental Biology, The Innovative Academy of Seed Design, Chinese Academy of Sciences, Beijing, China. 7China National GeneBank, Shenzhen, China. 8Plant Biology Section, School of Integrative Plant Science, Cornell University, Ithaca, NY, USA. 9Department of Plant Biology, College of Biological Sciences, University of California, Davis, CA, USA. 10National Key Laboratory of Tropical Crop Breeding, Chinese Academy of Tropical Agricultural Sciences, Haikou, China. 11These authors contributed equally: Zhaonian Dong, Xiaolin Liu, Xing Guo, Xun Liu, Bowen Wang, Wenwen Shao.",
+    "section": "Front Matter",
+    "page": "1",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "1"
+  },
+  {
+    "text": "861 a Berberidopsidales Trochodendrales Ranunculales Gunnerales Chloranthales Cornales Dilleniales Proteales Buxales Ericales Zingiberales Commelinales Poales Bruniales-cladeB Metteniusales Bruniales-cladeA Paracryphiales Arecales Escalloniales Dipsacales Apiales Asterales Aquifoliales-cladeB Aquifoliales-cladeA Garryales Icacinales Sex Solanales Bisexual Boraginales Unisexual Gentianales Ovary Superior Inferior Lamiales Caryophyllales Santalales Celastrales Vitales Picramniales Saxifragales Rosales (Begoniaceae) Crossosomatales (Tetramelaceae) (Cucurbitaceae) Geraniales Cucurbitales Zygophyllales Fabales Myrtales Fagales",
+    "section": "Front Matter",
+    "page": "1",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "2"
+  },
+  {
+    "text": "We annotated the phylogenetic tree of angiosperms9, encompassing 502 species across 61 orders, with sex information and ovary positions (Fig. 1a). In extant angiosperms, bisexual flowers and superior ovaries 862 represent ancestral states. Unisexual flowers and inferior ovaries originated independently multiple times during angiosperm evolution. However, they appeared simultaneously in the Cucurbitaceae and its closely related species Tetramelaceae and Begoniaceae (Fig. 1a), suggesting that the inferior ovary and unisexual flower may have originated from a single evolutionary event in the Cucurbitaceae. Cucumber and tomato have a similar floral structure (Extended Data Fig. 1a), but their differences in flower sex and ovary position make them excellent subjects for comparison (Extended Data Fig. 1b). Based on previous studies, we defined the different stages of floral bud development in cucumber and tomato10,11 (Supplementary Table 1) and examined the morphology of female floral buds of cucumber from floral meristem initiation to carpel fusion completion. After initiation, the cucumber floral meristem enlarges from the perimeter and becomes concave (Fig. 1b), then sepal, petal, stamen and carpel primordia are initiated sequentially on the inner regions of this ‘enlarged floral meristem’ (EFM) (Fig. 1b,c). With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig. 1b,c). The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c). By contrast, the floral meristem of tomato is convex, and the floral primordia sequentially initiate on its flank, with the carpels growing upwards to form superior ovaries (Fig. 1d, e). Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel.",
+    "section": "Results The evolutionary development of flower and ovary in cucumber",
+    "page": "2",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "3"
+  },
+  {
+    "text": "To dissect the underlying gene expression network driving the development of the inferior ovary of cucumber, we sampled floral buds at various stages, including S1–S8, and ovaries at 0 days post anthesis (DPA) for spatial transcriptomic analysis. Longitudinal sections were analysed, as well as a transverse section of S8-4 and two 0 DPA samples (Extended Data Fig. 2a), using a standard analytical procedure8. Datasets for individual sections were aggregated into bin 50, which had a diameter equal to that of an entire cell at 0 DPA (Extended Data Fig. 2b–d and Supplementary Table 2). The gene numbers and unique molecular identifier (UMI) counts in each bin 50 showed a high level of consistency (Extended Data Fig. 2e–g), without transcript signal spreading, as indicated by the UMI distribution (Supplementary Figs. 1–9), and all the floral bud samples at different stages could be continuously ordered along a pseudotime trajectory (Extended Data Fig. 2h). To acquire a global picture of clusters, we performed a spatially constrained clustering analysis7 (Extended Data Fig. 3b), revealing six superclusters of cells that could be putatively separated into tissues of the floral organs: putative FIM, epidermis, receptacle and conjunctive tissue, floral primordia and carpel, sepal and petal (Extended Data Fig. 2i). To further dissect cell-type composition, we conducted an unsupervised clustering analysis using Seurat12 (Fig. 2a, Extended Data Fig. 3a and Supplementary Fig. 10). This revealed 41 clusters with distinct locations, as shown by their uniform manifold approximation and projection (UMAP) and spatial information (Fig. 2a, Extended Data (Fig.",
+    "section": "Cell types in cucumber female floral development",
+    "page": "3",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "4"
+  },
+  {
+    "text": "2c and Supplementary Fig. 18a). We also observed three clusters (26, 27 and 28) situated between the carpel and receptacle at various stages of floral bud development, which we named conjunctive primordia, conjunctive tissue-early and conjunctive tissue-late, respectively (Fig. 2a–c). Besides the expression of marker genes in both carpel (CsAG1) and receptacle (CsCRC), the marker gene CsHANABA TARANU (CsHAN1) was exclusively expressed in cluster 27 (ref. 23) (Supplementary Fig. 18b). In contrast to previous recognition of expression in carpel, we observed that Cs1-aminocyclopropane-1-carboxylate synthase 2 (CsACS2)24, a gene for bisexual flower development, was specifically expressed in these clusters, suggesting that the conjunctive tissue plays a role in ovary development and sex determination (Fig. 2d,e and Supplementary 39 had no known marker genes and were unannotated. To confirm the accuracy of our annotation, we assessed the spatial distribution of several selected marker genes by RNA in situ hybridization, all of which confirmed the spatiotemporal expression patterns indicated by the Stereo-seq signals (Extended Data Fig. 2p). The data related to these spatially and temporally resolved transcriptomes and cell types of cucumber floral organ development can be browsed via the STOmicsDB27, an interactive data portal, at https://db.cngb.org/ stomics/ctsta.",
+    "section": "Cell types in cucumber female floral development",
+    "page": "3",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "5"
+  },
+  {
+    "text": "We found that although the production of sepal primordia was not captured, probably due to relatively small number of cells at the early stage, the cell lineage analysis indicated that the floral primordia sequentially differentiated into petal, stamen and carpel primordia (Fig. 3a) and that their distributions varied coincident with changes in floral buds morphology (Fig. 3b)13. The FIM showed a strong association with the receptacle (Fig. 3a), suggesting that the FIM is responsible for receptacle fate specification and development. The FIM also gives rise to the provascular tissue, which differentiates into protoxylem after the S5 stage (Fig. 3a). We determined that after S7, the FIM and receptacle primordia generate cells that are actively undergoing the cell cycle, while G1/S phase cells transition to receptacle cells, suggesting a mechanism to maintain cell proliferation and support rapid receptacle growth (Fig. 3a). An analysis using Monocle2 (Extended Data Fig. 3d), along with the pseudotime curve, demonstrated the cell lineage from FIM to receptacle and then to conjunctive tissue (Fig.",
+    "section": "Cell lineage of female floral organs during development",
+    "page": "5",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "6"
+  },
+  {
+    "text": "3c,d). These insights and the organization information of the cell clusters, as shown in the schematic diagrams (Extended Data Fig. 4b,c), highlight the spatiotemporal structure of these functional hubs in the transect section (bottom) and longitudinal section (top) at various developmental stages of cucumber floral buds (Fig. 3e) and advance our understanding of the development basis of cucurbit female flower buds. We infer that in cucumber, the fruit flesh outside the carpel is mostly derived from the development of receptacle. Accordingly, the receptacle-derived tissue is important for the genetic improvement.",
+    "section": "Cell lineage of female floral organs during development",
+    "page": "5",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "7"
+  },
+  {
+    "text": "To understand the gene expression dynamics and cytological basis of the EFM in inferior ovary, we selected sections of floral buds from S1 to S4 stages and conducted unsupervised clustering analysis with near single-cell resolution (average cell diameter from S1 to S4 of 12.96 μm and bin30 diameter of 15 μm) (Fig. 4a and Extended Data Fig. 2c,d). This revealed seven clusters with distinct locations and expressed marker genes during early floral organ development (Fig. 4a,b and Supplementary Table 4): cluster 0, epidermis (cluster E); cluster 1, pedicel (cluster P); cluster 2, floral primordia (cluster FP); cluster 3, receptacle primordium (cluster RP); and cluster 5, FIM. Both cluster 3 and cluster 4 were distributed along the concave floral meristem, and cluster 4 showed preferential expression of the floral meristem marker gene LEAFY. Given the EFM in cucumber (Fig. 1b,c), we annotated cluster 4 as an EFM. The distribution of cluster 3 (RP) and cluster 4 (EFM) indicates that their initiation and development determine the morphogenesis of the enlarged and concave floral meristem. RNA velocity and Monocle3 were used to study the early differentiation trajectories of these clusters (Extended Data Fig. 3d,e). Both methods yielded consistent trajectories originating from the FIM (Fig. 4c), highlighting three main developmental paths. One involved the differentiation of the epidermis. The other two originated from the FIM and passed through the EFM, with one leading to the formation of the floral primordia, then generating floral whorls, while the other gave rise to the receptacle primordium from the EFM (Fig. 4c). A pseudotime analysis using Monocle2 confirmed the resulting trajectories (Fig. 4d). Several key genes in these developmental paths were revealed by Monocle2 (Fig. 4e, Extended Data Fig. 5a and Supplementary Table 5), and their spatial expression distributions were investigated (Fig. 4f and",
+    "section": "Cell lineage of receptacle initiation",
+    "page": "5",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "8"
+  },
+  {
+    "text": "After S5, we observed the largest increase in the bin numbers of receptacle-related clusters (receptacle-early, cluster 9), indicating that 865 a b Basal sepal–abaxial Sepal epidermis Sepal mesophyll Sepal Unknown S1 Sepal mesophyll Unknown G0/G1 phase cells Epidermis Epidermis Trichome-base floral Trichome meristem Thicked epidermis Floral intercalary meristem FIM Floral intercalary meristem-2 Floral intercalary meristem-3 G2/M phase cells S1 G1/S phase cells Receptacle Receptacle primordia Receptacle-early Receptacle-late Provascular Protoxylem Conjunctive Conjunctive primordia Tissue Conjunctive tissue-early Conjunctive tissue-late Petal primordia Petal-early Petal S1 Petal-late Basal sepal-adaxial 1.00 Edge weight Floral primordia carpel 0.75 Placenta FP 0.50 Ovlue (ovary wall) 0.25 Stigma/transmitting tract S1 S2 S3 S4/S5 S6/S7 S8-1/2 S8-3/4 stage c Receptacle primordia Receptacle-early Receptacle-late Conjunctive primordia Conjunctive tissue-early UMAP2 UMAP2 Conjunctive tissue-late Floral intercalary meristem Floral intercalary meristem-2 Floral intercalary meristem-3 UMAP1 UMAP1 d 1.5 Bin50 density 1.0 0.5 0 0 2 4 6 Pesudotime S1 to S8-4. of cell-cycle phases were observed at different developmental stages, with S phase cells primarily concentrated in S8-1 and S8-2 (Fig. 5d). The target of rapamycin (TOR) kinase gene, which promotes the activation of S phase genes and meristems42, was found to predominantly expressed in S phase cells (Extended Data Fig. 6b). These findings support the notion that cell proliferation in the receptacle is regulated by the activation of meristematic activities in S phase cells. To pinpoint the key genes that regulate the cell proliferation and rapid growth of receptacles, we focused on those that were specifically upregulated or downregulated along the TOFO trajectory from each cluster (Fig. 5e, Extended Data Fig. 6c and Supplementary Tables 7 and 8)30. CRC, a TF known to determine carpel identity and mediate unisexual flower development22, was upregulated in the receptacles 866 a b Low 0 E 4 EFM 1 P 5 FIM 2 FP 6 Unknown 3 RP S4 S3 S2 S1 LOX1 DWF1 c f STM-like S4 P clusters 1/5 Max Pseudotime FIM RP Min E PI EFM cluster 2 UMAP2 FP ACO2 cluster 3 UMAP1 d e g AP1 FP FIM RP S3 FIM PI EFM AP3 FP HTA7 RP ANT HMG 2 RIP5 STM LOS1 2 1 RPL16A LAX2 RPS11 S1 ROX3 STM Pseudotime AP1 Min Max LEAFY 3 CAL1 h Inner part STM-like EP ETTIN MP E AFO 2 1 CYP714A 4 CER1 WOX9 KNAT2-like1 S1 AG1 1 BAS1 ACO2 MIPS3 Group Min Max Pseudotime S5 S5–S8-4 (Supplementary Fig.",
+    "section": "Regulation of cell proliferation during receptacle growth",
+    "page": "5",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "9"
+  },
+  {
+    "text": "18a). To identify genes that were coexpressed with CRC, we performed a spatial coexpression module analysis using Giotto43 (Extended Data",
+    "section": "Regulation of cell proliferation during receptacle growth",
+    "page": "6",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "10"
+  },
+  {
+    "text": "To elucidate the function of KNAT2-like1, CRISPR–Cas9 was used to generate two homozygous transgene-free loss-of-function mutant lines, k-1 (2 bp deletion) and k-2 (1 bp insertion) (Fig. 6a). Compared with the wild type (WT), the mutants exhibited a similar proportion of male flowers around 60%. However, the WT showed a proportion of female flowers around 30%, while in mutants, there was a significant decrease in the proportion of normal female flowers with inferior ovaries from 30% to 12% (Fig. 6b). Only at the lower nodes were some female flowers present. Instead, a corresponding proportion of ‘superior ovary flowers’ appeared, exhibiting the phenotype of bisexual flowers with superior ovaries (Fig. 6b), which means that 60% of normal female flowers transformed into ‘superior ovary flowers’ in the mutants. This phenotype was complemented in the k-2 mutants by expression of KNAT2-like1 under its native promoter (Fig. 6b), indicating the transformation of female flowers into ‘superior ovary flowers’ in the absence of KNAT2-like1 expression. To characterize the ‘superior ovary flowers’ morphogenesis, we compared the morphology of medial longitudinal sections of male, female and superior ovary flower buds at various developmental stages. The development of male flowers in the k-2 mutants was identical to WT (Extended Data Fig. 7a,c,g), with carpel primordia development arresting after S5 and stamen primordia gradually enlarging until mature pollen formed before anthesis (Extended Data Fig. 7a,c). In female flowers, the receptacle and carpel continued to grow after S5, and the receptacle grew rapidly and wrapped around the carpel to form the inferior ovary (Extended Data Fig. 7b,d). We noted that the ovaries of female flowers of the k-2 mutants were shorter than those of WT (Extended Data Fig. 7f). We did not observe morphological differences among male, female and abnormal superior ovary flower development before S5, These results indicated that CRC is epistatic to ER and KNAT2-like1, and ER is epistatic to KNAT2-like1.",
+    "section": "The role of KNAT2-like1",
+    "page": "9",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "11"
+  },
+  {
+    "text": "KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i). Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j). Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC.",
+    "section": "The role of KNAT2-like1",
+    "page": "9",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "12"
+  },
+  {
+    "text": "The mutation of just KNAT2-like1 in cucumber simultaneously leads to the formation of bisexual flowers and superior ovaries, suggesting that during receptacle evolution a direct link was established between the development of the unisexual flowers and inferior ovaries. To investigate the specificity of cucumber receptacle development, floral buds of superior ovary mutants (knat2-like1) and tomato at S8 were collected to generate spatial transcriptomic data for comparative analysis (Supplementary Table 1). In total, seven clusters were identified for both the superior ovary mutant and tomato. These clusters were annotated based on their distribution and the expression of marker genes (Fig. 7a,b, Extended Data Fig. 9a–e and Supplementary Tables 10 and 11) and then integrated into superclusters (Fig. 7b). Unlike cucumber, tomato lacks a specific FIM, and the receptacle is located below the carpel rather than in the surrounding position for cucumber. Although the superior ovary mutant still has an FIM, the arrested receptacle and upward carpel growth were observed (Fig. 7b). We further compared the expression patterns of markers for each supercluster to compare their floral organ structures among cucumber, superior ovary mutant and tomato and found that in all the material AP3 and PI were expressed in petals and stamens, and AG showed specific expression in the carpel and stamen (Extended Data Fig. 9f). We further analysed the expression patterns of important genes in inferior ovary development, such as KNOX1 TF genes, CRC, ACO2 and ACS2, which show specific expression in the FIM, receptacle or conjunctive 869 a b Exon Intron 60 Sex ratio (%) CR-knat2-like1 CsKNAT2-like1 40 Target sgRNA PAM 20 WT CCATTGCAAGTACAAGCTGTGG k-1 (–2) CCATTGCAAGTACA - - CTGTGG 0 k-2 CCATTGCAAGTACAAGTCTGTGG (+1) WT k-1 c d k-2 G k-2 G ♂♀ ♂♀ St St St St St Ca St Ca Ca St Ca St St Ca Ca Ov Ov Ca Ov Ca Ca S6 S7 S8 S9 S10 S11 S10 S12 -3 DPA f k-2 G ♂♀ 2 DPA 3 DPA 4 DPA 5 DPA 6 DPA g Ab Ad Ad Ov Ov Ov k-2 G ♂♀ ♀ h KNAT2-like1 S8 S9 S7 S7 S4 S4 S4 WT ♂ ♀ ♀ Male_rate Female_rate Superior_rate S5 S7 k-2 C-1 C-2 St St S8 Ca Ca Ov Ov S11 0 DPA S12 k-1 G ♂♀ Sepal Petal Stamen Carpel Nectary S12 Calyx tube 7 DPA 8 DPA 8 DPA Receptacle Ab Ab FIM Ad -1 DPA Ov i Ab Receptacle Carpel Ad Superior ovary S9 Developmental stages S7 Acquisition of KNAT2-like1 activity Inferior ovary k-2 G ♂♀ Developmental stages abnormal superior ovary flowers, respectively.",
+    "section": "Comparison between cucumber and tomato",
+    "page": "9",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "13"
+  },
+  {
+    "text": "f, The phenotype of a developing abnormal superior ovary on the k-2 mutant plant from 2 to 8 DPA. g, Longitudinal and transect-sectional images of the inferior ovaries and superior ovaries from the WT (left) and k-2 mutant (right), respectively. Ad, adaxial; ab, abaxial; G, inferior ovary. h, In situ hybridization of KNAT2-like1 expression in male, female and superior ovary floral buds from the WT and k-2 mutant plants. Cs G Sl Cs G Sl ♂♀ ♂♀ ♂♀ ♂♀ ♀ ♀ Max Expression Min CsSTM-like CsSTM-like SlSTM CsKNAT2-like1 CsKNAT2-like1 SlKN4 Cs G Sl Cs G Sl ♂♀ ♂♀ ♂♀ ♂♀ ♀ ♀ CsCRC CsCRC SlCRC CsACO2 CsACO2 SlACO2 ♂♀ ♂♀ Cs G Sl Cs ♂♀ G Sl ♂♀ ♀ ♀ CsACS2 CsACS2 SlACS2 CsER CsER SlER1 SlKN3 90 99 AtKNAT2 90 AtKNAT6 84 99 ClaKNAT6 75 CsKNAT6 77 CsKNAT2 100 ClaKNAT2 100 ClSTM 92 CsSTM 60 SlSTM1 AtSTM 93 CsSTM-like 100 ClSTM-like 93 Cla97C01G003320.2 78 CsaV3_5G003340.1 100 SlKN8 70 AtKNAT7 SlKN6 99 SlKN7 99 SlKN5 0.5 100 AtKNAT4 72 AtKNAT3 99 Cla97C08G156950.2 C.",
+    "section": "Comparison between cucumber and tomato",
+    "page": "9",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "14"
+  },
+  {
+    "text": "sativus L. 78 CsaV3_2G032310.1 S. lycopersicum L. AtKNAT5 C. lanatus 88 CsaV3_4G036880.1 99 Arabidopsis thaliana L. Cla97C05G097580.2 marker genes involved in floral organ development in cucumber (S8-1), superior ovary cucumber mutant (S8-1) and tomato (S8). Cs, C. sativus. Sl, S. lycopersicum.",
+    "section": "Comparison between cucumber and tomato",
+    "page": "11",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "15"
+  },
+  {
+    "text": "In this current study, we generated a comprehensive collection of spatially resolved transcriptomes and reconstructed the cellular territories and cell lineages for the continuously developing floral organs of cucumber. Our findings revealed that the prolonged activity of the FIM at the base of the floral organs is responsible for the initiation and rapid growth of the receptacle, leading to female flower determination and the formation of an inferior ovary. Characterization of the gene expression dynamics, for cell fate establishment and development of the receptacle, provided new insights into the molecular regulatory mechanisms underlying sex determination and inferior ovary formation in the cucurbits. Unisexual flowers and inferior ovaries have evolved independently multiple times throughout angiosperm evolution; however, in the Cucurbitaceae, both traits appear to have coevolved (Fig. 1a). The knockout of KNAT2-like1 resulted in the production of stamens and the development of a superior ovary due to the disrupted formation of the floral receptacle. Theses findings provide genetic evidence that both the promotion of the receptacle formation and the suppression of stamen development are orchestrated by a single KNOX1 TF. Accordingly, receptacle development and sex determination are closely linked in cucumber. Most cucurbit plants are monoecious, with unisexual flowers that have been defined by M (CsACS2/CmACS7), A (CsACS11/CmACS), G (CsWIP1/CmWIP1), F (CsACS1G), CRC and ACO2 genes and their respective interactions22,51,52. Our spatial transcriptomic data established that all these sex-determining genes exhibited expression pattern in receptacle or receptacle-derived tissue. For instance, in female flower buds, KNAT2-like1, CRC and ACO2 (ref. 32) are marker genes in the receptacle These results suggest that the developmental innovation of the receptacle in Cucumis species contributes to the evolution of unisexual flowers.",
+    "section": "Discussion",
+    "page": "11",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "16"
+  },
+  {
+    "text": "Since 60% of the normal female flowers transformed into ‘superior ovary flowers’, and only some female flowers were present at the lower nodes, we determined that KNAT2-like1 is critical for receptacle development and inferior ovary formation. It is worth noting that, however, there were still 40% of the female flowers at the lower nodes did not undergo this change. Two possibilities were proposed. First, a duplicated homologue gene KNAT2-like2 was identified to be specifically expressed in the receptacle as KNAT2-like1, suggesting a gene functional redundancy of KNAT2-like1 (Extended Data",
+    "section": "Discussion",
+    "page": "12",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "17"
+  },
+  {
+    "text": "The cucumber (C. sativus L.) variety Gy14 and tomato (S. lycopersicum L.) variety TS69 were used for Stereo-seq analysis. All the materials were grown in a greenhouse with a 16–8 h light–dark regime and a temperature range from 18 °C to 24 °C.",
+    "section": "Methods Plant materials and growth conditions",
+    "page": "12",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "18"
+  },
+  {
+    "text": "For cucumber CRISPR–Cas9 vector construction, the sgRNA was designed using the CRISPR-GE web tool (http://skl.scau.edu.cn). The sgRNA was inserted into the pASE402 vector using the restriction enzymes BsaI and T4 DNA Ligase (New England Biolabs, R3733V and M0202V). The constructed recombinant vector was transformed into Agrobacterium tumefaciens strain EHA105. For complementation assay vector construction, the 2-Kb promoter and coding sequence of KNAT2-like1 were amplified using specific primers, and the amplified fragments were inserted into linearized pOE-HA vector (digested by SbfI and BamHI, New England Biolabs, R3642S and R3136S) using the In-Fusion method (Vazyme, C116). All primers are shown in Supplementary Table 13. The cucumber transformation was carried out as previously described54. Differentiated shoots were selected and transferred to plastic cups for rooting, and the seedlings were then planted in soil.",
+    "section": "Plasmid construction and genetic transformation",
+    "page": "12",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "19"
+  },
+  {
+    "text": "To identify mutations in the target sites generated by CRISPR, genomic DNA was extracted from all CRISPR T0 generation and T1 generation plants that harbor variations in target genes using the CTAB method55. PCR for target site amplification was performed using KOD-One (TOYOBO, KOD-201) and the primers listed in Supplementary Table 13, and the sequences of the amplified PCR products were aligned with the WT genome sequences.",
+    "section": "Characterization of mutants",
+    "page": "12",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "20"
+  },
+  {
+    "text": "Flowers at S1 to S8 stages of cucumber Gy14 and tomato TS69 were isolated under a stereoscope (SOPTOP, SZN71) and fixed with FAA (50% ethanol, 5% glacial acetic acid and 3.7% formaldehyde), dehydrated with a sequential series of ethanol treatments (50%, 70%, 85%, 95% and 100%), cleared with xylene and then embedded in paraplast (Sigma-Aldrich, cat. no. P3683). The embedded samples were sectioned (8 μm) using a microtome (Leica, RM2235) and then deparaffinized and cleared with xylene, before sequential rehydrated in an ethanol gradient (100%, 90%, 70%, 50% and 30%). The sections were then stained with 0.1% toluidine blue solution (ScyTek, cat. no. TQF999) for 1 min, washed six to eight times with water, mounted with neutral balsam (Solarbio, cat. no. G8590) and scanned with a ScanScope (Leica, APERIO CS2).",
+    "section": "Paraffin embedding and sectioning",
+    "page": "12",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "21"
+  },
+  {
+    "text": "The flowers of cucumber (C. sativus L.) variety Gy14 and tomato (S. lycopersicum L.) variety TS69 were fixed in 3.5% glutaraldehyde for 24 h at room temperature. After washing thoroughly in 0.1 M phosphate buffer (pH 7.2), the samples were fixed in 1% osmic acid for 2 h, dehydrated an ethanol series (30%, 40%, 50%, 60%, 70%, 80%, 90%, 95% and 100%) and dried in a critical point dryer (Leica, EM CPD 300). The samples were coated with gold powder using a sputter coater (HITACHI, MC1000) and observed by a scanning election microscope (Hitachi, SU 8010).",
+    "section": "Scanning electron microscopy",
+    "page": "12",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "22"
+  },
+  {
+    "text": "The spatial architecture was aligned from a series of 3D images using the ‘coregistration’ function in Data Viewer (Bruker, 3D Suite). 3D reconstruction The samples were imaged using a SkyScan micro-CT, rotating 360°, with an interlayer distance of 1.48 μm. The regions near sample surfaces were excluded. The images were saved as 8-bit bitmaps, processed in NRecon software for two dimensions, and ‘Calculate 3D tool’ was used for 3D visualizations. CTan software refined the images before 872 stacking. The 3D reconstructions were segmented using 3D Slicer for Mac, exported in stereolithography format, and further analysed for volume rendering in Blender (https://www.blender.org/).",
+    "section": "X-ray microtomography scanning (micro-CT)",
+    "page": "12",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "23"
+  },
+  {
+    "text": "Female flowers from different developmental stages of cucumber Gy14 were collected and fixed in ice-cold paraformaldehyde fixative (4% paraformaldehyde and 4% DMSO in 1× PBS) and vacuum infiltrated for 30 min. The fixative was replaced, and the samples were gently shaken overnight at 4 °C then dehydrated in an ethanol series, cleared in an xylene series and embedded in Paraplast (Sigma-Aldrich, cat. no. P3683). The sections (8 µm) were prepared using a microtome (Leica, RM2235). For probe labelling, specific 400–1,000 bp sequences of target genes were amplified from the complementary DNA of Gy14 (see",
+    "section": "RNA in situ hybridization",
+    "page": "13",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "24"
+  },
+  {
+    "text": "Fresh cucumber Gy14 and tomato TS69 floral buds from different developmental stages, as well as knat2-like1 mutants and WT CU2 female floral buds were collected, placed into Tissue-Tek optimal cutting temperature compound (Sakura, 4583) and vacuum infiltrated on ice for 15 min. The samples were then placed on the bottom of a Tissue-Tek cryomold in sequence based on their developmental stages and flower bud length (Sakura, 4565). The embedding samples were fixed and stored at −80 °C. The frozen block was incubated at −20 °C for 30 min before sectioning (10 μm thickness) with Cryostat Microtome (Leica, CM1950). A Stereo-seq transcriptomics set (Beijing Genomics Institute (BGI), 111ST114) was used to treat the sections following the manufacturer’s instructions with minor modifications. Briefly, methanol was used to fix the tissue on the chip for 40 min at −20 °C, then the chip was stained with Fluorescent Brightener 28 and imaged with a microscope (Motic, PA53 FS6). The tissue on the chip was then permeabilized by treatment with 0.1% PR enzyme in 0.01 M HCl buffer (pH 2.0) for 14 min at 37 °C, so that RNAs in the tissue were captured by polyT. Reverse transcription was performed overnight in a 37 °C incubator, and the cDNA was released into the release buffer for 3 h after tissue removal before collection for sequencing library construction. The Stereo-seq libraries were prepared using a kit (BGI, 111KL114) and sequenced on a DNBSEQ-Tx sequencer. Standard DNB (DNA nanoball) chips have spots with diameter of approximately 220 nm and a centre-to-centre distances of 500 nm, allowing up to 400 spots for tissue RNA capture per 100 mm2. The cryosections (10 μm) were prepared to capture approximately a single-cell layer of tissue for Stereo-seq analysis. We collected cross-sections at defined positions to ensure that comparable samples from different developmental stages were used for the Stereo-seq analysis.",
+    "section": "Stereo-seq tissue sectioning and library construction",
+    "page": "13",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "25"
+  },
+  {
+    "text": "Amino acid sequences of A. thaliana KNOX TFs were obtained from TAIR10 (https://www.arabidopsis.org/), and related sequences from other species (Supplementary Table 12) were identified using BLASTP56. The sequences were submitted to HMMsearch (https://www.ebi.ac.uk/ Tools/hmmer/search/hmmsearch) to determine whether the homologous sequences identified by BLASTP share the same domain composition as those from A. thaliana. The candidates for further analysis were required to have the Homeobox_KN (PF02920) domain and either the KNOX1 (PF02790) or KNOX2 (PF02790) domains. The results were further validated using InterPro (https://www.ebi.ac.uk/interpro/) and SMART (http://smart.embl-heidelberg.de/) to assess the presence of domains and filter out false-positive sequences. Non-conserved sites in the sequences were removed using trimAl57. A phylogenetic tree was constructed based on sequence alignments using the neighbourjoining method in IQ-Tree v.2.0 (http://www.iqtree.org/).",
+    "section": "Sequence alignment and phylogenetic analysis of KNOX homeodomain genes",
+    "page": "13",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "26"
+  },
+  {
+    "text": "Stereo-seq fastq files were generated using an MGI DNBSEQ-Tx sequencer. Read 1 consisted of coordinate identity (CID) and molecular identifier (MID) sequences (CID: 1–25 bp, MID: 26–35 bp), and read 2 contained the cDNA sequence. The default parameters of the SAW software suite (https://github.com/BGIResearch/SAW) were used to align raw sequencing reads to genomes. The CID sequences in the first reads were initially mapped to the predefined coordinates of the in situ captured chip from the first sequencing round, permitting a single-base mismatch to account for sequencing and PCR errors. Reads with MIDs containing ‘N’ bases or having over two bases with quality scores below 10 were excluded. CID and MID identifiers for each read were appended to the respective read header. Subsequently, the retained reads were aligned to reference genomes (9930 for cucumber and TS69 for tomato) using STAR and mapped reads with MAPQ >10 were annotated to their corresponding genes. UMIs with identical CIDs and gene loci were merged, allowing a single-base mismatch for error correction in sequencing and PCR. The single-stranded DNA photo was utilized in the SAW workflow, enabling the accurate mapping of raw reads to their precise positions on the tissue. Ultimately, an expression count matrix was created, documenting the expression levels of each gene in every spot. The resultant expression profile matrix files were performed into bin 50 data using the BGI as previously reported58. For the analysis in Fig. 4, bin30 data were performed on a single cell from S1–S4.",
+    "section": "Stereo-seq raw data processing and quality control",
+    "page": "13",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "27"
+  },
+  {
+    "text": "To consider spatial information in unsupervised clustering, we employed the method described earlier for Leiden clustering analysis7. The cucumber and tomato clusters were identified based on their anatomical structure and marker genes with resolution parameters of 2.4 and 1.8, respectively.",
+    "section": "Spatially constrained clustering of Stereo-seq data",
+    "page": "13",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "28"
+  },
+  {
+    "text": "We used the SCTransform function in R package Seurat (v4.2.1)12 to normalize UMI count matrices. Subsequently, feature gene selection (‘FindVariableGenes’ function with vst method and 2000 features), PCA dimension reduction (‘RunPCA’ function with variable genes and 30 principal components), constructing the SNN graph, clustering bins based on Louvain (‘FindNeighbors’ and ‘FindClusters’) and visualization with nonlinear dimensional reduction algorithms (‘RunTSNE’ and ‘RunUMAP’) were successively performed in Seurat. The clustering resolution parameters were set to 2 (related to Fig. 2a, all samples from cucumber), 1.4 (related to Fig. 4a, S1–S5 samples from cucumber), 0.8 (related to Fig. 5a, all samples from cucumber in clusters of the receptacle and FIM) and 1.2 (related to Fig. 7a and Extended Data Fig. 9e, all samples from tomato), respectively. We did not filter low-expression genes due to the high sparsity of our Stereo-seq datasets59. The ‘RunHarmony’ function was used to correct batch effects between samples60. To construct a 3D UMAP embedding, three UMAP dimensions were retrieved with ‘RunUMAP’ function using 873 the parameter (n.components = 3). The 3D UMAP scatter graph was then plotted with three UMAP dimensions (‘UMAP_1’, ‘UMAP_2’ and ‘UMAP_3’) using the plotly package (v.4.9.1). To identify cluster-enriched genes within the spatial transcriptome data, we used the ‘FindAllMarkers’ function in Seurat, applying a two-side Wilcoxon rank sum test to compare gene expression levels between clusters. Specifically, we set a log fold change threshold of 1.5 (logfc.threshold = 0.58) to include only genes with at least a 1.5-fold expression difference between clusters, thereby highlighting significant differential expression patterns. Moreover, we considered only those genes expressed in at least 25% of the cells in a given cluster (min.pct = 0.25) to focus on biologically relevant markers. To control for multiple comparisons, we applied Bonferroni correction to adjust",
+    "section": "Unsupervised clustering analysis",
+    "page": "13",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "29"
+  },
+  {
+    "text": "To construct floral developmental trajectory, we integrated and coembedded bin50 from different stages (all sample in cucumber from S1 to S8-4), at consecutive time points using Seurat with FindIntegrationAnchors and IntegrateData functions with default settings. After integration, edge weight between clusters across stages was calculated as described in TOME30. Finally, continuous trajectories with edges weight >0.2 from the UMAP embedding were retained for the resultant directed graph to ensure connectivity of the overall graph. Systematic nomination of key TFs, which specifically upregulated or downregulated, for cell-type specification was identified as described in TOME30.",
+    "section": "Cucumber floral developmental trajectory analysis",
+    "page": "14",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "30"
+  },
+  {
+    "text": "The genome sequences of the TS69 HiFi accession was assembled by hifiasm (https://github.com/chhylp123/hifiasm), using default parameters. The assembly was anchored and oriented to chromosomes using the reference-guided software RagTag (v.1.0.1)61 with the default parameters.",
+    "section": "De novo genome assembly of TS69",
+    "page": "14",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "31"
+  },
+  {
+    "text": "The Extensive de novo transposable element Annotator (EDTA)62 tool was used to detect different types of transposable element, including long terminal repeat retrotransposons, DNA transposons with terminal inverted repeat motifs, Helitron-like DNA transposons and short interspersed nuclear element/long interspersed nuclear element repeats. Then RepeatMasker (v4.10) (http://www.repeatmasker.org) was used to eliminate any potential transposons, simple repeats or satellites with the transposable element library as an input. Initiailly, PacBio Iso-Seq data from seven different tissues (root, stem, leaf, hypocotyl, macro floral buds, micro floral buds and 0 DPA placenta) underwent preprocessing using the CCS program (https:// github.com/PacificBiosciences/ccs), followed by demultiplexing using lima (https://github.com/PacificBiosciences/barcoding). The high-quality clustered FLNC reads were then aligned to the TS69 genome using pbmm2 with the parameter ‘--preset ISOSEQ’. In addition, RNA-seq reads from the same seven tissues were mapped to the TS69 genome using HISAT2 (ref. 63) (https://daehwankimlab.github. io/hisat2/). The resultant alignments were sorted based on genomic coordinates using SAMtools64 (https://github.com/samtools/samtools) and BRAKER2 (v2.1.5)65 (https://github.com/Gaius-Augustus/BRAKER/ releases/tag/v2.1.5), with the parameters ‘--nocleanup --softmasking,’ to train the species-specific parameters within AUGUSTUS66 (https:// bioinf.uni-greifswald.de/augustus/). The protein sequences of tomato and potato that were released earlier, along with the curated plant proteins from the UniProt Swiss-Prot database (https://www.uniprot.org/downloads), were merged. Subsequently, a redundancy removal process was conducted using CD-HIT with default parameters67. The homologous protein evidence derived from these sequences, and the high-quality consensus Iso-Seq reads and the StringTie assembled transcripts gff were",
+    "section": "Genome annotation for TS69",
+    "page": "14",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "32"
+  },
+  {
+    "text": "RNA velocity estimation involves using velocyto CLI to count unspliced/ spliced RNA reads and then exporting count matrices to scVelo70. In detail, after the count matrices were normalized across cells in S4 sample with bin30, we selected 3,000 highly variable genes and performed principal component analysis to generate a nearest neighbour graph using 30 principal components based on Euclidean distances. The firstand second-order moments were then calculated for each cell across its 30 nearest neighbours. To estimate the RNA velocities, we performed transcriptional dynamics modelling in dynamic mode, utilizing scVelo default procedures to infer model parameters for recovering splicing kinetics, and then, the velocities were calculated. The lower-dimensional embedding of single-cell data was utilized to visually represent RNA velocities, which are estimated and projected as streamlines.",
+    "section": "RNA velocity analysis",
+    "page": "14",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "33"
+  },
+  {
+    "text": "Monocle2 (ref. 71) was used to analyse the development of the receptacle from S1 to S4. The data from epidermis, receptacle primordium and enlarged FIM were extracted. The top marker genes of each cluster were calculated using the Seurat (v4.2.1) FindAllMarkers function and were selected for Monocle2 analysis. A dimensionality reduction was performed with the DDRTree method and finally visualized using the plot_cell_trajectory function. The cluster of FIM was selected as the starting point for the development of the receptacle. The branch point was selected to analyse branches in differentiation trajectories. BEAM was used to analyse the pseudotime-dependent or branch-dependent genes. The genes that were significantly branch dependent were visualized with the ‘plot_genes_branched_heatmap’ function.",
+    "section": "Monocle2 analysis",
+    "page": "14",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "34"
+  },
+  {
+    "text": "The samples from S5 to S8-4 were used, and the R package Giotto43 was employed to perform spatial coexpression module analysis. Seurat objects were first converted to Giotto objects, employing the seuratToGiotto function, and spatially coherent expression patterns were identified using the binSpect function, ith parameters as follows: bin_method = ‘rank’, calc_hub = T and hub_min_int = 5. The top genes were clustered to identify spatially coexpressed feature modules using clusterSpatialCorFeats function, with the following parameters set as follows: k = 17 and gene number of 3,000 for flower organs throughout all stages.",
+    "section": "Spatial coexpression module analysis",
+    "page": "14",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "35"
+  },
+  {
+    "text": "We conducted pseudotime analysis with Monocle2 in S1 to S3, S6 and S8-1 to S8-4, designating the FIM from each developmental stage as the root. The pseudotime for each cell was normalized to a scale of 0–1. For the coexpression network, we selected the genes from module 14 based on the Giotto results as the input gene set. To illustrate gene expression patterns along the pseudotime, we applied vector generalized linear and additive models (VGAM) to fit smooth spline curves to the expression levels of these genes. Following this, we performed GRNs analysis using SCODE72. The algorithm was executed 100 times, and the average results were computed to ensure a reliable evaluation. 874 The inferred regulatory relationships were then saved in a file named ‘meanA.txt’, and these arranged files were imported into Cytoscape73 (3.10.3) for visualizing the interactions between the genes.",
+    "section": "Gene network analysis",
+    "page": "14",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "36"
+  },
+  {
+    "text": "For RNA in situ hybridization experiments, each hybridization probe was repeated with the same results using at least three independent samples. Similarly, the tissue sections followed the same reproducibility standards, ensuring consistency across all experiments. There was no randomization in this study, and the investigators were not blinded to assignment during experimentation or result evaluation. The sample size was not predetermined using any statistical methods.",
+    "section": "Statistics and reproducibility",
+    "page": "15",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "37"
+  },
+  {
+    "text": "The raw and processed Stereo-seq data are available via the CNGB Nucleotide Sequence Archive at https://db.cngb.org/stomics/ctsta. The TS69 genome assembly, with annotations, is available via the CNGB Nucleotide Sequence Archive (accession ID CNP0006766).",
+    "section": "Data availability",
+    "page": "15",
+    "paper_id": "P001",
+    "title": "Developmental innovation of inferior ovaries and flower sex orchestrated by KNOX1 in cucurbits",
+    "authors": [
+      "Zhaonian Dong",
+      "Xiaolin Liu"
+    ],
+    "year": "2025",
+    "source_file": "P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf",
+    "id": "38"
+  }
+]

@@ -414,6 +414,155 @@ def test_split_sentences_drops_short_fragments():
     assert split_sentences("Table 2. 41.2 92.") == []
 
 
+def test_split_english_keeps_fig_panel_with_following_clause():
+    from retrieval_adaptor.pdf_ingest import split_english_sentences
+
+    text = (
+        "This revealed 41 clusters with distinct locations, as shown by their "
+        "UMAP and spatial information (Fig. 2a)."
+    )
+    sents = split_english_sentences(text)
+    assert len(sents) == 1
+    assert "Fig. 2a" in sents[0]
+
+
+def test_peel_glued_front_matter_keeps_intro():
+    from retrieval_adaptor.pdf_ingest import peel_glued_front_matter
+
+    glued = (
+        "Lucas9, Xun Xu 4, 4 1 2,10, Huan Liu & Xueyong Yang In flowering plants, "
+        "inferior ovaries are key morphological innovations that evolved multiple times."
+    )
+    peeled = peel_glued_front_matter(glued)
+    assert peeled.startswith("In flowering plants")
+    assert "Lucas9" not in peeled
+
+
+def test_is_indexable_drops_title_and_affiliation():
+    from retrieval_adaptor.pdf_ingest import is_indexable_sentence
+
+    assert is_indexable_sentence(
+        "nature plants Developmental innovation of inferior ovaries and flower sex"
+    ) is False
+    assert is_indexable_sentence(
+        "1Institute of Vegetables and Flowers, Chinese Academy of Agricultural Sciences, Beijing, China."
+    ) is False
+    assert is_indexable_sentence(
+        "Inferior ovaries are located below the attachment points of the sepals, petals and stamens."
+    ) is True
+    assert is_indexable_sentence(
+        "f, The phenotype of a developing abnormal superior ovary on the k-2 mutant plant from 2 to 8 DPA."
+    ) is False
+    assert is_indexable_sentence(
+        "Scale bars,1 mm (c–e), 1 cm (f and g) and 200 μm (h)."
+    ) is False
+    assert is_indexable_sentence(
+        "Several key genes were revealed by Monocle2 (Fig. 4f and"
+    ) is False
+    assert is_indexable_sentence(
+        "Ad, adaxial; ab, abaxial; G, inferior ovary."
+    ) is False
+    assert is_indexable_sentence(
+        "AtKNAT5 C. lanatus 88 CsaV3_4G036880.1 99 Arabidopsis thaliana L.,"
+    ) is False
+    assert is_indexable_sentence("200 μm (h). high levels of expression in the receptacle.") is False
+    assert is_indexable_sentence(
+        "RNA was isolated at Cornell University, Ithaca, NY, USA."
+    ) is True
+    assert is_indexable_sentence(
+        "3D reconstructions revealed the spatial arrangement of the floral intercalary meristem."
+    ) is True
+    assert is_indexable_sentence(
+        "Supplementary analyses confirmed that KNAT2-like1 is required for receptacle growth."
+    ) is True
+    assert is_indexable_sentence(
+        "Figure 2 shows the lineage from the floral intercalary meristem to the receptacle."
+    ) is True
+    assert is_indexable_sentence("2c and Supplementary Fig. 18a).") is False
+
+
+def test_split_english_strips_leading_fig_residue_keeps_body_and_inline_fig():
+    from retrieval_adaptor.pdf_ingest import split_english_sentences
+
+    text = (
+        "3c,d). These insights highlight the spatiotemporal structure of these "
+        "functional hubs at various developmental stages (Fig. 3e)."
+    )
+    sents = split_english_sentences(text)
+    assert len(sents) == 1
+    assert sents[0].startswith("These insights")
+    assert not sents[0].startswith("3c")
+    assert "(Fig. 3e)" in sents[0]
+
+
+def test_split_english_keeps_inline_fig_citation():
+    from retrieval_adaptor.pdf_ingest import split_english_sentences
+
+    text = (
+        "The FIM showed a strong association with the receptacle (Fig. 3c,d), "
+        "suggesting that the FIM is responsible for receptacle fate specification."
+    )
+    sents = split_english_sentences(text)
+    assert len(sents) == 1
+    assert "(Fig. 3c,d)" in sents[0]
+
+
+def test_repair_cross_chunk_joins_split_fig_citation():
+    from retrieval_adaptor.pdf_ingest import repair_cross_chunk_sentences
+
+    chunks = [
+        {
+            "id": "0",
+            "paper_id": "P001",
+            "section": "Results A",
+            "text": "The FIM supports rapid receptacle growth (Fig.",
+        },
+        {
+            "id": "1",
+            "paper_id": "P001",
+            "section": "Results B",
+            "text": "3c,d). These insights highlight the spatiotemporal structure of floral buds (Fig. 3e).",
+        },
+    ]
+    repaired = repair_cross_chunk_sentences(chunks)
+    assert any("(Fig. 3c,d)" in c["text"] for c in repaired)
+    assert any(c["text"].startswith("These insights") for c in repaired)
+
+
+def test_split_english_strips_page_figure_dump():
+    from retrieval_adaptor.pdf_ingest import split_english_sentences
+
+    text = (
+        "CRC was upregulated in the receptacles 866 a b Low 0 E 4 EFM 1 P 5 FIM. "
+        "These findings support the notion that cell proliferation is regulated."
+    )
+    sents = split_english_sentences(text)
+    assert any(s.startswith("CRC was upregulated") and "866" not in s for s in sents)
+    assert any("cell proliferation is regulated" in s for s in sents)
+
+
+def test_repair_cross_chunk_joins_lowercase_continuation():
+    from retrieval_adaptor.pdf_ingest import repair_cross_chunk_sentences
+
+    chunks = [
+        {
+            "id": "0",
+            "paper_id": "P001",
+            "section": "Introduction",
+            "text": "Inferior ovaries have independently evolved from superior ovaries multiple times throughout angiosperm evolution",
+        },
+        {
+            "id": "1",
+            "paper_id": "P001",
+            "section": "Introduction",
+            "text": "and are present in several major angiosperm clades3. The adaptive advantage of an inferior ovary includes protection.",
+        },
+    ]
+    repaired = repair_cross_chunk_sentences(chunks)
+    assert any("angiosperm evolution and are present" in c["text"] for c in repaired)
+    assert all(not c["text"].startswith("and are present") for c in repaired)
+
+
 # ---------------------------------------------------------------- PDF / 中文预处理
 
 

@@ -35,6 +35,7 @@ def run_arag_article_pipeline(
     skip_retrieval: bool = False,
     resume: bool = True,
     verbose: bool = False,
+    paper_id: str = "",
 ) -> tuple[Path, Path]:
     """文章 → LLM 观点句 → 检索证据。
 
@@ -74,6 +75,8 @@ def run_arag_article_pipeline(
         cmd.extend(["--limit", str(limit)])
     if verbose:
         cmd.append("--verbose")
+    if paper_id:
+        cmd.extend(["--paper-id", str(paper_id)])
 
     if skip_extract:
         if not claims_jsonl.exists() and claims_json.exists():
@@ -130,6 +133,7 @@ def run_arag_retrieval(
     workers: int = 1,
     resume: bool = True,
     verbose: bool = False,
+    paper_id: str = "",
 ) -> Path:
     """仅检索：已有 claims.jsonl → evidences.jsonl。"""
     output_dir = Path(output_evidences).parent
@@ -140,6 +144,7 @@ def run_arag_retrieval(
         skip_extract=True,
         resume=resume,
         verbose=verbose,
+        paper_id=paper_id,
     )
     if Path(evidences) != Path(output_evidences):
         shutil.copy2(evidences, output_evidences)

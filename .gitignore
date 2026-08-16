@@ -34,6 +34,7 @@ credentials.json
 outputs/
 *.log
 *.pkl
+data/index/
 *.npy
 *.npz
 
@@ -46,10 +47,18 @@ arag-main/.git/
 arag-main/.pytest_cache/
 arag-main/results/
 arag-main/data/index/
-arag-main/data/index_demo/
+arag-main/data/index_*/
 arag-main/data/corpus/
 arag-main/data/cache/
+arag-main/data/claims_*.jsonl
+arag-main/data/wechat/**
+!arag-main/data/wechat/.gitkeep
+arag-main/data/papers/**
+!arag-main/data/papers/.gitkeep
+arag-main/data/papers_*/
 arag-main/__pycache__/
+scripts/__pycache__/
+scripts/_archive/__pycache__/
 
 # Accidental nested copy
 arag-main/arag-main/

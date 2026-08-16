@@ -41,6 +41,41 @@ def _norm_claim(text: str) -> str:
     return re.sub(r"\s+", "", (text or "").strip())
 
 
+def _norm_en(text: str) -> str:
+    return re.sub(r"\s+", " ", (text or "").strip()).lower()
+
+
+def _texts_align(left: str, right: str) -> bool:
+    if not left or not right:
+        return True
+    a, b = _norm_en(left), _norm_en(right)
+    return a == b or a in b or b in a
+
+
+def load_sentence_table(path: Path) -> dict[int, str]:
+    import csv
+
+    table: dict[int, str] = {}
+    with path.open(encoding="utf-8-sig", newline="") as handle:
+        for row in csv.DictReader(handle):
+            try:
+                sid = int(row.get("sentence_id"))
+            except (TypeError, ValueError):
+                continue
+            table[sid] = str(row.get("text") or "")
+    return table
+
+
+def load_index_meta(path: Path) -> dict[str, Any]:
+    if not path.exists():
+        return {}
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
 def _claim_key(sample_id: str) -> str:
     """P001-A002-C01 → C01；已是 C01 则原样。"""
     s = str(sample_id or "").strip()
@@ -52,7 +87,7 @@ def _as_int_ids(items: Any) -> list[int]:
     ids: list[int] = []
     for item in items or []:
         if isinstance(item, dict):
-            raw = item.get("sentence_id")
+        raw = item.get("sentence_id", item.get("id"))
         else:
             raw = item
         try:
@@ -64,8 +99,15 @@ def _as_int_ids(items: Any) -> list[int]:
     return ids
 
 
-def _load_benchmark(path: Path) -> list[dict[str, Any]]:
+def _load_benchmark_doc(path: Path) -> dict[str, Any]:
     data = json.loads(path.read_text(encoding="utf-8"))
+    if isinstance(data, dict):
+        return data
+    raise ValueError("无法解析 benchmark: %s" % path)
+
+
+def _load_benchmark(path: Path) -> list[dict[str, Any]]:
+    data = _load_benchmark_doc(path)
     return list(data.get("samples") or [])
 
 
@@ -167,11 +209,34 @@ def _f1(precision: float, recall: float) -> float:
     return 2.0 * precision * recall / (precision + recall)
 
 
+def _pred_sentence_items(pred: dict[str, Any]) -> list[dict[str, Any]]:
+    evid = pred.get("evidence_sentences")
+    if evid:
+        return list(evid)
+    sys_ret = pred.get("system_retrieval") or {}
+    return list(sys_ret.get("classify_evidences") or [])
+
+
+def _check_id_text(
+    sid: int,
+    text: str,
+    table: dict[int, str],
+) -> str | None:
+    if sid not in table:
+        return "missing_in_table"
+    if text and not _texts_align(text, table[sid]):
+        return "text_mismatch"
+    return None
+
+
 def evaluate(
     gold_samples: list[dict[str, Any]],
     predictions: list[dict[str, Any]],
     *,
     k: int = 5,
+    sentence_table: dict[int, str] | None = None,
+    expected_index_version: str = "",
+    actual_index_version: str = "",
 ) -> dict[str, Any]:
     index = _pred_index(predictions)
     per_sample: list[dict[str, Any]] = []
@@ -189,6 +254,14 @@ def evaluate(
     n_dist = n_dist_ok = 0
     n_sev = n_sev_ok = 0
     sec_tp = sec_fp = sec_fn = 0
+    n_id_mismatch = 0
+    n_id_missing = 0
+    table = sentence_table or {}
+    version_mismatch = bool(
+        expected_index_version
+        and actual_index_version
+        and expected_index_version != actual_index_version
+    )
 
     for gold in gold_samples:
         sid = str(gold.get("sample_id") or "")
@@ -213,6 +286,39 @@ def evaluate(
         hit_sum += ret["hit"]
         recall_sum += ret["recall"]
         precision_sum += ret["precision"]
+
+        sample_id_issues: list[dict[str, Any]] = []
+        if table:
+            gold_texts = {}
+            for item in g_ret.get("evidences") or []:
+                if not isinstance(item, dict):
+                    continue
+                try:
+                    evid_id = int(item.get("sentence_id"))
+                except (TypeError, ValueError):
+                    continue
+                gold_texts[evid_id] = str(item.get("text") or "")
+            for evid_id in gold_ids:
+                issue = _check_id_text(evid_id, gold_texts.get(evid_id, ""), table)
+                if issue == "missing_in_table":
+                    n_id_missing += 1
+                    sample_id_issues.append({"sentence_id": evid_id, "source": "gold", "issue": issue})
+                elif issue == "text_mismatch":
+                    n_id_mismatch += 1
+                    sample_id_issues.append({"sentence_id": evid_id, "source": "gold", "issue": issue})
+            for item in _pred_sentence_items(pred):
+                try:
+                    evid_id = int(item.get("sentence_id", item.get("id")))
+                except (TypeError, ValueError):
+                    continue
+                pred_text = str(item.get("text") or item.get("sentence") or "")
+                issue = _check_id_text(evid_id, pred_text, table)
+                if issue == "missing_in_table":
+                    n_id_missing += 1
+                    sample_id_issues.append({"sentence_id": evid_id, "source": "pred", "issue": issue})
+                elif issue == "text_mismatch":
+                    n_id_mismatch += 1
+                    sample_id_issues.append({"sentence_id": evid_id, "source": "pred", "issue": issue})
 
         p_clf = _pred_classification(pred)
         g_view = normalize_classification(g_clf)
@@ -274,10 +380,11 @@ def evaluate(
 
         per_sample.append(
             {
-                "sample_id": sid,
-                "matched": True,
-                "claim_zh": gold.get("claim_zh"),
-                "retrieval": ret,
+                    "sample_id": sid,
+                    "matched": True,
+                    "claim_zh": gold.get("claim_zh"),
+                    "retrieval": ret,
+                    "index_id_issues": sample_id_issues,
                 "classification": {
                     "gold": {
                         "evidence_level": g_level,
@@ -311,6 +418,13 @@ def evaluate(
             "hit_at_k": _safe_div(hit_sum, n_ret),
             "recall_at_k": _safe_div(recall_sum, n_ret),
             "precision_at_k": _safe_div(precision_sum, n_ret),
+        },
+        "index": {
+            "expected_version": expected_index_version,
+            "actual_version": actual_index_version,
+            "version_mismatch": version_mismatch,
+            "id_text_mismatches": n_id_mismatch,
+            "ids_missing_in_table": n_id_missing,
         },
         "classification": {
             "evidence_level_accuracy": _safe_div(n_level_ok, n_level),
@@ -359,6 +473,17 @@ def _print_summary(report: dict[str, Any]) -> None:
     print("  matched: %d / %d" % (s["matched_count"], s["sample_count"]))
     if s["missing_predictions"]:
         print("  missing: %s" % ", ".join(s["missing_predictions"]))
+    idx = s.get("index") or {}
+    if idx.get("version_mismatch"):
+        print(
+            "  警告: index_version 不一致 gold=%s pred=%s（sentence_id 可能错位）"
+            % (idx.get("expected_version"), idx.get("actual_version"))
+        )
+    if idx.get("id_text_mismatches") or idx.get("ids_missing_in_table"):
+        print(
+            "  警告: sentence_id 原文校验 mismatch=%s missing_in_table=%s"
+            % (idx.get("id_text_mismatches"), idx.get("ids_missing_in_table"))
+        )
     print(
         "  retrieval Hit@%d=%.3f  Recall@%d=%.3f  P@%d=%.3f"
         % (
@@ -410,6 +535,16 @@ def main() -> int:
         help="评测报告输出路径",
     )
     parser.add_argument("--k", type=int, default=5, help="检索 Hit@k / Recall@k")
+    parser.add_argument(
+        "--sentence-table",
+        default="",
+        help="冻结句表 CSV；提供则校验 gold/pred 的 sentence_id 与原文是否一致",
+    )
+    parser.add_argument(
+        "--index-meta",
+        default="",
+        help="系统当前 index_meta.json；与 benchmark.index_version 对照",
+    )
     args = parser.parse_args()
 
     bench_path = _resolve(args.benchmark)
@@ -422,10 +557,41 @@ def main() -> int:
         print("predictions 不存在: %s" % pred_path)
         return 1
 
+    bench_doc = _load_benchmark_doc(bench_path)
+    gold_samples = list(bench_doc.get("samples") or [])
+    sentence_table = None
+    table_path = _resolve(args.sentence_table) if args.sentence_table else (
+        _PROJECT_ROOT / "data" / "annotations" / str(bench_doc.get("paper_id") or "P001") / (
+            "%s_sentences.csv" % (bench_doc.get("paper_id") or "P001")
+        )
+    )
+    if table_path.is_file():
+        sentence_table = load_sentence_table(table_path)
+    if not args.index_meta:
+        paper_id = str(bench_doc.get("paper_id") or "P001")
+        meta_path = (
+            _PROJECT_ROOT / "data" / "index" / paper_id / "index_meta.json"
+        )
+        if not meta_path.is_file():
+            for candidate in (
+                _PROJECT_ROOT / "data" / "index" / "index_meta.json",
+                _PROJECT_ROOT / "arag-main" / "data" / "index" / "index_meta.json",
+            ):
+                if candidate.is_file():
+                    meta_path = candidate
+                    break
+    else:
+        meta_path = _resolve(args.index_meta)
+    actual_version = str(load_index_meta(meta_path).get("index_version") or "")
+    expected_version = str(bench_doc.get("index_version") or "")
+
     report = evaluate(
-        _load_benchmark(bench_path),
+        gold_samples,
         _load_predictions(pred_path),
         k=args.k,
+        sentence_table=sentence_table,
+        expected_index_version=expected_version,
+        actual_index_version=actual_version,
     )
     report["benchmark_path"] = str(bench_path)
     report["predictions_path"] = str(pred_path)

@@ -66,6 +66,7 @@ class RetrievalConfig:
     chunks_file: Path = CHUNKS_FILE
     index_dir: Path = INDEX_DIR
     term_cache_file: Path = TERM_CACHE_FILE
+    paper_id: str = ""
 
     # 单轮语义检索默认返回条数（Agent 未显式传 top_k 时使用）
     default_top_k: int = 10
@@ -90,10 +91,11 @@ class RetrievalConfig:
 
     @classmethod
     def from_env(cls) -> RetrievalConfig:
-        return cls(
+        config = cls(
             chunks_file=Path(get_env("ARAG_CHUNKS_FILE") or CHUNKS_FILE),
             index_dir=Path(get_env("ARAG_INDEX_DIR") or INDEX_DIR),
             term_cache_file=Path(get_env("ARAG_TERM_CACHE") or TERM_CACHE_FILE),
+            paper_id=str(get_env("ARAG_PAPER_ID") or "").strip().upper(),
             default_top_k=get_int("ARAG_DEFAULT_TOP_K", 10),
             recall_multiplier=get_int("ARAG_RECALL_MULTIPLIER", 5),
             rerank_candidates=get_int("ARAG_RERANK_CANDIDATES", 80),
@@ -105,6 +107,19 @@ class RetrievalConfig:
             max_evidences=get_int("ARAG_MAX_EVIDENCES", 12),
             thresholds=ThresholdConfig.from_env(),
         )
+        if config.paper_id and not get_env("ARAG_INDEX_DIR"):
+            from .paper_registry import apply_layout
+
+            apply_layout(config, config.paper_id)
+        return config
+
+    @classmethod
+    def for_paper(cls, paper_id: str) -> RetrievalConfig:
+        """只加载 ``data/index/<paper_id>/``，不扫其它论文。"""
+        config = cls.from_env()
+        from .paper_registry import apply_layout
+
+        return apply_layout(config, paper_id)
 
 
 @dataclass

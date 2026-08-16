@@ -14,30 +14,32 @@
 ```
 PlantSci_Hallu/
 ├── arag-main/             # 模块 A：LLM 抽句 + RAG+Agent 检索
-│   ├── retrieval_adaptor/
-│   │   ├── claim_extractor.py   # 规则分句 + LLM 核验观点句
-│   │   └── pipeline.py          # 检索流水线
-│   ├── batch_retrieval.py
-│   └── api_client/
 ├── hallu/                 # 模块 B：信息失真分类 + 证据链
-│   ├── classifier.py
-│   ├── evidence_chain.py
-│   ├── arag_bridge.py     # 调用 arag 子进程
-│   └── adapters/          # arag ↔ hallu 数据契约
-├── scripts/run.py         # 唯一编排入口
-├── data/                  # 文章 / 论文 / 标注
-└── outputs/<P>/<A>/       # 按样本分目录的运行产物
+├── scripts/run.py         # 编排入口
+├── data/
+│   ├── papers/papers_index.json   # 唯一论文清单（扩库只改这里）
+│   ├── papers/P002.pdf
+│   ├── articles/.../Pxxx_Axxx_*.md
+│   ├── corpus/P001/chunks.json    # 按篇中间产物
+│   ├── index/P001/                # 按篇向量库（只检索这一座）
+│   └── annotations/P001/          # 按篇标注与句表
+└── outputs/<P>/<A>/
 ```
+
+一篇论文一座索引：检索 P001 时只加载 `data/index/P001/`，不会扫 P002–P030。
 
 ## 快速开始
 
 ```bash
 # 依赖：Python 3.9+，arag-main/.env 中配置 Qwen / SiliconFlow 密钥
 
+# 1) 为该篇论文建库（已有完整索引则跳过）
+python scripts/ensure_index.py --paper-id P001
+
+# 2) 跑一篇公众号（自动只检索 P001）
 python scripts/run.py \
   --article data/articles/high_quality/P001_A001_黄瓜下位子房的发育机制.md \
-  --paper   data/papers/P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf \
-  --output-dir outputs/P001/A001
+  --paper-id P001
 ```
 
 ### 常用参数
@@ -50,11 +52,20 @@ python scripts/run.py \
 | `--limit N` | 只跑前 N 条（调试） |
 | `--workers 1` | arag 并发（默认 1） |
 
+### 扩到新论文
+
+1. 把 PDF 放到 `data/papers/P00x.pdf`（或在注册表填写 `pdf` 路径）
+2. 在 `data/papers/papers_index.json` 增加 `P00x` 条目与配文章
+3. `python scripts/ensure_index.py --paper-id P00x`
+
+切句规则大改时：`python scripts/ensure_index.py --paper-id P00x --rebuild`，然后按原文重对齐该篇金标 id。
+
 ### 仅跑 arag
 
 ```bash
 cd arag-main
 python batch_retrieval.py \
+  --paper-id P001 \
   --article ../data/articles/high_quality/P001_A001_黄瓜下位子房的发育机制.md \
   --claims-out ../outputs/P001/A001/claims.jsonl \
   --output ../outputs/P001/A001/_arag_run \
@@ -100,9 +111,8 @@ data/annotations/
 已有 P001 金标仍为旧 9 类扁平标签，评测脚本可读取，但**不要自动改写**。
 
 ```bash
-# 导出句表
-cd arag-main && python scripts/export_sentence_table.py --paper-id P001 \
-  -o ../data/annotations/P001/P001_sentences.csv
+# 导出句表（默认 data/index/P001/ → data/annotations/P001/P001_sentences.csv）
+cd arag-main && python scripts/export_sentence_table.py --paper-id P001
 
 # 生产：API 脚本从 pairs 生成初稿（聊天框不要一次贴整份 JSONL）
 python scripts/generate_draft_from_pairs.py \
@@ -120,6 +130,6 @@ python scripts/export_benchmark.py
 - **hallu**：claims + 证据 → 信息失真细分类 → 证据链
 - **scripts/run.py**：薄编排，不写业务逻辑
 
-> 注：观点句默认路径为「按。！？；换行切句 → 规则粗滤 → LLM 批核验 keep/drop」。  
+> 注：观点句默认路径为「按。！？换行切句（编号清单不按分号切）→ 规则筛元信息/残句 → LLM 角色核验 → 总结段去重」。  
 > 可用环境变量 `CLAIM_VERIFY_BATCH_SIZE`（默认 25）控制核验批大小。  
 > 新抽句结果与旧标注 `P001_claims.json`（54 条规则切句）条数可能不同，不可按 id 直接对齐。

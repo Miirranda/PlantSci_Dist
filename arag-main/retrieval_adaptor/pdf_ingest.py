@@ -69,8 +69,77 @@ YEAR_PATTERN = re.compile(r"\b(19[89]\d|20[0-4]\d)\b")
 # 编号式章节标题，如 "3 Method" / "3.1 Encoder"。要求标题部分含小写字母，
 # 以排除 "0 DPA" "2 KB" 这类图注/单位标签。
 NUMBERED_SECTION = re.compile(r"^(\d{1,2}(?:\.\d{1,2})*)\.?\s+([A-Z][A-Za-z0-9 ,\-:]*[a-z][A-Za-z0-9 ,\-:]{1,58})$")
-# 图表标题，不作为章节标题也不入正文
-CAPTION_PREFIX = re.compile(r"^(fig(ure)?\.?\s*\d|table\s*\d|extended\s+data|supplementary)", re.IGNORECASE)
+# 图表标题行（不含 “Supplementary analyses confirmed…” 这类正文）
+CAPTION_PREFIX = re.compile(
+    r"^(fig(ure)?\.?\s*\d|table\s*\d|extended\s+data(?:\s+fig)?|"
+    r"supplementary\s+(fig|table|data|note|information))",
+    re.IGNORECASE,
+)
+# 图注面板行：f, The phenotype...
+_PANEL_CAPTION = re.compile(r"^[a-z]{1,2},\s+\S")
+# 图注缩写表：Ad, adaxial; ab, abaxial
+_ABBREV_GLOSSARY = re.compile(
+    r"^[A-Za-z]{1,4},\s+[A-Za-z][^;]{0,48};\s*[A-Za-z]{1,4},\s+"
+)
+_SCALE_BAR = re.compile(
+    r"^(scale bars?\b|\d+(?:\.\d+)?\s*(?:μm|um|mm|cm)\s*\([a-z])",
+    re.IGNORECASE,
+)
+# 跨行切开的面板残片，避免误伤 3D / 2D / 10x
+_PANEL_RESIDUE = re.compile(
+    r"^\d+[a-z]{1,2}\b(?:\s*,\s*\d+[a-z]{1,2}\b)*\s+and\s+"
+    r"(?:supplementary|extended|fig)\b",
+    re.IGNORECASE,
+)
+# 句首图引残片：3c,d). These insights → 只剥前缀，保留正文
+_LEADING_FIG_RESIDUE = re.compile(
+    r"^\d+[a-z]{1,2}(?:\s*,\s*[a-z]{1,2})*\)\.\s+",
+    re.IGNORECASE,
+)
+# 单独成片的面板残片，禁止与后一句合并
+_PANEL_STUB = re.compile(
+    r"^\d+[a-z]{1,2}(?:\s*,\s*[a-z]{1,2})*\)\.?$",
+    re.IGNORECASE,
+)
+# 上一 chunk 停在未闭合的 (Fig. / (Extended Data Fig.
+_FIG_OPEN_TAIL = re.compile(
+    r"\((?:(?:extended\s+data|supplementary)\s+)?fig\.?$",
+    re.IGNORECASE,
+)
+_FIG_CLOSE_HEAD = re.compile(
+    r"^(\d+[a-z]{1,2}(?:\s*,\s*[a-z]{1,2})*\))",
+    re.IGNORECASE,
+)
+# Nature 页码后粘上图内标签：865 a b Basal sepal...
+_PAGE_FIGURE_DUMP = re.compile(r"\s\d{3}(?:\s+[a-z]){2,}\b", re.IGNORECASE)
+_INCOMPLETE_PAREN = re.compile(
+    r"\((?:fig|extended|supplementary|see)[^)]*$", re.IGNORECASE
+)
+_INCOMPLETE_TAIL = re.compile(
+    r"\b(and|or|the|of|in|with|from|to|for|by|that|see)\b$",
+    re.IGNORECASE,
+)
+_SCIENTIFIC_VERB = re.compile(
+    r"\b("
+    r"we|our|these|this study|results?|"
+    r"show(?:s|ed)?|reveal(?:s|ed)?|found|find|"
+    r"was|were|is|are|have|has|had|"
+    r"isolat\w*|grown|collect\w*|extract\w*|perform\w*|prepar\w*|"
+    r"us(?:e|ed)|generat\w*|confirm\w*|indicat\w*|suggest\w*|demonstrat\w*|"
+    r"observ\w*|identif\w*|compar\w*|analys[e]?d|consist\w*|"
+    r"lead(?:s|ing)|result(?:s|ed|ing)|caus(?:e|ed)|express\w*"
+    r")\b",
+    re.IGNORECASE,
+)
+_LOCUS_ID = re.compile(
+    r"\b(?:CsaV3_[A-Za-z0-9.]+|Cla97[A-Za-z0-9.]+|AtKNAT\d+|SlKN\d+)\b"
+)
+_COMMON_SHORT = frozenset(
+    {
+        "in", "of", "to", "or", "an", "we", "by", "as", "at", "on", "is",
+        "be", "it", "if", "a", "the",
+    }
+)
 
 CJK_SENTENCE_END = re.compile(r"(?<=[。！？；!?;])")
 
@@ -474,8 +543,10 @@ def parse_metadata(path: Path, extracted: ExtractResult) -> PaperDoc:
     # 首页同时印着投稿年与出版年（Received 2024 / April 2025），取最大值即发表年
     years = YEAR_PATTERN.findall(head_text)
 
+    from .paper_registry import canonical_paper_id
+
     doc = PaperDoc(
-        paper_id=path.stem,
+        paper_id=canonical_paper_id(path.stem) or path.stem,
         title=title,
         authors=_guess_authors(first_page, title),
         year=max(years) if years else "",
@@ -554,6 +625,227 @@ def _is_front_matter_noise(text: str) -> bool:
     return False
 
 
+# 作者/刊名粘在引言开头时，从真正的科学句切开
+_BODY_LAUNCH = re.compile(
+    r"\b("
+    r"In (?:flowering|this|the|a|an|our)|"
+    r"The (?:spatial|developmental|genetic|present|current|adaptive)|"
+    r"However,|"
+    r"Here we|"
+    r"This (?:study|work|paper)|"
+    r"These (?:results|data|organs)|"
+    r"We (?:annotated|found|show|report|used|inferred)|"
+    r"Inferior ovaries|"
+    r"A typical flower"
+    r")\b"
+)
+
+
+def peel_glued_front_matter(text: str) -> str:
+    """若一行把刊名/作者粘在引言前，只保留科学句。"""
+    stripped = (text or "").strip()
+    if len(stripped) < 40:
+        return stripped
+    match = _BODY_LAUNCH.search(stripped)
+    if match and match.start() >= 12:
+        prefix = stripped[: match.start()]
+        if (
+            "nature plants" in prefix.lower()
+            or re.search(r"\d", prefix)
+            or _is_author_byline(prefix.rstrip("."))
+        ):
+            return stripped[match.start() :].strip()
+    return stripped
+
+
+def _strip_leading_fig_residue(text: str) -> str:
+    """剥掉句首的 3c,d). 残片，保留后面的科学句；句中 (Fig. 3c,d) 不动。"""
+    stripped = (text or "").strip()
+    cleaned = _LEADING_FIG_RESIDUE.sub("", stripped, count=1).strip()
+    return cleaned or stripped
+
+
+def _strip_embedded_figure(text: str) -> str:
+    """去掉句中粘上的页码+图注 OCR（保留页码前的科学句）。"""
+    match = _PAGE_FIGURE_DUMP.search(text or "")
+    if not match:
+        return (text or "").strip()
+    return (text or "")[: match.start()].rstrip(" ,;:")
+
+
+def _has_scientific_verb(text: str) -> bool:
+    return bool(_SCIENTIFIC_VERB.search(text or ""))
+
+
+def _looks_like_figure_dump(text: str) -> bool:
+    """短标签占比过高视为图内 OCR，不计 in/of/we 等功能词。"""
+    tokens = (text or "").split()
+    if len(tokens) < 16:
+        return False
+    short = 0
+    for token in tokens:
+        core = re.sub(r"[^A-Za-z0-9]", "", token)
+        if not core or core.lower() in _COMMON_SHORT:
+            continue
+        if len(core) <= 2:
+            short += 1
+    return (short / len(tokens)) >= 0.35
+
+
+def _looks_like_phylo_leaf(text: str) -> bool:
+    """进化树叶节点：基因座 + bootstrap/物种，且没有科学谓语。"""
+    if _has_scientific_verb(text):
+        return False
+    if not _LOCUS_ID.search(text or ""):
+        return False
+    numbers = re.findall(r"\b\d{2,3}\b", text)
+    species = bool(re.search(r"\b[A-Z][a-z]+\s+(?:[a-z]{3,}|L\.)", text or ""))
+    return len(numbers) >= 1 or species
+
+
+def _is_affiliation_line(text: str) -> bool:
+    lowered = text.lower()
+    if not any(word in lowered for word in AFFILIATION_WORDS):
+        return False
+    if _has_scientific_verb(text):
+        return False
+    return text[:1].isdigit() or text.endswith(("China.", "USA.", "UK.", "China", "USA"))
+
+
+def is_indexable_sentence(text: str, *, min_chars: int = 30) -> bool:
+    """检索库应收的英文句：完整科学陈述，排除刊头、作者、机构、图注。"""
+    stripped = _strip_embedded_figure(_strip_leading_fig_residue(text))
+    if len(stripped) < min_chars:
+        return False
+    if not re.search(r"[A-Za-z]{3}", stripped):
+        return False
+    if CAPTION_PREFIX.match(stripped) and not _has_scientific_verb(stripped):
+        return False
+    if _PANEL_CAPTION.match(stripped) or _ABBREV_GLOSSARY.match(stripped):
+        return False
+    if _SCALE_BAR.match(stripped) or _PANEL_RESIDUE.match(stripped):
+        return False
+    if _is_front_matter_noise(stripped) or _is_affiliation_line(stripped):
+        return False
+    lowered = stripped.lower()
+    if re.match(r"^\d+[A-Z]", stripped) and "," in stripped and not _has_scientific_verb(stripped):
+        return False
+    if lowered.startswith("nature plants"):
+        return False
+    if "contributed equally" in lowered:
+        return False
+    if stripped[:1].islower():
+        return False
+    if re.match(r"^\d{3}\s+[a-z]\b", stripped, re.IGNORECASE):
+        return False
+    if _looks_like_figure_dump(stripped) or _looks_like_phylo_leaf(stripped):
+        return False
+    if _LOCUS_ID.match(stripped) and not _has_scientific_verb(stripped):
+        return False
+    if not re.search(r"[.!?]$", stripped):
+        caps = re.findall(r"\b[A-Z][a-z]{6,}\b", stripped)
+        if len(caps) >= 8:
+            return False
+    if _INCOMPLETE_PAREN.search(stripped):
+        return False
+    if len(stripped) < 90 and _INCOMPLETE_TAIL.search(stripped.rstrip(" .")):
+        return False
+    return True
+
+
+_EN_ABBREVIATIONS = frozenset(
+    {
+        "e.g", "i.e", "et al", "cf", "vs", "resp", "approx", "ca", "etc",
+        "fig", "figs", "figure", "eq", "sec", "tab", "table", "ref", "no",
+        "vol", "pp", "al", "dr", "mr", "mrs", "ms", "prof", "ext",
+    }
+)
+_EN_SENTENCE_BOUNDARY = re.compile(r"(?<=[.!?])\s+")
+_PANEL_START = re.compile(r"^(\d+[a-z]{0,2}\b|extended|s\d)", re.IGNORECASE)
+
+
+def split_english_sentences(text: str, *, min_chars: int = 30) -> list[str]:
+    """英文分句：保护 Fig. 1 / et al.，并丢掉不可检索噪声句。"""
+    normalized = re.sub(r"\s+", " ", text or "").strip()
+    if not normalized:
+        return []
+    pieces = _EN_SENTENCE_BOUNDARY.split(normalized)
+    merged: list[str] = []
+    for piece in pieces:
+        candidate = piece.strip()
+        if not candidate:
+            continue
+        if merged and _should_merge_english(merged[-1], candidate):
+            merged[-1] = "%s %s" % (merged[-1], candidate)
+            continue
+        if _PANEL_STUB.match(candidate):
+            continue
+        merged.append(candidate)
+    cleaned = [
+        _strip_embedded_figure(_strip_leading_fig_residue(sent)) for sent in merged
+    ]
+    return [sent for sent in cleaned if is_indexable_sentence(sent, min_chars=min_chars)]
+
+
+def _should_merge_english(previous: str, candidate: str) -> bool:
+    if _PANEL_STUB.match(previous.strip()):
+        return False
+    last = previous.rstrip(".").rsplit(" ", 1)[-1]
+    tail = re.sub(r"[^A-Za-z]+", "", last).lower()
+    if tail in _EN_ABBREVIATIONS:
+        return True
+    if len(previous) < 15:
+        return True
+    if _PANEL_START.match(candidate) and tail in {
+        "fig", "figs", "figure", "table", "tab", "eq", "extended",
+    }:
+        return True
+    return False
+
+
+def repair_cross_chunk_sentences(chunks: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """把跨 chunk 切断的半句拼回去（例如 evolution / and are present）。"""
+    if len(chunks) < 2:
+        return chunks
+    repaired: list[dict[str, Any]] = [dict(chunks[0])]
+    for nxt in chunks[1:]:
+        current = dict(nxt)
+        prev = repaired[-1]
+        prev_text = str(prev.get("text") or "").rstrip()
+        next_text = str(current.get("text") or "").lstrip()
+        same_paper = str(prev.get("paper_id") or "") == str(current.get("paper_id") or "")
+        fig_close = _FIG_CLOSE_HEAD.match(next_text) if same_paper else None
+        if fig_close and _FIG_OPEN_TAIL.search(prev_text):
+            close_end = fig_close.end()
+            if close_end < len(next_text) and next_text[close_end] == ".":
+                close_end += 1
+            prev["text"] = (prev_text + " " + next_text[:close_end]).strip()
+            rest = next_text[close_end:].lstrip()
+            if rest:
+                current["text"] = rest
+                repaired.append(current)
+            continue
+        same_section = str(prev.get("section") or "") == str(current.get("section") or "")
+        incomplete = bool(prev_text) and not re.search(r'[.!?]["\')\]]*$', prev_text)
+        if same_paper and same_section and incomplete and next_text:
+            if prev_text.endswith("-") and next_text[:1].islower():
+                prev["text"] = prev_text[:-1] + next_text
+                continue
+            match = re.search(r"[.!?]\s+", next_text)
+            if match:
+                prev["text"] = (prev_text + " " + next_text[: match.end()]).strip()
+                rest = next_text[match.end() :].strip()
+                if rest:
+                    current["text"] = rest
+                    repaired.append(current)
+                continue
+            prev["text"] = prev_text + " " + next_text
+            continue
+        if str(current.get("text") or "").strip():
+            repaired.append(current)
+    return repaired
+
+
 def _is_section_like(text: str) -> bool:
     """字号判出的标题还要看写法像不像章节名。
 
@@ -617,6 +909,7 @@ def split_paper_into_chunks(
     buffer_page = doc.pages[0][0] if doc.pages else 1
     previous_block = -1
     skipping = False
+    skipping_caption = False
 
     # 切块在攒够 target_chars 时触发，若保留下限高于它，每一块都会在切出后被丢弃，
     # 正文会被静默吞掉。因此把下限压到目标长度之下。
@@ -624,7 +917,7 @@ def split_paper_into_chunks(
 
     def flush() -> None:
         nonlocal buffer
-        text = re.sub(r"[ \t]+", " ", " ".join(buffer)).strip()
+        text = peel_glued_front_matter(re.sub(r"[ \t]+", " ", " ".join(buffer)).strip())
         if len(text) >= keep_floor:
             chunks.append(
                 {"text": text, "section": current_section, "page": str(buffer_page), **metadata}
@@ -644,6 +937,7 @@ def split_paper_into_chunks(
         heading = (named_section or raw_text) if is_heading_line else ""
 
         if heading:
+            skipping_caption = False
             if _is_stop_section(heading):
                 flush()
                 skipping = True
@@ -666,8 +960,23 @@ def split_paper_into_chunks(
                 buffer_page = line.page
             continue
 
-        # 图表标题与首页元信息都不入正文
+        # 图表标题与首页元信息都不入正文；图注换行第二行一并跳过
         if CAPTION_PREFIX.match(raw_text) or _is_front_matter_noise(raw_text):
+            skipping_caption = bool(CAPTION_PREFIX.match(raw_text))
+            continue
+        if skipping_caption:
+            if (
+                raw_text[:1].islower()
+                or _PANEL_CAPTION.match(raw_text)
+                or _SCALE_BAR.match(raw_text)
+                or (
+                    len(raw_text) <= 90 and not raw_text.endswith((".", "?", "!"))
+                )
+            ):
+                continue
+            skipping_caption = False
+        if _PANEL_CAPTION.match(raw_text) or _SCALE_BAR.match(raw_text):
+            skipping_caption = True
             continue
 
         # 换块视为段落边界，够长就切
@@ -686,7 +995,7 @@ def split_paper_into_chunks(
             buffer_page = line.page
 
     flush()
-    return _repair_hyphenation(chunks)
+    return repair_cross_chunk_sentences(_repair_hyphenation(chunks))
 
 
 def _repair_hyphenation(chunks: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -704,16 +1013,33 @@ def ingest_papers(
     *,
     target_chars: int = 1200,
     verbose: bool = True,
+    paper_id: str = "",
+    allow_multiple: bool = True,
 ) -> list[dict[str, Any]]:
-    """扫描目录下所有 PDF，产出统一编号的 chunk 列表。"""
-    pdf_files = sorted(Path(papers_dir).glob("*.pdf"))
+    """扫描目录下所有 PDF，或接受单个 PDF 路径，产出统一编号的 chunk 列表。
+
+    生产建库应 ``allow_multiple=False`` 且传入注册表中的短 ``paper_id``，
+    避免多篇论文共享一套全局 sentence_id。
+    """
+    papers_dir = Path(papers_dir)
+    if papers_dir.is_file() and papers_dir.suffix.lower() == ".pdf":
+        pdf_files = [papers_dir]
+    else:
+        pdf_files = sorted(papers_dir.glob("*.pdf"))
     if not pdf_files:
         raise FileNotFoundError("%s 下没有找到任何 PDF" % papers_dir)
+    if not allow_multiple and len(pdf_files) > 1:
+        raise ValueError(
+            "一次只允许摄入一篇 PDF（发现 %d 个）。请改用 --paper-id 指定单篇。"
+            % len(pdf_files)
+        )
 
     all_chunks: list[dict[str, Any]] = []
     for pdf_path in pdf_files:
         extracted = extract_pdf(pdf_path)
         doc = parse_metadata(pdf_path, extracted)
+        if paper_id:
+            doc.paper_id = paper_id
         chunks = split_paper_into_chunks(doc, target_chars=target_chars)
         if verbose:
             print(

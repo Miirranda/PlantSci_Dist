@@ -33,7 +33,7 @@ def save_claims_jsonl(claims: list[dict[str, Any]], path: str | Path) -> Path:
                 "claim_id": claim.get("id") or claim.get("claim_id"),
                 "claim_zh": claim.get("claim_text") or claim.get("claim_zh") or "",
             }
-            for key in ("context_before", "context_after", "section"):
+            for key in ("claim_role", "context_before", "context_after", "section"):
                 if claim.get(key):
                     row[key] = claim[key]
             f.write(json.dumps(row, ensure_ascii=False) + "\n")

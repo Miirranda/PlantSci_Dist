@@ -17,8 +17,8 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from retrieval_adaptor.config import INDEX_DIR  # noqa: E402
 from retrieval_adaptor.index_store import IndexStore  # noqa: E402
+from retrieval_adaptor.paper_registry import canonical_paper_id, layout_for  # noqa: E402
 
 
 def main() -> int:
@@ -26,10 +26,10 @@ def main() -> int:
     parser.add_argument(
         "--index-dir",
         type=Path,
-        default=INDEX_DIR,
-        help="索引目录（含 sentence_index.pkl）",
+        default=None,
+        help="索引目录（默认 data/index/<paper_id>/）",
     )
-    parser.add_argument("--paper-id", default="", help="写入 CSV 的 paper_id 列（可选）")
+    parser.add_argument("--paper-id", default="", help="短论文 id，如 P001")
     parser.add_argument(
         "-o",
         "--output",
@@ -39,18 +39,29 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    store = IndexStore(args.index_dir)
-    paper_id = str(args.paper_id or "").strip()
+    paper_id = canonical_paper_id(args.paper_id)
+    if args.index_dir is not None:
+        index_dir = args.index_dir
+    elif paper_id:
+        index_dir = layout_for(paper_id).index_dir
+    else:
+        parser.error("请提供 --paper-id 或 --index-dir")
+        return 2
+
+    store = IndexStore(index_dir)
+    paper_id = paper_id or str(getattr(store, "paper_id", "") or "")
     output = args.output
     if output is None:
-        name = "%s_sentences.csv" % (paper_id or "index")
-        output = PROJECT_ROOT.parent / "data" / "annotations" / name
-        if not output.parent.exists():
-            output = Path(args.index_dir) / name
+        if paper_id:
+            output = layout_for(paper_id).sentences_csv
+        else:
+            output = Path(index_dir) / "index_sentences.csv"
 
     path = store.export_sentence_table(output, paper_id=paper_id)
     print("句表: %d 句 -> %s" % (len(store), path))
     print("索引信息: %s" % store.describe())
+    if getattr(store, "index_version", ""):
+        print("index_version: %s" % store.index_version)
     if store.built_at:
         print("built_at: %s" % store.built_at)
     return 0

@@ -1,0 +1,410 @@
+[
+  {
+    "id": "C01",
+    "claim_text": "该研究通过空间转录组技术和细胞谱系追踪，首次揭示了黄瓜下位子房的发育机制，并阐明了KNOX1转录因子在葫芦科植物花器官发育和性别决定中的核心作用。",
+    "claim_role": "paper_lead",
+    "context_before": "",
+    "context_after": "在开花植物中，子房相对于其他花器官的位置是重要分类学特征之一。",
+    "section": ""
+  },
+  {
+    "id": "C02",
+    "claim_text": "在开花植物中，子房相对于其他花器官的位置是重要分类学特征之一。",
+    "claim_role": "paper_intro",
+    "context_before": "该研究通过空间转录组技术和细胞谱系追踪，首次揭示了黄瓜下位子房的发育机制，并阐明了KNOX1转录因子在葫芦科植物花器官发育和性别决定中的核心作用。",
+    "context_after": "根据子房与其他外轮花器官（萼片、花瓣、雄蕊）的相对位置关系，可分为上位子房（superior ovary）和下位子房（inferior ovary）。",
+    "section": "研究背景"
+  },
+  {
+    "id": "C03",
+    "claim_text": "根据子房与其他外轮花器官（萼片、花瓣、雄蕊）的相对位置关系，可分为上位子房（superior ovary）和下位子房（inferior ovary）。",
+    "claim_role": "paper_intro",
+    "context_before": "在开花植物中，子房相对于其他花器官的位置是重要分类学特征之一。",
+    "context_after": "下位子房被认为是被子植物多次独立进化出的关键创新性状，其结构可更好地保护雌蕊并为胚珠发育分配更多能量。",
+    "section": "研究背景"
+  },
+  {
+    "id": "C04",
+    "claim_text": "下位子房被认为是被子植物多次独立进化出的关键创新性状，其结构可更好地保护雌蕊并为胚珠发育分配更多能量。",
+    "claim_role": "paper_intro",
+    "context_before": "根据子房与其他外轮花器官（萼片、花瓣、雄蕊）的相对位置关系，可分为上位子房（superior ovary）和下位子房（inferior ovary）。",
+    "context_after": "葫芦科（Cucurbitaceae）植物（如黄瓜、西瓜、甜瓜等）果实均来源于下位子房，且多为单性花，但下位子房形成机制及其与性别决定机制的关系还尚未明确。",
+    "section": "研究背景"
+  },
+  {
+    "id": "C05",
+    "claim_text": "葫芦科（Cucurbitaceae）植物（如黄瓜、西瓜、甜瓜等）果实均来源于下位子房，且多为单性花，但下位子房形成机制及其与性别决定机制的关系还尚未明确。",
+    "claim_role": "paper_intro",
+    "context_before": "下位子房被认为是被子植物多次独立进化出的关键创新性状，其结构可更好地保护雌蕊并为胚珠发育分配更多能量。",
+    "context_after": "黄瓜（Cucumis sativus）和番茄（Solanum lycopersicum）具有相似花器官结构，但前者为下位子房和单性花，后者为上位子房和两性花，是研究子房位置和性别决定机制的理想模式植物。",
+    "section": "研究背景"
+  },
+  {
+    "id": "C06",
+    "claim_text": "黄瓜（Cucumis sativus）和番茄（Solanum lycopersicum）具有相似花器官结构，但前者为下位子房和单性花，后者为上位子房和两性花，是研究子房位置和性别决定机制的理想模式植物。",
+    "claim_role": "paper_intro",
+    "context_before": "葫芦科（Cucurbitaceae）植物（如黄瓜、西瓜、甜瓜等）果实均来源于下位子房，且多为单性花，但下位子房形成机制及其与性别决定机制的关系还尚未明确。",
+    "context_after": "本研究首先构建了502个被子植物物种进化树，包含花性别和子房位置信息（图1a），其中单性花和子房下位性状在进化过程中独立出现多次，但在葫芦科植物及其近缘种中连锁出现，说明这两个性状可能来自于同一进化事件。",
+    "section": "研究背景"
+  },
+  {
+    "id": "C07",
+    "claim_text": "本研究首先构建了502个被子植物物种进化树，包含花性别和子房位置信息（图1a），其中单性花和子房下位性状在进化过程中独立出现多次，但在葫芦科植物及其近缘种中连锁出现，说明这两个性状可能来自于同一进化事件。",
+    "claim_role": "paper_result",
+    "context_before": "黄瓜（Cucumis sativus）和番茄（Solanum lycopersicum）具有相似花器官结构，但前者为下位子房和单性花，后者为上位子房和两性花，是研究子房位置和性别决定机制的理想模式植物。",
+    "context_after": "为探究葫芦科植物子房下位发育进程，对黄瓜花发育过程进行了石蜡切片观察（图1b），同时以子房上位的番茄作为对比进行观察（图1d）。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C08",
+    "claim_text": "为探究葫芦科植物子房下位发育进程，对黄瓜花发育过程进行了石蜡切片观察（图1b），同时以子房上位的番茄作为对比进行观察（图1d）。",
+    "claim_role": "paper_method",
+    "context_before": "本研究首先构建了502个被子植物物种进化树，包含花性别和子房位置信息（图1a），其中单性花和子房下位性状在进化过程中独立出现多次，但在葫芦科植物及其近缘种中连锁出现，说明这两个性状可能来自于同一进化事件。",
+    "context_after": "结果发现，黄瓜发育过程中，分生组织边缘膨大、中间凹陷，并在膨大分生组织内部分化出萼片、花瓣、雄蕊和心皮原基（图1c）；而番茄花分生组织中间凸起，在其侧面形成各花器官原基（图1e）。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C09",
+    "claim_text": "结果发现，黄瓜发育过程中，分生组织边缘膨大、中间凹陷，并在膨大分生组织内部分化出萼片、花瓣、雄蕊和心皮原基（图1c）；而番茄花分生组织中间凸起，在其侧面形成各花器官原基（图1e）。",
+    "claim_role": "paper_result",
+    "context_before": "为探究葫芦科植物子房下位发育进程，对黄瓜花发育过程进行了石蜡切片观察（图1b），同时以子房上位的番茄作为对比进行观察（图1d）。",
+    "context_after": "说明黄瓜子房下位形成的必要条件为：（1）花分生组织膨大，改变花器官轮相对位置；（2）花托迅速生长；（3）花托和心皮融合。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C10",
+    "claim_text": "说明黄瓜子房下位形成的必要条件为：（1）花分生组织膨大，改变花器官轮相对位置；（2）花托迅速生长；（3）花托和心皮融合。",
+    "claim_role": "paper_result",
+    "context_before": "结果发现，黄瓜发育过程中，分生组织边缘膨大、中间凹陷，并在膨大分生组织内部分化出萼片、花瓣、雄蕊和心皮原基（图1c）；而番茄花分生组织中间凸起，在其侧面形成各花器官原基（图1e）。",
+    "context_after": "为解析黄瓜子房下位基因调控网络，对黄瓜花芽分化S1-S8时期的纵截面和S8-4时期、花后0天（0 DAP）子房的横截面进行了Stereo-seq空间转录组测序。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C11",
+    "claim_text": "为解析黄瓜子房下位基因调控网络，对黄瓜花芽分化S1-S8时期的纵截面和S8-4时期、花后0天（0 DAP）子房的横截面进行了Stereo-seq空间转录组测序。",
+    "claim_role": "paper_method",
+    "context_before": "说明黄瓜子房下位形成的必要条件为：（1）花分生组织膨大，改变花器官轮相对位置；（2）花托迅速生长；（3）花托和心皮融合。",
+    "context_after": "经数据降维后，所有样品的细胞共被分为41个聚类（cluster）（图2a），通过特异性标记基因表达模式（图2b）及其空间分布（图2c）进一步验证了这些聚类的组织特异性。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C12",
+    "claim_text": "经数据降维后，所有样品的细胞共被分为41个聚类（cluster）（图2a），通过特异性标记基因表达模式（图2b）及其空间分布（图2c）进一步验证了这些聚类的组织特异性。",
+    "claim_role": "paper_result",
+    "context_before": "为解析黄瓜子房下位基因调控网络，对黄瓜花芽分化S1-S8时期的纵截面和S8-4时期、花后0天（0 DAP）子房的横截面进行了Stereo-seq空间转录组测序。",
+    "context_after": "其中，cluster 26、27、28位于心皮和花托之间，分别将其命名为“连接原基”“连接组织早期”和“连接组织晚期”。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C13",
+    "claim_text": "其中，cluster 26、27、28位于心皮和花托之间，分别将其命名为“连接原基”“连接组织早期”和“连接组织晚期”。",
+    "claim_role": "paper_result",
+    "context_before": "经数据降维后，所有样品的细胞共被分为41个聚类（cluster）（图2a），通过特异性标记基因表达模式（图2b）及其空间分布（图2c）进一步验证了这些聚类的组织特异性。",
+    "context_after": "S6-S8时期与心皮、花托以及连接组织相关的细胞聚类如图2d，其中连接组织不仅表达心皮和花托的标记基因（AG1、CRC），也特异性表达两性花发育基因ACS2（图2e），说明连接组织在子房发育和性别决定中可能同时起作用。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C14",
+    "claim_text": "S6-S8时期与心皮、花托以及连接组织相关的细胞聚类如图2d，其中连接组织不仅表达心皮和花托的标记基因（AG1、CRC），也特异性表达两性花发育基因ACS2（图2e），说明连接组织在子房发育和性别决定中可能同时起作用。",
+    "claim_role": "paper_result",
+    "context_before": "其中，cluster 26、27、28位于心皮和花托之间，分别将其命名为“连接原基”“连接组织早期”和“连接组织晚期”。",
+    "context_after": "利用空间转录组数据绘制了花器官发生轨迹，并根据cluster之间的关系重构细胞谱系（图3a）。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C15",
+    "claim_text": "利用空间转录组数据绘制了花器官发生轨迹，并根据cluster之间的关系重构细胞谱系（图3a）。",
+    "claim_role": "paper_method",
+    "context_before": "S6-S8时期与心皮、花托以及连接组织相关的细胞聚类如图2d，其中连接组织不仅表达心皮和花托的标记基因（AG1、CRC），也特异性表达两性花发育基因ACS2（图2e），说明连接组织在子房发育和性别决定中可能同时起作用。",
+    "context_after": "各细胞谱系的空间分布与其发育轨迹相同（图3b）。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C16",
+    "claim_text": "各细胞谱系的空间分布与其发育轨迹相同（图3b）。",
+    "claim_role": "paper_result",
+    "context_before": "利用空间转录组数据绘制了花器官发生轨迹，并根据cluster之间的关系重构细胞谱系（图3a）。",
+    "context_after": "研究发现，S7后花基部分生组织（FIM）与花托原基活跃地进行细胞分裂（图3a），可能是花托快速生长从而导致与心皮融合的原因。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C17",
+    "claim_text": "研究发现，S7后花基部分生组织（FIM）与花托原基活跃地进行细胞分裂（图3a），可能是花托快速生长从而导致与心皮融合的原因。",
+    "claim_role": "paper_result",
+    "context_before": "各细胞谱系的空间分布与其发育轨迹相同（图3b）。",
+    "context_after": "拟时序分析发现，其发育顺序为：FIM-花托-连接组织（图3c-d）。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C18",
+    "claim_text": "拟时序分析发现，其发育顺序为：FIM-花托-连接组织（图3c-d）。",
+    "claim_role": "paper_result",
+    "context_before": "研究发现，S7后花基部分生组织（FIM）与花托原基活跃地进行细胞分裂（图3a），可能是花托快速生长从而导致与心皮融合的原因。",
+    "context_after": "基于以上结果，推测黄瓜心皮外的果肉是由花托发育而来（图3e），因此花托及其相关组织的研究对遗传改良意义重大。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C19",
+    "claim_text": "基于以上结果，推测黄瓜心皮外的果肉是由花托发育而来（图3e），因此花托及其相关组织的研究对遗传改良意义重大。",
+    "claim_role": "paper_conclusion",
+    "context_before": "拟时序分析发现，其发育顺序为：FIM-花托-连接组织（图3c-d）。",
+    "context_after": "为探究花托起始形成过程中的基因动态表达和细胞基础，对S1-S4时期花芽进行近单细胞分辨率的无监督聚类分析，共分为7个cluster（图4a-b），其中花托原基（RP）和扩展花分生组织（EFM）的起始和发育决定着“凹”形花分生组织的形态发生。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C20",
+    "claim_text": "为探究花托起始形成过程中的基因动态表达和细胞基础，对S1-S4时期花芽进行近单细胞分辨率的无监督聚类分析，共分为7个cluster（图4a-b），其中花托原基（RP）和扩展花分生组织（EFM）的起始和发育决定着“凹”形花分生组织的形态发生。",
+    "claim_role": "paper_method",
+    "context_before": "基于以上结果，推测黄瓜心皮外的果肉是由花托发育而来（图3e），因此花托及其相关组织的研究对遗传改良意义重大。",
+    "context_after": "RNA速率分析和拟时序分析揭示了这些cluster的发育轨迹：起源于花基部分生组织（FIM），分为3条发育路径，其中一条分化为表皮（E），另外两条经过扩展花分生组织（EFM）分别分化为花原基（FP）和花托原基（RP）（图4c-d）。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C21",
+    "claim_text": "RNA速率分析和拟时序分析揭示了这些cluster的发育轨迹：起源于花基部分生组织（FIM），分为3条发育路径，其中一条分化为表皮（E），另外两条经过扩展花分生组织（EFM）分别分化为花原基（FP）和花托原基（RP）（图4c-d）。",
+    "claim_role": "paper_result",
+    "context_before": "为探究花托起始形成过程中的基因动态表达和细胞基础，对S1-S4时期花芽进行近单细胞分辨率的无监督聚类分析，共分为7个cluster（图4a-b），其中花托原基（RP）和扩展花分生组织（EFM）的起始和发育决定着“凹”形花分生组织的形态发生。",
+    "context_after": "在拟时序分析中筛选出一些关键基因，其表达热图及空间定位见图4e-f，并对其中一些基因进行了RNA原位杂交验证（图4g）。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C22",
+    "claim_text": "在拟时序分析中筛选出一些关键基因，其表达热图及空间定位见图4e-f，并对其中一些基因进行了RNA原位杂交验证（图4g）。",
+    "claim_role": "paper_method",
+    "context_before": "RNA速率分析和拟时序分析揭示了这些cluster的发育轨迹：起源于花基部分生组织（FIM），分为3条发育路径，其中一条分化为表皮（E），另外两条经过扩展花分生组织（EFM）分别分化为花原基（FP）和花托原基（RP）（图4c-d）。",
+    "context_after": "根据细胞聚类位置，将这些cluster分为内部区域（FP）和外部区域（E、RP和EFM）（图4h）。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C23",
+    "claim_text": "根据细胞聚类位置，将这些cluster分为内部区域（FP）和外部区域（E、RP和EFM）（图4h）。",
+    "claim_role": "paper_result",
+    "context_before": "在拟时序分析中筛选出一些关键基因，其表达热图及空间定位见图4e-f，并对其中一些基因进行了RNA原位杂交验证（图4g）。",
+    "context_after": "通过统计内部和外部区域的细胞数量及面积发现，EFM初始形态变化是由于外部区域细胞快速增殖（图4i-j），从而促进外侧分生组织后续扩大。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C24",
+    "claim_text": "通过统计内部和外部区域的细胞数量及面积发现，EFM初始形态变化是由于外部区域细胞快速增殖（图4i-j），从而促进外侧分生组织后续扩大。",
+    "claim_role": "paper_result",
+    "context_before": "根据细胞聚类位置，将这些cluster分为内部区域（FP）和外部区域（E、RP和EFM）（图4h）。",
+    "context_after": "S5时期后，花托相关bin数量急剧上升（图5a），说明此阶段后花托快速生长。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C25",
+    "claim_text": "S5时期后，花托相关bin数量急剧上升（图5a），说明此阶段后花托快速生长。",
+    "claim_role": "paper_result",
+    "context_before": "通过统计内部和外部区域的细胞数量及面积发现，EFM初始形态变化是由于外部区域细胞快速增殖（图4i-j），从而促进外侧分生组织后续扩大。",
+    "context_after": "为探究花托快速生长的调控机制，对花托及FIM相关cluster进行了细胞轨迹重建。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C26",
+    "claim_text": "为探究花托快速生长的调控机制，对花托及FIM相关cluster进行了细胞轨迹重建。",
+    "claim_role": "paper_method",
+    "context_before": "S5时期后，花托相关bin数量急剧上升（图5a），说明此阶段后花托快速生长。",
+    "context_after": "3D UMAP散点图显示，这些细胞被重新聚类为6个cluster（图5b），根据标记基因，确定其中4个cluster与细胞周期相关（GO/G1、G2、S、M），另外2个分别为花托原基（RP）和花基部分生组织（FIM）（图5c）。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C27",
+    "claim_text": "3D UMAP散点图显示，这些细胞被重新聚类为6个cluster（图5b），根据标记基因，确定其中4个cluster与细胞周期相关（GO/G1、G2、S、M），另外2个分别为花托原基（RP）和花基部分生组织（FIM）（图5c）。",
+    "claim_role": "paper_result",
+    "context_before": "为探究花托快速生长的调控机制，对花托及FIM相关cluster进行了细胞轨迹重建。",
+    "context_after": "根据其空间分布，发现花托细胞增殖主要由激活S期细胞活动调控（图5d）。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C28",
+    "claim_text": "根据其空间分布，发现花托细胞增殖主要由激活S期细胞活动调控（图5d）。",
+    "claim_role": "paper_result",
+    "context_before": "3D UMAP散点图显示，这些细胞被重新聚类为6个cluster（图5b），根据标记基因，确定其中4个cluster与细胞周期相关（GO/G1、G2、S、M），另外2个分别为花托原基（RP）和花基部分生组织（FIM）（图5c）。",
+    "context_after": "在花发育轨迹中标注不同cluster上/下调表达基因，发现调控心皮器官决定和单性花表型的转录因子CRC在S4/5后的花托中高表达（图5e）。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C29",
+    "claim_text": "在花发育轨迹中标注不同cluster上/下调表达基因，发现调控心皮器官决定和单性花表型的转录因子CRC在S4/5后的花托中高表达（图5e）。",
+    "claim_role": "paper_result",
+    "context_before": "根据其空间分布，发现花托细胞增殖主要由激活S期细胞活动调控（图5d）。",
+    "context_after": "通过空间共表达模块分析筛选与CRC共表达的基因，结果显示共聚类到17个模块中（M1-M17）（图5f），其中M14分布于花托（图5h）。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C30",
+    "claim_text": "通过空间共表达模块分析筛选与CRC共表达的基因，结果显示共聚类到17个模块中（M1-M17）（图5f），其中M14分布于花托（图5h）。",
+    "claim_role": "paper_result",
+    "context_before": "在花发育轨迹中标注不同cluster上/下调表达基因，发现调控心皮器官决定和单性花表型的转录因子CRC在S4/5后的花托中高表达（图5e）。",
+    "context_after": "在M14中与CRC高度相关的基因包括KNAT2-like1、ER、DIN10、CA1P等（图5g），其中KNAT2-like1和ER在细胞分裂S期富集表达，DIN10和CA1P影响碳水积累并加强吸收。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C31",
+    "claim_text": "在M14中与CRC高度相关的基因包括KNAT2-like1、ER、DIN10、CA1P等（图5g），其中KNAT2-like1和ER在细胞分裂S期富集表达，DIN10和CA1P影响碳水积累并加强吸收。",
+    "claim_role": "paper_result",
+    "context_before": "通过空间共表达模块分析筛选与CRC共表达的基因，结果显示共聚类到17个模块中（M1-M17）（图5f），其中M14分布于花托（图5h）。",
+    "context_after": "以上结果说明，花托的快速生长以“库”容量信号为核心，整合KNAT2-like1、CRC和ER来调节细胞增殖。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C32",
+    "claim_text": "以上结果说明，花托的快速生长以“库”容量信号为核心，整合KNAT2-like1、CRC和ER来调节细胞增殖。",
+    "claim_role": "paper_conclusion",
+    "context_before": "在M14中与CRC高度相关的基因包括KNAT2-like1、ER、DIN10、CA1P等（图5g），其中KNAT2-like1和ER在细胞分裂S期富集表达，DIN10和CA1P影响碳水积累并加强吸收。",
+    "context_after": "为探究KNAT2-like1基因功能，构建了黄瓜KNAT2-like1敲除突变体k-1和k-2（图6a）。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C33",
+    "claim_text": "为探究KNAT2-like1基因功能，构建了黄瓜KNAT2-like1敲除突变体k-1和k-2（图6a）。",
+    "claim_role": "paper_method",
+    "context_before": "以上结果说明，花托的快速生长以“库”容量信号为核心，整合KNAT2-like1、CRC和ER来调节细胞增殖。",
+    "context_after": "k-1和k-2出现子房上位和双性花表型，而其回补株系（C-1、C-2）表型与野生型类似（图6b）。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C34",
+    "claim_text": "k-1和k-2出现子房上位和双性花表型，而其回补株系（C-1、C-2）表型与野生型类似（图6b）。",
+    "claim_role": "paper_result",
+    "context_before": "为探究KNAT2-like1基因功能，构建了黄瓜KNAT2-like1敲除突变体k-1和k-2（图6a）。",
+    "context_after": "形态学观察显示，S5时期之前雄花、雌花和k-2（子房上位、双性花）之间并没有区别，而S5之后，k-2花托并没有快速生长并与心皮融合（图6c-d）。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C35",
+    "claim_text": "形态学观察显示，S5时期之前雄花、雌花和k-2（子房上位、双性花）之间并没有区别，而S5之后，k-2花托并没有快速生长并与心皮融合（图6c-d）。",
+    "claim_role": "paper_result",
+    "context_before": "k-1和k-2出现子房上位和双性花表型，而其回补株系（C-1、C-2）表型与野生型类似（图6b）。",
+    "context_after": "利用micro-CT技术对花发育过程进行3D重建，发现花托在S5后的停止扩展和心皮持续向上生长导致k-2黄瓜出现类似于番茄的子房上位性状（图6e）。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C36",
+    "claim_text": "利用micro-CT技术对花发育过程进行3D重建，发现花托在S5后的停止扩展和心皮持续向上生长导致k-2黄瓜出现类似于番茄的子房上位性状（图6e）。",
+    "claim_role": "paper_result",
+    "context_before": "形态学观察显示，S5时期之前雄花、雌花和k-2（子房上位、双性花）之间并没有区别，而S5之后，k-2花托并没有快速生长并与心皮融合（图6c-d）。",
+    "context_after": "花后果实形成过程中，突变体3个心皮柱头未完全融合，影响了授粉和种子产生（图6f）。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C37",
+    "claim_text": "花后果实形成过程中，突变体3个心皮柱头未完全融合，影响了授粉和种子产生（图6f）。",
+    "claim_role": "paper_result",
+    "context_before": "利用micro-CT技术对花发育过程进行3D重建，发现花托在S5后的停止扩展和心皮持续向上生长导致k-2黄瓜出现类似于番茄的子房上位性状（图6e）。",
+    "context_after": "此外，k-2果实胎座结构与黄瓜典型结构相反（图6g），这是由于野生型花托心皮近轴面融合，使内外侧模式发生变化，从而导致子房下位花性状（图6i）。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C38",
+    "claim_text": "此外，k-2果实胎座结构与黄瓜典型结构相反（图6g），这是由于野生型花托心皮近轴面融合，使内外侧模式发生变化，从而导致子房下位花性状（图6i）。",
+    "claim_role": "paper_result",
+    "context_before": "花后果实形成过程中，突变体3个心皮柱头未完全融合，影响了授粉和种子产生（图6f）。",
+    "context_after": "原位杂交显示，KNAT2-like1在雌花扩展花托中特异性表达（图6h）。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C39",
+    "claim_text": "原位杂交显示，KNAT2-like1在雌花扩展花托中特异性表达（图6h）。",
+    "claim_role": "paper_result",
+    "context_before": "此外，k-2果实胎座结构与黄瓜典型结构相反（图6g），这是由于野生型花托心皮近轴面融合，使内外侧模式发生变化，从而导致子房下位花性状（图6i）。",
+    "context_after": "同时还构建了ER缺失突变体er和CRC缺失突变体crc，以及以上3个基因的双突、三突突变体。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C40",
+    "claim_text": "同时还构建了ER缺失突变体er和CRC缺失突变体crc，以及以上3个基因的双突、三突突变体。",
+    "claim_role": "paper_method",
+    "context_before": "原位杂交显示，KNAT2-like1在雌花扩展花托中特异性表达（图6h）。",
+    "context_after": "表型显示，CRC较其他两个基因呈显性上位，ER较KNAT2-like1呈显性上位。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C41",
+    "claim_text": "表型显示，CRC较其他两个基因呈显性上位，ER较KNAT2-like1呈显性上位。",
+    "claim_role": "paper_result",
+    "context_before": "同时还构建了ER缺失突变体er和CRC缺失突变体crc，以及以上3个基因的双突、三突突变体。",
+    "context_after": "以上结果说明，KNAT2-like1在花托生长、子房下位发育中起关键性作用，CRC、ER也可能参与其相互调控机制。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C42",
+    "claim_text": "以上结果说明，KNAT2-like1在花托生长、子房下位发育中起关键性作用，CRC、ER也可能参与其相互调控机制。",
+    "claim_role": "paper_conclusion",
+    "context_before": "表型显示，CRC较其他两个基因呈显性上位，ER较KNAT2-like1呈显性上位。",
+    "context_after": "为探究黄瓜花托发育的特殊性，作者又将S8时期knat2-like1缺失突变体花芽和番茄花芽一起进行空间转录组测序。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C43",
+    "claim_text": "为探究黄瓜花托发育的特殊性，作者又将S8时期knat2-like1缺失突变体花芽和番茄花芽一起进行空间转录组测序。",
+    "claim_role": "paper_method",
+    "context_before": "以上结果说明，KNAT2-like1在花托生长、子房下位发育中起关键性作用，CRC、ER也可能参与其相互调控机制。",
+    "context_after": "整合细胞聚类发现，番茄花芽无花基部分生组织（FIM）结构，花托位于心皮下方；knat2-like1突变体虽然有FIM，但花托停止扩张，心皮也向上生长（图7a-b）。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C44",
+    "claim_text": "整合细胞聚类发现，番茄花芽无花基部分生组织（FIM）结构，花托位于心皮下方；knat2-like1突变体虽然有FIM，但花托停止扩张，心皮也向上生长（图7a-b）。",
+    "claim_role": "paper_result",
+    "context_before": "为探究黄瓜花托发育的特殊性，作者又将S8时期knat2-like1缺失突变体花芽和番茄花芽一起进行空间转录组测序。",
+    "context_after": "而子房下位黄瓜FIM或花托中特异性表达的基因（如STM-like、KNAT2-like1、CRC等），在番茄中表达缺失、表达量少或表达异位（图7c）。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C45",
+    "claim_text": "而子房下位黄瓜FIM或花托中特异性表达的基因（如STM-like、KNAT2-like1、CRC等），在番茄中表达缺失、表达量少或表达异位（图7c）。",
+    "claim_role": "paper_result",
+    "context_before": "整合细胞聚类发现，番茄花芽无花基部分生组织（FIM）结构，花托位于心皮下方；knat2-like1突变体虽然有FIM，但花托停止扩张，心皮也向上生长（图7a-b）。",
+    "context_after": "通过黄瓜与其他几个代表性被子植物KNOX序列构建系统进化树，从而鉴定黄瓜KNOX转录因子，其中CsSTM-like在番茄中不存在直系同源基因（图7d）。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C46",
+    "claim_text": "通过黄瓜与其他几个代表性被子植物KNOX序列构建系统进化树，从而鉴定黄瓜KNOX转录因子，其中CsSTM-like在番茄中不存在直系同源基因（图7d）。",
+    "claim_role": "paper_method",
+    "context_before": "而子房下位黄瓜FIM或花托中特异性表达的基因（如STM-like、KNAT2-like1、CRC等），在番茄中表达缺失、表达量少或表达异位（图7c）。",
+    "context_after": "以上结果说明，FIM中新基因的出现和一些基因的新表达模式是黄瓜进化出子房下位这一性状的原因。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C47",
+    "claim_text": "以上结果说明，FIM中新基因的出现和一些基因的新表达模式是黄瓜进化出子房下位这一性状的原因。",
+    "claim_role": "paper_conclusion",
+    "context_before": "通过黄瓜与其他几个代表性被子植物KNOX序列构建系统进化树，从而鉴定黄瓜KNOX转录因子，其中CsSTM-like在番茄中不存在直系同源基因（图7d）。",
+    "context_after": "本研究通过空间转录组分析和细胞谱系重建，揭示了黄瓜下位子房的形成依赖于花托快速生长，这一过程由花基部分生组织（FIM）驱动。",
+    "section": "研究结果"
+  },
+  {
+    "id": "C48",
+    "claim_text": "本研究通过空间转录组分析和细胞谱系重建，揭示了黄瓜下位子房的形成依赖于花托快速生长，这一过程由花基部分生组织（FIM）驱动。",
+    "claim_role": "paper_lead",
+    "context_before": "以上结果说明，FIM中新基因的出现和一些基因的新表达模式是黄瓜进化出子房下位这一性状的原因。",
+    "context_after": "研究发现，黄瓜中一个花托特异表达的KNOX1转录因子（KNAT2-like1）在调控花托生长和子房位置中起关键作用。",
+    "section": "总结与讨论"
+  },
+  {
+    "id": "C49",
+    "claim_text": "研究发现，黄瓜中一个花托特异表达的KNOX1转录因子（KNAT2-like1）在调控花托生长和子房位置中起关键作用。",
+    "claim_role": "paper_lead",
+    "context_before": "本研究通过空间转录组分析和细胞谱系重建，揭示了黄瓜下位子房的形成依赖于花托快速生长，这一过程由花基部分生组织（FIM）驱动。",
+    "context_after": "敲除KNAT2-like1，黄瓜花托生长受阻，导致下位子房转变为类似番茄的上位子房，同时部分雌花转变为两性花，表明KNAT2-like1不仅调控子房位置，还参与性别决定。",
+    "section": "总结与讨论"
+  },
+  {
+    "id": "C50",
+    "claim_text": "敲除KNAT2-like1，黄瓜花托生长受阻，导致下位子房转变为类似番茄的上位子房，同时部分雌花转变为两性花，表明KNAT2-like1不仅调控子房位置，还参与性别决定。",
+    "claim_role": "paper_lead",
+    "context_before": "研究发现，黄瓜中一个花托特异表达的KNOX1转录因子（KNAT2-like1）在调控花托生长和子房位置中起关键作用。",
+    "context_after": "本研究揭示了KNAT2-like1与CRC和ER共表达调控花托快速生长从而导致子房下位及单性花的机制，为作物育种提供了新靶点。",
+    "section": "总结与讨论"
+  },
+  {
+    "id": "C51",
+    "claim_text": "本研究揭示了KNAT2-like1与CRC和ER共表达调控花托快速生长从而导致子房下位及单性花的机制，为作物育种提供了新靶点。",
+    "claim_role": "paper_conclusion",
+    "context_before": "敲除KNAT2-like1，黄瓜花托生长受阻，导致下位子房转变为类似番茄的上位子房，同时部分雌花转变为两性花，表明KNAT2-like1不仅调控子房位置，还参与性别决定。",
+    "context_after": "",
+    "section": "总结与讨论"
+  }
+]

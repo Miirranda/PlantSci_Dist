@@ -863,6 +863,7 @@ def empty_doc(
     source_type: str,
     generation_mode: str,
     limit: str,
+    index_version: str = "",
 ) -> dict[str, Any]:
     return {
         "schema_version": SCHEMA_VERSION,
@@ -871,6 +872,7 @@ def empty_doc(
         "paper_id": paper_id,
         "article_id": article_id,
         "article_source_type": source_type,
+        "index_version": index_version,
         "generated_date": date.today().isoformat(),
         "generation_mode": generation_mode,
         "limit": limit,
@@ -1260,6 +1262,22 @@ def main(argv: list[str] | None = None) -> int:
         sentence_table = {}
         print("未找到句表 %s（池外 gold id 将无法回填原文）" % sent_path)
 
+    index_version = ""
+    for meta_candidate in (
+        _PROJECT_ROOT / "data" / "index" / paper / "index_meta.json",
+        _PROJECT_ROOT / "data" / "index" / "index_meta.json",
+        _PROJECT_ROOT / "arag-main" / "data" / "index" / "index_meta.json",
+    ):
+        if meta_candidate.exists():
+            try:
+                meta = json.loads(meta_candidate.read_text(encoding="utf-8"))
+                index_version = str((meta or {}).get("index_version") or "")
+            except (OSError, json.JSONDecodeError):
+                index_version = ""
+            if index_version:
+                print("index_version: %s (%s)" % (index_version, meta_candidate))
+                break
+
     if args.after:
         mode = "resume"
         limit_label = "after:%s+%s" % (args.after, args.limit)
@@ -1278,9 +1296,12 @@ def main(argv: list[str] | None = None) -> int:
             source_type=args.source_type,
             generation_mode=mode,
             limit=limit_label,
+            index_version=index_version,
         )
     else:
         doc["generation_mode"] = "resume"
+        if index_version and not doc.get("index_version"):
+            doc["index_version"] = index_version
         skip_n = len(doc.get("samples") or [])
         if skip_n:
             print("已有草稿 %d 条" % skip_n)

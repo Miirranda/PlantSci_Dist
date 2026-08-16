@@ -9,6 +9,8 @@ A-RAG 那样需要驻留一个本地 embedding 模型），从而天然线程安
 
 from __future__ import annotations
 
+import hashlib
+import json
 import pickle
 from pathlib import Path
 from typing import Any
@@ -16,6 +18,7 @@ from typing import Any
 import numpy as np
 
 INDEX_FILENAME = "sentence_index.pkl"
+INDEX_META_FILENAME = "index_meta.json"
 
 
 def normalize(matrix: np.ndarray) -> np.ndarray:
@@ -29,6 +32,37 @@ def normalize(matrix: np.ndarray) -> np.ndarray:
     return array / norms
 
 
+def sentence_fingerprint(sentences: list[str]) -> str:
+    """句子序列指纹：切句或顺序一变就会变。"""
+    digest = hashlib.sha256()
+    for sentence in sentences:
+        digest.update(sentence.encode("utf-8"))
+        digest.update(b"\n")
+    return digest.hexdigest()[:16]
+
+
+def make_index_version(built_at: str, fingerprint: str) -> str:
+    return "%s#%s" % (built_at, fingerprint)
+
+
+def write_index_meta(index_dir: str | Path, payload: dict[str, Any]) -> Path:
+    path = Path(index_dir) / INDEX_META_FILENAME
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    return path
+
+
+def read_index_meta(index_dir: str | Path) -> dict[str, Any]:
+    path = Path(index_dir) / INDEX_META_FILENAME
+    if not path.exists():
+        return {}
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
 class IndexStore:
     """句子级向量索引 + 带元数据的 chunk 查找表。"""
 
@@ -37,7 +71,8 @@ class IndexStore:
         self.index_file = self.index_dir / INDEX_FILENAME
         if not self.index_file.exists():
             raise FileNotFoundError(
-                "索引不存在: %s\n请先运行: python scripts/build_index.py" % self.index_file
+                "索引不存在: %s\n请先运行: python scripts/build_index.py --paper-id Pxxx"
+                % self.index_file
             )
 
         with self.index_file.open("rb") as handle:
@@ -59,6 +94,14 @@ class IndexStore:
         self.model_name: str = str(data.get("model_name") or "")
         self.provider: str = str(data.get("provider") or "")
         self.built_at: str = str(data.get("built_at") or "")
+        self.fingerprint: str = str(data.get("fingerprint") or "") or sentence_fingerprint(
+            self.sentences
+        )
+        self.index_version: str = str(data.get("index_version") or "") or make_index_version(
+            self.built_at, self.fingerprint
+        )
+        meta = read_index_meta(self.index_dir)
+        self.paper_id: str = str(data.get("paper_id") or meta.get("paper_id") or "")
 
         if not self.sentence_offset:
             self.sentence_offset = self._rebuild_offsets()
@@ -100,11 +143,13 @@ class IndexStore:
         return len(self.sentences)
 
     def describe(self) -> str:
-        return "索引: %d 句 / %d 块 / dim=%d / model=%s" % (
+        return "索引: %s / %d 句 / %d 块 / dim=%d / model=%s / version=%s" % (
+            self.paper_id or "unknown",
             len(self.sentences),
             len(self.chunks),
             self.dim,
             self.model_name or "unknown",
+            self.index_version or "unknown",
         )
 
     # ------------------------------------------------------------------ 检索

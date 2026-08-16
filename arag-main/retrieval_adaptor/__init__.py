@@ -33,6 +33,14 @@ from .config import (
 )
 from .evidence_board import Candidate, EvidenceBoard
 from .index_store import IndexStore, normalize
+from .paper_registry import (
+    apply_layout,
+    canonical_paper_id,
+    infer_ids,
+    is_index_ready,
+    layout_for,
+    load_registry,
+)
 from .claim_extractor import (
     extract_claims_from_article,
     save_claims_json,
@@ -68,6 +76,12 @@ __all__ = [
     # 组件
     "QwenAgentAdapter",
     "IndexStore",
+    "layout_for",
+    "load_registry",
+    "is_index_ready",
+    "canonical_paper_id",
+    "infer_ids",
+    "apply_layout",
     "EvidenceBoard",
     "Candidate",
     "DualThresholdGate",

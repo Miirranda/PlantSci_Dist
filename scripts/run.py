@@ -7,10 +7,9 @@
        → [hallu] 信息失真分类（只用 top-5）→ 证据链 JSON
 
 用法:
-  python scripts/run.py \\
+    python scripts/run.py \\
     --article data/articles/high_quality/P001_A001_黄瓜下位子房的发育机制.md \\
-    --paper   data/papers/P001_2025_NatPlants_cucurbits-KNOX1-ovary.pdf \\
-    --output-dir outputs/P001/A001
+    --paper-id P001
 """
 
 from __future__ import annotations
@@ -49,6 +48,13 @@ from hallu.adapters.from_arag import (  # noqa: E402
 from hallu.arag_bridge import clean_arag_output, run_arag_article_pipeline  # noqa: E402
 from hallu.classifier import classify_all  # noqa: E402
 from hallu.evidence_chain import build_final_output  # noqa: E402
+from retrieval_adaptor.index_builder import ensure_index  # noqa: E402
+from retrieval_adaptor.paper_registry import (  # noqa: E402
+    canonical_paper_id,
+    infer_ids,
+    layout_for,
+    resolve_pdf,
+)
 
 
 def _resolve(path: str) -> Path:
@@ -151,7 +157,23 @@ def main() -> int:
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument("--article", "-a", required=True, help="公众号文章 Markdown 路径")
-    parser.add_argument("--paper", "-p", required=True, help="参考论文 PDF 路径（元信息）")
+    parser.add_argument(
+        "--paper",
+        "-p",
+        default="",
+        help="参考论文 PDF；可省略，由 --paper-id 与 papers_index.json 解析",
+    )
+    parser.add_argument("--paper-id", default="", help="短论文 id，如 P001；决定检索哪一座索引")
+    parser.add_argument(
+        "--rebuild-index",
+        action="store_true",
+        help="强制重建该篇索引（默认已有则复用）",
+    )
+    parser.add_argument(
+        "--no-ensure-index",
+        action="store_true",
+        help="不自动建库；索引不存在时直接失败",
+    )
     parser.add_argument(
         "--output-dir",
         "-o",
@@ -184,18 +206,35 @@ def main() -> int:
     args = parser.parse_args()
 
     article_path = _resolve(args.article)
-    paper_path = _resolve(args.paper)
     if not article_path.exists():
         print("文章不存在: %s" % article_path)
-        return 1
-    if not paper_path.exists():
-        print("论文不存在: %s" % paper_path)
         return 1
     if not ARAG_ROOT.exists():
         print("找不到 arag-main: %s" % ARAG_ROOT)
         return 1
 
-    paper_id, article_id = _infer_ids(article_path, paper_path)
+    paper_id = canonical_paper_id(args.paper_id)
+    inferred_paper, article_id = infer_ids(article_path, args.paper)
+    paper_id = paper_id or inferred_paper
+    if not paper_id:
+        paper_id, article_id = _infer_ids(article_path, Path(args.paper or article_path))
+    if not paper_id:
+        print("无法确定 paper_id，请传入 --paper-id Pxxx")
+        return 1
+
+    if args.paper:
+        paper_path = _resolve(args.paper)
+    else:
+        try:
+            paper_path = resolve_pdf(paper_id)
+        except FileNotFoundError as exc:
+            print(str(exc))
+            return 1
+    if not paper_path.exists():
+        print("论文不存在: %s" % paper_path)
+        return 1
+
+    layout = layout_for(paper_id, pdf=paper_path)
     output_dir = (
         _resolve(args.output_dir)
         if args.output_dir
@@ -218,6 +257,20 @@ def main() -> int:
         skip_extract = True
         skip_retrieval = True
 
+    need_index = do_arag and not skip_retrieval
+    if need_index:
+        if args.no_ensure_index:
+            if not layout.index_file.is_file():
+                print("索引不存在: %s" % layout.index_file)
+                print("请先运行: python scripts/ensure_index.py --paper-id %s" % paper_id)
+                return 1
+        else:
+            ensure_index(
+                paper_id,
+                rebuild=args.rebuild_index,
+                pdf=paper_path,
+            )
+
     model = args.model or QWEN_MODEL
     pairs_path = output_dir / "claim_evidence_pairs.jsonl"
     legacy_pairs_path = output_dir / "claim_paper_pairs.jsonl"
@@ -231,6 +284,7 @@ def main() -> int:
     print("  文章: %s" % article_path)
     print("  论文: %s" % paper_path)
     print("  样本: %s/%s" % (paper_id, article_id))
+    print("  索引: %s" % layout.index_dir)
     print("  输出: %s" % output_dir)
     print("  模型: %s" % model)
     print("  arag: %s" % ARAG_ROOT)
@@ -260,6 +314,7 @@ def main() -> int:
                 skip_retrieval=skip_retrieval,
                 resume=True,
                 verbose=args.verbose,
+                paper_id=paper_id,
             )
 
     claims = _load_claims(output_dir)

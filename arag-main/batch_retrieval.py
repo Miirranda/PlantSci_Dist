@@ -291,8 +291,13 @@ def main() -> int:
     )
     parser.add_argument("--limit", "-l", type=int, default=None, help="只跑前 N 条")
     parser.add_argument("--min-chars", type=int, default=12, help="规则切句最短句长（仅 legacy）")
-    parser.add_argument("--index-dir", default=None, help="索引目录，默认取 .env / data/index")
-    parser.add_argument("--chunks", default=None, help="chunks.json 路径")
+    parser.add_argument(
+        "--paper-id",
+        default="",
+        help="只加载 data/index/<paper_id>/，不扫其它论文",
+    )
+    parser.add_argument("--index-dir", default=None, help="覆盖索引目录（默认按 --paper-id）")
+    parser.add_argument("--chunks", default=None, help="覆盖 chunks.json（默认按 --paper-id）")
     parser.add_argument("--high", type=float, default=None, help="覆盖高阈值")
     parser.add_argument("--low", type=float, default=None, help="覆盖低阈值")
     parser.add_argument("--verbose", "-v", action="store_true", help="打印 Agent 推理过程")
@@ -312,7 +317,22 @@ def main() -> int:
     if args.limit:
         claims = claims[: args.limit]
 
-    config = RetrievalConfig.from_env()
+    from retrieval_adaptor.paper_registry import canonical_paper_id, infer_ids
+
+    paper_id = canonical_paper_id(args.paper_id)
+    if not paper_id:
+        article = getattr(args, "article", None)
+        claims_path = getattr(args, "claims", None)
+        paper_id, _ = infer_ids(article or "", claims_path or "")
+    if paper_id:
+        config = RetrievalConfig.for_paper(paper_id)
+    else:
+        config = RetrievalConfig.from_env()
+        if not args.index_dir:
+            raise SystemExit(
+                "必须指定 --paper-id Pxxx，以便只检索对应论文的索引。"
+                "禁止回退到全局混合索引。"
+            )
     if args.index_dir:
         config.index_dir = Path(args.index_dir)
     if args.chunks:
@@ -342,6 +362,7 @@ def main() -> int:
     print("批量跨语言检索")
     print("=" * 78)
     print("断言数量 : %d" % len(claims))
+    print("论文     : %s" % (getattr(config, "paper_id", "") or paper_id or "(未指定)"))
     print("索引目录 : %s" % config.index_dir)
     print(
         "双阈值   : high=%.2f / low=%.2f / min_hits=%d"
