@@ -91,6 +91,10 @@ class IndexStore:
         self.chunk_sentences: dict[str, list[str]] = {
             str(key): list(value) for key, value in (data.get("chunk_sentences") or {}).items()
         }
+        # 建库时被判为版式噪声的句子；不参与检索，只随句表导出供人工复核误删
+        self.dropped_sentences: list[dict[str, Any]] = [
+            dict(item) for item in (data.get("dropped_sentences") or [])
+        ]
         self.model_name: str = str(data.get("model_name") or "")
         self.provider: str = str(data.get("provider") or "")
         self.built_at: str = str(data.get("built_at") or "")
@@ -193,21 +197,34 @@ class IndexStore:
         return rows
 
     def export_sentence_table(self, path: str | Path, *, paper_id: str = "") -> Path:
-        """写出 CSV 句表（sentence_id, chunk_id, text）。"""
+        """写出 CSV 句表：入库句在前，被筛掉的句子附在末尾（``sentence_id`` 留空）。"""
         import csv
 
         out = Path(path)
         out.parent.mkdir(parents=True, exist_ok=True)
+        fields = ["sentence_id", "chunk_id", "text"]
+        if paper_id:
+            fields.append("paper_id")
+        fields += ["status", "drop_reason"]
+
         with out.open("w", encoding="utf-8-sig", newline="") as handle:
-            writer = csv.DictWriter(
-                handle,
-                fieldnames=["sentence_id", "chunk_id", "text"]
-                + (["paper_id"] if paper_id else []),
-            )
+            writer = csv.DictWriter(handle, fieldnames=fields)
             writer.writeheader()
             for row in self.iter_sentence_rows():
+                row = {**row, "status": "kept", "drop_reason": ""}
                 if paper_id:
-                    row = {**row, "paper_id": paper_id}
+                    row["paper_id"] = paper_id
+                writer.writerow(row)
+            for item in self.dropped_sentences:
+                row = {
+                    "sentence_id": "",
+                    "chunk_id": str(item.get("chunk_id") or ""),
+                    "text": str(item.get("text") or ""),
+                    "status": "dropped",
+                    "drop_reason": str(item.get("reason") or ""),
+                }
+                if paper_id:
+                    row["paper_id"] = paper_id
                 writer.writerow(row)
         return out
 

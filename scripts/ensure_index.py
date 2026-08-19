@@ -4,6 +4,8 @@
 Usage:
   python scripts/ensure_index.py --paper-id P001
   python scripts/ensure_index.py --paper-id P001 --rebuild
+  python scripts/ensure_index.py --paper-id P001 --from-sentences
+  python scripts/ensure_index.py --paper-id P001 --from-sentences --sentences data/annotations/P001/P001_sentences.csv
   python scripts/ensure_index.py --paper-id P001 --skip-embed
 """
 
@@ -35,6 +37,16 @@ def main() -> int:
     parser.add_argument("--paper-id", default="", help="如 P001；省略则列出注册表")
     parser.add_argument("--pdf", default="", help="覆盖注册表中的 PDF")
     parser.add_argument("--rebuild", action="store_true", help="强制重建")
+    parser.add_argument(
+        "--from-sentences",
+        action="store_true",
+        help="从句表 CSV 建库，不重新切 PDF，也不覆盖句表",
+    )
+    parser.add_argument(
+        "--sentences",
+        default="",
+        help="句表路径；省略则用 data/annotations/<paper_id>/<paper_id>_sentences.csv",
+    )
     parser.add_argument("--skip-embed", action="store_true", help="只切句，不向量化")
     args = parser.parse_args()
 
@@ -50,11 +62,18 @@ def main() -> int:
         print("用法: python scripts/ensure_index.py --paper-id P001")
         return 0
 
+    from_sentences: bool | str = False
+    if args.sentences:
+        from_sentences = args.sentences
+    elif args.from_sentences:
+        from_sentences = True
+
     result = ensure_index(
         paper_id,
         rebuild=args.rebuild,
         skip_embed=args.skip_embed,
         pdf=args.pdf or None,
+        from_sentences=from_sentences,
     )
     print("paper_id: %s" % paper_id)
     print("reused: %s" % result.get("reused"))

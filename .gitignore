@@ -21,6 +21,7 @@ env/
 .ruff_cache/
 .coverage
 htmlcov/
+.translation_cache.json
 
 # Secrets
 .env

@@ -438,47 +438,129 @@ def test_peel_glued_front_matter_keeps_intro():
     assert "Lucas9" not in peeled
 
 
-def test_is_indexable_drops_title_and_affiliation():
-    from retrieval_adaptor.pdf_ingest import is_indexable_sentence
+@pytest.mark.parametrize(
+    "text,reason",
+    [
+        # 刊头 + 标题粘连
+        (
+            "nature plants Developmental innovation of inferior ovaries and flower sex",
+            "journal_header",
+        ),
+        # 机构行
+        (
+            "1Institute of Vegetables and Flowers, Chinese Academy of Agricultural Sciences, Beijing, China.",
+            "affiliation",
+        ),
+        # 纯比例尺
+        ("Scale bars,1 mm (c–e), 1 cm (f and g) and 200 μm (h).", "scale_bar"),
+        # 图注缩写表
+        ("Ad, adaxial; ab, abaxial; G, inferior ovary.", "abbrev_glossary"),
+        # 进化树叶节点
+        ("AtKNAT5 C. lanatus 88 CsaV3_4G036880.1 99 Arabidopsis thaliana L.,", "phylo_leaf"),
+        # 纯引用残片，没有任何陈述
+        ("2c and Supplementary Fig. 18a).", "citation_residue"),
+        # 同等贡献声明
+        (
+            "11These authors contributed equally: Zhaonian Dong, Xiaolin Liu, Xing Guo.",
+            "equal_contribution",
+        ),
+        # 进化树目名 OCR 串
+        (
+            "861 a Berberidopsidales Trochodendrales Ranunculales Gunnerales Chloranthales "
+            "Cornales Dilleniales Proteales Buxales Ericales Zingiberales Commelinales in cucumber.",
+            "figure_ocr",
+        ),
+    ],
+)
+def test_classify_drops_only_layout_noise(text, reason):
+    from retrieval_adaptor.pdf_ingest import classify_sentence
 
-    assert is_indexable_sentence(
-        "nature plants Developmental innovation of inferior ovaries and flower sex"
-    ) is False
-    assert is_indexable_sentence(
-        "1Institute of Vegetables and Flowers, Chinese Academy of Agricultural Sciences, Beijing, China."
-    ) is False
-    assert is_indexable_sentence(
-        "Inferior ovaries are located below the attachment points of the sepals, petals and stamens."
-    ) is True
-    assert is_indexable_sentence(
-        "f, The phenotype of a developing abnormal superior ovary on the k-2 mutant plant from 2 to 8 DPA."
-    ) is False
-    assert is_indexable_sentence(
-        "Scale bars,1 mm (c–e), 1 cm (f and g) and 200 μm (h)."
-    ) is False
-    assert is_indexable_sentence(
-        "Several key genes were revealed by Monocle2 (Fig. 4f and"
-    ) is False
-    assert is_indexable_sentence(
-        "Ad, adaxial; ab, abaxial; G, inferior ovary."
-    ) is False
-    assert is_indexable_sentence(
-        "AtKNAT5 C. lanatus 88 CsaV3_4G036880.1 99 Arabidopsis thaliana L.,"
-    ) is False
-    assert is_indexable_sentence("200 μm (h). high levels of expression in the receptacle.") is False
-    assert is_indexable_sentence(
-        "RNA was isolated at Cornell University, Ithaca, NY, USA."
-    ) is True
-    assert is_indexable_sentence(
-        "3D reconstructions revealed the spatial arrangement of the floral intercalary meristem."
-    ) is True
-    assert is_indexable_sentence(
-        "Supplementary analyses confirmed that KNAT2-like1 is required for receptacle growth."
-    ) is True
-    assert is_indexable_sentence(
-        "Figure 2 shows the lineage from the floral intercalary meristem to the receptacle."
-    ) is True
-    assert is_indexable_sentence("2c and Supplementary Fig. 18a).") is False
+    verdict = classify_sentence(text)
+    assert verdict.keep is False
+    assert verdict.reason == reason
+
+
+@pytest.mark.parametrize(
+    "text",
+    [
+        # 正文
+        "Inferior ovaries are located below the attachment points of the sepals, petals and stamens.",
+        # 图注面板句：石蜡切片这类方法事实常常只写在 legend 里，绝不能因为 "f, " 开头被删
+        "f, The phenotype of a developing abnormal superior ovary on the k-2 mutant plant from 2 to 8 DPA.",
+        "b, The paraffin-embedded sections show the morphology of cucumber female floral development.",
+        # 切句没切干净的半句，信息仍在
+        "Several key genes were revealed by Monocle2 (Fig. 4f and",
+        "The paraffin on the sections was dissolved with xylene, and the tissue was treated with proteinase K.",
+        # 含机构词但在讲实验
+        "RNA was isolated at Cornell University, Ithaca, NY, USA.",
+        "3D reconstructions revealed the spatial arrangement of the floral intercalary meristem.",
+        "Supplementary analyses confirmed that KNAT2-like1 is required for receptacle growth.",
+        "Figure 2 shows the lineage from the floral intercalary meristem to the receptacle.",
+    ],
+)
+def test_classify_keeps_informative_sentences(text):
+    from retrieval_adaptor.pdf_ingest import classify_sentence
+
+    verdict = classify_sentence(text)
+    assert verdict.keep is True, verdict.reason
+
+
+def test_classify_strips_scale_bar_prefix_but_keeps_body():
+    from retrieval_adaptor.pdf_ingest import classify_sentence
+
+    verdict = classify_sentence("200 μm (h). high levels of expression in the receptacle.")
+    assert verdict.keep is True
+    assert verdict.text == "high levels of expression in the receptacle."
+
+
+def test_classify_records_cleaned_off_fragments():
+    """清洗掉的片段必须回传，否则截断就是一次看不见的删除。"""
+    from retrieval_adaptor.pdf_ingest import classify_sentence
+
+    tail = classify_sentence(
+        "CRC was upregulated in the receptacles 866 a b Low 0 E 4 EFM 1 P 5 FIM."
+    )
+    assert tail.text == "CRC was upregulated in the receptacles"
+    assert tail.removed == ["866 a b Low 0 E 4 EFM 1 P 5 FIM."]
+
+    head = classify_sentence("200 μm (h). high levels of expression in the receptacle.")
+    assert head.removed == ["200 μm (h)."]
+
+    clean = classify_sentence(
+        "Inferior ovaries are located below the attachment points of the sepals."
+    )
+    assert clean.removed == []
+
+
+def test_split_paper_into_chunks_reports_skipped_lines():
+    from retrieval_adaptor.pdf_ingest import PaperDoc, split_paper_into_chunks
+
+    body = " ".join(["This sentence is part of the method section."] * 12)
+    tail = " ".join(["Chen et al. Some cited paper title here."] * 12)
+    doc = PaperDoc(
+        paper_id="p1",
+        title="T",
+        pages=[(1, "3 Method\n%s\n\nReferences\n%s" % (body, tail))],
+    )
+    dropped: list[dict] = []
+    split_paper_into_chunks(doc, target_chars=200, dropped_lines=dropped)
+
+    summary = [row for row in dropped if row["reason"] == "stop_section"]
+    assert len(summary) == 1
+    assert "References" in summary[0]["text"]
+
+
+def test_split_detailed_reports_dropped_sentences():
+    from retrieval_adaptor.pdf_ingest import split_english_sentences_detailed
+
+    text = (
+        "Scale bars, 500 μm (a) and 200 μm (g and h). "
+        "The receptacle grew rapidly and wrapped around the carpel to form the inferior ovary."
+    )
+    verdicts = split_english_sentences_detailed(text)
+    assert [v.keep for v in verdicts] == [False, True]
+    assert verdicts[0].reason == "scale_bar"
+    assert verdicts[0].text.startswith("Scale bars")
 
 
 def test_split_english_strips_leading_fig_residue_keeps_body_and_inline_fig():
@@ -561,6 +643,75 @@ def test_repair_cross_chunk_joins_lowercase_continuation():
     repaired = repair_cross_chunk_sentences(chunks)
     assert any("angiosperm evolution and are present" in c["text"] for c in repaired)
     assert all(not c["text"].startswith("and are present") for c in repaired)
+
+
+def test_split_english_keeps_catalogue_number_in_one_sentence():
+    """cat. no. 被当成句号切开会让后半句以小写起头而丢失整条石蜡切片方法。"""
+    from retrieval_adaptor.pdf_ingest import split_english_sentences
+
+    text = (
+        "Flowers were cleared with xylene and then embedded in paraplast "
+        "(Sigma-Aldrich, cat. no. P3683). The embedded samples were sectioned (8 μm) "
+        "using a microtome (Leica, RM2235) and then deparaffinized and cleared with xylene."
+    )
+    sents = split_english_sentences(text)
+    assert len(sents) == 2
+    assert sents[0].endswith("cat. no. P3683).")
+    assert sents[1].startswith("The embedded samples")
+    assert "deparaffinized" in sents[1]
+
+
+def test_reflow_pair_returns_residue_to_previous_sentence():
+    from retrieval_adaptor.pdf_ingest import reflow_pair
+
+    previous, current = reflow_pair(
+        "We annotated the phylogenetic tree of angiosperms9, with ovary positions (Fig.",
+        "1a). In extant angiosperms, bisexual flowers represent ancestral states.",
+    )
+    assert previous.endswith("(Fig. 1a).")
+    assert current.startswith("In extant angiosperms")
+
+
+def test_reflow_pair_merges_when_remainder_continues_previous():
+    from retrieval_adaptor.pdf_ingest import reflow_pair
+
+    previous, current = reflow_pair(
+        "The sections were stained with toluidine blue solution (ScyTek, cat.",
+        "no. TQF999) for 1 min, washed six to eight times with water.",
+    )
+    assert current == ""
+    assert previous.endswith("for 1 min, washed six to eight times with water.")
+
+
+def test_reflow_pair_leaves_complete_previous_alone():
+    from retrieval_adaptor.pdf_ingest import reflow_pair
+
+    assert reflow_pair(
+        "Inferior ovaries are located below the attachment points of the sepals.",
+        "b, The paraffin-embedded sections show the morphology of floral development.",
+    ) is None
+
+
+def test_repair_cross_chunk_joins_multiword_fig_residue():
+    from retrieval_adaptor.pdf_ingest import repair_cross_chunk_sentences
+
+    chunks = [
+        {
+            "id": "0",
+            "paper_id": "P001",
+            "section": "Results",
+            "text": "Clusters 9 and 10 were characterized by the expression of CsCRC (Fig.",
+        },
+        {
+            "id": "1",
+            "paper_id": "P001",
+            "section": "Results",
+            "text": "2c and Supplementary Fig. 18a). We also observed three conjunctive clusters.",
+        },
+    ]
+    repaired = repair_cross_chunk_sentences(chunks)
+    assert repaired[0]["text"].endswith("(Fig. 2c and Supplementary Fig. 18a).")
+    assert repaired[1]["text"].startswith("We also observed")
 
 
 # ---------------------------------------------------------------- PDF / 中文预处理

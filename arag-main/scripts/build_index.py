@@ -5,7 +5,7 @@
 
     python scripts/build_index.py --paper-id P001
     python scripts/build_index.py --paper-id P001 --rebuild
-    python scripts/build_index.py --paper-id P001 --skip-embed
+    python scripts/build_index.py --paper-id P001 --from-sentences
 
 已有 ``data/index/P001/sentence_index.pkl`` 且 meta 完整时直接复用。
 禁止把整个 papers 目录打进同一套 sentence_id。
@@ -21,6 +21,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from retrieval_adaptor.index_builder import (  # noqa: E402
     build_index,
+    build_index_from_sentences,
     embed_sentences,
     ensure_index,
     load_chunks,
@@ -83,6 +84,16 @@ def main() -> int:
         default="",
         help="句表 CSV；默认 data/annotations/<paper_id>/<paper_id>_sentences.csv",
     )
+    parser.add_argument(
+        "--from-sentences",
+        action="store_true",
+        help="从句表建库，不重新切 PDF，也不覆盖句表",
+    )
+    parser.add_argument(
+        "--sentences",
+        default="",
+        help="句表路径；配合 --from-sentences，默认 data/annotations/<id>/<id>_sentences.csv",
+    )
     parser.add_argument("--model", "-m", default=None, help="（已弃用）")
     parser.add_argument("--device", "-d", default=None, help="（已弃用）")
     parser.add_argument("--batch-size", "-b", type=int, default=None, help="（已弃用）")
@@ -99,6 +110,40 @@ def main() -> int:
         paper_id, _ = infer_ids(args.papers)
     if not paper_id and args.pdf:
         paper_id, _ = infer_ids(args.pdf)
+
+    from_sentences: bool | str = False
+    if args.sentences:
+        from_sentences = args.sentences
+    elif args.from_sentences:
+        from_sentences = True
+
+    if from_sentences and paper_id and not args.output:
+        ensure_index(
+            paper_id,
+            rebuild=args.rebuild,
+            skip_embed=args.skip_embed,
+            pdf=args.pdf or args.papers,
+            target_chars=args.target_chars,
+            min_sentence_chars=args.min_sentence_chars,
+            from_sentences=from_sentences,
+        )
+        return 0
+
+    if from_sentences:
+        csv_path = args.sentences or ""
+        if not csv_path:
+            parser.error("--from-sentences 配合 --output 时请同时给 --sentences")
+        result = build_index_from_sentences(
+            csv_path,
+            args.output or "data/index",
+            paper_id=paper_id,
+            chunks_file=args.chunks or None,
+            skip_embed=args.skip_embed,
+            min_sentence_chars=args.min_sentence_chars,
+        )
+        if result.get("index_version"):
+            print("index_version: %s" % result["index_version"])
+        return 0
 
     if paper_id and not args.chunks and not args.output:
         ensure_index(

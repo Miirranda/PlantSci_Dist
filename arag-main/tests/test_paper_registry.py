@@ -109,6 +109,41 @@ def test_ensure_index_reuses_existing(tmp_path, monkeypatch):
     assert result["index_version"] == "keep-me"
 
 
+def test_build_index_from_sentences_csv_does_not_overwrite(tmp_path, monkeypatch):
+    monkeypatch.setenv("PLANTSCI_ROOT", str(tmp_path))
+    from retrieval_adaptor.index_builder import build_index_from_sentences, load_sentence_table
+
+    csv_path = tmp_path / "P007_sentences.csv"
+    csv_path.write_text(
+        "sentence_id,chunk_id,text,paper_id,status,drop_reason\n"
+        "0,0,Alpha sentence is long enough for indexing here.,P007,kept,\n"
+        "1,0,Beta sentence is long enough for indexing here too.,P007,kept,\n"
+        ",0,noise fragment that should stay dropped,P007,dropped,front_matter\n",
+        encoding="utf-8",
+    )
+    original = csv_path.read_text(encoding="utf-8")
+    index_dir = tmp_path / "index"
+    result = build_index_from_sentences(
+        csv_path,
+        index_dir,
+        paper_id="P007",
+        skip_embed=True,
+    )
+    assert result["reused"] is False
+    assert len(result["sentences"]) == 2
+    assert result["sentences"][0].startswith("Alpha")
+    assert len(result["dropped_sentences"]) == 1
+    assert result["dropped_sentences"][0]["reason"] == "front_matter"
+    assert csv_path.read_text(encoding="utf-8") == original
+    kept, dropped = load_sentence_table(csv_path)
+    assert [row["sentence_id"] for row in kept] == [0, 1]
+    assert len(dropped) == 1
+    meta = json.loads((index_dir / "index_meta.json").read_text(encoding="utf-8"))
+    assert meta["source"] == "sentences_csv"
+    assert meta["n_sentences"] == 2
+    assert meta["embedded"] is False
+
+
 def test_build_index_rejects_mixed_paper_ids(tmp_path):
     chunks = tmp_path / "chunks.json"
     chunks.write_text(

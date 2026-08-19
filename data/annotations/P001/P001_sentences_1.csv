@@ -1,0 +1,197 @@
+﻿sentence_id,chunk_id,text,paper_id
+0,0,"In flowering plants, inferior ovaries are key morphological innovations that evolved multiple times from superior ovaries to protect female parts of the flower.",P001
+1,0,"However, the developmental mechanisms underlying inferior ovary formation remain largely unknown.",P001
+2,0,"Comparative spatial transcriptome mapping and cell lineage reconstructions in developing floral buds of cucumber and tomato, which have inferior and superior ovaries, respectively, revealed that inferior ovaries develop from accelerated receptacle growth resulting from the continuous activity of meristematic stems cells at the base of the cucumber floral organs.",P001
+3,0,Genetic knockout of a receptacle-specific KNOX1 transcription factor in cucumber caused arrest in receptacle growth and yielded bisexual flowers with superior ovaries similar to those of tomato.,P001
+4,0,Here we provide developmental and mechanistic insights into inferior ovary formation and sex determination in cucurbits.,P001
+5,0,"A typical flower consists of four distinct types of floral organ: sepals, petals, stamens and carpels.",P001
+6,0,"These organs are arranged on the receptacle in sequential whorls, from the outer region to the centre1.",P001
+7,0,The spatial arrangement of the outer floral organs relative to the ovary determines whether the ovary is classified as superior or inferior2.,P001
+8,0,"Inferior ovaries are located below the attachment points of the sepals, petals and stamens, whereas superior ovaries are positioned above these other floral organs.",P001
+9,0,Inferior ovaries have independently evolved from superior ovaries multiple times throughout angiosperm evolution The adaptive advantage of an inferior ovary includes providing increased protection to developing gynoecia and allocating more energy to developing ovules4.,P001
+10,1,"Based on anatomical and comparative studies, several early theories regarding the development and evolution of the inferior ovary have been proposed, while no single theory completely explains all morphological aspects of the inferior ovary.",P001
+11,1,"Some studies suggest that the evolution of floral organs was not linear but rather a gradual process from simplicity to complexity, with various parts of the floral Agricultural Genomics Institute at Shenzhen, Chinese Academy of Agricultural Sciences, Shenzhen, China.",P001
+12,3,"We annotated the phylogenetic tree of angiosperms9, encompassing 502 species across 61 orders, with sex information and ovary positions (Fig. 1a).",P001
+13,3,"In extant angiosperms, bisexual flowers and superior ovaries 862 represent ancestral states.",P001
+14,3,Unisexual flowers and inferior ovaries originated independently multiple times during angiosperm evolution.,P001
+15,3,"However, they appeared simultaneously in the Cucurbitaceae and its closely related species Tetramelaceae and Begoniaceae (Fig. 1a), suggesting that the inferior ovary and unisexual flower may have originated from a single evolutionary event in the Cucurbitaceae.",P001
+16,3,"Cucumber and tomato have a similar floral structure (Extended Data Fig. 1a), but their differences in flower sex and ovary position make them excellent subjects for comparison (Extended Data Fig. 1b).",P001
+17,3,"Based on previous studies, we defined the different stages of floral bud development in cucumber and tomato10,11 (Supplementary Table 1) and examined the morphology of female floral buds of cucumber from floral meristem initiation to carpel fusion completion.",P001
+18,3,"After initiation, the cucumber floral meristem enlarges from the perimeter and becomes concave (Fig. 1b), then sepal, petal, stamen and carpel primordia are initiated sequentially on the inner regions of this ‘enlarged floral meristem’ (EFM) (Fig. 1b,c).",P001
+19,3,"With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig. 1b,c).",P001
+20,3,"The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c).",P001
+21,3,"By contrast, the floral meristem of tomato is convex, and the floral primordia sequentially initiate on its flank, with the carpels growing upwards to form superior ovaries (Fig. 1d, e).",P001
+22,3,"Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel.",P001
+23,4,"To dissect the underlying gene expression network driving the development of the inferior ovary of cucumber, we sampled floral buds at various stages, including S1–S8, and ovaries at 0 days post anthesis (DPA) for spatial transcriptomic analysis.",P001
+24,4,"Longitudinal sections were analysed, as well as a transverse section of S8-4 and two 0 DPA samples (Extended Data Fig. 2a), using a standard analytical procedure8.",P001
+25,4,"Datasets for individual sections were aggregated into bin 50, which had a diameter equal to that of an entire cell at 0 DPA (Extended Data Fig. 2b–d and Supplementary Table 2).",P001
+26,4,"The gene numbers and unique molecular identifier (UMI) counts in each bin 50 showed a high level of consistency (Extended Data Fig. 2e–g), without transcript signal spreading, as indicated by the UMI distribution (Supplementary Figs. 1–9), and all the floral bud samples at different stages could be continuously ordered along a pseudotime trajectory (Extended Data Fig. 2h).",P001
+27,4,"To acquire a global picture of clusters, we performed a spatially constrained clustering analysis7 (Extended Data Fig. 3b), revealing six superclusters of cells that could be putatively separated into tissues of the floral organs: putative FIM, epidermis, receptacle and conjunctive tissue, floral primordia and carpel, sepal and petal (Extended Data Fig. 2i).",P001
+28,4,"To further dissect cell-type composition, we conducted an unsupervised clustering analysis using Seurat12 (Fig. 2a, Extended Data Fig. 3a and Supplementary Fig. 10).",P001
+29,5,"We also observed three clusters (26, 27 and 28) situated between the carpel and receptacle at various stages of floral bud development, which we named conjunctive primordia, conjunctive tissue-early and conjunctive tissue-late, respectively (Fig. 2a–c).",P001
+30,5,"Besides the expression of marker genes in both carpel (CsAG1) and receptacle (CsCRC), the marker gene CsHANABA TARANU (CsHAN1) was exclusively expressed in cluster 27 (ref. 23) (Supplementary Fig. 18b).",P001
+31,5,"To confirm the accuracy of our annotation, we assessed the spatial distribution of several selected marker genes by RNA in situ hybridization, all of which confirmed the spatiotemporal expression patterns indicated by the Stereo-seq signals (Extended Data Fig. 2p).",P001
+32,5,"The data related to these spatially and temporally resolved transcriptomes and cell types of cucumber floral organ development can be browsed via the STOmicsDB27, an interactive data portal, at https://db.cngb.org/ stomics/ctsta.",P001
+33,6,"We found that although the production of sepal primordia was not captured, probably due to relatively small number of cells at the early stage, the cell lineage analysis indicated that the floral primordia sequentially differentiated into petal, stamen and carpel primordia (Fig. 3a) and that their distributions varied coincident with changes in floral buds morphology (Fig. 3b)13.",P001
+34,6,"The FIM showed a strong association with the receptacle (Fig. 3a), suggesting that the FIM is responsible for receptacle fate specification and development.",P001
+35,6,"The FIM also gives rise to the provascular tissue, which differentiates into protoxylem after the S5 stage (Fig. 3a).",P001
+36,6,"We determined that after S7, the FIM and receptacle primordia generate cells that are actively undergoing the cell cycle, while G1/S phase cells transition to receptacle cells, suggesting a mechanism to maintain cell proliferation and support rapid receptacle growth (Fig. 3a).",P001
+37,7,"These insights and the organization information of the cell clusters, as shown in the schematic diagrams (Extended Data Fig. 4b,c), highlight the spatiotemporal structure of these functional hubs in the transect section (bottom) and longitudinal section (top) at various developmental stages of cucumber floral buds (Fig. 3e) and advance our understanding of the development basis of cucurbit female flower buds.",P001
+38,7,"We infer that in cucumber, the fruit flesh outside the carpel is mostly derived from the development of receptacle.",P001
+39,7,"Accordingly, the receptacle-derived tissue is important for the genetic improvement.",P001
+40,8,"To understand the gene expression dynamics and cytological basis of the EFM in inferior ovary, we selected sections of floral buds from S1 to S4 stages and conducted unsupervised clustering analysis with near single-cell resolution (average cell diameter from S1 to S4 of 12.96 μm and bin30 diameter of 15 μm) (Fig. 4a and Extended Data Fig. 2c,d).",P001
+41,8,"This revealed seven clusters with distinct locations and expressed marker genes during early floral organ development (Fig. 4a,b and Supplementary Table 4): cluster 0, epidermis (cluster E); cluster 1, pedicel (cluster P); cluster 2, floral primordia (cluster FP); cluster 3, receptacle primordium (cluster RP); and cluster 5, FIM.",P001
+42,8,"Both cluster 3 and cluster 4 were distributed along the concave floral meristem, and cluster 4 showed preferential expression of the floral meristem marker gene LEAFY.",P001
+43,8,"Given the EFM in cucumber (Fig. 1b,c), we annotated cluster 4 as an EFM.",P001
+44,8,The distribution of cluster 3 (RP) and cluster 4 (EFM) indicates that their initiation and development determine the morphogenesis of the enlarged and concave floral meristem.,P001
+45,8,"RNA velocity and Monocle3 were used to study the early differentiation trajectories of these clusters (Extended Data Fig. 3d,e).",P001
+46,8,"Both methods yielded consistent trajectories originating from the FIM (Fig. 4c), highlighting three main developmental paths.",P001
+47,8,One involved the differentiation of the epidermis.,P001
+48,8,"The other two originated from the FIM and passed through the EFM, with one leading to the formation of the floral primordia, then generating floral whorls, while the other gave rise to the receptacle primordium from the EFM (Fig. 4c).",P001
+49,8,A pseudotime analysis using Monocle2 confirmed the resulting trajectories (Fig. 4d).,P001
+50,9,"After S5, we observed the largest increase in the bin numbers of receptacle-related clusters (receptacle-early, cluster 9), indicating that",P001
+51,9,"The target of rapamycin (TOR) kinase gene, which promotes the activation of S phase genes and meristems42, was found to predominantly expressed in S phase cells (Extended Data Fig. 6b).",P001
+52,9,These findings support the notion that cell proliferation in the receptacle is regulated by the activation of meristematic activities in S phase cells.,P001
+53,9,"To pinpoint the key genes that regulate the cell proliferation and rapid growth of receptacles, we focused on those that were specifically upregulated or downregulated along the TOFO trajectory from each cluster (Fig. 5e, Extended Data Fig. 6c and Supplementary Tables 7 and 8)30.",P001
+54,9,"CRC, a TF known to determine carpel identity and mediate unisexual flower development22, was upregulated in the receptacles",P001
+55,11,"To elucidate the function of KNAT2-like1, CRISPR–Cas9 was used to generate two homozygous transgene-free loss-of-function mutant lines, k-1 (2 bp deletion) and k-2 (1 bp insertion) (Fig. 6a).",P001
+56,11,"Compared with the wild type (WT), the mutants exhibited a similar proportion of male flowers around 60%.",P001
+57,11,"However, the WT showed a proportion of female flowers around 30%, while in mutants, there was a significant decrease in the proportion of normal female flowers with inferior ovaries from 30% to 12% (Fig. 6b).",P001
+58,11,Only at the lower nodes were some female flowers present.,P001
+59,11,"Instead, a corresponding proportion of ‘superior ovary flowers’ appeared, exhibiting the phenotype of bisexual flowers with superior ovaries (Fig. 6b), which means that 60% of normal female flowers transformed into ‘superior ovary flowers’ in the mutants.",P001
+60,11,"This phenotype was complemented in the k-2 mutants by expression of KNAT2-like1 under its native promoter (Fig. 6b), indicating the transformation of female flowers into ‘superior ovary flowers’ in the absence of KNAT2-like1 expression.",P001
+61,11,"To characterize the ‘superior ovary flowers’ morphogenesis, we compared the morphology of medial longitudinal sections of male, female and superior ovary flower buds at various developmental stages.",P001
+62,11,"The development of male flowers in the k-2 mutants was identical to WT (Extended Data Fig. 7a,c,g), with carpel primordia development arresting after S5 and stamen primordia gradually enlarging until mature pollen formed before anthesis (Extended Data Fig. 7a,c).",P001
+63,11,"In female flowers, the receptacle and carpel continued to grow after S5, and the receptacle grew rapidly and wrapped around the carpel to form the inferior ovary (Extended Data Fig. 7b,d).",P001
+64,11,We noted that the ovaries of female flowers of the k-2 mutants were shorter than those of WT (Extended Data Fig. 7f).,P001
+65,11,"We did not observe morphological differences among male, female and abnormal superior ovary flower development before S5, These results indicated that CRC is epistatic to ER and KNAT2-like1, and ER is epistatic to KNAT2-like1.",P001
+66,12,"KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i).",P001
+67,12,"Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j).",P001
+68,12,"Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC.",P001
+69,13,"The mutation of just KNAT2-like1 in cucumber simultaneously leads to the formation of bisexual flowers and superior ovaries, suggesting that during receptacle evolution a direct link was established between the development of the unisexual flowers and inferior ovaries.",P001
+70,13,"To investigate the specificity of cucumber receptacle development, floral buds of superior ovary mutants (knat2-like1) and tomato at S8 were collected to generate spatial transcriptomic data for comparative analysis (Supplementary Table 1).",P001
+71,13,"In total, seven clusters were identified for both the superior ovary mutant and tomato.",P001
+72,13,"These clusters were annotated based on their distribution and the expression of marker genes (Fig. 7a,b, Extended Data Fig. 9a–e and Supplementary Tables 10 and 11) and then integrated into superclusters (Fig. 7b).",P001
+73,13,"Unlike cucumber, tomato lacks a specific FIM, and the receptacle is located below the carpel rather than in the surrounding position for cucumber.",P001
+74,13,"Although the superior ovary mutant still has an FIM, the arrested receptacle and upward carpel growth were observed (Fig. 7b).",P001
+75,13,"We further compared the expression patterns of markers for each supercluster to compare their floral organ structures among cucumber, superior ovary mutant and tomato and found that in all the material AP3 and PI were expressed in petals and stamens, and AG showed specific expression in the carpel and stamen (Extended Data Fig. 9f).",P001
+76,13,"We further analysed the expression patterns of important genes in inferior ovary development, such as KNOX1 TF genes, CRC, ACO2 and ACS2, which show specific expression in the FIM, receptacle or conjunctive",P001
+77,16,"In this current study, we generated a comprehensive collection of spatially resolved transcriptomes and reconstructed the cellular territories and cell lineages for the continuously developing floral organs of cucumber.",P001
+78,16,"Our findings revealed that the prolonged activity of the FIM at the base of the floral organs is responsible for the initiation and rapid growth of the receptacle, leading to female flower determination and the formation of an inferior ovary.",P001
+79,16,"Characterization of the gene expression dynamics, for cell fate establishment and development of the receptacle, provided new insights into the molecular regulatory mechanisms underlying sex determination and inferior ovary formation in the cucurbits.",P001
+80,16,"Unisexual flowers and inferior ovaries have evolved independently multiple times throughout angiosperm evolution; however, in the Cucurbitaceae, both traits appear to have coevolved (Fig. 1a).",P001
+81,16,The knockout of KNAT2-like1 resulted in the production of stamens and the development of a superior ovary due to the disrupted formation of the floral receptacle.,P001
+82,16,Theses findings provide genetic evidence that both the promotion of the receptacle formation and the suppression of stamen development are orchestrated by a single KNOX1 TF.,P001
+83,16,"Accordingly, receptacle development and sex determination are closely linked in cucumber.",P001
+84,16,"Most cucurbit plants are monoecious, with unisexual flowers that have been defined by M (CsACS2/CmACS7), A (CsACS11/CmACS), G (CsWIP1/CmWIP1), F (CsACS1G), CRC and ACO2 genes and their respective interactions22,51,52.",P001
+85,16,Our spatial transcriptomic data established that all these sex-determining genes exhibited expression pattern in receptacle or receptacle-derived tissue.,P001
+86,16,"For instance, in female flower buds, KNAT2-like1, CRC and ACO2 (ref. 32) are marker genes in the receptacle These results suggest that the developmental innovation of the receptacle in Cucumis species contributes to the evolution of unisexual flowers.",P001
+87,17,"Since 60% of the normal female flowers transformed into ‘superior ovary flowers’, and only some female flowers were present at the lower nodes, we determined that KNAT2-like1 is critical for receptacle development and inferior ovary formation.",P001
+88,17,"It is worth noting that, however, there were still 40% of the female flowers at the lower nodes did not undergo this change.",P001
+89,17,Two possibilities were proposed.,P001
+90,18,All the materials were grown in a greenhouse with a 16–8 h light–dark regime and a temperature range from 18 °C to 24 °C.,P001
+91,19,"For cucumber CRISPR–Cas9 vector construction, the sgRNA was designed using the CRISPR-GE web tool (http://skl.scau.edu.cn).",P001
+92,19,"The sgRNA was inserted into the pASE402 vector using the restriction enzymes BsaI and T4 DNA Ligase (New England Biolabs, R3733V and M0202V).",P001
+93,19,The constructed recombinant vector was transformed into Agrobacterium tumefaciens strain EHA105.,P001
+94,19,"For complementation assay vector construction, the 2-Kb promoter and coding sequence of KNAT2-like1 were amplified using specific primers, and the amplified fragments were inserted into linearized pOE-HA vector (digested by SbfI and BamHI, New England Biolabs, R3642S and R3136S) using the In-Fusion method (Vazyme, C116).",P001
+95,19,All primers are shown in Supplementary Table 13.,P001
+96,19,The cucumber transformation was carried out as previously described54.,P001
+97,19,"Differentiated shoots were selected and transferred to plastic cups for rooting, and the seedlings were then planted in soil.",P001
+98,20,"To identify mutations in the target sites generated by CRISPR, genomic DNA was extracted from all CRISPR T0 generation and T1 generation plants that harbor variations in target genes using the CTAB method55.",P001
+99,20,"PCR for target site amplification was performed using KOD-One (TOYOBO, KOD-201) and the primers listed in Supplementary Table 13, and the sequences of the amplified PCR products were aligned with the WT genome sequences.",P001
+100,21,"Flowers at S1 to S8 stages of cucumber Gy14 and tomato TS69 were isolated under a stereoscope (SOPTOP, SZN71) and fixed with FAA (50% ethanol, 5% glacial acetic acid and 3.7% formaldehyde), dehydrated with a sequential series of ethanol treatments (50%, 70%, 85%, 95% and 100%), cleared with xylene and then embedded in paraplast (Sigma-Aldrich, cat.",P001
+101,21,"The sections were then stained with 0.1% toluidine blue solution (ScyTek, cat.",P001
+102,22,"After washing thoroughly in 0.1 M phosphate buffer (pH 7.2), the samples were fixed in 1% osmic acid for 2 h, dehydrated an ethanol series (30%, 40%, 50%, 60%, 70%, 80%, 90%, 95% and 100%) and dried in a critical point dryer (Leica, EM CPD 300).",P001
+103,22,"The samples were coated with gold powder using a sputter coater (HITACHI, MC1000) and observed by a scanning election microscope (Hitachi, SU 8010).",P001
+104,23,"The spatial architecture was aligned from a series of 3D images using the ‘coregistration’ function in Data Viewer (Bruker, 3D Suite).",P001
+105,23,"3D reconstruction The samples were imaged using a SkyScan micro-CT, rotating 360°, with an interlayer distance of 1.48 μm.",P001
+106,23,The regions near sample surfaces were excluded.,P001
+107,23,"The images were saved as 8-bit bitmaps, processed in NRecon software for two dimensions, and ‘Calculate 3D tool’ was used for 3D visualizations.",P001
+108,23,CTan software refined the images before 872 stacking.,P001
+109,23,"The 3D reconstructions were segmented using 3D Slicer for Mac, exported in stereolithography format, and further analysed for volume rendering in Blender (https://www.blender.org/).",P001
+110,24,Female flowers from different developmental stages of cucumber Gy14 were collected and fixed in ice-cold paraformaldehyde fixative (4% paraformaldehyde and 4% DMSO in 1× PBS) and vacuum infiltrated for 30 min.,P001
+111,24,"The fixative was replaced, and the samples were gently shaken overnight at 4 °C then dehydrated in an ethanol series, cleared in an xylene series and embedded in Paraplast (Sigma-Aldrich, cat.",P001
+112,25,"Fresh cucumber Gy14 and tomato TS69 floral buds from different developmental stages, as well as knat2-like1 mutants and WT CU2 female floral buds were collected, placed into Tissue-Tek optimal cutting temperature compound (Sakura, 4583) and vacuum infiltrated on ice for 15 min.",P001
+113,25,"The samples were then placed on the bottom of a Tissue-Tek cryomold in sequence based on their developmental stages and flower bud length (Sakura, 4565).",P001
+114,25,The embedding samples were fixed and stored at −80 °C.,P001
+115,25,"The frozen block was incubated at −20 °C for 30 min before sectioning (10 μm thickness) with Cryostat Microtome (Leica, CM1950).",P001
+116,25,"A Stereo-seq transcriptomics set (Beijing Genomics Institute (BGI), 111ST114) was used to treat the sections following the manufacturer’s instructions with minor modifications.",P001
+117,25,"Briefly, methanol was used to fix the tissue on the chip for 40 min at −20 °C, then the chip was stained with Fluorescent Brightener 28 and imaged with a microscope (Motic, PA53 FS6).",P001
+118,25,"The tissue on the chip was then permeabilized by treatment with 0.1% PR enzyme in 0.01 M HCl buffer (pH 2.0) for 14 min at 37 °C, so that RNAs in the tissue were captured by polyT.",P001
+119,25,"Reverse transcription was performed overnight in a 37 °C incubator, and the cDNA was released into the release buffer for 3 h after tissue removal before collection for sequencing library construction.",P001
+120,25,"The Stereo-seq libraries were prepared using a kit (BGI, 111KL114) and sequenced on a DNBSEQ-Tx sequencer.",P001
+121,25,"Standard DNB (DNA nanoball) chips have spots with diameter of approximately 220 nm and a centre-to-centre distances of 500 nm, allowing up to 400 spots for tissue RNA capture per 100 mm2.",P001
+122,25,The cryosections (10 μm) were prepared to capture approximately a single-cell layer of tissue for Stereo-seq analysis.,P001
+123,25,We collected cross-sections at defined positions to ensure that comparable samples from different developmental stages were used for the Stereo-seq analysis.,P001
+124,26,The sequences were submitted to HMMsearch (https://www.ebi.ac.uk/ Tools/hmmer/search/hmmsearch) to determine whether the homologous sequences identified by BLASTP share the same domain composition as those from A.,P001
+125,26,The results were further validated using InterPro (https://www.ebi.ac.uk/interpro/) and SMART (http://smart.embl-heidelberg.de/) to assess the presence of domains and filter out false-positive sequences.,P001
+126,26,Non-conserved sites in the sequences were removed using trimAl57.,P001
+127,26,A phylogenetic tree was constructed based on sequence alignments using the neighbourjoining method in IQ-Tree v.2.0 (http://www.iqtree.org/).,P001
+128,27,Stereo-seq fastq files were generated using an MGI DNBSEQ-Tx sequencer.,P001
+129,27,"Read 1 consisted of coordinate identity (CID) and molecular identifier (MID) sequences (CID: 1–25 bp, MID: 26–35 bp), and read 2 contained the cDNA sequence.",P001
+130,27,The default parameters of the SAW software suite (https://github.com/BGIResearch/SAW) were used to align raw sequencing reads to genomes.,P001
+131,27,"The CID sequences in the first reads were initially mapped to the predefined coordinates of the in situ captured chip from the first sequencing round, permitting a single-base mismatch to account for sequencing and PCR errors.",P001
+132,27,Reads with MIDs containing ‘N’ bases or having over two bases with quality scores below 10 were excluded.,P001
+133,27,CID and MID identifiers for each read were appended to the respective read header.,P001
+134,27,"Subsequently, the retained reads were aligned to reference genomes (9930 for cucumber and TS69 for tomato) using STAR and mapped reads with MAPQ >10 were annotated to their corresponding genes.",P001
+135,27,"UMIs with identical CIDs and gene loci were merged, allowing a single-base mismatch for error correction in sequencing and PCR.",P001
+136,27,"The single-stranded DNA photo was utilized in the SAW workflow, enabling the accurate mapping of raw reads to their precise positions on the tissue.",P001
+137,27,"Ultimately, an expression count matrix was created, documenting the expression levels of each gene in every spot.",P001
+138,27,The resultant expression profile matrix files were performed into bin 50 data using the BGI as previously reported58.,P001
+139,27,"For the analysis in Fig. 4, bin30 data were performed on a single cell from S1–S4.",P001
+140,28,"To consider spatial information in unsupervised clustering, we employed the method described earlier for Leiden clustering analysis7.",P001
+141,28,"The cucumber and tomato clusters were identified based on their anatomical structure and marker genes with resolution parameters of 2.4 and 1.8, respectively.",P001
+142,29,We used the SCTransform function in R package Seurat (v4.2.1)12 to normalize UMI count matrices.,P001
+143,29,"Subsequently, feature gene selection (‘FindVariableGenes’ function with vst method and 2000 features), PCA dimension reduction (‘RunPCA’ function with variable genes and 30 principal components), constructing the SNN graph, clustering bins based on Louvain (‘FindNeighbors’ and ‘FindClusters’) and visualization with nonlinear dimensional reduction algorithms (‘RunTSNE’ and ‘RunUMAP’) were successively performed in Seurat.",P001
+144,29,"The clustering resolution parameters were set to 2 (related to Fig. 2a, all samples from cucumber), 1.4 (related to Fig. 4a, S1–S5 samples from cucumber), 0.8 (related to Fig. 5a, all samples from cucumber in clusters of the receptacle and FIM) and 1.2 (related to Fig. 7a and Extended Data Fig. 9e, all samples from tomato), respectively.",P001
+145,29,We did not filter low-expression genes due to the high sparsity of our Stereo-seq datasets59.,P001
+146,29,The ‘RunHarmony’ function was used to correct batch effects between samples60.,P001
+147,29,"To construct a 3D UMAP embedding, three UMAP dimensions were retrieved with ‘RunUMAP’ function using 873 the parameter (n.components = 3).",P001
+148,29,"The 3D UMAP scatter graph was then plotted with three UMAP dimensions (‘UMAP_1’, ‘UMAP_2’ and ‘UMAP_3’) using the plotly package (v.4.9.1).",P001
+149,29,"To identify cluster-enriched genes within the spatial transcriptome data, we used the ‘FindAllMarkers’ function in Seurat, applying a two-side Wilcoxon rank sum test to compare gene expression levels between clusters.",P001
+150,29,"Specifically, we set a log fold change threshold of 1.5 (logfc.threshold = 0.58) to include only genes with at least a 1.5-fold expression difference between clusters, thereby highlighting significant differential expression patterns.",P001
+151,29,"Moreover, we considered only those genes expressed in at least 25% of the cells in a given cluster (min.pct = 0.25) to focus on biologically relevant markers.",P001
+152,29,"To control for multiple comparisons, we applied Bonferroni correction to adjust",P001
+153,30,"To construct floral developmental trajectory, we integrated and coembedded bin50 from different stages (all sample in cucumber from S1 to S8-4), at consecutive time points using Seurat with FindIntegrationAnchors and IntegrateData functions with default settings.",P001
+154,30,"After integration, edge weight between clusters across stages was calculated as described in TOME30.",P001
+155,30,"Finally, continuous trajectories with edges weight >0.2 from the UMAP embedding were retained for the resultant directed graph to ensure connectivity of the overall graph.",P001
+156,30,"Systematic nomination of key TFs, which specifically upregulated or downregulated, for cell-type specification was identified as described in TOME30.",P001
+157,31,"The genome sequences of the TS69 HiFi accession was assembled by hifiasm (https://github.com/chhylp123/hifiasm), using default parameters.",P001
+158,31,The assembly was anchored and oriented to chromosomes using the reference-guided software RagTag (v.1.0.1)61 with the default parameters.,P001
+159,32,"The Extensive de novo transposable element Annotator (EDTA)62 tool was used to detect different types of transposable element, including long terminal repeat retrotransposons, DNA transposons with terminal inverted repeat motifs, Helitron-like DNA transposons and short interspersed nuclear element/long interspersed nuclear element repeats.",P001
+160,32,"Then RepeatMasker (v4.10) (http://www.repeatmasker.org) was used to eliminate any potential transposons, simple repeats or satellites with the transposable element library as an input.",P001
+161,32,"Initiailly, PacBio Iso-Seq data from seven different tissues (root, stem, leaf, hypocotyl, macro floral buds, micro floral buds and 0 DPA placenta) underwent preprocessing using the CCS program (https:// github.com/PacificBiosciences/ccs), followed by demultiplexing using lima (https://github.com/PacificBiosciences/barcoding).",P001
+162,32,The high-quality clustered FLNC reads were then aligned to the TS69 genome using pbmm2 with the parameter ‘--preset ISOSEQ’.,P001
+163,32,"In addition, RNA-seq reads from the same seven tissues were mapped to the TS69 genome using HISAT2 (ref. 63) (https://daehwankimlab.github.",P001
+164,32,"The protein sequences of tomato and potato that were released earlier, along with the curated plant proteins from the UniProt Swiss-Prot database (https://www.uniprot.org/downloads), were merged.",P001
+165,32,"Subsequently, a redundancy removal process was conducted using CD-HIT with default parameters67.",P001
+166,32,"The homologous protein evidence derived from these sequences, and the high-quality consensus Iso-Seq reads and the StringTie assembled transcripts gff were",P001
+167,33,RNA velocity estimation involves using velocyto CLI to count unspliced/ spliced RNA reads and then exporting count matrices to scVelo70.,P001
+168,33,"In detail, after the count matrices were normalized across cells in S4 sample with bin30, we selected 3,000 highly variable genes and performed principal component analysis to generate a nearest neighbour graph using 30 principal components based on Euclidean distances.",P001
+169,33,The firstand second-order moments were then calculated for each cell across its 30 nearest neighbours.,P001
+170,33,"To estimate the RNA velocities, we performed transcriptional dynamics modelling in dynamic mode, utilizing scVelo default procedures to infer model parameters for recovering splicing kinetics, and then, the velocities were calculated.",P001
+171,33,"The lower-dimensional embedding of single-cell data was utilized to visually represent RNA velocities, which are estimated and projected as streamlines.",P001
+172,34,Monocle2 (ref. 71) was used to analyse the development of the receptacle from S1 to S4.,P001
+173,34,"The data from epidermis, receptacle primordium and enlarged FIM were extracted.",P001
+174,34,The top marker genes of each cluster were calculated using the Seurat (v4.2.1) FindAllMarkers function and were selected for Monocle2 analysis.,P001
+175,34,A dimensionality reduction was performed with the DDRTree method and finally visualized using the plot_cell_trajectory function.,P001
+176,34,The cluster of FIM was selected as the starting point for the development of the receptacle.,P001
+177,34,The branch point was selected to analyse branches in differentiation trajectories.,P001
+178,34,BEAM was used to analyse the pseudotime-dependent or branch-dependent genes.,P001
+179,34,The genes that were significantly branch dependent were visualized with the ‘plot_genes_branched_heatmap’ function.,P001
+180,35,"The samples from S5 to S8-4 were used, and the R package Giotto43 was employed to perform spatial coexpression module analysis.",P001
+181,35,"Seurat objects were first converted to Giotto objects, employing the seuratToGiotto function, and spatially coherent expression patterns were identified using the binSpect function, ith parameters as follows: bin_method = ‘rank’, calc_hub = T and hub_min_int = 5.",P001
+182,35,"The top genes were clustered to identify spatially coexpressed feature modules using clusterSpatialCorFeats function, with the following parameters set as follows: k = 17 and gene number of 3,000 for flower organs throughout all stages.",P001
+183,36,"We conducted pseudotime analysis with Monocle2 in S1 to S3, S6 and S8-1 to S8-4, designating the FIM from each developmental stage as the root.",P001
+184,36,The pseudotime for each cell was normalized to a scale of 0–1.,P001
+185,36,"For the coexpression network, we selected the genes from module 14 based on the Giotto results as the input gene set.",P001
+186,36,"To illustrate gene expression patterns along the pseudotime, we applied vector generalized linear and additive models (VGAM) to fit smooth spline curves to the expression levels of these genes.",P001
+187,36,"Following this, we performed GRNs analysis using SCODE72.",P001
+188,36,"The algorithm was executed 100 times, and the average results were computed to ensure a reliable evaluation.",P001
+189,36,"874 The inferred regulatory relationships were then saved in a file named ‘meanA.txt’, and these arranged files were imported into Cytoscape73 (3.10.3) for visualizing the interactions between the genes.",P001
+190,37,"For RNA in situ hybridization experiments, each hybridization probe was repeated with the same results using at least three independent samples.",P001
+191,37,"Similarly, the tissue sections followed the same reproducibility standards, ensuring consistency across all experiments.",P001
+192,37,"There was no randomization in this study, and the investigators were not blinded to assignment during experimentation or result evaluation.",P001
+193,37,The sample size was not predetermined using any statistical methods.,P001
+194,38,The raw and processed Stereo-seq data are available via the CNGB Nucleotide Sequence Archive at https://db.cngb.org/stomics/ctsta.,P001
+195,38,"The TS69 genome assembly, with annotations, is available via the CNGB Nucleotide Sequence Archive (accession ID CNP0006766).",P001
