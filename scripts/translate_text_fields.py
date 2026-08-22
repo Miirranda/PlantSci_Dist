@@ -13,7 +13,7 @@
 机制：
     - 仅翻译 system_retrieval.review_evidences[*].text
     - 已有非空 text_zh 的句子不请求 API，并回灌本地缓存
-    - 按规范化原文 + paper_id:sentence_id 去重/命中缓存
+    - 按规范化英文原文去重/命中缓存（不使用 sentence_id，避免索引重建后错位）
     - 翻译结果缓存到 .translation_cache.json，再次运行不会重复翻译
     - 成功请求间隔约 0.2s；411 限流指数退避
     - --concat 模式：每完成一个 sample 即写入输出 JSON，中断可续跑
@@ -50,7 +50,7 @@ RATE_LIMIT_BASE_SEC = 3.0
 
 
 def empty_cache():
-    return {"by_text": {}, "by_sid": {}}
+    return {"by_text": {}}
 
 
 def normalize_text(text):
@@ -79,42 +79,33 @@ def load_cache():
     if not isinstance(raw, dict):
         return empty_cache()
 
-    if "by_text" in raw or "by_sid" in raw:
+    if "by_text" in raw:
         by_text = {}
         for k, v in (raw.get("by_text") or {}).items():
             if isinstance(v, str) and v.strip():
                 by_text[normalize_text(k)] = v.strip()
-        by_sid = {}
-        for k, v in (raw.get("by_sid") or {}).items():
-            if isinstance(v, str) and v.strip() and k:
-                by_sid[str(k)] = v.strip()
-        return {"by_text": by_text, "by_sid": by_sid}
+        return {"by_text": by_text}
 
     by_text = {}
     for k, v in raw.items():
-        if isinstance(v, str) and v.strip() and k not in ("by_text", "by_sid"):
+        if isinstance(v, str) and v.strip() and k != "by_text":
             by_text[normalize_text(k)] = v.strip()
-    return {"by_text": by_text, "by_sid": {}}
+    return {"by_text": by_text}
 
 
 def save_cache(cache):
-    payload = {
-        "by_text": cache.get("by_text") or {},
-        "by_sid": cache.get("by_sid") or {},
-    }
+    payload = {"by_text": cache.get("by_text") or {}}
     with open(CACHE_FILE, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
 
 def cache_size(cache):
-    return len(cache.get("by_text") or {}) + len(cache.get("by_sid") or {})
+    return len(cache.get("by_text") or {})
 
 
 def cache_get(cache, text, paper_id=None, sentence_id=None):
-    sid_key = make_sid_key(paper_id, sentence_id)
-    by_sid = cache.get("by_sid") or {}
-    if sid_key and sid_key in by_sid:
-        return by_sid[sid_key]
+    """仅按规范化英文原文查缓存；sentence_id 不参与键匹配。"""
+    del paper_id, sentence_id
     norm = normalize_text(text)
     if not norm:
         return None
@@ -123,21 +114,16 @@ def cache_get(cache, text, paper_id=None, sentence_id=None):
 
 def cache_put(cache, text, zh, paper_id=None, sentence_id=None):
     """写入缓存。已有相同译文时返回 False。"""
+    del paper_id, sentence_id
     zh = (zh or "").strip()
     norm = normalize_text(text)
-    if not zh:
+    if not zh or not norm:
         return False
-    changed = False
     by_text = cache.setdefault("by_text", {})
-    by_sid = cache.setdefault("by_sid", {})
-    if norm and by_text.get(norm) != zh:
-        by_text[norm] = zh
-        changed = True
-    sid_key = make_sid_key(paper_id, sentence_id)
-    if sid_key and by_sid.get(sid_key) != zh:
-        by_sid[sid_key] = zh
-        changed = True
-    return changed
+    if by_text.get(norm) == zh:
+        return False
+    by_text[norm] = zh
+    return True
 
 
 def dump_json(path, data):
@@ -225,14 +211,14 @@ def parse_concatenated_json(filepath: str) -> dict:
 # ── 文本收集 / 回填 ─────────────────────────────────────────────────────────
 
 def seed_cache_from_data(data, cache):
-    """把稿里已有的 text_zh 回灌缓存，避免 cache 丢失后整份重译。"""
+    """把稿里已有的 text_zh 回灌 by_text 缓存（仅当 allow_seed=True 时调用）。"""
     added = 0
-    for _, paper_id, item in iter_review_items(data):
+    for _, _paper_id, item in iter_review_items(data):
         t = item.get("text") or ""
         zh = (item.get("text_zh") or "").strip()
         if not normalize_text(t) or not zh:
             continue
-        if cache_put(cache, t, zh, paper_id, item.get("sentence_id")):
+        if cache_put(cache, t, zh):
             added += 1
     return added
 
@@ -285,9 +271,39 @@ def collect_pending_unique(data, cache, sample=None):
 
 
 def apply_translation(data, cache, text, zh, paper_id=None, sentence_id=None, sample=None):
-    """写入缓存，并回填所有匹配（规范化原文或同 paper+sentence_id）的缺译文条目。"""
-    cache_put(cache, text, zh, paper_id, sentence_id)
+    """写入缓存，并回填所有匹配规范化原文的缺译文条目。"""
+    del paper_id, sentence_id
+    cache_put(cache, text, zh)
     return fill_from_cache(data, cache, sample=sample)
+
+
+def verify_translations(data, cache):
+    """断言每条 text_zh 与 by_text 缓存一致；不一致则抛 ValueError。"""
+    mismatches = []
+    for sample in data.get("samples") or []:
+        sid = sample.get("sample_id", "?")
+        review = (sample.get("system_retrieval") or {}).get("review_evidences") or []
+        for item in review:
+            en = normalize_text(item.get("text") or "")
+            zh = normalize_text(item.get("text_zh") or "")
+            if not en:
+                continue
+            if not zh:
+                mismatches.append((sid, item.get("sentence_id"), "missing text_zh"))
+                continue
+            expected = cache_get(cache, en)
+            if expected and normalize_text(expected) != zh:
+                mismatches.append(
+                    (sid, item.get("sentence_id"), "text_zh != by_text cache")
+                )
+    if mismatches:
+        lines = ["翻译自检失败 (%d 条):" % len(mismatches)]
+        for row in mismatches[:20]:
+            lines.append("  sample=%s sentence_id=%s reason=%s" % row)
+        if len(mismatches) > 20:
+            lines.append("  ... 还有 %d 条" % (len(mismatches) - 20))
+        raise ValueError("\n".join(lines))
+    return True
 
 
 def count_review_stats(data):
@@ -424,6 +440,13 @@ def process_single_file(input_file, output_file, cache):
     dump_json(output_file, data)
 
     _, _, missing_after = count_review_stats(data)
+    try:
+        verify_translations(data, cache)
+        print("  verify: OK (all text_zh match by_text cache)")
+    except ValueError as exc:
+        print("  verify: FAILED")
+        print("  %s" % exc)
+        sys.exit(1)
     print("[Done]!")
     print(f"\n  unique review texts: {unique_n}")
     print(f"  API ok/fail: {api_ok}/{api_fail}")
@@ -508,6 +531,14 @@ def process_concat(input_file, output_file, cache):
 
     extra = fill_from_cache(data, cache)
     dump_json(output_file, data)
+
+    try:
+        verify_translations(data, cache)
+        print("  verify: OK (all text_zh match by_text cache)")
+    except ValueError as exc:
+        print("  verify: FAILED")
+        print("  %s" % exc)
+        sys.exit(1)
 
     print("\n[Done]!")
     print(f"  total samples: {total_samples}")

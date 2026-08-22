@@ -80,6 +80,7 @@ _WRAP_TEXT_KEYS = frozenset({
     "evidence_judgement",
     "classification_reason",
     "manual_check_hints",
+    "human_note",
     "notes",
     "reason",
     "reasoning",

@@ -57,13 +57,13 @@
             "rank": 2,
             "sentence_id": 93,
             "text": "To identify the major cell lineages involved in cucumber floral bud organogenesis and the mechanisms of receptacle development, we used the spatial transcriptomic data (Extended Data Fig. 3c) to generate a trajectory of floral organogenesis (TOFO), drawing on methods from the trajectory of mammal embryogenesis (TOME) analysis30.",
-            "text_zh": "将构建的重组载体转化为农杆菌EHA105。"
+            "text_zh": "为了确定参与黄瓜花芽器官发生的主要细胞系和花托发育机制，我们利用空间转录组学数据（扩展数据图3c），借鉴哺乳动物胚胎发生轨迹（TOME）分析的方法，生成了花器官发生轨迹（TOFO）。"
           },
           {
             "rank": 3,
             "sentence_id": 32,
             "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation.",
-            "text_zh": "与这些时空解析转录组和黄瓜花器官发育的细胞类型相关的数据可通过交互式数据门户网站STOmicsDB27浏览，网址为https://db.cngb.org/ stomics/ctsta。"
+            "text_zh": "细胞系分析表明，黄瓜花器官基部的花萼间分生组织（FIM）活性延长，导致花托快速生长，形成下子房。"
           },
           {
             "rank": 4,
@@ -75,7 +75,7 @@
             "rank": 5,
             "sentence_id": 47,
             "text": "To dissect the underlying gene expression network driving the development of the inferior ovary of cucumber, we sampled floral buds at various stages, including S1–S8, and ovaries at 0 days post anthesis (DPA) for spatial transcriptomic analysis.",
-            "text_zh": "其中之一涉及表皮的分化。"
+            "text_zh": "为了剖析驱动黄瓜下卵巢发育的潜在基因表达网络，我们采样了黄瓜不同阶段的花蕾，包括S1-S8，以及开花后0天的卵巢，进行了空间转录组分析。"
           },
           {
             "rank": 6,
@@ -87,7 +87,7 @@
             "rank": 7,
             "sentence_id": 26,
             "text": "In this study, we generate a collection of spatially resolved transcriptomes of developing cucumber female floral buds at single-cell resolution b Petal prim Stamen prim Carpel prim Sepal prim Enlarged floral meristem Asparagales Dioscoreales-cladeA S1 S2 S3 S4 S5 S6 S7 S8 Dioscoreales-cladeB c Pandanales Liliales Sepal Petal Alismatales Stamen Acorales Carpel Magnoliales Enlarged receptacle Diﬀerentiating floral primordia Laurales Enlarged floral meristem Piperales Ceratophyllales Austrobaileyales Nymphaeales Amborellales Selaginellales S1 S2 S3 S4 S5 S7 S8 S6 d Brassicales Sepal prim Petal prim Stamen prim Carpel prim Malvales Floral meristem Sapindales Oxalidales Huerteales S1 S2 S3 S5 S6 S7 S8 S4 e Malpighiales Sepal Petal Stamen Carpel Diﬀerentiating floral primordia Receptacle S1 S2 S3 S4 S5 S6 S7 S8 the corresponding floral organs.",
-            "text_zh": "每个bin 50中的基因数量和唯一分子标识符（UMI）计数显示出高度的一致性（扩展数据图2e-g），没有转录信号扩散，这是UMI分布所表明的（补充图1-9），并且不同阶段的所有花芽样本都可以沿着伪时间轨迹连续排序（扩展数据图2h）。"
+            "text_zh": "在这项研究中，我们在单细胞分辨率下获得了发育中的黄瓜雌花芽的空间分解转录组集合b花瓣prim雄蕊prim心皮prim萼片prim扩大的花分生组织芦笋Dioscoreales-cladeA S1 S2 S3 S4 S5 S6 S7 S8 Dioscoreales-cladeB c Pandanales Liliales萼片花瓣Alismatales雄蕊Acorales心皮木兰花扩大的花托分化花原基月苞扩大的花分生组织Piperales Ceratophyllales austrrobaileyales nyphhaeales伞生花序卷叶生S1 S2 S3 S4 S5 S7 S8 S6 d苞片原片花瓣原片雄蕊原片心皮原片花分生组织无尾花序草蕊花原片S1 S2 S3 S5 S6 S7 S8 S4 e花萼花瓣雄蕊心皮分化花原基花托S1 S2 S3 S4 S5 S6 S6 S7 S8相应的花器官。"
           },
           {
             "rank": 8,
@@ -105,7 +105,7 @@
             "rank": 10,
             "sentence_id": 74,
             "text": "They could be 863 a G1/S phase cells Sepal epidermis Unknown Endocarp (0 DPA) 0 6 12 18 Mesocarp (0 DPA) Epicarp (0 DPA) Petal primordia Trichome-base 1 7 13 19 FP Petal-early Receptacle primordia Unknown 2 8 14 20 Placenta Sepal mesophyll Petal-late Receptacle-early 3 9 15 21 Ovule (ovary wall) Provascular Unknown Receptacle-late 4 10 16 22 Epidermis G2/M phase cells G0/G1 phase cells Sieve element 5 11 17 23 2 mm 2 3 3 2 2 5 5 10 8 4 S1 S2 S3 S4 S5 S6 S7 S8-1 S8-2 S8-3 b Average expression Max Min Per cent expressed 0 25 50 75 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0 unknown Aspartyl protease LTP WOX9 AG1 LAX2 PHOSPHO1 HTH KNAT2-like1 LOX2 CRC unknown SEO FIL/YAB1 PI MIPS3 GRAS1 LTP4 LRR protein OMR1 CDC20.1 glycine_rich2 Plant Tudor_like RCA BAS1 bHLH96 TOC34 Calcium_binding PNI KAO2 pathogenesis SPX1 STM-like AP1 CAL DWF1 CYP78A7 ANT d Ovule (ovary wall) Placenta 4 3 Receptacle-late Receptacle-early 10 9 Conjunctive tissue-early 27 Conjunctive tissue-late 28 S6 S7 S8-1 S8-2 S8-3 S8-4 Fig. 2 | Spatial transcriptome of developing cucumber female floral buds using Stereo-seq.",
-            "text_zh": "虽然上位子房突变体仍然有一个FIM，但可以观察到花托阻滞和心皮向上生长（图7b）。"
+            "text_zh": "他们可以是863一个G1 / S期细胞表皮花萼未知的内果皮(0 DPA) 0 6 12 18中果皮(0 DPA)外果皮(0 DPA)花瓣原基Trichome-base 1 7 13 19 FP Petal-early插座20胎盘萼片原基未知2 8 14叶肉Petal-late Receptacle-early 3 9 15 21胚珠(卵巢壁)原形成层的未知Receptacle-late 4 10 16 22表皮G2 / M期细胞G0 / G1期细胞筛元素5 11 17 23 2毫米2 3 3 2 2 5 5 10 8 4 S1 S2 S3 S4 S5 S6 S7 S8-1 S8-2 S8-3 b平均表达马克斯每分表示0 25 75 40分钟39 38 37 36 35 34 33 32 30 31日29日28日27日26日25日24日23日22日21日20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0未知天门冬氨酰蛋白酶LTP WOX9 AG1 LAX2 PHOSPHO1 HTH KNAT2-like1 LOX2 CRC未知SEO费尔/ YAB1πMIPS3 GRAS1 LTP4远程雷达蛋白质OMR1 CDC20.1 glycine_rich2植物Tudor_like RCA BAS1 bHLH96 TOC34 Calcium_binding句KAO2病机SPX1 STM-like AP1卡尔DWF1 CYP78A7 ANT d胚珠(卵巢壁)胎盘4 3 Receptacle-late Receptacle-early 10 9图2利用Stereo-seq分析发育中的黄瓜雌花芽的空间转录组。"
           }
         ]
       },
@@ -130,7 +130,6 @@
         ],
         "sentence_ids": [
           2,
-          32,
           3,
           4
         ],
@@ -150,7 +149,7 @@
         "severity": "moderate",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文未使用‘首次揭示’表述（如 remain largely unknown / not previously characterized 等），且‘KNOX1在葫芦科花器官发育和性别决定中的核心作用’被泛化：论文仅在黄瓜中验证（Cucumis sativus），未扩展至整个葫芦科（Cucurbitaceae）；‘花器官发育和性别决定’二者并列亦过度宽泛——论文明确将KNOX1功能锚定于 receptacle growth → inferior ovary formation → unisexual flower establishment，即性别决定是子房位置改变的间接结果，非直接调控性别决定通路。"
+        "reason": "论文未使用‘首次揭示’表述（如 remain largely unknown / not previously characterized 等）,且‘KNOX1在葫芦科花器官发育和性别决定中的核心作用\n                   ’被泛化：论文仅在黄瓜中验证（Cucumis sativus）,未扩展至整个葫芦科（Cucurbitaceae）；‘花器官发育和性别决定’二者并列亦过度宽泛——论文明确将KNOX1功能锚定于 rece\n                   ptacle growth → inferior ovary formation → unisexual flower establishment,即性别决定是子房位置改变的间接结果,非直接调控性别决\n                   定通路。"
       },
       "analysis": {
         "evidence_judgement": "分句1‘首次揭示黄瓜下位子房发育机制’：sentence_id=2提供空间转录组+谱系追踪证据，但无‘首次’限定；sentence_id=32补充FIM持续活性机制，均未宣称首创性。分句2‘KNOX1在葫芦科…核心作用’：sentence_id=3证实KNOX1敲除导致黄瓜子房上位化及两性花，支撑其在黄瓜中的功能；sentence_id=4明确‘cucurbits’为研究对象范畴，但全文实证仅限黄瓜（C. sativus），未含南瓜、西瓜等其他葫芦科物种实验或比较数据；‘花器官发育和性别决定’并列表述：sentence_id=2/32/3均聚焦receptacle growth→ovary position→sex expression链条，未提KNOX1直接调控花器官身份（如ABCE模型）或性别决定基因（如F/f、ACS11等）。",
@@ -191,7 +190,10 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": true,
+      "human_note": "次失真类别需要修正，从黄瓜扩展到葫芦科，是范围扩大",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C02",
@@ -244,7 +246,7 @@
             "rank": 3,
             "sentence_id": 9,
             "text": "Inferior ovaries have independently evolved from superior ovaries multiple times throughout angiosperm evolution and are present in several major angiosperm clades3.",
-            "text_zh": "在被子植物的进化过程中，下位卵巢多次独立地从上位卵巢进化而来。下位卵巢的适应性优势包括为发育中的雌蕊提供更多的保护，并为发育中的胚珠分配更多的能量。"
+            "text_zh": "在被子植物的进化过程中，下卵巢多次独立地从上卵巢进化而来，并且存在于几个主要的被子植物支系中。"
           },
           {
             "rank": 4,
@@ -274,19 +276,19 @@
             "rank": 8,
             "sentence_id": 36,
             "text": "We annotated the phylogenetic tree of angiosperms9, encompassing 502 species across 61 orders, with sex information and ovary positions (Fig. 1a).",
-            "text_zh": "我们发现，在S7之后，FIM和受体原基产生活跃的细胞周期，而G1/S期细胞转变为受体细胞，这表明一种维持细胞增殖和支持受体快速生长的机制（图3a）。"
+            "text_zh": "我们对被子植物的系统发育树进行了注释，包括61目502种被子植物，包括性别信息和卵巢位置（图1a）。"
           },
           {
             "rank": 9,
             "sentence_id": 37,
             "text": "In extant angiosperms, bisexual flowers and superior ovaries 862 represent ancestral states.",
-            "text_zh": "这些认识和细胞簇的组织信息，如图4b，c所示，突出了这些功能枢纽在黄瓜花蕾不同发育阶段的横断面（下）和纵断面（上）的时空结构（图3e），促进了我们对黄瓜雌花芽发育基础的理解。"
+            "text_zh": "在现存被子植物中，两性花和上位子房代表了祖先的状态。"
           },
           {
             "rank": 10,
             "sentence_id": 38,
             "text": "Unisexual flowers and inferior ovaries originated independently multiple times during angiosperm evolution.",
-            "text_zh": "我们推测，在黄瓜中，心皮外的果肉主要来自于花托的发育。"
+            "text_zh": "单性花和下子房在被子植物进化过程中多次独立形成。"
           }
         ]
       },
@@ -318,7 +320,7 @@
         "severity": "none",
         "needs_manual_review": false,
         "uncovered_phenomenon": "",
-        "reason": "论文明确指出‘The spatial arrangement of the outer floral organs relative to the ovary determines whether the ovary is classified as superior or inferior’（id=7）及‘Inferior ovaries are located below the attachment points of the sepals, petals and stamens, whereas superior ovaries are positioned above these other floral organs’（id=8），与 claim 中‘子房相对于其他花器官的位置是重要分类学特征之一’完全一致，属标准定义性陈述，无压缩失真、无添加、无删减。"
+        "reason": "论文明确指出‘The spatial arrangement of the outer floral organs relative to the ovary determines whether t\n                   he ovary is classified as superior or inferior’（id=7）及‘Inferior ovaries are located below the attach\n                   ment points of the sepals, petals and stamens, whereas superior ovaries are positioned above these o\n                   ther floral organs’（id=8）,与 claim 中‘子房相对于其他花器官的位置是重要分类学特征之一’完全一致,属标准定义性陈述,无压缩失真、无添加、无删减。"
       },
       "analysis": {
         "evidence_judgement": "id=7直接定义分类依据（spatial arrangement → superior/inferior classification）；id=8以解剖位置重申该标准（below/above attachment points），二者共同完整支撑 claim 全部语义；top-5中rank1（id=8）与rank2（id=7）均为强支撑句，覆盖充分。",
@@ -342,7 +344,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": true,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C03",
@@ -389,7 +394,7 @@
             "rank": 2,
             "sentence_id": 9,
             "text": "Inferior ovaries have independently evolved from superior ovaries multiple times throughout angiosperm evolution and are present in several major angiosperm clades3.",
-            "text_zh": "在被子植物的进化过程中，下位卵巢多次独立地从上位卵巢进化而来。下位卵巢的适应性优势包括为发育中的雌蕊提供更多的保护，并为发育中的胚珠分配更多的能量。"
+            "text_zh": "在被子植物的进化过程中，下卵巢多次独立地从上卵巢进化而来，并且存在于几个主要的被子植物支系中。"
           },
           {
             "rank": 3,
@@ -401,7 +406,7 @@
             "rank": 4,
             "sentence_id": 43,
             "text": "With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig. 1b,c).",
-            "text_zh": "鉴于黄瓜的EFM（图1b，c），我们将聚类4注释为EFM。"
+            "text_zh": "随着花托的快速生长，萼片、花瓣和雄蕊原基上升到花尖，心皮留在花托内，形成下子房（图1b，c）。"
           },
           {
             "rank": 5,
@@ -419,13 +424,13 @@
             "rank": 7,
             "sentence_id": 44,
             "text": "The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c).",
-            "text_zh": "聚簇3 （RP）和聚簇4 （EFM）的分布表明，它们的形成和发育决定了扩大和凹形花分生组织的形态发生。"
+            "text_zh": "AgNO3诱导的黄瓜雄花芽形成也呈现出增大和凹陷的花分生组织特征；然而，花托和心皮随后的生长被阻止（扩展数据图1c）。"
           },
           {
             "rank": 8,
             "sentence_id": 42,
             "text": "After initiation, the cucumber floral meristem enlarges from the perimeter and becomes concave (Fig. 1b), then sepal, petal, stamen and carpel primordia are initiated sequentially on the inner regions of this ‘enlarged floral meristem’ (EFM) (Fig. 1b,c).",
-            "text_zh": "聚簇3和聚簇4均沿凹形花分生组织分布，聚簇4优先表达花分生组织标记基因LEAFY。"
+            "text_zh": "分化后，黄瓜花分生组织从外围扩大到凹形（图1b），然后萼片、花瓣、雄蕊和心皮原基依次在这个“扩大的花分生组织”（EFM）的内部区域开始分化（图1b，c）。"
           },
           {
             "rank": 9,
@@ -469,7 +474,7 @@
         "severity": "none",
         "needs_manual_review": false,
         "uncovered_phenomenon": "",
-        "reason": "claim 是对论文中定义性语句的直译整合：id=8明确定义 inferior/superior 位置关系（below/above attachment points），id=7指出该空间关系即分类依据（determines whether... classified as），二者合并即构成 claim 全部内容；术语对应准确（‘外轮花器官’=sepals, petals and stamens；‘相对位置关系’=spatial arrangement relative to the ovary），无增删改。"
+        "reason": "claim 是对论文中定义性语句的直译整合：id=8明确定义 inferior/superior 位置关系（below/above attachment points）,id=7指出该空间关系即分类依\n                   据（determines whether... classified as）,二者合并即构成 claim 全部内容；术语对应准确（‘外轮花器官’=sepals, petals and stamens；\n                   ‘相对位置关系’=spatial arrangement relative to the ovary）,无增删改。"
       },
       "analysis": {
         "evidence_judgement": "id=8提供解剖位置定义（inferior: below; superior: above），id=7提供分类学意义（determines classification），两句联合构成 claim 所需的完整定义框架；top-5中rank1（id=8）与rank3（id=7）均已命中，支撑充分且无歧义。",
@@ -493,7 +498,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": true,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C04",
@@ -534,7 +542,7 @@
             "rank": 1,
             "sentence_id": 0,
             "text": "Lucas9, Xun Xu 4, 4 1 2,10, Huan Liu & Xueyong Yang In flowering plants, inferior ovaries are key morphological innovations that evolved multiple times from superior ovaries to protect female parts of the flower.",
-            "text_zh": "在开花植物中，下子房是由上子房多次进化而来的关键形态创新，用于保护花的雌性部分。"
+            "text_zh": "Lucas9，徐勋4,4 1,2,10，刘欢，杨学勇在开花植物中，下子房是由上子房多次进化而来的关键形态创新，目的是保护花的雌性部分。"
           },
           {
             "rank": 2,
@@ -546,13 +554,13 @@
             "rank": 3,
             "sentence_id": 9,
             "text": "Inferior ovaries have independently evolved from superior ovaries multiple times throughout angiosperm evolution and are present in several major angiosperm clades3.",
-            "text_zh": "在被子植物的进化过程中，下位卵巢多次独立地从上位卵巢进化而来。下位卵巢的适应性优势包括为发育中的雌蕊提供更多的保护，并为发育中的胚珠分配更多的能量。"
+            "text_zh": "在被子植物的进化过程中，下卵巢多次独立地从上卵巢进化而来，并且存在于几个主要的被子植物支系中。"
           },
           {
             "rank": 4,
             "sentence_id": 38,
             "text": "Unisexual flowers and inferior ovaries originated independently multiple times during angiosperm evolution.",
-            "text_zh": "我们推测，在黄瓜中，心皮外的果肉主要来自于花托的发育。"
+            "text_zh": "单性花和下子房在被子植物进化过程中多次独立形成。"
           },
           {
             "rank": 5,
@@ -576,13 +584,13 @@
             "rank": 8,
             "sentence_id": 39,
             "text": "However, they appeared simultaneously in the Cucurbitaceae and its closely related species Tetramelaceae and Begoniaceae (Fig. 1a), suggesting that the inferior ovary and unisexual flower may have originated from a single evolutionary event in the Cucurbitaceae.",
-            "text_zh": "因此，花托来源的组织对遗传改良是重要的。"
+            "text_zh": "然而，它们同时出现在葫芦科及其密切相关的物种紫菀科和秋海棠科中（图1a），这表明下子房和单性花可能起源于葫芦科的单一进化事件。"
           },
           {
             "rank": 9,
             "sentence_id": 37,
             "text": "In extant angiosperms, bisexual flowers and superior ovaries 862 represent ancestral states.",
-            "text_zh": "这些认识和细胞簇的组织信息，如图4b，c所示，突出了这些功能枢纽在黄瓜花蕾不同发育阶段的横断面（下）和纵断面（上）的时空结构（图3e），促进了我们对黄瓜雌花芽发育基础的理解。"
+            "text_zh": "在现存被子植物中，两性花和上位子房代表了祖先的状态。"
           },
           {
             "rank": 10,
@@ -625,7 +633,7 @@
         "severity": "none",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文明确支持‘下位子房是被子植物多次独立进化出的关键创新性状’（sent0, sent9）及‘结构可更好保护雌蕊并为胚珠发育分配更多能量’（sent10）；‘关键创新性状’与‘key morphological innovations’、‘更好地保护’与‘increased protection’、‘分配更多能量’与‘allocating more energy’属术语准确转译，无程度夸大或机制替换。"
+        "reason": "论文明确支持‘下位子房是被子植物多次独立进化出的关键创新性状’（sent0, sent9）及‘结构可更好保护雌蕊并为胚珠发育分配更多能量’（sent10）；‘关键创新性状’与‘key morpholo\n                   gical innovations’、‘更好地保护’与‘increased protection’、‘分配更多能量’与‘allocating more energy’属术语准确转译,无程度夸大或机制替\n                   换。"
       },
       "analysis": {
         "evidence_judgement": "分句1‘下位子房被认为是被子植物多次独立进化出的关键创新性状’：sent0（‘inferior ovaries are key morphological innovations that evolved multiple times’）+ sent9（‘independently evolved...multiple times throughout angiosperm evolution’）共同完整支撑；分句2‘其结构可更好地保护雌蕊并为胚珠发育分配更多能量’：sent10 直接对应，用词精准（increased protection / allocating more energy）。top-5 覆盖全部核心断言（rank1/3/2），无缺失。",
@@ -650,7 +658,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": true,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C05",
@@ -697,19 +708,19 @@
             "rank": 2,
             "sentence_id": 20,
             "text": "The Cucurbitaceae family, as exemplified by cucumber (Cucumis sativus L.), melon (Cucumis melo), watermelon (Citrullus lanatus) and pumpkin (Cucurbita spp.), has numerous species with predominantly unisexual flowers.",
-            "text_zh": "AgNO3诱导的黄瓜雄花芽形成也呈现出增大和凹陷的花分生组织特征；然而，花托和心皮随后的生长被阻止（扩展数据图1c）。"
+            "text_zh": "葫芦科以黄瓜（Cucumis sativus L.）、甜瓜（Cucumis melo）、西瓜（Citrullus lanatus）和南瓜（Cucurbita spp.）为例，有许多以单性花为主的物种。"
           },
           {
             "rank": 3,
             "sentence_id": 23,
             "text": "Elucidating inferior ovary formation in cucurbits has the potential to illuminate the evolution of this trait, enhance understanding of sex determination and fruit development, and provide valuable insights for future breeding programmes.",
-            "text_zh": "为了剖析驱动黄瓜下卵巢发育的潜在基因表达网络，我们采样了黄瓜不同阶段的花蕾，包括S1-S8，以及开花后0天的卵巢，进行了空间转录组分析。"
+            "text_zh": "阐明瓜类下位子房的形成有可能阐明这一性状的进化，增强对性别决定和果实发育的理解，并为未来的育种计划提供有价值的见解。"
           },
           {
             "rank": 4,
             "sentence_id": 39,
             "text": "However, they appeared simultaneously in the Cucurbitaceae and its closely related species Tetramelaceae and Begoniaceae (Fig. 1a), suggesting that the inferior ovary and unisexual flower may have originated from a single evolutionary event in the Cucurbitaceae.",
-            "text_zh": "因此，花托来源的组织对遗传改良是重要的。"
+            "text_zh": "然而，它们同时出现在葫芦科及其密切相关的物种紫菀科和秋海棠科中（图1a），这表明下子房和单性花可能起源于葫芦科的单一进化事件。"
           },
           {
             "rank": 5,
@@ -727,7 +738,7 @@
             "rank": 7,
             "sentence_id": 46,
             "text": "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel.",
-            "text_zh": "两种方法都得出了源自FIM的一致轨迹（图4c），突出了三种主要的发育路径。"
+            "text_zh": "根据这些观察，我们推断黄瓜下子房形成的三个必要条件：(1)花分生组织的扩大改变了花轮的相对位置；(2)花托随后快速生长；(3)花托与心皮融合。"
           },
           {
             "rank": 8,
@@ -765,9 +776,7 @@
           }
         ],
         "sentence_ids": [
-          1,
-          20,
-          39
+          1
         ],
         "is_answerable": true
       },
@@ -785,7 +794,7 @@
         "severity": "moderate",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文明确指出‘下位子房形成机制尚不清楚’（sent1），且葫芦科具单性花（sent20），并提出二者‘可能源自同一进化事件’（sent39）；但公众号声称‘下位子房形成机制及其与性别决定机制的关系还尚未明确’，将论文中‘可能源自同一进化事件’的假说性关联（evolutionary co-occurrence）替换为‘机制关系尚未明确’，隐含二者存在已知但未解的发育机制关联，而论文未建立该发育层面机制联系——属 mechanism_omission（删减‘进化事件’限定）与 context_omission（删减‘simultaneously in Cucurbitaceae’地理/类群限定）。"
+        "reason": "论文明确指出‘下位子房形成机制尚不清楚’（sent1）,且葫芦科具单性花（sent20）,并提出二者‘可能源自同一进化事件’（sent39）；但公众号声称‘下位子房形成机制及其与性别决定机制的关系还尚\n                   未明确’,将论文中‘可能源自同一进化事件’的假说性关联（evolutionary co-occurrence）替换为‘机制关系尚未明确’,隐含二者存在已知但未解的发育机制关联,而论文未建立该发育层面机\n                   制联系——属 mechanism_omission（删减‘进化事件’限定）与 context_omission（删减‘simultaneously in Cucurbitaceae’地理/类群限定）。"
       },
       "analysis": {
         "evidence_judgement": "分句1‘葫芦科植物果实均来源于下位子房’：虽未直述‘均来源于’，但 sent20 列举黄瓜/甜瓜/西瓜等均具 unisexual flowers + infer. ovary（上下文隐含），sent21 提及‘fleshy fruits develop from inferior ovaries’，结合 sent8 定义 inferior ovary 位置，可合理推断；分句2‘多为单性花’：sent20 明确‘predominantly unisexual flowers’；分句3‘下位子房形成机制及其与性别决定机制的关系还尚未明确’：sent1 仅称‘developmental mechanisms... remain largely unknown’（机制未知），sent39 提‘may have originated from a single evolutionary event’（进化共现假说），但全文未提出二者存在直接发育机制关联（如共享调控基因、信号通路），更未使用‘relationship between... and...’表述——该‘关系’为文章未定义的新范畴，属对机制认知边界的不当泛化。",
@@ -826,7 +835,10 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": true,
+      "human_note": "这句话应该是没有信息失真的",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C06",
@@ -873,19 +885,19 @@
             "rank": 2,
             "sentence_id": 20,
             "text": "The Cucurbitaceae family, as exemplified by cucumber (Cucumis sativus L.), melon (Cucumis melo), watermelon (Citrullus lanatus) and pumpkin (Cucurbita spp.), has numerous species with predominantly unisexual flowers.",
-            "text_zh": "AgNO3诱导的黄瓜雄花芽形成也呈现出增大和凹陷的花分生组织特征；然而，花托和心皮随后的生长被阻止（扩展数据图1c）。"
+            "text_zh": "葫芦科以黄瓜（Cucumis sativus L.）、甜瓜（Cucumis melo）、西瓜（Citrullus lanatus）和南瓜（Cucurbita spp.）为例，有许多以单性花为主的物种。"
           },
           {
             "rank": 3,
             "sentence_id": 33,
             "text": "In addition, we dissected the gene regulatory networks (GRNs) responsible for the rapid growth of the receptacle and identified key genes involved in these processes, including a duplicated class I KNOTTED-like homeobox (KNOX) transcription factor (TF), the knockout of which results in bisexual flowers with superior ovaries similar to those of tomato (Solanum lycopersicum L.).",
-            "text_zh": "我们发现，虽然萼片原基的产生没有被捕获，可能是由于早期细胞数量相对较少，但细胞系分析表明，花原基依次分化为花瓣、雄蕊和心皮原基（图3a），并且它们的分布与花蕾形态的变化一致（图3b）13。"
+            "text_zh": "此外，我们解剖了负责花托快速生长的基因调控网络（grn），并确定了参与这些过程的关键基因，包括重复的I类KNOX样同源盒（KNOX）转录因子（TF），敲除该转录因子可产生具有与番茄相似的优越子房的两性花（Solanum lycopersicum L.）。"
           },
           {
             "rank": 4,
             "sentence_id": 31,
             "text": "These data enabled us to identify distinct cell types involved in female flower and inferior ovary development.",
-            "text_zh": "为了确认我们注释的准确性，我们通过RNA原位杂交评估了几个选定的标记基因的空间分布，所有这些都证实了Stereo-seq信号所指示的时空表达模式（扩展数据图2p）。"
+            "text_zh": "这些数据使我们能够识别不同类型的细胞参与雌花和下卵巢发育。"
           },
           {
             "rank": 5,
@@ -909,19 +921,19 @@
             "rank": 8,
             "sentence_id": 39,
             "text": "However, they appeared simultaneously in the Cucurbitaceae and its closely related species Tetramelaceae and Begoniaceae (Fig. 1a), suggesting that the inferior ovary and unisexual flower may have originated from a single evolutionary event in the Cucurbitaceae.",
-            "text_zh": "因此，花托来源的组织对遗传改良是重要的。"
+            "text_zh": "然而，它们同时出现在葫芦科及其密切相关的物种紫菀科和秋海棠科中（图1a），这表明下子房和单性花可能起源于葫芦科的单一进化事件。"
           },
           {
             "rank": 9,
             "sentence_id": 19,
             "text": "Recently, it is suggested that the differential growth of the receptacle surrounding the gynoecium probably contributes to the varying patterns of ovary position2; nonetheless, the genetic basis of this important morphological innovation remains unresolved.",
-            "text_zh": "随着花托的快速生长，萼片、花瓣和雄蕊原基上升到花尖，心皮留在花托内，形成下子房（图1b，c）。"
+            "text_zh": "近年来，人们认为雌蕊周围花托的不同生长可能是导致子房位置变化的原因2；尽管如此，这一重要形态创新的遗传基础仍未得到解决。"
           },
           {
             "rank": 10,
             "sentence_id": 21,
             "text": "Notably, their fleshy fruits develop from inferior ovaries that originate from female floral buds (melon fruit may develop from bisexual flowers).",
-            "text_zh": "相比之下，番茄的花分生组织是凸的，花原基依次在其侧面萌发，心皮向上生长形成上子房（图1d， e）。"
+            "text_zh": "值得注意的是，它们的肉质果实由雌性花蕾形成的下子房发育而来（甜瓜果实可能由两性花发育而来）。"
           }
         ]
       },
@@ -941,9 +953,7 @@
           }
         ],
         "sentence_ids": [
-          2,
-          33,
-          8
+          40
         ],
         "is_answerable": true
       },
@@ -951,14 +961,14 @@
         "evidence_level": "With_Evidence",
         "has_distortion": true,
         "primary_label": {
-          "level1": "addition",
+          "level1": "no_distortion",
           "level2": "function_application_addition"
         },
         "secondary_label": null,
         "severity": "mild",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文指出黄瓜与番茄花器官对比用于揭示下位子房发育机制（sent2），并发现KNAT2-like1基因敲除导致黄瓜出现类似番茄的两性花与上位子房（sent33），且明确定义了子房位置（sent8）；但‘是研究子房位置和性别决定机制的理想模式植物’属功能/应用添加——论文从未使用‘ideal model plant’或等效评价，仅陈述比较分析结果与基因功能验证，未赋予其方法论地位或推荐为模式系统。"
+        "reason": "论文指出黄瓜与番茄花器官对比用于揭示下位子房发育机制（sent2）,并发现KNAT2-like1基因敲除导致黄瓜出现类似番茄的两性花与上位子房（sent33）,且明确定义了子房位置（sent8）；但‘\n                   是研究子房位置和性别决定机制的理想模式植物’属功能/应用添加——论文从未使用‘ideal model plant’或等效评价,仅陈述比较分析结果与基因功能验证,未赋予其方法论地位或推荐为模式系统。"
       },
       "analysis": {
         "evidence_judgement": "分句1‘黄瓜和番茄具有相似花器官结构’：sent2 提‘comparative spatial transcriptome mapping... in developing floral buds of cucumber and tomato’，隐含结构可比性（否则无法比较），但未明说‘相似’；分句2‘前者为下位子房和单性花，后者为上位子房和两性花’：sent2（cucumber: inferior; tomato: superior）、sent8（定义 inferior/superior）、sent20（cucumber unisexual）、sent37（tomato ancestral bisexual）共同支撑；分句3‘是研究...的理想模式植物’：全文无‘ideal model plant’‘excellent system’‘powerful model’等任一表述，sent23 提‘has the potential to illuminate...’（潜力），sent33 描述基因功能，均不构成‘ideal’评价——该判断为文章未提供的应用性定性。",
@@ -990,7 +1000,10 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": true,
+      "human_note": "问题很严重，rag检索效果很差",
+      "retrieval_quality": "poor",
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C07",
@@ -1037,19 +1050,19 @@
             "rank": 2,
             "sentence_id": 39,
             "text": "However, they appeared simultaneously in the Cucurbitaceae and its closely related species Tetramelaceae and Begoniaceae (Fig. 1a), suggesting that the inferior ovary and unisexual flower may have originated from a single evolutionary event in the Cucurbitaceae.",
-            "text_zh": "因此，花托来源的组织对遗传改良是重要的。"
+            "text_zh": "然而，它们同时出现在葫芦科及其密切相关的物种紫菀科和秋海棠科中（图1a），这表明下子房和单性花可能起源于葫芦科的单一进化事件。"
           },
           {
             "rank": 3,
             "sentence_id": 38,
             "text": "Unisexual flowers and inferior ovaries originated independently multiple times during angiosperm evolution.",
-            "text_zh": "我们推测，在黄瓜中，心皮外的果肉主要来自于花托的发育。"
+            "text_zh": "单性花和下子房在被子植物进化过程中多次独立形成。"
           },
           {
             "rank": 4,
             "sentence_id": 9,
             "text": "Inferior ovaries have independently evolved from superior ovaries multiple times throughout angiosperm evolution and are present in several major angiosperm clades3.",
-            "text_zh": "在被子植物的进化过程中，下位卵巢多次独立地从上位卵巢进化而来。下位卵巢的适应性优势包括为发育中的雌蕊提供更多的保护，并为发育中的胚珠分配更多的能量。"
+            "text_zh": "在被子植物的进化过程中，下卵巢多次独立地从上卵巢进化而来，并且存在于几个主要的被子植物支系中。"
           },
           {
             "rank": 5,
@@ -1061,7 +1074,7 @@
             "rank": 6,
             "sentence_id": 20,
             "text": "The Cucurbitaceae family, as exemplified by cucumber (Cucumis sativus L.), melon (Cucumis melo), watermelon (Citrullus lanatus) and pumpkin (Cucurbita spp.), has numerous species with predominantly unisexual flowers.",
-            "text_zh": "AgNO3诱导的黄瓜雄花芽形成也呈现出增大和凹陷的花分生组织特征；然而，花托和心皮随后的生长被阻止（扩展数据图1c）。"
+            "text_zh": "葫芦科以黄瓜（Cucumis sativus L.）、甜瓜（Cucumis melo）、西瓜（Citrullus lanatus）和南瓜（Cucurbita spp.）为例，有许多以单性花为主的物种。"
           },
           {
             "rank": 7,
@@ -1073,13 +1086,13 @@
             "rank": 8,
             "sentence_id": 40,
             "text": "Cucumber and tomato have a similar floral structure (Extended Data Fig. 1a), but their differences in flower sex and ovary position make them excellent subjects for comparison (Extended Data Fig. 1b).",
-            "text_zh": "为了了解下卵巢EFM的基因表达动态和细胞学基础，我们选择了S1至S4期的花蕾切片，并以接近单细胞分辨率（S1至S4期的平均细胞直径为12.96 μm， bin30直径为15 μm）进行了无监督聚类分析（图4a和扩展数据图2c，d）。"
+            "text_zh": "黄瓜和番茄具有相似的花结构（扩展数据图1a），但它们在花性别和子房位置上的差异使它们成为很好的比较对象（扩展数据图1b）。"
           },
           {
             "rank": 9,
             "sentence_id": 0,
             "text": "Lucas9, Xun Xu 4, 4 1 2,10, Huan Liu & Xueyong Yang In flowering plants, inferior ovaries are key morphological innovations that evolved multiple times from superior ovaries to protect female parts of the flower.",
-            "text_zh": "在开花植物中，下子房是由上子房多次进化而来的关键形态创新，用于保护花的雌性部分。"
+            "text_zh": "Lucas9，徐勋4,4 1,2,10，刘欢，杨学勇在开花植物中，下子房是由上子房多次进化而来的关键形态创新，目的是保护花的雌性部分。"
           },
           {
             "rank": 10,
@@ -1105,9 +1118,9 @@
           }
         ],
         "sentence_ids": [
-          39,
           261,
-          38
+          262,
+          263
         ],
         "is_answerable": true
       },
@@ -1125,7 +1138,7 @@
         "severity": "moderate",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文称‘in the Cucurbitaceae and its closely related species Tetramelaceae and Begoniaceae’同时出现，公众号删去‘Tetramelaceae and Begoniaceae’仅留‘葫芦科植物及其近缘种’；且加‘首次揭示’级表述（‘说明这两个性状可能来自于同一进化事件’），但原文用‘suggesting that... may have originated from a single evolutionary event’含不确定性，且未宣称‘首次’。"
+        "reason": "论文称‘in the Cucurbitaceae and its closely related species Tetramelaceae and Begoniaceae’同时出现,公众号删去‘Te\n                   tramelaceae and Begoniaceae’仅留‘葫芦科植物及其近缘种’；且加‘首次揭示’级表述（‘说明这两个性状可能来自于同一进化事件’）,但原文用‘suggesting that... \n                   may have originated from a single evolutionary event’含不确定性,且未宣称‘首次’。"
       },
       "analysis": {
         "evidence_judgement": "分句1‘构建502个被子植物物种进化树…（图1a）’：sentence_id=261/38提供‘unisexual flowers and inferior ovaries have evolved independently multiple times throughout angiosperm evolution’及图1a引用，支撑进化树规模与图号；分句2‘单性花和子房下位性状在进化过程中独立出现多次’：sentence_id=38/261直接支持；分句3‘但在葫芦科植物及其近缘种中连锁出现’：sentence_id=39明确写‘in the Cucurbitaceae and its closely related species Tetramelaceae and Begoniaceae’，而claim删减为模糊‘近缘种’；分句4‘说明这两个性状可能来自于同一进化事件’：sentence_id=39用‘suggesting that... may have originated from a single evolutionary event’，claim弱化为确定性‘说明…可能来自于’，但更关键的是添加了隐含‘首次提出该关联’的语义——原文无‘first’‘novel’‘previously unknown’等词，且引言首句（id=0）强调‘inferior ovaries... evolved multiple times’，背景已知，非首次揭示。",
@@ -1163,7 +1176,14 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": true,
+      "human_note": "无信息失真，检索效果差，人工召回2条重要观点句",
+      "retrieval_quality": "poor",
+      "human_recalled_sentence_ids": [
+        261,
+        262,
+        263
+      ]
     },
     {
       "sample_id": "P001-A001-C08",
@@ -1210,7 +1230,7 @@
             "rank": 2,
             "sentence_id": 35,
             "text": "Comparative analyses of floral cell types and gene expression from cucumber, superior ovary mutant and tomato support the notion that novel genes and expression patterns in the FIM and receptacle contributed to the evolutionary innovation of an inferior ovary in cucumber.",
-            "text_zh": "FIM也产生维管前组织，在S5期后分化为原木质部（图3a）。"
+            "text_zh": "黄瓜、优子房突变体和番茄花细胞类型和基因表达的比较分析支持了FIM和花托中新的基因和表达模式促成了黄瓜优子房的进化创新的观点。"
           },
           {
             "rank": 3,
@@ -1234,13 +1254,13 @@
             "rank": 6,
             "sentence_id": 34,
             "text": "These results reveal the evolutionary importance of the enlarged receptacle in unisexual flower determination and inferior ovary formation in cucurbits.",
-            "text_zh": "FIM显示出与容器的强烈关联（图3a），这表明FIM负责容器命运的规范和发展。"
+            "text_zh": "这些结果揭示了增大花托在葫芦单性花决定和下位子房形成中的进化重要性。"
           },
           {
             "rank": 7,
             "sentence_id": 46,
             "text": "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel.",
-            "text_zh": "两种方法都得出了源自FIM的一致轨迹（图4c），突出了三种主要的发育路径。"
+            "text_zh": "根据这些观察，我们推断黄瓜下子房形成的三个必要条件：(1)花分生组织的扩大改变了花轮的相对位置；(2)花托随后快速生长；(3)花托与心皮融合。"
           },
           {
             "rank": 8,
@@ -1258,7 +1278,7 @@
             "rank": 10,
             "sentence_id": 40,
             "text": "Cucumber and tomato have a similar floral structure (Extended Data Fig. 1a), but their differences in flower sex and ovary position make them excellent subjects for comparison (Extended Data Fig. 1b).",
-            "text_zh": "为了了解下卵巢EFM的基因表达动态和细胞学基础，我们选择了S1至S4期的花蕾切片，并以接近单细胞分辨率（S1至S4期的平均细胞直径为12.96 μm， bin30直径为15 μm）进行了无监督聚类分析（图4a和扩展数据图2c，d）。"
+            "text_zh": "黄瓜和番茄具有相似的花结构（扩展数据图1a），但它们在花性别和子房位置上的差异使它们成为很好的比较对象（扩展数据图1b）。"
           }
         ]
       },
@@ -1278,9 +1298,8 @@
           }
         ],
         "sentence_ids": [
-          2,
-          35,
-          223
+          15,
+          29
         ],
         "is_answerable": true
       },
@@ -1295,7 +1314,7 @@
         "severity": "mild",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文未提及‘石蜡切片观察’这一实验方法，所有检索句均描述空间转录组、细胞谱系重建、基因敲除等分子/组学手段；claim 添加‘石蜡切片观察（图1b）’和‘以番茄作为对比进行观察（图1d）’属于无依据的方法添加。"
+        "reason": "论文未提及‘石蜡切片观察’这一实验方法,所有检索句均描述空间转录组、细胞谱系重建、基因敲除等分子/组学手段；claim 添加‘石蜡切片观察（图1b）’和‘以番茄作为对比进行观察（图1d）’属于无依据的\n                   方法添加。"
       },
       "analysis": {
         "evidence_judgement": "分句1‘为探究葫芦科植物子房下位发育进程’：sentence_id=2/35/223均明确以cucumber/tomato为材料研究inferior/superior ovary形成机制，支撑研究目的；分句2‘对黄瓜花发育过程进行了石蜡切片观察（图1b）’：top-5中无任何句子提及‘paraffin sectioning’‘histology’‘microtome’或‘light microscopy’；id=2说‘Comparative spatial transcriptome mapping and cell lineage reconstructions’，id=35说‘Comparative analyses of floral cell types and gene expression’，id=223说‘spatial transcriptomic data’；分句3‘以子房上位的番茄作为对比进行观察（图1d）’：id=2明确‘cucumber and tomato, which have inferior and superior ovaries, respectively’并引用Fig.1d，支撑对比设计，但‘进行观察’若指图1d所载内容，则图注未说明成像方式；claim 将‘spatial transcriptomics’偷换为传统组织学观察，属 method substitution → 归入 function_application_addition（因石蜡切片是经典形态观察功能，论文未应用此功能）。",
@@ -1335,7 +1354,13 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": true,
+      "human_note": "无信息失真，rag检索效果差，人工召回2条重要观点句",
+      "retrieval_quality": "poor",
+      "human_recalled_sentence_ids": [
+        15,
+        29
+      ]
     },
     {
       "sample_id": "P001-A001-C09",
@@ -1376,13 +1401,13 @@
             "rank": 1,
             "sentence_id": 45,
             "text": "By contrast, the floral meristem of tomato is convex, and the floral primordia sequentially initiate on its flank, with the carpels growing upwards to form superior ovaries (Fig. 1d, e).",
-            "text_zh": "RNA速度和Monocle3被用来研究这些簇的早期分化轨迹（扩展数据图3d，e）。"
+            "text_zh": "相比之下，番茄的花分生组织是凸的，花原基依次在其侧面萌发，心皮向上生长形成上子房（图1d， e）。"
           },
           {
             "rank": 2,
             "sentence_id": 42,
             "text": "After initiation, the cucumber floral meristem enlarges from the perimeter and becomes concave (Fig. 1b), then sepal, petal, stamen and carpel primordia are initiated sequentially on the inner regions of this ‘enlarged floral meristem’ (EFM) (Fig. 1b,c).",
-            "text_zh": "聚簇3和聚簇4均沿凹形花分生组织分布，聚簇4优先表达花分生组织标记基因LEAFY。"
+            "text_zh": "分化后，黄瓜花分生组织从外围扩大到凹形（图1b），然后萼片、花瓣、雄蕊和心皮原基依次在这个“扩大的花分生组织”（EFM）的内部区域开始分化（图1b，c）。"
           },
           {
             "rank": 3,
@@ -1394,13 +1419,13 @@
             "rank": 4,
             "sentence_id": 26,
             "text": "In this study, we generate a collection of spatially resolved transcriptomes of developing cucumber female floral buds at single-cell resolution b Petal prim Stamen prim Carpel prim Sepal prim Enlarged floral meristem Asparagales Dioscoreales-cladeA S1 S2 S3 S4 S5 S6 S7 S8 Dioscoreales-cladeB c Pandanales Liliales Sepal Petal Alismatales Stamen Acorales Carpel Magnoliales Enlarged receptacle Diﬀerentiating floral primordia Laurales Enlarged floral meristem Piperales Ceratophyllales Austrobaileyales Nymphaeales Amborellales Selaginellales S1 S2 S3 S4 S5 S7 S8 S6 d Brassicales Sepal prim Petal prim Stamen prim Carpel prim Malvales Floral meristem Sapindales Oxalidales Huerteales S1 S2 S3 S5 S6 S7 S8 S4 e Malpighiales Sepal Petal Stamen Carpel Diﬀerentiating floral primordia Receptacle S1 S2 S3 S4 S5 S6 S7 S8 the corresponding floral organs.",
-            "text_zh": "每个bin 50中的基因数量和唯一分子标识符（UMI）计数显示出高度的一致性（扩展数据图2e-g），没有转录信号扩散，这是UMI分布所表明的（补充图1-9），并且不同阶段的所有花芽样本都可以沿着伪时间轨迹连续排序（扩展数据图2h）。"
+            "text_zh": "在这项研究中，我们在单细胞分辨率下获得了发育中的黄瓜雌花芽的空间分解转录组集合b花瓣prim雄蕊prim心皮prim萼片prim扩大的花分生组织芦笋Dioscoreales-cladeA S1 S2 S3 S4 S5 S6 S7 S8 Dioscoreales-cladeB c Pandanales Liliales萼片花瓣Alismatales雄蕊Acorales心皮木兰花扩大的花托分化花原基月苞扩大的花分生组织Piperales Ceratophyllales austrrobaileyales nyphhaeales伞生花序卷叶生S1 S2 S3 S4 S5 S7 S8 S6 d苞片原片花瓣原片雄蕊原片心皮原片花分生组织无尾花序草蕊花原片S1 S2 S3 S5 S6 S7 S8 S4 e花萼花瓣雄蕊心皮分化花原基花托S1 S2 S3 S4 S5 S6 S6 S7 S8相应的花器官。"
           },
           {
             "rank": 5,
             "sentence_id": 40,
             "text": "Cucumber and tomato have a similar floral structure (Extended Data Fig. 1a), but their differences in flower sex and ovary position make them excellent subjects for comparison (Extended Data Fig. 1b).",
-            "text_zh": "为了了解下卵巢EFM的基因表达动态和细胞学基础，我们选择了S1至S4期的花蕾切片，并以接近单细胞分辨率（S1至S4期的平均细胞直径为12.96 μm， bin30直径为15 μm）进行了无监督聚类分析（图4a和扩展数据图2c，d）。"
+            "text_zh": "黄瓜和番茄具有相似的花结构（扩展数据图1a），但它们在花性别和子房位置上的差异使它们成为很好的比较对象（扩展数据图1b）。"
           },
           {
             "rank": 6,
@@ -1430,7 +1455,7 @@
             "rank": 10,
             "sentence_id": 25,
             "text": "However, recent advances in spatially enhanced resolution omics sequencing (Stereo-seq) technology have facilitated the exploration of gene expression landscapes during organ development7,8.",
-            "text_zh": "单个切片的数据集聚合到bin 50中，其直径等于0 DPA下的整个细胞的直径（扩展数据图2b-d和补充表2）。"
+            "text_zh": "然而，空间增强分辨率组学测序（Stereo-seq）技术的最新进展促进了对器官发育过程中基因表达景观的探索7,8。"
           }
         ]
       },
@@ -1462,7 +1487,7 @@
         "severity": "none",
         "needs_manual_review": false,
         "uncovered_phenomenon": "",
-        "reason": "claim 完全忠实转述：id=42 明确‘cucumber floral meristem enlarges from the perimeter and becomes concave... sepal, petal, stamen and carpel primordia are initiated sequentially on the inner regions’对应‘分生组织边缘膨大、中间凹陷…分化出萼片、花瓣、雄蕊和心皮原基（图1c）’；id=45 明确‘tomato is convex, and the floral primordia sequentially initiate on its flank’对应‘番茄花分生组织中间凸起，在其侧面形成各花器官原基（图1e）’；图号（1c/1e）与原文图注一致。"
+        "reason": "claim 完全忠实转述：id=42 明确‘cucumber floral meristem enlarges from the perimeter and becomes concave... se\n                   pal, petal, stamen and carpel primordia are initiated sequentially on the inner regions’对应‘分生组织边缘膨大、\n                   中间凹陷…分化出萼片、花瓣、雄蕊和心皮原基（图1c）’；id=45 明确‘tomato is convex, and the floral primordia sequentially initiat\n                   e on its flank’对应‘番茄花分生组织中间凸起,在其侧面形成各花器官原基（图1e）’；图号（1c/1e）与原文图注一致。"
       },
       "analysis": {
         "evidence_judgement": "分句1‘黄瓜发育过程中，分生组织边缘膨大、中间凹陷，并在膨大分生组织内部分化出萼片、花瓣、雄蕊和心皮原基（图1c）’：sentence_id=42完整支撑（‘enlarges from the perimeter and becomes concave’ + ‘sepals, petals, stamens and carpels are initiated sequentially on the inner regions’ + Fig.1b,c）；分句2‘番茄花分生组织中间凸起，在其侧面形成各花器官原基（图1e）’：sentence_id=45完整支撑（‘floral meristem of tomato is convex’ + ‘floral primordia sequentially initiate on its flank’ + Fig.1d,e）；top-5中 id=42/45 分列 rank2/rank1，覆盖全部细节。",
@@ -1486,7 +1511,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": true,
+      "human_note": "这个句子检索效果比较好，但是调用api进行的翻译有问题",
+      "retrieval_quality": "good",
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C10",
@@ -1527,13 +1555,13 @@
             "rank": 1,
             "sentence_id": 46,
             "text": "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel.",
-            "text_zh": "两种方法都得出了源自FIM的一致轨迹（图4c），突出了三种主要的发育路径。"
+            "text_zh": "根据这些观察，我们推断黄瓜下子房形成的三个必要条件：(1)花分生组织的扩大改变了花轮的相对位置；(2)花托随后快速生长；(3)花托与心皮融合。"
           },
           {
             "rank": 2,
             "sentence_id": 32,
             "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation.",
-            "text_zh": "与这些时空解析转录组和黄瓜花器官发育的细胞类型相关的数据可通过交互式数据门户网站STOmicsDB27浏览，网址为https://db.cngb.org/ stomics/ctsta。"
+            "text_zh": "细胞系分析表明，黄瓜花器官基部的花萼间分生组织（FIM）活性延长，导致花托快速生长，形成下子房。"
           },
           {
             "rank": 3,
@@ -1545,7 +1573,7 @@
             "rank": 4,
             "sentence_id": 43,
             "text": "With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig. 1b,c).",
-            "text_zh": "鉴于黄瓜的EFM（图1b，c），我们将聚类4注释为EFM。"
+            "text_zh": "随着花托的快速生长，萼片、花瓣和雄蕊原基上升到花尖，心皮留在花托内，形成下子房（图1b，c）。"
           },
           {
             "rank": 5,
@@ -1569,19 +1597,19 @@
             "rank": 8,
             "sentence_id": 45,
             "text": "By contrast, the floral meristem of tomato is convex, and the floral primordia sequentially initiate on its flank, with the carpels growing upwards to form superior ovaries (Fig. 1d, e).",
-            "text_zh": "RNA速度和Monocle3被用来研究这些簇的早期分化轨迹（扩展数据图3d，e）。"
+            "text_zh": "相比之下，番茄的花分生组织是凸的，花原基依次在其侧面萌发，心皮向上生长形成上子房（图1d， e）。"
           },
           {
             "rank": 9,
             "sentence_id": 33,
             "text": "In addition, we dissected the gene regulatory networks (GRNs) responsible for the rapid growth of the receptacle and identified key genes involved in these processes, including a duplicated class I KNOTTED-like homeobox (KNOX) transcription factor (TF), the knockout of which results in bisexual flowers with superior ovaries similar to those of tomato (Solanum lycopersicum L.).",
-            "text_zh": "我们发现，虽然萼片原基的产生没有被捕获，可能是由于早期细胞数量相对较少，但细胞系分析表明，花原基依次分化为花瓣、雄蕊和心皮原基（图3a），并且它们的分布与花蕾形态的变化一致（图3b）13。"
+            "text_zh": "此外，我们解剖了负责花托快速生长的基因调控网络（grn），并确定了参与这些过程的关键基因，包括重复的I类KNOX样同源盒（KNOX）转录因子（TF），敲除该转录因子可产生具有与番茄相似的优越子房的两性花（Solanum lycopersicum L.）。"
           },
           {
             "rank": 10,
             "sentence_id": 31,
             "text": "These data enabled us to identify distinct cell types involved in female flower and inferior ovary development.",
-            "text_zh": "为了确认我们注释的准确性，我们通过RNA原位杂交评估了几个选定的标记基因的空间分布，所有这些都证实了Stereo-seq信号所指示的时空表达模式（扩展数据图2p）。"
+            "text_zh": "这些数据使我们能够识别不同类型的细胞参与雌花和下卵巢发育。"
           }
         ]
       },
@@ -1608,7 +1636,7 @@
         "severity": "none",
         "needs_manual_review": false,
         "uncovered_phenomenon": "",
-        "reason": "claim 完全复述 sentence_id=46 的英文原句，三项条件一一对应，无增删、无替换、无程度/机制/背景改动。"
+        "reason": "claim 完全复述 sentence_id=46 的英文原句,三项条件一一对应,无增删、无替换、无程度/机制/背景改动。"
       },
       "analysis": {
         "evidence_judgement": "整句为单一断言：列出三个必要条件；sentence_id=46 完整、逐项、等价支撑全部三点（enlargement → 膨大；subsequent rapid growth → 迅速生长；fusion → 融合），且明确标注 'necessary conditions'；top-5 中 rank1 即为该句，覆盖充分。",
@@ -1632,7 +1660,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": true,
+      "human_note": "这个部分也存在调用的翻译有问题",
+      "retrieval_quality": "fair",
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C11",
@@ -1673,13 +1704,13 @@
             "rank": 1,
             "sentence_id": 48,
             "text": "Longitudinal sections were analysed, as well as a transverse section of S8-4 and two 0 DPA samples (Extended Data Fig. 2a), using a standard analytical procedure8.",
-            "text_zh": "另外两个基因起源于前膜并经过前膜，其中一个导致花原基的形成，然后产生花轮，而另一个则从前膜产生花托原基（图4c）。"
+            "text_zh": "使用标准分析程序8，分析了纵截面，以及S8-4和两个0 DPA样品的横截面（扩展数据图2a）。"
           },
           {
             "rank": 2,
             "sentence_id": 47,
             "text": "To dissect the underlying gene expression network driving the development of the inferior ovary of cucumber, we sampled floral buds at various stages, including S1–S8, and ovaries at 0 days post anthesis (DPA) for spatial transcriptomic analysis.",
-            "text_zh": "其中之一涉及表皮的分化。"
+            "text_zh": "为了剖析驱动黄瓜下卵巢发育的潜在基因表达网络，我们采样了黄瓜不同阶段的花蕾，包括S1-S8，以及开花后0天的卵巢，进行了空间转录组分析。"
           },
           {
             "rank": 3,
@@ -1697,7 +1728,7 @@
             "rank": 5,
             "sentence_id": 74,
             "text": "They could be 863 a G1/S phase cells Sepal epidermis Unknown Endocarp (0 DPA) 0 6 12 18 Mesocarp (0 DPA) Epicarp (0 DPA) Petal primordia Trichome-base 1 7 13 19 FP Petal-early Receptacle primordia Unknown 2 8 14 20 Placenta Sepal mesophyll Petal-late Receptacle-early 3 9 15 21 Ovule (ovary wall) Provascular Unknown Receptacle-late 4 10 16 22 Epidermis G2/M phase cells G0/G1 phase cells Sieve element 5 11 17 23 2 mm 2 3 3 2 2 5 5 10 8 4 S1 S2 S3 S4 S5 S6 S7 S8-1 S8-2 S8-3 b Average expression Max Min Per cent expressed 0 25 50 75 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0 unknown Aspartyl protease LTP WOX9 AG1 LAX2 PHOSPHO1 HTH KNAT2-like1 LOX2 CRC unknown SEO FIL/YAB1 PI MIPS3 GRAS1 LTP4 LRR protein OMR1 CDC20.1 glycine_rich2 Plant Tudor_like RCA BAS1 bHLH96 TOC34 Calcium_binding PNI KAO2 pathogenesis SPX1 STM-like AP1 CAL DWF1 CYP78A7 ANT d Ovule (ovary wall) Placenta 4 3 Receptacle-late Receptacle-early 10 9 Conjunctive tissue-early 27 Conjunctive tissue-late 28 S6 S7 S8-1 S8-2 S8-3 S8-4 Fig. 2 | Spatial transcriptome of developing cucumber female floral buds using Stereo-seq.",
-            "text_zh": "虽然上位子房突变体仍然有一个FIM，但可以观察到花托阻滞和心皮向上生长（图7b）。"
+            "text_zh": "他们可以是863一个G1 / S期细胞表皮花萼未知的内果皮(0 DPA) 0 6 12 18中果皮(0 DPA)外果皮(0 DPA)花瓣原基Trichome-base 1 7 13 19 FP Petal-early插座20胎盘萼片原基未知2 8 14叶肉Petal-late Receptacle-early 3 9 15 21胚珠(卵巢壁)原形成层的未知Receptacle-late 4 10 16 22表皮G2 / M期细胞G0 / G1期细胞筛元素5 11 17 23 2毫米2 3 3 2 2 5 5 10 8 4 S1 S2 S3 S4 S5 S6 S7 S8-1 S8-2 S8-3 b平均表达马克斯每分表示0 25 75 40分钟39 38 37 36 35 34 33 32 30 31日29日28日27日26日25日24日23日22日21日20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0未知天门冬氨酰蛋白酶LTP WOX9 AG1 LAX2 PHOSPHO1 HTH KNAT2-like1 LOX2 CRC未知SEO费尔/ YAB1πMIPS3 GRAS1 LTP4远程雷达蛋白质OMR1 CDC20.1 glycine_rich2植物Tudor_like RCA BAS1 bHLH96 TOC34 Calcium_binding句KAO2病机SPX1 STM-like AP1卡尔DWF1 CYP78A7 ANT d胚珠(卵巢壁)胎盘4 3 Receptacle-late Receptacle-early 10 9图2利用Stereo-seq分析发育中的黄瓜雌花芽的空间转录组。"
           },
           {
             "rank": 6,
@@ -1715,13 +1746,13 @@
             "rank": 8,
             "sentence_id": 49,
             "text": "Datasets for individual sections were aggregated into bin 50, which had a diameter equal to that of an entire cell at 0 DPA (Extended Data Fig. 2b–d and Supplementary Table 2).",
-            "text_zh": "使用Monocle2进行伪时间分析，确认了得到的轨迹（图4d）。"
+            "text_zh": "单个切片的数据集聚合到bin 50中，其直径等于0 DPA下的整个细胞的直径（扩展数据图2b-d和补充表2）。"
           },
           {
             "rank": 9,
             "sentence_id": 26,
             "text": "In this study, we generate a collection of spatially resolved transcriptomes of developing cucumber female floral buds at single-cell resolution b Petal prim Stamen prim Carpel prim Sepal prim Enlarged floral meristem Asparagales Dioscoreales-cladeA S1 S2 S3 S4 S5 S6 S7 S8 Dioscoreales-cladeB c Pandanales Liliales Sepal Petal Alismatales Stamen Acorales Carpel Magnoliales Enlarged receptacle Diﬀerentiating floral primordia Laurales Enlarged floral meristem Piperales Ceratophyllales Austrobaileyales Nymphaeales Amborellales Selaginellales S1 S2 S3 S4 S5 S7 S8 S6 d Brassicales Sepal prim Petal prim Stamen prim Carpel prim Malvales Floral meristem Sapindales Oxalidales Huerteales S1 S2 S3 S5 S6 S7 S8 S4 e Malpighiales Sepal Petal Stamen Carpel Diﬀerentiating floral primordia Receptacle S1 S2 S3 S4 S5 S6 S7 S8 the corresponding floral organs.",
-            "text_zh": "每个bin 50中的基因数量和唯一分子标识符（UMI）计数显示出高度的一致性（扩展数据图2e-g），没有转录信号扩散，这是UMI分布所表明的（补充图1-9），并且不同阶段的所有花芽样本都可以沿着伪时间轨迹连续排序（扩展数据图2h）。"
+            "text_zh": "在这项研究中，我们在单细胞分辨率下获得了发育中的黄瓜雌花芽的空间分解转录组集合b花瓣prim雄蕊prim心皮prim萼片prim扩大的花分生组织芦笋Dioscoreales-cladeA S1 S2 S3 S4 S5 S6 S7 S8 Dioscoreales-cladeB c Pandanales Liliales萼片花瓣Alismatales雄蕊Acorales心皮木兰花扩大的花托分化花原基月苞扩大的花分生组织Piperales Ceratophyllales austrrobaileyales nyphhaeales伞生花序卷叶生S1 S2 S3 S4 S5 S7 S8 S6 d苞片原片花瓣原片雄蕊原片心皮原片花分生组织无尾花序草蕊花原片S1 S2 S3 S5 S6 S7 S8 S4 e花萼花瓣雄蕊心皮分化花原基花托S1 S2 S3 S4 S5 S6 S6 S7 S8相应的花器官。"
           },
           {
             "rank": 10,
@@ -1762,7 +1793,7 @@
         "severity": "moderate",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文写 'S1–S8' 和 '0 days post anthesis (DPA)'，公众号误作 'S1-S8时期' + 'S8-4时期' + '花后0天（0 DAP）'；S8-4 在原文仅见于图注（Extended Data Fig. 2a）和空间分析（如 id=141, 225），但未被列为 Stereo-seq 主要采样时期；'S8-4' 属于 S8 后续细分阶段，claim 将其与 S1–S8 并列，造成采样时间框架失真。"
+        "reason": "论文写 'S1–S8' 和 '0 days post anthesis (DPA)',公众号误作 'S1-S8时期' + 'S8-4时期' + '花后0天（0 DAP）'；S8-4 在原文仅见于图注（\n                   Extended Data Fig. 2a）和空间分析（如 id=141, 225）,但未被列为 Stereo-seq 主要采样时期；'S8-4' 属于 S8 后续细分阶段,claim 将其与 S1–\n                   S8 并列,造成采样时间框架失真。"
       },
       "analysis": {
         "evidence_judgement": "claim 含两个断言：(A) 对 S1–S8 纵截面测序；(B) 对 S8-4 横截面 + 0 DAP 横截面测序。A 由 id=47（'S1–S8'）直接支撑；B 中 '0 DPA' 由 id=47（'0 days post anthesis'）和 id=48（'two 0 DPA samples'）共同支撑；但 'S8-4' 仅在 id=48 提及为 'transverse section of S8-4'，属单一样本类型（非独立采样时期），且未出现在方法主干描述中（id=47 未提 S8-4）；top-5 中 id=48 是唯一提及 S8-4 的句子，rank1/2 已覆盖核心采样设计，但 S8-4 的定位被 claim 错置为与 S1–S8 并列的正式时期。",
@@ -1803,7 +1834,10 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C12",
@@ -1844,25 +1878,25 @@
             "rank": 1,
             "sentence_id": 82,
             "text": "The corresponding expression patterns of marker genes are shown.",
-            "text_zh": "这些发现提供了遗传证据，表明促进花托形成和抑制雄蕊发育都是由一个KNOX1 TF调控的。"
+            "text_zh": "显示了相应的标记基因的表达模式。"
           },
           {
             "rank": 2,
             "sentence_id": 54,
             "text": "The tissue-specific identities of these clusters were confirmed by the expression of specific cell marker genes (Fig. 2b and Supplementary Table 3) and their spatial– temporal distribution (Fig. 2c, Extended Data Fig. 2m–o and Supplementary Figs. 16–19).",
-            "text_zh": "CRC，一个已知决定心皮身份和介导单性花发育的TF，在花托中被上调"
+            "text_zh": "通过特异性细胞标记基因的表达（图2b和补充表3）及其时空分布（图2c，扩展数据图2m - 0和补充图16-19）证实了这些集群的组织特异性身份。"
           },
           {
             "rank": 3,
             "sentence_id": 83,
             "text": "d, A spatial depiction of the clusters related to carpel (cluster 3 and 4), conjunctive tissues (cluster 27 and 28) and receptacle tissues (cluster 9 and 10).",
-            "text_zh": "因此，黄瓜的花托发育与性别决定密切相关。"
+            "text_zh": "d，与心皮（集群3和4）、结缔组织（集群27和28）和花托组织（集群9和10）相关的集群的空间描述。"
           },
           {
             "rank": 4,
             "sentence_id": 81,
             "text": "c, A spatial distribution of clusters on the sections of S8-2.",
-            "text_zh": "KNAT2-like1基因的敲除导致雄蕊的产生，并由于花托的形成被破坏而形成上位子房。"
+            "text_zh": "c， S8-2段上集群的空间分布。"
           },
           {
             "rank": 5,
@@ -1874,19 +1908,19 @@
             "rank": 6,
             "sentence_id": 88,
             "text": "The remaining clusters (1, 6, 11, 19, 32 and 34) were annotated as mesocarp (0 DPA), endocarp (0 DPA), sieve element, epicarp (0 DPA), phloem (0 DPA) and placenta (0 DPA), respectively, due to the predominant expression of marker genes in 0 DPA ovaries26 (Supplementary Fig. 18g–j).",
-            "text_zh": "值得注意的是，在低节处仍有40%的雌花没有发生这种变化。"
+            "text_zh": "其余的簇（1、6、11、19、32和34）分别被标记为中果皮（0 DPA）、内果皮（0 DPA）、筛选元素、外果皮（0 DPA）、韧皮部（0 DPA）和胎盘（0 DPA），这是因为标记基因在0 DPA卵巢中占主导地位26 （Supplementary Fig. 18g-j）。"
           },
           {
             "rank": 7,
             "sentence_id": 53,
             "text": "This revealed 41 clusters with distinct locations, as shown by their uniform manifold approximation and projection (UMAP) and spatial information (Fig. 2a, Extended Data Fig. 2j–l and Supplementary Figs. 11–15).",
-            "text_zh": "为了确定调控细胞增殖和受体快速生长的关键基因，我们将重点放在每个簇中沿着TOFO轨迹特异性上调或下调的基因上（图5e，扩展数据图6c和补充表7和8）30。"
+            "text_zh": "通过均匀流形近似和投影（UMAP）和空间信息显示了41个具有不同位置的集群（图2a，扩展数据图2j - 1和补充图11-15）。"
           },
           {
             "rank": 8,
             "sentence_id": 58,
             "text": "Cluster 33 was identified as the stigma/transmitting tract and was characterized by spatial information and the expression of marker genes such as the basic Helix–Loop–Helix (bHLH) TF CsSPATULA (CsSPT), previously reported to be specifically expressed in stigmas17 (Extended Data Fig. 2n).",
-            "text_zh": "只有在较低节有一些雌花存在。"
+            "text_zh": "集群33被确定为柱头/传播通道，其特征在于空间信息和标记基因的表达，如基本螺旋-环-螺旋（bHLH） TF CsSPATULA (CsSPT)，之前报道在柱头17中特异性表达（扩展数据图2n）。"
           },
           {
             "rank": 9,
@@ -1898,7 +1932,7 @@
             "rank": 10,
             "sentence_id": 89,
             "text": "Clusters 12, 16, 20, 35 and 39 had no known marker genes and were unannotated.",
-            "text_zh": "提出了两种可能性。"
+            "text_zh": "聚类12、16、20、35和39没有已知的标记基因，也没有注释。"
           }
         ]
       },
@@ -1930,7 +1964,7 @@
         "severity": "none",
         "needs_manual_review": false,
         "uncovered_phenomenon": "",
-        "reason": "claim 中 '41个聚类（图2a）'、'特异性标记基因表达模式（图2b）'、'空间分布（图2c）' 与论文 id=53（'41 clusters... Fig. 2a'）、id=54（'tissue-specific identities... confirmed by... marker genes (Fig. 2b)... and their spatial–temporal distribution (Fig. 2c)'）完全对应，无添加、删减或机制替换。"
+        "reason": "claim 中 '41个聚类（图2a）'、'特异性标记基因表达模式（图2b）'、'空间分布（图2c）' 与论文 id=53（'41 clusters... Fig. 2a'）、id=54（'tissu\n                   e-specific identities... confirmed by... marker genes (Fig. 2b)... and their spatial–temporal distri\n                   bution (Fig. 2c)'）完全对应,无添加、删减或机制替换。"
       },
       "analysis": {
         "evidence_judgement": "claim 含三个断言：(A) 41个聚类（图2a）；(B) 通过标记基因表达验证（图2b）；(C) 通过空间分布验证（图2c）。A 由 id=53（'41 clusters... Fig. 2a'）支撑；B+C 由 id=54（'confirmed by the expression of specific cell marker genes (Fig. 2b)... and their spatial–temporal distribution (Fig. 2c)'）联合支撑；top-5 中 id=53（rank3）和 id=54（rank2）均在列，覆盖完整。",
@@ -1954,7 +1988,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C13",
@@ -1995,61 +2032,61 @@
             "rank": 1,
             "sentence_id": 70,
             "text": "We also observed three clusters (26, 27 and 28) situated between the carpel and receptacle at various stages of floral bud development, which we named conjunctive primordia, conjunctive tissue-early and conjunctive tissue-late, respectively (Fig. 2a–c).",
-            "text_zh": "为了研究黄瓜花托发育的特异性，我们收集了S8时子房优势突变体（knat2-like1）和番茄的花蕾，生成空间转录组数据进行对比分析（补充表1）。"
+            "text_zh": "在花芽发育的不同阶段，我们还观察到位于心皮和花托之间的三个簇（26、27和28），我们分别将其命名为连接原基、连接组织早期和连接组织晚期（图2a-c）。"
           },
           {
             "rank": 2,
             "sentence_id": 80,
             "text": "The dot size indicates the percentage of bins expressing the genes in each cluster, and the colour intensity represents relative average expression Sepal mesophyll Trichome Floral intercalary meristem 24 30 36 Protoxylem Basal sepal–abaxial Floral intercalary meristem-2 25 31 37 Conjunctive primordia Phloem (0 DPA) Floral intercalary meristem-3 26 32 38 Conjunctive tissue-early Stigma/transmitting tract Unknown 27 33 39 Conjunctive tissue-late Placenta (0 DPA) Basal sepal–adaxial 28 34 40 Thickened epidermis Unknown 29 35 1 mm Vascular FIM 0 DPA ovary Receptacle Petal Sepal Carpel UMAP2 Epidermis UMAP1 4 1 S8-4 S8-4-transect Expression c Max Min 24 Sepal Intercalary Epidermis 5 HTH RCA STM-like 37 mesophyll meristem-2 25 Protoxylem Glycine-rich Petal-early PI Placenta AG1 3 14 27 Conjunctive Receptacle-early 9 Receptacle-early 9 tissue-early CRC ACS2 KNAT2-like1 ATS2 CAP e 0 −1 1 Average expression Per cent expressed 10 20 30 0 CRC ACS2 AG1 Clusters 3 4 27 28 9 10 Carpel Conjunctive Receptacle tissues tissues level.",
-            "text_zh": "单性花和下胚房在被子植物进化过程中独立进化了多次；然而，在葫芦科，这两种特征似乎是共同进化的（图1a）。"
+            "text_zh": "点大小表示每个簇中表达基因的箱子的百分比，花萼叶肉毛状体花萼间分生组织24 30 36原木质部基部萼片-背面花萼间分生组织-2 25 31 37结合原基韧皮部（0 DPA）花萼间分生组织-3 26 32 38结合组织-早期柱头/传递道未知27 33 39结合组织-晚期胎盘（0 DPA）基部萼片-近轴28 34 40增厚表皮未知29 35 1 mm维管膜子房花托花瓣萼片心皮UMAP2表皮UMAP1 4 1 S8-4 S8-4样表达c Max Min 24萼片间表皮5 HTH RCA STM-like 37叶肉分生组织-2 25原木质部富含甘氨酸的花瓣-早期PI胎盘AG1 3 14 27结合花托-早期9花托-早期9组织-早期CRC ACS2 KNAT2-like1 ATS2 CAP e 0−1平均表达率10 20 30 0 CRC ACS2 AG1簇3 4 27 28 9 10心皮结合花托组织组织水平。"
           },
           {
             "rank": 3,
             "sentence_id": 71,
             "text": "Besides the expression of marker genes in both carpel (CsAG1) and receptacle (CsCRC), the marker gene CsHANABA TARANU (CsHAN1) was exclusively expressed in cluster 27 (ref. 23) (Supplementary Fig. 18b).",
-            "text_zh": "对子房优势突变体和番茄共鉴定出7个簇。"
+            "text_zh": "除了在心皮（CsAG1）和花托（CsCRC）中表达标记基因外，标记基因CsHANABA TARANU （CsHAN1）在第27簇中只表达（参考文献23）（Supplementary Fig. 18b）。"
           },
           {
             "rank": 4,
             "sentence_id": 69,
             "text": "Clusters 9 and 10 were characterized as receptacle-early and receptacle-late, based on the specific expression of CsCRABS CLAW (CsCRC), a member of the YABBY TF that is required for female development in cucumber22 (Fig. 2c and Supplementary Fig. 18a).",
-            "text_zh": "黄瓜中just KNAT2-like1的突变同时导致两性花和上子房的形成，这表明在花托进化过程中，单性花和下子房的发育之间建立了直接的联系。"
+            "text_zh": "基于黄瓜雌性发育所需的YABBY TF成员CsCRC（图2c和补充图18a）的特异性表达，集群9和10被表征为花托早期和花托晚期。"
           },
           {
             "rank": 5,
             "sentence_id": 79,
             "text": "b, A bubble plot showing expression levels of specific marker genes in each of the clusters.",
-            "text_zh": "对基因表达动态的研究，对细胞命运的建立和花托的发育提供了新的认识，为葫芦性别决定和下卵巢形成的分子调控机制提供了新的思路。"
+            "text_zh": "b，气泡图显示了每个集群中特定标记基因的表达水平。"
           },
           {
             "rank": 6,
             "sentence_id": 83,
             "text": "d, A spatial depiction of the clusters related to carpel (cluster 3 and 4), conjunctive tissues (cluster 27 and 28) and receptacle tissues (cluster 9 and 10).",
-            "text_zh": "因此，黄瓜的花托发育与性别决定密切相关。"
+            "text_zh": "d，与心皮（集群3和4）、结缔组织（集群27和28）和花托组织（集群9和10）相关的集群的空间描述。"
           },
           {
             "rank": 7,
             "sentence_id": 82,
             "text": "The corresponding expression patterns of marker genes are shown.",
-            "text_zh": "这些发现提供了遗传证据，表明促进花托形成和抑制雄蕊发育都是由一个KNOX1 TF调控的。"
+            "text_zh": "显示了相应的标记基因的表达模式。"
           },
           {
             "rank": 8,
             "sentence_id": 84,
             "text": "e, A bubble plot showing AG1, ACS2 and CRC expression profiles in clusters 3 and 4 in carpel, in clusters 27 and 28 in conjunctive tissues and in clusters 9 and 10 in receptacle tissues, respectively.",
-            "text_zh": "大多数葫芦属植物雌雄同株，单性花由M （CsACS2/CmACS7）、A （CsACS11/CmACS）、G （CsWIP1/CmWIP1）、F （CsACS1G）、CRC和ACO2基因及其相互作用决定22,51,52。"
+            "text_zh": "e，气泡图显示了心皮中AG1、ACS2和CRC在第3和第4簇、结缔组织中第27和第28簇以及花托组织中第9和第10簇中的表达谱。"
           },
           {
             "rank": 9,
             "sentence_id": 85,
             "text": "The dot size indicates the percentage of bins expressing the genes at each cluster, and the colour intensity represents the relative average expression level.",
-            "text_zh": "我们的空间转录组学数据表明，所有这些性别决定基因都在花托或花托衍生组织中表现出表达模式。"
+            "text_zh": "点大小表示每个簇中表达基因的箱子的百分比，颜色强度表示相对平均表达水平。"
           },
           {
             "rank": 10,
             "sentence_id": 68,
             "text": "Cluster 8 is located outside of the floral primordia, with high expression of KNOX1 TFs, such as STM-like and KNOTTED-LIKE FROM ARABIDOPSIS THALIANA 2 (KNAT2-like1), which may function to maintain the meristematic activities of stem cells21 (Supplementary Figs. 16i and 17i).",
-            "text_zh": "综上所述，这些发现表明KNAT2-like1在花托发育和下卵巢形成中起关键作用，并提示其调控机制涉及ER和CRC的遗传相互作用。"
+            "text_zh": "簇8位于花原基之外，高表达KNOX1 TFs，如拟南芥2的STM-like和knottlike (KNAT2-like1)，其可能具有维持干细胞分生组织活动的功能21 （Supplementary fig . 16i和17i）。"
           }
         ]
       },
@@ -2100,7 +2137,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C14",
@@ -2141,13 +2181,13 @@
             "rank": 1,
             "sentence_id": 72,
             "text": "In contrast to previous recognition of expression in carpel, we observed that Cs1-aminocyclopropane-1-carboxylate synthase 2 (CsACS2)24, a gene for bisexual flower development, was specifically expressed in these clusters, suggesting that the conjunctive tissue plays a role in ovary development and sex determination (Fig. 2d,e and Supplementary Fig. 18c).",
-            "text_zh": "根据这些聚类的分布和标记基因的表达进行注释（图7a，b，扩展数据图9a-e和补充表10和11），然后整合到超聚类中（图7b）。"
+            "text_zh": "与之前在心皮中表达的认识不同，我们观察到两性花发育的基因cs1 -氨基环丙烷-1-羧酸合成酶2 (CsACS2)24在这些簇中特异性表达，这表明结缔组织在卵巢发育和性别决定中起作用（图2d，e和补充图18c）。"
           },
           {
             "rank": 2,
             "sentence_id": 84,
             "text": "e, A bubble plot showing AG1, ACS2 and CRC expression profiles in clusters 3 and 4 in carpel, in clusters 27 and 28 in conjunctive tissues and in clusters 9 and 10 in receptacle tissues, respectively.",
-            "text_zh": "大多数葫芦属植物雌雄同株，单性花由M （CsACS2/CmACS7）、A （CsACS11/CmACS）、G （CsWIP1/CmWIP1）、F （CsACS1G）、CRC和ACO2基因及其相互作用决定22,51,52。"
+            "text_zh": "e，气泡图显示了心皮中AG1、ACS2和CRC在第3和第4簇、结缔组织中第27和第28簇以及花托组织中第9和第10簇中的表达谱。"
           },
           {
             "rank": 3,
@@ -2159,25 +2199,25 @@
             "rank": 4,
             "sentence_id": 80,
             "text": "The dot size indicates the percentage of bins expressing the genes in each cluster, and the colour intensity represents relative average expression Sepal mesophyll Trichome Floral intercalary meristem 24 30 36 Protoxylem Basal sepal–abaxial Floral intercalary meristem-2 25 31 37 Conjunctive primordia Phloem (0 DPA) Floral intercalary meristem-3 26 32 38 Conjunctive tissue-early Stigma/transmitting tract Unknown 27 33 39 Conjunctive tissue-late Placenta (0 DPA) Basal sepal–adaxial 28 34 40 Thickened epidermis Unknown 29 35 1 mm Vascular FIM 0 DPA ovary Receptacle Petal Sepal Carpel UMAP2 Epidermis UMAP1 4 1 S8-4 S8-4-transect Expression c Max Min 24 Sepal Intercalary Epidermis 5 HTH RCA STM-like 37 mesophyll meristem-2 25 Protoxylem Glycine-rich Petal-early PI Placenta AG1 3 14 27 Conjunctive Receptacle-early 9 Receptacle-early 9 tissue-early CRC ACS2 KNAT2-like1 ATS2 CAP e 0 −1 1 Average expression Per cent expressed 10 20 30 0 CRC ACS2 AG1 Clusters 3 4 27 28 9 10 Carpel Conjunctive Receptacle tissues tissues level.",
-            "text_zh": "单性花和下胚房在被子植物进化过程中独立进化了多次；然而，在葫芦科，这两种特征似乎是共同进化的（图1a）。"
+            "text_zh": "点大小表示每个簇中表达基因的箱子的百分比，花萼叶肉毛状体花萼间分生组织24 30 36原木质部基部萼片-背面花萼间分生组织-2 25 31 37结合原基韧皮部（0 DPA）花萼间分生组织-3 26 32 38结合组织-早期柱头/传递道未知27 33 39结合组织-晚期胎盘（0 DPA）基部萼片-近轴28 34 40增厚表皮未知29 35 1 mm维管膜子房花托花瓣萼片心皮UMAP2表皮UMAP1 4 1 S8-4 S8-4样表达c Max Min 24萼片间表皮5 HTH RCA STM-like 37叶肉分生组织-2 25原木质部富含甘氨酸的花瓣-早期PI胎盘AG1 3 14 27结合花托-早期9花托-早期9组织-早期CRC ACS2 KNAT2-like1 ATS2 CAP e 0−1平均表达率10 20 30 0 CRC ACS2 AG1簇3 4 27 28 9 10心皮结合花托组织组织水平。"
           },
           {
             "rank": 5,
             "sentence_id": 71,
             "text": "Besides the expression of marker genes in both carpel (CsAG1) and receptacle (CsCRC), the marker gene CsHANABA TARANU (CsHAN1) was exclusively expressed in cluster 27 (ref. 23) (Supplementary Fig. 18b).",
-            "text_zh": "对子房优势突变体和番茄共鉴定出7个簇。"
+            "text_zh": "除了在心皮（CsAG1）和花托（CsCRC）中表达标记基因外，标记基因CsHANABA TARANU （CsHAN1）在第27簇中只表达（参考文献23）（Supplementary Fig. 18b）。"
           },
           {
             "rank": 6,
             "sentence_id": 170,
             "text": "CRC also serves as a marker gene for the receptacle (Fig. 2b)22, and we confirmed its expression in the receptacle during stages S5–S8-4 (Supplementary Fig. 18a).",
-            "text_zh": "为了估计RNA速度，我们在动态模式下进行转录动力学建模，利用scVelo默认程序推断恢复剪接动力学的模型参数，然后计算速度。"
+            "text_zh": "CRC也是受体的标记基因（图2b）22，我们证实其在S5-S8-4期在受体中表达（补充图18a）。"
           },
           {
             "rank": 7,
             "sentence_id": 85,
             "text": "The dot size indicates the percentage of bins expressing the genes at each cluster, and the colour intensity represents the relative average expression level.",
-            "text_zh": "我们的空间转录组学数据表明，所有这些性别决定基因都在花托或花托衍生组织中表现出表达模式。"
+            "text_zh": "点大小表示每个簇中表达基因的箱子的百分比，颜色强度表示相对平均表达水平。"
           },
           {
             "rank": 8,
@@ -2230,7 +2270,7 @@
         "severity": "moderate",
         "needs_manual_review": false,
         "uncovered_phenomenon": "",
-        "reason": "论文用'suggesting that'表推测（图2d,e + Suppl. Fig. 18c），公众号转述为确定性结论'说明...可能同时起作用'中'可能'弱化了原文的推测语气，但更严重的是将'suggesting'弱推测升级为'说明...起作用'这一功能断言，且添加了'同时'（原文未提'同时性'）。"
+        "reason": "论文用'suggesting that'表推测（图2d,e + Suppl. Fig. 18c）,公众号转述为确定性结论'说明...可能同时起作用'中'可能'弱化了原文的推测语气,但更严重的是将'su\n                   ggesting'弱推测升级为'说明...起作用'这一功能断言,且添加了'同时'（原文未提'同时性'）。"
       },
       "analysis": {
         "evidence_judgement": "claim 拆为三部分：(1) 图2d展示S6-S8时期相关聚类 → sentence_id=84（图2e明确标注clusters 27/28 in conjunctive tissues；图2d虽未在top5直接出现，但sentence 72引述'Fig. 2d,e'，且84是e图数据支撑，故2d隐含可核）；(2) 连接组织表达AG1/CRC/ACS2 → sentence_id=84（明确列出AG1, ACS2, CRC在clusters 27/28的expression profiles）；(3) '说明连接组织在子房发育和性别决定中可能同时起作用' → sentence_id=72（'suggesting that the conjunctive tissue plays a role in ovary development and sex determination'）是唯一支撑句，但原文用'suggesting' + 'a role'，属弱推断，claim中'说明...起作用'为强功能断言，且添加'同时'（原文未比较时间/功能协同性）。",
@@ -2268,7 +2308,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C15",
@@ -2309,7 +2352,7 @@
             "rank": 1,
             "sentence_id": 93,
             "text": "To identify the major cell lineages involved in cucumber floral bud organogenesis and the mechanisms of receptacle development, we used the spatial transcriptomic data (Extended Data Fig. 3c) to generate a trajectory of floral organogenesis (TOFO), drawing on methods from the trajectory of mammal embryogenesis (TOME) analysis30.",
-            "text_zh": "将构建的重组载体转化为农杆菌EHA105。"
+            "text_zh": "为了确定参与黄瓜花芽器官发生的主要细胞系和花托发育机制，我们利用空间转录组学数据（扩展数据图3c），借鉴哺乳动物胚胎发生轨迹（TOME）分析的方法，生成了花器官发生轨迹（TOFO）。"
           },
           {
             "rank": 2,
@@ -2327,7 +2370,7 @@
             "rank": 4,
             "sentence_id": 94,
             "text": "The reconstructed cell lineage reveals inferred relationships between clusters across sections from S1 to S8-4 (Fig. 3a and Extended Data Fig. 4a).",
-            "text_zh": "为了构建互补试验载体，使用特异性引物扩增KNAT2-like1的2 kb启动子和编码序列，并使用In-Fusion方法将扩增片段插入线性化的pOE-HA载体（由SbfI和BamHI， New England Biolabs， R3642S和R3136S消化）（Vazyme, C116）。"
+            "text_zh": "重建的细胞谱系揭示了从S1到S8-4截面上的集群之间的推断关系（图3a和扩展数据图4a）。"
           },
           {
             "rank": 5,
@@ -2395,7 +2438,7 @@
         "severity": "none",
         "needs_manual_review": false,
         "uncovered_phenomenon": "",
-        "reason": "claim中‘利用空间转录组数据绘制花器官发生轨迹’对应 sentence 93（'used the spatial transcriptomic data... to generate a trajectory of floral organogenesis (TOFO)'）；‘根据cluster之间的关系重构细胞谱系’对应 sentence 94（'The reconstructed cell lineage reveals inferred relationships between clusters...'）；图3a在两句中均被引用，完全匹配。"
+        "reason": "claim中‘利用空间转录组数据绘制花器官发生轨迹’对应 sentence 93（'used the spatial transcriptomic data... to generate a traj\n                   ectory of floral organogenesis (TOFO)'）；‘根据cluster之间的关系重构细胞谱系’对应 sentence 94（'The reconstructed cell \n                   lineage reveals inferred relationships between clusters...'）；图3a在两句中均被引用,完全匹配。"
       },
       "analysis": {
         "evidence_judgement": "claim 为复合句，含两个独立断言：(1) 绘制轨迹 → sentence_id=93 明确写出'use spatial transcriptomic data'+'generate trajectory of floral organogenesis (TOFO)'；(2) 重构细胞谱系 → sentence_id=94 直接陈述'reconstructed cell lineage reveals inferred relationships between clusters'，并标注'Fig. 3a'。两句均为唯一核心支撑，无冗余。top-5 中 rank1=93、rank4=94，覆盖完整。",
@@ -2419,7 +2462,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C16",
@@ -2466,7 +2512,7 @@
             "rank": 2,
             "sentence_id": 95,
             "text": "Based on the annotation and relationship of clusters, the trajectories were divided into groups corresponding to different tissues (Fig. 3a).",
-            "text_zh": "所有引物见补充表13。"
+            "text_zh": "根据簇间的注释和关系，将轨迹划分为不同组织对应的组（图3a）。"
           },
           {
             "rank": 3,
@@ -2478,7 +2524,7 @@
             "rank": 4,
             "sentence_id": 93,
             "text": "To identify the major cell lineages involved in cucumber floral bud organogenesis and the mechanisms of receptacle development, we used the spatial transcriptomic data (Extended Data Fig. 3c) to generate a trajectory of floral organogenesis (TOFO), drawing on methods from the trajectory of mammal embryogenesis (TOME) analysis30.",
-            "text_zh": "将构建的重组载体转化为农杆菌EHA105。"
+            "text_zh": "为了确定参与黄瓜花芽器官发生的主要细胞系和花托发育机制，我们利用空间转录组学数据（扩展数据图3c），借鉴哺乳动物胚胎发生轨迹（TOME）分析的方法，生成了花器官发生轨迹（TOFO）。"
           },
           {
             "rank": 5,
@@ -2490,7 +2536,7 @@
             "rank": 6,
             "sentence_id": 94,
             "text": "The reconstructed cell lineage reveals inferred relationships between clusters across sections from S1 to S8-4 (Fig. 3a and Extended Data Fig. 4a).",
-            "text_zh": "为了构建互补试验载体，使用特异性引物扩增KNAT2-like1的2 kb启动子和编码序列，并使用In-Fusion方法将扩增片段插入线性化的pOE-HA载体（由SbfI和BamHI， New England Biolabs， R3642S和R3136S消化）（Vazyme, C116）。"
+            "text_zh": "重建的细胞谱系揭示了从S1到S8-4截面上的集群之间的推断关系（图3a和扩展数据图4a）。"
           },
           {
             "rank": 7,
@@ -2549,7 +2595,7 @@
         "severity": "moderate",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文说空间分布揭示了谱系（spatiotemporal cell lineages），未断言‘空间分布与发育轨迹相同’；公众号将‘分布反映谱系时序’偷换为‘分布=轨迹’，混淆空间模式与拟时序关系。"
+        "reason": "论文说空间分布揭示了谱系（spatiotemporal cell lineages）,未断言‘空间分布与发育轨迹相同’；公众号将‘分布反映谱系时序’偷换为‘分布=轨迹’,混淆空间模式与拟时序关系。"
       },
       "analysis": {
         "evidence_judgement": "分句1‘各细胞谱系的空间分布’：sentence_id=96 明确指出 spatial distribution revealed spatiotemporal cell lineages（图3b），支撑‘分布可推谱系’；分句2‘与其发育轨迹相同’：sentence_id=95 提到trajectories divided into groups corresponding to different tissues（图3a），但未将 spatial distribution 与 trajectory 等同；sentence_id=97 提及 distributions varied coincident with changes in morphology（非轨迹），无‘相同’表述；top-5 中无任何句支持‘相同’这一等价关系。",
@@ -2587,7 +2633,10 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C17",
@@ -2628,7 +2677,7 @@
             "rank": 1,
             "sentence_id": 100,
             "text": "We determined that after S7, the FIM and receptacle primordia generate cells that are actively undergoing the cell cycle, while G1/S phase cells transition to receptacle cells, suggesting a mechanism to maintain cell proliferation and support rapid receptacle growth (Fig. 3a).",
-            "text_zh": "在立体显微镜（SOPTOP, SZN71）下分离黄瓜Gy14和番茄TS69 S1 ~ S8期的花，用FAA（50%乙醇，5%冰醋酸和3.7%甲醛）固定，用连续的乙醇处理（50%,70%,85%，95%和100%）脱水，用二甲苯清除，然后包埋在叶绿体中（Sigma-Aldrich, cat.）。"
+            "text_zh": "我们发现，在S7之后，FIM和受体原基产生活跃的细胞周期，而G1/S期细胞转变为受体细胞，这表明一种维持细胞增殖和支持受体快速生长的机制（图3a）。"
           },
           {
             "rank": 2,
@@ -2646,13 +2695,13 @@
             "rank": 4,
             "sentence_id": 26,
             "text": "In this study, we generate a collection of spatially resolved transcriptomes of developing cucumber female floral buds at single-cell resolution b Petal prim Stamen prim Carpel prim Sepal prim Enlarged floral meristem Asparagales Dioscoreales-cladeA S1 S2 S3 S4 S5 S6 S7 S8 Dioscoreales-cladeB c Pandanales Liliales Sepal Petal Alismatales Stamen Acorales Carpel Magnoliales Enlarged receptacle Diﬀerentiating floral primordia Laurales Enlarged floral meristem Piperales Ceratophyllales Austrobaileyales Nymphaeales Amborellales Selaginellales S1 S2 S3 S4 S5 S7 S8 S6 d Brassicales Sepal prim Petal prim Stamen prim Carpel prim Malvales Floral meristem Sapindales Oxalidales Huerteales S1 S2 S3 S5 S6 S7 S8 S4 e Malpighiales Sepal Petal Stamen Carpel Diﬀerentiating floral primordia Receptacle S1 S2 S3 S4 S5 S6 S7 S8 the corresponding floral organs.",
-            "text_zh": "每个bin 50中的基因数量和唯一分子标识符（UMI）计数显示出高度的一致性（扩展数据图2e-g），没有转录信号扩散，这是UMI分布所表明的（补充图1-9），并且不同阶段的所有花芽样本都可以沿着伪时间轨迹连续排序（扩展数据图2h）。"
+            "text_zh": "在这项研究中，我们在单细胞分辨率下获得了发育中的黄瓜雌花芽的空间分解转录组集合b花瓣prim雄蕊prim心皮prim萼片prim扩大的花分生组织芦笋Dioscoreales-cladeA S1 S2 S3 S4 S5 S6 S7 S8 Dioscoreales-cladeB c Pandanales Liliales萼片花瓣Alismatales雄蕊Acorales心皮木兰花扩大的花托分化花原基月苞扩大的花分生组织Piperales Ceratophyllales austrrobaileyales nyphhaeales伞生花序卷叶生S1 S2 S3 S4 S5 S7 S8 S6 d苞片原片花瓣原片雄蕊原片心皮原片花分生组织无尾花序草蕊花原片S1 S2 S3 S5 S6 S7 S8 S4 e花萼花瓣雄蕊心皮分化花原基花托S1 S2 S3 S4 S5 S6 S6 S7 S8相应的花器官。"
           },
           {
             "rank": 5,
             "sentence_id": 25,
             "text": "However, recent advances in spatially enhanced resolution omics sequencing (Stereo-seq) technology have facilitated the exploration of gene expression landscapes during organ development7,8.",
-            "text_zh": "单个切片的数据集聚合到bin 50中，其直径等于0 DPA下的整个细胞的直径（扩展数据图2b-d和补充表2）。"
+            "text_zh": "然而，空间增强分辨率组学测序（Stereo-seq）技术的最新进展促进了对器官发育过程中基因表达景观的探索7,8。"
           },
           {
             "rank": 6,
@@ -2664,7 +2713,7 @@
             "rank": 7,
             "sentence_id": 43,
             "text": "With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig. 1b,c).",
-            "text_zh": "鉴于黄瓜的EFM（图1b，c），我们将聚类4注释为EFM。"
+            "text_zh": "随着花托的快速生长，萼片、花瓣和雄蕊原基上升到花尖，心皮留在花托内，形成下子房（图1b，c）。"
           },
           {
             "rank": 8,
@@ -2682,7 +2731,7 @@
             "rank": 10,
             "sentence_id": 44,
             "text": "The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c).",
-            "text_zh": "聚簇3 （RP）和聚簇4 （EFM）的分布表明，它们的形成和发育决定了扩大和凹形花分生组织的形态发生。"
+            "text_zh": "AgNO3诱导的黄瓜雄花芽形成也呈现出增大和凹陷的花分生组织特征；然而，花托和心皮随后的生长被阻止（扩展数据图1c）。"
           }
         ]
       },
@@ -2717,7 +2766,7 @@
         "severity": "severe",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文明确将‘花托快速生长导致与心皮融合’归因于 KNAT2-like1 活性（Fig.6i），而非 FIM/花托细胞分裂本身；公众号将下游分子机制（KNAT2-like1）替换为上游细胞行为（分裂），并添加‘可能…原因’这一未经论文支持的因果推断。"
+        "reason": "论文明确将‘花托快速生长导致与心皮融合’归因于 KNAT2-like1 活性（Fig.6i）,而非 FIM/花托细胞分裂本身；公众号将下游分子机制（KNAT2-like1）替换为上游细胞行为（分裂）,\n                   并添加‘可能…原因’这一未经论文支持的因果推断。"
       },
       "analysis": {
         "evidence_judgement": "分句1‘S7后FIM与花托原基活跃分裂’：sentence_id=100 直接陈述‘after S7, the FIM and receptacle primordia generate cells that are actively undergoing the cell cycle’（Fig.3a），完全支撑；分句2‘可能是花托快速生长从而导致与心皮融合的原因’：sentence_id=210 明确指出‘in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel... forming an inferior ovary (Fig.6i)’，即融合由 KNAT2-like1 驱动；sentence_id=43 描述现象（receptacle wraps around carpel），但未赋因；top-5 中无句将细胞分裂列为融合原因。",
@@ -2759,7 +2808,10 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C18",
@@ -2812,7 +2864,7 @@
             "rank": 3,
             "sentence_id": 100,
             "text": "We determined that after S7, the FIM and receptacle primordia generate cells that are actively undergoing the cell cycle, while G1/S phase cells transition to receptacle cells, suggesting a mechanism to maintain cell proliferation and support rapid receptacle growth (Fig. 3a).",
-            "text_zh": "在立体显微镜（SOPTOP, SZN71）下分离黄瓜Gy14和番茄TS69 S1 ~ S8期的花，用FAA（50%乙醇，5%冰醋酸和3.7%甲醛）固定，用连续的乙醇处理（50%,70%,85%，95%和100%）脱水，用二甲苯清除，然后包埋在叶绿体中（Sigma-Aldrich, cat.）。"
+            "text_zh": "我们发现，在S7之后，FIM和受体原基产生活跃的细胞周期，而G1/S期细胞转变为受体细胞，这表明一种维持细胞增殖和支持受体快速生长的机制（图3a）。"
           },
           {
             "rank": 4,
@@ -2881,7 +2933,7 @@
         "severity": "none",
         "needs_manual_review": false,
         "uncovered_phenomenon": "",
-        "reason": "claim ‘FIM-花托-连接组织’与论文 sentence_id=101 ‘cell lineage from FIM to receptacle and then to conjunctive tissue’ 完全一致；‘拟时序分析发现’对应原文 ‘An analysis using Monocle2... demonstrated’；图号（3c-d）匹配。"
+        "reason": "claim ‘FIM-花托-连接组织’与论文 sentence_id=101 ‘cell lineage from FIM to receptacle and then to conjunctive \n                   tissue’ 完全一致；‘拟时序分析发现’对应原文 ‘An analysis using Monocle2... demonstrated’；图号（3c-d）匹配。"
       },
       "analysis": {
         "evidence_judgement": "整句 claim 可由 sentence_id=101 单独、完整、字面级支撑：‘cell lineage from FIM to receptacle and then to conjunctive tissue’ = ‘发育顺序为：FIM-花托-连接组织’；‘An analysis using Monocle2... demonstrated’ = ‘拟时序分析发现’；‘(Fig. 3c,d)’ 与 claim 图号一致；top-5 中 rank1 即为该句，覆盖充分。",
@@ -2905,7 +2957,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C19",
@@ -2982,13 +3037,13 @@
             "rank": 7,
             "sentence_id": 74,
             "text": "They could be 863 a G1/S phase cells Sepal epidermis Unknown Endocarp (0 DPA) 0 6 12 18 Mesocarp (0 DPA) Epicarp (0 DPA) Petal primordia Trichome-base 1 7 13 19 FP Petal-early Receptacle primordia Unknown 2 8 14 20 Placenta Sepal mesophyll Petal-late Receptacle-early 3 9 15 21 Ovule (ovary wall) Provascular Unknown Receptacle-late 4 10 16 22 Epidermis G2/M phase cells G0/G1 phase cells Sieve element 5 11 17 23 2 mm 2 3 3 2 2 5 5 10 8 4 S1 S2 S3 S4 S5 S6 S7 S8-1 S8-2 S8-3 b Average expression Max Min Per cent expressed 0 25 50 75 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0 unknown Aspartyl protease LTP WOX9 AG1 LAX2 PHOSPHO1 HTH KNAT2-like1 LOX2 CRC unknown SEO FIL/YAB1 PI MIPS3 GRAS1 LTP4 LRR protein OMR1 CDC20.1 glycine_rich2 Plant Tudor_like RCA BAS1 bHLH96 TOC34 Calcium_binding PNI KAO2 pathogenesis SPX1 STM-like AP1 CAL DWF1 CYP78A7 ANT d Ovule (ovary wall) Placenta 4 3 Receptacle-late Receptacle-early 10 9 Conjunctive tissue-early 27 Conjunctive tissue-late 28 S6 S7 S8-1 S8-2 S8-3 S8-4 Fig. 2 | Spatial transcriptome of developing cucumber female floral buds using Stereo-seq.",
-            "text_zh": "虽然上位子房突变体仍然有一个FIM，但可以观察到花托阻滞和心皮向上生长（图7b）。"
+            "text_zh": "他们可以是863一个G1 / S期细胞表皮花萼未知的内果皮(0 DPA) 0 6 12 18中果皮(0 DPA)外果皮(0 DPA)花瓣原基Trichome-base 1 7 13 19 FP Petal-early插座20胎盘萼片原基未知2 8 14叶肉Petal-late Receptacle-early 3 9 15 21胚珠(卵巢壁)原形成层的未知Receptacle-late 4 10 16 22表皮G2 / M期细胞G0 / G1期细胞筛元素5 11 17 23 2毫米2 3 3 2 2 5 5 10 8 4 S1 S2 S3 S4 S5 S6 S7 S8-1 S8-2 S8-3 b平均表达马克斯每分表示0 25 75 40分钟39 38 37 36 35 34 33 32 30 31日29日28日27日26日25日24日23日22日21日20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0未知天门冬氨酰蛋白酶LTP WOX9 AG1 LAX2 PHOSPHO1 HTH KNAT2-like1 LOX2 CRC未知SEO费尔/ YAB1πMIPS3 GRAS1 LTP4远程雷达蛋白质OMR1 CDC20.1 glycine_rich2植物Tudor_like RCA BAS1 bHLH96 TOC34 Calcium_binding句KAO2病机SPX1 STM-like AP1卡尔DWF1 CYP78A7 ANT d胚珠(卵巢壁)胎盘4 3 Receptacle-late Receptacle-early 10 9图2利用Stereo-seq分析发育中的黄瓜雌花芽的空间转录组。"
           },
           {
             "rank": 8,
             "sentence_id": 73,
             "text": "The exclusive expression pattern of PROTODERMAL FACTOR 1 (PDF1), an epidermal marker gene, identified clusters 5, 7, 18, 29 and 30 as epidermis-related cells (Supplementary Fig. 18d).",
-            "text_zh": "与黄瓜不同的是，番茄缺乏特定的膜，而且花托位于心皮下方，而不是黄瓜的周围位置。"
+            "text_zh": "原真皮因子1 （PROTODERMAL FACTOR 1, PDF1）是一种表皮标记基因，特异表达模式将簇5、7、18、29和30鉴定为表皮相关细胞（补充图18d）。"
           },
           {
             "rank": 9,
@@ -3000,7 +3055,7 @@
             "rank": 10,
             "sentence_id": 35,
             "text": "Comparative analyses of floral cell types and gene expression from cucumber, superior ovary mutant and tomato support the notion that novel genes and expression patterns in the FIM and receptacle contributed to the evolutionary innovation of an inferior ovary in cucumber.",
-            "text_zh": "FIM也产生维管前组织，在S5期后分化为原木质部（图3a）。"
+            "text_zh": "黄瓜、优子房突变体和番茄花细胞类型和基因表达的比较分析支持了FIM和花托中新的基因和表达模式促成了黄瓜优子房的进化创新的观点。"
           }
         ]
       },
@@ -3035,7 +3090,7 @@
         "severity": "moderate",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文明确推断果肉源于花托（103），并指出花托来源组织对遗传改良重要（104）；但未限定‘花托及其相关组织’为研究重点，更未断言其‘对遗传改良意义重大’——该表述将‘important for genetic improvement’泛化为价值判断性结论，添加了原文未有的应用意义权重。"
+        "reason": "论文明确推断果肉源于花托（103）,并指出花托来源组织对遗传改良重要（104）；但未限定‘花托及其相关组织’为研究重点,更未断言其‘对遗传改良意义重大’——该表述将‘important for gen\n                   etic improvement’泛化为价值判断性结论,添加了原文未有的应用意义权重。"
       },
       "analysis": {
         "evidence_judgement": "分句1‘推测黄瓜心皮外的果肉是由花托发育而来（图3e）’：由sentence_id=103完整支撑（‘We infer that in cucumber, the fruit flesh outside the carpel is mostly derived from the development of receptacle.’）；分句2‘因此花托及其相关组织的研究对遗传改良意义重大’：sentence_id=104仅说‘the receptacle-derived tissue is important for the genetic improvement’，主语是‘receptacle-derived tissue’（花托来源组织），非‘花托及其相关组织’；且‘important for’不等价于‘意义重大’（后者含主观评价与政策/育种优先级暗示），属程度与范畴双重扩展。",
@@ -3073,7 +3128,10 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C20",
@@ -3114,7 +3172,7 @@
             "rank": 1,
             "sentence_id": 26,
             "text": "In this study, we generate a collection of spatially resolved transcriptomes of developing cucumber female floral buds at single-cell resolution b Petal prim Stamen prim Carpel prim Sepal prim Enlarged floral meristem Asparagales Dioscoreales-cladeA S1 S2 S3 S4 S5 S6 S7 S8 Dioscoreales-cladeB c Pandanales Liliales Sepal Petal Alismatales Stamen Acorales Carpel Magnoliales Enlarged receptacle Diﬀerentiating floral primordia Laurales Enlarged floral meristem Piperales Ceratophyllales Austrobaileyales Nymphaeales Amborellales Selaginellales S1 S2 S3 S4 S5 S7 S8 S6 d Brassicales Sepal prim Petal prim Stamen prim Carpel prim Malvales Floral meristem Sapindales Oxalidales Huerteales S1 S2 S3 S5 S6 S7 S8 S4 e Malpighiales Sepal Petal Stamen Carpel Diﬀerentiating floral primordia Receptacle S1 S2 S3 S4 S5 S6 S7 S8 the corresponding floral organs.",
-            "text_zh": "每个bin 50中的基因数量和唯一分子标识符（UMI）计数显示出高度的一致性（扩展数据图2e-g），没有转录信号扩散，这是UMI分布所表明的（补充图1-9），并且不同阶段的所有花芽样本都可以沿着伪时间轨迹连续排序（扩展数据图2h）。"
+            "text_zh": "在这项研究中，我们在单细胞分辨率下获得了发育中的黄瓜雌花芽的空间分解转录组集合b花瓣prim雄蕊prim心皮prim萼片prim扩大的花分生组织芦笋Dioscoreales-cladeA S1 S2 S3 S4 S5 S6 S7 S8 Dioscoreales-cladeB c Pandanales Liliales萼片花瓣Alismatales雄蕊Acorales心皮木兰花扩大的花托分化花原基月苞扩大的花分生组织Piperales Ceratophyllales austrrobaileyales nyphhaeales伞生花序卷叶生S1 S2 S3 S4 S5 S7 S8 S6 d苞片原片花瓣原片雄蕊原片心皮原片花分生组织无尾花序草蕊花原片S1 S2 S3 S5 S6 S7 S8 S4 e花萼花瓣雄蕊心皮分化花原基花托S1 S2 S3 S4 S5 S6 S6 S7 S8相应的花器官。"
           },
           {
             "rank": 2,
@@ -3132,7 +3190,7 @@
             "rank": 4,
             "sentence_id": 25,
             "text": "However, recent advances in spatially enhanced resolution omics sequencing (Stereo-seq) technology have facilitated the exploration of gene expression landscapes during organ development7,8.",
-            "text_zh": "单个切片的数据集聚合到bin 50中，其直径等于0 DPA下的整个细胞的直径（扩展数据图2b-d和补充表2）。"
+            "text_zh": "然而，空间增强分辨率组学测序（Stereo-seq）技术的最新进展促进了对器官发育过程中基因表达景观的探索7,8。"
           },
           {
             "rank": 5,
@@ -3156,13 +3214,13 @@
             "rank": 8,
             "sentence_id": 42,
             "text": "After initiation, the cucumber floral meristem enlarges from the perimeter and becomes concave (Fig. 1b), then sepal, petal, stamen and carpel primordia are initiated sequentially on the inner regions of this ‘enlarged floral meristem’ (EFM) (Fig. 1b,c).",
-            "text_zh": "聚簇3和聚簇4均沿凹形花分生组织分布，聚簇4优先表达花分生组织标记基因LEAFY。"
+            "text_zh": "分化后，黄瓜花分生组织从外围扩大到凹形（图1b），然后萼片、花瓣、雄蕊和心皮原基依次在这个“扩大的花分生组织”（EFM）的内部区域开始分化（图1b，c）。"
           },
           {
             "rank": 9,
             "sentence_id": 44,
             "text": "The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c).",
-            "text_zh": "聚簇3 （RP）和聚簇4 （EFM）的分布表明，它们的形成和发育决定了扩大和凹形花分生组织的形态发生。"
+            "text_zh": "AgNO3诱导的黄瓜雄花芽形成也呈现出增大和凹陷的花分生组织特征；然而，花托和心皮随后的生长被阻止（扩展数据图1c）。"
           },
           {
             "rank": 10,
@@ -3205,7 +3263,7 @@
         "severity": "mild",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文明确使用‘near single-cell resolution’（105）、‘seven clusters’（106）、‘RP and EFM determine morphogenesis of enlarged and concave floral meristem’（109），但未说明‘凹形花分生组织’即指‘enlarged and concave floral meristem’——该术语在论文中始终以复合形容词出现（enlarged and concave），而公众号将其压缩为‘凹形’，删减了‘enlarged’这一关键形态维度，导致机制描述不完整。"
+        "reason": "论文明确使用‘near single-cell resolution’（105）、‘seven clusters’（106）、‘RP and EFM determine morphogenesis o\n                   f enlarged and concave floral meristem’（109）,但未说明‘凹形花分生组织’即指‘enlarged and concave floral meristem’——\n                   该术语在论文中始终以复合形容词出现（enlarged and concave）,而公众号将其压缩为‘凹形’,删减了‘enlarged’这一关键形态维度,导致机制描述不完整。"
       },
       "analysis": {
         "evidence_judgement": "分句1‘对S1-S4时期花芽进行近单细胞分辨率的无监督聚类分析，共分为7个cluster（图4a-b）’：sentence_id=105（‘near single-cell resolution’）、106（‘seven clusters’）共同支撑；分句2‘其中花托原基（RP）和扩展花分生组织（EFM）的起始和发育决定着“凹”形花分生组织的形态发生’：sentence_id=109直接对应‘their initiation and development determine the morphogenesis of the enlarged and concave floral meristem’，但原文强调‘enlarged and concave’双特征，公众号仅保留‘凹形’，删减‘enlarged’。",
@@ -3237,7 +3295,10 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C21",
@@ -3284,7 +3345,7 @@
             "rank": 2,
             "sentence_id": 113,
             "text": "The other two originated from the FIM and passed through the EFM, with one leading to the formation of the floral primordia, then generating floral whorls, while the other gave rise to the receptacle primordium from the EFM (Fig. 4c).",
-            "text_zh": "然后根据其发育阶段和花芽长度顺序将样品放置在Tissue-Tek低温模具的底部（Sakura, 4565）。"
+            "text_zh": "另外两个基因起源于前膜并经过前膜，其中一个导致花原基的形成，然后产生花轮，而另一个则从前膜产生花托原基（图4c）。"
           },
           {
             "rank": 3,
@@ -3320,7 +3381,7 @@
             "rank": 8,
             "sentence_id": 112,
             "text": "One involved the differentiation of the epidermis.",
-            "text_zh": "收集不同发育阶段的新鲜黄瓜Gy14和番茄TS69花蕾，以及knat2-like1突变体和WT CU2雌性花蕾，置于tisue - tek最佳切割温度化合物（Sakura, 4583）中，在冰上真空浸泡15 min。"
+            "text_zh": "其中之一涉及表皮的分化。"
           },
           {
             "rank": 9,
@@ -3364,7 +3425,7 @@
         "severity": "none",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文明确指出‘three main developmental paths’（111）及‘one involved epidermis; the other two originated from FIM and passed through EFM, one leading to FP, the other to RP’（113），与公众号‘起源于FIM，分为3条路径：E、FP经EFM、RP经EFM’完全一致；‘RNA速率分析和拟时序分析’对应原文‘RNA velocity and Monocle3’（110）及‘Monocle2’（114,380），术语通俗化属合理转述。"
+        "reason": "论文明确指出‘three main developmental paths’（111）及‘one involved epidermis; the other two originated from F\n                   IM and passed through EFM, one leading to FP, the other to RP’（113）,与公众号‘起源于FIM,分为3条路径：E、FP经EFM、RP经E\n                   FM’完全一致；‘RNA速率分析和拟时序分析’对应原文‘RNA velocity and Monocle3’（110）及‘Monocle2’（114,380）,术语通俗化属合理转述。"
       },
       "analysis": {
         "evidence_judgement": "分句‘RNA速率分析和拟时序分析揭示了这些cluster的发育轨迹’：sentence_id=110（RNA velocity and Monocle3）、114（Monocle2 confirmed trajectories）、111（three main developmental paths）共同支撑；分句‘起源于FIM，分为3条路径…’：sentence_id=111（‘originating from the FIM… three main developmental paths’）+113（‘one involved epidermis; the other two… one leading to FP, the other to RP’）完整覆盖；图注‘图4c-d’与原文Fig.4c,d一致。",
@@ -3388,7 +3449,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C22",
@@ -3453,19 +3517,19 @@
             "rank": 5,
             "sentence_id": 89,
             "text": "Clusters 12, 16, 20, 35 and 39 had no known marker genes and were unannotated.",
-            "text_zh": "提出了两种可能性。"
+            "text_zh": "聚类12、16、20、35和39没有已知的标记基因，也没有注释。"
           },
           {
             "rank": 6,
             "sentence_id": 154,
             "text": "e, A heat map of the dynamic changes in expression levels of pseudotime-dependent genes.",
-            "text_zh": "积分后，根据TOME30的描述计算不同阶段聚类之间的边权。"
+            "text_zh": "e，伪时间依赖基因表达水平动态变化的热图。"
           },
           {
             "rank": 7,
             "sentence_id": 153,
             "text": "d, A DDRTree visualization of the cluster and pseudotime trajectory analysis of the various clusters.",
-            "text_zh": "为了构建花的发育轨迹，我们在连续的时间点使用Seurat（默认设置为FindIntegrationAnchors和IntegrateData函数）对不同阶段（从S1到S8-4的所有黄瓜样本）的bin50进行了整合和共嵌入。"
+            "text_zh": "d、聚类的DDRTree可视化和各聚类的伪时间轨迹分析。"
           },
           {
             "rank": 8,
@@ -3518,7 +3582,7 @@
         "severity": "moderate",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文明确限定验证的是 selected key marker genes（如STM、ETTIN等），且图4g仅展示其中部分；公众号泛化为‘其中一些基因’，删去‘marker’限定及‘selected’的筛选逻辑，弱化了因果链条的严谨性；热图来源（pseudotime-dependent genes）未在 claim 中体现，属背景删减。"
+        "reason": "论文明确限定验证的是 selected key marker genes（如STM、ETTIN等）,且图4g仅展示其中部分；公众号泛化为‘其中一些基因’,删去‘marker’限定及‘selected’\n                   的筛选逻辑,弱化了因果链条的严谨性；热图来源（pseudotime-dependent genes）未在 claim 中体现,属背景删减。"
       },
       "analysis": {
         "evidence_judgement": "分句1‘拟时序分析中筛选出一些关键基因，其表达热图……见图4e-f’：sentence_id=154 明确说明图4e是 pseudotime-dependent genes 的热图，支撑热图存在及来源；分句2‘对其中一些基因进行了RNA原位杂交验证（图4g）’：sentence_id=125 明确列出 STM, STM-like, KNAT2-like1, ETTIN, AP1, LEAFY 等具体 marker 基因并指向图4g，支撑验证行为及图号；但 claim 中‘一些基因’未保留‘marker’属性与‘selected’前提，也未呼应图4e-f中基因系 pseudotime-dependent 这一关键筛选依据。",
@@ -3556,7 +3620,10 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C23",
@@ -3678,7 +3745,7 @@
         "severity": "none",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "claim 完全复述 sentence_id=126 原文，包括区域命名（inner part / peripheral part）、cluster 对应（FP / E, RP, EFM）及图号（Fig. 4h），无添加、删减或替换。"
+        "reason": "claim 完全复述 sentence_id=126 原文,包括区域命名（inner part / peripheral part）、cluster 对应（FP / E, RP, EFM）及图号（Fi\n                   g. 4h）,无添加、删减或替换。"
       },
       "analysis": {
         "evidence_judgement": "整句 claim 与 sentence_id=126 字面高度一致：'Based on the clusters, we classified the cells of floral buds into the inner part (cluster floral primordia) and peripheral part (clusters E, RP and EFM) and measured their cell area and cell numbers (Fig. 4h).' —— 所有要素（依据、分类、命名、图号）均被完整覆盖；top-5中rank1即为该句，支撑充分。",
@@ -3702,7 +3769,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C24",
@@ -3783,7 +3853,7 @@
         "severity": "none",
         "needs_manual_review": false,
         "uncovered_phenomenon": "",
-        "reason": "claim 与 sentence_id=127 完全对应：'initial morphological changes in the EFM reflect rapid cell proliferation in the peripheral region (Fig. 4i)' → 'EFM初始形态变化是由于外部区域细胞快速增殖（图4i）'；'cell expansion... contributed to subsequent meristem enlargement (Fig. 4j)' → '从而促进外侧分生组织后续扩大（图4j）'；'peripheral region' 合理转述为'外部区域'，'meristem enlargement' 即'分生组织扩大'，无失真。"
+        "reason": "claim 与 sentence_id=127 完全对应：'initial morphological changes in the EFM reflect rapid cell proliferat\n                   ion in the peripheral region (Fig. 4i)' → 'EFM初始形态变化是由于外部区域细胞快速增殖（图4i）'；'cell expansion... contribut\n                   ed to subsequent meristem enlargement (Fig. 4j)' → '从而促进外侧分生组织后续扩大（图4j）'；'peripheral region' 合理转述为'外\n                   部区域','meristem enlargement' 即'分生组织扩大',无失真。"
       },
       "analysis": {
         "evidence_judgement": "claim 为复合句，含两个因果断言：(1) EFM初始形态变化 ← 外部区域细胞快速增殖（图4i）；(2) 该增殖→后续分生组织扩大（图4j）。sentence_id=127 同时支撑二者，且图号、主语（EFM）、区域（peripheral region）、结果（meristem enlargement）全部精确匹配；top-5中rank1即为此句。",
@@ -3807,7 +3877,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C25",
@@ -3890,19 +3963,19 @@
             "rank": 8,
             "sentence_id": 67,
             "text": "Clusters 8 (from S1 to S4), 9 (from S5 to S8-2) and 10 (from S8-3 to S8-4) were determined to correspond to receptacle primordia, receptacle-early and receptacle-late, respectively.",
-            "text_zh": "我们的研究结果支持一个模型，即这三个基因中的任何一个的功能丧失都会导致花托停滞并促进雄蕊发育；然而，与knat2-like1突变体相比，crc和er的心皮起始也受到抑制，导致女性向男性的性转变（扩展数据图8j）。"
+            "text_zh": "簇8 （S1 - S4）、9 （S5 - S8-2）和10 （S8-3 - S8-4）分别对应于花托原基、花托早期和花托晚期。"
           },
           {
             "rank": 9,
             "sentence_id": 66,
             "text": "Cluster 0 was characterized as G1/S phase cells, as the translation elongation factor ELONGATION FACTOR 1B (EF1B), HISTONE H4 (HIS4) and ribosomal protein L24 (RPL24) genes were overrepresented20 (Supplementary Figs. 16j and 17a–d), while cluster 23 was identified as G2/M phase cells with high expression of the mitotic cell-cycle-regulated genes SCARECROW-LIKE 28 (SCL28), ribosomal protein L24 (RPL24), cyclin CYCB1;2, CYCB1;4 and EARLY NODULIN-LIKE PROTEIN 14 (ENODL14)20 (Supplementary Fig. 17d–h).",
-            "text_zh": "KNAT2-like1在受体中特异性表达；然而，除了在S5之后的受体中表达外，CRC和ER在S4和S5的心皮原基起始阶段也与AG1重叠表达（扩展数据图8i）。"
+            "text_zh": "集群0被鉴定为G1/S期细胞，因为翻译延伸因子延伸因子1B （EF1B）、组蛋白H4 （HIS4）和核糖体蛋白L24 （RPL24）基因被过度表达20（补充图16j和17a-d），而集群23被鉴定为G2/M期细胞，有丝分裂细胞周期调节基因稻草人样28 （SCL28）、核糖体蛋白L24 （RPL24）、细胞周期蛋白CYCB1；2、CYCB1;4和早期结节样蛋白14 (ENODL14)20（补充图17d-h）。"
           },
           {
             "rank": 10,
             "sentence_id": 68,
             "text": "Cluster 8 is located outside of the floral primordia, with high expression of KNOX1 TFs, such as STM-like and KNOTTED-LIKE FROM ARABIDOPSIS THALIANA 2 (KNAT2-like1), which may function to maintain the meristematic activities of stem cells21 (Supplementary Figs. 16i and 17i).",
-            "text_zh": "综上所述，这些发现表明KNAT2-like1在花托发育和下卵巢形成中起关键作用，并提示其调控机制涉及ER和CRC的遗传相互作用。"
+            "text_zh": "簇8位于花原基之外，高表达KNOX1 TFs，如拟南芥2的STM-like和knottlike (KNAT2-like1)，其可能具有维持干细胞分生组织活动的功能21 （Supplementary fig . 16i和17i）。"
           }
         ]
       },
@@ -3942,7 +4015,7 @@
         "severity": "moderate",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文明确将花托快速生长归因于‘another phase of cell proliferation’（134）及‘receptacle and carpel continued to grow’（193），但公众号句用‘说明此阶段后花托快速生长’将bin数量上升直接等同于生长原因，混淆相关与因果；且删减了‘carpel’共生长背景（193）。"
+        "reason": "论文明确将花托快速生长归因于‘another phase of cell proliferation’（134）及‘receptacle and carpel continued to grow’（1\n                   93）,但公众号句用‘说明此阶段后花托快速生长’将bin数量上升直接等同于生长原因,混淆相关与因果；且删减了‘carpel’共生长背景（193）。"
       },
       "analysis": {
         "evidence_judgement": "分句1‘S5时期后，花托相关bin数量急剧上升（图5a）’：sentence_id=129直接支撑（‘largest increase in the bin numbers of receptacle-related clusters’）；分句2‘说明此阶段后花托快速生长’：sentence_id=134（‘rapid growth...driven by another phase of cell proliferation’）和193（‘receptacle grew rapidly and wrapped around the carpel’）共同支撑生长事实，但未支持‘bin数量上升→生长’的推断逻辑；top-5覆盖129/134/193，关键断言均有支撑。",
@@ -3980,7 +4053,10 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C26",
@@ -4045,7 +4121,7 @@
             "rank": 5,
             "sentence_id": 100,
             "text": "We determined that after S7, the FIM and receptacle primordia generate cells that are actively undergoing the cell cycle, while G1/S phase cells transition to receptacle cells, suggesting a mechanism to maintain cell proliferation and support rapid receptacle growth (Fig. 3a).",
-            "text_zh": "在立体显微镜（SOPTOP, SZN71）下分离黄瓜Gy14和番茄TS69 S1 ~ S8期的花，用FAA（50%乙醇，5%冰醋酸和3.7%甲醛）固定，用连续的乙醇处理（50%,70%,85%，95%和100%）脱水，用二甲苯清除，然后包埋在叶绿体中（Sigma-Aldrich, cat.）。"
+            "text_zh": "我们发现，在S7之后，FIM和受体原基产生活跃的细胞周期，而G1/S期细胞转变为受体细胞，这表明一种维持细胞增殖和支持受体快速生长的机制（图3a）。"
           },
           {
             "rank": 6,
@@ -4102,7 +4178,7 @@
         "severity": "none",
         "needs_manual_review": false,
         "uncovered_phenomenon": "",
-        "reason": "‘为探究花托快速生长的调控机制’对应paper中‘To investigate the regulation of cell division during rapid receptacle growth’；‘对花托及FIM相关cluster进行了细胞轨迹重建’与‘reconstructed cell trajectories using clusters of the receptacle and FIM’完全一致；图注（Fig. 5b）亦匹配。"
+        "reason": "‘为探究花托快速生长的调控机制’对应paper中‘To investigate the regulation of cell division during rapid receptacle grow\n                   th’；‘对花托及FIM相关cluster进行了细胞轨迹重建’与‘reconstructed cell trajectories using clusters of the receptacle an\n                   d FIM’完全一致；图注（Fig. 5b）亦匹配。"
       },
       "analysis": {
         "evidence_judgement": "整句为单一目的+方法断言，sentence_id=136（rank1）完整覆盖：‘To investigate...’对应目的，‘reconstructed cell trajectories using clusters of the receptacle and FIM’对应方法，且明确标注Fig. 5b；top-5中136为最直接支撑。",
@@ -4126,7 +4202,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C27",
@@ -4191,13 +4270,13 @@
             "rank": 5,
             "sentence_id": 55,
             "text": "Specifically, cluster 2 was identified as floral primordia by its location in the organizing centre and the expression of known floral primordia marker genes, such as CsAPETALA1 (CsAP1), CsAintegumentalike6 (CsAIL6) and CsLEAFY (CsLFY)13,14 (Supplementary Fig. 16a–c).",
-            "text_zh": "为了阐明KNAT2-like1的功能，使用CRISPR-Cas9产生了两个无转基因的纯合子功能缺失突变系，k-1 （2 bp缺失）和k-2 （1 bp插入）（图6a）。"
+            "text_zh": "具体来说，通过簇2在组织中心的位置和已知的花原基标记基因的表达，如CsAPETALA1 （CsAP1）、CsAintegumentalike6 （CsAIL6）和CsLEAFY (CsLFY)13,14，我们将其鉴定为花原基（Supplementary Fig. 16a-c）。"
           },
           {
             "rank": 6,
             "sentence_id": 80,
             "text": "The dot size indicates the percentage of bins expressing the genes in each cluster, and the colour intensity represents relative average expression Sepal mesophyll Trichome Floral intercalary meristem 24 30 36 Protoxylem Basal sepal–abaxial Floral intercalary meristem-2 25 31 37 Conjunctive primordia Phloem (0 DPA) Floral intercalary meristem-3 26 32 38 Conjunctive tissue-early Stigma/transmitting tract Unknown 27 33 39 Conjunctive tissue-late Placenta (0 DPA) Basal sepal–adaxial 28 34 40 Thickened epidermis Unknown 29 35 1 mm Vascular FIM 0 DPA ovary Receptacle Petal Sepal Carpel UMAP2 Epidermis UMAP1 4 1 S8-4 S8-4-transect Expression c Max Min 24 Sepal Intercalary Epidermis 5 HTH RCA STM-like 37 mesophyll meristem-2 25 Protoxylem Glycine-rich Petal-early PI Placenta AG1 3 14 27 Conjunctive Receptacle-early 9 Receptacle-early 9 tissue-early CRC ACS2 KNAT2-like1 ATS2 CAP e 0 −1 1 Average expression Per cent expressed 10 20 30 0 CRC ACS2 AG1 Clusters 3 4 27 28 9 10 Carpel Conjunctive Receptacle tissues tissues level.",
-            "text_zh": "单性花和下胚房在被子植物进化过程中独立进化了多次；然而，在葫芦科，这两种特征似乎是共同进化的（图1a）。"
+            "text_zh": "点大小表示每个簇中表达基因的箱子的百分比，花萼叶肉毛状体花萼间分生组织24 30 36原木质部基部萼片-背面花萼间分生组织-2 25 31 37结合原基韧皮部（0 DPA）花萼间分生组织-3 26 32 38结合组织-早期柱头/传递道未知27 33 39结合组织-晚期胎盘（0 DPA）基部萼片-近轴28 34 40增厚表皮未知29 35 1 mm维管膜子房花托花瓣萼片心皮UMAP2表皮UMAP1 4 1 S8-4 S8-4样表达c Max Min 24萼片间表皮5 HTH RCA STM-like 37叶肉分生组织-2 25原木质部富含甘氨酸的花瓣-早期PI胎盘AG1 3 14 27结合花托-早期9花托-早期9组织-早期CRC ACS2 KNAT2-like1 ATS2 CAP e 0−1平均表达率10 20 30 0 CRC ACS2 AG1簇3 4 27 28 9 10心皮结合花托组织组织水平。"
           },
           {
             "rank": 7,
@@ -4209,7 +4288,7 @@
             "rank": 8,
             "sentence_id": 113,
             "text": "The other two originated from the FIM and passed through the EFM, with one leading to the formation of the floral primordia, then generating floral whorls, while the other gave rise to the receptacle primordium from the EFM (Fig. 4c).",
-            "text_zh": "然后根据其发育阶段和花芽长度顺序将样品放置在Tissue-Tek低温模具的底部（Sakura, 4565）。"
+            "text_zh": "另外两个基因起源于前膜并经过前膜，其中一个导致花原基的形成，然后产生花轮，而另一个则从前膜产生花托原基（图4c）。"
           },
           {
             "rank": 9,
@@ -4248,7 +4327,7 @@
         "severity": "mild",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文写‘four of which followed a cyclic pattern (S phase, G2 phase, G0/G1 phase and M phase)’，即4个cluster按细胞周期阶段呈现循环模式；公众号称‘确定其中4个cluster与细胞周期相关（GO/G1、G2、S、M）’，将‘cyclic pattern’误译为‘related to cell cycle’，弱化了‘时序循环’这一关键动态特征，属作用程度降级。"
+        "reason": "论文写‘four of which followed a cyclic pattern (S phase, G2 phase, G0/G1 phase and M phase)’,即4个cluster\n                   按细胞周期阶段呈现循环模式；公众号称‘确定其中4个cluster与细胞周期相关（GO/G1、G2、S、M）’,将‘cyclic pattern’误译为‘related to cell cycle’,弱\n                   化了‘时序循环’这一关键动态特征,属作用程度降级。"
       },
       "analysis": {
         "evidence_judgement": "整句核心为UMAP重聚类结果描述，sentence_id=137（rank1）完整覆盖全部要素：六重组、四组呈cyclic pattern（S/G2/G0-G1/M）、两组注释为RP/FIM、图号Fig. 5c；top-5中137为唯一完整句，其余如146/106/168均只涉及部分信息（空间定位、热图、簇定义）。",
@@ -4280,7 +4359,10 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C28",
@@ -4321,13 +4403,13 @@
             "rank": 1,
             "sentence_id": 143,
             "text": "These findings support the notion that cell proliferation in the receptacle is regulated by the activation of meristematic activities in S phase cells.",
-            "text_zh": "随后，在Seurat中依次进行了特征基因选择（使用vst方法和2000个特征的FindVariableGenes函数）、PCA降维（使用可变基因和30个主成分的RunPCA函数）、SNN图的构建、基于Louvain的bin聚类（FindNeighbors和FindClusters）以及非线性降维算法（RunTSNE和RunUMAP）的可视化。"
+            "text_zh": "这些发现支持了这样一种观点，即受体中的细胞增殖是由S期细胞分生组织活动的激活来调节的。"
           },
           {
             "rank": 2,
             "sentence_id": 144,
             "text": "To pinpoint the key genes that regulate the cell proliferation and rapid growth of receptacles, we focused on those that were specifically upregulated or downregulated along the TOFO trajectory from each cluster (Fig. 5e, Extended Data Fig. 6c and Supplementary Tables 7 and 8)30.",
-            "text_zh": "聚类分辨率参数分别设置为2（与图2a有关，所有来自黄瓜的样本）、1.4（与图4a有关，来自黄瓜的S1-S5样本）、0.8（与图5a有关，所有来自黄瓜的样本在花托和FIM的集群中）和1.2（与图7a和扩展数据图9e有关，所有来自番茄的样本）。"
+            "text_zh": "为了确定调控细胞增殖和受体快速生长的关键基因，我们将重点放在每个簇中沿着TOFO轨迹特异性上调或下调的基因上（图5e，扩展数据图6c和补充表7和8）30。"
           },
           {
             "rank": 3,
@@ -4339,7 +4421,7 @@
             "rank": 4,
             "sentence_id": 100,
             "text": "We determined that after S7, the FIM and receptacle primordia generate cells that are actively undergoing the cell cycle, while G1/S phase cells transition to receptacle cells, suggesting a mechanism to maintain cell proliferation and support rapid receptacle growth (Fig. 3a).",
-            "text_zh": "在立体显微镜（SOPTOP, SZN71）下分离黄瓜Gy14和番茄TS69 S1 ~ S8期的花，用FAA（50%乙醇，5%冰醋酸和3.7%甲醛）固定，用连续的乙醇处理（50%,70%,85%，95%和100%）脱水，用二甲苯清除，然后包埋在叶绿体中（Sigma-Aldrich, cat.）。"
+            "text_zh": "我们发现，在S7之后，FIM和受体原基产生活跃的细胞周期，而G1/S期细胞转变为受体细胞，这表明一种维持细胞增殖和支持受体快速生长的机制（图3a）。"
           },
           {
             "rank": 5,
@@ -4363,19 +4445,19 @@
             "rank": 8,
             "sentence_id": 140,
             "text": "d, A line graph illustrating the distribution of bins from each cluster over pseudotime, with the line colours corresponding to the clusters shown in c.",
-            "text_zh": "为了在无监督聚类中考虑空间信息，我们采用了前面描述的Leiden聚类分析方法7。"
+            "text_zh": "d，一个线形图，说明了每个簇在伪时间内的箱子分布，线的颜色对应于c中所示的簇。"
           },
           {
             "rank": 9,
             "sentence_id": 184,
             "text": "Based on these findings, we proposed that, in cucumber, the rapid growth of the receptacle is centred around sink capacity signalling and integration of KNAT2-like1, CRC and ER to regulate cell proliferation, ultimately promoting receptacle development.",
-            "text_zh": "每个单元格的伪时间归一化为0-1的刻度。"
+            "text_zh": "基于这些发现，我们提出，在黄瓜中，受体的快速生长以sink capacity信号传导和KNAT2-like1、CRC和ER的整合为中心，以调节细胞增殖，最终促进受体发育。"
           },
           {
             "rank": 10,
             "sentence_id": 145,
             "text": "CRC, a TF known to determine carpel identity and mediate unisexual flower development22, was upregulated in the receptacles",
-            "text_zh": "由于Stereo-seq数据集的高稀疏性，我们没有过滤低表达基因[59]。"
+            "text_zh": "CRC，一个已知决定心皮身份和介导单性花发育的TF，在花托中被上调"
           }
         ]
       },
@@ -4410,7 +4492,7 @@
         "severity": "moderate",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文说‘receptacle cell proliferation is regulated by activation of meristematic activities in S phase cells’（机制：S期细胞中分生活性激活）；公众号转述为‘主要由激活S期细胞活动调控’，将‘meristematic activities in S phase cells’窄化/替换为‘S期细胞活动’，丢失‘meristematic’这一关键限定（分生组织特异性），且隐含因果主语错位（原文是分生活性被激活，非S期细胞本身被激活）"
+        "reason": "论文说‘receptacle cell proliferation is regulated by activation of meristematic activities in S phase c\n                   ells’（机制：S期细胞中分生活性激活）；公众号转述为‘主要由激活S期细胞活动调控’,将‘meristematic activities in S phase cells’窄化/替换为‘S期细胞活动\n                   ’,丢失‘meristematic’这一关键限定（分生组织特异性）,且隐含因果主语错位（原文是分生活性被激活,非S期细胞本身被激活）"
       },
       "analysis": {
         "evidence_judgement": "Claim分句1‘花托细胞增殖主要由……调控’：sentence_id=143直接支撑‘regulated by the activation of meristematic activities in S phase cells’，但未提‘空间分布’；claim中‘根据其空间分布’对应sentence_id=141（‘S phase cells primarily concentrated in S8-1 and S8-2 (Fig. 5d)’），图5d即空间分布依据。sentence_id=142提及TOR促进S期基因和分生组织激活，属间接支持，非核心；top-5中143+141已覆盖主干机制与空间依据。",
@@ -4448,7 +4530,10 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C29",
@@ -4495,7 +4580,7 @@
             "rank": 2,
             "sentence_id": 170,
             "text": "CRC also serves as a marker gene for the receptacle (Fig. 2b)22, and we confirmed its expression in the receptacle during stages S5–S8-4 (Supplementary Fig. 18a).",
-            "text_zh": "为了估计RNA速度，我们在动态模式下进行转录动力学建模，利用scVelo默认程序推断恢复剪接动力学的模型参数，然后计算速度。"
+            "text_zh": "CRC也是受体的标记基因（图2b）22，我们证实其在S5-S8-4期在受体中表达（补充图18a）。"
           },
           {
             "rank": 3,
@@ -4513,7 +4598,7 @@
             "rank": 5,
             "sentence_id": 80,
             "text": "The dot size indicates the percentage of bins expressing the genes in each cluster, and the colour intensity represents relative average expression Sepal mesophyll Trichome Floral intercalary meristem 24 30 36 Protoxylem Basal sepal–abaxial Floral intercalary meristem-2 25 31 37 Conjunctive primordia Phloem (0 DPA) Floral intercalary meristem-3 26 32 38 Conjunctive tissue-early Stigma/transmitting tract Unknown 27 33 39 Conjunctive tissue-late Placenta (0 DPA) Basal sepal–adaxial 28 34 40 Thickened epidermis Unknown 29 35 1 mm Vascular FIM 0 DPA ovary Receptacle Petal Sepal Carpel UMAP2 Epidermis UMAP1 4 1 S8-4 S8-4-transect Expression c Max Min 24 Sepal Intercalary Epidermis 5 HTH RCA STM-like 37 mesophyll meristem-2 25 Protoxylem Glycine-rich Petal-early PI Placenta AG1 3 14 27 Conjunctive Receptacle-early 9 Receptacle-early 9 tissue-early CRC ACS2 KNAT2-like1 ATS2 CAP e 0 −1 1 Average expression Per cent expressed 10 20 30 0 CRC ACS2 AG1 Clusters 3 4 27 28 9 10 Carpel Conjunctive Receptacle tissues tissues level.",
-            "text_zh": "单性花和下胚房在被子植物进化过程中独立进化了多次；然而，在葫芦科，这两种特征似乎是共同进化的（图1a）。"
+            "text_zh": "点大小表示每个簇中表达基因的箱子的百分比，花萼叶肉毛状体花萼间分生组织24 30 36原木质部基部萼片-背面花萼间分生组织-2 25 31 37结合原基韧皮部（0 DPA）花萼间分生组织-3 26 32 38结合组织-早期柱头/传递道未知27 33 39结合组织-晚期胎盘（0 DPA）基部萼片-近轴28 34 40增厚表皮未知29 35 1 mm维管膜子房花托花瓣萼片心皮UMAP2表皮UMAP1 4 1 S8-4 S8-4样表达c Max Min 24萼片间表皮5 HTH RCA STM-like 37叶肉分生组织-2 25原木质部富含甘氨酸的花瓣-早期PI胎盘AG1 3 14 27结合花托-早期9花托-早期9组织-早期CRC ACS2 KNAT2-like1 ATS2 CAP e 0−1平均表达率10 20 30 0 CRC ACS2 AG1簇3 4 27 28 9 10心皮结合花托组织组织水平。"
           },
           {
             "rank": 6,
@@ -4525,25 +4610,25 @@
             "rank": 7,
             "sentence_id": 26,
             "text": "In this study, we generate a collection of spatially resolved transcriptomes of developing cucumber female floral buds at single-cell resolution b Petal prim Stamen prim Carpel prim Sepal prim Enlarged floral meristem Asparagales Dioscoreales-cladeA S1 S2 S3 S4 S5 S6 S7 S8 Dioscoreales-cladeB c Pandanales Liliales Sepal Petal Alismatales Stamen Acorales Carpel Magnoliales Enlarged receptacle Diﬀerentiating floral primordia Laurales Enlarged floral meristem Piperales Ceratophyllales Austrobaileyales Nymphaeales Amborellales Selaginellales S1 S2 S3 S4 S5 S7 S8 S6 d Brassicales Sepal prim Petal prim Stamen prim Carpel prim Malvales Floral meristem Sapindales Oxalidales Huerteales S1 S2 S3 S5 S6 S7 S8 S4 e Malpighiales Sepal Petal Stamen Carpel Diﬀerentiating floral primordia Receptacle S1 S2 S3 S4 S5 S6 S7 S8 the corresponding floral organs.",
-            "text_zh": "每个bin 50中的基因数量和唯一分子标识符（UMI）计数显示出高度的一致性（扩展数据图2e-g），没有转录信号扩散，这是UMI分布所表明的（补充图1-9），并且不同阶段的所有花芽样本都可以沿着伪时间轨迹连续排序（扩展数据图2h）。"
+            "text_zh": "在这项研究中，我们在单细胞分辨率下获得了发育中的黄瓜雌花芽的空间分解转录组集合b花瓣prim雄蕊prim心皮prim萼片prim扩大的花分生组织芦笋Dioscoreales-cladeA S1 S2 S3 S4 S5 S6 S7 S8 Dioscoreales-cladeB c Pandanales Liliales萼片花瓣Alismatales雄蕊Acorales心皮木兰花扩大的花托分化花原基月苞扩大的花分生组织Piperales Ceratophyllales austrrobaileyales nyphhaeales伞生花序卷叶生S1 S2 S3 S4 S5 S7 S8 S6 d苞片原片花瓣原片雄蕊原片心皮原片花分生组织无尾花序草蕊花原片S1 S2 S3 S5 S6 S7 S8 S4 e花萼花瓣雄蕊心皮分化花原基花托S1 S2 S3 S4 S5 S6 S6 S7 S8相应的花器官。"
           },
           {
             "rank": 8,
             "sentence_id": 145,
             "text": "CRC, a TF known to determine carpel identity and mediate unisexual flower development22, was upregulated in the receptacles",
-            "text_zh": "由于Stereo-seq数据集的高稀疏性，我们没有过滤低表达基因[59]。"
+            "text_zh": "CRC，一个已知决定心皮身份和介导单性花发育的TF，在花托中被上调"
           },
           {
             "rank": 9,
             "sentence_id": 79,
             "text": "b, A bubble plot showing expression levels of specific marker genes in each of the clusters.",
-            "text_zh": "对基因表达动态的研究，对细胞命运的建立和花托的发育提供了新的认识，为葫芦性别决定和下卵巢形成的分子调控机制提供了新的思路。"
+            "text_zh": "b，气泡图显示了每个集群中特定标记基因的表达水平。"
           },
           {
             "rank": 10,
             "sentence_id": 25,
             "text": "However, recent advances in spatially enhanced resolution omics sequencing (Stereo-seq) technology have facilitated the exploration of gene expression landscapes during organ development7,8.",
-            "text_zh": "单个切片的数据集聚合到bin 50中，其直径等于0 DPA下的整个细胞的直径（扩展数据图2b-d和补充表2）。"
+            "text_zh": "然而，空间增强分辨率组学测序（Stereo-seq）技术的最新进展促进了对器官发育过程中基因表达景观的探索7,8。"
           }
         ]
       },
@@ -4578,7 +4663,7 @@
         "severity": "mild",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文明确写CRC在S5–S8-4花托中表达（170），且在S4/S5花被原基启动时与AG1共表达（219），但未断言‘S4/5后’为起始时间点；公众号加‘S4/5后’暗示CRC表达始于S4/5，而论文只确认S5起持续表达，S4是否已有表达未明示（219中S4/S5共表达对象是carpel primordia initiation，非receptacle）"
+        "reason": "论文明确写CRC在S5–S8-4花托中表达（170）,且在S4/S5花被原基启动时与AG1共表达（219）,但未断言‘S4/5后’为起始时间点；公众号加‘S4/5后’暗示CRC表达始于S4/5,而论文\n                   只确认S5起持续表达,S4是否已有表达未明示（219中S4/S5共表达对象是carpel primordia initiation,非receptacle）"
       },
       "analysis": {
         "evidence_judgement": "Claim断言1‘CRC在S4/5后的花托中高表达’：sentence_id=170明确‘confirmed its expression in the receptacle during stages S5–S8-4’，支撑S5起；sentence_id=219指出CRC在S4/S5‘carpel primordia initiation’时与AG1共表达，但该共表达位置是carpel primordia，非receptacle，不支撑S4花托表达；因此‘S4/5后’中S4部分缺乏花托表达证据。top-5中170为直接证据，219为干扰项（位置错配）。",
@@ -4618,7 +4703,10 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C30",
@@ -4659,7 +4747,7 @@
             "rank": 1,
             "sentence_id": 172,
             "text": "This analysis revealed 17 coexpression modules (Fig. 5f, Supplementary Figs. 20 and 21 and Supplementary Table 9), of which module 14 was distributed in the receptacle.",
-            "text_zh": "利用Monocle2（参考文献71）分析了该容器从S1到S4的发育过程。"
+            "text_zh": "分析共发现17个共表达模块（图5f，补充图20和21以及补充表9），其中模块14分布在受体中。"
           },
           {
             "rank": 2,
@@ -4671,7 +4759,7 @@
             "rank": 3,
             "sentence_id": 173,
             "text": "This module included CRC, KNAT2-like1, ERECTA (ER), DARK INDUCIBLE 10 (DIN10), CA1P phosphatase and a putative small peptide gene, and their codistributions were verified (Fig. 5h and Supplementary Table 9).",
-            "text_zh": "提取了表皮、花托原基和放大膜的数据。"
+            "text_zh": "该模块包括CRC、KNAT2-like1、ERECTA （ER）、DARK INDUCIBLE 10 （DIN10）、CA1P磷酸酶和一个推定的小肽基因，并验证了它们的共分布（图5h和补充表9）。"
           },
           {
             "rank": 4,
@@ -4689,19 +4777,19 @@
             "rank": 6,
             "sentence_id": 181,
             "text": "h, The spatial visualization of the expression levels and patterns of selected genes in module 14.",
-            "text_zh": "首先将Seurat对象转换为Giotto对象，使用seuratToGiotto函数，使用binSpect函数识别空间相干表达模式，参数为：bin_method = ' rank ', calc_hub = T, hub_min_int = 5。"
+            "text_zh": "h，模块14中选定基因的表达水平和表达模式的空间可视化。"
           },
           {
             "rank": 7,
             "sentence_id": 182,
             "text": "of KNAT2-like1 in this module suggested its critical role not only in early receptacle initiation but also in subsequent cell proliferation.",
-            "text_zh": "利用clusterSpatialCorFeats函数对top基因进行聚类，识别空间共表达的特征模块，参数设置为k = 17，花器官各阶段基因数为3000。"
+            "text_zh": "KNAT2-like1在该模块中的表达表明它不仅在早期受体启动中起关键作用，而且在随后的细胞增殖中也起关键作用。"
           },
           {
             "rank": 8,
             "sentence_id": 180,
             "text": "g, An inferred GRN, with genes sourced from module 14.",
-            "text_zh": "选取S5 ~ S8-4样品，采用R包Giotto43进行空间共表达模块分析。"
+            "text_zh": "g，推断的GRN，其基因来源于模块14。"
           },
           {
             "rank": 9,
@@ -4713,7 +4801,7 @@
             "rank": 10,
             "sentence_id": 74,
             "text": "They could be 863 a G1/S phase cells Sepal epidermis Unknown Endocarp (0 DPA) 0 6 12 18 Mesocarp (0 DPA) Epicarp (0 DPA) Petal primordia Trichome-base 1 7 13 19 FP Petal-early Receptacle primordia Unknown 2 8 14 20 Placenta Sepal mesophyll Petal-late Receptacle-early 3 9 15 21 Ovule (ovary wall) Provascular Unknown Receptacle-late 4 10 16 22 Epidermis G2/M phase cells G0/G1 phase cells Sieve element 5 11 17 23 2 mm 2 3 3 2 2 5 5 10 8 4 S1 S2 S3 S4 S5 S6 S7 S8-1 S8-2 S8-3 b Average expression Max Min Per cent expressed 0 25 50 75 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0 unknown Aspartyl protease LTP WOX9 AG1 LAX2 PHOSPHO1 HTH KNAT2-like1 LOX2 CRC unknown SEO FIL/YAB1 PI MIPS3 GRAS1 LTP4 LRR protein OMR1 CDC20.1 glycine_rich2 Plant Tudor_like RCA BAS1 bHLH96 TOC34 Calcium_binding PNI KAO2 pathogenesis SPX1 STM-like AP1 CAL DWF1 CYP78A7 ANT d Ovule (ovary wall) Placenta 4 3 Receptacle-late Receptacle-early 10 9 Conjunctive tissue-early 27 Conjunctive tissue-late 28 S6 S7 S8-1 S8-2 S8-3 S8-4 Fig. 2 | Spatial transcriptome of developing cucumber female floral buds using Stereo-seq.",
-            "text_zh": "虽然上位子房突变体仍然有一个FIM，但可以观察到花托阻滞和心皮向上生长（图7b）。"
+            "text_zh": "他们可以是863一个G1 / S期细胞表皮花萼未知的内果皮(0 DPA) 0 6 12 18中果皮(0 DPA)外果皮(0 DPA)花瓣原基Trichome-base 1 7 13 19 FP Petal-early插座20胎盘萼片原基未知2 8 14叶肉Petal-late Receptacle-early 3 9 15 21胚珠(卵巢壁)原形成层的未知Receptacle-late 4 10 16 22表皮G2 / M期细胞G0 / G1期细胞筛元素5 11 17 23 2毫米2 3 3 2 2 5 5 10 8 4 S1 S2 S3 S4 S5 S6 S7 S8-1 S8-2 S8-3 b平均表达马克斯每分表示0 25 75 40分钟39 38 37 36 35 34 33 32 30 31日29日28日27日26日25日24日23日22日21日20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0未知天门冬氨酰蛋白酶LTP WOX9 AG1 LAX2 PHOSPHO1 HTH KNAT2-like1 LOX2 CRC未知SEO费尔/ YAB1πMIPS3 GRAS1 LTP4远程雷达蛋白质OMR1 CDC20.1 glycine_rich2植物Tudor_like RCA BAS1 bHLH96 TOC34 Calcium_binding句KAO2病机SPX1 STM-like AP1卡尔DWF1 CYP78A7 ANT d胚珠(卵巢壁)胎盘4 3 Receptacle-late Receptacle-early 10 9图2利用Stereo-seq分析发育中的黄瓜雌花芽的空间转录组。"
           }
         ]
       },
@@ -4740,7 +4828,7 @@
         "severity": "none",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "claim‘通过空间共表达模块分析筛选与CRC共表达的基因，结果显示共聚类到17个模块中（M1-M17）（图5f），其中M14分布于花托（图5h）’与sentence_id=172完全一致：‘This analysis revealed 17 coexpression modules (Fig. 5f...)，of which module 14 was distributed in the receptacle.’ 图5h在173中被验证为M14空间分布图，属合理延伸；‘筛选与CRC共表达的基因’对应171‘To identify genes that were coexpressed with CRC’，方法逻辑连贯。"
+        "reason": "claim‘通过空间共表达模块分析筛选与CRC共表达的基因,结果显示共聚类到17个模块中（M1-M17）（图5f）,其中M14分布于花托（图5h）’与sentence_id=172完全一致：‘This \n                   analysis revealed 17 coexpression modules (Fig. 5f...),of which module 14 was distributed in the re\n                   ceptacle.’ 图5h在173中被验证为M14空间分布图,属合理延伸；‘筛选与CRC共表达的基因’对应171‘To identify genes that were coexpressed wi\n                   th CRC’,方法逻辑连贯。"
       },
       "analysis": {
         "evidence_judgement": "Claim全句为单一断言：模块数量（17）、命名（M1-M17）、M14定位（花托）、图号（5f/5h）。sentence_id=172完整覆盖‘17 modules’+‘module 14 in receptacle’+‘Fig. 5f’；sentence_id=173补充‘Fig. 5h’验证，但非必需核验句（claim未要求验证细节）；top-5中172为直接、完整支撑。",
@@ -4764,7 +4852,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C31",
@@ -4805,37 +4896,37 @@
             "rank": 1,
             "sentence_id": 183,
             "text": "ER is involved in fine-tuning plant cell proliferation44, and the expression of KNAT2-like1 and ER was also predominantly enriched in S phase cells (Extended Data Fig. 6b), while DIN10 (ref. 45) and CA1P phosphatase46 affect carbohydrate accumulation and enhance sink strength (Fig. 5g,h and Extended Data Fig. 6d,e).",
-            "text_zh": "我们用Monocle2对S1 ~ S3、S6和S8-1 ~ S8-4进行了伪时间分析，将每个发育阶段的FIM指定为根。"
+            "text_zh": "ER参与植物细胞增殖的调控44，KNAT2-like1和ER的表达也主要富集于S期细胞（扩展数据图6b），而DIN10（参考文献45）和CA1P磷酸酶46影响碳水化合物的积累并增强汇强度（图5g，h和扩展数据图6d，e）。"
           },
           {
             "rank": 2,
             "sentence_id": 182,
             "text": "of KNAT2-like1 in this module suggested its critical role not only in early receptacle initiation but also in subsequent cell proliferation.",
-            "text_zh": "利用clusterSpatialCorFeats函数对top基因进行聚类，识别空间共表达的特征模块，参数设置为k = 17，花器官各阶段基因数为3000。"
+            "text_zh": "KNAT2-like1在该模块中的表达表明它不仅在早期受体启动中起关键作用，而且在随后的细胞增殖中也起关键作用。"
           },
           {
             "rank": 3,
             "sentence_id": 184,
             "text": "Based on these findings, we proposed that, in cucumber, the rapid growth of the receptacle is centred around sink capacity signalling and integration of KNAT2-like1, CRC and ER to regulate cell proliferation, ultimately promoting receptacle development.",
-            "text_zh": "每个单元格的伪时间归一化为0-1的刻度。"
+            "text_zh": "基于这些发现，我们提出，在黄瓜中，受体的快速生长以sink capacity信号传导和KNAT2-like1、CRC和ER的整合为中心，以调节细胞增殖，最终促进受体发育。"
           },
           {
             "rank": 4,
             "sentence_id": 173,
             "text": "This module included CRC, KNAT2-like1, ERECTA (ER), DARK INDUCIBLE 10 (DIN10), CA1P phosphatase and a putative small peptide gene, and their codistributions were verified (Fig. 5h and Supplementary Table 9).",
-            "text_zh": "提取了表皮、花托原基和放大膜的数据。"
+            "text_zh": "该模块包括CRC、KNAT2-like1、ERECTA （ER）、DARK INDUCIBLE 10 （DIN10）、CA1P磷酸酶和一个推定的小肽基因，并验证了它们的共分布（图5h和补充表9）。"
           },
           {
             "rank": 5,
             "sentence_id": 174,
             "text": "The presence c G2 RP G0/G1 M RP M S G2 S Max STM-like Expression ACO2 ETT MIPS3 UDP-glucosyl transferase G2 RP AS1 ASN1 Min LTP Kinetochore protein M RBCSIA EFB SRC2 RPL24A Intercalary meristem PPR protein GRP23 Vacuolar sorting protein tudor-like RNA binding GAPA-2 TSO2 Stigma/ S8-3/4 transmitting MCM3 Carpel S8-1/2 tract MCM2 SIP1 S6/7 AG S4/5 FIM MAD1 YAB1 S3 Histone H4 IND1 WRKY57 SPL13 NGA1 KNAT2-like1 GRF8 HEC3 S2 CRC SPL13A Floral primordia RAP2.2 HMG SHP1 STL bHLH94L CDC20 CDKB2 Placenta PLATZ ARF2 AT hook AP2 bHLH131-like AP2 conjunctive MYB1 Ovule Receptacle FZR3 CRC primordia primordia PIL5 CYCA1 AT hook CYCB2 conjunctive tissue-early MAD2 ACS2 Conjunctive SPL13A SCL28 ARF6 Receptacle-early tissue HB33 ENODL14 Conjunctive MAD2 tissue-late AP2 Receptacle-late h module 14 KNAT2-like1 Max HB22-like2 TPS1 ARF18 Score LSH10 CsaV3-6G037410 Min S7 S8 S7 S8 ER CRC ER CYCD2;1 Peptide3 DIN10 CRC LTP bHLH49 S7 S8 S7 S8 CA1P DIN10 CA1P Min KNAT2-like1 Expression HB33 ARR9 HAT3 HB22-like1 CsaV3-5G003580 Max S7 S8 S7 S8 in b from S1 to S8-4. e, The selected cellular trajectories from TOFO, showing the significant examples of candidate regulatory genes.",
-            "text_zh": "使用Seurat (v4.2.1) FindAllMarkers函数计算每个簇的顶端标记基因，并选择用于Monocle2分析。"
+            "text_zh": "存在c G2 RP G0 / G1 M RP M G2年代马克斯STM-like表达式ACO2 ETT MIPS3 UDP-glucosyl转移酶G2 RP AS1 ASN1分钟LTP着丝粒蛋白M RBCSIA EFB SRC2 RPL24A居间分生组织PPR蛋白GRP23空泡的排序tudor-like RNA蛋白质绑定GAPA-2 TSO2耻辱/ S8-3/4传输MCM3心皮S8-1/2束MCM2 SIP1 S6/7 AG S4/5鱼翅MAD1 YAB1 S3组蛋白H4 IND1 WRKY57 SPL13 NGA1 KNAT2-like1 GRF8 HEC3 S2 CRC SPL13A花原基RAP2.2 HMG SHP1 STL bHLH94L CDC20 CDKB2胎盘PLATZ ARF2 AT hook AP2 bHLH131-like AP2结合体MYB1胚泡受体FZR3 CRC原基primormordia PIL5 CYCA1 AT hook CYCB2结合体-早期MAD2 ACS2结合体SPL13A SCL28 ARF6受体-早期组织HB33 ENODL14结合体MAD2组织-晚期AP2受体-晚期h模块14 KNAT2-like1 Max HB22-like2 TPS1 ARF18 Score LSH10 CsaV3-6G037410 Min S7 S8 S7 S8 ER CRC ER CYCD2；1 Peptide3 DIN10 CRC LTP bHLH49 S7 S8 S7 S8 CA1P DIN10 CA1P Min KNAT2-like1表达HB33 ARR9 HAT3 HB22-like1 CsaV3-5G003580 Max S7 S8 S7 S8 S8 in b从S1到S8-4。e，从TOFO中选择的细胞轨迹，显示了候选调节基因的重要例子。"
           },
           {
             "rank": 6,
             "sentence_id": 172,
             "text": "This analysis revealed 17 coexpression modules (Fig. 5f, Supplementary Figs. 20 and 21 and Supplementary Table 9), of which module 14 was distributed in the receptacle.",
-            "text_zh": "利用Monocle2（参考文献71）分析了该容器从S1到S4的发育过程。"
+            "text_zh": "分析共发现17个共表达模块（图5f，补充图20和21以及补充表9），其中模块14分布在受体中。"
           }
         ]
       },
@@ -4870,7 +4961,7 @@
         "severity": "moderate",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文明确说KNAT2-like1和ER在S期富集表达（183），但未说二者‘在细胞分裂S期富集表达’——‘细胞分裂’是冗余添加且易误导（S期为DNA复制期，非分裂期）；DIN10和CA1P‘影响碳水积累并加强吸收’中‘加强吸收’失真：原文为‘enhance sink strength’（增强库强），sink strength ≠ 吸收（absorption），属植物生理学关键概念错配。"
+        "reason": "论文明确说KNAT2-like1和ER在S期富集表达（183）,但未说二者‘在细胞分裂S期富集表达’——‘细胞分裂’是冗余添加且易误导（S期为DNA复制期,非分裂期）；DIN10和CA1P‘影响碳水积\n                   累并加强吸收’中‘加强吸收’失真：原文为‘enhance sink strength’（增强库强）,sink strength ≠ 吸收（absorption）,属植物生理学关键概念错配。"
       },
       "analysis": {
         "evidence_judgement": "分句1（M14中与CRC高度相关的基因包括...）：由173（列明module 14含CRC、KNAT2-like1、ER、DIN10、CA1P等）支撑；分句2（KNAT2-like1和ER在细胞分裂S期富集表达）：183明确‘expression ... predominantly enriched in S phase cells’，但‘细胞分裂S期’错误——S期是合成期，分裂期为M期；分句3（DIN10和CA1P影响碳水积累并加强吸收）：183写‘affect carbohydrate accumulation and enhance sink strength’，‘sink strength’指库组织对同化物的吸引/滞留能力，非‘吸收’（absorption多指根系摄取或跨膜转运），该替换扭曲机制本质。",
@@ -4908,7 +4999,10 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C32",
@@ -4949,7 +5043,7 @@
             "rank": 1,
             "sentence_id": 184,
             "text": "Based on these findings, we proposed that, in cucumber, the rapid growth of the receptacle is centred around sink capacity signalling and integration of KNAT2-like1, CRC and ER to regulate cell proliferation, ultimately promoting receptacle development.",
-            "text_zh": "每个单元格的伪时间归一化为0-1的刻度。"
+            "text_zh": "基于这些发现，我们提出，在黄瓜中，受体的快速生长以sink capacity信号传导和KNAT2-like1、CRC和ER的整合为中心，以调节细胞增殖，最终促进受体发育。"
           },
           {
             "rank": 2,
@@ -4967,13 +5061,13 @@
             "rank": 4,
             "sentence_id": 183,
             "text": "ER is involved in fine-tuning plant cell proliferation44, and the expression of KNAT2-like1 and ER was also predominantly enriched in S phase cells (Extended Data Fig. 6b), while DIN10 (ref. 45) and CA1P phosphatase46 affect carbohydrate accumulation and enhance sink strength (Fig. 5g,h and Extended Data Fig. 6d,e).",
-            "text_zh": "我们用Monocle2对S1 ~ S3、S6和S8-1 ~ S8-4进行了伪时间分析，将每个发育阶段的FIM指定为根。"
+            "text_zh": "ER参与植物细胞增殖的调控44，KNAT2-like1和ER的表达也主要富集于S期细胞（扩展数据图6b），而DIN10（参考文献45）和CA1P磷酸酶46影响碳水化合物的积累并增强汇强度（图5g，h和扩展数据图6d，e）。"
           },
           {
             "rank": 5,
             "sentence_id": 182,
             "text": "of KNAT2-like1 in this module suggested its critical role not only in early receptacle initiation but also in subsequent cell proliferation.",
-            "text_zh": "利用clusterSpatialCorFeats函数对top基因进行聚类，识别空间共表达的特征模块，参数设置为k = 17，花器官各阶段基因数为3000。"
+            "text_zh": "KNAT2-like1在该模块中的表达表明它不仅在早期受体启动中起关键作用，而且在随后的细胞增殖中也起关键作用。"
           },
           {
             "rank": 6,
@@ -5003,7 +5097,7 @@
             "rank": 10,
             "sentence_id": 181,
             "text": "h, The spatial visualization of the expression levels and patterns of selected genes in module 14.",
-            "text_zh": "首先将Seurat对象转换为Giotto对象，使用seuratToGiotto函数，使用binSpect函数识别空间相干表达模式，参数为：bin_method = ' rank ', calc_hub = T, hub_min_int = 5。"
+            "text_zh": "h，模块14中选定基因的表达水平和表达模式的空间可视化。"
           }
         ]
       },
@@ -5030,7 +5124,7 @@
         "severity": "none",
         "needs_manual_review": false,
         "uncovered_phenomenon": "",
-        "reason": "claim全文为论文sentence_id=184的逐字直译，包括‘花托的快速生长以“库”容量信号为核心’（centred around sink capacity signalling）、‘整合KNAT2-like1、CRC和ER’（integration of KNAT2-like1, CRC and ER）、‘调节细胞增殖’（to regulate cell proliferation）三要素，无增删、无术语替换、无程度/范围夸大。"
+        "reason": "claim全文为论文sentence_id=184的逐字直译,包括‘花托的快速生长以“库”容量信号为核心’（centred around sink capacity signalling）、‘整合KN\n                   AT2-like1、CRC和ER’（integration of KNAT2-like1, CRC and ER）、‘调节细胞增殖’（to regulate cell proliferation）三要\n                   素,无增删、无术语替换、无程度/范围夸大。"
       },
       "analysis": {
         "evidence_judgement": "整句claim与184完全对应：‘花托的快速生长’=‘rapid growth of the receptacle’；‘以“库”容量信号为核心’=‘centred around sink capacity signalling’；‘整合KNAT2-like1、CRC和ER’=‘integration of KNAT2-like1, CRC and ER’；‘调节细胞增殖’=‘to regulate cell proliferation’；末尾‘促进花托发育’虽claim未提，但属合理省略（claim聚焦机制主干，非全文复述）。",
@@ -5054,7 +5148,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C33",
@@ -5095,7 +5192,7 @@
             "rank": 1,
             "sentence_id": 185,
             "text": "To elucidate the function of KNAT2-like1, CRISPR–Cas9 was used to generate two homozygous transgene-free loss-of-function mutant lines, k-1 (2 bp deletion) and k-2 (1 bp insertion) (Fig. 6a).",
-            "text_zh": "对于共表达网络，我们根据Giotto结果选择模块14中的基因作为输入基因集。"
+            "text_zh": "为了阐明KNAT2-like1的功能，使用CRISPR-Cas9产生了两个无转基因的纯合子功能缺失突变系，k-1 （2 bp缺失）和k-2 （1 bp插入）（图6a）。"
           },
           {
             "rank": 2,
@@ -5119,7 +5216,7 @@
             "rank": 5,
             "sentence_id": 182,
             "text": "of KNAT2-like1 in this module suggested its critical role not only in early receptacle initiation but also in subsequent cell proliferation.",
-            "text_zh": "利用clusterSpatialCorFeats函数对top基因进行聚类，识别空间共表达的特征模块，参数设置为k = 17，花器官各阶段基因数为3000。"
+            "text_zh": "KNAT2-like1在该模块中的表达表明它不仅在早期受体启动中起关键作用，而且在随后的细胞增殖中也起关键作用。"
           },
           {
             "rank": 6,
@@ -5137,7 +5234,7 @@
             "rank": 8,
             "sentence_id": 184,
             "text": "Based on these findings, we proposed that, in cucumber, the rapid growth of the receptacle is centred around sink capacity signalling and integration of KNAT2-like1, CRC and ER to regulate cell proliferation, ultimately promoting receptacle development.",
-            "text_zh": "每个单元格的伪时间归一化为0-1的刻度。"
+            "text_zh": "基于这些发现，我们提出，在黄瓜中，受体的快速生长以sink capacity信号传导和KNAT2-like1、CRC和ER的整合为中心，以调节细胞增殖，最终促进受体发育。"
           },
           {
             "rank": 9,
@@ -5149,7 +5246,7 @@
             "rank": 10,
             "sentence_id": 186,
             "text": "Compared with the wild type (WT), the mutants exhibited a similar proportion of male flowers around 60%.",
-            "text_zh": "为了说明基因沿伪时间的表达模式，我们应用向量广义线性和加性模型（VGAM）拟合这些基因表达水平的光滑样条曲线。"
+            "text_zh": "与野生型（WT）相比，突变体的雄花比例相似，约为60%。"
           }
         ]
       },
@@ -5176,7 +5273,7 @@
         "severity": "none",
         "needs_manual_review": false,
         "uncovered_phenomenon": "",
-        "reason": "claim‘构建了黄瓜KNAT2-like1敲除突变体k-1和k-2（图6a）’与185句‘CRISPR–Cas9 was used to generate two homozygous transgene-free loss-of-function mutant lines, k-1 (2 bp deletion) and k-2 (1 bp insertion) (Fig. 6a)’完全一致；‘黄瓜’对应‘in cucumber’隐含背景（全文语境），‘敲除突变体’是‘loss-of-function mutant lines’准确通俗化表述；图号一致。"
+        "reason": "claim‘构建了黄瓜KNAT2-like1敲除突变体k-1和k-2（图6a）’与185句‘CRISPR–Cas9 was used to generate two homozygous transg\n                   ene-free loss-of-function mutant lines, k-1 (2 bp deletion) and k-2 (1 bp insertion) (Fig. 6a)’完全一致；\n                   ‘黄瓜’对应‘in cucumber’隐含背景（全文语境）,‘敲除突变体’是‘loss-of-function mutant lines’准确通俗化表述；图号一致。"
       },
       "analysis": {
         "evidence_judgement": "claim单一分句，全部信息由185支撑：方法（CRISPR–Cas9）、对象（KNAT2-like1）、产物（two ... mutant lines）、命名（k-1/k-2）、分子特征（2 bp deletion / 1 bp insertion）、图号（Fig. 6a）；‘黄瓜’虽未在185显式写出，但全文研究对象为cucumber，且185前文（如184）已明确‘in cucumber’，属合理上下文继承。",
@@ -5200,7 +5297,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C34",
@@ -5241,7 +5341,7 @@
             "rank": 1,
             "sentence_id": 190,
             "text": "This phenotype was complemented in the k-2 mutants by expression of KNAT2-like1 under its native promoter (Fig. 6b), indicating the transformation of female flowers into ‘superior ovary flowers’ in the absence of KNAT2-like1 expression.",
-            "text_zh": "对于RNA原位杂交实验，每个杂交探针使用至少三个独立的样品重复相同的结果。"
+            "text_zh": "这种表型在k-2突变体中通过在其原生启动子下表达KNAT2-like1得到补充（图6b），表明在没有KNAT2-like1表达的情况下，雌花转化为“优越的子房花”。"
           },
           {
             "rank": 2,
@@ -5259,7 +5359,7 @@
             "rank": 4,
             "sentence_id": 191,
             "text": "To characterize the ‘superior ovary flowers’ morphogenesis, we compared the morphology of medial longitudinal sections of male, female and superior ovary flower buds at various developmental stages.",
-            "text_zh": "同样，组织切片遵循相同的可重复性标准，确保所有实验的一致性。"
+            "text_zh": "为了描述“上位子房花”的形态发生，我们比较了不同发育阶段雄性、雌性和上位子房花蕾的内侧纵剖面形态。"
           },
           {
             "rank": 5,
@@ -5335,7 +5435,7 @@
         "severity": "moderate",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文明确指出k-1/k-2中60%雌花转为‘superior ovary flowers’（即双性+子房上位），且回补株系C-1/C-2仅针对k-2（非k-1）；公众号句将k-1/k-2并列归因、笼统称‘回补株系（C-1、C-2）表型与野生型类似’，删减了‘仅k-2被回补’及‘60%转化率’等关键机制与背景限定。"
+        "reason": "论文明确指出k-1/k-2中60%雌花转为‘superior ovary flowers’（即双性+子房上位）,且回补株系C-1/C-2仅针对k-2（非k-1）；公众号句将k-1/k-2并列归因、笼统\n                   称‘回补株系（C-1、C-2）表型与野生型类似’,删减了‘仅k-2被回补’及‘60%转化率’等关键机制与背景限定。"
       },
       "analysis": {
         "evidence_judgement": "分句1‘k-1和k-2出现子房上位和双性花表型’：sentence_id=200（‘k-1 and k-2 mutant flowers... bisexual flowers with superior ovaries’）+189（‘60% of normal female flowers transformed into superior ovary flowers’）共同支撑，但189未提k-1，仅k-2有量化数据；分句2‘回补株系（C-1、C-2）表型与野生型类似’：仅sentence_id=190明确‘complemented in the k-2 mutants by expression...’，全文无C-1回补实验描述，C-1属无依据添加。",
@@ -5377,7 +5477,10 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C35",
@@ -5442,7 +5545,7 @@
             "rank": 5,
             "sentence_id": 44,
             "text": "The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c).",
-            "text_zh": "聚簇3 （RP）和聚簇4 （EFM）的分布表明，它们的形成和发育决定了扩大和凹形花分生组织的形态发生。"
+            "text_zh": "AgNO3诱导的黄瓜雄花芽形成也呈现出增大和凹陷的花分生组织特征；然而，花托和心皮随后的生长被阻止（扩展数据图1c）。"
           },
           {
             "rank": 6,
@@ -5460,7 +5563,7 @@
             "rank": 8,
             "sentence_id": 41,
             "text": "Based on previous studies, we defined the different stages of floral bud development in cucumber and tomato10,11 (Supplementary Table 1) and examined the morphology of female floral buds of cucumber from floral meristem initiation to carpel fusion completion.",
-            "text_zh": "结果显示，在早期花器官发育过程中，有7个簇具有不同的位置和表达的标记基因（图4a，b和补充表4）：簇0，表皮（簇E）；花梗1，花梗（花梗P）；花簇2，花原基（花簇FP）；花丛3，花托原基（花丛RP）；集群5为FIM。"
+            "text_zh": "在前人研究的基础上，我们定义了黄瓜和番茄花芽发育的不同阶段10,11（补充表1），并考察了黄瓜雌花芽从花分生组织形成到心皮融合完成的形态。"
           },
           {
             "rank": 9,
@@ -5509,7 +5612,7 @@
         "severity": "none",
         "needs_manual_review": false,
         "uncovered_phenomenon": "",
-        "reason": "claim分句1‘S5前无区别’由195直接支持（‘did not observe morphological differences... before S5’）；分句2‘S5后花托未快速生长并与心皮融合’由196（‘receptacle did not fuse with the carpel and elongate’）+193（‘receptacle grew rapidly and wrapped around the carpel’对比）共同支撑；图注6c-d亦被明确引用，无添加/删减/替换。"
+        "reason": "claim分句1‘S5前无区别’由195直接支持（‘did not observe morphological differences... before S5’）；分句2‘S5后花托未快速生长并与心\n                   皮融合’由196（‘receptacle did not fuse with the carpel and elongate’）+193（‘receptacle grew rapidly and wr\n                   apped around the carpel’对比）共同支撑；图注6c-d亦被明确引用,无添加/删减/替换。"
       },
       "analysis": {
         "evidence_judgement": "分句1：sentence_id=195完整支撑‘before S5 no morphological differences among male, female and abnormal superior ovary flower’；分句2：sentence_id=196明确‘receptacle did not fuse with the carpel and elongate’，sentence_id=193提供野生型对照‘receptacle grew rapidly and wrapped around the carpel’，二者构成完整因果对比；所有断言均有直接文本支撑，top-5覆盖充分。",
@@ -5533,7 +5636,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C36",
@@ -5655,7 +5761,7 @@
         "severity": "none",
         "needs_manual_review": false,
         "uncovered_phenomenon": "",
-        "reason": "claim完整复述sentence_id=199原文：‘3D reconstruction using X-ray microcomputed tomography (micro-CT)’→‘利用micro-CT技术...3D重建’；‘arrest of receptacle expansion and continuous upward growth of the carpel resulted in the formation of superior ovaries’→‘花托在S5后的停止扩展和心皮持续向上生长导致...子房上位性状’；‘(Fig. 6e)’对应图号一致；‘similar to those of tomato’在200中另有佐证，但本句未要求必须含此短语，属合理省略。"
+        "reason": "claim完整复述sentence_id=199原文：‘3D reconstruction using X-ray microcomputed tomography (micro-CT)’→‘利用mi\n                   cro-CT技术...3D重建’；‘arrest of receptacle expansion and continuous upward growth of the carpel resulted \n                   in the formation of superior ovaries’→‘花托在S5后的停止扩展和心皮持续向上生长导致...子房上位性状’；‘(Fig. 6e)’对应图号一致；‘similar \n                   to those of tomato’在200中另有佐证,但本句未要求必须含此短语,属合理省略。"
       },
       "analysis": {
         "evidence_judgement": "整句claim与sentence_id=199逐项对应：技术方法（micro-CT）、观察对象（receptacle expansion arrest + carpel upward growth）、结果（formation of superior ovaries）、图号（Fig. 6e）；S5时间点虽未在199明写，但196明确‘after S5’发生该过程，且claim未断言S5是起始点，仅说‘S5后’，与196+199逻辑自洽；top-5中rank2即199，支撑充分。",
@@ -5679,7 +5785,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C37",
@@ -5801,7 +5910,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C38",
@@ -5878,13 +5990,13 @@
             "rank": 7,
             "sentence_id": 46,
             "text": "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel.",
-            "text_zh": "两种方法都得出了源自FIM的一致轨迹（图4c），突出了三种主要的发育路径。"
+            "text_zh": "根据这些观察，我们推断黄瓜下子房形成的三个必要条件：(1)花分生组织的扩大改变了花轮的相对位置；(2)花托随后快速生长；(3)花托与心皮融合。"
           },
           {
             "rank": 8,
             "sentence_id": 45,
             "text": "By contrast, the floral meristem of tomato is convex, and the floral primordia sequentially initiate on its flank, with the carpels growing upwards to form superior ovaries (Fig. 1d, e).",
-            "text_zh": "RNA速度和Monocle3被用来研究这些簇的早期分化轨迹（扩展数据图3d，e）。"
+            "text_zh": "相比之下，番茄的花分生组织是凸的，花原基依次在其侧面萌发，心皮向上生长形成上子房（图1d， e）。"
           },
           {
             "rank": 9,
@@ -5936,7 +6048,7 @@
         "severity": "moderate",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "claim 将‘花托与心皮近轴面融合’归因为‘导致子房下位’的直接机制，但论文中该融合是 inferior ovary 形成三条件之一（id=46），且图6i仅展示表型结果；claim 将‘胎座结构相反’归因为‘内外侧模式变化’，但 paper 明确说 medial=abaxial / lateral=adaxial 是 WT 典型结构（id=206），而 mutant 中 reversal（id=207）是现象，非由‘近轴面融合缺失’直接推导出——实际机制是 receptacle growth + fusion 共同作用（id=210 + id=46），claim 错将空间模式变化（lateral/medial patterning）等同于胎座解剖反转，混淆表型描述与发育机制。"
+        "reason": "claim 将‘花托与心皮近轴面融合’归因为‘导致子房下位’的直接机制,但论文中该融合是 inferior ovary 形成三条件之一（id=46）,且图6i仅展示表型结果；claim 将‘胎座结构相\n                   反’归因为‘内外侧模式变化’,但 paper 明确说 medial=abaxial / lateral=adaxial 是 WT 典型结构（id=206）,而 mutant 中 reversal（id\n                   =207）是现象,非由‘近轴面融合缺失’直接推导出——实际机制是 receptacle growth + fusion 共同作用（id=210 + id=46）,claim 错将空间模式变化（late\n                   ral/medial patterning）等同于胎座解剖反转,混淆表型描述与发育机制。"
       },
       "analysis": {
         "evidence_judgement": "分句1（k-2果实胎座结构与黄瓜典型结构相反）→ 由 id=206（WT 典型 placenta 定义）+ id=207（mutant 中 reversal）共同支撑；分句2（由于野生型花托心皮近轴面融合…导致子房下位）→ id=210 描述 fusion + receptacle wrapping + patterning change + inferior ovary formation，但未断言该 fusion 是‘导致’子房下位的唯一或直接原因；id=46 更准确指出三条件并列（meristem enlargement, receptacle growth, receptacle-carpel fusion），claim 将其中一环（fusion）单提为因果主因，属机制窄化；top-5 覆盖 id=210/206/207，但未含 id=46（rank6），故核心机制依据不完整。",
@@ -5977,7 +6089,10 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C39",
@@ -6099,7 +6214,7 @@
         "severity": "none",
         "needs_manual_review": false,
         "uncovered_phenomenon": "",
-        "reason": "claim 与 sentence_id=203 完全一致：'KNAT2-like1在雌花扩展花托中特异性表达（图6h）' ↔ 'We found the specific expression of KNAT2-like1 in the expanding receptacle of female flower buds (Fig. 6h).'"
+        "reason": "claim 与 sentence_id=203 完全一致：'KNAT2-like1在雌花扩展花托中特异性表达（图6h）' ↔ 'We found the specific expression of \n                   KNAT2-like1 in the expanding receptacle of female flower buds (Fig. 6h).'"
       },
       "analysis": {
         "evidence_judgement": "整句 claim 由 sentence_id=203 单句完整支撑：'specific expression' ↔ '特异性表达'；'expanding receptacle of female flower buds' ↔ '雌花扩展花托'；'Fig. 6h' 明确对应。top-5 中 rank1 即为该句，覆盖充分。",
@@ -6123,7 +6238,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C40",
@@ -6206,7 +6324,7 @@
             "rank": 8,
             "sentence_id": 173,
             "text": "This module included CRC, KNAT2-like1, ERECTA (ER), DARK INDUCIBLE 10 (DIN10), CA1P phosphatase and a putative small peptide gene, and their codistributions were verified (Fig. 5h and Supplementary Table 9).",
-            "text_zh": "提取了表皮、花托原基和放大膜的数据。"
+            "text_zh": "该模块包括CRC、KNAT2-like1、ERECTA （ER）、DARK INDUCIBLE 10 （DIN10）、CA1P磷酸酶和一个推定的小肽基因，并验证了它们的共分布（图5h和补充表9）。"
           },
           {
             "rank": 9,
@@ -6218,7 +6336,7 @@
             "rank": 10,
             "sentence_id": 174,
             "text": "The presence c G2 RP G0/G1 M RP M S G2 S Max STM-like Expression ACO2 ETT MIPS3 UDP-glucosyl transferase G2 RP AS1 ASN1 Min LTP Kinetochore protein M RBCSIA EFB SRC2 RPL24A Intercalary meristem PPR protein GRP23 Vacuolar sorting protein tudor-like RNA binding GAPA-2 TSO2 Stigma/ S8-3/4 transmitting MCM3 Carpel S8-1/2 tract MCM2 SIP1 S6/7 AG S4/5 FIM MAD1 YAB1 S3 Histone H4 IND1 WRKY57 SPL13 NGA1 KNAT2-like1 GRF8 HEC3 S2 CRC SPL13A Floral primordia RAP2.2 HMG SHP1 STL bHLH94L CDC20 CDKB2 Placenta PLATZ ARF2 AT hook AP2 bHLH131-like AP2 conjunctive MYB1 Ovule Receptacle FZR3 CRC primordia primordia PIL5 CYCA1 AT hook CYCB2 conjunctive tissue-early MAD2 ACS2 Conjunctive SPL13A SCL28 ARF6 Receptacle-early tissue HB33 ENODL14 Conjunctive MAD2 tissue-late AP2 Receptacle-late h module 14 KNAT2-like1 Max HB22-like2 TPS1 ARF18 Score LSH10 CsaV3-6G037410 Min S7 S8 S7 S8 ER CRC ER CYCD2;1 Peptide3 DIN10 CRC LTP bHLH49 S7 S8 S7 S8 CA1P DIN10 CA1P Min KNAT2-like1 Expression HB33 ARR9 HAT3 HB22-like1 CsaV3-5G003580 Max S7 S8 S7 S8 in b from S1 to S8-4. e, The selected cellular trajectories from TOFO, showing the significant examples of candidate regulatory genes.",
-            "text_zh": "使用Seurat (v4.2.1) FindAllMarkers函数计算每个簇的顶端标记基因，并选择用于Monocle2分析。"
+            "text_zh": "存在c G2 RP G0 / G1 M RP M G2年代马克斯STM-like表达式ACO2 ETT MIPS3 UDP-glucosyl转移酶G2 RP AS1 ASN1分钟LTP着丝粒蛋白M RBCSIA EFB SRC2 RPL24A居间分生组织PPR蛋白GRP23空泡的排序tudor-like RNA蛋白质绑定GAPA-2 TSO2耻辱/ S8-3/4传输MCM3心皮S8-1/2束MCM2 SIP1 S6/7 AG S4/5鱼翅MAD1 YAB1 S3组蛋白H4 IND1 WRKY57 SPL13 NGA1 KNAT2-like1 GRF8 HEC3 S2 CRC SPL13A花原基RAP2.2 HMG SHP1 STL bHLH94L CDC20 CDKB2胎盘PLATZ ARF2 AT hook AP2 bHLH131-like AP2结合体MYB1胚泡受体FZR3 CRC原基primormordia PIL5 CYCA1 AT hook CYCB2结合体-早期MAD2 ACS2结合体SPL13A SCL28 ARF6受体-早期组织HB33 ENODL14结合体MAD2组织-晚期AP2受体-晚期h模块14 KNAT2-like1 Max HB22-like2 TPS1 ARF18 Score LSH10 CsaV3-6G037410 Min S7 S8 S7 S8 ER CRC ER CYCD2；1 Peptide3 DIN10 CRC LTP bHLH49 S7 S8 S7 S8 CA1P DIN10 CA1P Min KNAT2-like1表达HB33 ARR9 HAT3 HB22-like1 CsaV3-5G003580 Max S7 S8 S7 S8 S8 in b从S1到S8-4。e，从TOFO中选择的细胞轨迹，显示了候选调节基因的重要例子。"
           }
         ]
       },
@@ -6255,7 +6373,7 @@
         "severity": "none",
         "needs_manual_review": false,
         "uncovered_phenomenon": "",
-        "reason": "论文明确生成了er、crc单突，以及knat2-like1/er双突（216,212,215）；claim中‘以上3个基因的双突、三突’与216句‘double and triple mutants for phenotype analysis’完全对应；未添加功能/意义，未删减机制或背景，未替换关系或程度。"
+        "reason": "论文明确生成了er、crc单突,以及knat2-like1/er双突（216,212,215）；claim中‘以上3个基因的双突、三突’与216句‘double and triple mutants \n                   for phenotype analysis’完全对应；未添加功能/意义,未删减机制或背景,未替换关系或程度。"
       },
       "analysis": {
         "evidence_judgement": "分句1‘构建ER缺失突变体er’→ sentence_id 212（明确描述erCR-1/erCR-2两个CRISPR敲除系）；分句2‘CRC缺失突变体crc’→ sentence_id 215（crc-1/crc-2及表型）；分句3‘以上3个基因的双突、三突’→ sentence_id 216（直接陈述double and triple mutants for KNAT2-like1, ER and CRC）；top-5覆盖全部核心断言（216/212/215均在rank1–5内）。",
@@ -6279,7 +6397,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C41",
@@ -6362,7 +6483,7 @@
             "rank": 8,
             "sentence_id": 184,
             "text": "Based on these findings, we proposed that, in cucumber, the rapid growth of the receptacle is centred around sink capacity signalling and integration of KNAT2-like1, CRC and ER to regulate cell proliferation, ultimately promoting receptacle development.",
-            "text_zh": "每个单元格的伪时间归一化为0-1的刻度。"
+            "text_zh": "基于这些发现，我们提出，在黄瓜中，受体的快速生长以sink capacity信号传导和KNAT2-like1、CRC和ER的整合为中心，以调节细胞增殖，最终促进受体发育。"
           },
           {
             "rank": 9,
@@ -6374,7 +6495,7 @@
             "rank": 10,
             "sentence_id": 174,
             "text": "The presence c G2 RP G0/G1 M RP M S G2 S Max STM-like Expression ACO2 ETT MIPS3 UDP-glucosyl transferase G2 RP AS1 ASN1 Min LTP Kinetochore protein M RBCSIA EFB SRC2 RPL24A Intercalary meristem PPR protein GRP23 Vacuolar sorting protein tudor-like RNA binding GAPA-2 TSO2 Stigma/ S8-3/4 transmitting MCM3 Carpel S8-1/2 tract MCM2 SIP1 S6/7 AG S4/5 FIM MAD1 YAB1 S3 Histone H4 IND1 WRKY57 SPL13 NGA1 KNAT2-like1 GRF8 HEC3 S2 CRC SPL13A Floral primordia RAP2.2 HMG SHP1 STL bHLH94L CDC20 CDKB2 Placenta PLATZ ARF2 AT hook AP2 bHLH131-like AP2 conjunctive MYB1 Ovule Receptacle FZR3 CRC primordia primordia PIL5 CYCA1 AT hook CYCB2 conjunctive tissue-early MAD2 ACS2 Conjunctive SPL13A SCL28 ARF6 Receptacle-early tissue HB33 ENODL14 Conjunctive MAD2 tissue-late AP2 Receptacle-late h module 14 KNAT2-like1 Max HB22-like2 TPS1 ARF18 Score LSH10 CsaV3-6G037410 Min S7 S8 S7 S8 ER CRC ER CYCD2;1 Peptide3 DIN10 CRC LTP bHLH49 S7 S8 S7 S8 CA1P DIN10 CA1P Min KNAT2-like1 Expression HB33 ARR9 HAT3 HB22-like1 CsaV3-5G003580 Max S7 S8 S7 S8 in b from S1 to S8-4. e, The selected cellular trajectories from TOFO, showing the significant examples of candidate regulatory genes.",
-            "text_zh": "使用Seurat (v4.2.1) FindAllMarkers函数计算每个簇的顶端标记基因，并选择用于Monocle2分析。"
+            "text_zh": "存在c G2 RP G0 / G1 M RP M G2年代马克斯STM-like表达式ACO2 ETT MIPS3 UDP-glucosyl转移酶G2 RP AS1 ASN1分钟LTP着丝粒蛋白M RBCSIA EFB SRC2 RPL24A居间分生组织PPR蛋白GRP23空泡的排序tudor-like RNA蛋白质绑定GAPA-2 TSO2耻辱/ S8-3/4传输MCM3心皮S8-1/2束MCM2 SIP1 S6/7 AG S4/5鱼翅MAD1 YAB1 S3组蛋白H4 IND1 WRKY57 SPL13 NGA1 KNAT2-like1 GRF8 HEC3 S2 CRC SPL13A花原基RAP2.2 HMG SHP1 STL bHLH94L CDC20 CDKB2胎盘PLATZ ARF2 AT hook AP2 bHLH131-like AP2结合体MYB1胚泡受体FZR3 CRC原基primormordia PIL5 CYCA1 AT hook CYCB2结合体-早期MAD2 ACS2结合体SPL13A SCL28 ARF6受体-早期组织HB33 ENODL14结合体MAD2组织-晚期AP2受体-晚期h模块14 KNAT2-like1 Max HB22-like2 TPS1 ARF18 Score LSH10 CsaV3-6G037410 Min S7 S8 S7 S8 ER CRC ER CYCD2；1 Peptide3 DIN10 CRC LTP bHLH49 S7 S8 S7 S8 CA1P DIN10 CA1P Min KNAT2-like1表达HB33 ARR9 HAT3 HB22-like1 CsaV3-5G003580 Max S7 S8 S7 S8 S8 in b从S1到S8-4。e，从TOFO中选择的细胞轨迹，显示了候选调节基因的重要例子。"
           }
         ]
       },
@@ -6401,7 +6522,7 @@
         "severity": "none",
         "needs_manual_review": false,
         "uncovered_phenomenon": "",
-        "reason": "claim中‘CRC较其他两个基因呈显性上位，ER较KNAT2-like1呈显性上位’与sentence_id 218原文‘CRC is epistatic to ER and KNAT2-like1, and ER is epistatic to KNAT2-like1’逐字对应，术语准确（epistatic → 显性上位），逻辑结构一致，无增删改。"
+        "reason": "claim中‘CRC较其他两个基因呈显性上位,ER较KNAT2-like1呈显性上位’与sentence_id 218原文‘CRC is epistatic to ER and KNAT2-like1\n                   , and ER is epistatic to KNAT2-like1’逐字对应,术语准确（epistatic → 显性上位）,逻辑结构一致,无增删改。"
       },
       "analysis": {
         "evidence_judgement": "整句claim为单一遗传关系断言，由sentence_id 218完整支撑：'CRC is epistatic to ER and KNAT2-like1' → 'CRC较其他两个基因呈显性上位'；'ER is epistatic to KNAT2-like1' → 'ER较KNAT2-like1呈显性上位'；top-5中rank1即为该句，支撑强度充分。",
@@ -6425,7 +6546,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C42",
@@ -6502,13 +6626,13 @@
             "rank": 7,
             "sentence_id": 184,
             "text": "Based on these findings, we proposed that, in cucumber, the rapid growth of the receptacle is centred around sink capacity signalling and integration of KNAT2-like1, CRC and ER to regulate cell proliferation, ultimately promoting receptacle development.",
-            "text_zh": "每个单元格的伪时间归一化为0-1的刻度。"
+            "text_zh": "基于这些发现，我们提出，在黄瓜中，受体的快速生长以sink capacity信号传导和KNAT2-like1、CRC和ER的整合为中心，以调节细胞增殖，最终促进受体发育。"
           },
           {
             "rank": 8,
             "sentence_id": 182,
             "text": "of KNAT2-like1 in this module suggested its critical role not only in early receptacle initiation but also in subsequent cell proliferation.",
-            "text_zh": "利用clusterSpatialCorFeats函数对top基因进行聚类，识别空间共表达的特征模块，参数设置为k = 17，花器官各阶段基因数为3000。"
+            "text_zh": "KNAT2-like1在该模块中的表达表明它不仅在早期受体启动中起关键作用，而且在随后的细胞增殖中也起关键作用。"
           },
           {
             "rank": 9,
@@ -6555,7 +6679,7 @@
         "severity": "moderate",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文用‘suggest a regulatory mechanism involving genetic interaction’（221）和‘pivotal role’（211）表述KNAT2-like1的核心性，但claim将CRC、ER从‘genetic interaction partners’升级为‘也可能参与其相互调控机制’，隐含三者构成共调控网络，而论文未提出CRC/ER主动‘参与调控KNAT2-like1’，仅表明三者存在上位性关系（218）和共表达（Fig.5f/212）；且删去‘genetic interaction’这一关键机制限定。"
+        "reason": "论文用‘suggest a regulatory mechanism involving genetic interaction’（221）和‘pivotal role’（211）表述KNAT2-li\n                   ke1的核心性,但claim将CRC、ER从‘genetic interaction partners’升级为‘也可能参与其相互调控机制’,隐含三者构成共调控网络,而论文未提出CRC/ER主动‘参与调\n                   控KNAT2-like1’,仅表明三者存在上位性关系（218）和共表达（Fig.5f/212）；且删去‘genetic interaction’这一关键机制限定。"
       },
       "analysis": {
         "evidence_judgement": "分句1‘KNAT2-like1在花托生长、子房下位发育中起关键性作用’→ sentence_id 221（‘key role in floral receptacle development and inferior ovary formation’）+ 211（‘pivotal role in receptacle development and ovary positioning’）共同支撑；分句2‘CRC、ER也可能参与其相互调控机制’→ 221中‘suggest a regulatory mechanism involving genetic interaction with ER and CRC’为唯一依据，但原文强调KNAT2-like1为主导因子，ER/CRC为其互作对象，未赋予二者对KNAT2-like1的调控能动性；top-5中221（rank1）和211（rank2）均在，支撑主干成立，但机制表述弱于claim。",
@@ -6594,7 +6718,10 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C43",
@@ -6641,19 +6768,19 @@
             "rank": 2,
             "sentence_id": 47,
             "text": "To dissect the underlying gene expression network driving the development of the inferior ovary of cucumber, we sampled floral buds at various stages, including S1–S8, and ovaries at 0 days post anthesis (DPA) for spatial transcriptomic analysis.",
-            "text_zh": "其中之一涉及表皮的分化。"
+            "text_zh": "为了剖析驱动黄瓜下卵巢发育的潜在基因表达网络，我们采样了黄瓜不同阶段的花蕾，包括S1-S8，以及开花后0天的卵巢，进行了空间转录组分析。"
           },
           {
             "rank": 3,
             "sentence_id": 26,
             "text": "In this study, we generate a collection of spatially resolved transcriptomes of developing cucumber female floral buds at single-cell resolution b Petal prim Stamen prim Carpel prim Sepal prim Enlarged floral meristem Asparagales Dioscoreales-cladeA S1 S2 S3 S4 S5 S6 S7 S8 Dioscoreales-cladeB c Pandanales Liliales Sepal Petal Alismatales Stamen Acorales Carpel Magnoliales Enlarged receptacle Diﬀerentiating floral primordia Laurales Enlarged floral meristem Piperales Ceratophyllales Austrobaileyales Nymphaeales Amborellales Selaginellales S1 S2 S3 S4 S5 S7 S8 S6 d Brassicales Sepal prim Petal prim Stamen prim Carpel prim Malvales Floral meristem Sapindales Oxalidales Huerteales S1 S2 S3 S5 S6 S7 S8 S4 e Malpighiales Sepal Petal Stamen Carpel Diﬀerentiating floral primordia Receptacle S1 S2 S3 S4 S5 S6 S7 S8 the corresponding floral organs.",
-            "text_zh": "每个bin 50中的基因数量和唯一分子标识符（UMI）计数显示出高度的一致性（扩展数据图2e-g），没有转录信号扩散，这是UMI分布所表明的（补充图1-9），并且不同阶段的所有花芽样本都可以沿着伪时间轨迹连续排序（扩展数据图2h）。"
+            "text_zh": "在这项研究中，我们在单细胞分辨率下获得了发育中的黄瓜雌花芽的空间分解转录组集合b花瓣prim雄蕊prim心皮prim萼片prim扩大的花分生组织芦笋Dioscoreales-cladeA S1 S2 S3 S4 S5 S6 S7 S8 Dioscoreales-cladeB c Pandanales Liliales萼片花瓣Alismatales雄蕊Acorales心皮木兰花扩大的花托分化花原基月苞扩大的花分生组织Piperales Ceratophyllales austrrobaileyales nyphhaeales伞生花序卷叶生S1 S2 S3 S4 S5 S7 S8 S6 d苞片原片花瓣原片雄蕊原片心皮原片花分生组织无尾花序草蕊花原片S1 S2 S3 S5 S6 S7 S8 S4 e花萼花瓣雄蕊心皮分化花原基花托S1 S2 S3 S4 S5 S6 S6 S7 S8相应的花器官。"
           },
           {
             "rank": 4,
             "sentence_id": 74,
             "text": "They could be 863 a G1/S phase cells Sepal epidermis Unknown Endocarp (0 DPA) 0 6 12 18 Mesocarp (0 DPA) Epicarp (0 DPA) Petal primordia Trichome-base 1 7 13 19 FP Petal-early Receptacle primordia Unknown 2 8 14 20 Placenta Sepal mesophyll Petal-late Receptacle-early 3 9 15 21 Ovule (ovary wall) Provascular Unknown Receptacle-late 4 10 16 22 Epidermis G2/M phase cells G0/G1 phase cells Sieve element 5 11 17 23 2 mm 2 3 3 2 2 5 5 10 8 4 S1 S2 S3 S4 S5 S6 S7 S8-1 S8-2 S8-3 b Average expression Max Min Per cent expressed 0 25 50 75 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0 unknown Aspartyl protease LTP WOX9 AG1 LAX2 PHOSPHO1 HTH KNAT2-like1 LOX2 CRC unknown SEO FIL/YAB1 PI MIPS3 GRAS1 LTP4 LRR protein OMR1 CDC20.1 glycine_rich2 Plant Tudor_like RCA BAS1 bHLH96 TOC34 Calcium_binding PNI KAO2 pathogenesis SPX1 STM-like AP1 CAL DWF1 CYP78A7 ANT d Ovule (ovary wall) Placenta 4 3 Receptacle-late Receptacle-early 10 9 Conjunctive tissue-early 27 Conjunctive tissue-late 28 S6 S7 S8-1 S8-2 S8-3 S8-4 Fig. 2 | Spatial transcriptome of developing cucumber female floral buds using Stereo-seq.",
-            "text_zh": "虽然上位子房突变体仍然有一个FIM，但可以观察到花托阻滞和心皮向上生长（图7b）。"
+            "text_zh": "他们可以是863一个G1 / S期细胞表皮花萼未知的内果皮(0 DPA) 0 6 12 18中果皮(0 DPA)外果皮(0 DPA)花瓣原基Trichome-base 1 7 13 19 FP Petal-early插座20胎盘萼片原基未知2 8 14叶肉Petal-late Receptacle-early 3 9 15 21胚珠(卵巢壁)原形成层的未知Receptacle-late 4 10 16 22表皮G2 / M期细胞G0 / G1期细胞筛元素5 11 17 23 2毫米2 3 3 2 2 5 5 10 8 4 S1 S2 S3 S4 S5 S6 S7 S8-1 S8-2 S8-3 b平均表达马克斯每分表示0 25 75 40分钟39 38 37 36 35 34 33 32 30 31日29日28日27日26日25日24日23日22日21日20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0未知天门冬氨酰蛋白酶LTP WOX9 AG1 LAX2 PHOSPHO1 HTH KNAT2-like1 LOX2 CRC未知SEO费尔/ YAB1πMIPS3 GRAS1 LTP4远程雷达蛋白质OMR1 CDC20.1 glycine_rich2植物Tudor_like RCA BAS1 bHLH96 TOC34 Calcium_binding句KAO2病机SPX1 STM-like AP1卡尔DWF1 CYP78A7 ANT d胚珠(卵巢壁)胎盘4 3 Receptacle-late Receptacle-early 10 9图2利用Stereo-seq分析发育中的黄瓜雌花芽的空间转录组。"
           },
           {
             "rank": 5,
@@ -6689,7 +6816,7 @@
             "rank": 10,
             "sentence_id": 48,
             "text": "Longitudinal sections were analysed, as well as a transverse section of S8-4 and two 0 DPA samples (Extended Data Fig. 2a), using a standard analytical procedure8.",
-            "text_zh": "另外两个基因起源于前膜并经过前膜，其中一个导致花原基的形成，然后产生花轮，而另一个则从前膜产生花托原基（图4c）。"
+            "text_zh": "使用标准分析程序8，分析了纵截面，以及S8-4和两个0 DPA样品的横截面（扩展数据图2a）。"
           }
         ]
       },
@@ -6719,7 +6846,7 @@
         "severity": "moderate",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文明确写的是 superior ovary mutants (knat2-like1) —— 即突变体为「上位子房」表型；公众号称其为「knat2-like1缺失突变体」，虽语义近似，但论文未确认该突变是功能完全缺失（如敲除），也未排除 hypomorph 或 neomorph 可能；且「缺失突变体」隐含完全丧失功能，属机制层面替换。"
+        "reason": "论文明确写的是 superior ovary mutants (knat2-like1) —— 即突变体为「上位子房」表型；公众号称其为「knat2-like1缺失突变体」,虽语义近似,但论文未确认该\n                   突变是功能完全缺失（如敲除）,也未排除 hypomorph 或 neomorph 可能；且「缺失突变体」隐含完全丧失功能,属机制层面替换。"
       },
       "analysis": {
         "evidence_judgement": "claim 分句1：'为探究黄瓜花托发育的特殊性' → sentence_id 223 首句 'To investigate the specificity of cucumber receptacle development' 完全支撑；分句2：'将S8时期knat2-like1缺失突变体花芽和番茄花芽一起进行空间转录组测序' → 223 中 'floral buds of superior ovary mutants (knat2-like1) and tomato at S8' 支撑主体对象与时期，但原文用 superior ovary mutants (knat2-like1) 指代表型命名，未使用 'knat2-like1缺失突变体' 这一机制定性表述；top-5 中 rank2/3/4/5 均未提供突变性质佐证（47讲采样阶段、26为图注碎片、74为数据图例、2为结论句），仅223提供基础匹配。",
@@ -6751,7 +6878,10 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C44",
@@ -6798,7 +6928,7 @@
             "rank": 2,
             "sentence_id": 45,
             "text": "By contrast, the floral meristem of tomato is convex, and the floral primordia sequentially initiate on its flank, with the carpels growing upwards to form superior ovaries (Fig. 1d, e).",
-            "text_zh": "RNA速度和Monocle3被用来研究这些簇的早期分化轨迹（扩展数据图3d，e）。"
+            "text_zh": "相比之下，番茄的花分生组织是凸的，花原基依次在其侧面萌发，心皮向上生长形成上子房（图1d， e）。"
           },
           {
             "rank": 3,
@@ -6822,13 +6952,13 @@
             "rank": 6,
             "sentence_id": 44,
             "text": "The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c).",
-            "text_zh": "聚簇3 （RP）和聚簇4 （EFM）的分布表明，它们的形成和发育决定了扩大和凹形花分生组织的形态发生。"
+            "text_zh": "AgNO3诱导的黄瓜雄花芽形成也呈现出增大和凹陷的花分生组织特征；然而，花托和心皮随后的生长被阻止（扩展数据图1c）。"
           },
           {
             "rank": 7,
             "sentence_id": 46,
             "text": "Based on these observations, we inferred three necessary conditions for the formation of the inferior ovary in cucumber: (1) enlargement of the floral meristem to change the relative position of the floral whorls, (2) subsequent rapid growth of the receptacle and (3) fusion of the receptacle and the carpel.",
-            "text_zh": "两种方法都得出了源自FIM的一致轨迹（图4c），突出了三种主要的发育路径。"
+            "text_zh": "根据这些观察，我们推断黄瓜下子房形成的三个必要条件：(1)花分生组织的扩大改变了花轮的相对位置；(2)花托随后快速生长；(3)花托与心皮融合。"
           },
           {
             "rank": 8,
@@ -6886,7 +7016,7 @@
         "severity": "moderate",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文中 'arrested receptacle and upward carpel growth'（227）与 'lacks a specific FIM'（226）、'floral meristem of tomato is convex'（45）共同支撑花托停止扩张与心皮上长，但未建立二者间的因果或共现逻辑；公众号断言'knat2-like1突变体虽然有FIM，但花托停止扩张，心皮也向上生长'，将两个现象并列归因为同一突变，隐含'FIM存在→花托停扩→心皮上长'链式关系，属关系替换。"
+        "reason": "论文中 'arrested receptacle and upward carpel growth'（227）与 'lacks a specific FIM'（226）、'floral meriste\n                   m of tomato is convex'（45）共同支撑花托停止扩张与心皮上长,但未建立二者间的因果或共现逻辑；公众号断言'knat2-like1突变体虽然有FIM,但花托停止扩张,心皮也向上生长\n                   ',将两个现象并列归因为同一突变,隐含'FIM存在→花托停扩→心皮上长'链式关系,属关系替换。"
       },
       "analysis": {
         "evidence_judgement": "分句1：'番茄花芽无花基部分生组织（FIM）结构' → 226 'tomato lacks a specific FIM' 直接支撑；分句2：'花托位于心皮下方' → 226 'receptacle is located below the carpel' 明确支撑；分句3：'knat2-like1突变体虽然有FIM' → 227 'Although the superior ovary mutant still has an FIM' 完整支撑；分句4：'花托停止扩张，心皮也向上生长' → 227 'arrested receptacle and upward carpel growth' 并列描述，但未说明二者是否同步发生或互为因果；top-5 中 rank3（209）提'loss of KNAT2-like1 causes arrest in receptacle development, and continuous growth of the carpel'，暗示因果，但该句未进 top-5，故分类依据仍以 top-5 为准。",
@@ -6921,7 +7051,10 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C45",
@@ -7010,7 +7143,7 @@
             "rank": 9,
             "sentence_id": 40,
             "text": "Cucumber and tomato have a similar floral structure (Extended Data Fig. 1a), but their differences in flower sex and ovary position make them excellent subjects for comparison (Extended Data Fig. 1b).",
-            "text_zh": "为了了解下卵巢EFM的基因表达动态和细胞学基础，我们选择了S1至S4期的花蕾切片，并以接近单细胞分辨率（S1至S4期的平均细胞直径为12.96 μm， bin30直径为15 μm）进行了无监督聚类分析（图4a和扩展数据图2c，d）。"
+            "text_zh": "黄瓜和番茄具有相似的花结构（扩展数据图1a），但它们在花性别和子房位置上的差异使它们成为很好的比较对象（扩展数据图1b）。"
           },
           {
             "rank": 10,
@@ -7056,7 +7189,7 @@
         "severity": "moderate",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文244句仅指出 SlKN4 'showed little expression in the floral receptacle'；公众号泛化为'表达缺失、表达量少或表达异位'，将'little expression'（程度弱）扩大为三类状态（缺失/少/异位），其中'缺失'和'异位'在论文中无依据，属作用程度替换。"
+        "reason": "论文244句仅指出 SlKN4 'showed little expression in the floral receptacle'；公众号泛化为'表达缺失、表达量少或表达异位',将'little \n                   expression'（程度弱）扩大为三类状态（缺失/少/异位）,其中'缺失'和'异位'在论文中无依据,属作用程度替换。"
       },
       "analysis": {
         "evidence_judgement": "claim 核心断言为三类表达状态：'表达缺失、表达量少或表达异位'；244 支撑 'little expression'（即'表达量少'）；245 提及 CRC 在番茄中是 key gene，但未提其在番茄花托中表达状态；219 提及 CRC 在黄瓜中 'overlapping expression with AG1 during carpel primordia initiation'，亦未涉及番茄中 CRC 表达位置；因此，'表达缺失'与'表达异位'均无 sentence_id 支撑；top-5 中 rank3（251）为系统发育树图注，rank4（245）仅说番茄 CRC 是 key gene 且受 AG22 调控，rank5（224）为聚类数统计，均不提供表达定位信息。",
@@ -7097,7 +7230,10 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C46",
@@ -7227,7 +7363,7 @@
         "severity": "moderate",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文仅说 CsSTM-like ‘does not have an orthologue in tomato’（238），未提‘在番茄中不存在直系同源基因’这一进化关系断言；‘直系同源’需系统发育树+同源推断支持，而图7d仅展示KNOX1家族系统树（237），但未标注CsSTM-like与番茄基因的直系/旁系关系，亦无正交验证；公众号将‘无同源基因’升级为‘无直系同源基因’，属关系替换。"
+        "reason": "论文仅说 CsSTM-like ‘does not have an orthologue in tomato’（238）,未提‘在番茄中不存在直系同源基因’这一进化关系断言；‘直系同源’需系统发育树+\n                   同源推断支持,而图7d仅展示KNOX1家族系统树（237）,但未标注CsSTM-like与番茄基因的直系/旁系关系,亦无正交验证；公众号将‘无同源基因’升级为‘无直系同源基因’,属关系替换。"
       },
       "analysis": {
         "evidence_judgement": "分句1（构建系统树鉴定KNOX）：由237支撑（‘All KNOX1 TFs in cucumber were identified through sequence comparisons... Fig. 7d’）；分句2（CsSTM-like在番茄中无直系同源）：238仅称‘does not have an orthologue in tomato’，orthologue在植物比较基因组中常泛指同源基因（含直系/旁系），未限定直系；图7d（237）为KNOX1亚家族系统树，含CsSTM-like与SlSTM1等，但分支支持值与拓扑未明确标定直系关系，无法单独证伪/证实‘直系同源缺失’；top-5中237/238覆盖主干，但关键术语‘orthologue’语义模糊，未达直系同源判定标准。",
@@ -7259,7 +7395,10 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C47",
@@ -7306,7 +7445,7 @@
             "rank": 2,
             "sentence_id": 35,
             "text": "Comparative analyses of floral cell types and gene expression from cucumber, superior ovary mutant and tomato support the notion that novel genes and expression patterns in the FIM and receptacle contributed to the evolutionary innovation of an inferior ovary in cucumber.",
-            "text_zh": "FIM也产生维管前组织，在S5期后分化为原木质部（图3a）。"
+            "text_zh": "黄瓜、优子房突变体和番茄花细胞类型和基因表达的比较分析支持了FIM和花托中新的基因和表达模式促成了黄瓜优子房的进化创新的观点。"
           },
           {
             "rank": 3,
@@ -7330,7 +7469,7 @@
             "rank": 6,
             "sentence_id": 34,
             "text": "These results reveal the evolutionary importance of the enlarged receptacle in unisexual flower determination and inferior ovary formation in cucurbits.",
-            "text_zh": "FIM显示出与容器的强烈关联（图3a），这表明FIM负责容器命运的规范和发展。"
+            "text_zh": "这些结果揭示了增大花托在葫芦单性花决定和下位子房形成中的进化重要性。"
           },
           {
             "rank": 7,
@@ -7342,7 +7481,7 @@
             "rank": 8,
             "sentence_id": 47,
             "text": "To dissect the underlying gene expression network driving the development of the inferior ovary of cucumber, we sampled floral buds at various stages, including S1–S8, and ovaries at 0 days post anthesis (DPA) for spatial transcriptomic analysis.",
-            "text_zh": "其中之一涉及表皮的分化。"
+            "text_zh": "为了剖析驱动黄瓜下卵巢发育的潜在基因表达网络，我们采样了黄瓜不同阶段的花蕾，包括S1-S8，以及开花后0天的卵巢，进行了空间转录组分析。"
           },
           {
             "rank": 9,
@@ -7354,7 +7493,7 @@
             "rank": 10,
             "sentence_id": 48,
             "text": "Longitudinal sections were analysed, as well as a transverse section of S8-4 and two 0 DPA samples (Extended Data Fig. 2a), using a standard analytical procedure8.",
-            "text_zh": "另外两个基因起源于前膜并经过前膜，其中一个导致花原基的形成，然后产生花轮，而另一个则从前膜产生花托原基（图4c）。"
+            "text_zh": "使用标准分析程序8，分析了纵截面，以及S8-4和两个0 DPA样品的横截面（扩展数据图2a）。"
           }
         ]
       },
@@ -7384,7 +7523,7 @@
         "severity": "mild",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文276句明确说‘contributing to the evolution of inferior ovaries’，但公众号表述‘是……原因’将‘贡献因素’升格为充分/主导原因；且删去原文中‘novel genes, STM-like and KNAT2-like1’的具体限定，泛化为‘以上结果说明……新基因的出现和一些基因的新表达模式’，弱化了机制特异性。"
+        "reason": "论文276句明确说‘contributing to the evolution of inferior ovaries’,但公众号表述‘是……原因’将‘贡献因素’升格为充分/主导原因；且删去原文中‘n\n                   ovel genes, STM-like and KNAT2-like1’的具体限定,泛化为‘以上结果说明……新基因的出现和一些基因的新表达模式’,弱化了机制特异性。"
       },
       "analysis": {
         "evidence_judgement": "整句 claim 对应276：‘Here, we identified novel genes, STM-like and KNAT2-like1, and new expression patterns [...] contributing to the evolution of inferior ovaries in cucumber.’ 其中‘contributing to’为贡献性表述，非因果唯一性；claim 中‘是……原因’为决定性归因，且省略具体基因名（STM-like/KNAT2-like1），扩大为‘一些基因’；top-5中276为最直接支撑，35与251语义近似但更泛，未提供更强因果证据。",
@@ -7422,7 +7561,10 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C48",
@@ -7463,13 +7605,13 @@
             "rank": 1,
             "sentence_id": 32,
             "text": "Our cell lineage analysis revealed that the prolonged activity of the floral intercalary meristem (FIM) at the base of the floral organs in cucumber, leads to rapid growth of the receptacle, which results in inferior ovary formation.",
-            "text_zh": "与这些时空解析转录组和黄瓜花器官发育的细胞类型相关的数据可通过交互式数据门户网站STOmicsDB27浏览，网址为https://db.cngb.org/ stomics/ctsta。"
+            "text_zh": "细胞系分析表明，黄瓜花器官基部的花萼间分生组织（FIM）活性延长，导致花托快速生长，形成下子房。"
           },
           {
             "rank": 2,
             "sentence_id": 35,
             "text": "Comparative analyses of floral cell types and gene expression from cucumber, superior ovary mutant and tomato support the notion that novel genes and expression patterns in the FIM and receptacle contributed to the evolutionary innovation of an inferior ovary in cucumber.",
-            "text_zh": "FIM也产生维管前组织，在S5期后分化为原木质部（图3a）。"
+            "text_zh": "黄瓜、优子房突变体和番茄花细胞类型和基因表达的比较分析支持了FIM和花托中新的基因和表达模式促成了黄瓜优子房的进化创新的观点。"
           },
           {
             "rank": 3,
@@ -7505,13 +7647,13 @@
             "rank": 8,
             "sentence_id": 31,
             "text": "These data enabled us to identify distinct cell types involved in female flower and inferior ovary development.",
-            "text_zh": "为了确认我们注释的准确性，我们通过RNA原位杂交评估了几个选定的标记基因的空间分布，所有这些都证实了Stereo-seq信号所指示的时空表达模式（扩展数据图2p）。"
+            "text_zh": "这些数据使我们能够识别不同类型的细胞参与雌花和下卵巢发育。"
           },
           {
             "rank": 9,
             "sentence_id": 33,
             "text": "In addition, we dissected the gene regulatory networks (GRNs) responsible for the rapid growth of the receptacle and identified key genes involved in these processes, including a duplicated class I KNOTTED-like homeobox (KNOX) transcription factor (TF), the knockout of which results in bisexual flowers with superior ovaries similar to those of tomato (Solanum lycopersicum L.).",
-            "text_zh": "我们发现，虽然萼片原基的产生没有被捕获，可能是由于早期细胞数量相对较少，但细胞系分析表明，花原基依次分化为花瓣、雄蕊和心皮原基（图3a），并且它们的分布与花蕾形态的变化一致（图3b）13。"
+            "text_zh": "此外，我们解剖了负责花托快速生长的基因调控网络（grn），并确定了参与这些过程的关键基因，包括重复的I类KNOX样同源盒（KNOX）转录因子（TF），敲除该转录因子可产生具有与番茄相似的优越子房的两性花（Solanum lycopersicum L.）。"
           },
           {
             "rank": 10,
@@ -7549,7 +7691,7 @@
         "severity": "none",
         "needs_manual_review": false,
         "uncovered_phenomenon": "",
-        "reason": "claim 中‘空间转录组分析和细胞谱系重建’对应论文2句‘Comparative spatial transcriptome mapping and cell lineage reconstructions’；‘花托快速生长’对应2句‘accelerated receptacle growth’及32句‘rapid growth of the receptacle’；‘FIM驱动’对应32句‘prolonged activity of the floral intercalary meristem (FIM) [...] leads to rapid growth’及2句‘continuous activity of meristematic stem cells at the base’；所有核心要素均有直接、等价表述，无添加、删减或替换。"
+        "reason": "claim 中‘空间转录组分析和细胞谱系重建’对应论文2句‘Comparative spatial transcriptome mapping and cell lineage reconstruct\n                   ions’；‘花托快速生长’对应2句‘accelerated receptacle growth’及32句‘rapid growth of the receptacle’；‘FIM驱动’对应32句‘p\n                   rolonged activity of the floral intercalary meristem (FIM) [...] leads to rapid growth’及2句‘continuou\n                   s activity of meristematic stem cells at the base’；所有核心要素均有直接、等价表述,无添加、删减或替换。"
       },
       "analysis": {
         "evidence_judgement": "分句1（方法）：2句明确‘Comparative spatial transcriptome mapping and cell lineage reconstructions’；分句2（花托快速生长）：2句‘accelerated receptacle growth’、32句‘rapid growth of the receptacle’；分句3（FIM驱动）：32句‘prolonged activity of the floral intercalary meristem (FIM) [...] leads to rapid growth’、2句‘continuous activity of meristematic stem cells at the base’——三者均被2和32完整覆盖；top-5中2和32为rank1/5，直接支撑全部断言。",
@@ -7573,7 +7715,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C49",
@@ -7614,7 +7759,7 @@
             "rank": 1,
             "sentence_id": 184,
             "text": "Based on these findings, we proposed that, in cucumber, the rapid growth of the receptacle is centred around sink capacity signalling and integration of KNAT2-like1, CRC and ER to regulate cell proliferation, ultimately promoting receptacle development.",
-            "text_zh": "每个单元格的伪时间归一化为0-1的刻度。"
+            "text_zh": "基于这些发现，我们提出，在黄瓜中，受体的快速生长以sink capacity信号传导和KNAT2-like1、CRC和ER的整合为中心，以调节细胞增殖，最终促进受体发育。"
           },
           {
             "rank": 2,
@@ -7668,7 +7813,7 @@
             "rank": 10,
             "sentence_id": 183,
             "text": "ER is involved in fine-tuning plant cell proliferation44, and the expression of KNAT2-like1 and ER was also predominantly enriched in S phase cells (Extended Data Fig. 6b), while DIN10 (ref. 45) and CA1P phosphatase46 affect carbohydrate accumulation and enhance sink strength (Fig. 5g,h and Extended Data Fig. 6d,e).",
-            "text_zh": "我们用Monocle2对S1 ~ S3、S6和S8-1 ~ S8-4进行了伪时间分析，将每个发育阶段的FIM指定为根。"
+            "text_zh": "ER参与植物细胞增殖的调控44，KNAT2-like1和ER的表达也主要富集于S期细胞（扩展数据图6b），而DIN10（参考文献45）和CA1P磷酸酶46影响碳水化合物的积累并增强汇强度（图5g，h和扩展数据图6d，e）。"
           }
         ]
       },
@@ -7700,7 +7845,7 @@
         "severity": "none",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文明确指出KNAT2-like1在花托发育和子房定位中起关键/核心作用（211），并具体描述其活性导致花托包裹心皮、形成下位子房（210）；‘花托特异表达’‘调控花托生长和子房位置’‘起关键作用’均被直接支持；未添加功能、未删减机制、未替换关系。"
+        "reason": "论文明确指出KNAT2-like1在花托发育和子房定位中起关键/核心作用（211）,并具体描述其活性导致花托包裹心皮、形成下位子房（210）；‘花托特异表达’‘调控花托生长和子房位置’‘起关键作用’均\n                   被直接支持；未添加功能、未删减机制、未替换关系。"
       },
       "analysis": {
         "evidence_judgement": "分句1‘黄瓜中一个花托特异表达的KNOX1转录因子（KNAT2-like1）’：sentence_id=210明确‘in normal cucumber female floral buds acquiring KNAT2-like1 activity’且图6i显示其在receptacle中作用；sentence_id=219（未进top5但人工可核）补充‘KNAT2-like1 was specifically expressed in the receptacle’，但210已足够支撑特异性与上下文；分句2‘调控花托生长和子房位置中起关键作用’：211句‘pivotal role in receptacle development and ovary positioning’完全对应；221句‘key role in floral receptacle development and inferior ovary formation’进一步佐证；top-5中211/210/221均覆盖。",
@@ -7724,7 +7869,10 @@
         ],
         "ai_confidence": "high"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C50",
@@ -7859,7 +8007,7 @@
         "severity": "moderate",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文指出knat2-like1突变导致两性花+上位子房（222），并归因为花托发育受阻（262, 209）；但原文强调该表型是‘同时发生’且‘在花托进化中建立直接联系’（222），而公众号句将‘部分雌花转变为两性花’与‘花托受阻→上位子房’并列归因为同一敲除事件，隐含线性因果链，删减了‘花托发育与性别决定紧密关联’这一共演化背景（264）及‘同时发生’的并发性机制。"
+        "reason": "论文指出knat2-like1突变导致两性花+上位子房（222）,并归因为花托发育受阻（262, 209）；但原文强调该表型是‘同时发生’且‘在花托进化中建立直接联系’（222）,而公众号句将‘部分雌\n                   花转变为两性花’与‘花托受阻→上位子房’并列归因为同一敲除事件,隐含线性因果链,删减了‘花托发育与性别决定紧密关联’这一共演化背景（264）及‘同时发生’的并发性机制。"
       },
       "analysis": {
         "evidence_judgement": "分句1‘敲除KNAT2-like1，黄瓜花托生长受阻’：262句‘loss of KNAT2-like1 resulted in ... arrest in receptacle development’直接支持；分句2‘导致下位子房转变为类似番茄的上位子房’：209句‘loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary’完整支撑；分句3‘同时部分雌花转变为两性花’：222句‘mutation of just KNAT2-like1 ... simultaneously leads to the formation of bisexual flowers and superior ovaries’明确‘simultaneously’；但原文未将两性花归因为‘花托受阻’，而是并列表型；264句‘receptacle development and sex determination are closely linked’提供背景，但未说明因果方向。",
@@ -7901,7 +8049,10 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     },
     {
       "sample_id": "P001-A001-C51",
@@ -8031,7 +8182,7 @@
         "severity": "moderate",
         "needs_manual_review": true,
         "uncovered_phenomenon": "",
-        "reason": "论文指出KNAT2-like1与ER、CRC存在遗传互作（221），且三者在花托中共表达（221, 212），但未提出‘共表达调控花托快速生长’这一具体调控路径；‘共表达’不等于‘共调控’，原文机制是‘genetic interaction’（221）及‘loss of function of any one ... leads to receptacle arrest’（220），即三者功能冗余/协同，而非公众号所称的‘共表达调控’；且‘为作物育种提供了新靶点’属应用延伸，论文未讨论育种价值。"
+        "reason": "论文指出KNAT2-like1与ER、CRC存在遗传互作（221）,且三者在花托中共表达（221, 212）,但未提出‘共表达调控花托快速生长’这一具体调控路径；‘共表达’不等于‘共调控’,原文机制是\n                   ‘genetic interaction’（221）及‘loss of function of any one ... leads to receptacle arrest’（220）,即三者功能冗余\n                   /协同,而非公众号所称的‘共表达调控’；且‘为作物育种提供了新靶点’属应用延伸,论文未讨论育种价值。"
       },
       "analysis": {
         "evidence_judgement": "分句1‘KNAT2-like1与CRC和ER共表达调控花托快速生长’：221句‘regulatory mechanism involving genetic interaction with ER and CRC’支持互作，但未提‘共表达调控’；219句‘KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression’仅证共表达，未证其共同调控花托生长；220句指出三者任一失活均致花托停滞，暗示功能协同，但非‘共表达→调控’的线性路径；分句2‘从而导致子房下位及单性花’：221/210支持KNAT2-like1对下位子房的作用，222支持其与单性花关联；分句3‘为作物育种提供了新靶点’：全文无育种应用、靶点设计、农艺性状改良等表述。",
@@ -8073,7 +8224,10 @@
         ],
         "ai_confidence": "medium"
       },
-      "human_verified": false
+      "human_verified": false,
+      "human_note": "",
+      "retrieval_quality": null,
+      "human_recalled_sentence_ids": []
     }
   ],
   "review_queue": {

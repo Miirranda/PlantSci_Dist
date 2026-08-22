@@ -259,14 +259,18 @@
 257,35,"Gynoecium evolution is a key factor in the success and diversity of angiosperms, and the final derived feature of the gynoecium is the 871 evolution of an inferior ovary from a superior ovary.",P001,kept,
 258,35,"In this current study, we generated a comprehensive collection of spatially resolved transcriptomes and reconstructed the cellular territories and cell lineages for the continuously developing floral organs of cucumber.",P001,kept,
 259,35,"Our findings revealed that the prolonged activity of the FIM at the base of the floral organs is responsible for the initiation and rapid growth of the receptacle, leading to female flower determination and the formation of an inferior ovary.",P001,kept,
-260,35,"Characterization of the gene expression dynamics, for cell fate establishment and development of the receptacle, provided new insights into the molecular regulatory mechanisms underlying sex determination and inferior ovary formation in the cucurbits.",P001,kept,
-261,35,"Unisexual flowers and inferior ovaries have evolved independently multiple times throughout angiosperm evolution; however, in the Cucurbitaceae, both traits appear to have coevolved (Fig. 1a).",P001,kept,
+260,35,"Characterization of the gene expression dynamics, for cell fate establishment and development of the receptacle, provided new insights into the molecular regulatory mechanisms
+ underlying sex determination and inferior ovary formation in the cucurbits.",P001,kept,
+261,35,"Unisexual flowers and inferior ovaries have evolved independently multiple times throughout angiosperm evolution; however, in the Cucurbitaceae, both traits appear to have 
+coevolved (Fig. 1a).",P001,kept,
 262,35,The knockout of KNAT2-like1 resulted in the production of stamens and the development of a superior ovary due to the disrupted formation of the floral receptacle.,P001,kept,
 263,35,Theses findings provide genetic evidence that both the promotion of the receptacle formation and the suppression of stamen development are orchestrated by a single KNOX1 TF.,P001,kept,
 264,35,"Accordingly, receptacle development and sex determination are closely linked in cucumber.",P001,kept,
-265,35,"Most cucurbit plants are monoecious, with unisexual flowers that have been defined by M (CsACS2/CmACS7), A (CsACS11/CmACS), G (CsWIP1/CmWIP1), F (CsACS1G), CRC and ACO2 genes and their respective interactions22,51,52.",P001,kept,
+265,35,"Most cucurbit plants are monoecious, with unisexual flowers that have been defined by M (CsACS2/CmACS7), A (CsACS11/CmACS), G (CsWIP1/CmWIP1), F (CsACS1G), CRC and ACO2 genes
+ and their respective interactions22,51,52.",P001,kept,
 266,35,Our spatial transcriptomic data established that all these sex-determining genes exhibited expression pattern in receptacle or receptacle-derived tissue.,P001,kept,
-267,35,"For instance, in female flower buds, KNAT2-like1, CRC and ACO2 (ref. 32) are marker genes in the receptacle (Supplementary Figs. 16g, 17i and 18a); CsACS11 is expressed in the vascular tissue of the receptacle53, and CsACS2 is enriched in conjunctive tissue (Supplementary Fig. 18c), which is derived from the receptacle primordia (Fig. 3c,d).",P001,kept,
+267,35,"For instance, in female flower buds, KNAT2-like1, CRC and ACO2 (ref. 32) are marker genes in the receptacle (Supplementary Figs. 16g, 17i and 18a); CsACS11 is expressed in the
+ vascular tissue of the receptacle53, and CsACS2 is enriched in conjunctive tissue (Supplementary Fig. 18c), which is derived from the receptacle primordia (Fig. 3c,d).",P001,kept,
 268,36,These results suggest that the developmental innovation of the receptacle in Cucumis species contributes to the evolution of unisexual flowers.,P001,kept,
 269,36,"Since 60% of the normal female flowers transformed into ‘superior ovary flowers’, and only some female flowers were present at the lower nodes, we determined that KNAT2-like1 is critical for receptacle development and inferior ovary formation.",P001,kept,
 270,36,"It is worth noting that, however, there were still 40% of the female flowers at the lower nodes did not undergo this change.",P001,kept,
