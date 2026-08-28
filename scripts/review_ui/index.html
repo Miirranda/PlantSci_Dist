@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>标注审核辅助</title>
+<style>
+  :root {
+    --bg: #f4f6f8;
+    --card: #ffffff;
+    --border: #e2e8f0;
+    --text: #1e293b;
+    --muted: #64748b;
+    --primary: #2563eb;
+    --primary-bg: #eff6ff;
+    --good: #059669;
+    --warn: #d97706;
+    --danger: #dc2626;
+    --omission: #ea580c;
+    --omission-bg: #fff7ed;
+    --addition: #059669;
+    --addition-bg: #ecfdf5;
+    --substitution: #7c3aed;
+    --substitution-bg: #f5f3ff;
+    --nodist: #64748b;
+    --nodist-bg: #f1f5f9;
+    --radius: 10px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", "Microsoft YaHei", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* ---------- 顶部导航 ---------- */
+  .topbar {
+    position: sticky; top: 0; z-index: 100;
+    background: #0f172a; color: #e2e8f0;
+    padding: 10px 20px;
+    display: flex; align-items: center; gap: 16px;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+  }
+  .topbar .title { font-size: 16px; font-weight: 600; color: #fff; }
+  .topbar .subtitle { color: #94a3b8; font-size: 12px; }
+  .progress { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+  .progress .bar { width: 140px; height: 8px; background: #334155; border-radius: 4px; overflow: hidden; }
+  .progress .bar > i { display: block; height: 100%; background: #38bdf8; transition: width .2s; }
+  .nav {
+    margin-left: auto; display: flex; align-items: center; gap: 8px;
+  }
+  .nav button {
+    background: #1e293b; color: #e2e8f0; border: 1px solid #334155;
+    padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 13px;
+  }
+  .nav button:hover { background: #334155; }
+  .nav button:disabled { opacity: .4; cursor: not-allowed; }
+  .nav .jump input {
+    width: 56px; padding: 5px 8px; border-radius: 6px; border: 1px solid #334155;
+    background: #1e293b; color: #fff; text-align: center; font-size: 13px;
+  }
+  .badge {
+    display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 12px; font-weight: 600;
+  }
+  .badge.done { background: #065f46; color: #d1fae5; }
+  .badge.todo { background: #7c2d12; color: #fed7aa; }
+
+  /* ---------- 布局 ---------- */
+  .layout { display: grid; grid-template-columns: 1fr 340px; gap: 16px; padding: 16px 20px; max-width: 1500px; margin: 0 auto; }
+  @media (max-width: 1000px) { .layout { grid-template-columns: 1fr; } }
+
+  .card {
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 16px 18px; margin-bottom: 14px;
+  }
+  .card-title {
+    font-size: 13px; font-weight: 700; color: var(--muted); text-transform: uppercase;
+    letter-spacing: .04em; margin: 0 0 10px; display: flex; align-items: center; gap: 8px;
+  }
+  .card-title .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--primary); }
+
+  /* ---------- 观点句 ---------- */
+  .claim-text {
+    font-size: 17px; font-weight: 600; line-height: 1.7;
+    background: var(--primary-bg); border-left: 4px solid var(--primary);
+    padding: 14px 16px; border-radius: 6px;
+  }
+  .claim-meta { margin-top: 10px; font-size: 12px; color: var(--muted); }
+
+  /* ---------- 证据句 ---------- */
+  .ev-item { display: flex; gap: 12px; padding: 10px 12px; border-bottom: 1px solid #f1f5f9; }
+  .ev-item:last-child { border-bottom: none; }
+  .ev-item.top5 { background: #f8fafc; }
+  .ev-rank {
+    flex: 0 0 44px; height: 44px; display: flex; align-items: center; justify-content: center;
+    background: #e2e8f0; color: #475569; border-radius: 8px; font-weight: 700; font-size: 15px;
+  }
+  .ev-item.top5 .ev-rank { background: var(--primary); color: #fff; }
+  .ev-body { flex: 1; min-width: 0; }
+  .ev-en { font-size: 13.5px; color: #334155; }
+  .ev-zh { font-size: 13.5px; color: #0f766e; margin-top: 2px; }
+  .ev-sid { flex: 0 0 auto; font-size: 11px; color: #94a3b8; font-variant-numeric: tabular-nums; padding-top: 2px; }
+  .gold-hit { color: var(--good); font-weight: 700; }
+
+  /* ---------- AI 分析 ---------- */
+  .ai-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 760px) { .ai-grid { grid-template-columns: 1fr; } }
+  .ai-block { border: 1px solid #f1f5f9; border-radius: 8px; padding: 10px 12px; background: #fafbfc; }
+  .ai-block .k { font-size: 12px; color: var(--muted); font-weight: 700; margin-bottom: 4px; }
+  .ai-block .v { font-size: 13px; white-space: pre-wrap; word-break: break-word; }
+  .ai-verdict { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 5px; padding: 3px 10px; border-radius: 6px;
+    font-size: 12.5px; font-weight: 600; border: 1px solid transparent;
+  }
+  .chip.el-With { background: #ecfdf5; color: #065f46; border-color: #a7f3d0; }
+  .chip.el-Weak { background: #fffbeb; color: #92400e; border-color: #fde68a; }
+  .chip.el-No { background: #fef2f2; color: #991b1b; border-color: #fecaca; }
+  .chip.conf-high { background: #ecfdf5; color: #065f46; }
+  .chip.conf-medium { background: #fffbeb; color: #92400e; }
+  .chip.conf-low { background: #fef2f2; color: #991b1b; }
+  .chip.review { background: #fff1f2; color: #be123c; }
+  .chip.hint { background: #f5f3ff; color: #5b21b6; }
+
+  .kdf { border-left: 3px solid var(--substitution); padding: 6px 10px; margin: 6px 0; background: #faf5ff; border-radius: 4px; }
+  .kdf .t { font-size: 12px; font-weight: 700; color: #5b21b6; }
+  .kdf .row { font-size: 12.5px; margin-top: 3px; }
+  .kdf .lab { color: var(--muted); }
+
+  /* ---------- 人工操作区 ---------- */
+  .op-section { border: 2px solid var(--primary); border-radius: var(--radius); padding: 16px 18px; background: #fff; }
+  .op-section .card-title { color: var(--primary); }
+  .op-group { margin-bottom: 14px; }
+  .op-label { font-size: 13px; font-weight: 700; margin-bottom: 7px; }
+  .op-label small { color: var(--muted); font-weight: 400; }
+  .label-row { display: flex; flex-wrap: wrap; gap: 7px; }
+  .label-btn {
+    padding: 7px 13px; border-radius: 8px; border: 1.5px solid var(--border);
+    background: #fff; cursor: pointer; font-size: 13px; font-weight: 600; color: var(--text);
+    transition: all .12s;
+  }
+  .label-btn:hover { border-color: var(--primary); }
+  .label-btn.on { box-shadow: 0 0 0 2px currentColor inset; }
+  .label-btn.nodist { color: var(--nodist); }
+  .label-btn.nodist.on { background: var(--nodist-bg); border-color: var(--nodist); }
+  .label-btn.lv-omission { color: var(--omission); }
+  .label-btn.lv-omission.on { background: var(--omission-bg); border-color: var(--omission); }
+  .label-btn.lv-addition { color: var(--addition); }
+  .label-btn.lv-addition.on { background: var(--addition-bg); border-color: var(--addition); }
+  .label-btn.lv-substitution { color: var(--substitution); }
+  .label-btn.lv-substitution.on { background: var(--substitution-bg); border-color: var(--substitution); }
+
+  .severity-row { display: flex; gap: 7px; flex-wrap: wrap; }
+  .sev-btn {
+    padding: 6px 15px; border-radius: 8px; border: 1.5px solid var(--border);
+    background: #fff; cursor: pointer; font-size: 13px; font-weight: 600;
+  }
+  .sev-btn.on.sev-none { background: var(--nodist-bg); border-color: var(--nodist); }
+  .sev-btn.on.sev-mild { background: #ecfdf5; border-color: var(--good); color: #065f46; }
+  .sev-btn.on.sev-moderate { background: #fffbeb; border-color: var(--warn); color: #92400e; }
+  .sev-btn.on.sev-severe { background: #fef2f2; border-color: var(--danger); color: #991b1b; }
+
+  .note-area { width: 100%; min-height: 64px; border: 1.5px solid var(--border); border-radius: 8px; padding: 9px 11px; font-size: 13px; font-family: inherit; resize: vertical; }
+  .note-area:focus { outline: none; border-color: var(--primary); }
+
+  .op-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--primary); color: #fff; border: none; padding: 9px 22px;
+    border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer;
+  }
+  .btn-primary:hover { background: #1d4ed8; }
+  .btn-ghost {
+    background: #fff; color: var(--text); border: 1.5px solid var(--border);
+    padding: 8px 16px; border-radius: 8px; font-size: 13px; cursor: pointer;
+  }
+  .btn-ghost:hover { border-color: var(--primary); }
+  .done-toggle { display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none; font-size: 13.5px; font-weight: 600; }
+  .done-toggle input { width: 18px; height: 18px; cursor: pointer; accent-color: var(--good); }
+  .save-status { font-size: 12.5px; color: var(--muted); }
+  .save-status.ok { color: var(--good); }
+
+  /* ---------- 右侧失真指南 ---------- */
+  .side-col { position: sticky; top: 64px; align-self: start; max-height: calc(100vh - 80px); overflow-y: auto; }
+  .guide-group { margin-bottom: 8px; }
+  .guide-group-head {
+    font-size: 12px; font-weight: 800; letter-spacing: .03em; padding: 4px 8px; border-radius: 5px; margin-bottom: 5px;
+  }
+  .guide-group-head.omission { background: var(--omission-bg); color: var(--omission); }
+  .guide-group-head.addition { background: var(--addition-bg); color: var(--addition); }
+  .guide-group-head.substitution { background: var(--substitution-bg); color: var(--substitution); }
+  .guide-group-head.none { background: var(--nodist-bg); color: var(--nodist); }
+  .guide-item {
+    border: 1px solid #eef2f7; border-radius: 7px; padding: 7px 9px; margin-bottom: 5px; cursor: pointer;
+    background: #fff; transition: border-color .12s;
+  }
+  .guide-item:hover { border-color: #cbd5e1; }
+  .guide-item.sel { border-width: 2px; }
+  .guide-item.sel.omission { border-color: var(--omission); }
+  .guide-item.sel.addition { border-color: var(--addition); }
+  .guide-item.sel.substitution { border-color: var(--substitution); }
+  .guide-item.sel.none { border-color: var(--nodist); }
+  .guide-item .g-head { display: flex; align-items: center; gap: 6px; }
+  .guide-item .g-zh { font-size: 13px; font-weight: 700; }
+  .guide-item .g-en { font-size: 11px; color: var(--muted); }
+  .guide-item .g-slug { font-size: 10px; color: #cbd5e1; font-family: monospace; }
+  .guide-item .g-def { font-size: 12px; color: #475569; margin-top: 5px; display: none; white-space: pre-wrap; }
+  .guide-item.open .g-def { display: block; }
+  .guide-item .g-hint { font-size: 10.5px; color: #94a3b8; margin-top: 2px; }
+
+  .kbd { font-family: ui-monospace, monospace; font-size: 11px; background: #eef2f7; padding: 1px 5px; border-radius: 4px; color: #475569; }
+  .footer-hint { font-size: 11.5px; color: var(--muted); padding: 0 20px 20px; max-width: 1500px; margin: 0 auto; }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div>
+    <div class="title">标注审核辅助</div>
+    <div class="subtitle" id="subtitle">加载中…</div>
+  </div>
+  <div class="progress">
+    <span id="posText">0/0</span>
+    <span class="bar"><i id="barFill" style="width:0%"></i></span>
+    <span id="doneText">已审核 0</span>
+  </div>
+  <div class="nav">
+    <button id="prevBtn" title="上一页 (←)">← 上一条</button>
+    <button id="nextBtn" title="下一页 (→)">下一条 →</button>
+    <span class="jump">
+      <input id="jumpInput" type="number" min="1" placeholder="#">
+      <button id="jumpBtn">跳转</button>
+    </span>
+    <button id="nextTodoBtn" title="跳到下一条未审核">下一条未审核</button>
+  </div>
+</header>
+
+<div class="layout">
+  <!-- 左栏：主内容 -->
+  <div class="main-col">
+
+    <!-- 观点句 -->
+    <div class="card">
+      <div class="card-title"><span class="dot"></span>观点句（公众号）</div>
+      <div class="claim-text" id="claimText">—</div>
+      <div class="claim-meta" id="claimMeta"></div>
+    </div>
+
+    <!-- 召回证据 -->
+    <div class="card">
+      <div class="card-title"><span class="dot" style="background:#0f766e"></span>召回证据（论文原句 + 翻译）</div>
+      <div id="evList"></div>
+    </div>
+
+    <!-- AI 辅助分析 -->
+    <div class="card">
+      <div class="card-title"><span class="dot" style="background:#7c3aed"></span>AI 辅助分析</div>
+      <div id="aiContent"></div>
+    </div>
+
+    <!-- 人工操作 -->
+    <div class="op-section">
+      <div class="card-title"><span class="dot"></span>人工审核操作</div>
+
+      <div class="op-group">
+        <div class="op-label">证据充分性 <small>(evidence_level)</small></div>
+        <div class="label-row" id="elRow"></div>
+      </div>
+
+      <div class="op-group">
+        <div class="op-label">失真类型 <small>(primary_level2 · 快捷键 1-9)</small></div>
+        <div class="label-row" id="primaryRow"></div>
+      </div>
+
+      <div class="op-group">
+        <div class="op-label">次要失真 <small>(secondary_level2，可选)</small></div>
+        <div class="label-row" id="secondaryRow"></div>
+      </div>
+
+      <div class="op-group">
+        <div class="op-label">严重程度 <small>(severity)</small></div>
+        <div class="severity-row" id="severityRow"></div>
+      </div>
+
+      <div class="op-group">
+        <div class="op-label">人工备注 <small>(note)</small></div>
+        <textarea class="note-area" id="noteArea" placeholder="补充审核意见…"></textarea>
+      </div>
+
+      <div class="op-actions">
+        <button class="btn-primary" id="saveBtn">保存 (S)</button>
+        <label class="done-toggle">
+          <input type="checkbox" id="doneCheck">
+          <span>标记已完成审核 (human_verified)</span>
+        </label>
+        <span class="save-status" id="saveStatus"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 右栏：失真判断指南 -->
+  <aside class="side-col">
+    <div class="card" style="margin-bottom:10px">
+      <div class="card-title"><span class="dot" style="background:#d97706"></span>失真判断指南</div>
+      <div id="guideContent"></div>
+    </div>
+  </aside>
+</div>
+
+<div class="footer-hint">
+  快捷键：<span class="kbd">←</span>/<span class="kbd">→</span> 上下一条 · <span class="kbd">S</span> 保存 ·
+  <span class="kbd">1-9</span> 选失真类型（1=无失真，2-4=删减，5-6=添加，7-9=替换）·
+  <span class="kbd">D</span> 标记完成
+</div>
+
+<script>
+/* ================= 状态 ================= */
+const state = {
+  samples: [],
+  taxonomy: null,
+  results: {},          // {results: {sample_id: {...}}}
+  index: 0,
+  dirty: false,
+  savedAt: null,
+  // 当前操作区的选中值
+  el: '',
+  primary: '',
+  secondary: '',
+  severity: '',
+  note: '',
+  done: false,
+};
+
+const $ = id => document.getElementById(id);
+
+/* ================= 数据加载 ================= */
+async function load() {
+  const res = await fetch('/api/data');
+  const data = await res.json();
+  state.samples = data.samples;
+  state.taxonomy = data.taxonomy;
+  state.results = data.results || {};
+
+  // 默认定位到第一条未审核
+  let start = 0;
+  const results = state.results.results || {};
+  for (let i = 0; i < state.samples.length; i++) {
+    const sid = state.samples[i].sample_id;
+    if (!results[sid] || !results[sid].human_verified) { start = i; break; }
+  }
+  state.index = start;
+
+  $('subtitle').textContent = `${state.samples.length} 条样本`;
+  buildGuide();
+  buildSelectors();
+  render();
+}
+
+/* ================= 失真指南 ================= */
+function buildGuide() {
+  const t = state.taxonomy;
+  const lv1 = t.level1;
+  const labels = t.labels;
+  const groups = { omission: [], addition: [], substitution: [] };
+  for (const [slug, info] of Object.entries(labels)) {
+    groups[info.level1].push({ slug, ...info });
+  }
+  const order = [['omission', '信息删减 Omission', 'omission'],
+                  ['addition', '信息添加 Addition', 'addition'],
+                  ['substitution', '信息替换 Substitution', 'substitution']];
+
+  let html = '';
+  // 无失真
+  html += `<div class="guide-group">
+    <div class="guide-group-head none">无失真</div>
+    <div class="guide-item none" data-slug="${t.no_distortion}" data-lv="none">
+      <div class="g-head"><span class="g-zh">无失真</span><span class="g-en">no distortion</span></div>
+      <div class="g-def">观点句相对论文含义准确，合理压缩/同义/术语通俗化不算失真。</div>
+    </div>
+  </div>`;
+  for (const [key, title, cls] of order) {
+    html += `<div class="guide-group"><div class="guide-group-head ${cls}">${title}</div>`;
+    for (const g of groups[key]) {
+      html += `<div class="guide-item ${cls}" data-slug="${g.slug}" data-lv="${cls}">
+        <div class="g-head"><span class="g-zh">${g.zh}</span><span class="g-en">${g.en}</span></div>
+        <div class="g-slug">${g.slug}</div>
+        <div class="g-def">${escapeHtml(g.definition)}</div>
+        <div class="g-hint">点击展开细则</div>
+      </div>`;
+    }
+    html += `</div>`;
+  }
+  $('guideContent').innerHTML = html;
+
+  // 点击展开 + 联动选择
+  $('guideContent').querySelectorAll('.guide-item').forEach(el => {
+    el.addEventListener('click', () => {
+      const slug = el.dataset.slug;
+      // 展开/收起
+      el.classList.toggle('open');
+      // 选中该类型作为 primary
+      if (slug === state.taxonomy.no_distortion || state.taxonomy.labels[slug]) {
+        setPrimary(slug);
+      }
+    });
+  });
+}
+
+/* ================= 操作区选择器 ================= */
+function buildSelectors() {
+  const t = state.taxonomy;
+
+  // evidence_level
+  const elLabels = { With_Evidence: '有证据', Weak_Evidence: '证据弱', No_Evidence: '无证据' };
+  $('elRow').innerHTML = t.evidence_levels.map(e =>
+    `<button class="label-btn nodist" data-el="${e}">${e}</button>`).join('');
+
+  // primary: 无失真 + 8 类（按 level1 顺序）
+  const order = ['omission', 'addition', 'substitution'];
+  let pri = `<button class="label-btn nodist" data-p="${t.no_distortion}">无失真</button>`;
+  for (const lv of order) {
+    for (const [slug, info] of Object.entries(t.labels)) {
+      if (info.level1 === lv) pri += `<button class="label-btn lv-${lv}" data-p="${slug}" title="${escapeHtml(info.definition)}">${info.zh}</button>`;
+    }
+  }
+  $('primaryRow').innerHTML = pri;
+
+  // secondary: 无 + 8 类
+  let sec = `<button class="label-btn nodist" data-s="">无</button>`;
+  for (const [slug, info] of Object.entries(t.labels)) {
+    sec += `<button class="label-btn lv-${info.level1}" data-s="${slug}">${info.zh}</button>`;
+  }
+  $('secondaryRow').innerHTML = sec;
+
+  // severity
+  const sevLabels = { none: '无', mild: '轻度', moderate: '中度', severe: '重度' };
+  $('severityRow').innerHTML = t.severity.map(s =>
+    `<button class="sev-btn sev-${s}" data-sev="${s}">${sevLabels[s] || s}</button>`).join('');
+
+  // 事件绑定
+  $('elRow').querySelectorAll('button').forEach(b => b.onclick = () => setEl(b.dataset.el));
+  $('primaryRow').querySelectorAll('button').forEach(b => b.onclick = () => setPrimary(b.dataset.p));
+  $('secondaryRow').querySelectorAll('button').forEach(b => b.onclick = () => setSecondary(b.dataset.s));
+  $('severityRow').querySelectorAll('button').forEach(b => b.onclick = () => setSeverity(b.dataset.sev));
+  $('noteArea').addEventListener('input', e => { state.note = e.target.value; state.dirty = true; });
+  $('doneCheck').addEventListener('change', e => { state.done = e.target.checked; state.dirty = true; updateDoneBadge(); });
+}
+
+function setEl(v) { state.el = v; state.dirty = true; refreshOpUI(); }
+function setPrimary(v) {
+  state.primary = v; state.dirty = true;
+  const t = state.taxonomy;
+  if (v === t.no_distortion) {
+    state.severity = state.severity || 'none';
+  } else if (!state.severity || state.severity === 'none') {
+    state.severity = 'moderate';
+  }
+  refreshOpUI();
+}
+function setSecondary(v) { state.secondary = v; state.dirty = true; refreshOpUI(); }
+function setSeverity(v) { state.severity = v; state.dirty = true; refreshOpUI(); }
+
+function refreshOpUI() {
+  $('elRow').querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.el === state.el));
+  $('primaryRow').querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.p === state.primary));
+  $('secondaryRow').querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.s === state.secondary));
+  $('severityRow').querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.sev === state.severity));
+  // 联动指南高亮
+  $('guideContent').querySelectorAll('.guide-item').forEach(el => {
+    el.classList.toggle('sel', el.dataset.slug === state.primary);
+  });
+}
+
+/* ================= 渲染当前样本 ================= */
+function render() {
+  const s = state.samples[state.index];
+  if (!s) return;
+
+  // 从 results 恢复人工值，否则用 AI 默认值
+  const r = (state.results.results || {})[s.sample_id] || {};
+  const gc = s.gold_classification;
+  const aiPri = gc.primary_label?.level2 || '';
+  state.el = r.evidence_level || gc.evidence_level || '';
+  state.primary = r.primary_level2 || aiPri || '';
+  state.secondary = r.secondary_level2 || (gc.secondary_label?.level2 || '');
+  state.severity = r.severity || gc.severity || '';
+  state.note = r.note || '';
+  state.done = !!(r.human_verified !== undefined ? r.human_verified : s.human_verified);
+  state.dirty = false;
+  state.savedAt = null;
+
+  // 顶部进度
+  const n = state.samples.length;
+  $('posText').textContent = `${state.index + 1}/${n}`;
+  $('barFill').style.width = `${((state.index + 1) / n) * 100}%`;
+  const doneCount = Object.values(state.results.results || {}).filter(x => x.human_verified).length;
+  $('doneText').textContent = `已审核 ${doneCount}`;
+  $('prevBtn').disabled = state.index === 0;
+  $('nextBtn').disabled = state.index === n - 1;
+
+  // 观点句
+  $('claimText').textContent = s.claim_zh || '（无）';
+  const gold = s.gold_retrieval;
+  const metaParts = [`sample_id: ${s.sample_id}`];
+  if (gold?.sentence_ids?.length) metaParts.push(`AI 金标句: ${gold.sentence_ids.join(', ')}`);
+  if (s.human_note) metaParts.push(`人工备注: ${s.human_note}`);
+  $('claimMeta').innerHTML = metaParts.map(escapeHtml).join(' &nbsp;·&nbsp; ');
+
+  // 证据句
+  renderEvidences(s);
+
+  // AI 分析
+  renderAI(s);
+
+  // 操作区
+  $('noteArea').value = state.note;
+  $('doneCheck').checked = state.done;
+  refreshOpUI();
+  updateDoneBadge();
+  $('saveStatus').textContent = '';
+}
+
+function renderEvidences(s) {
+  const goldSet = new Set(s.gold_retrieval?.sentence_ids || []);
+  const classifyIds = new Set((s.classify_evidences || []).map(e => e.sentence_id));
+  const evs = s.review_evidences || [];
+  if (!evs.length) { $('evList').innerHTML = '<div style="color:#94a3b8">（无召回证据）</div>'; return; }
+  $('evList').innerHTML = evs.map(e => {
+    const isTop5 = classifyIds.has(e.sentence_id);
+    const isGold = goldSet.has(e.sentence_id);
+    return `<div class="ev-item ${isTop5 ? 'top5' : ''}">
+      <div class="ev-rank">${e.rank ?? ''}</div>
+      <div class="ev-body">
+        <div class="ev-en">${escapeHtml(e.text || '')}</div>
+        <div class="ev-zh">${escapeHtml(e.text_zh || '')}</div>
+      </div>
+      <div class="ev-sid ${isGold ? 'gold-hit' : ''}">${isGold ? '★' : ''}id=${e.sentence_id}${isTop5 ? ' · top5' : ''}</div>
+    </div>`;
+  }).join('');
+}
+
+function renderAI(s) {
+  const gc = s.gold_classification;
+  const an = s.analysis;
+  const lv = gc.evidence_level;
+  const lvZh = { With_Evidence: '有证据', Weak_Evidence: '证据弱', No_Evidence: '无证据' }[lv] || lv;
+  const priZh = (gc.primary_label?.level2 && state.taxonomy?.labels?.[gc.primary_label.level2]) ?
+    state.taxonomy.labels[gc.primary_label.level2].zh : (gc.primary_label?.level2 || '—');
+  const secZh = (gc.secondary_label?.level2 && state.taxonomy?.labels?.[gc.secondary_label.level2]) ?
+    state.taxonomy.labels[gc.secondary_label.level2].zh : null;
+
+  let html = `<div class="ai-verdict">
+    <span class="chip el-${lv}">${lvZh || '—'}</span>
+    ${gc.has_distortion === true ? `<span class="chip">失真类型：${escapeHtml(priZh)}</span>` : gc.has_distortion === false ? '<span class="chip">AI 判：无失真</span>' : ''}
+    ${secZh ? `<span class="chip">次要：${escapeHtml(secZh)}</span>` : ''}
+    ${gc.severity ? `<span class="chip">严重度：${escapeHtml(gc.severity)}</span>` : ''}
+    ${an.ai_confidence ? `<span class="chip conf-${an.ai_confidence}">置信 ${escapeHtml(an.ai_confidence)}</span>` : ''}
+    ${an.needs_manual_review ? '<span class="chip review">需人工复核</span>' : ''}
+    ${an.unsupported_diagnosis?.verdict && an.unsupported_diagnosis.verdict !== 'not_applicable' ? `<span class="chip hint">诊断：${escapeHtml(an.unsupported_diagnosis.verdict)}</span>` : ''}
+  </div>`;
+
+  html += '<div class="ai-grid">';
+  if (gc.reason) html += block('AI 一句结论 (reason)', gc.reason);
+  if (an.evidence_judgement) html += block('证据判定 (evidence_judgement)', an.evidence_judgement);
+  if (an.classification_reason) html += block('分类理由 (classification_reason)', an.classification_reason);
+  if (an.manual_check_hints) html += block('人工核对提示 (manual_check_hints)', an.manual_check_hints);
+  const ud = an.unsupported_diagnosis || {};
+  if (ud.verdict && ud.verdict !== 'not_applicable') {
+    let udText = `reasoning: ${ud.reasoning || ''}`;
+    if (ud.suggested_keywords?.length) udText += `\n关键词: ${ud.suggested_keywords.join(', ')}`;
+    if (ud.suggested_sentence_ranges) udText += `\n句范围: ${ud.suggested_sentence_ranges}`;
+    html += block('未支持诊断 (unsupported_diagnosis)', udText);
+  }
+  const rr = an.rag_review || {};
+  if (rr.top5_is_best !== null && rr.top5_is_best !== undefined) {
+    let rrText = `top5_is_best: ${rr.top5_is_best}`;
+    if (rr.better_in_review_pool?.length) rrText += `\n更优池内句: ${rr.better_in_review_pool.join(', ')}`;
+    if (rr.notes) rrText += `\nnotes: ${rr.notes}`;
+    html += block('RAG 复核 (rag_review)', rrText);
+  }
+  html += '</div>';
+
+  // key_differences
+  const kdf = an.key_differences || [];
+  if (kdf.length) {
+    html += '<div style="margin-top:10px"><div class="k" style="font-size:12px;color:var(--muted);font-weight:700">关键差异 (key_differences)</div>';
+    for (const d of kdf) {
+      const typeZh = state.taxonomy?.labels?.[d.type]?.zh || d.type;
+      html += `<div class="kdf">
+        <div class="t">${escapeHtml(typeZh || '')} <span style="font-weight:400;color:#94a3b8">(${escapeHtml(d.type || '')})</span></div>
+        ${d.paper_expression ? `<div class="row"><span class="lab">论文：</span>${escapeHtml(d.paper_expression)}</div>` : ''}
+        ${d.article_expression ? `<div class="row"><span class="lab">公众号：</span>${escapeHtml(d.article_expression)}</div>` : ''}
+        ${d.description ? `<div class="row"><span class="lab">说明：</span>${escapeHtml(d.description)}</div>` : ''}
+      </div>`;
+    }
+    html += '</div>';
+  }
+  $('aiContent').innerHTML = html;
+}
+
+function block(k, v) {
+  return `<div class="ai-block"><div class="k">${escapeHtml(k)}</div><div class="v">${escapeHtml(v)}</div></div>`;
+}
+
+/* ================= 保存 ================= */
+async function save() {
+  const s = state.samples[state.index];
+  if (!s) return;
+  const payload = {
+    sample_id: s.sample_id,
+    human_verified: state.done,
+    evidence_level: state.el,
+    primary_level2: state.primary,
+    secondary_level2: state.secondary,
+    severity: state.severity,
+    note: state.note,
+  };
+  const res = await fetch('/api/save', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  });
+  const out = await res.json();
+  if (out.ok) {
+    state.results.results = state.results.results || {};
+    state.results.results[s.sample_id] = out.record;
+    state.dirty = false;
+    state.savedAt = new Date();
+    $('saveStatus').textContent = '已保存 ' + state.savedAt.toLocaleTimeString();
+    $('saveStatus').classList.add('ok');
+    updateDoneBadge();
+    const doneCount = Object.values(state.results.results || {}).filter(x => x.human_verified).length;
+    $('doneText').textContent = `已审核 ${doneCount}`;
+  } else {
+    $('saveStatus').textContent = '保存失败: ' + (out.error || '');
+    $('saveStatus').classList.remove('ok');
+  }
+}
+
+function updateDoneBadge() {
+  const s = state.samples[state.index];
+  if (!s) return;
+  const badge = s.human_verified || state.done;
+  $('doneText').textContent = '';
+}
+
+/* ================= 导航 ================= */
+function go(index) {
+  if (index < 0 || index >= state.samples.length) return;
+  if (state.dirty) {
+    if (!confirm('当前样本有未保存的修改，放弃修改并跳转？')) return;
+  }
+  state.index = index;
+  render();
+}
+function next() { go(state.index + 1); }
+function prev() { go(state.index - 1); }
+function nextTodo() {
+  const results = state.results.results || {};
+  for (let i = state.index + 1; i < state.samples.length; i++) {
+    const sid = state.samples[i].sample_id;
+    if (!results[sid] || !results[sid].human_verified) { go(i); return; }
+  }
+  alert('后面没有未审核的样本了');
+}
+
+/* ================= 工具 ================= */
+function escapeHtml(s) {
+  return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+/* ================= 事件绑定 ================= */
+$('prevBtn').onclick = prev;
+$('nextBtn').onclick = next;
+$('nextTodoBtn').onclick = nextTodo;
+$('saveBtn').onclick = save;
+$('jumpBtn').onclick = () => {
+  const v = parseInt($('jumpInput').value, 10);
+  if (!isNaN(v)) go(v - 1);
+};
+$('jumpInput').addEventListener('keydown', e => { if (e.key === 'Enter') $('jumpBtn').click(); });
+
+document.addEventListener('keydown', e => {
+  if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') return;
+  if (e.key === 'ArrowRight') next();
+  else if (e.key === 'ArrowLeft') prev();
+  else if (e.key === 's' || e.key === 'S') save();
+  else if (e.key === 'd' || e.key === 'D') { $('doneCheck').checked = !$('doneCheck').checked; $('doneCheck').dispatchEvent(new Event('change')); }
+  else if (e.key >= '1' && e.key <= '9') {
+    const t = state.taxonomy;
+    const order = [t.no_distortion];
+    for (const lv of ['omission','addition','substitution']) {
+      for (const [slug, info] of Object.entries(t.labels)) if (info.level1 === lv) order.push(slug);
+    }
+    const idx = parseInt(e.key, 10) - 1;
+    if (idx < order.length) setPrimary(order[idx]);
+  }
+});
+
+load();
+</script>
+</body>
+</html>

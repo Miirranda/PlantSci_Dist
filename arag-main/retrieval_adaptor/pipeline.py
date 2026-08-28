@@ -21,8 +21,16 @@ from .config import AgentRuntimeConfig, RetrievalConfig, ensure_dirs
 from .evidence_board import EvidenceBoard
 from .index_store import IndexStore
 from .qwen_agent_adapter import QwenAgentAdapter
-from .schemas import EvidenceRecord, PaperMetadata, ParagraphContext, RetrievalOutput
-from .thresholds import DualThresholdGate
+from .schemas import (
+    VERDICT_INCONCLUSIVE,
+    VERDICT_NO_EVIDENCE,
+    EvidenceRecord,
+    PaperMetadata,
+    ParagraphContext,
+    RetrievalOutput,
+    RetrievalSufficiency,
+)
+from .thresholds import STOP_INSUFFICIENT_HINT, DualThresholdGate
 
 
 class BoardAwareKeywordSearch:
@@ -185,7 +193,29 @@ class CrossLingualRetrievalPipeline:
             output.stats["error"] = "%s: %s" % (type(exc).__name__, exc)
             return output
 
-        output = self._finalize(board)
+        # ---- 检索充分性检查 + 关键词补检（agent.run 之后、_finalize 之前）----
+        # 补检产生的候选必须先入看板，_finalize 才会把它们写进最终 evidences。
+        # ARAG_SUFFICIENCY_ENABLED=0 时整块跳过，行为与改造前完全一致。
+        sufficiency: RetrievalSufficiency | None = None
+        if self.config.sufficiency.enabled:
+            from .sufficiency import run_sufficiency_loop
+
+            try:
+                sufficiency = run_sufficiency_loop(
+                    board,
+                    store=self.store,
+                    sf_client=self.sf_client,
+                    qwen_client=self.qwen_client,
+                    config=self.config.sufficiency,
+                    verbose=self.verbose,
+                )
+            except Exception as exc:
+                # 补检自身异常绝不让单条检索整体失败，降级为提示
+                sufficiency = RetrievalSufficiency.failed("%s: %s" % (type(exc).__name__, exc))
+                if self.verbose:
+                    print("充分性补检失败，回退为仅提示: %s" % exc)
+
+        output = self._finalize(board, sufficiency=sufficiency)
         parsed = parse_final_answer(run_result.get("answer", ""))
         output.stats.update(
             {
@@ -200,9 +230,18 @@ class CrossLingualRetrievalPipeline:
                 **self.mapper.cache.stats(),
             }
         )
+        if sufficiency is not None:
+            output.stats["sufficiency_checks"] = len(sufficiency.checks)
+            output.stats["sufficiency_sufficient"] = bool(sufficiency.sufficient)
         return output
 
-    def _finalize(self, board: EvidenceBoard, *, max_evidences: int | None = None) -> RetrievalOutput:
+    def _finalize(
+        self,
+        board: EvidenceBoard,
+        *,
+        max_evidences: int | None = None,
+        sufficiency: RetrievalSufficiency | None = None,
+    ) -> RetrievalOutput:
         """从证据看板汇总最终输出。
 
         不依赖 Agent 是否记得调用 read_chunk——只要向量层召回过候选，这里就能把结构化证据
@@ -247,7 +286,16 @@ class CrossLingualRetrievalPipeline:
                 )
             )
 
-        return board.build_output(evidences, max_rounds=self.runtime.max_loops)
+        output = board.build_output(evidences, max_rounds=self.runtime.max_loops)
+        if sufficiency is not None:
+            # 存对象而非 dict：RetrievalOutput.to_dict() 统一负责序列化
+            output.retrieval_sufficiency = sufficiency
+            # 硬规则：语义低分/零召回只代表「当前检索没找着」，不代表论文无此内容；
+            # 补检确证不足时禁止输出 NO_EVIDENCE，避免下游据此误判「论文未提及」。
+            if not sufficiency.sufficient and output.verdict == VERDICT_NO_EVIDENCE:
+                output.verdict = VERDICT_INCONCLUSIVE
+                output.stop_reason = STOP_INSUFFICIENT_HINT
+        return output
 
     # ------------------------------------------------------------------ 批量检索
 

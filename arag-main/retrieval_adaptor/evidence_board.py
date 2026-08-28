@@ -40,6 +40,7 @@ class Candidate:
     rerank_score: float = 0.0
     matched_terms: list[str] = field(default_factory=list)
     round_index: int = 1
+    source: str = ""  # 候选来源：semantic_search / read_chunk / keyword_retry 等
 
 
 class EvidenceBoard:

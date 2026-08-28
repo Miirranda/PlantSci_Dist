@@ -28,6 +28,7 @@ from .config import (
     WECHAT_DIR,
     AgentRuntimeConfig,
     RetrievalConfig,
+    SufficiencyConfig,
     ThresholdConfig,
     ensure_dirs,
 )
@@ -59,8 +60,14 @@ from .schemas import (
     PaperMetadata,
     ParagraphContext,
     RetrievalOutput,
+    RetrievalSufficiency,
+    SufficiencyCheck,
 )
-from .thresholds import DualThresholdGate, GateDecision
+from .thresholds import (
+    STOP_INSUFFICIENT_HINT,
+    DualThresholdGate,
+    GateDecision,
+)
 
 __version__ = "1.0.0"
 
@@ -86,9 +93,12 @@ __all__ = [
     "Candidate",
     "DualThresholdGate",
     "GateDecision",
+    "STOP_INSUFFICIENT_HINT",
     "normalize",
     # Schema
     "RetrievalOutput",
+    "RetrievalSufficiency",
+    "SufficiencyCheck",
     "EvidenceRecord",
     "PaperMetadata",
     "ParagraphContext",
@@ -99,6 +109,7 @@ __all__ = [
     "VERDICT_NO_EVIDENCE",
     # 配置
     "RetrievalConfig",
+    "SufficiencyConfig",
     "ThresholdConfig",
     "AgentRuntimeConfig",
     "ensure_dirs",

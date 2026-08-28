@@ -166,6 +166,55 @@ class EvidenceRecord:
 
 
 @dataclass
+class SufficiencyCheck:
+    """一轮「检索充分性检查 + 程序化关键词补检」的记录。"""
+
+    round: int = 1
+    sufficient: bool = False
+    missing_point: str = ""  # ≤40 中文字符，只写一个最关键缺失点
+    keywords: list[str] = field(default_factory=list)  # 2~4 个英文词
+    anchors: list[str] = field(default_factory=list)  # 0~2 个，须为 claim 逐字子串
+    added_sentence_ids: list[int] = field(default_factory=list)  # 本轮补检新增入池句
+    error: str = ""  # LLM 调用/解析失败时的错误信息
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "round": int(self.round),
+            "sufficient": bool(self.sufficient),
+            "missing_point": self.missing_point,
+            "keywords": list(self.keywords),
+            "anchors": list(self.anchors),
+            "added_sentence_ids": [int(item) for item in self.added_sentence_ids],
+            "error": self.error,
+        }
+
+
+@dataclass
+class RetrievalSufficiency:
+    """检索充分性闭环的最终结论，随 RetrievalOutput 一起交给下游。"""
+
+    sufficient: bool = False
+    checks: list[SufficiencyCheck] = field(default_factory=list)
+    retrieval_hint: str = ""  # ≤100 中文字符，程序生成，不调 LLM 重写
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "sufficient": bool(self.sufficient),
+            "checks": [check.to_dict() for check in self.checks],
+            "retrieval_hint": self.retrieval_hint,
+        }
+
+    @classmethod
+    def failed(cls, reason: str) -> RetrievalSufficiency:
+        """补检闭环自身异常时的兜底结构：判不足 + 提示人工复核，绝不让单条检索整体失败。"""
+        return cls(
+            sufficient=False,
+            checks=[SufficiencyCheck(round=1, sufficient=False, error=str(reason))],
+            retrieval_hint="检索充分性检查执行失败（%s），请人工复核该条证据。" % str(reason)[:60],
+        )
+
+
+@dataclass
 class RetrievalOutput:
     """一条中文语句的完整检索结果，可直接序列化后交给下游信息失真分类模块。"""
 
@@ -176,6 +225,7 @@ class RetrievalOutput:
     evidences: list[EvidenceRecord] = field(default_factory=list)
     stats: dict[str, Any] = field(default_factory=dict)
     schema_version: str = SCHEMA_VERSION
+    retrieval_sufficiency: RetrievalSufficiency | None = None
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -187,6 +237,9 @@ class RetrievalOutput:
             "evidence_count": len(self.evidences),
             "evidences": [item.to_dict() for item in self.evidences],
             "stats": dict(self.stats),
+            "retrieval_sufficiency": (
+                self.retrieval_sufficiency.to_dict() if self.retrieval_sufficiency else None
+            ),
         }
 
     def to_json(self, indent: int | None = 2) -> str:

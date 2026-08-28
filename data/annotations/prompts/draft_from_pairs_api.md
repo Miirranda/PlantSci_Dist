@@ -82,6 +82,9 @@ user.review_evidences 的 rank 1–5 = 分类用 top-5（与 classify_top5_ids �
 检索没找着 ≠ Weak。论文里很可能有、只是池里没有 → 仍按「论文能否核」来判：能核则 With，金标句可标池外 id，unsupported_diagnosis=likely_retrieval_miss。Weak 只表示论文本身既不能证真也不能证伪。
 不要因为细类是 omission 就删掉金标句。
 
+**禁止因 top-5 / review 池无命中就判 addition 或「论文未提及」**：检索池缺席 ≠ 论文缺席。只有 pool 与 paper_sentences 都无对应表述、或 user 已带 retrieval_hint 且明确说明程序化补检也未命中时，才可向「论文未提及」倾斜；否则一律记 unsupported_diagnosis=likely_retrieval_miss 并给出具体缺失表述。
+若 user 已带 retrieval_hint：unsupported_diagnosis.suggested_keywords 直接引用 hint 中的关键词，manual_check_hints 指向 hint 建议的检索动作；不要重新生成关键词列表。
+
 ## gold_sentence_ids（按断言覆盖，禁止堆叠）
 
 只收**核对该 claim 所必需的核心句**，不是「能沾边的检索句全集」。
@@ -89,7 +92,7 @@ user.review_evidences 的 rank 1–5 = 分类用 top-5（与 classify_top5_ids �
 - 同一分句有多条近义支撑 → **只留 1 条**（最完整、最不脏、可单独核对该断言）。
 - 复合句：每个独立断言各留 1 条核心句。
 - 数量：目标 1–3；复合句最多 5。超过 5 必须再砍。
-- 不得进 gold：方法近义重复、图注残片、标题作者粘连、参考文献行、枚举词 First 而非首次发现的句子。
+- 不得进 gold：方法近义重复、OCR 残片（乱码/断词）、纯页码、标题作者粘连、参考文献行、枚举词 First 而非首次发现的句子。**图注完整句可以进 gold**（如 "b, The paraffin-embedded sections show…" 这类带面板编号的完整图注句是合法支撑句）。
 - `evidence_judgement` / `classification_reason` 里用来定性或打标签的对照句（如打「首次」的 remain largely unknown）**必须**出现在 gold_sentence_ids。仅作「近义/噪声、不选」的 id 写在 rag_review.notes，不要当支撑句罗列。
 - 不要在字段里插入排版换行；换行由下游 readable 脚本处理。
 
@@ -119,11 +122,19 @@ C. 不可充分核实：is_answerable=false，has_distortion=null，primary_leve
 
 ## analysis（质量关键，勿空话）
 
+每条的 analysis 整体必须是一段可审核的**四要素说明**（可拆分到各字段，但四要素缺一不可）：
+1. 判定：有无失真 / 暂不可判；
+2. 观点句争议表述：引号标出具体词语（如「首次揭示」「石蜡切片观察」）；
+3. 论文对照：id= 编号 + 对应英文/中文关键表述；
+4. 语义变化说明（添加/遗漏/替换/程度变化）+ 标签理由。
+
+evidence_judgement / classification_reason / key_differences 禁止互相复制粘贴同一段话。带 retrieval_hint 时，evidence_judgement 必须交代补检句与 top-5 的关系（补检是否已回池、缺哪个具体表述）。
+
 - evidence_judgement：分句 × sentence_id × 支撑程度；top-5 是否覆盖关键断言。支撑用的 id 必须已列入 gold。
 - classification_reason：level2 的措辞对照；相邻类为何落败。
 - key_differences：有失真时必填；必须覆盖 primary_level2，有 secondary 则再写一条对应 type。不要漏掉 primary 的那一处措辞差（如「首次」）。
 - rag_review：top5_is_best；better_in_review_pool=更优 id 列表；notes 一句。
-- unsupported_diagnosis：仅证据不足/部分支撑时填 likely_retrieval_miss | likely_claim_error | uncertain，并给 keywords/句号范围；否则 verdict=not_applicable。
+- unsupported_diagnosis：仅证据不足/部分支撑时填 likely_retrieval_miss | likely_claim_error | uncertain，并给 keywords/句号范围；否则 verdict=not_applicable。likely_retrieval_miss 时 reasoning 必须指向**具体缺失表述**（如「缺 paraffin-embedded sections 的图注句（约 id=15/27）」），禁止泛写「检索不足/检索差」。
 - manual_check_hints：可执行动作（核对哪些 id）。
 - needs_manual_review：级别摇摆、金标难选、top-5 差、两类之间、复合句、uncovered、confidence≠high → true。
 - review_focus 选 1–3：evidence_level / gold_sentence_ids / rag_top5 / primary_label / secondary_label / noisy_retrieval / composite_claim / uncovered_phenomenon / none

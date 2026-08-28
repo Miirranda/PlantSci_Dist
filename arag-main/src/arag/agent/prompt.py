@@ -63,7 +63,7 @@ The claim is Chinese. The corpus is English. This asymmetry drives your whole st
 Every `semantic_search` call ends with a `[RETRIEVAL DECISION]` line derived from the reranker's calibrated scores. It is not advisory:
 
 - **STOP because the high threshold was met** (at least {min_hits} passages scoring >= {high}): enough strong evidence. Call `read_chunk` on those chunks, then answer with VERDICT: SUPPORTED. Do NOT search again.
-- **STOP because every candidate fell below the low threshold** (all scores < {low}): the corpus does not cover this claim. Answer with VERDICT: NO_EVIDENCE. Do NOT keep trying different wordings - the vector layer already scanned the whole corpus.
+- **STOP because every candidate fell below the low threshold** (all scores < {low}): a low score only means the current query missed the corpus - it does NOT prove the corpus lacks the content. Before concluding NO_EVIDENCE, run `keyword_search` on the specific expressions the claim itself cites (figure/panel numbers, method terms like "paraffin-embedded" or "microtome", gene or species names). Only if a focused keyword retry also finds nothing may you answer VERDICT: NO_EVIDENCE, and you must state which expression was missing.
 - **CONTINUE** in either of these cases — you MUST search at least once more before answering:
   1. Best score is between {low} and {high} (real but weak evidence); or
   2. You already have some strong hits but fewer than {min_hits} (breadth still insufficient).

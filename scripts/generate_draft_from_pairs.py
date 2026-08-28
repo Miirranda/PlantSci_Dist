@@ -282,12 +282,16 @@ def pool_index(pair: dict[str, Any]) -> dict[int, str]:
 
 def build_user_item(pair: dict[str, Any]) -> dict[str, Any]:
     classify, review = split_evidences(pair)
-    return {
+    item: dict[str, Any] = {
         "claim_id": pair["claim_id"],
         "claim_zh": pair.get("claim_zh") or "",
         "classify_top5_ids": [e["sentence_id"] for e in classify],
         "review_evidences": review,
     }
+    hint = str(pair.get("retrieval_hint") or "").strip()
+    if hint:
+        item["retrieval_hint"] = hint
+    return item
 
 
 def build_user_payload(

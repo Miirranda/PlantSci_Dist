@@ -255,8 +255,10 @@ def test_retrieval_output_json_shape():
         "evidence_count",
         "evidences",
         "stats",
+        "retrieval_sufficiency",
     }
     assert data["evidence_count"] == 0
+    assert data["retrieval_sufficiency"] is None
     # 中文不能被转义成 \uXXXX，下游要能直接读
     assert "检索增强" in output.to_json()
 

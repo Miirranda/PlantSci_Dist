@@ -12,6 +12,8 @@ from __future__ import annotations
 import hashlib
 import json
 import pickle
+import re
+from collections.abc import Sequence
 from pathlib import Path
 from typing import Any
 
@@ -169,6 +171,84 @@ class IndexStore:
         candidate = np.argpartition(-similarities, limit - 1)[:limit]
         ordered = candidate[np.argsort(-similarities[candidate])]
         return [(int(index), float(similarities[index])) for index in ordered]
+
+    def search_sentences_by_keywords(
+        self,
+        keywords: Sequence[str],
+        *,
+        anchors: Sequence[str] | None = None,
+        limit: int = 50,
+    ) -> list[tuple[int, str, str, list[str]]]:
+        """句级 case-insensitive 关键词补检，返回 [(sentence_id, chunk_id, text, matched_terms)]。
+
+        与 chunk 级 ``KeywordSearchTool`` 的分工：这里直接产出 sentence_id，供充分性补检
+        构建 ``Candidate`` 入看板，不再依赖 Agent 记得调用 read_chunk。
+
+        - 关键词：normalize 空白后 substring 匹配（"paraffin-embedded" 可命中
+          "paraffin-embedded sections"）；整体不中时回退词级匹配——每个词（长度>1）
+          或其剥后缀词干（-ation/-ing/-ed/-es/-s）在句中出现即算命中
+          （"paraffin sectioning" 可命中 "paraffin-embedded sections"）。
+        - 锚点（图号/基因名/物种名）：长度 <=4 的纯字母数字串用整词正则
+          ``(?<![a-z0-9])X(?![a-z0-9])`` 匹配，避免 "1b" 误中 "1-based"；更长的按 substring。
+        - 排序：命中关键词数 desc -> 命中锚点数 desc -> sentence_id asc，截断到 limit。
+        """
+        needle_kws = [
+            (str(kw), " ".join(str(kw).lower().split()))
+            for kw in keywords
+            if str(kw).strip()
+        ]
+        if not needle_kws:
+            return []
+
+        anchor_pats: list[tuple[str, re.Pattern[str] | None]] = []
+        for anchor in anchors or []:
+            anchor = str(anchor).strip()
+            if not anchor:
+                continue
+            lowered = anchor.lower()
+            if len(lowered) <= 4 and lowered.isalnum():
+                pattern = re.compile(r"(?<![a-z0-9])%s(?![a-z0-9])" % re.escape(lowered))
+            else:
+                pattern = None
+            anchor_pats.append((lowered, pattern))
+
+        def _stem(word: str) -> str:
+            """剥常见英语后缀的轻量词干：embedding/embedded -> embed，sectioning -> section。"""
+            for suffix in ("ation", "ing", "ed", "es", "s"):
+                if word.endswith(suffix) and len(word) - len(suffix) >= 4:
+                    return word[: -len(suffix)]
+            return word
+
+        def keyword_hit(needle: str, hay: str) -> bool:
+            if needle in hay:
+                return True
+            words = [w for w in needle.split() if len(w) > 1]
+            if not words:
+                return False
+            # 词级回退：容忍连字符/词形差异（checker 给 embedding、语料写 embedded）
+            return all(w in hay or _stem(w) in hay for w in words)
+
+        rows: list[tuple[int, str, str, list[str], int, int]] = []
+        for index, sentence in enumerate(self.sentences):
+            hay = sentence.lower()
+            terms = [kw for kw, needle in needle_kws if keyword_hit(needle, hay)]
+            if not terms:
+                continue
+            n_anchor = 0
+            for anchor, pattern in anchor_pats:
+                if pattern is not None:
+                    if pattern.search(hay):
+                        n_anchor += 1
+                elif anchor in hay:
+                    n_anchor += 1
+            rows.append(
+                (index, self.sentence_to_chunk[index], sentence, terms, len(terms), n_anchor)
+            )
+        rows.sort(key=lambda row: (-row[4], -row[5], row[0]))
+        return [
+            (sentence_id, chunk_id, text, terms)
+            for sentence_id, chunk_id, text, terms, _n_terms, _n_anchor in rows[:limit]
+        ]
 
     # ------------------------------------------------------------------ 上下文与元数据
 

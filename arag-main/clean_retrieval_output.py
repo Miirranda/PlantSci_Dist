@@ -116,6 +116,12 @@ def clean_record(
     verdict = record.get("verdict")
     if verdict:
         row["verdict"] = verdict
+    # 检索充分性补检仍未覆盖时的人工提示，透传给标注草稿脚本直接引用
+    sufficiency = record.get("retrieval_sufficiency")
+    if isinstance(sufficiency, dict):
+        hint = str(sufficiency.get("retrieval_hint") or "").strip()
+        if hint:
+            row["retrieval_hint"] = hint
     return row
 
 

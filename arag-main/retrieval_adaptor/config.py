@@ -60,6 +60,32 @@ class ThresholdConfig:
 
 
 @dataclass
+class SufficiencyConfig:
+    """检索充分性检查 + 程序化关键词补检的参数。
+
+    enabled           : 总开关。ARAG_SUFFICIENCY_ENABLED=0 时整个闭环跳过，
+                        行为与改造前逐字节一致（回滚开关）
+    max_rounds        : 每条 claim 最多几轮「检查 → 补检」，clamp 到 [1, 2]
+    top_n             : 第 1 轮喂给 LLM 的候选数；第 2 轮取 2*top_n
+    backfill_max_hits : 每次补检送进 rerank 打分的命中句上限（控 API 成本）
+    """
+
+    enabled: bool = True
+    max_rounds: int = 2
+    top_n: int = 5
+    backfill_max_hits: int = 30
+
+    @classmethod
+    def from_env(cls) -> SufficiencyConfig:
+        return cls(
+            enabled=get_bool("ARAG_SUFFICIENCY_ENABLED", True),
+            max_rounds=max(1, min(2, get_int("ARAG_SUFFICIENCY_MAX_ROUNDS", 2))),
+            top_n=max(1, get_int("ARAG_SUFFICIENCY_TOP_N", 5)),
+            backfill_max_hits=max(1, get_int("ARAG_SUFFICIENCY_BACKFILL_MAX_HITS", 30)),
+        )
+
+
+@dataclass
 class RetrievalConfig:
     """检索流水线配置。"""
 
@@ -88,6 +114,7 @@ class RetrievalConfig:
     max_evidences: int = 12
 
     thresholds: ThresholdConfig = field(default_factory=ThresholdConfig)
+    sufficiency: SufficiencyConfig = field(default_factory=SufficiencyConfig)
 
     @classmethod
     def from_env(cls) -> RetrievalConfig:
@@ -106,6 +133,7 @@ class RetrievalConfig:
             multi_query_from_terms=get_bool("ARAG_MULTI_QUERY_TERMS", True),
             max_evidences=get_int("ARAG_MAX_EVIDENCES", 12),
             thresholds=ThresholdConfig.from_env(),
+            sufficiency=SufficiencyConfig.from_env(),
         )
         if config.paper_id and not get_env("ARAG_INDEX_DIR"):
             from .paper_registry import apply_layout

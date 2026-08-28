@@ -27,6 +27,8 @@ STOP_LOW_THRESHOLD = "low_threshold_all_below"
 STOP_NO_CANDIDATE = "no_candidate_retrieved"
 STOP_ROUND_LIMIT = "round_limit_reached"
 CONTINUE_SEARCH = "continue_search"
+# 充分性补检后仍不足：低分/零召回只代表「当前检索没找着」，不代表论文无此内容
+STOP_INSUFFICIENT_HINT = "insufficient_retrieval_hint"
 
 
 @dataclass
