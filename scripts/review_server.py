@@ -1,24 +1,33 @@
 #!/usr/bin/env python3
-"""本地审核服务器：为 annotation draft 提供人工审核前端。
+"""本地审核服务器（零依赖、自包含，方便迁移给多人使用）。
 
 用法::
 
-    python scripts/review_server.py --paper P001 --article A001 [--port 8765]
+    python scripts/review_server.py                    # 扫描 data/annotations 下列表并交互选择
+    python scripts/review_server.py --list             # 仅列出可审核文件
+    python scripts/review_server.py --draft <file.json> [--port 8765] [--no-open]
 
-- 数据源   : data/annotations/{paper}/{paper}_{article}_annotation_draft_2_translated.json
-- 审核结果 : data/annotations/{paper}/{paper}_{article}_review_results.json
+- 数据源   : 任意 annotation draft JSON（含 samples + claim_zh + system_retrieval + analysis）
+- 审核结果 : 写回评测文件顶层 ``human_reviews`` 键，按审核人分列、多审核人并存（不互相覆盖）
 - 前端     : scripts/review_ui/index.html
 
-纯标准库 http.server，无第三方依赖。审核结果实时写回 review_results.json，
-可后续用脚本把 human_verified / 人工标签导回 draft。
+纯标准库 http.server，**不依赖 hallu / api_client / .env / API key**。
+失真分类体系为迁移用的内嵌副本，权威定义见 ``hallu/config.py``，改动需两边同步。
+
+多人协作模型：
+    每人负责不同的评测文件（按文章粒度分工）。审核人甲审完 → 结果写回评测文件
+    （``human_reviews`` 里有 human_verified=true）→ 把该文件导入乙的电脑 → 乙打开看到
+    甲的结果作为参考条，若有异议可填写自己的独立意见（存到自己的审核人名下）。
 """
 
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import sys
 import webbrowser
+from datetime import datetime
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any
@@ -28,41 +37,255 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 ROOT = SCRIPT_DIR.parent
 UI_DIR = SCRIPT_DIR / "review_ui"
 
-if str(ROOT) not in sys.path:
-    sys.path.insert(0, str(ROOT))
+# ---------------------------------------------------------------------------
+# 信息失真分类体系（distortion-v0.1）——内嵌副本，权威定义见 hallu/config.py
+# ---------------------------------------------------------------------------
 
-from hallu.config import (  # noqa: E402
-    DISTORTION_LABELS,
-    LEVEL1_LABELS,
-    NO_DISTORTION,
-    SEVERITY_VALUES,
-    UNCOVERED_PHENOMENA,
-)
+TAXONOMY: dict[str, Any] = {
+    "version": "distortion-v0.1",
+    "level1": {
+        "omission": {"zh": "信息删减", "en": "Omission"},
+        "addition": {"zh": "信息添加", "en": "Addition"},
+        "substitution": {"zh": "信息替换", "en": "Substitution"},
+    },
+    "labels": {
+        "context_omission": {
+            "level1": "omission",
+            "zh": "背景限定删减",
+            "en": "Context omission",
+            "definition": (
+                "删除论文中限定研究对象、环境、实验条件的信息（物种/品种/组织/"
+                "细胞类型/发育阶段/环境或处理条件），使结论看起来适用于更广情境。"
+                "核心问题：若恢复被删信息，公众号结论的适用范围是否会明显缩小？"
+            ),
+        },
+        "evidence_uncertainty_omission": {
+            "level1": "omission",
+            "zh": "证据与不确定性删减",
+            "en": "Evidence/Uncertainty omission",
+            "definition": (
+                "删除论文中表达证据强度、不确定程度或研究限制的信息（may/might/"
+                "suggest/indicate/potentially/preliminary），使结论显得更确定。"
+                "核心问题：删除的信息是否影响「这个结论有多确定」？"
+            ),
+        },
+        "mechanism_omission": {
+            "level1": "omission",
+            "zh": "机制删减",
+            "en": "Mechanism omission",
+            "definition": (
+                "删除论文中的关键作用机制，使研究发现被简化为更直接、更强的功能关系。"
+                "核心问题：删除机制后，科学关系是否被改变？合理机制压缩不算失真。"
+            ),
+        },
+        "function_application_addition": {
+            "level1": "addition",
+            "zh": "功能/应用添加",
+            "en": "Function/Application addition",
+            "definition": (
+                "增加论文没有证明的功能、用途或应用价值（如抗旱功能、育种应用）。"
+                "核心问题：公众号是否提出论文实验没有支持的新功能？"
+            ),
+        },
+        "significance_addition": {
+            "level1": "addition",
+            "zh": "意义/重要性添加",
+            "en": "Significance addition",
+            "definition": (
+                "增加论文没有支持的重要性评价（first/breakthrough/revolutionary/"
+                "key/critical 等）。已有「major regulator」转述为「重要作用」通常不算。"
+            ),
+        },
+        "relation_substitution": {
+            "level1": "substitution",
+            "zh": "关系替换",
+            "en": "Relation substitution",
+            "definition": (
+                "改变科学关系类型：相关→因果、关联→调控、影响→决定。"
+                "注意：contribute to / lead to / result in / drive 本身是因果动词，"
+                "对等翻译不算替换。"
+            ),
+        },
+        "magnitude_substitution": {
+            "level1": "substitution",
+            "zh": "作用程度替换",
+            "en": "Magnitude substitution",
+            "definition": (
+                "改变作用强弱、重要程度或贡献大小（如 contributes → determines）。"
+                "正常程度弱化（strongly increases → increases）通常不算失真。"
+            ),
+        },
+        "mechanism_substitution": {
+            "level1": "substitution",
+            "zh": "机制替换",
+            "en": "Mechanism substitution",
+            "definition": (
+                "将论文中的真实机制替换成另一种机制解释。"
+                "同义表达（regulates ABA pathway → participates in ABA signaling）不算。"
+            ),
+        },
+    },
+    "no_distortion": "no_distortion",
+    "severity": ["none", "mild", "moderate", "severe"],
+    "uncovered": {
+        "numerical_change": (
+            "精确数值被方向性改动（如 60%→超六成、10 亿→14 亿），"
+            "且不能归入 magnitude_substitution（程度词 contributes→determines）。"
+        ),
+        "semantic_contradiction": (
+            "与论文科学含义正负相反，且不能归入 relation_substitution / "
+            "mechanism_substitution。"
+        ),
+        "other": "现有 8 类无法覆盖的独立信息变化。",
+    },
+    "evidence_levels": ["With_Evidence", "Weak_Evidence", "No_Evidence"],
+}
 
 
 # ---------------------------------------------------------------------------
-# 失真分类体系（供前端渲染失真判断指南）
+# 完整判据（正例/反例/判断流程/不可标注区/易混对照）—— 来源见仓库根目录
+# 《植物科学科普文本信息失真标注规范 v0.1.md》《信息失真标签优先级和冲突决策树.md》
+# 前端据此把右侧「失真判断指南」从一句定义升级为可对号入座的判据。
 # ---------------------------------------------------------------------------
 
-def build_taxonomy() -> dict[str, Any]:
-    level1 = {k: {"zh": v["zh"], "en": v["en"]} for k, v in LEVEL1_LABELS.items()}
-    labels: dict[str, Any] = {}
-    for slug, info in DISTORTION_LABELS.items():
-        labels[slug] = {
-            "level1": info["level1"],
-            "zh": info["zh"],
-            "en": info["en"],
-            "definition": info["definition"],
-        }
-    return {
-        "version": "distortion-v0.1",
-        "level1": level1,
-        "labels": labels,
-        "no_distortion": NO_DISTORTION,
-        "severity": list(SEVERITY_VALUES),
-        "uncovered": UNCOVERED_PHENOMENA,
-        "evidence_levels": ["With_Evidence", "Weak_Evidence", "No_Evidence"],
-    }
+GUIDE: dict[str, Any] = {
+    # 判断流程：先证据级别，再失真类型
+    "judge_flow": [
+        {
+            "step": "Step 0",
+            "q": "证据能否支撑细粒度比对？",
+            "how": "完全找不到对应句 → No_Evidence；主题相关但证不充分 → Weak_Evidence；至少一句直接对应核心断言 → With_Evidence（继续）。不可核实 ≠ 已判定失真。",
+        },
+        {"step": "Step 1", "q": "公众号是否完全支持论文？", "how": "是 → No distortion，结束。"},
+        {
+            "step": "Step 2",
+            "q": "是否改变论文已有科学关系？",
+            "how": "关联→因果、间接→直接、机制被替换 → Substitution。",
+        },
+        {"step": "Step 3", "q": "是否增加论文没有的信息？", "how": "是 → Addition。"},
+        {"step": "Step 4", "q": "是否删除论文重要限定？", "how": "条件 / 不确定性 / 机制 → Omission。"},
+        {"step": "Step 5", "q": "是否存在第二个独立错误？", "how": "最多补一个 Secondary，不重复标同一个变化。"},
+    ],
+    # 不可标注区：这些不算失真，防止过度标注
+    "no_distortion_guide": [
+        {"name": "合理科学压缩", "p": "ABA activates SnRK2 kinases, which regulate downstream transcription factors…", "a": "ABA signaling regulates drought response.", "why": "机制细节减少，但科学关系保留"},
+        {"name": "术语通俗化", "p": "reactive oxygen species accumulation", "a": "植物产生氧化压力", "why": "专业术语转通俗"},
+        {"name": "同义表达转换", "p": "regulates", "a": "controls", "why": "普通语境下的同义"},
+        {"name": "去除非关键实验细节", "p": "after 24 hours treatment", "a": "after treatment", "why": "处理细节概括，不算"},
+        {"name": "正常程度弱化", "p": "strongly increases", "a": "increases", "why": "科普可能主动降低表达强度"},
+        {"name": "一般背景知识补充", "p": "Plants use photosynthesis.", "a": "Plants use sunlight to produce energy.", "why": "非针对该论文的新 claim"},
+    ],
+    # 易混对照：遇到不好选时，按 rule 判断
+    "confusions": [
+        {"a": "mechanism_omission", "b": "mechanism_substitution", "rule": "删掉机制 → omission；换成另一种机制 → substitution"},
+        {"a": "relation_substitution", "b": "magnitude_substitution", "rule": "关系类型没变、只是程度变（贡献→决定）→ magnitude；相关变因果 → relation"},
+        {"a": "context_omission", "b": "mechanism_omission", "rule": "删物种/条件导致范围扩大 → context；删机制链 → mechanism"},
+        {"a": "context_omission", "b": "evidence_uncertainty_omission", "rule": "删条件（范围）→ context；删 may/suggest（确定性）→ evidence"},
+        {"a": "function_application_addition", "b": "significance_addition", "rule": "新增应用预测 → function；新增价值评价（first/breakthrough）→ significance"},
+        {"a": "relation_substitution", "b": "mechanism_substitution", "rule": "机制被换成另一种 → mechanism（作 Primary）"},
+    ],
+    # 每类的核心判断问题 + 正例（pos）+ 反例（neg）
+    "examples": {
+        "context_omission": {
+            "judge": "恢复被删信息后，结论适用范围是否会明显缩小？",
+            "pos": [
+                {"p": "In Arabidopsis seedlings, Gene X increased under salt stress.", "a": "Gene X helps plants respond to salt stress.", "why": "删「拟南芥幼苗」→ 变成所有植物"},
+                {"p": "Gene X promotes resistance under drought stress conditions.", "a": "Gene X improves plant resistance.", "why": "删「干旱胁迫」条件"},
+            ],
+            "neg": [
+                {"p": "Gene X increased 3.5-fold after 24 hours of treatment.", "a": "Gene X increased after treatment.", "why": "处理细节概括，不算失真"},
+                {"p": "ABA activates SnRK2…", "a": "ABA signaling regulates drought response.", "why": "合理机制压缩"},
+            ],
+        },
+        "evidence_uncertainty_omission": {
+            "judge": "删除的信息是否影响「这个结论有多确定」？",
+            "pos": [
+                {"p": "Gene X may contribute to drought tolerance.", "a": "Gene X contributes to drought tolerance.", "why": "删 may → 显得更确定"},
+                {"p": "These results suggest that Gene X regulates stress response.", "a": "Gene X regulates stress response.", "why": "删 suggest"},
+            ],
+            "neg": [
+                {"p": "Gene X regulates drought tolerance.", "a": "Gene X definitely regulates drought tolerance.", "why": "加 definitely 是 Addition，不是删减"},
+                {"p": "Gene X has not been fully characterized.", "a": "Gene X controls drought resistance.", "why": "未知→已知，是 Substitution"},
+            ],
+        },
+        "mechanism_omission": {
+            "judge": "删除机制后，科学关系是否被改变？",
+            "pos": [
+                {"p": "Protein A activates pathway B, which regulates transcription factor C and affects drought response.", "a": "Protein A controls drought resistance.", "why": "删 A-B-C 链 → 间接调控变直接"},
+            ],
+            "neg": [
+                {"p": "ABA signaling regulates drought response through multiple pathways.", "a": "ABA signaling helps plants respond to drought.", "why": "合理总结，不算失真"},
+            ],
+        },
+        "function_application_addition": {
+            "judge": "是否提出论文实验没有支持的新功能/用途？",
+            "pos": [
+                {"p": "Gene X expression changes during drought stress.", "a": "Gene X improves drought resistance.", "why": "新增「抗旱功能」"},
+                {"p": "Gene X is involved in stress response.", "a": "Gene X can be used to breed drought-resistant crops.", "why": "新增「育种应用」"},
+            ],
+            "neg": [
+                {"p": "Gene X improves drought resistance.", "a": "Gene X may help crop breeding.", "why": "已有应用暗示，不一定错"},
+            ],
+        },
+        "significance_addition": {
+            "judge": "是否增加论文没有支持的重要性评价（first/breakthrough/key…）？",
+            "pos": [
+                {"p": "We identified Gene X involved in drought response.", "a": "Scientists discovered the world's first drought resistance gene.", "why": "新增「first」"},
+            ],
+            "neg": [
+                {"p": "Gene X is a major regulator.", "a": "Gene X plays an important role.", "why": "已有意义，不算"},
+            ],
+        },
+        "relation_substitution": {
+            "judge": "是否改变科学关系类型（相关→因果、关联→调控）？",
+            "pos": [
+                {"p": "Gene X is associated with drought response.", "a": "Gene X controls drought resistance.", "why": "相关 → 因果"},
+            ],
+            "neg": [
+                {"p": "Gene X regulates drought response.", "a": "Gene X is involved in drought response.", "why": "只是弱化，不算替换"},
+            ],
+        },
+        "magnitude_substitution": {
+            "judge": "是否改变作用强弱 / 贡献大小？",
+            "pos": [
+                {"p": "Gene X contributes to drought tolerance.", "a": "Gene X determines drought resistance.", "why": "贡献 → 决定"},
+            ],
+            "neg": [
+                {"p": "Gene X strongly affects drought tolerance.", "a": "Gene X affects drought tolerance.", "why": "弱化不算失真"},
+            ],
+        },
+        "mechanism_substitution": {
+            "judge": "是否把论文真实机制换成另一种机制？",
+            "pos": [
+                {"p": "Gene X affects drought response through ABA signaling.", "a": "Gene X directly protects plant cells from dehydration.", "why": "机制被替换"},
+            ],
+            "neg": [
+                {"p": "Gene X regulates ABA pathway.", "a": "Gene X participates in ABA signaling.", "why": "同义表达，不算"},
+            ],
+        },
+    },
+}
+
+
+# ---------------------------------------------------------------------------
+# 文件发现（按文件粒度分工：每人负责不同评测文件）
+# ---------------------------------------------------------------------------
+
+def discover_reviewables() -> list[Path]:
+    """扫描 data/annotations 下的可审核文件。
+
+    约定：最终待审核版本统一存为 ``<PAPER>_<ARTICLE>_annotation_draft.json``，
+    只认这一种命名；_translated / _draft_2 / _readable 等中间产物一律不扫。
+    """
+    base = ROOT / "data" / "annotations"
+    if not base.exists():
+        return []
+    out: list[Path] = []
+    for p in sorted(base.rglob("*_annotation_draft.json")):
+        if ".bak" in p.name:
+            continue
+        out.append(p)
+    return out
 
 
 # ---------------------------------------------------------------------------
@@ -74,17 +297,29 @@ def load_draft(path: Path) -> dict[str, Any]:
         return json.load(f)
 
 
-def load_results(path: Path) -> dict[str, Any]:
-    if not path.exists():
+def load_sentence_index(paper_id: str) -> dict[int, str]:
+    """读取某篇论文的句表（**只读**），构建 sentence_id -> 文本 索引。
+
+    句表位置：``data/annotations/{paper_id}/{paper_id}_sentences.csv``。
+    仅用于前端「点击证据句展开上下文」，绝不改写 CSV。
+    空 sentence_id 的行（如 front_matter / 作者 / 日期行）跳过。
+    """
+    if not paper_id:
         return {}
+    csv_path = ROOT / "data" / "annotations" / paper_id / (paper_id + "_sentences.csv")
+    if not csv_path.exists():
+        return {}
+    index: dict[int, str] = {}
     try:
-        with path.open(encoding="utf-8") as f:
-            raw = json.load(f)
-    except (json.JSONDecodeError, OSError):
+        with csv_path.open(encoding="utf-8-sig", newline="") as f:
+            for row in csv.DictReader(f):
+                sid = (row.get("sentence_id") or "").strip()
+                if not sid.isdigit():
+                    continue
+                index[int(sid)] = (row.get("text") or "").strip()
+    except Exception:
         return {}
-    if isinstance(raw, dict) and isinstance(raw.get("results"), dict):
-        return raw
-    return {}
+    return index
 
 
 def _pick_sample_fields(sample: dict[str, Any]) -> dict[str, Any]:
@@ -147,13 +382,15 @@ def _pick_sample_fields(sample: dict[str, Any]) -> dict[str, Any]:
 class ReviewHandler(BaseHTTPRequestHandler):
     server_version = "ReviewServer/1.0"
 
-    # 由 server 实例注入的共享状态
+    # 由 main() 注入的共享状态
     samples: list[dict[str, Any]] = []
-    taxonomy: dict[str, Any] = {}
-    results: dict[str, Any] = {}
-    results_path: Path | None = None
+    taxonomy: dict[str, Any] = TAXONOMY
+    human_reviews: dict[str, Any] = {}
+    sentences: dict[int, str] = {}
+    draft_path: Path | None = None
+    meta: dict[str, Any] = {}
 
-    def log_message(self, fmt: str, *args: Any) -> None:  # 简化日志
+    def log_message(self, fmt: str, *args: Any) -> None:
         sys.stderr.write("[%s] %s\n" % (self.address_string(), fmt % args))
 
     # -- 响应辅助 --
@@ -186,12 +423,25 @@ class ReviewHandler(BaseHTTPRequestHandler):
         except json.JSONDecodeError:
             return {}
 
+    # -- 持久化：写回评测文件 human_reviews 键 --
+
+    def _persist(self) -> None:
+        if self.draft_path is None:
+            return
+        draft = load_draft(self.draft_path)
+        draft["human_reviews"] = self.human_reviews
+        tmp = self.draft_path.with_suffix(self.draft_path.suffix + ".tmp")
+        with tmp.open("w", encoding="utf-8") as f:
+            json.dump(draft, f, ensure_ascii=False, indent=2)
+            f.write("\n")
+        tmp.replace(self.draft_path)
+
     # -- 路由 --
 
     def do_GET(self) -> None:
         path = urlparse(self.path).path
         if path in ("/", "/index.html"):
-            html = (UI_DIR / "index.html")
+            html = UI_DIR / "index.html"
             if html.exists():
                 self._send_file(html, "text/html; charset=utf-8")
             else:
@@ -199,9 +449,11 @@ class ReviewHandler(BaseHTTPRequestHandler):
         elif path == "/api/data":
             self._send_json(
                 {
+                    "meta": self.meta,
                     "samples": self.samples,
                     "taxonomy": self.taxonomy,
-                    "results": self.results,
+                    "human_reviews": self.human_reviews,
+                    "sentences": self.sentences,
                 }
             )
         else:
@@ -213,7 +465,11 @@ class ReviewHandler(BaseHTTPRequestHandler):
             self._send_json({"error": "not found"}, 404)
             return
         payload = self._read_body()
+        reviewer = str(payload.get("reviewer") or "").strip()
         sample_id = str(payload.get("sample_id") or "").strip()
+        if not reviewer:
+            self._send_json({"ok": False, "error": "缺少审核人 reviewer"}, 400)
+            return
         if not sample_id:
             self._send_json({"ok": False, "error": "缺少 sample_id"}, 400)
             return
@@ -226,76 +482,126 @@ class ReviewHandler(BaseHTTPRequestHandler):
             "severity": str(payload.get("severity") or "").strip(),
             "uncovered_phenomenon": str(payload.get("uncovered_phenomenon") or "").strip(),
             "note": str(payload.get("note") or "").strip(),
+            "gold_sentence_ids": [
+                int(x) for x in (payload.get("gold_sentence_ids") or [])
+                if isinstance(x, int) or (isinstance(x, str) and x.strip().isdigit())
+            ],
+            "updated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         }
-        self.results.setdefault("results", {})[sample_id] = record
-        if self.results_path is not None:
-            tmp = self.results_path.with_suffix(self.results_path.suffix + ".tmp")
-            with tmp.open("w", encoding="utf-8") as f:
-                json.dump(self.results, f, ensure_ascii=False, indent=2)
-                f.write("\n")
-            tmp.replace(self.results_path)
-        self._send_json({"ok": True, "record": record})
+        # 更新内存：当前审核人名下这条样本的记录，不动其他人的
+        self.human_reviews.setdefault(reviewer, {})[sample_id] = record
+        self._persist()
+        self._send_json({"ok": True, "reviewer": reviewer, "record": record})
+
+
+# ---------------------------------------------------------------------------
+# 启动
+# ---------------------------------------------------------------------------
+
+def _pick_interactive() -> Path | None:
+    files = discover_reviewables()
+    if not files:
+        return None
+    if len(files) == 1:
+        return files[0]
+    print("可审核的评测文件：")
+    for i, p in enumerate(files, 1):
+        rel = p.relative_to(ROOT) if str(p).startswith(str(ROOT)) else p
+        print("  [%d] %s" % (i, rel))
+    while True:
+        try:
+            raw = input("输入序号（默认 1）: ").strip()
+            idx = int(raw) if raw else 1
+            if 1 <= idx <= len(files):
+                return files[idx - 1]
+        except (ValueError, EOFError):
+            pass
+        print("序号无效，请重试。")
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="标注草稿本地审核服务器")
-    parser.add_argument("--paper", required=True, help="如 P001")
-    parser.add_argument("--article", required=True, help="如 A001")
-    parser.add_argument("--draft", default="", help="草稿 JSON 路径（默认 translated 版）")
+    try:  # Windows 控制台中文正常显示（配合 start_review.bat 的 chcp 65001）
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+    parser = argparse.ArgumentParser(description="标注草稿本地审核服务器（零依赖）")
+    parser.add_argument("--draft", default="", help="评测文件 JSON 路径")
+    parser.add_argument("--list", action="store_true", help="列出可审核文件后退出")
     parser.add_argument("--port", type=int, default=8765)
     parser.add_argument("--no-open", action="store_true", help="不自动打开浏览器")
     args = parser.parse_args()
 
-    paper = args.paper.strip().upper()
-    article = args.article.strip().upper()
+    if args.list:
+        files = discover_reviewables()
+        if not files:
+            print("未找到可审核文件（data/annotations 下无 *_translated.json / *_draft_2.json）。")
+        else:
+            print("可审核的评测文件（共 %d 份）：" % len(files))
+            for i, p in enumerate(files, 1):
+                rel = p.relative_to(ROOT) if str(p).startswith(str(ROOT)) else p
+                print("  [%d] %s" % (i, rel))
+        return 0
 
     if args.draft:
         draft_path = Path(args.draft)
+        if not draft_path.is_absolute():
+            draft_path = ROOT / draft_path
+        draft_path = draft_path.resolve()
     else:
-        draft_path = (
-            ROOT / "data" / "annotations" / paper
-            / ("%s_%s_annotation_draft_2_translated.json" % (paper, article))
+        draft_path = _pick_interactive()
+
+    if draft_path is None:
+        raise SystemExit(
+            "未指定评测文件。用法：python scripts/review_server.py --draft <评测文件.json>\n"
+            "或先把评测文件放到 data/annotations/ 下。"
         )
-    if not draft_path.is_absolute():
-        draft_path = ROOT / draft_path
-    draft_path = draft_path.resolve()
     if not draft_path.exists():
-        raise SystemExit("找不到草稿: %s" % draft_path)
+        raise SystemExit("找不到评测文件: %s" % draft_path)
 
-    results_path = (
-        ROOT / "data" / "annotations" / paper
-        / ("%s_%s_review_results.json" % (paper, article))
-    )
-
-    draft = load_draft(draft_path)
+    try:
+        draft = load_draft(draft_path)
+    except json.JSONDecodeError as e:
+        raise SystemExit(
+            "评测文件不是合法严格 JSON：%s\n%s\n"
+            "提示：这可能是给人看的排版稿（*_readable.json，含真实换行/尾逗号/注释）。"
+            "请把 *_translated.json 或严格 JSON 版的内容存为该文件后重试。" % (draft_path, e)
+        )
     samples = [_pick_sample_fields(s) for s in (draft.get("samples") or [])]
     if not samples:
-        raise SystemExit("草稿里没有 samples: %s" % draft_path)
+        raise SystemExit("评测文件里没有 samples: %s" % draft_path)
 
-    taxonomy = build_taxonomy()
-    results = load_results(results_path)
+    human_reviews = draft.get("human_reviews") or {}
+    meta = {
+        "file": str(draft_path.relative_to(ROOT)) if str(draft_path).startswith(str(ROOT)) else str(draft_path),
+        "paper_id": draft.get("paper_id") or "",
+        "article_id": draft.get("article_id") or "",
+        "sample_count": len(samples),
+        "reviewers": sorted(human_reviews.keys()),
+    }
 
     handler = ReviewHandler
     handler.samples = samples
-    handler.taxonomy = taxonomy
-    handler.results = results
-    handler.results_path = results_path
+    handler.taxonomy = {**TAXONOMY, "guide": GUIDE}
+    handler.human_reviews = human_reviews
+    handler.sentences = load_sentence_index(draft.get("paper_id") or "")
+    handler.draft_path = draft_path
+    handler.meta = meta
 
     server = ThreadingHTTPServer(("127.0.0.1", args.port), handler)
     url = "http://127.0.0.1:%d/" % args.port
     print("=" * 56)
-    print("  标注审核服务器已启动")
-    print("  草稿   : %s (%d 条)" % (draft_path, len(samples)))
-    print("  结果   : %s" % results_path)
-    print("  地址   : %s" % url)
-    print("  退出   : Ctrl+C")
+    print("  Review server started")
+    print("  draft  : %s (%d samples)" % (draft_path, len(samples)))
+    print("  url    : %s" % url)
+    print("  quit   : Ctrl+C")
     print("=" * 56, flush=True)
     if not args.no_open:
         webbrowser.open(url)
     try:
         server.serve_forever()
     except KeyboardInterrupt:
-        print("\n已停止。")
+        print("\nStopped.")
     return 0
 
 
