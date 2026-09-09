@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>失真审核</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div>
+    <div class="title">失真审核（文件2）</div>
+    <div class="subtitle" id="subtitle">加载中…</div>
+  </div>
+  <label class="reviewer-box">
+    <span>审核人</span>
+    <input id="reviewerInput" placeholder="填写你的姓名">
+  </label>
+  <div class="progress">
+    <span id="posText">0/0</span>
+    <span class="bar"><i id="barFill" style="width:0%"></i></span>
+    <span id="doneText">我的进度 0</span>
+  </div>
+  <div class="nav">
+    <button id="prevBtn" title="上一条">← 上一条</button>
+    <button id="nextBtn" title="下一条">下一条 →</button>
+    <span class="jump">
+      <input id="jumpInput" type="number" min="1" placeholder="#">
+      <button id="jumpBtn">跳转</button>
+    </span>
+    <button id="nextTodoBtn" title="跳到下一条未审核">下一条未审核</button>
+  </div>
+</header>
+
+<div class="layout">
+  <div class="main-col">
+
+    <!-- 观点句 -->
+    <div class="card claim-card">
+      <div class="card-title"><span class="dot"></span>观点句（公众号）</div>
+      <div class="claim-text" id="claimText">—</div>
+      <div class="claim-meta" id="claimMeta"></div>
+    </div>
+
+    <!-- 证据句（勾选 + 人工找回 + 翻译） -->
+    <div class="card">
+      <div class="card-title"><span class="dot" style="background:#0f766e"></span>证据句（勾选 gold + 人工找回 + 翻译）</div>
+      <div id="reviewedEvList"></div>
+    </div>
+
+    <!-- AI 辅助分析 -->
+    <div class="card">
+      <div class="card-title"><span class="dot" style="background:#7c3aed"></span>AI 辅助分析<span id="aiFreshBadge"></span></div>
+      <div id="aiContent"></div>
+    </div>
+
+    <!-- 人工审核操作（失真类别） -->
+    <div class="op-section">
+      <div class="card-title"><span class="dot"></span>人工审核操作 · 失真类别</div>
+
+      <div class="op-group">
+        <div class="op-label">证据充分性 <small>(evidence_level)</small></div>
+        <div class="label-row" id="elRow"></div>
+      </div>
+
+      <div class="op-group">
+        <div class="op-label">失真类型 <small>(primary_level2 · 快捷键 1-9)</small></div>
+        <div class="label-row" id="primaryRow"></div>
+      </div>
+
+      <div class="op-group">
+        <div class="op-label">次要失真 <small>(secondary_level2，可选)</small></div>
+        <div class="label-row" id="secondaryRow"></div>
+      </div>
+
+      <div class="op-group">
+        <div class="op-label">严重程度 <small>(severity)</small></div>
+        <div class="severity-row" id="severityRow"></div>
+      </div>
+
+      <div class="op-group">
+        <div class="op-label">未覆盖现象 <small>(uncovered_phenomenon，8 类之外)</small></div>
+        <div class="label-row" id="uncoveredRow"></div>
+      </div>
+
+      <div class="op-group">
+        <div class="op-label">人工备注 <small>(note)</small></div>
+        <textarea class="note-area" id="noteArea" placeholder="补充审核意见…"></textarea>
+      </div>
+
+      <div class="op-actions">
+        <button class="btn-primary" id="saveBtn">保存 (S)</button>
+        <label class="done-toggle">
+          <input type="checkbox" id="doneCheck">
+          <span>标记已完成审核 (human_verified)</span>
+        </label>
+        <span class="save-status" id="saveStatus"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 右栏：AI 结论 + 失真判断指南 -->
+  <aside class="side-col">
+    <div class="card" style="margin-bottom:10px">
+      <div class="card-title"><span class="dot" style="background:#7c3aed"></span>AI 结论</div>
+      <div id="aiSideContent"></div>
+    </div>
+    <div class="card" style="margin-bottom:10px">
+      <div class="card-title"><span class="dot" style="background:#d97706"></span>失真判断指南</div>
+      <div id="guideContent"></div>
+    </div>
+  </aside>
+</div>
+
+<div class="footer-hint">
+  失真审核：<span class="kbd">←</span> 上一条 · <span class="kbd">→</span> 保存并下一条 · <span class="kbd">S</span> 保存 ·
+  <span class="kbd">1-9</span> 选失真类型 · <span class="kbd">D</span> 标记完成
+</div>
+
+<script>
+/* ================= 常量 ================= */
+const SEV_ZH = { none: '无', mild: '轻度', moderate: '中度', severe: '重度' };
+const UNC_ZH = { numerical_change: '数值改动', semantic_contradiction: '语义相反', other: '其他' };
+const EL_ZH = { With_Evidence: '有证据', Weak_Evidence: '证据弱', No_Evidence: '无证据' };
+
+/* ================= 状态 ================= */
+const state = {
+  samples: [],
+  taxonomy: null,
+  meta: null,
+  humanReviews: {},
+  reviewer: '',
+  index: 0,
+  dirty: false,
+  savedAt: null,
+  el: '', primary: '', secondary: '', severity: '', uncovered: '', note: '', done: false,
+};
+
+const $ = id => document.getElementById(id);
+
+function myRecords() { return state.humanReviews[state.reviewer] || {}; }
+function labelZh(slug) {
+  if (!slug) return '未选类型';
+  if (slug === state.taxonomy.no_distortion) return '无失真';
+  return state.taxonomy.labels[slug]?.zh || slug;
+}
+
+/* ================= 数据加载 ================= */
+async function load() {
+  const res = await fetch('/api/data');
+  const data = await res.json();
+  state.samples = data.samples;
+  state.taxonomy = data.taxonomy;
+  state.meta = data.meta;
+  state.humanReviews = data.human_reviews || {};
+  state.reviewer = localStorage.getItem('reviewer_name') || '';
+  $('reviewerInput').value = state.reviewer;
+  $('subtitle').textContent = `${data.meta.file || ''} · ${state.samples.length} 条样本`;
+
+  buildGuide();
+  buildSelectors();
+
+  let start = 0;
+  const mine = myRecords();
+  for (let i = 0; i < state.samples.length; i++) {
+    const sid = state.samples[i].sample_id;
+    if (!mine[sid] || !mine[sid].human_verified) { start = i; break; }
+  }
+  state.index = start;
+  render();
+}
+
+/* ================= 失真指南 ================= */
+function buildGuide() {
+  const t = state.taxonomy;
+  const guide = t.guide || {};
+  const labels = t.labels;
+  const groups = { omission: [], addition: [], substitution: [] };
+  for (const [slug, info] of Object.entries(labels)) groups[info.level1].push({ slug, ...info });
+  const order = [['omission', '信息删减 Omission', 'omission'],
+                  ['addition', '信息添加 Addition', 'addition'],
+                  ['substitution', '信息替换 Substitution', 'substitution']];
+
+  let html = '';
+
+  if (guide.judge_flow && guide.judge_flow.length) {
+    html += `<div class="guide-group"><div class="guide-group-head none">第一步 · 判断流程（先定证据级别，再定失真类型）</div>`;
+    for (const st of guide.judge_flow) {
+      html += `<div class="flow-item">
+        <div class="flow-step">${escapeHtml(st.step)}</div>
+        <div class="flow-q">${escapeHtml(st.q)}</div>
+        <div class="flow-how">${escapeHtml(st.how)}</div>
+      </div>`;
+    }
+    html += `</div>`;
+  }
+
+  html += `<div class="guide-group">
+    <div class="guide-group-head none">无失真</div>
+    <div class="guide-item none" data-slug="${t.no_distortion}" data-lv="none">
+      <div class="g-head"><span class="g-zh">无失真</span><span class="g-en">no distortion</span></div>
+      <div class="g-def">观点句相对论文含义准确，合理压缩/同义/术语通俗化不算失真。</div>
+    </div>
+  </div>`;
+
+  for (const [key, title, cls] of order) {
+    html += `<div class="guide-group"><div class="guide-group-head ${cls}">${title}</div>`;
+    for (const g of groups[key]) {
+      const ex = (guide.examples && guide.examples[g.slug]) || {};
+      html += `<div class="guide-item ${cls}" data-slug="${g.slug}" data-lv="${cls}">
+        <div class="g-head"><span class="g-zh">${g.zh}</span><span class="g-en">${g.en}</span></div>
+        <div class="g-slug">${g.slug}</div>
+        <div class="g-def">${escapeHtml(g.definition)}</div>
+        ${ex.judge ? `<div class="g-judge">判断：${escapeHtml(ex.judge)}</div>` : ''}
+        ${renderExamples(ex.pos, '正例（算失真）', 'pos')}
+        ${renderExamples(ex.neg, '反例（不算）', 'neg')}
+        <div class="g-hint">点击展开细则</div>
+      </div>`;
+    }
+    html += `</div>`;
+  }
+
+  if (guide.no_distortion_guide && guide.no_distortion_guide.length) {
+    html += `<div class="guide-group"><div class="guide-group-head none">哪些情况不算失真（别误标）</div>`;
+    for (const n of guide.no_distortion_guide) {
+      html += `<div class="nd-item">
+        <div class="nd-name">${escapeHtml(n.name)}</div>
+        <div class="nd-row"><span class="nd-lab">论文</span> ${escapeHtml(n.p)}</div>
+        <div class="nd-row"><span class="nd-lab">公众号</span> ${escapeHtml(n.a)}</div>
+        ${n.why ? `<div class="nd-why">${escapeHtml(n.why)}</div>` : ''}
+      </div>`;
+    }
+    html += `</div>`;
+  }
+
+  if (guide.confusions && guide.confusions.length) {
+    html += `<div class="guide-group"><div class="guide-group-head none">易混对照（选不出来看这里）</div>`;
+    for (const c of guide.confusions) {
+      html += `<div class="conf-item">
+        <div class="conf-pair"><span>${escapeHtml(labelZh(c.a))}</span> vs <span>${escapeHtml(labelZh(c.b))}</span></div>
+        <div class="conf-rule">${escapeHtml(c.rule)}</div>
+      </div>`;
+    }
+    html += `</div>`;
+  }
+
+  html += `<div class="guide-group"><div class="guide-group-head none">8 类之外的现象</div>`;
+  for (const [k, def] of Object.entries(t.uncovered || {})) {
+    html += `<div class="guide-item none" data-unc="${k}">
+      <div class="g-head"><span class="g-zh">${UNC_ZH[k] || k}</span><span class="g-en">${k}</span></div>
+      <div class="g-def">${escapeHtml(def)}</div>
+      <div class="g-hint">点击展开细则</div>
+    </div>`;
+  }
+  html += `</div>`;
+  $('guideContent').innerHTML = html;
+
+  $('guideContent').querySelectorAll('.guide-item').forEach(el => {
+    el.addEventListener('click', () => {
+      el.classList.toggle('open');
+      const unc = el.dataset.unc;
+      if (unc) { setUncovered(unc); return; }
+      const slug = el.dataset.slug;
+      if (slug === state.taxonomy.no_distortion || state.taxonomy.labels[slug]) setPrimary(slug);
+    });
+  });
+}
+
+function renderExamples(list, title, cls) {
+  if (!list || !list.length) return '';
+  let html = `<div class="ex-block ${cls}"><div class="ex-title">${title}</div>`;
+  for (const e of list) {
+    html += `<div class="ex-item">
+      <div class="ex-row"><span class="ex-lab">论文</span> ${escapeHtml(e.p)}</div>
+      <div class="ex-row"><span class="ex-lab">公众号</span> ${escapeHtml(e.a)}</div>
+      ${e.why ? `<div class="ex-why">${escapeHtml(e.why)}</div>` : ''}
+    </div>`;
+  }
+  html += `</div>`;
+  return html;
+}
+
+/* ================= 操作区选择器 ================= */
+function buildSelectors() {
+  const t = state.taxonomy;
+
+  $('elRow').innerHTML = t.evidence_levels.map(e =>
+    `<button class="label-btn nodist" data-el="${e}">${e}</button>`).join('');
+
+  const order = ['omission', 'addition', 'substitution'];
+  let pri = `<button class="label-btn nodist" data-p="${t.no_distortion}">无失真</button>`;
+  for (const lv of order) {
+    for (const [slug, info] of Object.entries(t.labels)) {
+      if (info.level1 === lv) pri += `<button class="label-btn lv-${lv}" data-p="${slug}" title="${escapeHtml(info.definition)}">${info.zh}</button>`;
+    }
+  }
+  $('primaryRow').innerHTML = pri;
+
+  let sec = `<button class="label-btn nodist" data-s="">无</button>`;
+  for (const [slug, info] of Object.entries(t.labels)) {
+    sec += `<button class="label-btn lv-${info.level1}" data-s="${slug}">${info.zh}</button>`;
+  }
+  $('secondaryRow').innerHTML = sec;
+
+  $('severityRow').innerHTML = t.severity.map(s =>
+    `<button class="sev-btn sev-${s}" data-sev="${s}">${SEV_ZH[s] || s}</button>`).join('');
+
+  let unc = `<button class="label-btn nodist" data-u="">无</button>`;
+  for (const [k, def] of Object.entries(t.uncovered || {})) {
+    unc += `<button class="label-btn lv-unc" data-u="${k}" title="${escapeHtml(def)}">${UNC_ZH[k] || k}</button>`;
+  }
+  $('uncoveredRow').innerHTML = unc;
+
+  $('elRow').querySelectorAll('button').forEach(b => b.onclick = () => setEl(b.dataset.el));
+  $('primaryRow').querySelectorAll('button').forEach(b => b.onclick = () => setPrimary(b.dataset.p));
+  $('secondaryRow').querySelectorAll('button').forEach(b => b.onclick = () => setSecondary(b.dataset.s));
+  $('severityRow').querySelectorAll('button').forEach(b => b.onclick = () => setSeverity(b.dataset.sev));
+  $('uncoveredRow').querySelectorAll('button').forEach(b => b.onclick = () => setUncovered(b.dataset.u));
+  $('noteArea').addEventListener('input', e => { state.note = e.target.value; state.dirty = true; });
+  $('doneCheck').addEventListener('change', e => { state.done = e.target.checked; state.dirty = true; });
+  $('reviewerInput').addEventListener('input', e => {
+    state.reviewer = e.target.value.trim();
+    localStorage.setItem('reviewer_name', state.reviewer);
+  });
+}
+
+function setEl(v) { state.el = v; state.dirty = true; refreshOpUI(); }
+function setPrimary(v) {
+  state.primary = v; state.dirty = true;
+  if (v === state.taxonomy.no_distortion) {
+    state.severity = state.severity || 'none';
+  } else if (!state.severity || state.severity === 'none') {
+    state.severity = 'moderate';
+  }
+  refreshOpUI();
+}
+function setSecondary(v) { state.secondary = v; state.dirty = true; refreshOpUI(); }
+function setSeverity(v) { state.severity = v; state.dirty = true; refreshOpUI(); }
+function setUncovered(v) { state.uncovered = v; state.dirty = true; refreshOpUI(); }
+
+function refreshOpUI() {
+  $('elRow').querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.el === state.el));
+  $('primaryRow').querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.p === state.primary));
+  $('secondaryRow').querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.s === state.secondary));
+  $('severityRow').querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.sev === state.severity));
+  $('uncoveredRow').querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.u === state.uncovered));
+  $('guideContent').querySelectorAll('.guide-item').forEach(el => {
+    el.classList.toggle('sel', el.dataset.slug === state.primary || (el.dataset.unc && el.dataset.unc === state.uncovered));
+  });
+}
+
+/* ================= 渲染当前样本 ================= */
+function render() {
+  const s = state.samples[state.index];
+  if (!s) return;
+
+  const mine = myRecords();
+  const r = mine[s.sample_id] || {};
+  const gen = r.generated_analysis || {};
+
+  // 预选（AI 二次生成建议为默认值，本人已存值优先）
+  state.el = r.evidence_level || gen.evidence_level || '';
+  state.primary = r.primary_level2 || gen.primary_label?.level2 || '';
+  state.secondary = r.secondary_level2 || gen.secondary_label?.level2 || '';
+  state.severity = r.severity || gen.severity || '';
+  state.uncovered = r.uncovered_phenomenon || '';
+  state.note = r.note || '';
+  state.done = !!(r.human_verified !== undefined ? r.human_verified : false);
+  state.dirty = false;
+  state.savedAt = null;
+
+  const n = state.samples.length;
+  $('posText').textContent = `${state.index + 1}/${n}`;
+  $('barFill').style.width = `${((state.index + 1) / n) * 100}%`;
+  const doneCount = Object.values(mine).filter(x => x.human_verified).length;
+  $('doneText').textContent = `我的进度 ${doneCount}`;
+  $('prevBtn').disabled = state.index === 0;
+  $('nextBtn').disabled = state.index === n - 1;
+
+  $('claimText').textContent = s.claim_zh || '（无）';
+  $('claimMeta').innerHTML = `<span>sample_id: ${escapeHtml(s.sample_id)}</span>`;
+
+  renderReviewedEvidences(s);
+  renderAI(s, gen);
+  renderAISide(s, gen);
+  $('noteArea').value = state.note;
+  $('doneCheck').checked = state.done;
+  refreshOpUI();
+
+  $('saveStatus').textContent = '';
+}
+
+/* 证据句：文件2 里冻结的勾选 gold 句 + 人工找回段落（带翻译） */
+function renderReviewedEvidences(s) {
+  const r = myRecords()[s.sample_id] || {};
+  const gold = r.gold_evidences || [];
+  const manual = r.manual_retrieved_paragraphs || [];
+  const items = [];
+  for (const g of gold) {
+    items.push({ kind: 'gold', sentence_id: g.sentence_id, text: g.text || '', text_zh: g.text_zh || '' });
+  }
+  for (const p of manual) {
+    items.push({ kind: 'manual', sentence_id: null, text: p.text || '', text_zh: p.text_zh || '' });
+  }
+  if (!items.length) {
+    $('reviewedEvList').innerHTML = '<div style="color:#94a3b8">（暂无证据句——该样本可能尚未完成召回审核或未二次生成，请先运行 regenerate_analysis.py）</div>';
+    return;
+  }
+  $('reviewedEvList').innerHTML = items.map(e => {
+    const isManual = e.kind === 'manual';
+    const rank = isManual ? '人工' : '★';
+    const sid = isManual ? '人工找回' : `id=${e.sentence_id}`;
+    const zh = e.text_zh ? escapeHtml(e.text_zh) : '<span class="ev-zh pending">（待补翻译）</span>';
+    return `<div class="ev-item ${isManual ? 'manual' : ''}">
+      <div class="ev-rank">${rank}</div>
+      <div class="ev-body">
+        <div class="ev-en">${escapeHtml(e.text)}</div>
+        <div class="ev-zh">${zh}</div>
+      </div>
+      <div class="ev-sid">${sid}</div>
+    </div>`;
+  }).join('');
+}
+
+function renderAI(s, gen) {
+  const hasGen = !!(gen && gen.generated_at);
+  const badge = hasGen
+    ? '<span class="stage-badge fresh">已基于人工召回二次生成</span>'
+    : '<span class="stage-badge stale">未二次生成（请先运行 regenerate_analysis.py）</span>';
+  $('aiFreshBadge').innerHTML = badge;
+
+  if (!hasGen) {
+    $('aiContent').innerHTML = '<div style="color:#94a3b8;font-size:13px">该样本尚未二次生成失真分析。请回到文件1 完成召回审核后运行脚本生成文件2。</div>';
+    return;
+  }
+
+  const lv = gen.evidence_level;
+  const lvZh = EL_ZH[lv] || lv;
+  const priZh = labelZh(gen.primary_label?.level2);
+  const secZh = gen.secondary_label?.level2 ? labelZh(gen.secondary_label.level2) : null;
+  const hasDistortion = !!(gen.primary_label && gen.primary_label.level2);
+
+  let html = `<div class="ai-verdict">
+    <span class="chip el-${lv}">${lvZh || '—'}</span>
+    ${hasDistortion ? `<span class="chip">失真类型：${escapeHtml(priZh)}</span>` : '<span class="chip">AI 判：无失真</span>'}
+    ${secZh ? `<span class="chip">次要：${escapeHtml(secZh)}</span>` : ''}
+    ${gen.severity ? `<span class="chip">严重度：${escapeHtml(gen.severity)}</span>` : ''}
+    ${gen.ai_confidence ? `<span class="chip conf-${gen.ai_confidence}">置信 ${escapeHtml(gen.ai_confidence)}</span>` : ''}
+  </div>`;
+
+  html += '<div class="ai-grid">';
+  if (gen.evidence_judgement) html += block('证据判定 (evidence_judgement)', gen.evidence_judgement);
+  if (gen.classification_reason) html += block('分类理由 (classification_reason)', gen.classification_reason);
+  html += '</div>';
+
+  const kdf = gen.key_differences || [];
+  if (kdf.length) {
+    html += '<div style="margin-top:10px"><div class="k" style="font-size:12px;color:var(--muted);font-weight:700">关键差异 (key_differences)</div>';
+    for (const d of kdf) {
+      const typeZh = labelZh(d.type);
+      html += `<div class="kdf">
+        <div class="t">${escapeHtml(typeZh || '')} <span style="font-weight:400;color:#94a3b8">(${escapeHtml(d.type || '')})</span></div>
+        ${d.paper_expression ? `<div class="row"><span class="lab">论文：</span>${escapeHtml(d.paper_expression)}</div>` : ''}
+        ${d.article_expression ? `<div class="row"><span class="lab">公众号：</span>${escapeHtml(d.article_expression)}</div>` : ''}
+        ${d.description ? `<div class="row"><span class="lab">说明：</span>${escapeHtml(d.description)}</div>` : ''}
+      </div>`;
+    }
+    html += '</div>';
+  }
+  $('aiContent').innerHTML = html;
+}
+
+function renderAISide(s, gen) {
+  let html = '';
+  if (gen && gen.classification_reason) html += block('AI 一句结论 (classification_reason)', gen.classification_reason);
+  if (!html) html = '<div style="color:#94a3b8;font-size:13px">（无）</div>';
+  $('aiSideContent').innerHTML = html;
+}
+
+function block(k, v) {
+  return `<div class="ai-block"><div class="k">${escapeHtml(k)}</div><div class="v">${escapeHtml(v)}</div></div>`;
+}
+
+/* ================= 保存 ================= */
+function distortionPayload() {
+  const s = state.samples[state.index];
+  return {
+    reviewer: state.reviewer,
+    sample_id: s.sample_id,
+    human_verified: state.done,
+    evidence_level: state.el,
+    primary_level2: state.primary,
+    secondary_level2: state.secondary,
+    severity: state.severity,
+    uncovered_phenomenon: state.uncovered,
+    note: state.note,
+  };
+}
+
+async function postSave(payload, onOk) {
+  const res = await fetch('/api/save', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  });
+  const out = await res.json();
+  if (out.ok) {
+    state.humanReviews[state.reviewer] = state.humanReviews[state.reviewer] || {};
+    state.humanReviews[state.reviewer][payload.sample_id] = out.record;
+    state.dirty = false;
+    state.savedAt = new Date();
+    if (onOk) onOk(out);
+    updateDoneText();
+    return true;
+  } else {
+    alert('保存失败: ' + (out.error || ''));
+    return false;
+  }
+}
+
+function updateDoneText() {
+  const doneCount = Object.values(myRecords()).filter(x => x.human_verified).length;
+  $('doneText').textContent = `我的进度 ${doneCount}`;
+}
+
+function requireReviewer() {
+  if (!state.reviewer) {
+    alert('请先在上方填写审核人姓名');
+    $('reviewerInput').focus();
+    return false;
+  }
+  return true;
+}
+
+async function saveDistortion() {
+  if (!requireReviewer()) return;
+  const ok = await postSave(distortionPayload());
+  if (ok) {
+    $('saveStatus').textContent = '已保存 ' + state.savedAt.toLocaleTimeString();
+    $('saveStatus').classList.add('ok');
+  }
+}
+
+async function saveAndNext() {
+  if (!requireReviewer()) return;
+  const ok = await postSave(distortionPayload());
+  if (!ok) return;
+  go(state.index + 1);
+}
+
+/* ================= 导航 ================= */
+function go(index) {
+  if (index < 0 || index >= state.samples.length) return;
+  if (state.dirty) {
+    if (!confirm('当前样本有未保存的修改，放弃修改并跳转？')) return;
+  }
+  state.index = index;
+  render();
+}
+function next() { go(state.index + 1); }
+function prev() { go(state.index - 1); }
+function nextTodo() {
+  const mine = myRecords();
+  for (let i = state.index + 1; i < state.samples.length; i++) {
+    const sid = state.samples[i].sample_id;
+    if (!mine[sid] || !mine[sid].human_verified) { go(i); return; }
+  }
+  alert('后面没有你未审核的样本了');
+}
+
+/* ================= 工具 ================= */
+function escapeHtml(s) {
+  return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+/* ================= 事件绑定 ================= */
+$('prevBtn').onclick = prev;
+$('nextBtn').onclick = next;
+$('nextTodoBtn').onclick = nextTodo;
+$('saveBtn').onclick = saveDistortion;
+$('jumpBtn').onclick = () => {
+  const v = parseInt($('jumpInput').value, 10);
+  if (!isNaN(v)) go(v - 1);
+};
+$('jumpInput').addEventListener('keydown', e => { if (e.key === 'Enter') $('jumpBtn').click(); });
+
+document.addEventListener('keydown', e => {
+  if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') return;
+  if (e.key === 'ArrowRight') {
+    saveAndNext();
+  } else if (e.key === 'ArrowLeft') {
+    prev();
+  } else if (e.key === 's' || e.key === 'S') {
+    saveDistortion();
+  } else if (e.key === 'd' || e.key === 'D') {
+    $('doneCheck').checked = !$('doneCheck').checked;
+    $('doneCheck').dispatchEvent(new Event('change'));
+  } else if (e.key >= '1' && e.key <= '9') {
+    const t = state.taxonomy;
+    const order = [t.no_distortion];
+    for (const lv of ['omission','addition','substitution']) {
+      for (const [slug, info] of Object.entries(t.labels)) if (info.level1 === lv) order.push(slug);
+    }
+    const idx = parseInt(e.key, 10) - 1;
+    if (idx < order.length) setPrimary(order[idx]);
+  }
+});
+
+load();
+</script>
+</body>
+</html>

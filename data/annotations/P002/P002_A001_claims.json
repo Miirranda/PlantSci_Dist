@@ -1,0 +1,130 @@
+[
+  {
+    "id": "C01",
+    "claim_text": "与学界普遍认知的转录激活及转录沉默现象不同，转录阻抗位点具有与转录激活区域相似的染色质环境，包括富集了RNA聚合酶II（Pol II），组蛋白修饰H3K36me3和高度开放、松散的染色质状态，但其转录水平与转录沉默位点一致——几乎检测不到新生转录本(nascent transcripts)，综合呈现出一种“抵抗转录”的特征。",
+    "claim_role": "paper_result",
+    "context_before": "",
+    "context_after": "该研究起始于分析拟南芥中不同H3K36甲基转移酶催化H3K36甲基化的差异。",
+    "section": ""
+  },
+  {
+    "id": "C02",
+    "claim_text": "该研究起始于分析拟南芥中不同H3K36甲基转移酶催化H3K36甲基化的差异。",
+    "claim_role": "paper_intro",
+    "context_before": "与学界普遍认知的转录激活及转录沉默现象不同，转录阻抗位点具有与转录激活区域相似的染色质环境，包括富集了RNA聚合酶II（Pol II），组蛋白修饰H3K36me3和高度开放、松散的染色质状态，但其转录水平与转录沉默位点一致——几乎检测不到新生转录本(nascent transcripts)，综合呈现出一种“抵抗转录”的特征。",
+    "context_after": "研究人员对不同的甲基转移酶突变体进行了H3K36me3的ChIP-seq分析，并意外发现与野生型Col-0相比，突变体sdg8中编码基因上的H3K36me3水平显著增加（图1a）。",
+    "section": ""
+  },
+  {
+    "id": "C03",
+    "claim_text": "研究人员对不同的甲基转移酶突变体进行了H3K36me3的ChIP-seq分析，并意外发现与野生型Col-0相比，突变体sdg8中编码基因上的H3K36me3水平显著增加（图1a）。",
+    "claim_role": "paper_method",
+    "context_before": "该研究起始于分析拟南芥中不同H3K36甲基转移酶催化H3K36甲基化的差异。",
+    "context_after": "随后根据突变体sdg8中H3K36me3水平的变化模式，研究人员对编码基因进行了分类（分为C1-C4共四类，图1b和c），其中SDG8基因突变会导致C3类别的基因位点（约占总基因数的40%）表现出显著升高的H3K36me3水平，表明甲基转移酶SDG8存在抑制H3K36me3积累的功能（图1b）。",
+    "section": ""
+  },
+  {
+    "id": "C04",
+    "claim_text": "随后根据突变体sdg8中H3K36me3水平的变化模式，研究人员对编码基因进行了分类（分为C1-C4共四类，图1b和c），其中SDG8基因突变会导致C3类别的基因位点（约占总基因数的40%）表现出显著升高的H3K36me3水平，表明甲基转移酶SDG8存在抑制H3K36me3积累的功能（图1b）。",
+    "claim_role": "paper_result",
+    "context_before": "研究人员对不同的甲基转移酶突变体进行了H3K36me3的ChIP-seq分析，并意外发现与野生型Col-0相比，突变体sdg8中编码基因上的H3K36me3水平显著增加（图1a）。",
+    "context_after": "为了探究sdg8突变体中H3K36me3水平升高基因（C3基因）的转录状态，研究人员进行了新生转录本测序(NET-seq)。",
+    "section": ""
+  },
+  {
+    "id": "C05",
+    "claim_text": "为了探究sdg8突变体中H3K36me3水平升高基因（C3基因）的转录状态，研究人员进行了新生转录本测序(NET-seq)。",
+    "claim_role": "paper_method",
+    "context_before": "随后根据突变体sdg8中H3K36me3水平的变化模式，研究人员对编码基因进行了分类（分为C1-C4共四类，图1b和c），其中SDG8基因突变会导致C3类别的基因位点（约占总基因数的40%）表现出显著升高的H3K36me3水平，表明甲基转移酶SDG8存在抑制H3K36me3积累的功能（图1b）。",
+    "context_after": "结果表明，无论在野生型还是sdg8突变体中，C3基因位点处几乎检测不到转录活性（图2b-d），这一结果与现有的H3K36me3增强转录延伸观点相悖。",
+    "section": ""
+  },
+  {
+    "id": "C06",
+    "claim_text": "结果表明，无论在野生型还是sdg8突变体中，C3基因位点处几乎检测不到转录活性（图2b-d），这一结果与现有的H3K36me3增强转录延伸观点相悖。",
+    "claim_role": "paper_result",
+    "context_before": "为了探究sdg8突变体中H3K36me3水平升高基因（C3基因）的转录状态，研究人员进行了新生转录本测序(NET-seq)。",
+    "context_after": "我们已知转录激活(Transcription Active，TA)区域为具有Pol II结合以及开放染色质状态（高信号的ATAC-seq）且转录水平较高的区域（图2a-d，图3）。",
+    "section": ""
+  },
+  {
+    "id": "C07",
+    "claim_text": "我们已知转录激活(Transcription Active，TA)区域为具有Pol II结合以及开放染色质状态（高信号的ATAC-seq）且转录水平较高的区域（图2a-d，图3）。",
+    "claim_role": "paper_intro",
+    "context_before": "结果表明，无论在野生型还是sdg8突变体中，C3基因位点处几乎检测不到转录活性（图2b-d），这一结果与现有的H3K36me3增强转录延伸观点相悖。",
+    "context_after": "与之相对应，研究人员将有Pol Ⅱ结合(Pol II ChIP-seq)和开放染色质状态(ATAC-seq)但Pol II转录信号极低（Pol Ⅱ Ser2P NET-seq水平）的区域定义为“转录阻抗”(Transcription Resistive，TR)区域（图2a-d，图3）。",
+    "section": ""
+  },
+  {
+    "id": "C08",
+    "claim_text": "与之相对应，研究人员将有Pol Ⅱ结合(Pol II ChIP-seq)和开放染色质状态(ATAC-seq)但Pol II转录信号极低（Pol Ⅱ Ser2P NET-seq水平）的区域定义为“转录阻抗”(Transcription Resistive，TR)区域（图2a-d，图3）。",
+    "claim_role": "paper_result",
+    "context_before": "我们已知转录激活(Transcription Active，TA)区域为具有Pol II结合以及开放染色质状态（高信号的ATAC-seq）且转录水平较高的区域（图2a-d，图3）。",
+    "context_after": "根据这一定义，研究人员在拟南芥基因组中鉴定到了4375个TA基因和12911个TR基因（图3）。",
+    "section": ""
+  },
+  {
+    "id": "C09",
+    "claim_text": "根据这一定义，研究人员在拟南芥基因组中鉴定到了4375个TA基因和12911个TR基因（图3）。",
+    "claim_role": "paper_result",
+    "context_before": "与之相对应，研究人员将有Pol Ⅱ结合(Pol II ChIP-seq)和开放染色质状态(ATAC-seq)但Pol II转录信号极低（Pol Ⅱ Ser2P NET-seq水平）的区域定义为“转录阻抗”(Transcription Resistive，TR)区域（图2a-d，图3）。",
+    "context_after": "TR和TA基因均与转录抑制性染色质标记（如H3K9me2、H3K27me1、H3K27me3等）呈负相关，但与转录活跃型染色质标记（如H3K4me3、H3K36me3等）呈正相关（图2a，图3）。",
+    "section": ""
+  },
+  {
+    "id": "C10",
+    "claim_text": "TR和TA基因均与转录抑制性染色质标记（如H3K9me2、H3K27me1、H3K27me3等）呈负相关，但与转录活跃型染色质标记（如H3K4me3、H3K36me3等）呈正相关（图2a，图3）。",
+    "claim_role": "paper_result",
+    "context_before": "根据这一定义，研究人员在拟南芥基因组中鉴定到了4375个TA基因和12911个TR基因（图3）。",
+    "context_after": "有趣的是，TR基因相较于TA基因有更富集的H3K36me修饰，尤其是H3K36me3修饰（图2a）。",
+    "section": ""
+  },
+  {
+    "id": "C11",
+    "claim_text": "有趣的是，TR基因相较于TA基因有更富集的H3K36me修饰，尤其是H3K36me3修饰（图2a）。",
+    "claim_role": "paper_result",
+    "context_before": "TR和TA基因均与转录抑制性染色质标记（如H3K9me2、H3K27me1、H3K27me3等）呈负相关，但与转录活跃型染色质标记（如H3K4me3、H3K36me3等）呈正相关（图2a，图3）。",
+    "context_after": "据统计，TR基因占拟南芥基因组中编码基因总数的47.5%，表现出类似于TA基因的活跃染色质状态（图2a，图3），却只有极低水平的转录活性。",
+    "section": ""
+  },
+  {
+    "id": "C12",
+    "claim_text": "据统计，TR基因占拟南芥基因组中编码基因总数的47.5%，表现出类似于TA基因的活跃染色质状态（图2a，图3），却只有极低水平的转录活性。",
+    "claim_role": "paper_result",
+    "context_before": "有趣的是，TR基因相较于TA基因有更富集的H3K36me修饰，尤其是H3K36me3修饰（图2a）。",
+    "context_after": "研究人员还发现拟南芥中大量的“必需基因(essential genes)”处于转录阻抗状态，并且这种转录阻抗状态在拟南芥已知的5种H3K36me3甲基转移酶协同作用中维持平衡。",
+    "section": ""
+  },
+  {
+    "id": "C13",
+    "claim_text": "研究人员还发现拟南芥中大量的“必需基因(essential genes)”处于转录阻抗状态，并且这种转录阻抗状态在拟南芥已知的5种H3K36me3甲基转移酶协同作用中维持平衡。",
+    "claim_role": "paper_result",
+    "context_before": "据统计，TR基因占拟南芥基因组中编码基因总数的47.5%，表现出类似于TA基因的活跃染色质状态（图2a，图3），却只有极低水平的转录活性。",
+    "context_after": "进一步对单子叶植物水稻和哺乳动物小鼠的培养细胞进行类似的染色质状态分析发现，转录阻抗现象可能普遍存在于真核生物基因组中。",
+    "section": ""
+  },
+  {
+    "id": "C14",
+    "claim_text": "进一步对单子叶植物水稻和哺乳动物小鼠的培养细胞进行类似的染色质状态分析发现，转录阻抗现象可能普遍存在于真核生物基因组中。",
+    "claim_role": "paper_result",
+    "context_before": "研究人员还发现拟南芥中大量的“必需基因(essential genes)”处于转录阻抗状态，并且这种转录阻抗状态在拟南芥已知的5种H3K36me3甲基转移酶协同作用中维持平衡。",
+    "context_after": "此研究提出的“转录阻抗(Transcription Resistive)”概念突破了领域内长久以来形成的关于染色质状态“非活跃即沉默”的二元认知范式，鉴定出具有独特表观遗传标记与功能特性的第三类转录状态。",
+    "section": ""
+  },
+  {
+    "id": "C15",
+    "claim_text": "此研究提出的“转录阻抗(Transcription Resistive)”概念突破了领域内长久以来形成的关于染色质状态“非活跃即沉默”的二元认知范式，鉴定出具有独特表观遗传标记与功能特性的第三类转录状态。",
+    "claim_role": "paper_conclusion",
+    "context_before": "进一步对单子叶植物水稻和哺乳动物小鼠的培养细胞进行类似的染色质状态分析发现，转录阻抗现象可能普遍存在于真核生物基因组中。",
+    "context_after": "这种处于“活跃”和“沉默”之间的中间态不仅重构了染色质功能分区理论，更揭示了基因表达调控网络的层级性，对染色质修饰的功能和基因组转录的状态进行了重新定义，开启了全新研究领域的序幕。",
+    "section": ""
+  },
+  {
+    "id": "C16",
+    "claim_text": "这种处于“活跃”和“沉默”之间的中间态不仅重构了染色质功能分区理论，更揭示了基因表达调控网络的层级性，对染色质修饰的功能和基因组转录的状态进行了重新定义，开启了全新研究领域的序幕。",
+    "claim_role": "paper_conclusion",
+    "context_before": "此研究提出的“转录阻抗(Transcription Resistive)”概念突破了领域内长久以来形成的关于染色质状态“非活跃即沉默”的二元认知范式，鉴定出具有独特表观遗传标记与功能特性的第三类转录状态。",
+    "context_after": "",
+    "section": ""
+  }
+]

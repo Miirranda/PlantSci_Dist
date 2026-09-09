@@ -1,0 +1,716 @@
+[
+  {
+    "text": "nature plants",
+    "section": "Front Matter",
+    "page": "1",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "0"
+  },
+  {
+    "text": "Yao Yao1,4, Jincong Zhou 1,2",
+    "section": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "page": "1",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "1"
+  },
+  {
+    "text": "many histone modifications such as H3 lysine 36 methylation (H3K36me). Here we report a new chromatin state, ‘transcription resistive’, which is differentiated from activation and silencing. Transcription resistive is stamped by H3K36me with almost undetectable transcription activity but open-chromatin state, and occupies most documented plant essential genes. Mutating SDG8, previously known as the major H3K36 methyltransferase in Arabidopsis, surprisingly elevates 78.7% of H3K36me3-marked resistive loci, which accounts for 39.4% of the coding genome. Genetically, SDG8 prevents H3K36me activity of SDG4 at short and intronless genes to secure plant fertility, while it collaborates with other H3K36me methyltransferases The transcription states in eukaryotic genomes mainly include activation and repression, which involves numerous regulation machineries. Transcription repression, also termed transcription silencing, is often associated with the heterochromatin domain in the genomes1. The heterochromatin state can be achieved through DNA methylation and repressive histone modifications, and displays a highly compacted chromatin state, finally leading to inaccessibility to RNA polymerases. The constitutive heterochromatin is mainly found in the non-coding genome and consists of repetitive sequences, transposable elements and ribosomal DNA, with the presence of highly methylated DNA and histone H3 lysine 9 (H3K9me2/3) as well as lysine 27 (H3K27me1)2,3. The facultative heterochromatin, which is usually located in the coding genome, is marked by trimethylation of histone H3 lysine 27 (H3K27me3), is principally catalysed by polycomb repressive complexes 2 (PRC2), is interspersed in the eukaryotic genome and is related to developmental genes4,5.",
+    "section": "Eukaryotic euchromatin is the less-compact chromatin and is modified by",
+    "page": "1",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "2"
+  },
+  {
+    "text": "In contrast, transcription activation that is mainly located in the euchromatin shows a loose chromatin environment for easy access on long and intron-rich genes. Together, our results reveal that SDG8 is the primary sensor that suppresses excessive H3K36me, and uncovered that ‘transcription resistive’ is a conserved H3K36me-stamped novel transcription state in plants, highlighting the regulatory diversities and biological significance of H3K36 methylation in eukaryotes. to RNA polymerase II machinery. This involves the modification of histones through various mechanisms, such as histone acetylation and histone methylation. Histone acetylation, catalysed by histone acetyltransferases (HATs), leads to the relaxation of chromatin structure, making it more accessible to transcription factors and RNA polymerase. Histone methylation, on the other hand, can mark active genes by specific modifications, such as methylation of H3K4 and H3K36. The methylation of histone H3 at lysine 36 (H3K36me) is prevalent throughout the eukaryotic genome and present in the form of mono-, diand trimethylation (H3K36me1/2/3)6. H3K36me3 is known as the active marker that is highly associated with actively transcribed genes, as H3K36 methyltransferases (HMTs) are shown to directly interact with the transcription machinery, which is conserved in different species7,8. The conserved SET-domain-containing proteins are reported to catalyse H3K36 methylation among species6. In Arabidopsis, SET-domain-containing proteins, including SDG4 (SET DOMAIN GROUP 4), SDG8, SDG25, SDG26 and ATXR2 Evolution, School of Life Sciences, Guangzhou University, Guangzhou, China.",
+    "section": "Eukaryotic euchromatin is the less-compact chromatin and is modified by",
+    "page": "1",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "3"
+  },
+  {
+    "text": "4These authors contributed equally: Yao Yao, Jincong Zhou. 808 (ARABIDOPSIS TRITHORAX-RELATED 2), are involved in methylating H3K36 (refs. 9–14). SDG8, also known as EFS (EARLY FLOWERING IN SHORT DAYS), is reported as the main H3K36me3 methyltransferase in Arabidopsis, and its functional mutations have been shown to cause a global decrease in H3K36me3 levels15–17, resulting in numerous developmental defects17–21. However, the dynamics and regulation of different H3K36 methylation forms are still a mystery in plants. In this study, we started with the genome-wide characterization of H3K36me3 and surprisingly observed that mutation of SDG8 can lead to substantially elevated levels of H3K36me3 in the coding genome of Arabidopsis. Furthermore, we unexpectedly found that a large proportion of the coding genome exists as a chromatin state that is open chromatin, marked by H3K36me3, occupied by RNA polymerase II, and looked similar to the ready-for-transcription state but with little to no transcription activity (similar to the level of silencing), even with heat stimulation. We termed this chromatin state ‘transcriptional resistive’, which is distinctive from traditional transcription activation and transcription silencing. Our data reveal a previously undiscovered function of H3K36me3 and transcription regulation.",
+    "section": "Eukaryotic euchromatin is the less-compact chromatin and is modified by",
+    "page": "1",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "4"
+  },
+  {
+    "text": "To dissect the functions of the H3K36 methyltransferases in Arabidopsis on catalysing different forms of H3K36 methylation (Fig. 1a), we started with the analysis of H3K36me3 chromatin immunoprecipitation and sequencing (ChIP-seq) using Arabidopsis seedlings and profiled the enrichment signal on protein-coding genes (Fig. 1b and Extended Data Fig. 1a). Relative to the wild type (WT), the mutants sdg4, sdg25, sdg26 and atxr2 (see materials for more details) showed decreased levels of H3K36me3 around the transcription start site (TSS); however, the sdg8 (efs-3)19 mutant displayed increased levels of H3K36me3 from the TSS to the gene bodies (Fig. 1b). We identified a series of protein-coding genes with differential H3K36me3 modification [DMGs, log2(fold-change (FC)) > 1.4 or <−1.4, FDR (false discovery rate) < 0.05] in these five mutants, and found that only the sdg8 mutant showed a larger portion of increased DMGs than decreased DMGs (Fig. 1c and Extended Data Fig. 1b). These results were further validated by ChIP–qPCR (Extended Data Fig. 1d). Furthermore, we checked and compared the numbers of DMGs among mutants of other HMTs that are responsible for H3K4me3, H3K9me2, H3K27me1 and H3K27me3 in Arabidopsis. No other mutants of HMTs could lead to numerous upregulated DMGs as the sdg8 mutant does (Fig. 1c). Therefore, the observation that highly elevated H3K36me3 levels exist in the sdg8 mutant encouraged us to explore the extended functions of SDG8.",
+    "section": "Results SDG8 limits H3K36me at a large portion of the coding genome",
+    "page": "2",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "5"
+  },
+  {
+    "text": "Furthermore, we found that SDG8 is highly expressed during germination and in pollens (Extended Data Fig. 2a), and this was validated by quantitative PCR with reverse transcription (RT–qPCR) with different tissues (Extended Data Fig. 2b). In addition, we performed the H3K36me3 ChIP-seq using germinating seeds (48hS + 24hL, 48-h stratification and 24-h growth under normal condition), cauline leaves and pollen of wild-type Col-0 and checked the H3K36me3 levels in comparison to that in seedlings (lowly expressed SDG8) (Extended Data Fig. 2c). Lower abundance of H3K36me3 was observed in the germinating seeds and pollens, the developmental stages with highly expressed SDG8 compared with the other two tissues (Extended Data Fig. 2c–f), indicating the role of SDG8 in inhibiting H3K36me3 deposition. To further determine the regulatory role of SDG8 in H3K36me3, we carried out in-depth analysis and clustered all the protein-coding genes on the basis of the H3K36me3 enrichment in the sdg8 mutant compared with wild-type Col-0 (Fig. 1d and Methods). The genes in Cluster 1 showed a total absence of H3K36me3 modifications (C1, totally SDG8 dependent, n = 1,670), and Cluster 2 genes displayed decreased H3K36me3 levels in the sdg8 mutant (C2, partially SDG8 dependent, n = 1,236). However, the genes in Cluster 3 (C3, SDG8 restraining, n = 10,710) exhibited the accumulated H3K36me3 levels around the TSS in the absence of SDG8 (Fig. 1d and Extended Data Fig. 1d). More than half of protein-coding genes in the Arabidopsis genome were marked by H3K36me3 modifications, and 78.7% of these belong to Cluster 3 (Fig. 1e), indicating a potential role of SDG8 in inhibiting the excessive deposition of H3K36me3 in genes. To confirm this observation, we purchased another two H3K36me3 antibodies from Active Motif (AM_61902 and AM_61022 in Supplementary Fig. 1) and performed the ChIP-seq and data analysis. The data using these two H3K36me3 antibodies could still generate clustered genes similar to those in Fig. 1d (Supplementary Fig. 1), further confirming our findings that H3K36me3 levels were increased in C3 genes of the sdg8 mutant. In addition, we generated CRISPR/Cas9-based knockout plant materials with the SET domain of the SDG8 abolished (sdg8-SET-KO in Extended Data Fig. 3) and conducted H3K36me3 ChIP-seq assay. The sdg8-SET-KO mutant contains a 554-bp deletion in the genomic DNA within the SET domain (Extended Data Fig. 3a) but does not alter the reading frame in the other region of SDG8 mRNA (Extended Data Fig. 3b,c), which creates a truncated SET domain based on the Sanger sequencing of the products of PCR with reverse transcription (RT–PCR) (amino acids truncation from I976 to E1089 on SDG8 protein, Extended Data Fig. 3c,d). Four clustered genes were generated using H3K36me3 ChIP-seq data of the sdg8-SET-KO mutant with our standard of classification, and the C3_sdg8-SET-KO genes also showed elevated H3K36me3 levels (Extended Data Fig. 3e,g). In addition, 95.7% (6,898/7,210) of C3_sdg8-SET-KO genes overlapped with the C3 genes in Fig. 1d (Extended Data Fig. 3f), suggesting that abolishing only the SET domain in SDG8 could also lead to elevated H3K36me3 on C3 genes.",
+    "section": "Results SDG8 limits H3K36me at a large portion of the coding genome",
+    "page": "2",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "6"
+  },
+  {
+    "text": "We also reanalysed the published H3K36me3 ChIP-seq data of Col-0 and another allelic mutant of SDG8, sdg8-5 (ref. 17) and plotted H3K36me3 levels on the C1–C4 genes. The results also showed that the H3K36me3 levels of C3 genes are elevated in sdg8-5 (Extended Data Fig. 1e). Combining with the SDG8-HA ChIP-seq data17, we found that higher relative abundance of SDG8 binding was observed in the C1 and C2 genes (Fig. 1f and Extended Data Fig. 1f). Interestingly, although SDG8 binding in the C3 genes is highly enriched compared with random genes, the binding affinity is comparable to that of C1 and C2 genes (Fig. 1f). Together, these results support the idea that H3K36me3 modification on C1–C3 genes is directly modulated by SDG8.",
+    "section": "Results SDG8 limits H3K36me at a large portion of the coding genome",
+    "page": "2",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "7"
+  },
+  {
+    "text": "To dissect the functions of SDG8 in modifying different methylation states of H3K36, we performed H3K36me1 and H3K36me2 ChIP-seq in Col-0 and sdg8 mutant, and plotted these three states of H3K36me in C1–C4 genes (Fig. 1g and Extended Data Fig. 4a). The results showed that H3K36me1 are less abundant than H3K36me2 and H3K36me3 in Col-0, and SDG8 is mainly responsible for the deposition of diand trimethylation on H3K36 in C1 and C2 genes, preferring to catalyse H3K36me2 on the 3’-terminal region and H3K36me3 on the 5’-terminal region of these genes, respectively (Fig. 1g and Extended Data Fig. 4b,e). Interestingly, the level of H3K36me2 is elevated preferably in 5’-terminal regions of C3 genes in the sdg8 mutant, which is similar to the pattern of H3K36me3 in sdg8 compared to Col-0, and H3K36me1 levels are also slightly elevated in C3 genes of sdg8 (Fig. 1g and Extended Data Fig. 4b), suggesting a non-methyltransferase function of SDG8 in suppressing methylation on H3K36 in Arabidopsis. In addition, these multivalent H3K36 methylation ChIP-seq data reveal details of the role of SDG8 in regulating H3K36 methylation. We observed that the H3K36me2 signal on H3K36me1 peaks was decreased in sdg8 compared with Col-0 (Extended Data Fig. 4c, left panel), while the H3K36me3 signal on H3K36me2 peaks was slightly elevated in sdg8 compared with Col-0 (Extended Data Fig. 4c, right panel), indicating that SDG8 mainly functions in converting monoto dimethylation on H3K36 rather than dito trimethylation. Similarly, within the sdg8 809 a SDG8/EFS 1,805 SDG25 1,388 SDG26 492 SET SDG4 Zinc finger 497 AWS ATXR2 473 c H3K4me3 H3K9me2 H3K27me1 H3K27me3 6342 5,000 Number of DMGs 2,500 297 327 123 66 73 19 22 23 12 7 0 28 24 15 19 173 186 741 1,279 1,192 2,500 2,547 3,144 clf swn swn atxr3 sdg8 suvh6 atx1 suvh4 suvh5 atxr5.6 sdg4 clf d AT3G46740 AT3G46770 AT3G46780 Annotation Col-0 sdg8 H3 SDG8 H3K36me3 SDG8 totally Col-0 restraining absent dependent sdg8 H3K36me3/H3 C3 C4 C1 5 n = 10,710 n = 12,878 n = 1,670 3 1 –1 Kb TSS TES 1 Kb –1 Kb TSS TES 1 Kb –1 Kb TSS TES 1 Kb –1 Kb f h H3K36me3 H3K36me2 H3K27me3 H3K36me1 H3K27me1 SDG8 abundance H3K4me3 H3K4me2 H3K9me2 H3K4me1 –1 –0.5 0 0.5 1 1.5 C1 C1 C2 **** C2 NS **** C3 C3 **** C4 Random Fig. 1 | sdg8 caused elevated H3K36me3 on a large proportion of the coding genome.",
+    "section": "SDG8 modulates H3K36me1/2/3 in Arabidopsis",
+    "page": "2",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "8"
+  },
+  {
+    "text": "a, Protein structure of 5 SDG proteins. SET, Su (var)3-9, Enhancer-ofzeste, Trithorax; AWS, associated with SET. b, Metaplot showing the H3K36me3 levels on the gene body among the 5 mutants compared to the WT (values of all histone modification levels are normalized to H3 signal). c, Bar chart showing the number of differentially methylated genes (DMGs) in major histone lysine (H3K4me3, H3K9me2, H3K27me1, H3K27me3 and H3K36me3) methyltransferase mutants relative to WT. See detailed analysis in Methods. d, Metaplot (bottom) and snapshot (top) showing 4 clusters of differential SDG8-regulated genes. The gene lists for these 4 groups are shown in Supplementary Data 1. e, Proportion of 4 clustered genes in all protein-coding genes (PCGs) and H3K36me3-marked genes. f, Boxplot showing SDG8 binding abundance (log2FC (IP/input)) of 3 clustered genes and random genes. Sample numbers: nC1 = 42, nC2 = 23, nC3 = 106, H3K36me1 peak regions, where the H3K36 monomethylation is catalysed by other methyltransferases rather than SDG8, the SDG8 could function in catalysing monoto dimethylation but also inhibiting dito trimethylation of H3K36 (Extended Data Fig. 4d).",
+    "section": "SDG8 modulates H3K36me1/2/3 in Arabidopsis",
+    "page": "2",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "9"
+  },
+  {
+    "text": "b 0.3 sdg8 sdg25 log2(mutant/WT) 0.2 sdg26 H3K36me3 sdg4 0.1 atxr2 0 –0.1 –1 Kb TSS TES 1 Kb e NS, 2.5% H3K36me3 100% Up C4 80% Down 47.4% C3 60% 78.7% 177 40% 80 81 C2 50.1% 504 101 287 20% 9.1% C1 0 12.2% All H3K36me3 sdg25 sdg26 atxr2 PCGs marked genes g AT3G46820 H3K36me1 H3K36me2 H3K36me2 Col-0 sdg8 Col-0 sdg8 Col-0 sdg8 0–9.6 C1 C2 0–9.6 4 0–9.6 SDG8 partially C3 dependent 3 C2 n = 1,236 2 TSS TES 1 Kb C4 H3K27ac 1 H3ac CHG CHH CG –1 Kb –1 Kb –1 Kb TSS TES 1 Kb TSS TES 1 Kb TSS TES 1 Kb 1.8 1.3 0.8 nrandom = 1,500. Average values from 2 biological replicates are shown. Statistical significance was determined using unpaired two-tailed t-test; ****P < 0.0001; NS, no significant difference. Boxplots show the median, 25th to 75th percentiles, and minima and maxima (whiskers). The calculated P values for C1 vs random, C3 vs random and C3 vs random are 1.6 × 10−87, 2.0 × 10−50 and 2.5 × 10−142, respectively. g, Heat map showing H3K36me1, H3K36me2 and H3K36me3 levels (normalized to H3) on 4 clustered genes in WT and sdg8. h, Permutation test of co-localization among 4 clustered genes and other epigenetic modifications. The colour bar scale indicates the permutation z-score. Data are from previous studies including ChIP-seq of H3K4me3 (PRJNA732996), H3K9me2 (PRJNA454877), H3K27me1 (PRJNA438239) and whole-genome DNA methylation (GSE218148). The remaining datasets were generated in this study.",
+    "section": "SDG8 modulates H3K36me1/2/3 in Arabidopsis",
+    "page": "3",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "10"
+  },
+  {
+    "text": "Together, our data revealed the comprehensive roles of SDG8 in regulating multivalent H3K36 methylation (Extended Data Fig. 4f). Briefly, SDG8 might mainly deposit H3K36me2 in the 3’-terminal region and H3K36me3 in the 5’-terminal of C1 and C2 genes, but blocks all three 810 types of H3K36me in C3 genes (Extended Data Fig. 4f). Moreover, SDG8 might catalyse H3K36me1 and H3K36me2 in a subset of C4 genes but have no activity in H3K36me3 deposition in these genes (Extended Data Fig. 4f).",
+    "section": "SDG8 modulates H3K36me1/2/3 in Arabidopsis",
+    "page": "3",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "11"
+  },
+  {
+    "text": "Next, we performed association analysis of clustered genes with various chromatin, and the results showed that the C1–C3 genes are highly co-localized with active transcription markers (Fig. 1h), leading us to further investigate the transcription state of these clustered genes. Consistent with the known function of H3K36me3 that is associated with active transcription, RNA-seq analysis revealed that a larger portion of genes in SDG8-dependent C1 and C2 was downregulated in the sdg8 mutant (Fig. 2a). However, the C3 genes showed no discernible preference in the mRNA levels between the wild-type Col-0 and sdg8 mutant (Fig. 2a), even though there are increased levels of H3K36me3 on C3 genes of sdg8 compared with wild type, suggesting that H3K36me3 abundance on C3 genes are not correlated with promoting gene expression. Since C3 genes comprise the majority of H3K36me3 (78.7% of total H3K36me3-marked genes, Fig. 1e), we were curious about their transcription state. First, we evaluated the open-chromatin states via the assay for transposase-accessible chromatin with high-throughput sequencing (ATAC-seq), and found that comparable levels were displayed in the wild type and sdg8 mutant (Fig. 2b). To precisely determine the transcription state of C3 genes, we performed native elongating transcripts sequencing (NET-seq) that can capture the nascent transcripts by RNA polymerase on chromatin22. The NET-seq results uncovered that there was a decreased activity of transcriptional elongated Pol II (Ser2P Pol II) at C1 and C2 genes in sdg8 compared with wild type (Fig. 2c), in line with their decrease in H3K36me3 (Fig. 1d), indicating that the C1 and C2 genes are marked by the transcription-coupled H3K36me3. Unexpectedly, almost no activity of Ser2P Pol II was observed on C3 genes in both wild-type Col-0 and sdg8 mutant (Fig. 2c), which is inconsistent with the well-known functions of H3K36me3 in enhancing transcription elongation7,8. To unveil whether the defects in transcription elongation on the C3 gene were derived from the transcription initiation stage, we used anti-Ser5P Pol II antibodies for NET-seq to detect the nascent RNAs in transcription initiation.",
+    "section": "H3K36me3-enriched genes in sdg8 show minimal transcription",
+    "page": "4",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "12"
+  },
+  {
+    "text": "We found that there was a small peak of Ser5P Pol II at the TSS and transcription end site (TES) on C3 genes in both Col-0 and sdg8 mutant, which is much less than the levels of Ser5P Pol II on C1 and C2 genes (Fig. 2c,d). In contrast to the Ser2P pattern, Ser5P Pol II is slightly more stimulated at the TSS on C1 and C2 genes in sdg8 mutant in comparison with Col-0 (Fig. 2c), indicating that slowing down the transcriptional elongation of Pol II (lower Ser2P Pol II signal Fig. 2 | H3K36me3-accumulated genes in sdg8 display a very low level of transcription. a, Left: scatterplots depicting changes in mRNA abundance among 4 clustered genes in Col-0 and sdg8. Normalized reads are shown as log2(count + 1); x axis represents sdg8 log2(count+1) and y axis represents Col-0 log2(count+1). Red dots: P < 0.05, FC ≥ 1.2; blue dots: P < 0.05, FC ≤ −1.2; grey dots: others. Right: percentage of upregulated, downregulated and not significantly changed genes in C1–C4. b, Left: heat map showing enrichment of ATAC-seq signal on C1–C4 in Col-0 and sdg8. Right: scatter dotplot showing levels of ATAC-seq signal of Col-0 on C1–C4. Average values from 2 biological replicates are shown. Statistical significance was determined using an unpaired two-tailed t-test; NS, no significant difference. Boxplots show the median, 25th to 75th percentiles, and minima and maxima (whiskers). Sample numbers: nC1 = 1,079, nC2 = 764, nC3 = 5,940, nC4 = 3,418. c, Meta-analyses showing NET-seq profiles across C1–C4 genes in Col-0 and sdg8. Profiles are aligned to the TSS and TES as indicated. Lines and shadings represent the mean ± s.e.m. d, Snapshot showing H3K36me3, RNA-seq and Ser2P/5P NET-seq enrichment at representative genes of C1–C4.",
+    "section": "H3K36me3-enriched genes in sdg8 show minimal transcription",
+    "page": "4",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "13"
+  },
+  {
+    "text": "e, Comparison of 5’P end abundance of Col-0 from previous in sdg8) in turn results in blocking Pol II at transcription initiation, further supporting the well-known functions of H3K36me3 in promoting transcriptional elongation on C1 and C2 genes. Together, the results above revealed that, even though C3 genes in sdg8 displayed many active transcription features, including an open-chromatin state (Fig. 2b), active histone modification markers (Fig. 1h) and high RNA abundance (Extended Data Fig. 5a), the transcription activity on these genes was highly inhibited, indicating that the accumulated H3K36me3 in sdg8 marked 39.4% of total coding genes that exhibit the ability for transcription but with no reaction to transcribe. We termed this state ‘transcription resistive’, as the open-chromatin states seem to resist the transcription machinery; furthermore, ‘resistive’ shares the same suffix, ‘-tive’, as Active, Facultative and Constitutive (see below Fig. 3c). To exclude the possibility that facultative heterochromatin silencing, similar to H3K27me3 modification, could mark the transcription-resistive genes and is involved in transcription inhibition, we conducted H3K27me3 ChIP-seq assay in Col-0 and sdg8 mutant. The data showed no clear difference in H3K27me3 enrichment on the protein-coding genes (Supplementary Fig. 2a,b), indicating that SDG8 does not affect H3K27me3. Notably, there was little to no H3K27me3 enrichment on the C3 genes in Col-0, and the level was not altered in sdg8 (Supplementary Fig. 2a), suggesting that the transcription-resistive state is not caused by H3K27me3 deposition and that the low to no transcription at resistive loci is completely different from PRC2-mediated gene silencing.",
+    "section": "H3K36me3-enriched genes in sdg8 show minimal transcription",
+    "page": "4",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "14"
+  },
+  {
+    "text": "To understand why there are high levels of mRNA abundance but little to no RNA polymerase activities on C3 genes (Fig. 2c,d), we analysed the RNA degradome23 and mRNA half-life data24 on the clustered genes. The profiling of 5’ monophosphate ends (5’ P ends) of RNA degradation intermediates, a method to detect the target of 5’ to 3’ RNA decay pathway, showed results wherein the RNAs from C3 genes tended to be much less degraded compared with RNAs from C1 and C2 genes (Fig. 2e). In addition, the average mRNA half-life of C3 genes was significantly higher than those of the other clustered genes (Fig. 2f,g), although the portions of m6A-modification in C1–C3 mRNA are comparable (Extended Data Fig. 5b). Furthermore, to align with the mRNA half-life data, in which 5-day-old seedlings were applied to assays, we generated H3K36me3 ChIP-seq and pNET-seq (Ser2P) data using the 5-day-old seedlings and reanalysed the corresponding RNA-seq data24. The H3K36me3 and NET-seq patterns are similar to those in Fig. 2c (Extended Data Fig. 5d–f), and the sgd8 of 5-day-old seedlings also displayed the increased H3K36me3 levels on C3 genes. In particular, the C3 genes of 5-day-old seedlings also showed a high abundance of mature RNA (Extended Data Fig. 5c) but low levels of data (PRJNA484887) in C1–C4, Col-0 background.",
+    "section": "Transcription-resistive genes are resistant to degradation",
+    "page": "4",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "15"
+  },
+  {
+    "text": "Statistical significance was determined using unpaired two-tailed t-test; ****P < 0.0001. The calculated P values for C1 vs C3 and C2 vs C3 are 3.7 × 10−09 and 3.1 × 10−14, respectively. Box boundaries and whiskers indicate 25th to 75th percentiles, and minima and maxima data range of 5’P end abundance, respectively. Sample numbers: nC1 = 1,670, nC2 = 1,236, nC3 = 10,710, nC4 = 12,878. f, Heat map showing the mRNA decay over 120 min (normalized to the values at 0 min) in Col-0. mRNA decay data from the previous study (PRJNA561620) is presented as a change in mean relative mRNA abundance and hierarchically clustered into C1–C4. g, Boxplots comparing the mRNA half-lives (Col-0 t1/2) of C1–C4 genes. Statistical significance was determined using unpaired two-tailed t-test; ****P < 0.0001. The calculated P values for C1 vs C3, C2 vs C3 and C3 vs C4 are 3.8 × 10−58, 1.2 × 10−21 and 1.5 × 10−156, respectively. Boxplots show the median, 25th to 75th percentiles, and minima and maxima data range (whiskers). Sample numbers: nC1 = 1,413, nC2 = 1,095, nC3 = 9,687, nC4 = 3,133. h, Pie chart showing the proportion of C1–C4 genes in 510 documented essential genes from previous data25.",
+    "section": "Transcription-resistive genes are resistant to degradation",
+    "page": "4",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "16"
+  },
+  {
+    "text": "811 nascent RNA (Extended Data Fig. 5e). These data demonstrated that RNAs from C3 genes are more stable than those of others. Gene ontology (GO) analysis revealed that C3 genes were enriched in fundamental biological processes and are essential for plant development and survival (Supplementary Fig. 2c). Notably, the majority (86.1%) of 510 EMBRYO-DEFECTIVE (EMB) genes, which were defined as essential genes25, belong to C3 genes (Fig. 2h). a 20 20 Col-0 vs sdg8 C1 C2 45% 15 15 n = 108, 6.46% n = 72, 5.83% % of down 27% 10 10 9% sdg8 log2(count+1) 5 5 16% n = 711, 42.55% n = 467, 37.78% % of up 0 0 0 10 20 0 10 20 8% 20 20 C3 C4 0% n = 1,924, 14.94% % of no change n = 1342, 11.8% 15 15 25% 10 10 15% 5% 5 5 C1 C2 C3 C4 n = 1,742, 15.31% n = 725, 5.63% 0 0 0 10 20 0 10 20 Col-0 log2(count+1) c 10 C1 C2 NET-seq (Ser2P) read density 6 2 –1 TSS TES 1 Kb –1 TSS TES 10 NET-seq (Ser5P) read density 6 2 –1 TSS TES 1 Kb –1 TSS TES d C2 C3 C4 [0–10] [0–11] Col-0 [0–10] [0–11] [0–10] [0–11] sdg8 [0–10] [0–11] Annotation AT3G49780 AT1G13220 [0–3] AT1G13210 Col-0 [0–18] [0–3] [0–18] [0–3] [0–18] sdg8 [0–3] [0–18] [0–30] [0–38] Col-0 [0–30] [0–38] [0–30] [0–38] sdg8 [0–30] [0–38] [0–124 [0–30] Col-0 [0–124 [0–30] [0–124 [0–30] sdg8 [0–124 [0–30] e g 5’P abundance mRNA half-lives **** **** **** 20 5 ******** 14 11 3 log2(count+1) 3 10 log10(min) 9 2 8 1 7 0 0 C1 C2 C3 C4 C1 C2 C3 C4",
+    "section": "Transcription-resistive genes are resistant to degradation",
+    "page": "4",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "17"
+  },
+  {
+    "text": "To check whether the observation above is conserved among species, we analysed published H3K36me3 ChIP-seq data in Oryza sativa26. H3K36me3 enrichment in the knockdown mutant of SDG725, the closest homologue to Arabidopsis SDG8 (Extended Data Fig. 6a), showed upregulation in a subset of protein-coding genes (n = 1,739, Extended b ATAC-seq NS NS Col-0 sdg8 1.0 250 C1 ATAC signal (read counts) Normalized reads density 200 C2 0.6 150 C3 100 0.4 50 C4 0 0 C1 C2 C3 C4 –500 500 Peak (bp) C3 C4 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb Col-0 sdg8 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb f Relative RNA abundance C1 C3 H3K36me3 1.5 AT3G49796 0.8 RNA-seq NET-seq 0 (Ser2P) C1 NET-seq C2 (Ser5P) C3 C4 h 510 essential genes C3 (86.1%) C2 (3.9%) C4 (8.4%) 0 15 30 60 120 Time (min) C1 (1.6%) 812 a H3K36me3 H3K36me2 H3K36me1 H3K4me3 H3K4me2 H3K23ac H3K27ac H4K16ac H3K14ac H3K9ac H2A.X HTR5 TR TA 60 40 20 b ATAC NET-seq (Ser2P) TR Read counts 10 400 7.5 TA RPGC CPM FH 5 CH 2.5 200 0 –1.0 TSS 1 Kb –1.0 TSS TES 1 Kb –1.0 TSS TES 1 Kb 12 800 6 (n = 12,911) TR 8 4 400 (n = 4,375) TA 4 2 (n = 6,280) FH CH 0 0 0 (n = 259) c Chromatin states Key markers Constitutive H3K9me2/H3K27me1 (n = 259, 1% PCGs) Closed heterochromatin Facultative H3K27me3 (n = 6,280, 23.1% PCGs) Active H3K4me3 (n = 4,375, 16.1% PCGs) Open euchromatin Resistive H3K36me3 (n = 12,911, 47.5% PCGs) Fig. 3 | H3K36me marks transcription-resistive genes in Arabidopsis. a, Heat map depicting co-localization of different chromatin states in transcriptionresistive (TR) and transcription-activation (TA) genes via permutation test. The colour bar scale indicates permutation z-score. The definition criteria of TR and TA are detailed in Supplementary Fig. 6. b, Heat maps (bottom) and metaplots (top) showing levels of chromatin accessibility (ATAC-seq, read counts on clustered genes), NET-seq (Ser2P, RPGC values) signal and enrichment of Pol II Ser2P (data from GSE181489, CPM values) in 4 clustered genes, including TR, TA, FH and CH. FH, facultative heterochromatin; CH, constitutive heterochromatin. FH and CH genes are presented in Supplementary Data 3. c, Diagram showing the 4 main classifications of chromatin state and their representative histone modification markers.",
+    "section": "The H3K36me3-marked transcription-resistive state is conserved in rice",
+    "page": "5",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "18"
+  },
+  {
+    "text": "d, Venn diagram showing the overlap between C3 and TR genes. e, Permutation test of co-localization among TR/TA genes and C1–C4 H3K27me3 H3K27me1 H3K9me2 H3K4me1 H3K18ac H2A.W R-loop HTR13 mCHG H2A.Z mCHH mCG H1 NS NS 0 –20 –40 d e 2,475 TR TA C3 genes (n = 10,710) 40 C4 20 C3 8,235 0 C2 –20 C1 4,676 –40 Col-0 resistive (n = 12,911) f Resistive Activation Annotation AT3G14010 AT3G14040 AT3G14050 [0–18] H3K36me3 Col-0 sdg8 [0–59] Col-0 RNA-seq sdg8 [0–69] Col-0 NET-seq (Ser2P) sdg8 [0–18] Col-0 [0–21] ATAC g ** **** NS NS 20 15 log2(count+1) 12 Col-0 sdg8 9 6 3 0 TR TA C3 C4 clustered genes. The colour bar scale indicates permutation z-score. Statistical significance was determined by permutation test. f, IGV browser views showing representative TR and TA genes in Col-0 and sdg8 with H3K36me3 ChIP-seq, RNA-seq, NET-seq (Ser2P), ATAC-seq and Pol II ChIP-seq (data from GSE181489). g, Boxplots showing the mRNA levels of TR, TA, C3 and C4 genes in Col-0 and sdg8. Average values from 2 biological replicates are shown. Statistical significance was determined using unpaired two-tailed t-test; **P < 0.01, ****P < 0.0001; NS, no significant difference. The calculated P values for TA and C4 are 0.008 and 1.3 × 10−16, respectively. Tukey boxplot ranges are shown, whiskers extend to 1.5× the interquartile range from the quartiles. Normalized reads are shown as log2(count + 1). Sample numbers: nTR = 12,911, nTA = 4,375, nC3 = 10,710, nC4 = 12,878. Average values from 2 biological replicates are shown.",
+    "section": "The H3K36me3-marked transcription-resistive state is conserved in rice",
+    "page": "6",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "19"
+  },
+  {
+    "text": "813 Data Fig. 6b,e), suggesting the conserved role of SDG725 in inhibiting H3K36me3 deposition. Furthermore, we performed NET-seq using rice seedlings and the results showed much less transcription activity of Pol II on these H3K36me3-elevated genes (Extended Data Fig. 6c,f). By reanalyzing published FAIRE-seq data27, interestingly, we observed that these H3K36me3-elevated genes showed more open-chromatin states compared with H3K9me2-marked genes (Extended Data Fig. 6d,f), exhibiting a chromatin transcription-resistive state similar to those of C3 genes in Arabidopsis. Moreover, these H3K36me3-elevated genes are enriched in ‘metabolic process’ (Extended Data Fig. 6e,g), which is also similar to the ‘biological process’ of C3 genes in Arabidopsis (Extended Data Fig. 6e,g).",
+    "section": "The H3K36me3-marked transcription-resistive state is conserved in rice",
+    "page": "6",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "20"
+  },
+  {
+    "text": "Given that a large portion of C3 genes display the transcription-resistive state (Fig. 2b,c), we moved to investigate the transcription-resistive genes in the wild-type Col-0 genome. The protein-coding genes with Pol II binding (Pol II ChIP-seq) or open-chromatin state (ATAC-seq) but ultra-low Ser2P signal (NET-seq with anti-Pol II Ser2P antibody), and without H3K27me3 markers (facultative genes) were defined as transcription-resistive genes (see details in Supplementary Fig. 3). In a parallel manner, the protein-coding genes with Pol II binding or open-chromatin state (ATAC-seq) and high Ser2P signal were defined as transcription-activation genes (see details in Supplementary Fig. 3 legends). H3K27me3-marked facultative genes were used as a control. Overall, we identified 4,375 TA genes and 12,911 TR genes in the genome (Supplementary Fig. 3). Permutation test showed that the TR and TA genes are both negatively associated with repressive chromatin markers but highly positively associated with transcriptionally active chromatin markers (Fig. 3a). Notably, the TR genes show much more correlation of methylation of H3K36 modifications than TA genes, especially the H3K36me3 modification (Fig. 3a), suggesting that the methylation on H3K36 could mark a large number of protein-coding genes with the newly defined chromatin state, transcription resistive.",
+    "section": "H3K36 methylation stamps the transcription-resistive state",
+    "page": "7",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "21"
+  },
+  {
+    "text": "To test the possibility that the transcription rate of TR genes is too rapid to be effectively captured by NET-seq, we conducted flavopiridol (FLA, 10 μM) treatment (1 h) to slow down the Pol II elongation rate28,29 and then performed NET-seq using anti-Pol II Ser2P antibody. Results showed that the Ser2P signals on the majority of TA genes were indeed reduced upon FLA treatment (Extended Data Fig. 7), suggesting that FLA treatment can slow down the transcription rate of the transcription-active genes. However, there is no obvious difference in Ser2P NET-seq signals on the majority of TR genes between the control and FLA (Extended Data Fig. 7), indicating that the Ser2P signal on TR genes cannot be captured even when transcription elongation is inhibited, excluding the possibility that the transcription rate of TR genes is too rapid to be effectively captured by NET-seq. In detail, we defined a group of protein-coding genes as transcription resistive, accounting for 47.5% of total protein-coding genes in the Arabidopsis genome, and showing active chromatin states similar to transcription-activation genes (n = 4,375, accounting for 16.1% of protein-coding genes) (Fig. 3b,c) but with little to no transcription activities similar to heterochromatin, including the H3K9me2-marked constitutive heterochromatin genes (n = 259, accounting for 1% of protein-coding genes) and H3K27me3-marked facultative heterochromatin genes (n = 6,280, accounting for 23.1% of protein-coding genes) (Fig. 3b,c). Moreover, using similar parameters, we identified 7,198 TR genes in the mouse (Mus musculus) genome (Supplementary Fig. 4a), although they are not tightly associated with H3K36me modifications (Supplementary Fig. 4b,c, see details in the Discussion).",
+    "section": "H3K36 methylation stamps the transcription-resistive state",
+    "page": "7",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "22"
+  },
+  {
+    "text": "Together with the above data (Fig. 1), the majority (77%) of C3 genes defined in the sdg8 mutant belong to ‘transcription resistive’ (Fig. 3d), in line with the finding that TR genes are tightly associated with C3 genes (Fig. 3e,f), suggesting the uncharacterized roles of SDG8 in regulation of TR genes. Moreover, the mature RNA abundance of TR genes is not affected by SDG8 mutation (Fig. 3g), which is similar to that of C3 genes (Fig. 3g). In addition, we analysed alteration of the nascent RNA abundance in resistive genes under heat shock using published data30. Results showed that the nascent RNA from most of the resistive genes (95.6%) remains unchanged, with lower expression levels in comparison with the nascent RNA from transcriptional-active loci (Supplementary Fig. 5), suggesting that the resistive genes retain such quiescent state of transcription, even under enhanced environmental stimulation.",
+    "section": "H3K36 methylation stamps the transcription-resistive state",
+    "page": "7",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "23"
+  },
+  {
+    "text": "To provide notable insights into the biological functional relevance of the TR genes, we performed integrated analysis of H3K36me3 ChIP-seq, Pol II ChIP and RNA stability on TA and TR genes. The coding genes are categorized into 4 quartiles (q1 to q4 genes) on the basis of the mRNA half-lives data (Extended Data Fig. 8a). We then plotted the H3K36me3 ChIP-seq signals on q1–q4 genes, which are accompanied by increased mRNA stabilization, and observed that H3K36me3 correlates with increased transcript half-life (Extended Data Fig. 8b). Moreover, the TR genes, which accumulated more H3K36me3 than TA genes (Fig. 3a), were also associated with increased transcript half-life (Extended Data Fig. 8c). Together, these results indicate that H3K36me3 could serve as a chromatin signal to stabilize TR transcripts. Within the analysis combining Pol II ChIP-seq (including Pol II, Pol II Ser2P and Pol II Ser5P) (data from GSE181489) with TA/TR genes, the TA genes displayed a higher enrichment of all types of Pol II signal, which is consistent with the feature of active transcription in TA genes (Extended Data Fig. 8d). In addition, the TR genes showed a relatively high enrichment of Pol II Ser2P signals (Extended Data Fig. 8d), suggesting a potential stalling during the transcription elongation phase and finally resulting in very low transcription activities in TR genes.",
+    "section": "H3K36me3 is a chromatin signal to stabilize transcripts",
+    "page": "7",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "24"
+  },
+  {
+    "text": "By analysing and integrating multiple datasets, we have further elucidated the networks among TR genes, Pol II, H3K36me3 signals and transcript half-life: H3K36me3 might play a novel role in marking TR genes with stalled transcription elongation and serve as a chromatin signal to stabilize TR transcripts.",
+    "section": "H3K36me3 is a chromatin signal to stabilize transcripts",
+    "page": "7",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "25"
+  },
+  {
+    "text": "Given that H3K36me3 is the chromatin marker most associated with TR genes (Fig. 3a) and that the majority of the TR genes exhibit accumulated H3K36me3 levels in sdg8 (Fig. 3d,e), we assume that the H3K36me3-marked resistive state might be associated with the interplay among H3K36 HMTs. Therefore, we introduced the mutation of SDG8 into three other known H3K36 methyltransferase mutants using CRISPR/Cas9 (Extended Data Fig. 9a) and performed H3K36me3 ChIP-seq assays. As ATXR2 was shown to be mainly involved in cellular dedifferentiation9, we initiated mutant combinations from sdg4, sdg25 and sdg26, respectively. Results showed that the additional mutation of other H3K36me methyltransferases in sdg8 indeed attenuates the accumulated H3K36me3 levels in sdg8 (Fig. 4a and Extended Data Fig. 10a). In addition, the sdg8 sdg4 double mutant yields a drastic decrease of H3K36me3 on C3 genes compared with the sdg8 sdg25 and sdg8 sdg26 combinations (Fig. 4a and Extended Data Fig. 10a). These data suggest that SDG4 is the major H3K36 methyltransferase at the explicit TR genes (see below) that is responsible for the increased H3K36me3 levels in sdg8 (Fig. 4a, and Extended Data Figs. 4f and 8a). According to the patterns of H3K36me3 fluctuation in sdg8 sdg4 compared to sdg8, the protein-coding genes were classified into 4 groups (Fig. 4b). The increased H3K36me3 levels in the sdg8 of Groups 1 and 2 genes (accounting for 44.7% of C3, Fig. 4c) directly depend on the methyltransferase activities of SDG4 because the levels of H3K36me3 are totally removed on the Group 1 genes and are largely decreased on the Group 2 genes in the sdg8 sdg4 compared with sdg8 (Fig. 4a and Extended Data Fig. 9b). Interestingly, we plotted the H3K36me3 of sdg8 sdg25 and sdg8 sdg26 compared to sdg8 on G1–G4 genes (Extended Data 814 a b H3K36me3 Annotation (sdg8 sdg4/sdg8) 0 Col-0 Total C3 log2 –0.4 sdg4 –0.8 –1 TSS TES 1 Kb sdg8 c G1 C1 sdg8 sdg4 G2 C2 G3 sdg8 sdg25 C3 G4 No overlap C4 sdg8 sdg26 0 0.25 0.5 0.75 1.0 Gene ratio d **** **** **** **** 35 20 20 mRNA length (kb) 10 Exon length (kb) 8 4 6 3 4 2 2 1 0 0 G1 G2 G3 G4 ANG G1 G2 G3 G4 ANG e f SDG4 function on C3 10 Col-0 sdg8 NET-seq (Ser2P) sdg4 read density sdg8 sdg4 6 2 –1 TSS TES 1 Kb h Col-0 sdg8 sdg4 sdg8 sdg4 1 cm 2 mm 1 mm Fig. 4 | SDG8 and SDG4 compete on small genes to create ‘transcription resistive’ and affect fertility.",
+    "section": "HMTs coordinate H3K36me3 at TR genes",
+    "page": "7",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "26"
+  },
+  {
+    "text": "a, Metaplot illustrating the averaged pattern of H3K36me3 changes in sdg8 sdg4 compared to sdg8 on C3 genes. b, IGV browser views showing H3K36me3 levels of representative G1–G4 genes in Col-0, sdg8 and other double mutants. Protein-coding genes were classified into 4 groups on the basis of the changes in H3K36me3 levels in sdg8 sdg4 compared to sdg8. See details of classification in Methods. The gene lists for these 4 groups are shown in Supplementary Data 2. c, Proportions of G1–G4 in C1–C4 genes. G1 and G2 genes are highly enriched in the C2 and C3 clusters. d, Boxplots of mRNA length, exon length, exon number and exon ratio in G1–G4 genes. Statistical significance was determined using unpaired two-tailed t-test; ****P < 0.0001. The P values for G1 AT2G30020.1 AT2G30050.1 AT2G30460 AT2G30470.1 0–13 H3K36me3 nG1 = 1,980 nG2 = 5,604 nG3 = 2,489 nG4 = 12,657 **** **** **** **** 90 1.0 40 0.8 20 Exon number Exon ratio 0.6 15 0.4 10 0.2 5 0 0 G1 G2 G3 G4 ANG G1 G2 G3 G4 ANG g NET-seq_up GO analysis of co-regulated genes (n = 1,350) Response to stimulus 5,771 Developmental process 1,350 Reproduction 4,410 Growth FDR ≤ 0.05 RNA-seq_up 0 50 100 Enrichment ratio Col-0 sdg8 sdg4 sdg8 sdg4 1 cm 4 cm vs ANG and G3 vs ANG for each boxplot from left to right are: 1.6 × 10−19, 1.6 × 10−14, 4.0 × 10−05, 2.3 × 10−11, 1.1 × 10−31, 2.3 × 10−12, 3.0 × 10−03, 1.5 × 10−03.",
+    "section": "HMTs coordinate H3K36me3 at TR genes",
+    "page": "7",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "27"
+  },
+  {
+    "text": "Sample numbers: nG1 = 1,929, nG2 = 5,430, nG3 = 2,416, nG4 = 12,466, nANG = 26,852. Boxplots show the median, 25th to 75th percentiles, and minima and maxima (whiskers). ANG, all nuclear genes. e, Metagene profile of NET-seq (Ser2P) signal over C3 genes in Col0, sdg8, sdg4 and sdg8 sdg4. f, Venn diagram of overlap between upregulated NETseq (Ser2P) genes in sdg8 sdg4 compared with sdg8, and upregulated expression genes (RNA-seq) in sdg8 sdg4 compared with sdg8. g, Upregulated genes (overlap in f) were analysed for GO enrichment. The x axis shows the level of enrichment for each GO term. h, Phenotypes of indicated seedlings, flowers, stamens, pistils, siliques and plants in soil.",
+    "section": "HMTs coordinate H3K36me3 at TR genes",
+    "page": "8",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "28"
+  },
+  {
+    "text": "815 Fig. 10c), and found that these double mutants displayed even more H3K36me3 levels on G1 genes compared with sgd8 single mutants, further suggesting that SDG4 is mainly responsible for the deposition of H3K36me3 on G1 genes in the absence of other H3K36 methyltransferases. Moreover, these G1 and G2 genes can be clearly differentiated, as they display the features of shorter length and less exon numbers (Fig. 4d). The exon length of these genes occupies most of the gene length (Fig. 4d), which alternatively means that these C1 and C2 genes are short and intronless (Fig. 4d, see details in the legends). In addition to the Groups 1 and 2 genes, the Group 3 genes even showed much higher H3K36me3 levels in sdg8 sdg4 compared with sdg8 (Extended Data Fig. 9b), suggesting that other methyltransferases might function in the deposition of H3K36me3 in the absence of both SDG8 and SDG4. However, due to the severe defects in the plant fertility of sdg8 sdg4 double mutants (see below), we could not generate the combinations of sdg8 sdg4 with other methyltransferase mutants to validate which methyltransferase(s) is responsible for the further deposition of H3K36me3 on the Group 3 genes in the sdg8 sdg4. In the double mutants of sdg8 sdg25 and sdg8 sdg26, a portion of C3 genes showed mildly decreased H3K36me3 levels compared with sdg8 (Extended Data Fig. 10a,b), and the top 3,000 decreased H3K36me3 genes in each double mutant are largely overlapping (2,610/3,000, Extended Data Fig. 10d). Moreover, a proportion of C3 genes showed lower H3K36me3 levels in the sdg8 sdg25 sdg26 triple mutant than in the sdg8 sdg25 or sdg8 sdg26 double mutant (Extended Data Fig. 10f), suggesting redundant roles for SDG25 and SDG26 in catalysing H3K36me3 on protein-coding genes. Interestingly, the genes modulated by these two methyltransferases displayed a longer gene length, higher exon number and lower exon ratio than the genes that are regulated by SDG4 (G1 genes, Extended Data Fig. 10e), suggesting that the working loci in the genomes activated by different H3K36 methyltransferases depend on the gene structures.",
+    "section": "HMTs coordinate H3K36me3 at TR genes",
+    "page": "8",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "29"
+  },
+  {
+    "text": "To further investigate the differences in the regulation of H3K36me3 and transcription by SDG25 and SDG26, we performed scatterplot analysis. Results revealed that genes regulated by SDG25 had H3K36me3 levels that were substantially lower in sdg8 sdg26, while genes regulated by SDG26 were enriched in the region in sdg8 sdg25 with lower H3K36me3 (Extended Data Fig. 10g, top). Transcriptome data showed that genes regulated by SDG25 had no observed change in transcription in sdg8 sdg26 (that is, neither upregulated nor downregulated), while genes regulated by SDG26 were enriched in the region in sdg8 sdg25 with no notable change in transcription (Extended Data Fig. 10g, bottom). Collectively, the results showed that, although SDG25 and SDG26 have highly overlapping regulatory sites for H3K36me3 modification, their functions are not consistent, possibly due to preference or tightness of binding to one or two enzymes (see model in Extended Data Fig. 4f). In addition, we checked the transcription activities of sdg8 sdg25 sdg26 compared to sdg8 via NET-seq. Results showed that the transcription activities over C3 genes with decreased H3K36me3 in sdg8 sdg25 sdg26 compared with sdg8 sdg25 (Extended Data Fig. 10h, top) or sdg8 sdg26 (Extended Data Fig. 10h, bottom) remained subtle in sdg8 sdg25 sdg26 compared with sdg8 (Extended Data Fig. 10h), suggesting that the resistive state of these genes was not disturbed in seedling stages. Consistently, we observed no developmental defects in sdg8 sdg25 sdg26 during seedling stages, but the delayed seed germination of this triple mutant is visible (Supplementary Fig. 6).",
+    "section": "HMTs coordinate H3K36me3 at TR genes",
+    "page": "9",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "30"
+  },
+  {
+    "text": "Since the sdg8 sdg4 double mutant exhibited dramatically decreased H3K36me3 levels compared with sdg8 on C3 genes (Fig. 4a–c), we then focused on the effect of SDG4 on ‘transcription resistive’. We performed NET-seq using sdg4 and sdg4 sdg8 mutants and found that the transcription activities are elevated on C3 genes in the sdg4 sdg8 compared with sdg8 as well as sdg4 single mutants, although the levels are still low (Fig. 4e, see also Figs. 2c and 3b). In addition, these increased Pol II activities in the sdg4 sdg8 are mostly performed on the short and intronless genes, Groups 1 and 2 genes (Fig. 4d), whose H3K36me3 deposition is largely dependent on SDG4 activity in the absence of SDG8 (Fig. 4a and Extended Data Fig. 9d,e,g,h), suggesting that the H3K36me3 dynamics mediated by SDG4 and SDG8 could modulate the transcription, leading to a transcription-resistive state. In the absence of both SDG4 and SDG8, the decreased H3K36me3 promotes the activity of transcription on C3 genes (Fig. 4b,e and Extended Data Fig. 9b,e), further suggesting that H3K36me3 could function as the transcription suppressor. A previous study showed that both SDG8 and SDG4 are highly expressed in the sperm nuclei of the pollen31. To confirm the relationship between SDG8 and SDG4, we decided to test whether altering the abundance of one protein will affect the enrichment state of the other. Therefore, we performed immunofluorescence assays to detect the enrichment of SDG8 and SDG4 in the sperm nuclei of pollens. Results showed that both SDG8 and SDG4 proteins are enriched in the sperm nuclei of Col-0 pollens (Extended Data Fig. 9f), while the SDG4 is more accumulated in the sperm nuclei of the sdg8 pollens (Extended Data Fig. 9f, left). Consistently, SDG8 is also more stimulated in the sperm nuclei of sdg4 pollen compared with Col-0 pollen (Extended Data Fig. 9f, right), suggesting a competitive relationship between these two methyltransferases.",
+    "section": "SDG4 competes with SDG8 at short and intronless TR genes",
+    "page": "9",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "31"
+  },
+  {
+    "text": "Since the H3K36me3 modifications were largely removed and Pol II activities were elevated on the Group 1 and 2 genes in the sdg8 sdg4 double mutants (Extended Data Fig. 9b–e), we assumed that the ‘transcriptional resistive’ on the Group 1 and 2 genes is maintained by the cooperation of SDG8and SDG4-mediated H3K36me3 modification. Moreover, we also checked the upregulated mRNA in sdg8 sdg4 compared with sdg8, and overlapped them with the upregulated nascent RNAs in sdg8 sdg4 compared with sdg8. Finally, a total of 1,350 genes were identified to be upregulated in transcription activities and RNA abundance (Fig. 4f), and these genes, whose resistive state was disturbed in the sdg8 sdg4, are associated with the reproduction process of plants (Fig. 4g). Consistently, sdg8 sdg4 showed obvious developmental defects during reproductive growth, even though these double mutants did not show visible abnormal phenotypes in seedling stages (Fig. 4h). We observed that the floral organ in sdg8 sdg4 exhibited more defects than in the sdg8 single mutant; the stamen and pistil in sdg8 sdg4 were both shorter than those in the wild type or single mutant, finally resulting in inadequate development of siliques (Fig. 4h).",
+    "section": "SDG4 competes with SDG8 at short and intronless TR genes",
+    "page": "9",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "32"
+  },
+  {
+    "text": "The precise regulation of transcription is essential for faithful development among species. Active transcription often features open chromatin, Pol II enrichment and active histone modifications, while transcription silencing is tightly associated with compacted chromatin states and repressive histone modifications, such as H3K9me2 and H3K27me3 (Fig. 3c). In this study, we identified a novel transcription state, termed ‘transcription resistive’, which shares active histone markers with transcriptionally active genes but displays the undetectable transcription activities of silencing genes (marked by H3K27me3 and H3K9me2). Importantly, the majority of resistive genes are essential for plant development (Fig. 2h) and disruption of the transcription-resistive state on these genes could cause severe plant phenotypes (Fig. 4h). Moreover, this transcription-resistive state seems to be conserved among species (Extended Data Fig. 6 and Supplementary Fig. 4). It is well documented that H3K36me3 is associated with transcription-active genes and functions as a transcription elongation-coupled epigenetic marker7,8. However, in our case, H3K36me3 has an additional role with respect to transcription-resistive genes (Fig. 3), which is not coupled with active transcription. Even in the sdg8 mutant, the much more stimulated H3K36me3 did not trigger 816 transcription (Fig. 1d); however, the loss of H3K36me3 modifications on some short genes in the sdg4 sdg8 double mutant stimulated transcriptional activities (Fig. 4b–e), unveiling an astonishing role of H3K36me3 in transcription inhibition.",
+    "section": "Discussion",
+    "page": "9",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "33"
+  },
+  {
+    "text": "This finding is different from observations in mammals where the gene body H3K36me3 could recruit DNA methyltransferase Dnmt3b for the establishment of gene body DNA methylation to prevent cryptic transcription initiation32, as the transcription resistive in our case is not correlated with DNA methylation (Fig. 3a). In Neurospora crassa, ASH1, one of the H3K36 methyltransferases, mediated H3K36me2-marked genes, which are poorly transcribed, as these genes are co-marked by facultative heterochromatin markers H3K27me2/3 (ref. 33). In addition, the loss of SDG26, a homologue of SDG8 in Arabidopsis, was reported to promote H3K36me3 levels and transcription levels on FLC gene independently of its histone methyltransferase activity, although accompanied by reduced H3K27me3 modifications34,35. However, the resistive genes that we found are not associated with H3K27me3 modification (Fig. 3a), and the H3K27me3 modification was not altered in the sdg8 mutant (Supplementary Fig. 2).",
+    "section": "Discussion",
+    "page": "9",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "34"
+  },
+  {
+    "text": "In mammals, a single methyltransferase, SETD2, is responsible for dito trimethylation of H3K36 (ref. 6). In plants, there are multiple methyltransferases for implementing H3K36 methylation (Fig. 1a and Extended Data Fig. 6a), and a single methyltransferase could catalyse multivalent H3K36 methylation (this study and refs. 11,12,14,16), indicating more complicated crosstalk among H3K36 methyltransferases in plants, which may explain why the transcriptional-resistive state in mammals is not tightly correlated with H3K36 methylation (Supplementary Fig. 4). SDG8, the major H3K36 methyltransferase in Arabidopsis, is associated with multiple transcription activators, such as H3K4me1/2 (ref. 36), H3K27me3 demethylase ELF6 (ref. 37) and active forms of RNAPII, but it also interacts with inactive forms of RNAPII38, suggesting that H3K36 methylation, mainly regulated by SDG8 in Arabidopsis, could be involved in an unusual establishment of the chromatin environment or transcription state. In addition, it is worth mentioning that no H3K36me demethylases have been identified in plants until now. Therefore, the crosstalk or competitive cooperation among multiple methyltransferases may trigger a special monitoring system to keep proper H3K36me levels throughout the plant genome, which does not necessarily require any H3K36me demethylases. We propose that the complicated crosstalk among multiple H3K36 methyltransferases could regulate the low-to-zerolevel transcription of ‘transcription resistive’ in plants. Future work is needed to reveal more conserved factors participating in ‘transcription resistive’ among species.",
+    "section": "Discussion",
+    "page": "10",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "35"
+  },
+  {
+    "text": "All mutants used in this study are of the Columbia ecotype (Col-0) background, including sdg8 (efs-3)19, sdg25 (SALK_149692), sdg26 (SALK_201240), atxr2 (SALK_026154) and sdg4 (SALK_128444). We used the CRISPR/Cas9 system to generate single, double and triple mutants, including SET-domain deletion sdg8-SET-KO, sdg8CRISPR sdg25, sdg8CRISPR sdg26, sdg8CRISPR sdg4 and sdg8CRISPR sdg25 sdg26. Surface-sterilized seeds were grown on MS medium (Murashige and Skoog salt base, Sigma-Aldrich, M5519) supplemented with 0.25% Phytagel and 1% sucrose, and incubated under a 4 °C condition of stratification for 2 days; the plants were then incubated at 22 °C under a 16-h-light/8-h-dark cycle for 14 days.",
+    "section": "Methods Plant material and growth conditions",
+    "page": "10",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "36"
+  },
+  {
+    "text": "GUS staining was conducted following the protocol in ref. 39. All tissues were fixed with ice-cold 90% acetone for 1 h at −20 °C. The tissues were washed with PBS three times, soaked in staining solution with X-gluc and vacuum infiltrated for 20 min. After 12 h of staining at 37 °C, the samples were washed with ethanol, mounted on slides and examined with an Olympus BX51 microscope and a Nikon dissecting microscope (SMZ800).",
+    "section": "GUS staining",
+    "page": "10",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "37"
+  },
+  {
+    "text": "Total RNA was extracted from 14-day-old seedlings, germination seed, pollen and cauline leaf using TRIzol (Ambion, 15596) reagent. cDNA was synthesized from the RNA acquired above and genomic DNA was removed by using Hifair II 1st Strand cDNA Synthesis SuperMix for qPCR (gDNA digester plus) (YEASEN, 11123ES60). A LightCycler 480 (Roche) equipment was used for quantitative real-time PCR. The reaction mixture (11 μl) consisted of 0.5 μl DNA, 5.5 μl of 480 SYBR Green I Master (Roche, 04887352001) and 2.5 pmol of each primer shown in Supplementary Data 4. For the RT–qPCR in Extended Data Fig. 3b, the paired primers F: 5’-CATTCACCGAGCATGACGA-3’ and R: 5’-CTCTCCTCCCTGTTGATGC-3’ were used.",
+    "section": "RNA extraction and RT–qPCR",
+    "page": "10",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "38"
+  },
+  {
+    "text": "ChIP for histone modifications was carried out on the basis of published protocols40. In brief, 2 g of 14-day-old seedlings were cross-linked with 1% formaldehyde. The cross-linking was stopped by adding 0.125 M glycine and the sample was rinsed 5 times with double-distilled H2O. Then the plants were frozen with liquid nitrogen, ground into fine powder and lysed with Honda buffer (containing 0.44 M sucrose, 12.5% Ficoll, 2.5% dextran T40, 20 mM HEPES KOH pH 7.4, 10 mM MgCl2, 0.5% Triton X-100, 1 mM phenylmethylsulfonyl fluoride, 1% plant protease inhibitor cocktail, 5 mM dithiothreitol). The homogenate was filtered through Miracloth (Millipore, 475855-1R) and then spun at 2,000 g for 15 min. The nuclear pellet was washed twice with the same buffer mentioned above and resuspended in lysis buffer (50 mM Tris-HCl, pH 8.0, 10 mM EDTA, 1% SDS, 1 mM phenylmethylsulfonyl fluoride and 1× protease inhibitor) and sonicated using a Bioruptor Pico with the following settings: 30 s on/ off intervals, 4 times for 10 min each. The sample was spun at maximum speed for 10 min. The supernatant was collected and diluted 10-fold with ChIP dilution buffer (1.1% Triton X-100, 1.2 mM EDTA, 16.7 mM Tris-HCl, pH 8.0, 167 mM NaCl). The diluted chromatin solution was incubated with 5 µg of anti-H3K36me1 (Abcam, ab9048), anti-H3K36me2 (Abcam, ab9049), anti-H3K36me3 (Abcam, ab9050) or anti-H3K27me3 (Millipore, 07-449) at 4 °C overnight. Then, 25 μl Dynabeads Protein G magnetic beads (Invitrogen, 10004D) were added to each sample and the sample incubated for 3 h to perform immunoprecipitation. The beads were washed with 1 ml of low-salt wash buffer (50 mM Tris-HCl, pH 7.8, 150 mM NaCl, 1 mM EDTA, 0.1% SDS, 1% Triton X-100) once, with 1 ml of high-salt wash buffer (wash buffer with 500 mM NaCl) twice, with 1 ml of LiCl buffer (10 mM Tris-HCl, pH 7.8, 1 mM EDTA, 0.25 M LiCl, 1% sodium deoxycholate) once and with 1 ml of TE buffer (10 mM Tris-HCl, pH 7.5, 1 mM EDTA) once. Chelex resin (100 μl, 10%; BioRad, 1422842) was added to the immune complexes and the complexes incubated at 95 °C for 10 min at 1,300 r.p.m. to elute them. The sample was brought to room temperature and incubated with 1 μl proteinase K (20 mg ml−1, Thermo Fisher) at 45 °C for 1 h. The sample was then boiled at 95 °C for 10 min and spun at 1,300 r.p.m. The eluted DNA was purified with phenol-chloroform before DNA library construction. DNA acquired from ChIP were sonicated to 250-bp fragments using focused ultrasonicator (Covaris, M220). The Accel-NGS 1S Plus DNA Library kit (Swift Biosciences) was used to construct ChIP-seq libraries from the sonicated DNA, following manufacturer instructions. The libraries were verified on an Agilent BioAnalyzer and then sequenced on an Illumina NovaSeq 6000 system.",
+    "section": "ChIP-seq",
+    "page": "10",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "39"
+  },
+  {
+    "text": "As previously described22,41, 14-day-old seedlings (Col-0 background for Arabidopsis and Nipponbare for rice) were ground in liquid nitrogen and resuspended in ice-cold lysis buffer (50 mM HEPES pH 7.5, 150 mM NaCl, 1 mM EDTA pH 8.0, 1% Triton X-100, 10% glycerol, 5 mM β-mercaptoethanol, 1 mM phenylmethylsulfonyl fluoride, 2 μg μl−1 aprotinin and 2 μg μl−1 pepstatin A). The lysis mixture was filtered and spun to remove the supernatant. The nuclear pellet was resuspended once with HBB buffer (25 mM Tris-HCl pH 7.6, 0.44 M sucrose, 10 mM MgCl2, 817 0.10% Triton X-100 and 10 mM β-mercaptoethanol) and once with HBC buffer (4/5 vol. HBB + 1/5 vol. glycerol), and then resuspended in MNase buffer (20 mM Tris-HCl pH 8.0, 5 mM NaCl and 2.5 mM CaCl2), with 20 U of micrococcal nuclease (Takara, 2910A) added. The reaction mixture was incubated at 37 °C for 8 min, and 19 mM EDTA was added to stop the reaction. Sonication was performed with 1 s on/off for 10 cycles after MNase digestion, and the supernatant was collected by spinning at maximum speed. The supernatant was incubated with beads coated with 10 μg antibody (anti-Pol II Ser5p, Abcam, ab5131; anti-Pol II Ser2p, Abcam, ab5095) for 2 h at 4 °C, and the complexes were washed 8 times with chilled NET-2 buffer (50 mM Tris-HCl pH 7.4, 150 mM NaCl and 0.05% NP-40). Finally, the beads were resuspended in T4 polynucleotide kinase (T4 PNK) reaction mixture with 97.5 μl of T4 PNK buffer, 1 μl of T4 PNK enzymes (NEB, M0236) and 1.5 μl of 100 mM ATP, and then incubated at 37 °C for 10 min at 1,400 r.p.m. Then, the supernatant was discarded and beads were washed with NET-2 buffer. The beads were resuspended again in 500 μl of TRIzol and incubated for 10 min at room temperature. After chloroform extraction, RNA was precipitated with 1/10 volume of NH4OAc, 3 volumes of ethanol and 1 μl of GlycoBlue (Invitrogen). The NEXTflex small RNA-Seq Kit V3 was used to construct the libraries from the precipitated RNA.",
+    "section": "NET-seq",
+    "page": "10",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "40"
+  },
+  {
+    "text": "Finally, the libraries were recovered from a 6% PAGE gel with 140–250 bp and sent for sequencing.",
+    "section": "NET-seq",
+    "page": "11",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "41"
+  },
+  {
+    "text": "The ATAC-seq method was modified from previous publications42,43. Briefly, 0.25 g of 14-day-old seedlings were freshly collected and ground with a homogenizer in ice-cold nuclei purification buffer (20 mM Mops pH 7.0, 40 mM NaCl, 90 mM KCl, 2 mM EDTA, 0.5 mM EGTA, 0.5 mM spermidine, 0.2 mM spermine and 1× protease inhibitor cocktail). The homogenate was filtered with a 40-μm nylon mesh and then centrifuged to discard the supernatant. The nuclear pellet was sequentially purified with NEB2 buffer (0.25 M sucrose, 10 mM Tris-HCl pH 8.0, 10 mM MgCl2, 1% Triton X-100 and 1× protease inhibitor cocktail), NEB3 (1.7 M sucrose, 10 mM Tris-HCl pH 8.0, 2 mM MgCl2, 0.15% Triton X-100 and 1× protease inhibitor cocktail) and nuclei purification buffer. The nuclear pellet was resuspended in DEPC-treated H2O and then immediately subjected to transposition reaction. Chromatin was fragmented in the reaction system containing 5 μl TTE Mix V5, 10 μl of 2× DMF buffer (66 mM Tris-acetate pH 7.8, 132 mM K-acetate, 20 mM Mg-acetate and 32% DMF) at 37 °C for 30 min. Fragmented DNA was purified with the ChIP DNA Clean & Concentrator kit (Zymo, D5205). The purified DNA was used for library construction.",
+    "section": "ATAC-seq",
+    "page": "11",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "42"
+  },
+  {
+    "text": "Pollen collection and nuclei extraction were performed as previously described44. The primary antibody anti-SDG8 (privately made by GenScript against peptide CQEPRYDHQSPRPAE, dilution 1:200) and secondary antibody goat anti-rabbit IgG H&L (Alexa Fluor 555, ab150078, dilution 1:200) were used for immunostaining. The confocal imaging results were collected using a Zeiss LSM 880 confocal laser scanning microscope with ZEN blue edition (v.3.4) software.",
+    "section": "Pollen nuclei immunostaining",
+    "page": "11",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "43"
+  },
+  {
+    "text": "Total RNA was extracted from seedlings using Plant RNA Extraction Mini Kit B (Mabio, RNP451-03B), then the RNA library was constructed with the VAHTS Universal V8 RNA-seq Library Prep kit for Illumina (Vazyme, NR605) following the manufacturer’s protocol.",
+    "section": "RNA-seq",
+    "page": "11",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "44"
+  },
+  {
+    "text": "ChIP-seq and ATAC-seq analysis. Briefly, trimmed reads were aligned to the TAIR10 genome with Bowtie 2 (v.2.3.0 and v.2.3.5.1) using default settings, and samtools 1.3.1 was used to remove reads with more than 3 mismatches and non-uniquely mapped reads. Then MACS2 was used to identify peaks, and normalized coverage files (bigWig) with 10 bin sizes were obtained using bamCoverage from deeptools using the RPGC normalization method (v.2.26.0) for visualization on the Integrative Genomics Viewer (IGV). Furthermore, bamCompare or bigwigCompare from deeptools was used to compare immunoprecipitated samples. DESeq2 was used to analyse epigenetic modification differences between samples. The false discovery rate method was used to calculate the adjusted P value (q-value), and the q-values and log2FC values were used to determine significant differences. DMG analysis is discussed in detail in the next paragraph. Spearman’s rank correlation coefficients were calculated with plotCorrelation from deepTools using bigwig files generated from bamCoverage tools with the setting of 100-bp bins window. Heat maps were generated with computeMatrix from deepTools. For the differentially methylated genes analysis in Fig. 1c and Extended Data Fig. 1, the parameters used for the up-DMGs and down-DMGs are as follows: up-DMGs adjusted q-value < 0.05, FC (mutant/WT) ≥ 1.4 and FC (WT_modifications/WT_H3 or input) > 1.2; down-DMGs adjusted q-value < 0.05, FC (WT/mutant) ≥ 1.4 and FC (WT_modifications/WT_H3 or input) > 1.2.",
+    "section": "Data analysis",
+    "page": "11",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "45"
+  },
+  {
+    "text": "For the classification of 4 clusters of differential SDG8-regulated genes in Fig. 1d, we classified SDG8-regulated genes on the basis of the following criteria: SDG8 totally dependent genes (Cluster 1, C1): FC (WT_H3K36me3/sdg8_H3K36me3) ≥ 1.2, P < 0.05, and FC (sdg8_H3K36me3/sdg8_H3) ≤ 1 or FC (sdg8_H3K36me3/sdg8_H3) > 1, P ≥ 0.05, and FC (WT_H3K36me3/WT_H3) > 1, P < 0.05; SDG8 partially dependent genes (Cluster 2, C2): H3K36me3 FC (WT_H3K36me3/sdg8_ H3K36me3) ≥ 1.2, P < 0.05, and FC (sdg8_H3K36me3/sdg8_H3) > 1, P < 0.05, and FC (WT_H3K36me3/WT_H3) > 1, P < 0.05; SDG8 restraining genes (Cluster 3, C3): H3K36me3 FC (sdg8_H3K36me3/WT_H3K36me3) ≥ 1.2, P < 0.05, and FC (sdg8_H3K36me3/sdg8_H3) > 1, P < 0.05; H3K36me3 absent genes (Cluster 4, C4): FC (sdg8_H3K36me3/sdg8_H3) ≤ 1 or FC (sdg8_H3K36me3/sdg8_H3) > 1, P ≥ 0.05, and FC (WT_H3K36me3/WT_ H3) ≤ 1 or FC (WT_H3K36me3/WT_H3) > 1, P ≥ 0.05. For the classification in Fig. 1d, G1 represents a group of genes in which the H3K36me3 deposition was fully dependent on SDG4 in the sdg8 background (FC (sdg8_H3K36me3/sdg8 sdg4_ H3K36me3) ≥ 1.2, P < 0.05, and FC (sdg8 sdg4_H3K36me3/sdg8 sdg4_H3) ≤ 1 or FC (sdg8 sdg4_H3K36me3/sdg8 sdg4_H3) > 1, P ≥ 0.05, and FC (sdg8_H3K36me3/sdg8_H3) > 1, P < 0.05). G2 represents a group of genes that are partially acted upon by SDG4 in the sdg8 background (H3K36me3 FC (sdg8_H3K36me3/sdg8 sdg4_H3) ≥ 1.2, P < 0.05, and FC (sdg8 sdg4_H3K36me3/sdg8 sdg4_H3) > 1, P < 0.05, and FC (sdg8_H3K36me3/sdg8_H3) > 1, P < 0.05). G3 represents a group of genes that are inhibited by SDG4 in the sdg8 background (H3K36me3 FC (sdg8 sdg4_H3K36me3/sdg8_H3K36me3) ≥ 1.2, P < 0.05, and FC (sdg8 sdg4_H3K36me3/sdg8 sdg4_H3) > 1, P < 0.05). G4 represents a group of genes that are not influenced by SDG4 in the sdg8 background (FC (sdg8 sdg4_H3K36me3/sdg8 sdg4_H3) ≤ 1 or FC (sdg8_H3K36me3/sdg8_H3) > 1, P ≥ 0.05).",
+    "section": "Data analysis",
+    "page": "11",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "46"
+  },
+  {
+    "text": "NET-seq analysis. Following the removal of Illumina adaptors from R2 reads, the Cutadapt tool was adapted to filter out reads shorter than 35 bp on the basis of the reads distribution density. The resulting filtered reads were then aligned to the Arabidopsis reference genome (TAIR10) using Bowtie 2 (v.2.3.0 and v.2.3.5.1) with default settings. RNA-seq analysis. Briefly, reads were trimmed and quality controlled using the fastp tool, then aligned to the TAIR10 reference genome using STAR paired-end settings. Normalized counts were calculated using HTseq, and differential analysis was performed using DEseq2.",
+    "section": "Data analysis",
+    "page": "11",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "47"
+  },
+  {
+    "text": "The analysis in Fig. 1c utilized H3K4me3 ChIP-seq data from PRJNA732996 and PRJNA643778, H3K9me2 ChIP-seq data from PRJNA454877, H3K27me1 ChIP-seq data from PRJNA438239, and H3K27me3 ChIP-seq data from PRJNA429247. The H3K36me3 ChIP-seq 818 data were generated in this study (GSE253972). Initially, all raw data files were processed through the aforementioned ChIP-seq analysis pipeline to obtain BAM files. Subsequently, differential methylation genes were calculated using DESeq2. Bar charts show the number of differentially methylated genes in major histone lysine (H3K4me3, H3K9me2, H3K27me1, H3K27me3 and H3K36me3) methyltransferase mutants relative to WT. Red bars indicate up-adjusted q-values < 0.05, FC (mutant/WT) ≥ 1.4 and FC (WT_IP/WT_H3 or input) > 1.2; blue bars indicate down-adjusted q-values < 0.05, FC (WT/mutant) ≥ 1.4 and FC (WT_IP/WT_H3 or input) > 1.2.",
+    "section": "Statistical analysis of ChIP-seq data in multiple histone methyltransferase mutants",
+    "page": "11",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "48"
+  },
+  {
+    "text": "Further information on research design is available in the Nature Portfolio Reporting Summary linked to this article.",
+    "section": "Reporting summary",
+    "page": "12",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "49"
+  },
+  {
+    "text": "All data needed to evaluate the conclusions in the paper are present in the paper and/or the Supplementary Information. High-throughput sequencing data in this study have been deposited in the Gene Expression Omnibus database (accession no. GSE253972, GSE281306). Other published datasets used in this study are listed in the related legends and/or Methods sections. Source data are provided with this paper.",
+    "section": "Data availability",
+    "page": "12",
+    "paper_id": "P002",
+    "title": "H3K36 methylation stamps transcription resistive to preserve development in plants",
+    "authors": [
+      "Yao Yao",
+      "Jincong Zhou"
+    ],
+    "year": "2025",
+    "source_file": "P002.pdf",
+    "id": "50"
+  }
+]

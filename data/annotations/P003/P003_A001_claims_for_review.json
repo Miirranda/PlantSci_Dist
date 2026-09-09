@@ -1,0 +1,180 @@
+{
+  "paper_id": "P003",
+  "article_id": "A001",
+  "guideline": "观点句抽取细则.md",
+  "task": "review_A_inclusion",
+  "instructions": "review_decision 默认 keep；发现不该进 Benchmark 时改为 drop 或 merge。不要改写 claim_zh。",
+  "sample_count": 17,
+  "samples": [
+    {
+      "claim_id": "C01",
+      "claim_zh": "该研究详尽阐述了新形成的籼粳亚种间节段异源四倍体水稻中部分同源染色体间发生大规模重组，从而导致其在仅经历12次有性繁殖世代后快速演化为一系列在基因组组成和表型上均显著分歧的同源四倍体系的过程。",
+      "claim_role": "paper_lead",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C02",
+      "claim_zh": "这一研究结果暗示自然界中存在从异源多倍体（allopolyploid）向同源多倍体（autopolyploid）快速演化的可能性，对分类学和系统学研究，以及新型多倍体作物育种均具有重要启示。",
+      "claim_role": "paper_conclusion",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C03",
+      "claim_zh": "部分同源交换（Homoeologous Exchange, HE）作为异源多倍体特有的结构变异类型，对基因组稳定性、基因表达调控及表型可塑性都具有深远影响。",
+      "claim_role": "paper_intro",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C04",
+      "claim_zh": "由于HE介导的基因组嵌合必然会进一步增加亚基因组间部分同源染色体之间的相似性，进而加剧减数分裂紊乱，理论上含有大量HEs的多倍体后代的育性将进一步下降。",
+      "claim_role": "paper_intro",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C05",
+      "claim_zh": "此外，理论预测，在缺乏强选择压力的情况下，HE驱动的部分同源染色体重组将促使节段异源多倍体快速向同源多倍体方向演化。",
+      "claim_role": "paper_intro",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C06",
+      "claim_zh": "然而，上述理论推测均未经实验验证。",
+      "claim_role": "paper_intro",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C07",
+      "claim_zh": "研究者利用水稻（Oryza sativa L.）粳稻亚种（subsp. japonica）cv. Nipponbare和籼稻亚种（subsp. indica）cv. 9311正反交的F1杂交种，经全基因组加倍和单粒传连续自交11代，构建了包含202个四倍体重组自交系（tetraploid recombinant inbred lines, TRILs）的研究群体。",
+      "claim_role": "paper_method",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C08",
+      "claim_zh": "通过全基因组重测序，发现TRILs的基因组组成呈现快速纯合的特性，平均纯合度可达84%，最高纯合度的TRIL达到97.8%（图1a）。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C09",
+      "claim_zh": "同时，202个TRILs中共检测到21,900个HEs，平均每个TRIL含有108.4个，且不同TRILs间HE的数量、长度、位置均呈现高度异质性，导致TRILs的基因组呈现出系间不同的“马赛克”状的（mosaicism）嵌合模式（图1b），并存在TRILs中双亲贡献不对称，籼稻亲本9311的遗传贡献显著高于粳稻亲本Nipponbare的现象（58.3% vs. 41.7%）。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C10",
+      "claim_zh": "此外，研究者在6号染色体上鉴定到一个完全偏分离的基因组片段，即所有TRILs均在该染色体片段保留了1个源自9311，长度不等，最小共有长度为1.7-Mb（Chr6: 7680000-9385000）的核心区段（图1c）；对上述核心基因组区段出现的原因进行分析，发现其可能归因于该核心区段上含有的亲本间（籼粳亚种间）发生功能分化的DNA修复类基因，以及Nipponbare基因组在该1.7-Mb核心区段中存在转座到其他基因组位置的重要功能基因，但9311基因组在该区段不含有转座的重要功能基因。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C11",
+      "claim_zh": "研究者还发现，四倍体中HE在全基因组范围及染色体之间的分布与利用相同双亲基因型构建的二倍体重组自交系（diploid recombinant inbred lines, DRILs）中的同源重组（homologous recombination, HR）分布高度相关（r = 0.61），但四倍体HE频率是二倍体HR的2倍左右；且两者均与双亲间（籼粳亚种间）基因组核苷酸序列相似性、DNA甲基化水平、组蛋白修饰水平、染色质开放程度及不同转座子丰度均具有显著相关性，但四倍体中HE的相关性相较于二倍体中HR变弱（图1d）。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C12",
+      "claim_zh": "为了探究这套TRIL材料中是否存在减数分裂相对稳定的系，研究者选取具有不同育性的TRILs来进行减数分裂染色体配对行为分析，结果表明，高育性且减数分裂更稳定的2个TRILs与低育性且减数分裂紊乱的2个TRILs相比表现出显著降低的四价体频率和显著提高的二价体频率，以及显著更高的更倾向均等分离的交替型（alternate）四价体构型比例（图2）。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C13",
+      "claim_zh": "进一步基于对TRILs群体进行了连续两年的涵盖20个水稻重要农艺性状和3个生理指标的系统测定，发现TRILs在各个测定的表型性状上都呈现显著分歧，并筛选到2个具有稳定高结实，且单株产量显著高于双亲的TRILs（图3a-b，e）。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C14",
+      "claim_zh": "此外，通过对TRILs进行系统的耐盐性（150 mM NaCl处理）和氮利用率（2 mM KClO3敏感性实验）评价，鉴定到一些具有超亲耐盐性的TRILs和超亲高效氮利用的TRILs（图3c-d，f-g）。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C15",
+      "claim_zh": "这些结果表明，HE介导的基因组重构在多倍体作物育种中具有潜在应用价值。",
+      "claim_role": "paper_conclusion",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C16",
+      "claim_zh": "综上，该研究利用实验进化生物学手段证明，源自亲缘关系较近的二倍体双亲的异源多倍体（特别是节段异源多倍体）可以在较少的有性繁殖世代内，发生并积累大量部分同源交换（HE）事件，并由此驱动“异源多倍体向同源多倍体的转化”现象，该现象的发现对分类学和系统学研究具有重要启示。",
+      "claim_role": "paper_conclusion",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C17",
+      "claim_zh": "同时，该研究关于多倍体优势的研究结果也提示，利用驯化的同属不同种间或亚种间二倍体作物为亲本，通过人工合成多倍体途径有望快速培育出具有重要农业应用价值的新型多倍体作物。",
+      "claim_role": "paper_conclusion",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    }
+  ]
+}

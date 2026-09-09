@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>召回审核</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div>
+    <div class="title">召回审核（文件1）</div>
+    <div class="subtitle" id="subtitle">加载中…</div>
+  </div>
+  <label class="reviewer-box">
+    <span>审核人</span>
+    <input id="reviewerInput" placeholder="填写你的姓名">
+  </label>
+  <div class="progress">
+    <span id="posText">0/0</span>
+    <span class="bar"><i id="barFill" style="width:0%"></i></span>
+    <span id="doneText">我的进度 0</span>
+  </div>
+  <div class="nav">
+    <button id="prevBtn" title="上一条">← 上一条</button>
+    <button id="nextBtn" title="下一条">下一条 →</button>
+    <span class="jump">
+      <input id="jumpInput" type="number" min="1" placeholder="#">
+      <button id="jumpBtn">跳转</button>
+    </span>
+    <button id="nextTodoBtn" title="跳到下一条未审核">下一条未审核</button>
+  </div>
+</header>
+
+<div class="layout">
+  <div class="main-col">
+
+    <!-- 他人审核参考 -->
+    <div class="card ref-card" id="refCard">
+      <div class="card-title"><span class="dot" style="background:#d97706"></span>他人审核参考</div>
+      <div id="refContent"></div>
+    </div>
+
+    <!-- 观点句 -->
+    <div class="card claim-card">
+      <div class="card-title"><span class="dot"></span>观点句（公众号）</div>
+      <div class="claim-text" id="claimText">—</div>
+      <div class="claim-meta" id="claimMeta"></div>
+    </div>
+
+    <!-- 召回证据 -->
+    <div class="card">
+      <div class="card-title"><span class="dot" style="background:#0f766e"></span>召回证据（论文原句 + 翻译）<span style="font-weight:400;text-transform:none;color:#94a3b8;font-size:11px;margin-left:6px">· 点「上下文」看该句前后各 3 句</span></div>
+      <div id="evList"></div>
+    </div>
+
+    <!-- 召回操作 -->
+    <div class="op-section">
+      <div class="card-title"><span class="dot"></span>召回审核操作</div>
+
+      <div class="op-group">
+        <div class="op-label">人工 gold_retrieval <small>(勾选上方证据句自动填充，也可手动补 sentence_id)</small></div>
+        <input type="text" id="goldInput" class="gold-input" placeholder="逗号分隔 sentence_id，如 2,15,27">
+        <div class="gold-hint" id="goldHint"></div>
+      </div>
+
+      <div class="op-group">
+        <div class="op-label">召回审核备注 <small>(recall_note)</small></div>
+        <textarea class="note-area" id="recallNoteArea" placeholder="补充召回审核意见…"></textarea>
+      </div>
+
+      <div class="op-group">
+        <div class="op-label">人工找回原文段落 <small>(空行分隔不同段落，作为额外证据句)</small></div>
+        <textarea class="note-area" id="manualParaArea" placeholder="粘贴论文中应被召回、但上面没出现的英文原句。一段可跨多行；不同段落之间用空行隔开"></textarea>
+        <div class="gold-hint">这些段落会与勾选句一起进入失真审核（文件2），并用于 AI 二次生成失真分析；中文翻译由脚本补。</div>
+      </div>
+
+      <div class="op-actions">
+        <button class="btn-primary" id="recallSaveBtn">保存召回 (S)</button>
+        <label class="done-toggle">
+          <input type="checkbox" id="recallDoneCheck">
+          <span>召回审核已完成 (recall_reviewed)</span>
+        </label>
+        <span class="save-status" id="recallStatus"></span>
+      </div>
+    </div>
+  </div>
+
+  <aside class="side-col">
+    <div class="card" id="oldNoteCard">
+      <div class="card-title"><span class="dot" style="background:#7c3aed"></span>旧版人工审核建议 <small style="text-transform:none;font-weight:400">(历史 note · 迁移用)</small></div>
+      <div id="oldNoteContent"></div>
+    </div>
+  </aside>
+</div>
+
+<div class="footer-hint">
+  召回审核：<span class="kbd">S</span> 保存召回 · <span class="kbd">→</span> 保存并下一条 · <span class="kbd">←</span> 上一条
+  ｜ 勾选「召回审核已完成」后，运行 <span class="kbd">regenerate_analysis.py</span> 生成文件2 再进失真审核。
+</div>
+
+<script>
+/* ================= 状态 ================= */
+const state = {
+  samples: [],
+  meta: null,
+  humanReviews: {},   // {reviewer: {sample_id: record}}
+  reviewer: '',
+  index: 0,
+  dirty: false,
+  savedAt: null,
+  goldIds: [],        // 人工认定的 gold 证据句 id 列表
+  recallNote: '',     // 召回审核备注
+  manualParagraphs: [], // [{text, text_zh}] 人工找回原文段落
+  recallReviewed: false,
+  sentences: {}, // sentence_id -> 论文句表文本（用于展开上下文）
+};
+const CTX_WINDOW = 3;
+
+const $ = id => document.getElementById(id);
+
+function myRecords() { return state.humanReviews[state.reviewer] || {}; }
+
+/* ================= 数据加载 ================= */
+async function load() {
+  const res = await fetch('/api/data');
+  const data = await res.json();
+  state.samples = data.samples;
+  state.meta = data.meta;
+  state.humanReviews = data.human_reviews || {};
+  state.sentences = data.sentences || {};
+  state.reviewer = localStorage.getItem('reviewer_name') || '';
+  $('reviewerInput').value = state.reviewer;
+  $('subtitle').textContent = `${data.meta.file || ''} · ${state.samples.length} 条样本`;
+
+  // 定位到当前审核人的第一条未审核
+  let start = 0;
+  const mine = myRecords();
+  for (let i = 0; i < state.samples.length; i++) {
+    const sid = state.samples[i].sample_id;
+    if (!mine[sid] || !mine[sid].recall_reviewed) { start = i; break; }
+  }
+  state.index = start;
+  render();
+}
+
+/* ================= 渲染当前样本 ================= */
+function render() {
+  const s = state.samples[state.index];
+  if (!s) return;
+
+  const mine = myRecords();
+  const r = mine[s.sample_id] || {};
+
+  // 恢复召回字段
+  state.recallReviewed = !!r.recall_reviewed;
+  state.recallNote = r.recall_note || '';
+  state.manualParagraphs = (r.manual_retrieved_paragraphs || []).map(p => ({ text: p.text || '', text_zh: p.text_zh || '' }));
+  state.goldIds = r.gold_sentence_ids ? r.gold_sentence_ids.slice() : (s.gold_retrieval?.sentence_ids || []).slice();
+  state.dirty = false;
+  state.savedAt = null;
+
+  // 顶部进度
+  const n = state.samples.length;
+  $('posText').textContent = `${state.index + 1}/${n}`;
+  $('barFill').style.width = `${((state.index + 1) / n) * 100}%`;
+  const doneCount = Object.values(mine).filter(x => x.recall_reviewed).length;
+  $('doneText').textContent = `我的进度 ${doneCount}`;
+  $('prevBtn').disabled = state.index === 0;
+  $('nextBtn').disabled = state.index === n - 1;
+
+  renderRefs(s);
+  renderOldNote(r);
+
+  const metaHtml = claimMetaHtml(s);
+  $('claimText').textContent = s.claim_zh || '（无）';
+  $('claimMeta').innerHTML = metaHtml;
+
+  renderEvidences(s);
+  const aiGoldIds = s.gold_retrieval?.sentence_ids || [];
+  $('goldHint').textContent = aiGoldIds.length ? `AI 金标句：${aiGoldIds.join(', ')}（供参考，可增删）` : 'AI 无金标句';
+  syncGoldInput();
+  $('recallNoteArea').value = state.recallNote;
+  $('manualParaArea').value = manualParaToText();
+  $('recallDoneCheck').checked = state.recallReviewed;
+
+  $('recallStatus').textContent = '';
+}
+
+function claimMetaHtml(s) {
+  const gold = s.gold_retrieval;
+  const metaParts = [`sample_id: ${s.sample_id}`];
+  if (gold?.sentence_ids?.length) metaParts.push(`AI 金标句: ${gold.sentence_ids.join(', ')}`);
+  if (s.human_note) metaParts.push(`基线人工备注: ${s.human_note}`);
+  return metaParts.map(escapeHtml).join(' &nbsp;·&nbsp; ');
+}
+
+function renderRefs(s) {
+  const items = [];
+  for (const [rv, recs] of Object.entries(state.humanReviews)) {
+    if (rv === state.reviewer) continue;
+    const rec = recs[s.sample_id];
+    if (rec) items.push({ who: rv, rec });
+  }
+  if (!items.length) {
+    $('refContent').innerHTML = '<div class="ref-empty">暂无他人审核，你是第一位审核人。</div>';
+    return;
+  }
+  $('refContent').innerHTML = items.map(it => {
+    const rec = it.rec;
+    const tags = [];
+    if (rec.recall_reviewed) tags.push('<span class="r-tag">已召回审核</span>');
+    else tags.push('<span class="r-tag">召回未完成</span>');
+    if (rec.gold_sentence_ids?.length) tags.push(`<span class="r-tag">gold:[${rec.gold_sentence_ids.join(',')}]</span>`);
+    return `<div class="ref-item">
+      <div><span class="r-who">${escapeHtml(it.who)}</span>${tags.join('')}${rec.updated_at ? `<span class="r-time">${escapeHtml(rec.updated_at)}</span>` : ''}</div>
+      ${rec.recall_note ? `<div class="r-note">召回备注：${escapeHtml(rec.recall_note)}</div>` : ''}
+    </div>`;
+  }).join('');
+}
+
+function renderOldNote(r) {
+  const note = (r && r.note) ? String(r.note) : '';
+  const box = $('oldNoteContent');
+  if (!note) {
+    box.innerHTML = '<div class="ref-empty">本样本没有旧版 note 内容。</div>';
+    return;
+  }
+  box.innerHTML =
+    '<div class="old-note-hint">以下是旧版你写进「人工备注 (note)」的历史内容（失真意见 + 人工召回段落）。把其中英文原句复制到左侧「人工找回原文段落」框：不同段落之间用空行隔开、去掉前面序号。</div>' +
+    '<div class="old-note-text">' + escapeHtml(note) + '</div>';
+}
+
+function ctxSentences(sid) {
+  const n = Number(sid);
+  if (!Number.isFinite(n)) return [];
+  const map = state.sentences || {};
+  const rows = [];
+  for (let d = -CTX_WINDOW; d <= CTX_WINDOW; d++) {
+    const k = String(n + d);
+    if (map[k] === undefined || map[k] === '') continue;
+    const dir = d < 0 ? `上 ${-d} 句` : d > 0 ? `下 ${d} 句` : '本句';
+    rows.push({ sid: n + d, text: map[k], dir });
+  }
+  return rows;
+}
+
+function renderEvidences(s) {
+  const goldSet = new Set(s.gold_retrieval?.sentence_ids || []);
+  const classifyIds = new Set((s.classify_evidences || []).map(e => e.sentence_id));
+  const evs = s.review_evidences || [];
+  if (!evs.length) { $('evList').innerHTML = '<div style="color:#94a3b8">（无召回证据）</div>'; return; }
+  $('evList').innerHTML = evs.map(e => {
+    const isTop5 = classifyIds.has(e.sentence_id);
+    const isGold = goldSet.has(e.sentence_id);
+    const checked = state.goldIds.includes(e.sentence_id) ? 'checked' : '';
+    const ctx = ctxSentences(e.sentence_id);
+    const hasCtx = ctx.some(c => c.dir !== '本句');
+    const ctxBlock = hasCtx ? `<div class="ev-ctx" data-ctx="${e.sentence_id}" hidden>
+        ${ctx.map(c => `<div class="ev-ctx-row ${c.dir === '本句' ? 'ctx-cur' : ''}">
+          <span class="ev-ctx-lab">${c.dir} · id=${c.sid}</span>${escapeHtml(c.text)}
+        </div>`).join('')}
+      </div>` : '';
+    const ctxBtn = hasCtx ? `<button class="ev-ctx-btn" data-cid="${e.sentence_id}" title="展开该句在论文中的前后各 ${CTX_WINDOW} 句">上下文 ▾</button>` : '';
+    return `<div class="ev-item ${isTop5 ? 'top5' : ''}">
+      <div class="ev-rank">${e.rank ?? ''}</div>
+      <div class="ev-body">
+        <div class="ev-en">${escapeHtml(e.text || '')}</div>
+        <div class="ev-zh">${escapeHtml(e.text_zh || '')}</div>
+        ${ctxBlock}
+      </div>
+      <div class="ev-side">
+        <label class="ev-check-box" title="勾选 = 该句应进人工 gold">
+          <input type="checkbox" class="ev-check" data-sid="${e.sentence_id}" ${checked}>
+          <span class="ev-check-label">gold</span>
+        </label>
+        ${ctxBtn}
+        <div class="ev-sid ${isGold ? 'gold-hit' : ''}">${isGold ? '★' : ''}id=${e.sentence_id}${isTop5 ? ' · top5' : ''}</div>
+      </div>
+    </div>`;
+  }).join('');
+  $('evList').querySelectorAll('.ev-check').forEach(cb => cb.addEventListener('change', onEvCheckChange));
+  $('evList').querySelectorAll('.ev-ctx-btn').forEach(b => b.addEventListener('click', () => {
+    const cid = b.dataset.cid;
+    const blk = $('evList').querySelector(`.ev-ctx[data-ctx="${cid}"]`);
+    if (!blk) return;
+    const show = blk.hidden;
+    blk.hidden = !show;
+    b.textContent = show ? '收起 ▴' : '上下文 ▾';
+  }));
+}
+
+/* ================= 人工 gold 勾选/输入双向同步 ================= */
+function onEvCheckChange(e) {
+  const sid = parseInt(e.target.dataset.sid, 10);
+  if (e.target.checked) {
+    if (!state.goldIds.includes(sid)) state.goldIds.push(sid);
+  } else {
+    state.goldIds = state.goldIds.filter(x => x !== sid);
+  }
+  state.goldIds.sort((a, b) => a - b);
+  syncGoldInput();
+  state.dirty = true;
+}
+function onGoldInputChange(e) {
+  const ids = e.target.value.split(/[,，、\s]+/)
+    .map(s => s.trim()).filter(Boolean)
+    .map(Number).filter(n => !isNaN(n));
+  state.goldIds = [...new Set(ids)].sort((a, b) => a - b);
+  syncEvChecks();
+  state.dirty = true;
+}
+function syncGoldInput() {
+  $('goldInput').value = state.goldIds.join(', ');
+}
+function syncEvChecks() {
+  document.querySelectorAll('.ev-check').forEach(cb => {
+    const sid = parseInt(cb.dataset.sid, 10);
+    cb.checked = state.goldIds.includes(sid);
+  });
+}
+
+/* ================= 人工找回原文段落 ================= */
+function onManualParaInput(e) {
+  const raw = e.target.value;
+  // 空行分隔不同段落；段落内部换行折叠成空格（允许一段跨多行书写/粘贴）
+  const blocks = raw.split(/\n\s*\n+/)
+    .map(s => s.replace(/\s+/g, ' ').trim())
+    .filter(Boolean);
+  const oldMap = {};
+  state.manualParagraphs.forEach(p => { oldMap[p.text] = p.text_zh || ''; });
+  state.manualParagraphs = blocks.map(text => ({ text, text_zh: oldMap[text] || '' }));
+  state.dirty = true;
+}
+function manualParaToText() {
+  return state.manualParagraphs.map(p => p.text).join('\n\n');
+}
+
+/* ================= 保存 ================= */
+function recallPayload() {
+  const s = state.samples[state.index];
+  return {
+    reviewer: state.reviewer,
+    sample_id: s.sample_id,
+    recall_note: state.recallNote,
+    manual_retrieved_paragraphs: state.manualParagraphs,
+    gold_sentence_ids: state.goldIds,
+    recall_reviewed: state.recallReviewed,
+  };
+}
+
+async function postSave(payload, onOk) {
+  const res = await fetch('/api/save', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  });
+  const out = await res.json();
+  if (out.ok) {
+    state.humanReviews[state.reviewer] = state.humanReviews[state.reviewer] || {};
+    state.humanReviews[state.reviewer][payload.sample_id] = out.record;
+    state.dirty = false;
+    state.savedAt = new Date();
+    if (onOk) onOk(out);
+    updateDoneText();
+    return true;
+  } else {
+    alert('保存失败: ' + (out.error || ''));
+    return false;
+  }
+}
+
+function updateDoneText() {
+  const doneCount = Object.values(myRecords()).filter(x => x.recall_reviewed).length;
+  $('doneText').textContent = `我的进度 ${doneCount}`;
+}
+
+function requireReviewer() {
+  if (!state.reviewer) {
+    alert('请先在上方填写审核人姓名');
+    $('reviewerInput').focus();
+    return false;
+  }
+  return true;
+}
+
+async function saveRecall() {
+  if (!requireReviewer()) return;
+  const ok = await postSave(recallPayload());
+  if (ok) {
+    $('recallStatus').textContent = '已保存召回 ' + state.savedAt.toLocaleTimeString();
+    $('recallStatus').classList.add('ok');
+    renderRefs(state.samples[state.index]);
+  }
+}
+
+async function saveRecallAndNext() {
+  if (!requireReviewer()) return;
+  const ok = await postSave(recallPayload());
+  if (!ok) return;
+  go(state.index + 1);
+}
+
+/* ================= 导航 ================= */
+function go(index) {
+  if (index < 0 || index >= state.samples.length) return;
+  if (state.dirty) {
+    if (!confirm('当前样本有未保存的修改，放弃修改并跳转？')) return;
+  }
+  state.index = index;
+  render();
+}
+function next() { go(state.index + 1); }
+function prev() { go(state.index - 1); }
+function nextTodo() {
+  const mine = myRecords();
+  for (let i = state.index + 1; i < state.samples.length; i++) {
+    const sid = state.samples[i].sample_id;
+    if (!mine[sid] || !mine[sid].recall_reviewed) { go(i); return; }
+  }
+  alert('后面没有你未完成召回的样本了');
+}
+
+/* ================= 工具 ================= */
+function escapeHtml(s) {
+  return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+/* ================= 事件绑定 ================= */
+$('prevBtn').onclick = prev;
+$('nextBtn').onclick = next;
+$('nextTodoBtn').onclick = nextTodo;
+$('recallSaveBtn').onclick = saveRecall;
+$('jumpBtn').onclick = () => {
+  const v = parseInt($('jumpInput').value, 10);
+  if (!isNaN(v)) go(v - 1);
+};
+$('jumpInput').addEventListener('keydown', e => { if (e.key === 'Enter') $('jumpBtn').click(); });
+$('goldInput').addEventListener('input', onGoldInputChange);
+$('recallNoteArea').addEventListener('input', e => { state.recallNote = e.target.value; state.dirty = true; });
+$('manualParaArea').addEventListener('input', onManualParaInput);
+$('recallDoneCheck').addEventListener('change', e => { state.recallReviewed = e.target.checked; state.dirty = true; });
+$('reviewerInput').addEventListener('input', e => {
+  state.reviewer = e.target.value.trim();
+  localStorage.setItem('reviewer_name', state.reviewer);
+});
+
+document.addEventListener('keydown', e => {
+  if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') return;
+  if (e.key === 'ArrowRight') {
+    saveRecallAndNext();
+  } else if (e.key === 'ArrowLeft') {
+    prev();
+  } else if (e.key === 's' || e.key === 'S') {
+    saveRecall();
+  }
+});
+
+load();
+</script>
+</body>
+</html>

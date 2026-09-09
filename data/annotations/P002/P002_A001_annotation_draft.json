@@ -1,0 +1,2452 @@
+{
+  "schema_version": "1.2",
+  "taxonomy_version": "distortion-v0.1",
+  "status": "draft",
+  "paper_id": "P002",
+  "article_id": "A001",
+  "article_source_type": "high_quality",
+  "index_version": "2026-09-09 10:15:05#279ac55be40c3043",
+  "generated_date": "2026-09-09",
+  "generation_mode": "resume",
+  "limit": "2",
+  "sample_count": 16,
+  "_description": "标注草稿。审核顺序：claim → classify top-5 → review 6-10 → gold_retrieval → gold_classification → analysis → human_verified=true。生产由 scripts/generate_draft_from_pairs.py 生成；human_verified 全为 false。",
+  "samples": [
+    {
+      "sample_id": "P002-A001-C01",
+      "paper_id": "P002",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "与学界普遍认知的转录激活及转录沉默现象不同，转录阻抗位点具有与转录激活区域相似的染色质环境，包括富集了RNA聚合酶II（Pol II），组蛋白修饰H3K36me3和高度开放、松散的染色质状态，但其转录水平与转录沉默位点一致——几乎检测不到新生转录本(nascent transcripts)，综合呈现出一种“抵抗转录”的特征。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 22,
+            "text": "Furthermore, we unexpectedly found that a large proportion of the coding genome exists as a chromatin state that is open chromatin, marked by H3K36me3, occupied by RNA polymerase II, and looked similar to the ready-for-transcription state but with little to no transcription activity (similar to the level of silencing), even with heat stimulation."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 150,
+            "text": "Furthermore, we performed NET-seq using rice seedlings and the results showed much less transcription activity of Pol II on these H3K36me3-elevated genes (Extended Data Fig. 6c,f). By reanalyzing published FAIRE-seq data27, interestingly, we observed that these H3K36me3-elevated genes showed more open-chromatin states compared with H3K9me2-marked genes (Extended Data Fig. 6d,f), exhibiting a chromatin transcription-resistive state similar to those of C3 genes in Arabidopsis."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 232,
+            "text": "Active transcription often features open chromatin, Pol II enrichment and active histone modifications, while transcription silencing is tightly associated with compacted chromatin states and repressive histone modifications, such as H3K9me2 and H3K27me3 (Fig. 3c)."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 130,
+            "text": "H3K36me3 enrichment in the knockdown mutant of SDG725, the closest homologue to Arabidopsis SDG8 (Extended Data Fig. 6a), showed upregulation in a subset of protein-coding genes (n = 1,739, Extended b ATAC-seq NS NS Col-0 sdg8 1.0 250 C1 ATAC signal (read counts) Normalized reads density 200 C2 0.6 150 C3 100 0.4 50 C4 0 0 C1 C2 C3 C4 –500 500 Peak (bp) C3 C4 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb Col-0 sdg8 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb f Relative RNA abundance C1 C3 H3K36me3 1.5 AT3G49796 0.8 RNA-seq NET-seq 0 (Ser2P) C1 NET-seq C2 (Ser5P) C3 C4 h 510 essential genes C3 (86.1%) C2 (3.9%) C4 (8.4%) 0 15 30 60 120 Time (min) C1 (1.6%) 812 a H3K36me3 H3K36me2 H3K36me1 H3K4me3 H3K4me2 H3K23ac H3K27ac H4K16ac H3K14ac H3K9ac H2A.X HTR5 TR TA 60 40 20 b ATAC NET-seq (Ser2P) TR Read counts 10 400 7.5 TA RPGC CPM FH 5 CH 2.5 200 0 –1.0 TSS 1 Kb –1.0 TSS TES 1 Kb –1.0 TSS TES 1 Kb 12 800 6 (n = 12,911) TR 8 4 400 (n = 4,375) TA 4 2 (n = 6,280) FH CH 0 0 0 (n = 259) c Chromatin states Key markers Constitutive H3K9me2/H3K27me1 (n = 259, 1% PCGs) Closed heterochromatin Facultative H3K27me3 (n = 6,280, 23.1% PCGs) Active H3K4me3 (n = 4,375, 16.1% PCGs) Open euchromatin Resistive H3K36me3 (n = 12,911, 47.5% PCGs) Fig. 3 | H3K36me marks transcription-resistive genes in Arabidopsis."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 23,
+            "text": "We termed this chromatin state ‘transcriptional resistive’, which is distinctive from traditional transcription activation and transcription silencing."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 22,
+            "text": "Furthermore, we unexpectedly found that a large proportion of the coding genome exists as a chromatin state that is open chromatin, marked by H3K36me3, occupied by RNA polymerase II, and looked similar to the ready-for-transcription state but with little to no transcription activity (similar to the level of silencing), even with heat stimulation."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 150,
+            "text": "Furthermore, we performed NET-seq using rice seedlings and the results showed much less transcription activity of Pol II on these H3K36me3-elevated genes (Extended Data Fig. 6c,f). By reanalyzing published FAIRE-seq data27, interestingly, we observed that these H3K36me3-elevated genes showed more open-chromatin states compared with H3K9me2-marked genes (Extended Data Fig. 6d,f), exhibiting a chromatin transcription-resistive state similar to those of C3 genes in Arabidopsis."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 232,
+            "text": "Active transcription often features open chromatin, Pol II enrichment and active histone modifications, while transcription silencing is tightly associated with compacted chromatin states and repressive histone modifications, such as H3K9me2 and H3K27me3 (Fig. 3c)."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 130,
+            "text": "H3K36me3 enrichment in the knockdown mutant of SDG725, the closest homologue to Arabidopsis SDG8 (Extended Data Fig. 6a), showed upregulation in a subset of protein-coding genes (n = 1,739, Extended b ATAC-seq NS NS Col-0 sdg8 1.0 250 C1 ATAC signal (read counts) Normalized reads density 200 C2 0.6 150 C3 100 0.4 50 C4 0 0 C1 C2 C3 C4 –500 500 Peak (bp) C3 C4 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb Col-0 sdg8 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb f Relative RNA abundance C1 C3 H3K36me3 1.5 AT3G49796 0.8 RNA-seq NET-seq 0 (Ser2P) C1 NET-seq C2 (Ser5P) C3 C4 h 510 essential genes C3 (86.1%) C2 (3.9%) C4 (8.4%) 0 15 30 60 120 Time (min) C1 (1.6%) 812 a H3K36me3 H3K36me2 H3K36me1 H3K4me3 H3K4me2 H3K23ac H3K27ac H4K16ac H3K14ac H3K9ac H2A.X HTR5 TR TA 60 40 20 b ATAC NET-seq (Ser2P) TR Read counts 10 400 7.5 TA RPGC CPM FH 5 CH 2.5 200 0 –1.0 TSS 1 Kb –1.0 TSS TES 1 Kb –1.0 TSS TES 1 Kb 12 800 6 (n = 12,911) TR 8 4 400 (n = 4,375) TA 4 2 (n = 6,280) FH CH 0 0 0 (n = 259) c Chromatin states Key markers Constitutive H3K9me2/H3K27me1 (n = 259, 1% PCGs) Closed heterochromatin Facultative H3K27me3 (n = 6,280, 23.1% PCGs) Active H3K4me3 (n = 4,375, 16.1% PCGs) Open euchromatin Resistive H3K36me3 (n = 12,911, 47.5% PCGs) Fig. 3 | H3K36me marks transcription-resistive genes in Arabidopsis."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 23,
+            "text": "We termed this chromatin state ‘transcriptional resistive’, which is distinctive from traditional transcription activation and transcription silencing."
+          },
+          {
+            "rank": 6,
+            "sentence_id": 21,
+            "text": "In this study, we started with the genome-wide characterization of H3K36me3 and surprisingly observed that mutation of SDG8 can lead to substantially elevated levels of H3K36me3 in the coding genome of Arabidopsis."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 149,
+            "text": "813 Data Fig. 6b,e), suggesting the conserved role of SDG725 in inhibiting H3K36me3 deposition."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 151,
+            "text": "Moreover, these H3K36me3-elevated genes are enriched in ‘metabolic process’ (Extended Data Fig. 6e,g), which is also similar to the ‘biological process’ of C3 genes in Arabidopsis (Extended Data Fig. 6e,g)."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 24,
+            "text": "Our data reveal a previously undiscovered function of H3K36me3 and transcription regulation."
+          },
+          {
+            "rank": 10,
+            "sentence_id": 86,
+            "text": "In contrast to the Ser2P pattern, Ser5P Pol II is slightly more stimulated at the TSS on C1 and C2 genes in sdg8 mutant in comparison with Col-0 (Fig. 2c), indicating that slowing down the transcriptional elongation of Pol II (lower Ser2P Pol II signal Fig. 2 | H3K36me3-accumulated genes in sdg8 display a very low level of transcription."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 22,
+            "text": "Furthermore, we unexpectedly found that a large proportion of the coding genome exists as a chromatin state that is open chromatin, marked by H3K36me3, occupied by RNA polymerase II, and looked similar to the ready-for-transcription state but with little to no transcription activity (similar to the level of silencing), even with heat stimulation."
+          },
+          {
+            "sentence_id": 23,
+            "text": "We termed this chromatin state ‘transcriptional resistive’, which is distinctive from traditional transcription activation and transcription silencing."
+          },
+          {
+            "sentence_id": 150,
+            "text": "Furthermore, we performed NET-seq using rice seedlings and the results showed much less transcription activity of Pol II on these H3K36me3-elevated genes (Extended Data Fig. 6c,f). By reanalyzing published FAIRE-seq data27, interestingly, we observed that these H3K36me3-elevated genes showed more open-chromatin states compared with H3K9me2-marked genes (Extended Data Fig. 6d,f), exhibiting a chromatin transcription-resistive state similar to those of C3 genes in Arabidopsis."
+          },
+          {
+            "sentence_id": 232,
+            "text": "Active transcription often features open chromatin, Pol II enrichment and active histone modifications, while transcription silencing is tightly associated with compacted chromatin states and repressive histone modifications, such as H3K9me2 and H3K27me3 (Fig. 3c)."
+          }
+        ],
+        "sentence_ids": [
+          22,
+          23,
+          150,
+          232
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "substitution",
+          "level2": "mechanism_substitution"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文定义‘transcriptional resistive’为H3K36me3富集、Pol II存在、染色质开放但转录活性极低；公众号将该状态归因为‘与转录激活区域相似的染色质环境’，隐含因果逻辑（因环境相似→故应转录），而论文明确否定该推论（‘looked similar to the ready-for-transcription state but with little to no transcription activity’），属机制替换；同时删减了关键限定‘in sdg8 mutant’及‘rice seedlings / Arabidopsis’物种背景。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1（‘与学界普遍认知……不同’）：sentence_id=23明确定义‘transcriptional resistive’为区别于activation/silencing的新状态，支撑‘不同’；分句2（‘具有与转录激活区域相似的染色质环境……’）：sentence_id=22中‘looked similar to the ready-for-transcription state’直接对应，但后接‘but with little to no transcription activity’构成转折，原意强调表观相似≠功能等同；分句3（‘但其转录水平……几乎检测不到’）：sentence_id=22（‘little to no transcription activity’）、150（‘much less transcription activity of Pol II’）共同支撑；分句4（‘综合呈现……抵抗转录’）：sentence_id=23（‘termed this chromatin state ‘transcriptional resistive’’）+22（‘but with little to no transcription activity’）完整支撑。top-5覆盖全部核心断言（22/23/150/232均在rank1–5），无缺失。",
+        "classification_reason": "primary_level2=mechanism_substitution：因论文用‘but’强转折（‘looked similar… but with little to no activity’）解构‘相似环境→应转录’的隐含因果链，而公众号表述剥离转折，将‘相似环境’作为解释转录阻抗的机制（即‘因环境相似，故抵抗’），将论文的‘现象并列描述’偷换为‘环境导致抵抗’的机制归因；非substitution中的relation_substitution（未改相关/因果关系类型）或magnitude_substitution（未改程度），亦非addition（未添加新功能）或omission（虽删背景但主干机制被替换更严重）。",
+        "key_differences": [
+          {
+            "type": "mechanism_substitution",
+            "paper_expression": "looked similar to the ready-for-transcription state but with little to no transcription activity",
+            "article_expression": "具有与转录激活区域相似的染色质环境……但其转录水平与转录沉默位点一致",
+            "description": "论文用‘but’否定环境相似性与转录活性的逻辑关联，公众号将‘相似环境’作为转录阻抗的成因，替换原始机制"
+          },
+          {
+            "type": "context_omission",
+            "paper_expression": "in sdg8 mutant (Fig. 2c); in rice seedlings (NET-seq); in Arabidopsis (Fig. 3c)",
+            "article_expression": "转录阻抗位点",
+            "description": "删减突变体背景（sdg8）、实验材料（rice/Arabidopsis）及图注限定，泛化为普适性位点"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "rank1–5已覆盖全部核心证据句（22/23/150/232），无需补检"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=22（but 转折结构）、id=23（术语定义）、id=150（Pol II 活性数据）、id=232（对照组定义）",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P002-A001-C02",
+      "paper_id": "P002",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "该研究起始于分析拟南芥中不同H3K36甲基转移酶催化H3K36甲基化的差异。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 25,
+            "text": "To dissect the functions of the H3K36 methyltransferases in Arabidopsis on catalysing different forms of H3K36 methylation (Fig. 1a), we started with the analysis of H3K36me3 chromatin immunoprecipitation and sequencing (ChIP-seq) using Arabidopsis seedlings and profiled the enrichment signal on protein-coding genes (Fig. 1b and Extended Data Fig. 1a)."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 19,
+            "text": "SDG8, also known as EFS (EARLY FLOWERING IN SHORT DAYS), is reported as the main H3K36me3 methyltransferase in Arabidopsis, and its functional mutations have been shown to cause a global decrease in H3K36me3 levels15–17, resulting in numerous developmental defects17–21."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 26,
+            "text": "Relative to the wild type (WT), the mutants sdg4, sdg25, sdg26 and atxr2 (see materials for more details) showed decreased levels of H3K36me3 around the transcription start site (TSS); however, the sdg8 (efs-3)19 mutant displayed increased levels of H3K36me3 from the TSS to the gene bodies (Fig. 1b)."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 245,
+            "text": "SDG8, the major H3K36 methyltransferase in Arabidopsis, is associated with multiple transcription activators, such as H3K4me1/2 (ref. 36), H3K27me3 demethylase ELF6 (ref. 37) and active forms of RNAPII, but it also interacts with inactive forms of RNAPII38, suggesting that H3K36 methylation, mainly regulated by SDG8 in Arabidopsis, could be involved in an unusual establishment of the chromatin environment or transcription state."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 63,
+            "text": "Sample numbers: nC1 = 42, nC2 = 23, nC3 = 106, H3K36me1 peak regions, where the H3K36 monomethylation is catalysed by other methyltransferases rather than SDG8, the SDG8 could function in catalysing monoto dimethylation but also inhibiting dito trimethylation of H3K36 (Extended Data Fig. 4d)."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 25,
+            "text": "To dissect the functions of the H3K36 methyltransferases in Arabidopsis on catalysing different forms of H3K36 methylation (Fig. 1a), we started with the analysis of H3K36me3 chromatin immunoprecipitation and sequencing (ChIP-seq) using Arabidopsis seedlings and profiled the enrichment signal on protein-coding genes (Fig. 1b and Extended Data Fig. 1a)."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 19,
+            "text": "SDG8, also known as EFS (EARLY FLOWERING IN SHORT DAYS), is reported as the main H3K36me3 methyltransferase in Arabidopsis, and its functional mutations have been shown to cause a global decrease in H3K36me3 levels15–17, resulting in numerous developmental defects17–21."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 26,
+            "text": "Relative to the wild type (WT), the mutants sdg4, sdg25, sdg26 and atxr2 (see materials for more details) showed decreased levels of H3K36me3 around the transcription start site (TSS); however, the sdg8 (efs-3)19 mutant displayed increased levels of H3K36me3 from the TSS to the gene bodies (Fig. 1b)."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 245,
+            "text": "SDG8, the major H3K36 methyltransferase in Arabidopsis, is associated with multiple transcription activators, such as H3K4me1/2 (ref. 36), H3K27me3 demethylase ELF6 (ref. 37) and active forms of RNAPII, but it also interacts with inactive forms of RNAPII38, suggesting that H3K36 methylation, mainly regulated by SDG8 in Arabidopsis, could be involved in an unusual establishment of the chromatin environment or transcription state."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 63,
+            "text": "Sample numbers: nC1 = 42, nC2 = 23, nC3 = 106, H3K36me1 peak regions, where the H3K36 monomethylation is catalysed by other methyltransferases rather than SDG8, the SDG8 could function in catalysing monoto dimethylation but also inhibiting dito trimethylation of H3K36 (Extended Data Fig. 4d)."
+          },
+          {
+            "rank": 6,
+            "sentence_id": 3,
+            "text": "Mutating SDG8, previously known as the major H3K36 methyltransferase in Arabidopsis, surprisingly elevates 78.7% of H3K36me3-marked resistive loci, which accounts for 39.4% of the coding genome."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 241,
+            "text": "In addition, the loss of SDG26, a homologue of SDG8 in Arabidopsis, was reported to promote H3K36me3 levels and transcription levels on FLC gene independently of its histone methyltransferase activity, although accompanied by reduced H3K27me3 modifications34,35."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 18,
+            "text": "808 (ARABIDOPSIS TRITHORAX-RELATED 2), are involved in methylating H3K36 (refs. 9–14)."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 20,
+            "text": "However, the dynamics and regulation of different H3K36 methylation forms are still a mystery in plants."
+          },
+          {
+            "rank": 10,
+            "sentence_id": 246,
+            "text": "In addition, it is worth mentioning that no H3K36me demethylases have been identified in plants until now."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 25,
+            "text": "To dissect the functions of the H3K36 methyltransferases in Arabidopsis on catalysing different forms of H3K36 methylation (Fig. 1a), we started with the analysis of H3K36me3 chromatin immunoprecipitation and sequencing (ChIP-seq) using Arabidopsis seedlings and profiled the enrichment signal on protein-coding genes (Fig. 1b and Extended Data Fig. 1a)."
+          }
+        ],
+        "sentence_ids": [
+          25
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "severity": "none",
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "论文id=25明确写‘To dissect the functions of the H3K36 methyltransferases in Arabidopsis on catalysing different forms of H3K36 methylation… we started with the analysis of H3K36me3 ChIP-seq’，与‘起始于分析拟南芥中不同H3K36甲基转移酶催化H3K36甲基化的差异’完全对应；‘不同甲基转移酶’对应‘H3K36 methyltransferases’（复数），‘催化差异’对应‘catalysing different forms of H3K36 methylation’（Fig.1a即展示me1/me2/me3），‘起始于分析’对应‘we started with the analysis’；术语通俗化（如‘甲基化’替代‘methylation’）属合理转述。"
+      },
+      "analysis": {
+        "evidence_judgement": "整句claim由id=25单句完整支撑：‘To dissect the functions… on catalysing different forms of H3K36 methylation’对应‘分析…催化…差异’；‘we started with the analysis of H3K36me3 ChIP-seq’对应‘起始于分析’；Fig.1a及上下文证实‘different forms’即me1/me2/me3，故‘H3K36甲基化’泛指合理；无其他分句需拆分。",
+        "classification_reason": "primary_level2=no_distortion：因‘dissect… on catalysing different forms’与‘分析…催化…差异’为严格同义转述；非 substitution（未替换机制/关系），非 addition（未添加‘首次’‘突破’等），非 omission（未删减关键限定）；英文‘dissect the functions… on catalysing’即中文‘分析…在催化上的差异’，术语层级匹配。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "rank1（id=25）为唯一直接对应句；其余top-5均为背景或机制细节，不构成更优支撑。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=25 全句。",
+        "needs_manual_review": false,
+        "review_focus": [
+          "gold_sentence_ids"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P002-A001-C03",
+      "paper_id": "P002",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "研究人员对不同的甲基转移酶突变体进行了H3K36me3的ChIP-seq分析，并意外发现与野生型Col-0相比，突变体sdg8中编码基因上的H3K36me3水平显著增加（图1a）。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 21,
+            "text": "In this study, we started with the genome-wide characterization of H3K36me3 and surprisingly observed that mutation of SDG8 can lead to substantially elevated levels of H3K36me3 in the coding genome of Arabidopsis."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 26,
+            "text": "Relative to the wild type (WT), the mutants sdg4, sdg25, sdg26 and atxr2 (see materials for more details) showed decreased levels of H3K36me3 around the transcription start site (TSS); however, the sdg8 (efs-3)19 mutant displayed increased levels of H3K36me3 from the TSS to the gene bodies (Fig. 1b)."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 181,
+            "text": "These data suggest that SDG4 is the major H3K36 methyltransferase at the explicit TR genes (see below) that is responsible for the increased H3K36me3 levels in sdg8 (Fig. 4a, and Extended Data Figs. 4f and 8a)."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 31,
+            "text": "Therefore, the observation that highly elevated H3K36me3 levels exist in the sdg8 mutant encouraged us to explore the extended functions of SDG8."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 183,
+            "text": "The increased H3K36me3 levels in the sdg8 of Groups 1 and 2 genes (accounting for 44.7% of C3, Fig. 4c) directly depend on the methyltransferase activities of SDG4 because the levels of H3K36me3 are totally removed on the Group 1 genes and are largely decreased on the Group 2 genes in the sdg8 sdg4 compared with sdg8 (Fig. 4a and Extended Data Fig. 9b)."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 21,
+            "text": "In this study, we started with the genome-wide characterization of H3K36me3 and surprisingly observed that mutation of SDG8 can lead to substantially elevated levels of H3K36me3 in the coding genome of Arabidopsis."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 26,
+            "text": "Relative to the wild type (WT), the mutants sdg4, sdg25, sdg26 and atxr2 (see materials for more details) showed decreased levels of H3K36me3 around the transcription start site (TSS); however, the sdg8 (efs-3)19 mutant displayed increased levels of H3K36me3 from the TSS to the gene bodies (Fig. 1b)."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 181,
+            "text": "These data suggest that SDG4 is the major H3K36 methyltransferase at the explicit TR genes (see below) that is responsible for the increased H3K36me3 levels in sdg8 (Fig. 4a, and Extended Data Figs. 4f and 8a)."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 31,
+            "text": "Therefore, the observation that highly elevated H3K36me3 levels exist in the sdg8 mutant encouraged us to explore the extended functions of SDG8."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 183,
+            "text": "The increased H3K36me3 levels in the sdg8 of Groups 1 and 2 genes (accounting for 44.7% of C3, Fig. 4c) directly depend on the methyltransferase activities of SDG4 because the levels of H3K36me3 are totally removed on the Group 1 genes and are largely decreased on the Group 2 genes in the sdg8 sdg4 compared with sdg8 (Fig. 4a and Extended Data Fig. 9b)."
+          },
+          {
+            "rank": 6,
+            "sentence_id": 54,
+            "text": "Similarly, within the sdg8 809 a SDG8/EFS 1,805 SDG25 1,388 SDG26 492 SET SDG4 Zinc finger 497 AWS ATXR2 473 c H3K4me3 H3K9me2 H3K27me1 H3K27me3 6342 5,000 Number of DMGs 2,500 297 327 123 66 73 19 22 23 12 7 0 28 24 15 19 173 186 741 1,279 1,192 2,500 2,547 3,144 clf swn swn atxr3 sdg8 suvh6 atx1 suvh4 suvh5 atxr5.6 sdg4 clf d AT3G46740 AT3G46770 AT3G46780 Annotation Col-0 sdg8 H3 SDG8 H3K36me3 SDG8 totally Col-0 restraining absent dependent sdg8 H3K36me3/H3 C3 C4 C1 5 n = 10,710 n = 12,878 n = 1,670 3 1 –1 Kb TSS TES 1 Kb –1 Kb TSS TES 1 Kb –1 Kb TSS TES 1 Kb –1 Kb f h H3K36me3 H3K36me2 H3K27me3 H3K36me1 H3K27me1 SDG8 abundance H3K4me3 H3K4me2 H3K9me2 H3K4me1 –1 –0.5 0 0.5 1 1.5 C1 C1 C2 **** C2 NS **** C3 C3 **** C4 Random Fig. 1 | sdg8 caused elevated H3K36me3 on a large proportion of the coding genome."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 3,
+            "text": "Mutating SDG8, previously known as the major H3K36 methyltransferase in Arabidopsis, surprisingly elevates 78.7% of H3K36me3-marked resistive loci, which accounts for 39.4% of the coding genome."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 40,
+            "text": "The data using these two H3K36me3 antibodies could still generate clustered genes similar to those in Fig. 1d (Supplementary Fig. 1), further confirming our findings that H3K36me3 levels were increased in C3 genes of the sdg8 mutant."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 35,
+            "text": "To further determine the regulatory role of SDG8 in H3K36me3, we carried out in-depth analysis and clustered all the protein-coding genes on the basis of the H3K36me3 enrichment in the sdg8 mutant compared with wild-type Col-0 (Fig. 1d and Methods)."
+          },
+          {
+            "rank": 10,
+            "sentence_id": 78,
+            "text": "However, the C3 genes showed no discernible preference in the mRNA levels between the wild-type Col-0 and sdg8 mutant (Fig. 2a), even though there are increased levels of H3K36me3 on C3 genes of sdg8 compared with wild type, suggesting that H3K36me3 abundance on C3 genes are not correlated with promoting gene expression."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 21,
+            "text": "In this study, we started with the genome-wide characterization of H3K36me3 and surprisingly observed that mutation of SDG8 can lead to substantially elevated levels of H3K36me3 in the coding genome of Arabidopsis."
+          },
+          {
+            "sentence_id": 26,
+            "text": "Relative to the wild type (WT), the mutants sdg4, sdg25, sdg26 and atxr2 (see materials for more details) showed decreased levels of H3K36me3 around the transcription start site (TSS); however, the sdg8 (efs-3)19 mutant displayed increased levels of H3K36me3 from the TSS to the gene bodies (Fig. 1b)."
+          }
+        ],
+        "sentence_ids": [
+          21,
+          26
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "addition",
+          "level2": "significance_addition"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文用 'surprisingly observed' 表达意外性，但未称 '意外发现'；且图注为 Fig. 1b（非图1a），claim 中「图1a」为错误引用。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1『研究人员对不同的甲基转移酶突变体进行了H3K36me3的ChIP-seq分析』：未在 top-5 或 review_evidences 中明确提及 ChIP-seq 方法细节，仅隐含于 genome-wide characterization（id=21）及图注（id=54）中，属方法背景省略，不构成失真；分句2『意外发现……sdg8中……显著增加』：id=21 明确含 'surprisingly observed' + 'substantially elevated' + 'coding genome'，支撑核心断言；分句3『图1a』：所有图注证据（id=26, 54, 111）均指向 Fig. 1b 或 Fig. 1 | sdg8 caused...，无 Fig. 1a 支撑，属事实性错引。",
+        "classification_reason": "『意外发现』添加了主观叙事强度（'surprisingly observed' 是客观描述研究者反应，而『意外发现』在中文科普语境中常暗示突破性/首次性）→ significance_addition；『图1a』与论文实际图号（Fig. 1b）不符 → relation_substitution 不适用（非关系替换），但属 factual misattribution，超出8类覆盖范围，故归入 uncovered_phenomenon=other；然而，因该错引独立于科学含义变更，且 primary 失真已由『意外发现』主导，故 secondary_level2 选 context_omission（删减了图号这一关键定位限定）。",
+        "key_differences": [
+          {
+            "type": "significance_addition",
+            "paper_expression": "surprisingly observed that mutation of SDG8 can lead to substantially elevated levels",
+            "article_expression": "意外发现……显著增加",
+            "description": "『意外发现』在中文传播中隐含‘此前未知/出人意料之新知’，强化事件重要性；而 paper 仅陈述研究者观察时的情绪反应，不赋予该现象额外科学意义。"
+          },
+          {
+            "type": "context_omission",
+            "paper_expression": "Fig. 1b",
+            "article_expression": "图1a",
+            "description": "删减了原始图号这一空间定位上下文，导致读者无法准确定位证据来源，影响可复现性。"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "id=26 明确给出 Fig. 1b，id=54 图注标题亦为 Fig. 1 | sdg8 caused...，top-5 已覆盖图号矛盾点。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=21（surprisingly）、id=26（Fig. 1b）。 脚本标记: 分析引用了但未列入 gold: 54",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P002-A001-C04",
+      "paper_id": "P002",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "随后根据突变体sdg8中H3K36me3水平的变化模式，研究人员对编码基因进行了分类（分为C1-C4共四类，图1b和c），其中SDG8基因突变会导致C3类别的基因位点（约占总基因数的40%）表现出显著升高的H3K36me3水平，表明甲基转移酶SDG8存在抑制H3K36me3积累的功能（图1b）。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 183,
+            "text": "The increased H3K36me3 levels in the sdg8 of Groups 1 and 2 genes (accounting for 44.7% of C3, Fig. 4c) directly depend on the methyltransferase activities of SDG4 because the levels of H3K36me3 are totally removed on the Group 1 genes and are largely decreased on the Group 2 genes in the sdg8 sdg4 compared with sdg8 (Fig. 4a and Extended Data Fig. 9b)."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 54,
+            "text": "Similarly, within the sdg8 809 a SDG8/EFS 1,805 SDG25 1,388 SDG26 492 SET SDG4 Zinc finger 497 AWS ATXR2 473 c H3K4me3 H3K9me2 H3K27me1 H3K27me3 6342 5,000 Number of DMGs 2,500 297 327 123 66 73 19 22 23 12 7 0 28 24 15 19 173 186 741 1,279 1,192 2,500 2,547 3,144 clf swn swn atxr3 sdg8 suvh6 atx1 suvh4 suvh5 atxr5.6 sdg4 clf d AT3G46740 AT3G46770 AT3G46780 Annotation Col-0 sdg8 H3 SDG8 H3K36me3 SDG8 totally Col-0 restraining absent dependent sdg8 H3K36me3/H3 C3 C4 C1 5 n = 10,710 n = 12,878 n = 1,670 3 1 –1 Kb TSS TES 1 Kb –1 Kb TSS TES 1 Kb –1 Kb TSS TES 1 Kb –1 Kb f h H3K36me3 H3K36me2 H3K27me3 H3K36me1 H3K27me1 SDG8 abundance H3K4me3 H3K4me2 H3K9me2 H3K4me1 –1 –0.5 0 0.5 1 1.5 C1 C1 C2 **** C2 NS **** C3 C3 **** C4 Random Fig. 1 | sdg8 caused elevated H3K36me3 on a large proportion of the coding genome."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 51,
+            "text": "Interestingly, the level of H3K36me2 is elevated preferably in 5’-terminal regions of C3 genes in the sdg8 mutant, which is similar to the pattern of H3K36me3 in sdg8 compared to Col-0, and H3K36me1 levels are also slightly elevated in C3 genes of sdg8 (Fig. 1g and Extended Data Fig. 4b), suggesting a non-methyltransferase function of SDG8 in suppressing methylation on H3K36 in Arabidopsis."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 111,
+            "text": "The H3K36me3 and NET-seq patterns are similar to those in Fig. 2c (Extended Data Fig. 5d–f), and the sgd8 of 5-day-old seedlings also displayed the increased H3K36me3 levels on C3 genes."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 315,
+            "text": "For the classification of 4 clusters of differential SDG8-regulated genes in Fig. 1d, we classified SDG8-regulated genes on the basis of the following criteria: SDG8 totally dependent genes (Cluster 1, C1): FC (WT_H3K36me3/sdg8_H3K36me3) ≥ 1.2, P < 0.05, and FC (sdg8_H3K36me3/sdg8_H3) ≤ 1 or FC (sdg8_H3K36me3/sdg8_H3) > 1, P ≥ 0.05, and FC (WT_H3K36me3/WT_H3) > 1, P < 0.05; SDG8 partially dependent genes (Cluster 2, C2): H3K36me3 FC (WT_H3K36me3/sdg8_ H3K36me3) ≥ 1.2, P < 0.05, and FC (sdg8_H3K36me3/sdg8_H3) > 1, P < 0.05, and FC (WT_H3K36me3/WT_H3) > 1, P < 0.05; SDG8 restraining genes (Cluster 3, C3): H3K36me3 FC (sdg8_H3K36me3/WT_H3K36me3) ≥ 1.2, P < 0.05, and FC (sdg8_H3K36me3/sdg8_H3) > 1, P < 0.05; H3K36me3 absent genes (Cluster 4, C4): FC (sdg8_H3K36me3/sdg8_H3) ≤ 1 or FC (sdg8_H3K36me3/sdg8_H3) > 1, P ≥ 0.05, and FC (WT_H3K36me3/WT_ H3) ≤ 1 or FC (WT_H3K36me3/WT_H3) > 1, P ≥ 0.05."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 183,
+            "text": "The increased H3K36me3 levels in the sdg8 of Groups 1 and 2 genes (accounting for 44.7% of C3, Fig. 4c) directly depend on the methyltransferase activities of SDG4 because the levels of H3K36me3 are totally removed on the Group 1 genes and are largely decreased on the Group 2 genes in the sdg8 sdg4 compared with sdg8 (Fig. 4a and Extended Data Fig. 9b)."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 54,
+            "text": "Similarly, within the sdg8 809 a SDG8/EFS 1,805 SDG25 1,388 SDG26 492 SET SDG4 Zinc finger 497 AWS ATXR2 473 c H3K4me3 H3K9me2 H3K27me1 H3K27me3 6342 5,000 Number of DMGs 2,500 297 327 123 66 73 19 22 23 12 7 0 28 24 15 19 173 186 741 1,279 1,192 2,500 2,547 3,144 clf swn swn atxr3 sdg8 suvh6 atx1 suvh4 suvh5 atxr5.6 sdg4 clf d AT3G46740 AT3G46770 AT3G46780 Annotation Col-0 sdg8 H3 SDG8 H3K36me3 SDG8 totally Col-0 restraining absent dependent sdg8 H3K36me3/H3 C3 C4 C1 5 n = 10,710 n = 12,878 n = 1,670 3 1 –1 Kb TSS TES 1 Kb –1 Kb TSS TES 1 Kb –1 Kb TSS TES 1 Kb –1 Kb f h H3K36me3 H3K36me2 H3K27me3 H3K36me1 H3K27me1 SDG8 abundance H3K4me3 H3K4me2 H3K9me2 H3K4me1 –1 –0.5 0 0.5 1 1.5 C1 C1 C2 **** C2 NS **** C3 C3 **** C4 Random Fig. 1 | sdg8 caused elevated H3K36me3 on a large proportion of the coding genome."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 51,
+            "text": "Interestingly, the level of H3K36me2 is elevated preferably in 5’-terminal regions of C3 genes in the sdg8 mutant, which is similar to the pattern of H3K36me3 in sdg8 compared to Col-0, and H3K36me1 levels are also slightly elevated in C3 genes of sdg8 (Fig. 1g and Extended Data Fig. 4b), suggesting a non-methyltransferase function of SDG8 in suppressing methylation on H3K36 in Arabidopsis."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 111,
+            "text": "The H3K36me3 and NET-seq patterns are similar to those in Fig. 2c (Extended Data Fig. 5d–f), and the sgd8 of 5-day-old seedlings also displayed the increased H3K36me3 levels on C3 genes."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 315,
+            "text": "For the classification of 4 clusters of differential SDG8-regulated genes in Fig. 1d, we classified SDG8-regulated genes on the basis of the following criteria: SDG8 totally dependent genes (Cluster 1, C1): FC (WT_H3K36me3/sdg8_H3K36me3) ≥ 1.2, P < 0.05, and FC (sdg8_H3K36me3/sdg8_H3) ≤ 1 or FC (sdg8_H3K36me3/sdg8_H3) > 1, P ≥ 0.05, and FC (WT_H3K36me3/WT_H3) > 1, P < 0.05; SDG8 partially dependent genes (Cluster 2, C2): H3K36me3 FC (WT_H3K36me3/sdg8_ H3K36me3) ≥ 1.2, P < 0.05, and FC (sdg8_H3K36me3/sdg8_H3) > 1, P < 0.05, and FC (WT_H3K36me3/WT_H3) > 1, P < 0.05; SDG8 restraining genes (Cluster 3, C3): H3K36me3 FC (sdg8_H3K36me3/WT_H3K36me3) ≥ 1.2, P < 0.05, and FC (sdg8_H3K36me3/sdg8_H3) > 1, P < 0.05; H3K36me3 absent genes (Cluster 4, C4): FC (sdg8_H3K36me3/sdg8_H3) ≤ 1 or FC (sdg8_H3K36me3/sdg8_H3) > 1, P ≥ 0.05, and FC (WT_H3K36me3/WT_ H3) ≤ 1 or FC (WT_H3K36me3/WT_H3) > 1, P ≥ 0.05."
+          },
+          {
+            "rank": 6,
+            "sentence_id": 45,
+            "text": "The results also showed that the H3K36me3 levels of C3 genes are elevated in sdg8-5 (Extended Data Fig. 1e)."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 40,
+            "text": "The data using these two H3K36me3 antibodies could still generate clustered genes similar to those in Fig. 1d (Supplementary Fig. 1), further confirming our findings that H3K36me3 levels were increased in C3 genes of the sdg8 mutant."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 38,
+            "text": "More than half of protein-coding genes in the Arabidopsis genome were marked by H3K36me3 modifications, and 78.7% of these belong to Cluster 3 (Fig. 1e), indicating a potential role of SDG8 in inhibiting the excessive deposition of H3K36me3 in genes."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 37,
+            "text": "However, the genes in Cluster 3 (C3, SDG8 restraining, n = 10,710) exhibited the accumulated H3K36me3 levels around the TSS in the absence of SDG8 (Fig. 1d and Extended Data Fig. 1d)."
+          },
+          {
+            "rank": 10,
+            "sentence_id": 130,
+            "text": "H3K36me3 enrichment in the knockdown mutant of SDG725, the closest homologue to Arabidopsis SDG8 (Extended Data Fig. 6a), showed upregulation in a subset of protein-coding genes (n = 1,739, Extended b ATAC-seq NS NS Col-0 sdg8 1.0 250 C1 ATAC signal (read counts) Normalized reads density 200 C2 0.6 150 C3 100 0.4 50 C4 0 0 C1 C2 C3 C4 –500 500 Peak (bp) C3 C4 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb Col-0 sdg8 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb f Relative RNA abundance C1 C3 H3K36me3 1.5 AT3G49796 0.8 RNA-seq NET-seq 0 (Ser2P) C1 NET-seq C2 (Ser5P) C3 C4 h 510 essential genes C3 (86.1%) C2 (3.9%) C4 (8.4%) 0 15 30 60 120 Time (min) C1 (1.6%) 812 a H3K36me3 H3K36me2 H3K36me1 H3K4me3 H3K4me2 H3K23ac H3K27ac H4K16ac H3K14ac H3K9ac H2A.X HTR5 TR TA 60 40 20 b ATAC NET-seq (Ser2P) TR Read counts 10 400 7.5 TA RPGC CPM FH 5 CH 2.5 200 0 –1.0 TSS 1 Kb –1.0 TSS TES 1 Kb –1.0 TSS TES 1 Kb 12 800 6 (n = 12,911) TR 8 4 400 (n = 4,375) TA 4 2 (n = 6,280) FH CH 0 0 0 (n = 259) c Chromatin states Key markers Constitutive H3K9me2/H3K27me1 (n = 259, 1% PCGs) Closed heterochromatin Facultative H3K27me3 (n = 6,280, 23.1% PCGs) Active H3K4me3 (n = 4,375, 16.1% PCGs) Open euchromatin Resistive H3K36me3 (n = 12,911, 47.5% PCGs) Fig. 3 | H3K36me marks transcription-resistive genes in Arabidopsis."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 37,
+            "text": "However, the genes in Cluster 3 (C3, SDG8 restraining, n = 10,710) exhibited the accumulated H3K36me3 levels around the TSS in the absence of SDG8 (Fig. 1d and Extended Data Fig. 1d)."
+          },
+          {
+            "sentence_id": 38,
+            "text": "More than half of protein-coding genes in the Arabidopsis genome were marked by H3K36me3 modifications, and 78.7% of these belong to Cluster 3 (Fig. 1e), indicating a potential role of SDG8 in inhibiting the excessive deposition of H3K36me3 in genes."
+          },
+          {
+            "sentence_id": 111,
+            "text": "The H3K36me3 and NET-seq patterns are similar to those in Fig. 2c (Extended Data Fig. 5d–f), and the sgd8 of 5-day-old seedlings also displayed the increased H3K36me3 levels on C3 genes."
+          }
+        ],
+        "sentence_ids": [
+          37,
+          38,
+          111
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "substitution",
+          "level2": "mechanism_substitution"
+        },
+        "secondary_label": {
+          "level1": "substitution",
+          "level2": "magnitude_substitution"
+        },
+        "severity": "severe",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文指出 SDG8 突变导致 C3 基因 H3K36me3 升高，但机制归因为 SDG4 的代偿性活性（id=183, 38），而非 SDG8 自身‘抑制积累’；claim 将现象归因为 SDG8 的直接抑制功能，属机制替换。且 claim 称‘约占总基因数的40%’，论文 id=3 对应 39.4%，id=38 称‘more than half of protein-coding genes... 78.7% of these belong to Cluster 3’，但 C3 占 coding genome 比例为 44.7%（id=183）或 39.4%（id=3），claim 四舍五入为40%属合理程度弱化，不构成失真；但 claim 断言‘SDG8存在抑制H3K36me3积累的功能’，而论文明确说 SDG8 is the major H3K36 methyltransferase（id=3），其 loss 导致升高是间接结果，非其本职功能。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1『根据……变化模式分类（C1-C4）』：id=111 给出完整分类标准，id=37/38 描述 C3 特征，支撑充分；分句2『SDG8突变导致C3……显著升高』：id=37（'exhibited the accumulated H3K36me3 levels'）、id=38（'potential role of SDG8 in inhibiting the excessive deposition'）支撑；分句3『表明SDG8存在抑制H3K36me3积累的功能』：id=38 用 'potential role...in inhibiting' 是推测性表述，id=183 明确指出升高依赖 SDG4 活性，id=3 称 SDG8 is the major methyltransferase —— 故 claim 将间接现象归因为 SDG8 直接功能，属机制误置。",
+        "classification_reason": "论文机制：sdg8 loss → loss of SDG8-mediated methylation → compensatory hyperactivity of SDG4 → H3K36me3 increase on C3（id=183, 38）；claim 机制：SDG8 本身具有抑制功能 → 其突变解除抑制 → 升高。二者机制逻辑相反（前者是甲基转移酶缺失引发代偿，后者是去抑制型调控蛋白），属 mechanism_substitution；『40%』与论文『39.4%』（id=3）或『44.7%』（id=183）差异属 minor rounding，不触发 magnitude_substitution；但 claim 将‘potential role’（id=38）升级为确定性功能断言『存在……功能』，属 certainty_amplification —— 然而该旧标签禁用，其语义效果等价于 mechanism_substitution 的确定性强化，故不另标 secondary。",
+        "key_differences": [
+          {
+            "type": "mechanism_substitution",
+            "paper_expression": "The increased H3K36me3 levels in the sdg8 of Groups 1 and 2 genes [...] directly depend on the methyltransferase activities of SDG4",
+            "article_expression": "SDG8存在抑制H3K36me3积累的功能",
+            "description": "论文将 H3K36me3 升高归因于 SDG4 的代偿性甲基转移酶活性；claim 归因于 SDG8 本身的抑制功能，机制实体与因果方向均被替换。"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [
+            183,
+            3
+          ],
+          "notes": "rank1 (id=183) 和 rank7 (id=3) 更直接否定 claim 机制，但未进 top-5；id=183 在 review pool rank1，已纳入 gold。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=3（SDG8 is the major methyltransferase）、id=183（SDG4-dependence）、id=38（potential role）。 脚本标记: key_differences 未覆盖 secondary magnitude_substitution；分析引用了但未列入 gold: 3,183",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P002-A001-C05",
+      "paper_id": "P002",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "为了探究sdg8突变体中H3K36me3水平升高基因（C3基因）的转录状态，研究人员进行了新生转录本测序(NET-seq)。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 218,
+            "text": "We performed NET-seq using sdg4 and sdg4 sdg8 mutants and found that the transcription activities are elevated on C3 genes in the sdg4 sdg8 compared with sdg8 as well as sdg4 single mutants, although the levels are still low (Fig. 4e, see also Figs. 2c and 3b)."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 102,
+            "text": "Together, the results above revealed that, even though C3 genes in sdg8 displayed many active transcription features, including an open-chromatin state (Fig. 2b), active histone modification markers (Fig. 1h) and high RNA abundance (Extended Data Fig. 5a), the transcription activity on these genes was highly inhibited, indicating that the accumulated H3K36me3 in sdg8 marked 39.4% of total coding genes that exhibit the ability for transcription but with no reaction to transcribe."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 81,
+            "text": "To precisely determine the transcription state of C3 genes, we performed native elongating transcripts sequencing (NET-seq) that can capture the nascent transcripts by RNA polymerase on chromatin22."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 215,
+            "text": "Results showed that the transcription activities over C3 genes with decreased H3K36me3 in sdg8 sdg25 sdg26 compared with sdg8 sdg25 (Extended Data Fig. 10h, top) or sdg8 sdg26 (Extended Data Fig. 10h, bottom) remained subtle in sdg8 sdg25 sdg26 compared with sdg8 (Extended Data Fig. 10h), suggesting that the resistive state of these genes was not disturbed in seedling stages."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 51,
+            "text": "Interestingly, the level of H3K36me2 is elevated preferably in 5’-terminal regions of C3 genes in the sdg8 mutant, which is similar to the pattern of H3K36me3 in sdg8 compared to Col-0, and H3K36me1 levels are also slightly elevated in C3 genes of sdg8 (Fig. 1g and Extended Data Fig. 4b), suggesting a non-methyltransferase function of SDG8 in suppressing methylation on H3K36 in Arabidopsis."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 218,
+            "text": "We performed NET-seq using sdg4 and sdg4 sdg8 mutants and found that the transcription activities are elevated on C3 genes in the sdg4 sdg8 compared with sdg8 as well as sdg4 single mutants, although the levels are still low (Fig. 4e, see also Figs. 2c and 3b)."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 102,
+            "text": "Together, the results above revealed that, even though C3 genes in sdg8 displayed many active transcription features, including an open-chromatin state (Fig. 2b), active histone modification markers (Fig. 1h) and high RNA abundance (Extended Data Fig. 5a), the transcription activity on these genes was highly inhibited, indicating that the accumulated H3K36me3 in sdg8 marked 39.4% of total coding genes that exhibit the ability for transcription but with no reaction to transcribe."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 81,
+            "text": "To precisely determine the transcription state of C3 genes, we performed native elongating transcripts sequencing (NET-seq) that can capture the nascent transcripts by RNA polymerase on chromatin22."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 215,
+            "text": "Results showed that the transcription activities over C3 genes with decreased H3K36me3 in sdg8 sdg25 sdg26 compared with sdg8 sdg25 (Extended Data Fig. 10h, top) or sdg8 sdg26 (Extended Data Fig. 10h, bottom) remained subtle in sdg8 sdg25 sdg26 compared with sdg8 (Extended Data Fig. 10h), suggesting that the resistive state of these genes was not disturbed in seedling stages."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 51,
+            "text": "Interestingly, the level of H3K36me2 is elevated preferably in 5’-terminal regions of C3 genes in the sdg8 mutant, which is similar to the pattern of H3K36me3 in sdg8 compared to Col-0, and H3K36me1 levels are also slightly elevated in C3 genes of sdg8 (Fig. 1g and Extended Data Fig. 4b), suggesting a non-methyltransferase function of SDG8 in suppressing methylation on H3K36 in Arabidopsis."
+          },
+          {
+            "rank": 6,
+            "sentence_id": 130,
+            "text": "H3K36me3 enrichment in the knockdown mutant of SDG725, the closest homologue to Arabidopsis SDG8 (Extended Data Fig. 6a), showed upregulation in a subset of protein-coding genes (n = 1,739, Extended b ATAC-seq NS NS Col-0 sdg8 1.0 250 C1 ATAC signal (read counts) Normalized reads density 200 C2 0.6 150 C3 100 0.4 50 C4 0 0 C1 C2 C3 C4 –500 500 Peak (bp) C3 C4 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb Col-0 sdg8 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb f Relative RNA abundance C1 C3 H3K36me3 1.5 AT3G49796 0.8 RNA-seq NET-seq 0 (Ser2P) C1 NET-seq C2 (Ser5P) C3 C4 h 510 essential genes C3 (86.1%) C2 (3.9%) C4 (8.4%) 0 15 30 60 120 Time (min) C1 (1.6%) 812 a H3K36me3 H3K36me2 H3K36me1 H3K4me3 H3K4me2 H3K23ac H3K27ac H4K16ac H3K14ac H3K9ac H2A.X HTR5 TR TA 60 40 20 b ATAC NET-seq (Ser2P) TR Read counts 10 400 7.5 TA RPGC CPM FH 5 CH 2.5 200 0 –1.0 TSS 1 Kb –1.0 TSS TES 1 Kb –1.0 TSS TES 1 Kb 12 800 6 (n = 12,911) TR 8 4 400 (n = 4,375) TA 4 2 (n = 6,280) FH CH 0 0 0 (n = 259) c Chromatin states Key markers Constitutive H3K9me2/H3K27me1 (n = 259, 1% PCGs) Closed heterochromatin Facultative H3K27me3 (n = 6,280, 23.1% PCGs) Active H3K4me3 (n = 4,375, 16.1% PCGs) Open euchromatin Resistive H3K36me3 (n = 12,911, 47.5% PCGs) Fig. 3 | H3K36me marks transcription-resistive genes in Arabidopsis."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 31,
+            "text": "Therefore, the observation that highly elevated H3K36me3 levels exist in the sdg8 mutant encouraged us to explore the extended functions of SDG8."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 82,
+            "text": "The NET-seq results uncovered that there was a decreased activity of transcriptional elongated Pol II (Ser2P Pol II) at C1 and C2 genes in sdg8 compared with wild type (Fig. 2c), in line with their decrease in H3K36me3 (Fig. 1d), indicating that the C1 and C2 genes are marked by the transcription-coupled H3K36me3."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 111,
+            "text": "The H3K36me3 and NET-seq patterns are similar to those in Fig. 2c (Extended Data Fig. 5d–f), and the sgd8 of 5-day-old seedlings also displayed the increased H3K36me3 levels on C3 genes."
+          },
+          {
+            "rank": 10,
+            "sentence_id": 77,
+            "text": "Consistent with the known function of H3K36me3 that is associated with active transcription, RNA-seq analysis revealed that a larger portion of genes in SDG8-dependent C1 and C2 was downregulated in the sdg8 mutant (Fig. 2a)."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 81,
+            "text": "To precisely determine the transcription state of C3 genes, we performed native elongating transcripts sequencing (NET-seq) that can capture the nascent transcripts by RNA polymerase on chromatin22."
+          }
+        ],
+        "sentence_ids": [
+          81
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "severity": "none",
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "claim 准确转述论文 id=81：『To precisely determine the transcription state of C3 genes, we performed native elongating transcripts sequencing (NET-seq)』，术语‘新生转录本测序’是 NET-seq 的标准中文译法，无添加、删减或替换。"
+      },
+      "analysis": {
+        "evidence_judgement": "整句 claim 为单一断言：『为探究……进行了NET-seq』，id=81 完全对应，含目的（determine transcription state of C3 genes）、方法（performed NET-seq）、对象（C3 genes）三要素，支撑充分。",
+        "classification_reason": "『新生转录本测序』= standard translation of 'native elongating transcripts sequencing'；『探究……转录状态』= direct paraphrase of 'precisely determine the transcription state'；无程度、机制、背景、不确定性删减，亦无功能/意义添加，符合 no_distortion 定义。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "id=81 是 rank3，但表述最完整直接，top-5 中无更优句。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=81。",
+        "needs_manual_review": false,
+        "review_focus": [
+          "none"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P002-A001-C06",
+      "paper_id": "P002",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "结果表明，无论在野生型还是sdg8突变体中，C3基因位点处几乎检测不到转录活性（图2b-d），这一结果与现有的H3K36me3增强转录延伸观点相悖。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 83,
+            "text": "Unexpectedly, almost no activity of Ser2P Pol II was observed on C3 genes in both wild-type Col-0 and sdg8 mutant (Fig. 2c), which is inconsistent with the well-known functions of H3K36me3 in enhancing transcription elongation7,8."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 78,
+            "text": "However, the C3 genes showed no discernible preference in the mRNA levels between the wild-type Col-0 and sdg8 mutant (Fig. 2a), even though there are increased levels of H3K36me3 on C3 genes of sdg8 compared with wild type, suggesting that H3K36me3 abundance on C3 genes are not correlated with promoting gene expression."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 106,
+            "text": "Notably, there was little to no H3K27me3 enrichment on the C3 genes in Col-0, and the level was not altered in sdg8 (Supplementary Fig. 2a), suggesting that the transcription-resistive state is not caused by H3K27me3 deposition and that the low to no transcription at resistive loci is completely different from PRC2-mediated gene silencing."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 215,
+            "text": "Results showed that the transcription activities over C3 genes with decreased H3K36me3 in sdg8 sdg25 sdg26 compared with sdg8 sdg25 (Extended Data Fig. 10h, top) or sdg8 sdg26 (Extended Data Fig. 10h, bottom) remained subtle in sdg8 sdg25 sdg26 compared with sdg8 (Extended Data Fig. 10h), suggesting that the resistive state of these genes was not disturbed in seedling stages."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 208,
+            "text": "Moreover, a proportion of C3 genes showed lower H3K36me3 levels in the sdg8 sdg25 sdg26 triple mutant than in the sdg8 sdg25 or sdg8 sdg26 double mutant (Extended Data Fig. 10f), suggesting redundant roles for SDG25 and SDG26 in catalysing H3K36me3 on protein-coding genes."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 83,
+            "text": "Unexpectedly, almost no activity of Ser2P Pol II was observed on C3 genes in both wild-type Col-0 and sdg8 mutant (Fig. 2c), which is inconsistent with the well-known functions of H3K36me3 in enhancing transcription elongation7,8."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 78,
+            "text": "However, the C3 genes showed no discernible preference in the mRNA levels between the wild-type Col-0 and sdg8 mutant (Fig. 2a), even though there are increased levels of H3K36me3 on C3 genes of sdg8 compared with wild type, suggesting that H3K36me3 abundance on C3 genes are not correlated with promoting gene expression."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 106,
+            "text": "Notably, there was little to no H3K27me3 enrichment on the C3 genes in Col-0, and the level was not altered in sdg8 (Supplementary Fig. 2a), suggesting that the transcription-resistive state is not caused by H3K27me3 deposition and that the low to no transcription at resistive loci is completely different from PRC2-mediated gene silencing."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 215,
+            "text": "Results showed that the transcription activities over C3 genes with decreased H3K36me3 in sdg8 sdg25 sdg26 compared with sdg8 sdg25 (Extended Data Fig. 10h, top) or sdg8 sdg26 (Extended Data Fig. 10h, bottom) remained subtle in sdg8 sdg25 sdg26 compared with sdg8 (Extended Data Fig. 10h), suggesting that the resistive state of these genes was not disturbed in seedling stages."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 208,
+            "text": "Moreover, a proportion of C3 genes showed lower H3K36me3 levels in the sdg8 sdg25 sdg26 triple mutant than in the sdg8 sdg25 or sdg8 sdg26 double mutant (Extended Data Fig. 10f), suggesting redundant roles for SDG25 and SDG26 in catalysing H3K36me3 on protein-coding genes."
+          },
+          {
+            "rank": 6,
+            "sentence_id": 26,
+            "text": "Relative to the wild type (WT), the mutants sdg4, sdg25, sdg26 and atxr2 (see materials for more details) showed decreased levels of H3K36me3 around the transcription start site (TSS); however, the sdg8 (efs-3)19 mutant displayed increased levels of H3K36me3 from the TSS to the gene bodies (Fig. 1b)."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 102,
+            "text": "Together, the results above revealed that, even though C3 genes in sdg8 displayed many active transcription features, including an open-chromatin state (Fig. 2b), active histone modification markers (Fig. 1h) and high RNA abundance (Extended Data Fig. 5a), the transcription activity on these genes was highly inhibited, indicating that the accumulated H3K36me3 in sdg8 marked 39.4% of total coding genes that exhibit the ability for transcription but with no reaction to transcribe."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 82,
+            "text": "The NET-seq results uncovered that there was a decreased activity of transcriptional elongated Pol II (Ser2P Pol II) at C1 and C2 genes in sdg8 compared with wild type (Fig. 2c), in line with their decrease in H3K36me3 (Fig. 1d), indicating that the C1 and C2 genes are marked by the transcription-coupled H3K36me3."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 207,
+            "text": "In the double mutants of sdg8 sdg25 and sdg8 sdg26, a portion of C3 genes showed mildly decreased H3K36me3 levels compared with sdg8 (Extended Data Fig. 10a,b), and the top 3,000 decreased H3K36me3 genes in each double mutant are largely overlapping (2,610/3,000, Extended Data Fig. 10d)."
+          },
+          {
+            "rank": 10,
+            "sentence_id": 238,
+            "text": "Even in the sdg8 mutant, the much more stimulated H3K36me3 did not trigger 816 transcription (Fig. 1d); however, the loss of H3K36me3 modifications on some short genes in the sdg4 sdg8 double mutant stimulated transcriptional activities (Fig. 4b–e), unveiling an astonishing role of H3K36me3 in transcription inhibition."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 83,
+            "text": "Unexpectedly, almost no activity of Ser2P Pol II was observed on C3 genes in both wild-type Col-0 and sdg8 mutant (Fig. 2c), which is inconsistent with the well-known functions of H3K36me3 in enhancing transcription elongation7,8."
+          },
+          {
+            "sentence_id": 78,
+            "text": "However, the C3 genes showed no discernible preference in the mRNA levels between the wild-type Col-0 and sdg8 mutant (Fig. 2a), even though there are increased levels of H3K36me3 on C3 genes of sdg8 compared with wild type, suggesting that H3K36me3 abundance on C3 genes are not correlated with promoting gene expression."
+          }
+        ],
+        "sentence_ids": [
+          83,
+          78
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "substitution",
+          "level2": "relation_substitution"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "evidence_uncertainty_omission"
+        },
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文用 'inconsistent with the well-known functions' 表达‘与既有观点不一致’，属谨慎质疑；公众号断言‘相悖’并前置‘结果表明’，将推测性矛盾升级为实证性对立；且删去原文中‘well-known’这一对既有观点的限定，弱化了语境中的共识性。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1‘无论在野生型还是sdg8突变体中，C3基因位点处几乎检测不到转录活性（图2b-d）’：sentence_id=83 明确支持（‘almost no activity of Ser2P Pol II was observed on C3 genes in both wild-type Col-0 and sdg8 mutant (Fig. 2c)’），图号对应（Fig. 2c ≈ 图2b-d 范围）；分句2‘这一结果与现有的H3K36me3增强转录延伸观点相悖’：sentence_id=83 直接提供‘inconsistent with the well-known functions of H3K36me3 in enhancing transcription elongation’，但‘inconsistent’≠‘相悖’（contradict/contradictory），后者含更强否定义；sentence_id=78 补充支撑‘H3K36me3 abundance on C3 genes are not correlated with promoting gene expression’，强化非正相关，但未达‘相悖’程度。top-5 中 rank1/2 已覆盖核心，无需补检。",
+        "classification_reason": "primary_level2=relation_substitution：因将论文中‘inconsistent with the well-known functions’（谨慎、语境化、非绝对否定）替换为‘相悖’（中文强对抗关系词，隐含逻辑矛盾或证伪），改变了科学主张的关系强度；不是 addition（未添加新功能/首次），也不是 omission（未删机制或背景），更非 magnitude_substitution（未改程度如‘完全无’→‘几乎无’）；‘well-known’删减属 evidence_uncertainty_omission（删去对既有观点的共识性限定），是次要误差。",
+        "key_differences": [
+          {
+            "type": "relation_substitution",
+            "paper_expression": "inconsistent with the well-known functions of H3K36me3 in enhancing transcription elongation",
+            "article_expression": "与现有的H3K36me3增强转录延伸观点相悖",
+            "description": "‘inconsistent’表观察与主流认知存在张力，保留解释空间；‘相悖’在中文科技术语中常指逻辑互斥或实验证伪，抬升了结论确定性，构成关系性质替换。"
+          },
+          {
+            "type": "evidence_uncertainty_omission",
+            "paper_expression": "well-known functions",
+            "article_expression": "现有的...观点",
+            "description": "删去‘well-known’弱化了该观点在领域内的公认程度，使对比失去语境锚点，削弱了原文对自身发现之反常性的强调。"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "rank1（id=83）已完整覆盖两分句核心，rank2（id=78）提供补充佐证，无更优句。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=83 全句及图2c标注；确认‘inconsistent’在上下文是否被其他句进一步限定。",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P002-A001-C07",
+      "paper_id": "P002",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "我们已知转录激活(Transcription Active，TA)区域为具有Pol II结合以及开放染色质状态（高信号的ATAC-seq）且转录水平较高的区域（图2a-d，图3）。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 154,
+            "text": "In a parallel manner, the protein-coding genes with Pol II binding or open-chromatin state (ATAC-seq) and high Ser2P signal were defined as transcription-activation genes (see details in Supplementary Fig. 3 legends)."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 155,
+            "text": "H3K27me3-marked facultative genes were used as a control."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 153,
+            "text": "The protein-coding genes with Pol II binding (Pol II ChIP-seq) or open-chromatin state (ATAC-seq) but ultra-low Ser2P signal (NET-seq with anti-Pol II Ser2P antibody), and without H3K27me3 markers (facultative genes) were defined as transcription-resistive genes (see details in Supplementary Fig. 3)."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 232,
+            "text": "Active transcription often features open chromatin, Pol II enrichment and active histone modifications, while transcription silencing is tightly associated with compacted chromatin states and repressive histone modifications, such as H3K9me2 and H3K27me3 (Fig. 3c)."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 102,
+            "text": "Together, the results above revealed that, even though C3 genes in sdg8 displayed many active transcription features, including an open-chromatin state (Fig. 2b), active histone modification markers (Fig. 1h) and high RNA abundance (Extended Data Fig. 5a), the transcription activity on these genes was highly inhibited, indicating that the accumulated H3K36me3 in sdg8 marked 39.4% of total coding genes that exhibit the ability for transcription but with no reaction to transcribe."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 154,
+            "text": "In a parallel manner, the protein-coding genes with Pol II binding or open-chromatin state (ATAC-seq) and high Ser2P signal were defined as transcription-activation genes (see details in Supplementary Fig. 3 legends)."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 155,
+            "text": "H3K27me3-marked facultative genes were used as a control."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 153,
+            "text": "The protein-coding genes with Pol II binding (Pol II ChIP-seq) or open-chromatin state (ATAC-seq) but ultra-low Ser2P signal (NET-seq with anti-Pol II Ser2P antibody), and without H3K27me3 markers (facultative genes) were defined as transcription-resistive genes (see details in Supplementary Fig. 3)."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 232,
+            "text": "Active transcription often features open chromatin, Pol II enrichment and active histone modifications, while transcription silencing is tightly associated with compacted chromatin states and repressive histone modifications, such as H3K9me2 and H3K27me3 (Fig. 3c)."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 102,
+            "text": "Together, the results above revealed that, even though C3 genes in sdg8 displayed many active transcription features, including an open-chromatin state (Fig. 2b), active histone modification markers (Fig. 1h) and high RNA abundance (Extended Data Fig. 5a), the transcription activity on these genes was highly inhibited, indicating that the accumulated H3K36me3 in sdg8 marked 39.4% of total coding genes that exhibit the ability for transcription but with no reaction to transcribe."
+          },
+          {
+            "rank": 6,
+            "sentence_id": 231,
+            "text": "The precise regulation of transcription is essential for faithful development among species."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 233,
+            "text": "In this study, we identified a novel transcription state, termed ‘transcription resistive’, which shares active histone markers with transcriptionally active genes but displays the undetectable transcription activities of silencing genes (marked by H3K27me3 and H3K9me2)."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 101,
+            "text": "e, Comparison of 5’P end abundance of Col-0 from previous in sdg8) in turn results in blocking Pol II at transcription initiation, further supporting the well-known functions of H3K36me3 in promoting transcriptional elongation on C1 and C2 genes."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 103,
+            "text": "We termed this state ‘transcription resistive’, as the open-chromatin states seem to resist the transcription machinery; furthermore, ‘resistive’ shares the same suffix, ‘-tive’, as Active, Facultative and Constitutive (see below Fig. 3c)."
+          },
+          {
+            "rank": 10,
+            "sentence_id": 11,
+            "text": "to RNA polymerase II machinery."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 154,
+            "text": "In a parallel manner, the protein-coding genes with Pol II binding or open-chromatin state (ATAC-seq) and high Ser2P signal were defined as transcription-activation genes (see details in Supplementary Fig. 3 legends)."
+          }
+        ],
+        "sentence_ids": [
+          154
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "severity": "none",
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "‘转录激活(Transcription Active，TA)区域’定义与论文 sentence_id=154 完全一致：Pol II binding or open-chromatin state (ATAC-seq) and high Ser2P signal；括号内英文缩写 TA 与原文 transcription-activation genes 对应；图号（图2a-d，图3）为合理概括（Fig. 2b/c/d 和 Fig. 3c 均涉及 TA/TR 对比），无添加、删减或替换。"
+      },
+      "analysis": {
+        "evidence_judgement": "claim 全句为定义性陈述，核心三要素（Pol II结合、开放染色质、高转录信号）均被 sentence_id=154 精确覆盖：‘Pol II binding or open-chromatin state (ATAC-seq) and high Ser2P signal’；‘transcription-activation genes’与‘Transcription Active，TA’术语等价；图号范围（图2a-d，图3）虽未在154句中直接列出，但 Fig. 2b/c/d（见153/154/102）、Fig. 3c（见233/103）均在 review_evidences 中出现，属合理跨图归纳。top-5 中 rank1=id=154 为唯一定义句，支撑充分。",
+        "classification_reason": "无失真：所有关键成分（条件组合、术语、图示依据）均忠实转述；‘or’在原文中为逻辑或（满足任一即可归类），但 claim 中‘以及’易被理解为‘且’，需注意——然而 sentence_id=154 原文实际使用 ‘or’ 连接 Pol II binding 与 open-chromatin state，而 high Ser2P signal 是共现要求（and），claim 中‘具有...以及...且...’结构在中文里可兼容此逻辑（即前两者满足其一 + 后者必须），未造成实质歧义；故不构成 relation_substitution。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "id=154 是唯一直接定义 TA 的句子，rank1 即最优。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=154 全句及 Supplementary Fig. 3 legends 原文。",
+        "needs_manual_review": false,
+        "review_focus": [
+          "none"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P002-A001-C08",
+      "paper_id": "P002",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "与之相对应，研究人员将有Pol Ⅱ结合(Pol II ChIP-seq)和开放染色质状态(ATAC-seq)但Pol II转录信号极低（Pol Ⅱ Ser2P NET-seq水平）的区域定义为“转录阻抗”(Transcription Resistive，TR)区域（图2a-d，图3）。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 153,
+            "text": "The protein-coding genes with Pol II binding (Pol II ChIP-seq) or open-chromatin state (ATAC-seq) but ultra-low Ser2P signal (NET-seq with anti-Pol II Ser2P antibody), and without H3K27me3 markers (facultative genes) were defined as transcription-resistive genes (see details in Supplementary Fig. 3)."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 305,
+            "text": "ChIP-seq and ATAC-seq analysis."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 152,
+            "text": "Given that a large portion of C3 genes display the transcription-resistive state (Fig. 2b,c), we moved to investigate the transcription-resistive genes in the wild-type Col-0 genome."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 154,
+            "text": "In a parallel manner, the protein-coding genes with Pol II binding or open-chromatin state (ATAC-seq) and high Ser2P signal were defined as transcription-activation genes (see details in Supplementary Fig. 3 legends)."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 306,
+            "text": "Briefly, trimmed reads were aligned to the TAIR10 genome with Bowtie 2 (v.2.3.0 and v.2.3.5.1) using default settings, and samtools 1.3.1 was used to remove reads with more than 3 mismatches and non-uniquely mapped reads."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 153,
+            "text": "The protein-coding genes with Pol II binding (Pol II ChIP-seq) or open-chromatin state (ATAC-seq) but ultra-low Ser2P signal (NET-seq with anti-Pol II Ser2P antibody), and without H3K27me3 markers (facultative genes) were defined as transcription-resistive genes (see details in Supplementary Fig. 3)."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 305,
+            "text": "ChIP-seq and ATAC-seq analysis."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 152,
+            "text": "Given that a large portion of C3 genes display the transcription-resistive state (Fig. 2b,c), we moved to investigate the transcription-resistive genes in the wild-type Col-0 genome."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 154,
+            "text": "In a parallel manner, the protein-coding genes with Pol II binding or open-chromatin state (ATAC-seq) and high Ser2P signal were defined as transcription-activation genes (see details in Supplementary Fig. 3 legends)."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 306,
+            "text": "Briefly, trimmed reads were aligned to the TAIR10 genome with Bowtie 2 (v.2.3.0 and v.2.3.5.1) using default settings, and samtools 1.3.1 was used to remove reads with more than 3 mismatches and non-uniquely mapped reads."
+          },
+          {
+            "rank": 6,
+            "sentence_id": 2,
+            "text": "Transcription resistive is stamped by H3K36me with almost undetectable transcription activity but open-chromatin state, and occupies most documented plant essential genes."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 140,
+            "text": "f, IGV browser views showing representative TR and TA genes in Col-0 and sdg8 with H3K36me3 ChIP-seq, RNA-seq, NET-seq (Ser2P), ATAC-seq and Pol II ChIP-seq (data from GSE181489)."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 3,
+            "text": "Mutating SDG8, previously known as the major H3K36 methyltransferase in Arabidopsis, surprisingly elevates 78.7% of H3K36me3-marked resistive loci, which accounts for 39.4% of the coding genome."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 1,
+            "text": "Here we report a new chromatin state, ‘transcription resistive’, which is differentiated from activation and silencing."
+          },
+          {
+            "rank": 10,
+            "sentence_id": 139,
+            "text": "Statistical significance was determined by permutation test."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 153,
+            "text": "The protein-coding genes with Pol II binding (Pol II ChIP-seq) or open-chromatin state (ATAC-seq) but ultra-low Ser2P signal (NET-seq with anti-Pol II Ser2P antibody), and without H3K27me3 markers (facultative genes) were defined as transcription-resistive genes (see details in Supplementary Fig. 3)."
+          }
+        ],
+        "sentence_ids": [
+          153
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "substitution",
+          "level2": "relation_substitution"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "mechanism_omission"
+        },
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文定义 TR 基因为‘Pol II binding (Pol II ChIP-seq) or open-chromatin state (ATAC-seq) but ultra-low Ser2P signal... without H3K27me3 markers’，强调‘or’逻辑及‘无H3K27me3’排除条件；公众号改为‘有Pol II结合和开放染色质状态...但Pol II转录信号极低’，将‘or’偷换为‘and’，且完全删去‘无H3K27me3’这一关键排他性机制限定。"
+      },
+      "analysis": {
+        "evidence_judgement": "claim 分句1‘有Pol II结合(Pol II ChIP-seq)和开放染色质状态(ATAC-seq)’：sentence_id=153 原文为‘Pol II binding (Pol II ChIP-seq) or open-chromatin state (ATAC-seq)’，逻辑连接词由 or → and，属关键关系变更；分句2‘但Pol II转录信号极低（Pol II Ser2P NET-seq水平）’：‘ultra-low Ser2P signal’被准确转述；分句3隐含定义完整性（‘定义为...区域’）：sentence_id=153 明确含‘without H3K27me3 markers (facultative genes)’，该条件在 claim 中完全缺失。top-5 中 rank1=id=153 已含全部三要素，支撑充分但暴露失真。",
+        "classification_reason": "primary_level2=relation_substitution：将原文‘or’（满足其一即可归类）替换为‘和’（须同时满足），实质性收紧定义边界，改变分类逻辑关系；不是 omission 主因——因删去‘无H3K27me3’属 mechanism_omission（该条件用于排除经典抑制状态，是定义TR的核心机制判据），故 secondary_level2=mechanism_omission；二者不可合并，因前者改逻辑结构，后者删机制要件。",
+        "key_differences": [
+          {
+            "type": "relation_substitution",
+            "paper_expression": "Pol II binding (Pol II ChIP-seq) or open-chromatin state (ATAC-seq)",
+            "article_expression": "有Pol II结合(Pol II ChIP-seq)和开放染色质状态(ATAC-seq)",
+            "description": "‘or’表示两类特征任一存在即可支持TR归类（如仅Pol II结合+低Ser2P，或仅ATAC-open+低Ser2P）；‘和’要求二者共存，大幅缩小TR基因集，扭曲原始定义逻辑。"
+          },
+          {
+            "type": "mechanism_omission",
+            "paper_expression": "without H3K27me3 markers (facultative genes)",
+            "article_expression": "（无对应表述）",
+            "description": "该条件用于排除PRC2介导的沉默（见 sentence_id=106），确保TR是新型状态而非已知抑制的变体；删去后使TR定义失去关键鉴别机制。"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "rank1=id=153 是唯一完整定义TR的句子，无更优替代。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=153 全句，特别注意‘or’与‘without H3K27me3’；对照 Supplementary Fig. 3 定义。",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label",
+          "secondary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P002-A001-C09",
+      "paper_id": "P002",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "根据这一定义，研究人员在拟南芥基因组中鉴定到了4375个TA基因和12911个TR基因（图3）。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 156,
+            "text": "Overall, we identified 4,375 TA genes and 12,911 TR genes in the genome (Supplementary Fig. 3)."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 130,
+            "text": "H3K36me3 enrichment in the knockdown mutant of SDG725, the closest homologue to Arabidopsis SDG8 (Extended Data Fig. 6a), showed upregulation in a subset of protein-coding genes (n = 1,739, Extended b ATAC-seq NS NS Col-0 sdg8 1.0 250 C1 ATAC signal (read counts) Normalized reads density 200 C2 0.6 150 C3 100 0.4 50 C4 0 0 C1 C2 C3 C4 –500 500 Peak (bp) C3 C4 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb Col-0 sdg8 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb f Relative RNA abundance C1 C3 H3K36me3 1.5 AT3G49796 0.8 RNA-seq NET-seq 0 (Ser2P) C1 NET-seq C2 (Ser5P) C3 C4 h 510 essential genes C3 (86.1%) C2 (3.9%) C4 (8.4%) 0 15 30 60 120 Time (min) C1 (1.6%) 812 a H3K36me3 H3K36me2 H3K36me1 H3K4me3 H3K4me2 H3K23ac H3K27ac H4K16ac H3K14ac H3K9ac H2A.X HTR5 TR TA 60 40 20 b ATAC NET-seq (Ser2P) TR Read counts 10 400 7.5 TA RPGC CPM FH 5 CH 2.5 200 0 –1.0 TSS 1 Kb –1.0 TSS TES 1 Kb –1.0 TSS TES 1 Kb 12 800 6 (n = 12,911) TR 8 4 400 (n = 4,375) TA 4 2 (n = 6,280) FH CH 0 0 0 (n = 259) c Chromatin states Key markers Constitutive H3K9me2/H3K27me1 (n = 259, 1% PCGs) Closed heterochromatin Facultative H3K27me3 (n = 6,280, 23.1% PCGs) Active H3K4me3 (n = 4,375, 16.1% PCGs) Open euchromatin Resistive H3K36me3 (n = 12,911, 47.5% PCGs) Fig. 3 | H3K36me marks transcription-resistive genes in Arabidopsis."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 155,
+            "text": "H3K27me3-marked facultative genes were used as a control."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 157,
+            "text": "Permutation test showed that the TR and TA genes are both negatively associated with repressive chromatin markers but highly positively associated with transcriptionally active chromatin markers (Fig. 3a)."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 129,
+            "text": "To check whether the observation above is conserved among species, we analysed published H3K36me3 ChIP-seq data in Oryza sativa26."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 156,
+            "text": "Overall, we identified 4,375 TA genes and 12,911 TR genes in the genome (Supplementary Fig. 3)."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 130,
+            "text": "H3K36me3 enrichment in the knockdown mutant of SDG725, the closest homologue to Arabidopsis SDG8 (Extended Data Fig. 6a), showed upregulation in a subset of protein-coding genes (n = 1,739, Extended b ATAC-seq NS NS Col-0 sdg8 1.0 250 C1 ATAC signal (read counts) Normalized reads density 200 C2 0.6 150 C3 100 0.4 50 C4 0 0 C1 C2 C3 C4 –500 500 Peak (bp) C3 C4 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb Col-0 sdg8 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb f Relative RNA abundance C1 C3 H3K36me3 1.5 AT3G49796 0.8 RNA-seq NET-seq 0 (Ser2P) C1 NET-seq C2 (Ser5P) C3 C4 h 510 essential genes C3 (86.1%) C2 (3.9%) C4 (8.4%) 0 15 30 60 120 Time (min) C1 (1.6%) 812 a H3K36me3 H3K36me2 H3K36me1 H3K4me3 H3K4me2 H3K23ac H3K27ac H4K16ac H3K14ac H3K9ac H2A.X HTR5 TR TA 60 40 20 b ATAC NET-seq (Ser2P) TR Read counts 10 400 7.5 TA RPGC CPM FH 5 CH 2.5 200 0 –1.0 TSS 1 Kb –1.0 TSS TES 1 Kb –1.0 TSS TES 1 Kb 12 800 6 (n = 12,911) TR 8 4 400 (n = 4,375) TA 4 2 (n = 6,280) FH CH 0 0 0 (n = 259) c Chromatin states Key markers Constitutive H3K9me2/H3K27me1 (n = 259, 1% PCGs) Closed heterochromatin Facultative H3K27me3 (n = 6,280, 23.1% PCGs) Active H3K4me3 (n = 4,375, 16.1% PCGs) Open euchromatin Resistive H3K36me3 (n = 12,911, 47.5% PCGs) Fig. 3 | H3K36me marks transcription-resistive genes in Arabidopsis."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 155,
+            "text": "H3K27me3-marked facultative genes were used as a control."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 157,
+            "text": "Permutation test showed that the TR and TA genes are both negatively associated with repressive chromatin markers but highly positively associated with transcriptionally active chromatin markers (Fig. 3a)."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 129,
+            "text": "To check whether the observation above is conserved among species, we analysed published H3K36me3 ChIP-seq data in Oryza sativa26."
+          },
+          {
+            "rank": 6,
+            "sentence_id": 131,
+            "text": "a, Heat map depicting co-localization of different chromatin states in transcriptionresistive (TR) and transcription-activation (TA) genes via permutation test."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 162,
+            "text": "In detail, we defined a group of protein-coding genes as transcription resistive, accounting for 47.5% of total protein-coding genes in the Arabidopsis genome, and showing active chromatin states similar to transcription-activation genes (n = 4,375, accounting for 16.1% of protein-coding genes) (Fig. 3b,c) but with little to no transcription activities similar to heterochromatin, including the H3K9me2-marked constitutive heterochromatin genes (n = 259, accounting for 1% of protein-coding genes) and H3K27me3-marked facultative heterochromatin genes (n = 6,280, accounting for 23.1% of protein-coding genes) (Fig. 3b,c)."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 161,
+            "text": "However, there is no obvious difference in Ser2P NET-seq signals on the majority of TR genes between the control and FLA (Extended Data Fig. 7), indicating that the Ser2P signal on TR genes cannot be captured even when transcription elongation is inhibited, excluding the possibility that the transcription rate of TR genes is too rapid to be effectively captured by NET-seq."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 163,
+            "text": "Moreover, using similar parameters, we identified 7,198 TR genes in the mouse (Mus musculus) genome (Supplementary Fig. 4a), although they are not tightly associated with H3K36me modifications (Supplementary Fig. 4b,c, see details in the Discussion)."
+          },
+          {
+            "rank": 10,
+            "sentence_id": 147,
+            "text": "Sample numbers: nTR = 12,911, nTA = 4,375, nC3 = 10,710, nC4 = 12,878."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 156,
+            "text": "Overall, we identified 4,375 TA genes and 12,911 TR genes in the genome (Supplementary Fig. 3)."
+          },
+          {
+            "sentence_id": 130,
+            "text": "H3K36me3 enrichment in the knockdown mutant of SDG725, the closest homologue to Arabidopsis SDG8 (Extended Data Fig. 6a), showed upregulation in a subset of protein-coding genes (n = 1,739, Extended b ATAC-seq NS NS Col-0 sdg8 1.0 250 C1 ATAC signal (read counts) Normalized reads density 200 C2 0.6 150 C3 100 0.4 50 C4 0 0 C1 C2 C3 C4 –500 500 Peak (bp) C3 C4 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb Col-0 sdg8 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb f Relative RNA abundance C1 C3 H3K36me3 1.5 AT3G49796 0.8 RNA-seq NET-seq 0 (Ser2P) C1 NET-seq C2 (Ser5P) C3 C4 h 510 essential genes C3 (86.1%) C2 (3.9%) C4 (8.4%) 0 15 30 60 120 Time (min) C1 (1.6%) 812 a H3K36me3 H3K36me2 H3K36me1 H3K4me3 H3K4me2 H3K23ac H3K27ac H4K16ac H3K14ac H3K9ac H2A.X HTR5 TR TA 60 40 20 b ATAC NET-seq (Ser2P) TR Read counts 10 400 7.5 TA RPGC CPM FH 5 CH 2.5 200 0 –1.0 TSS 1 Kb –1.0 TSS TES 1 Kb –1.0 TSS TES 1 Kb 12 800 6 (n = 12,911) TR 8 4 400 (n = 4,375) TA 4 2 (n = 6,280) FH CH 0 0 0 (n = 259) c Chromatin states Key markers Constitutive H3K9me2/H3K27me1 (n = 259, 1% PCGs) Closed heterochromatin Facultative H3K27me3 (n = 6,280, 23.1% PCGs) Active H3K4me3 (n = 4,375, 16.1% PCGs) Open euchromatin Resistive H3K36me3 (n = 12,911, 47.5% PCGs) Fig. 3 | H3K36me marks transcription-resistive genes in Arabidopsis."
+          }
+        ],
+        "sentence_ids": [
+          156,
+          130
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "severity": "none",
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "数字与图注完全一致；‘图3’在论文中为Fig. 3，但图注明确标注‘Fig. 3 | H3K36me marks transcription-resistive genes…’且含TR/TA基因数（130句图注）及主文统计句（156句），‘图3’属合理指代。"
+      },
+      "analysis": {
+        "evidence_judgement": "‘鉴定到了4375个TA基因和12911个TR基因’由sentence_id=156直接支撑（'4,375 TA genes and 12,911 TR genes'）；‘（图3）’由sentence_id=130的图注标题‘Fig. 3 | …’及其中面板a/b/c均含TR/TA基因数（如130句末尾‘Resistive H3K36me3 (n = 12,911) TR’、‘Active H3K4me3 (n = 4,375) TA’）共同支撑；top-5中rank1(156)与rank2(130)覆盖全部核心断言。",
+        "classification_reason": "‘根据这一定义’在原文无显式对应，但前文已明确定义TR/TA（见162句），属合理省略背景；‘拟南芥基因组’与原文‘Arabidopsis genome’严格一致；数字逗号格式差异（4375 vs 4,375）属排版惯例，非语义失真；‘图3’与论文Fig. 3完全对应，非‘图2a’等错标。非substitution（未改关系）、非addition（未加首次/功能）、非omission（未删关键限定）。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "rank1和rank2精准匹配数字+图号，无噪声干扰"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=156 和 id=130。",
+        "needs_manual_review": false,
+        "review_focus": [
+          "gold_sentence_ids"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P002-A001-C10",
+      "paper_id": "P002",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "TR和TA基因均与转录抑制性染色质标记（如H3K9me2、H3K27me1、H3K27me3等）呈负相关，但与转录活跃型染色质标记（如H3K4me3、H3K36me3等）呈正相关（图2a，图3）。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 157,
+            "text": "Permutation test showed that the TR and TA genes are both negatively associated with repressive chromatin markers but highly positively associated with transcriptionally active chromatin markers (Fig. 3a)."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 130,
+            "text": "H3K36me3 enrichment in the knockdown mutant of SDG725, the closest homologue to Arabidopsis SDG8 (Extended Data Fig. 6a), showed upregulation in a subset of protein-coding genes (n = 1,739, Extended b ATAC-seq NS NS Col-0 sdg8 1.0 250 C1 ATAC signal (read counts) Normalized reads density 200 C2 0.6 150 C3 100 0.4 50 C4 0 0 C1 C2 C3 C4 –500 500 Peak (bp) C3 C4 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb Col-0 sdg8 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb f Relative RNA abundance C1 C3 H3K36me3 1.5 AT3G49796 0.8 RNA-seq NET-seq 0 (Ser2P) C1 NET-seq C2 (Ser5P) C3 C4 h 510 essential genes C3 (86.1%) C2 (3.9%) C4 (8.4%) 0 15 30 60 120 Time (min) C1 (1.6%) 812 a H3K36me3 H3K36me2 H3K36me1 H3K4me3 H3K4me2 H3K23ac H3K27ac H4K16ac H3K14ac H3K9ac H2A.X HTR5 TR TA 60 40 20 b ATAC NET-seq (Ser2P) TR Read counts 10 400 7.5 TA RPGC CPM FH 5 CH 2.5 200 0 –1.0 TSS 1 Kb –1.0 TSS TES 1 Kb –1.0 TSS TES 1 Kb 12 800 6 (n = 12,911) TR 8 4 400 (n = 4,375) TA 4 2 (n = 6,280) FH CH 0 0 0 (n = 259) c Chromatin states Key markers Constitutive H3K9me2/H3K27me1 (n = 259, 1% PCGs) Closed heterochromatin Facultative H3K27me3 (n = 6,280, 23.1% PCGs) Active H3K4me3 (n = 4,375, 16.1% PCGs) Open euchromatin Resistive H3K36me3 (n = 12,911, 47.5% PCGs) Fig. 3 | H3K36me marks transcription-resistive genes in Arabidopsis."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 14,
+            "text": "Histone methylation, on the other hand, can mark active genes by specific modifications, such as methylation of H3K4 and H3K36."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 242,
+            "text": "However, the resistive genes that we found are not associated with H3K27me3 modification (Fig. 3a), and the H3K27me3 modification was not altered in the sdg8 mutant (Supplementary Fig. 2)."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 158,
+            "text": "Notably, the TR genes show much more correlation of methylation of H3K36 modifications than TA genes, especially the H3K36me3 modification (Fig. 3a), suggesting that the methylation on H3K36 could mark a large number of protein-coding genes with the newly defined chromatin state, transcription resistive."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 157,
+            "text": "Permutation test showed that the TR and TA genes are both negatively associated with repressive chromatin markers but highly positively associated with transcriptionally active chromatin markers (Fig. 3a)."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 130,
+            "text": "H3K36me3 enrichment in the knockdown mutant of SDG725, the closest homologue to Arabidopsis SDG8 (Extended Data Fig. 6a), showed upregulation in a subset of protein-coding genes (n = 1,739, Extended b ATAC-seq NS NS Col-0 sdg8 1.0 250 C1 ATAC signal (read counts) Normalized reads density 200 C2 0.6 150 C3 100 0.4 50 C4 0 0 C1 C2 C3 C4 –500 500 Peak (bp) C3 C4 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb Col-0 sdg8 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb f Relative RNA abundance C1 C3 H3K36me3 1.5 AT3G49796 0.8 RNA-seq NET-seq 0 (Ser2P) C1 NET-seq C2 (Ser5P) C3 C4 h 510 essential genes C3 (86.1%) C2 (3.9%) C4 (8.4%) 0 15 30 60 120 Time (min) C1 (1.6%) 812 a H3K36me3 H3K36me2 H3K36me1 H3K4me3 H3K4me2 H3K23ac H3K27ac H4K16ac H3K14ac H3K9ac H2A.X HTR5 TR TA 60 40 20 b ATAC NET-seq (Ser2P) TR Read counts 10 400 7.5 TA RPGC CPM FH 5 CH 2.5 200 0 –1.0 TSS 1 Kb –1.0 TSS TES 1 Kb –1.0 TSS TES 1 Kb 12 800 6 (n = 12,911) TR 8 4 400 (n = 4,375) TA 4 2 (n = 6,280) FH CH 0 0 0 (n = 259) c Chromatin states Key markers Constitutive H3K9me2/H3K27me1 (n = 259, 1% PCGs) Closed heterochromatin Facultative H3K27me3 (n = 6,280, 23.1% PCGs) Active H3K4me3 (n = 4,375, 16.1% PCGs) Open euchromatin Resistive H3K36me3 (n = 12,911, 47.5% PCGs) Fig. 3 | H3K36me marks transcription-resistive genes in Arabidopsis."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 14,
+            "text": "Histone methylation, on the other hand, can mark active genes by specific modifications, such as methylation of H3K4 and H3K36."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 242,
+            "text": "However, the resistive genes that we found are not associated with H3K27me3 modification (Fig. 3a), and the H3K27me3 modification was not altered in the sdg8 mutant (Supplementary Fig. 2)."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 158,
+            "text": "Notably, the TR genes show much more correlation of methylation of H3K36 modifications than TA genes, especially the H3K36me3 modification (Fig. 3a), suggesting that the methylation on H3K36 could mark a large number of protein-coding genes with the newly defined chromatin state, transcription resistive."
+          },
+          {
+            "rank": 6,
+            "sentence_id": 156,
+            "text": "Overall, we identified 4,375 TA genes and 12,911 TR genes in the genome (Supplementary Fig. 3)."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 232,
+            "text": "Active transcription often features open chromatin, Pol II enrichment and active histone modifications, while transcription silencing is tightly associated with compacted chromatin states and repressive histone modifications, such as H3K9me2 and H3K27me3 (Fig. 3c)."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 13,
+            "text": "Histone acetylation, catalysed by histone acetyltransferases (HATs), leads to the relaxation of chromatin structure, making it more accessible to transcription factors and RNA polymerase."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 15,
+            "text": "The methylation of histone H3 at lysine 36 (H3K36me) is prevalent throughout the eukaryotic genome and present in the form of mono-, diand trimethylation (H3K36me1/2/3)6."
+          },
+          {
+            "rank": 10,
+            "sentence_id": 129,
+            "text": "To check whether the observation above is conserved among species, we analysed published H3K36me3 ChIP-seq data in Oryza sativa26."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 157,
+            "text": "Permutation test showed that the TR and TA genes are both negatively associated with repressive chromatin markers but highly positively associated with transcriptionally active chromatin markers (Fig. 3a)."
+          },
+          {
+            "sentence_id": 130,
+            "text": "H3K36me3 enrichment in the knockdown mutant of SDG725, the closest homologue to Arabidopsis SDG8 (Extended Data Fig. 6a), showed upregulation in a subset of protein-coding genes (n = 1,739, Extended b ATAC-seq NS NS Col-0 sdg8 1.0 250 C1 ATAC signal (read counts) Normalized reads density 200 C2 0.6 150 C3 100 0.4 50 C4 0 0 C1 C2 C3 C4 –500 500 Peak (bp) C3 C4 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb Col-0 sdg8 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb f Relative RNA abundance C1 C3 H3K36me3 1.5 AT3G49796 0.8 RNA-seq NET-seq 0 (Ser2P) C1 NET-seq C2 (Ser5P) C3 C4 h 510 essential genes C3 (86.1%) C2 (3.9%) C4 (8.4%) 0 15 30 60 120 Time (min) C1 (1.6%) 812 a H3K36me3 H3K36me2 H3K36me1 H3K4me3 H3K4me2 H3K23ac H3K27ac H4K16ac H3K14ac H3K9ac H2A.X HTR5 TR TA 60 40 20 b ATAC NET-seq (Ser2P) TR Read counts 10 400 7.5 TA RPGC CPM FH 5 CH 2.5 200 0 –1.0 TSS 1 Kb –1.0 TSS TES 1 Kb –1.0 TSS TES 1 Kb 12 800 6 (n = 12,911) TR 8 4 400 (n = 4,375) TA 4 2 (n = 6,280) FH CH 0 0 0 (n = 259) c Chromatin states Key markers Constitutive H3K9me2/H3K27me1 (n = 259, 1% PCGs) Closed heterochromatin Facultative H3K27me3 (n = 6,280, 23.1% PCGs) Active H3K4me3 (n = 4,375, 16.1% PCGs) Open euchromatin Resistive H3K36me3 (n = 12,911, 47.5% PCGs) Fig. 3 | H3K36me marks transcription-resistive genes in Arabidopsis."
+          }
+        ],
+        "sentence_ids": [
+          157,
+          130
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "severity": "none",
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "‘负相关/正相关’与157句‘negatively associated…positively associated’完全对应；所列修饰类型（H3K9me2、H3K27me1、H3K27me3、H3K4me3、H3K36me3）均在130句图注c面板及a面板中完整出现（如‘Constitutive H3K9me2/H3K27me1’、‘Facultative H3K27me3’、‘Active H3K4me3’、‘Resistive H3K36me3’）；‘图2a，图3’中‘图2a’为失准，但原文仅Fig. 3a含该关联检验结果，属图号笔误，不改变科学含义。"
+      },
+      "analysis": {
+        "evidence_judgement": "‘TR和TA基因均与转录抑制性染色质标记呈负相关，但与转录活跃型染色质标记呈正相关’由sentence_id=157整句直接支撑（'negatively associated with repressive chromatin markers but highly positively associated with transcriptionally active chromatin markers'）；所列具体修饰类型全部在sentence_id=130的Fig. 3c（H3K9me2/H3K27me1, H3K27me3, H3K4me3）和Fig. 3a（H3K36me3）中显式列出；‘（图2a，图3）’中‘图2a’未在top-5或全文检索证据中出现对应内容，但Fig. 3a即为该结论唯一出处（157句明确引Fig. 3a），故‘图2a’属冗余/错误图号，不影响核心关系判断。",
+        "classification_reason": "‘转录抑制性染色质标记’对应原文‘repressive chromatin markers’，其下枚举项（H3K9me2等）与Fig. 3c完全一致；‘转录活跃型染色质标记’对应‘transcriptionally active chromatin markers’，H3K4me3/H3K36me3均在Fig. 3a/c中作为active/resistive状态标记出现；添加‘等’字属中文枚举惯例，非addition；图号‘图2a’虽误，但未引入新机制/功能/程度，不构成substitution或addition，属低风险表述瑕疵，不触发失真标签。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "rank1(157)提供关系定性，rank2(130)提供修饰枚举，二者组合完备；‘图2a’为用户输入偏差，非检索或论文问题"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=157（关系）和 id=130（修饰列表）。",
+        "needs_manual_review": false,
+        "review_focus": [
+          "gold_sentence_ids"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P002-A001-C11",
+      "paper_id": "P002",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "有趣的是，TR基因相较于TA基因有更富集的H3K36me修饰，尤其是H3K36me3修饰（图2a）。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 171,
+            "text": "Moreover, the TR genes, which accumulated more H3K36me3 than TA genes (Fig. 3a), were also associated with increased transcript half-life (Extended Data Fig. 8c)."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 158,
+            "text": "Notably, the TR genes show much more correlation of methylation of H3K36 modifications than TA genes, especially the H3K36me3 modification (Fig. 3a), suggesting that the methylation on H3K36 could mark a large number of protein-coding genes with the newly defined chromatin state, transcription resistive."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 130,
+            "text": "H3K36me3 enrichment in the knockdown mutant of SDG725, the closest homologue to Arabidopsis SDG8 (Extended Data Fig. 6a), showed upregulation in a subset of protein-coding genes (n = 1,739, Extended b ATAC-seq NS NS Col-0 sdg8 1.0 250 C1 ATAC signal (read counts) Normalized reads density 200 C2 0.6 150 C3 100 0.4 50 C4 0 0 C1 C2 C3 C4 –500 500 Peak (bp) C3 C4 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb Col-0 sdg8 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb f Relative RNA abundance C1 C3 H3K36me3 1.5 AT3G49796 0.8 RNA-seq NET-seq 0 (Ser2P) C1 NET-seq C2 (Ser5P) C3 C4 h 510 essential genes C3 (86.1%) C2 (3.9%) C4 (8.4%) 0 15 30 60 120 Time (min) C1 (1.6%) 812 a H3K36me3 H3K36me2 H3K36me1 H3K4me3 H3K4me2 H3K23ac H3K27ac H4K16ac H3K14ac H3K9ac H2A.X HTR5 TR TA 60 40 20 b ATAC NET-seq (Ser2P) TR Read counts 10 400 7.5 TA RPGC CPM FH 5 CH 2.5 200 0 –1.0 TSS 1 Kb –1.0 TSS TES 1 Kb –1.0 TSS TES 1 Kb 12 800 6 (n = 12,911) TR 8 4 400 (n = 4,375) TA 4 2 (n = 6,280) FH CH 0 0 0 (n = 259) c Chromatin states Key markers Constitutive H3K9me2/H3K27me1 (n = 259, 1% PCGs) Closed heterochromatin Facultative H3K27me3 (n = 6,280, 23.1% PCGs) Active H3K4me3 (n = 4,375, 16.1% PCGs) Open euchromatin Resistive H3K36me3 (n = 12,911, 47.5% PCGs) Fig. 3 | H3K36me marks transcription-resistive genes in Arabidopsis."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 78,
+            "text": "However, the C3 genes showed no discernible preference in the mRNA levels between the wild-type Col-0 and sdg8 mutant (Fig. 2a), even though there are increased levels of H3K36me3 on C3 genes of sdg8 compared with wild type, suggesting that H3K36me3 abundance on C3 genes are not correlated with promoting gene expression."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 77,
+            "text": "Consistent with the known function of H3K36me3 that is associated with active transcription, RNA-seq analysis revealed that a larger portion of genes in SDG8-dependent C1 and C2 was downregulated in the sdg8 mutant (Fig. 2a)."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 171,
+            "text": "Moreover, the TR genes, which accumulated more H3K36me3 than TA genes (Fig. 3a), were also associated with increased transcript half-life (Extended Data Fig. 8c)."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 158,
+            "text": "Notably, the TR genes show much more correlation of methylation of H3K36 modifications than TA genes, especially the H3K36me3 modification (Fig. 3a), suggesting that the methylation on H3K36 could mark a large number of protein-coding genes with the newly defined chromatin state, transcription resistive."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 130,
+            "text": "H3K36me3 enrichment in the knockdown mutant of SDG725, the closest homologue to Arabidopsis SDG8 (Extended Data Fig. 6a), showed upregulation in a subset of protein-coding genes (n = 1,739, Extended b ATAC-seq NS NS Col-0 sdg8 1.0 250 C1 ATAC signal (read counts) Normalized reads density 200 C2 0.6 150 C3 100 0.4 50 C4 0 0 C1 C2 C3 C4 –500 500 Peak (bp) C3 C4 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb Col-0 sdg8 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb f Relative RNA abundance C1 C3 H3K36me3 1.5 AT3G49796 0.8 RNA-seq NET-seq 0 (Ser2P) C1 NET-seq C2 (Ser5P) C3 C4 h 510 essential genes C3 (86.1%) C2 (3.9%) C4 (8.4%) 0 15 30 60 120 Time (min) C1 (1.6%) 812 a H3K36me3 H3K36me2 H3K36me1 H3K4me3 H3K4me2 H3K23ac H3K27ac H4K16ac H3K14ac H3K9ac H2A.X HTR5 TR TA 60 40 20 b ATAC NET-seq (Ser2P) TR Read counts 10 400 7.5 TA RPGC CPM FH 5 CH 2.5 200 0 –1.0 TSS 1 Kb –1.0 TSS TES 1 Kb –1.0 TSS TES 1 Kb 12 800 6 (n = 12,911) TR 8 4 400 (n = 4,375) TA 4 2 (n = 6,280) FH CH 0 0 0 (n = 259) c Chromatin states Key markers Constitutive H3K9me2/H3K27me1 (n = 259, 1% PCGs) Closed heterochromatin Facultative H3K27me3 (n = 6,280, 23.1% PCGs) Active H3K4me3 (n = 4,375, 16.1% PCGs) Open euchromatin Resistive H3K36me3 (n = 12,911, 47.5% PCGs) Fig. 3 | H3K36me marks transcription-resistive genes in Arabidopsis."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 78,
+            "text": "However, the C3 genes showed no discernible preference in the mRNA levels between the wild-type Col-0 and sdg8 mutant (Fig. 2a), even though there are increased levels of H3K36me3 on C3 genes of sdg8 compared with wild type, suggesting that H3K36me3 abundance on C3 genes are not correlated with promoting gene expression."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 77,
+            "text": "Consistent with the known function of H3K36me3 that is associated with active transcription, RNA-seq analysis revealed that a larger portion of genes in SDG8-dependent C1 and C2 was downregulated in the sdg8 mutant (Fig. 2a)."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 158,
+            "text": "Notably, the TR genes show much more correlation of methylation of H3K36 modifications than TA genes, especially the H3K36me3 modification (Fig. 3a), suggesting that the methylation on H3K36 could mark a large number of protein-coding genes with the newly defined chromatin state, transcription resistive."
+          },
+          {
+            "sentence_id": 171,
+            "text": "Moreover, the TR genes, which accumulated more H3K36me3 than TA genes (Fig. 3a), were also associated with increased transcript half-life (Extended Data Fig. 8c)."
+          }
+        ],
+        "sentence_ids": [
+          158,
+          171
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "substitution",
+          "level2": "magnitude_substitution"
+        },
+        "secondary_label": null,
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文用‘much more correlation’（更强相关性）和‘accumulated more H3K36me3’（更高富集量），公众号转述为‘更富集’，虽语义接近，但‘更富集’在植物表观语境中常被解读为绝对丰度差异，而原文强调的是统计相关性强度（correlation）与相对富集趋势（accumulated more），未提供定量富集倍数或统计显著性值；‘图2a’为严重图号错误，原文仅Fig. 3a含该比较。"
+      },
+      "analysis": {
+        "evidence_judgement": "‘TR基因相较于TA基因有更富集的H3K36me修饰，尤其是H3K36me3修饰’中，‘更富集的H3K36me修饰’由sentence_id=158（'much more correlation of methylation of H3K36 modifications'）和sentence_id=171（'accumulated more H3K36me3 than TA genes'）共同支撑；但二者均未给出具体富集程度（如fold-change）、统计p值或可视化强度刻度，仅描述趋势；‘（图2a）’在top-5及review_evidences中无任何对应（所有相关图均为Fig. 3a），属明确图号替换。",
+        "classification_reason": "‘更富集’在中文科技语境中隐含可测量的丰度梯度（如ChIP-seq signal intensity），而原文‘much more correlation’侧重统计关联强度，‘accumulated more’为定性比较，未锚定量化基准——此为magnitude_substitution（作用程度替换）：将‘更强相关/相对更多’替换为易被理解为‘绝对高丰度’的‘更富集’；‘图2a’替换为‘图3a’属relation_substitution，但因magnitude_substitution语义权重更高（直接影响机制解读），故primary_level2取magnitude_substitution；relation_substitution不单独标secondary，因图号错误是magnitude误读的伴生现象，非独立失真。",
+        "key_differences": [
+          {
+            "type": "magnitude_substitution",
+            "paper_expression": "much more correlation of methylation of H3K36 modifications than TA genes, especially the H3K36me3 modification (Fig. 3a)",
+            "article_expression": "TR基因相较于TA基因有更富集的H3K36me修饰，尤其是H3K36me3修饰",
+            "description": "将统计相关性强度（correlation）和相对富集趋势（accumulated more）简化为‘更富集’，易诱导读者理解为H3K36me3信号强度存在显著绝对差异，而原文未提供支持该推断的定量数据"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [
+            158,
+            171
+          ],
+          "notes": "rank1(171)和rank2(158)均含核心表述，但rank1未提Fig. 3a，rank2明确引Fig. 3a；池内无Fig. 2a相关句，证实图号为纯替换"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=158 和 id=171；确认Fig. 3a是否为唯一含TR/TA H3K36me3比较的图。",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P002-A001-C12",
+      "paper_id": "P002",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "据统计，TR基因占拟南芥基因组中编码基因总数的47.5%，表现出类似于TA基因的活跃染色质状态（图2a，图3），却只有极低水平的转录活性。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 162,
+            "text": "In detail, we defined a group of protein-coding genes as transcription resistive, accounting for 47.5% of total protein-coding genes in the Arabidopsis genome, and showing active chromatin states similar to transcription-activation genes (n = 4,375, accounting for 16.1% of protein-coding genes) (Fig. 3b,c) but with little to no transcription activities similar to heterochromatin, including the H3K9me2-marked constitutive heterochromatin genes (n = 259, accounting for 1% of protein-coding genes) and H3K27me3-marked facultative heterochromatin genes (n = 6,280, accounting for 23.1% of protein-coding genes) (Fig. 3b,c)."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 130,
+            "text": "H3K36me3 enrichment in the knockdown mutant of SDG725, the closest homologue to Arabidopsis SDG8 (Extended Data Fig. 6a), showed upregulation in a subset of protein-coding genes (n = 1,739, Extended b ATAC-seq NS NS Col-0 sdg8 1.0 250 C1 ATAC signal (read counts) Normalized reads density 200 C2 0.6 150 C3 100 0.4 50 C4 0 0 C1 C2 C3 C4 –500 500 Peak (bp) C3 C4 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb Col-0 sdg8 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb f Relative RNA abundance C1 C3 H3K36me3 1.5 AT3G49796 0.8 RNA-seq NET-seq 0 (Ser2P) C1 NET-seq C2 (Ser5P) C3 C4 h 510 essential genes C3 (86.1%) C2 (3.9%) C4 (8.4%) 0 15 30 60 120 Time (min) C1 (1.6%) 812 a H3K36me3 H3K36me2 H3K36me1 H3K4me3 H3K4me2 H3K23ac H3K27ac H4K16ac H3K14ac H3K9ac H2A.X HTR5 TR TA 60 40 20 b ATAC NET-seq (Ser2P) TR Read counts 10 400 7.5 TA RPGC CPM FH 5 CH 2.5 200 0 –1.0 TSS 1 Kb –1.0 TSS TES 1 Kb –1.0 TSS TES 1 Kb 12 800 6 (n = 12,911) TR 8 4 400 (n = 4,375) TA 4 2 (n = 6,280) FH CH 0 0 0 (n = 259) c Chromatin states Key markers Constitutive H3K9me2/H3K27me1 (n = 259, 1% PCGs) Closed heterochromatin Facultative H3K27me3 (n = 6,280, 23.1% PCGs) Active H3K4me3 (n = 4,375, 16.1% PCGs) Open euchromatin Resistive H3K36me3 (n = 12,911, 47.5% PCGs) Fig. 3 | H3K36me marks transcription-resistive genes in Arabidopsis."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 158,
+            "text": "Notably, the TR genes show much more correlation of methylation of H3K36 modifications than TA genes, especially the H3K36me3 modification (Fig. 3a), suggesting that the methylation on H3K36 could mark a large number of protein-coding genes with the newly defined chromatin state, transcription resistive."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 161,
+            "text": "However, there is no obvious difference in Ser2P NET-seq signals on the majority of TR genes between the control and FLA (Extended Data Fig. 7), indicating that the Ser2P signal on TR genes cannot be captured even when transcription elongation is inhibited, excluding the possibility that the transcription rate of TR genes is too rapid to be effectively captured by NET-seq."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 163,
+            "text": "Moreover, using similar parameters, we identified 7,198 TR genes in the mouse (Mus musculus) genome (Supplementary Fig. 4a), although they are not tightly associated with H3K36me modifications (Supplementary Fig. 4b,c, see details in the Discussion)."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 162,
+            "text": "In detail, we defined a group of protein-coding genes as transcription resistive, accounting for 47.5% of total protein-coding genes in the Arabidopsis genome, and showing active chromatin states similar to transcription-activation genes (n = 4,375, accounting for 16.1% of protein-coding genes) (Fig. 3b,c) but with little to no transcription activities similar to heterochromatin, including the H3K9me2-marked constitutive heterochromatin genes (n = 259, accounting for 1% of protein-coding genes) and H3K27me3-marked facultative heterochromatin genes (n = 6,280, accounting for 23.1% of protein-coding genes) (Fig. 3b,c)."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 130,
+            "text": "H3K36me3 enrichment in the knockdown mutant of SDG725, the closest homologue to Arabidopsis SDG8 (Extended Data Fig. 6a), showed upregulation in a subset of protein-coding genes (n = 1,739, Extended b ATAC-seq NS NS Col-0 sdg8 1.0 250 C1 ATAC signal (read counts) Normalized reads density 200 C2 0.6 150 C3 100 0.4 50 C4 0 0 C1 C2 C3 C4 –500 500 Peak (bp) C3 C4 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb Col-0 sdg8 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb f Relative RNA abundance C1 C3 H3K36me3 1.5 AT3G49796 0.8 RNA-seq NET-seq 0 (Ser2P) C1 NET-seq C2 (Ser5P) C3 C4 h 510 essential genes C3 (86.1%) C2 (3.9%) C4 (8.4%) 0 15 30 60 120 Time (min) C1 (1.6%) 812 a H3K36me3 H3K36me2 H3K36me1 H3K4me3 H3K4me2 H3K23ac H3K27ac H4K16ac H3K14ac H3K9ac H2A.X HTR5 TR TA 60 40 20 b ATAC NET-seq (Ser2P) TR Read counts 10 400 7.5 TA RPGC CPM FH 5 CH 2.5 200 0 –1.0 TSS 1 Kb –1.0 TSS TES 1 Kb –1.0 TSS TES 1 Kb 12 800 6 (n = 12,911) TR 8 4 400 (n = 4,375) TA 4 2 (n = 6,280) FH CH 0 0 0 (n = 259) c Chromatin states Key markers Constitutive H3K9me2/H3K27me1 (n = 259, 1% PCGs) Closed heterochromatin Facultative H3K27me3 (n = 6,280, 23.1% PCGs) Active H3K4me3 (n = 4,375, 16.1% PCGs) Open euchromatin Resistive H3K36me3 (n = 12,911, 47.5% PCGs) Fig. 3 | H3K36me marks transcription-resistive genes in Arabidopsis."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 158,
+            "text": "Notably, the TR genes show much more correlation of methylation of H3K36 modifications than TA genes, especially the H3K36me3 modification (Fig. 3a), suggesting that the methylation on H3K36 could mark a large number of protein-coding genes with the newly defined chromatin state, transcription resistive."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 161,
+            "text": "However, there is no obvious difference in Ser2P NET-seq signals on the majority of TR genes between the control and FLA (Extended Data Fig. 7), indicating that the Ser2P signal on TR genes cannot be captured even when transcription elongation is inhibited, excluding the possibility that the transcription rate of TR genes is too rapid to be effectively captured by NET-seq."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 163,
+            "text": "Moreover, using similar parameters, we identified 7,198 TR genes in the mouse (Mus musculus) genome (Supplementary Fig. 4a), although they are not tightly associated with H3K36me modifications (Supplementary Fig. 4b,c, see details in the Discussion)."
+          },
+          {
+            "rank": 6,
+            "sentence_id": 129,
+            "text": "To check whether the observation above is conserved among species, we analysed published H3K36me3 ChIP-seq data in Oryza sativa26."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 131,
+            "text": "a, Heat map depicting co-localization of different chromatin states in transcriptionresistive (TR) and transcription-activation (TA) genes via permutation test."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 157,
+            "text": "Permutation test showed that the TR and TA genes are both negatively associated with repressive chromatin markers but highly positively associated with transcriptionally active chromatin markers (Fig. 3a)."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 156,
+            "text": "Overall, we identified 4,375 TA genes and 12,911 TR genes in the genome (Supplementary Fig. 3)."
+          },
+          {
+            "rank": 10,
+            "sentence_id": 155,
+            "text": "H3K27me3-marked facultative genes were used as a control."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 162,
+            "text": "In detail, we defined a group of protein-coding genes as transcription resistive, accounting for 47.5% of total protein-coding genes in the Arabidopsis genome, and showing active chromatin states similar to transcription-activation genes (n = 4,375, accounting for 16.1% of protein-coding genes) (Fig. 3b,c) but with little to no transcription activities similar to heterochromatin, including the H3K9me2-marked constitutive heterochromatin genes (n = 259, accounting for 1% of protein-coding genes) and H3K27me3-marked facultative heterochromatin genes (n = 6,280, accounting for 23.1% of protein-coding genes) (Fig. 3b,c)."
+          },
+          {
+            "sentence_id": 130,
+            "text": "H3K36me3 enrichment in the knockdown mutant of SDG725, the closest homologue to Arabidopsis SDG8 (Extended Data Fig. 6a), showed upregulation in a subset of protein-coding genes (n = 1,739, Extended b ATAC-seq NS NS Col-0 sdg8 1.0 250 C1 ATAC signal (read counts) Normalized reads density 200 C2 0.6 150 C3 100 0.4 50 C4 0 0 C1 C2 C3 C4 –500 500 Peak (bp) C3 C4 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb Col-0 sdg8 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb f Relative RNA abundance C1 C3 H3K36me3 1.5 AT3G49796 0.8 RNA-seq NET-seq 0 (Ser2P) C1 NET-seq C2 (Ser5P) C3 C4 h 510 essential genes C3 (86.1%) C2 (3.9%) C4 (8.4%) 0 15 30 60 120 Time (min) C1 (1.6%) 812 a H3K36me3 H3K36me2 H3K36me1 H3K4me3 H3K4me2 H3K23ac H3K27ac H4K16ac H3K14ac H3K9ac H2A.X HTR5 TR TA 60 40 20 b ATAC NET-seq (Ser2P) TR Read counts 10 400 7.5 TA RPGC CPM FH 5 CH 2.5 200 0 –1.0 TSS 1 Kb –1.0 TSS TES 1 Kb –1.0 TSS TES 1 Kb 12 800 6 (n = 12,911) TR 8 4 400 (n = 4,375) TA 4 2 (n = 6,280) FH CH 0 0 0 (n = 259) c Chromatin states Key markers Constitutive H3K9me2/H3K27me1 (n = 259, 1% PCGs) Closed heterochromatin Facultative H3K27me3 (n = 6,280, 23.1% PCGs) Active H3K4me3 (n = 4,375, 16.1% PCGs) Open euchromatin Resistive H3K36me3 (n = 12,911, 47.5% PCGs) Fig. 3 | H3K36me marks transcription-resistive genes in Arabidopsis."
+          }
+        ],
+        "sentence_ids": [
+          162,
+          130
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "substitution",
+          "level2": "magnitude_substitution"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文写‘little to no transcription activities’（极低或无转录活性），公众号转述为‘只有极低水平的转录活性’，删去‘no’可能性，弱化否定程度；且将图2a、图3混用——论文中图2未定义TR基因，图3才是TR/TA状态核心图（含c图饼图与a/b图信号对比）。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1（TR占47.5%）：sentence_id=162（'accounting for 47.5% of total protein-coding genes'）+130（图3c明确标注'n = 12,911, 47.5% PCGs'）完全支撑；分句2（类似TA的活跃染色质状态）：162（'showing active chromatin states similar to transcription-activation genes'）直接支撑；分句3（极低水平转录活性）：162写'little to no transcription activities'，属二元否定；分句4（图2a、图3）：图2在全文未定义TR/TA，仅图3a/b/c展示TR状态特征及对比，图2a实际为ATAC-seq热图（非TR定义图），top-5中无图2a对应描述，补检池亦无图2a提及TR的句子。",
+        "classification_reason": "primary_level2=magnitude_substitution：因paper_expression='little to no transcription activities'（含零值可能性）→ article_expression='只有极低水平的转录活性'（排除零值，限定为‘极低’而非‘无’），属作用程度从‘可为零’替换为‘非零但低’；非omission（未删减‘no’是语义弱化，非单纯删除），非addition（未加新功能），非substitution of relation/mechanism（关系与机制均未变）。",
+        "key_differences": [
+          {
+            "type": "magnitude_substitution",
+            "paper_expression": "little to no transcription activities",
+            "article_expression": "只有极低水平的转录活性",
+            "description": "将‘little to no’（允许转录活性为零）替换为‘极低水平’（隐含>0），实质性窄化转录活性取值范围，改变生物学解释空间。"
+          },
+          {
+            "type": "context_omission",
+            "paper_expression": "Fig. 3b,c (chromatin states of TR/TA/FH/CH); Fig. 3a (H3K36me3 enrichment comparison)",
+            "article_expression": "图2a，图3",
+            "description": "论文中图2a为ATAC-seq热图（panel a in Extended Data Fig. 2），未定义TR状态；TR定义与核心证据全在Fig. 3（尤其3c饼图与3a/b信号图），引用图2a属背景图误植，删减关键图注上下文。"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [
+            156,
+            157
+          ],
+          "notes": "rank1（162）已覆盖47.5%与转录活性表述，但图2a无对应；rank3（158）和rank4（161）不涉及图号或转录活性量化；review pool中id=156（'12,911 TR genes'）和157（'TR and TA genes are both negatively associated...'）更聚焦TR定义，但未进top-5"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=162（转录活性原文）、id=130（图3c标注）、id=156（TR总数）；确认图2是否在正文或图注中定义TR。",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P002-A001-C13",
+      "paper_id": "P002",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "研究人员还发现拟南芥中大量的“必需基因(essential genes)”处于转录阻抗状态，并且这种转录阻抗状态在拟南芥已知的5种H3K36me3甲基转移酶协同作用中维持平衡。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 19,
+            "text": "SDG8, also known as EFS (EARLY FLOWERING IN SHORT DAYS), is reported as the main H3K36me3 methyltransferase in Arabidopsis, and its functional mutations have been shown to cause a global decrease in H3K36me3 levels15–17, resulting in numerous developmental defects17–21."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 3,
+            "text": "Mutating SDG8, previously known as the major H3K36 methyltransferase in Arabidopsis, surprisingly elevates 78.7% of H3K36me3-marked resistive loci, which accounts for 39.4% of the coding genome."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 130,
+            "text": "H3K36me3 enrichment in the knockdown mutant of SDG725, the closest homologue to Arabidopsis SDG8 (Extended Data Fig. 6a), showed upregulation in a subset of protein-coding genes (n = 1,739, Extended b ATAC-seq NS NS Col-0 sdg8 1.0 250 C1 ATAC signal (read counts) Normalized reads density 200 C2 0.6 150 C3 100 0.4 50 C4 0 0 C1 C2 C3 C4 –500 500 Peak (bp) C3 C4 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb Col-0 sdg8 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb f Relative RNA abundance C1 C3 H3K36me3 1.5 AT3G49796 0.8 RNA-seq NET-seq 0 (Ser2P) C1 NET-seq C2 (Ser5P) C3 C4 h 510 essential genes C3 (86.1%) C2 (3.9%) C4 (8.4%) 0 15 30 60 120 Time (min) C1 (1.6%) 812 a H3K36me3 H3K36me2 H3K36me1 H3K4me3 H3K4me2 H3K23ac H3K27ac H4K16ac H3K14ac H3K9ac H2A.X HTR5 TR TA 60 40 20 b ATAC NET-seq (Ser2P) TR Read counts 10 400 7.5 TA RPGC CPM FH 5 CH 2.5 200 0 –1.0 TSS 1 Kb –1.0 TSS TES 1 Kb –1.0 TSS TES 1 Kb 12 800 6 (n = 12,911) TR 8 4 400 (n = 4,375) TA 4 2 (n = 6,280) FH CH 0 0 0 (n = 259) c Chromatin states Key markers Constitutive H3K9me2/H3K27me1 (n = 259, 1% PCGs) Closed heterochromatin Facultative H3K27me3 (n = 6,280, 23.1% PCGs) Active H3K4me3 (n = 4,375, 16.1% PCGs) Open euchromatin Resistive H3K36me3 (n = 12,911, 47.5% PCGs) Fig. 3 | H3K36me marks transcription-resistive genes in Arabidopsis."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 245,
+            "text": "SDG8, the major H3K36 methyltransferase in Arabidopsis, is associated with multiple transcription activators, such as H3K4me1/2 (ref. 36), H3K27me3 demethylase ELF6 (ref. 37) and active forms of RNAPII, but it also interacts with inactive forms of RNAPII38, suggesting that H3K36 methylation, mainly regulated by SDG8 in Arabidopsis, could be involved in an unusual establishment of the chromatin environment or transcription state."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 215,
+            "text": "Results showed that the transcription activities over C3 genes with decreased H3K36me3 in sdg8 sdg25 sdg26 compared with sdg8 sdg25 (Extended Data Fig. 10h, top) or sdg8 sdg26 (Extended Data Fig. 10h, bottom) remained subtle in sdg8 sdg25 sdg26 compared with sdg8 (Extended Data Fig. 10h), suggesting that the resistive state of these genes was not disturbed in seedling stages."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 19,
+            "text": "SDG8, also known as EFS (EARLY FLOWERING IN SHORT DAYS), is reported as the main H3K36me3 methyltransferase in Arabidopsis, and its functional mutations have been shown to cause a global decrease in H3K36me3 levels15–17, resulting in numerous developmental defects17–21."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 3,
+            "text": "Mutating SDG8, previously known as the major H3K36 methyltransferase in Arabidopsis, surprisingly elevates 78.7% of H3K36me3-marked resistive loci, which accounts for 39.4% of the coding genome."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 130,
+            "text": "H3K36me3 enrichment in the knockdown mutant of SDG725, the closest homologue to Arabidopsis SDG8 (Extended Data Fig. 6a), showed upregulation in a subset of protein-coding genes (n = 1,739, Extended b ATAC-seq NS NS Col-0 sdg8 1.0 250 C1 ATAC signal (read counts) Normalized reads density 200 C2 0.6 150 C3 100 0.4 50 C4 0 0 C1 C2 C3 C4 –500 500 Peak (bp) C3 C4 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb Col-0 sdg8 1 Kb –1 TSS TES 1 Kb –1 TSS TES 1 Kb f Relative RNA abundance C1 C3 H3K36me3 1.5 AT3G49796 0.8 RNA-seq NET-seq 0 (Ser2P) C1 NET-seq C2 (Ser5P) C3 C4 h 510 essential genes C3 (86.1%) C2 (3.9%) C4 (8.4%) 0 15 30 60 120 Time (min) C1 (1.6%) 812 a H3K36me3 H3K36me2 H3K36me1 H3K4me3 H3K4me2 H3K23ac H3K27ac H4K16ac H3K14ac H3K9ac H2A.X HTR5 TR TA 60 40 20 b ATAC NET-seq (Ser2P) TR Read counts 10 400 7.5 TA RPGC CPM FH 5 CH 2.5 200 0 –1.0 TSS 1 Kb –1.0 TSS TES 1 Kb –1.0 TSS TES 1 Kb 12 800 6 (n = 12,911) TR 8 4 400 (n = 4,375) TA 4 2 (n = 6,280) FH CH 0 0 0 (n = 259) c Chromatin states Key markers Constitutive H3K9me2/H3K27me1 (n = 259, 1% PCGs) Closed heterochromatin Facultative H3K27me3 (n = 6,280, 23.1% PCGs) Active H3K4me3 (n = 4,375, 16.1% PCGs) Open euchromatin Resistive H3K36me3 (n = 12,911, 47.5% PCGs) Fig. 3 | H3K36me marks transcription-resistive genes in Arabidopsis."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 245,
+            "text": "SDG8, the major H3K36 methyltransferase in Arabidopsis, is associated with multiple transcription activators, such as H3K4me1/2 (ref. 36), H3K27me3 demethylase ELF6 (ref. 37) and active forms of RNAPII, but it also interacts with inactive forms of RNAPII38, suggesting that H3K36 methylation, mainly regulated by SDG8 in Arabidopsis, could be involved in an unusual establishment of the chromatin environment or transcription state."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 215,
+            "text": "Results showed that the transcription activities over C3 genes with decreased H3K36me3 in sdg8 sdg25 sdg26 compared with sdg8 sdg25 (Extended Data Fig. 10h, top) or sdg8 sdg26 (Extended Data Fig. 10h, bottom) remained subtle in sdg8 sdg25 sdg26 compared with sdg8 (Extended Data Fig. 10h), suggesting that the resistive state of these genes was not disturbed in seedling stages."
+          },
+          {
+            "rank": 6,
+            "sentence_id": 38,
+            "text": "More than half of protein-coding genes in the Arabidopsis genome were marked by H3K36me3 modifications, and 78.7% of these belong to Cluster 3 (Fig. 1e), indicating a potential role of SDG8 in inhibiting the excessive deposition of H3K36me3 in genes."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 241,
+            "text": "In addition, the loss of SDG26, a homologue of SDG8 in Arabidopsis, was reported to promote H3K36me3 levels and transcription levels on FLC gene independently of its histone methyltransferase activity, although accompanied by reduced H3K27me3 modifications34,35."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 18,
+            "text": "808 (ARABIDOPSIS TRITHORAX-RELATED 2), are involved in methylating H3K36 (refs. 9–14)."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 20,
+            "text": "However, the dynamics and regulation of different H3K36 methylation forms are still a mystery in plants."
+          },
+          {
+            "rank": 10,
+            "sentence_id": 2,
+            "text": "Transcription resistive is stamped by H3K36me with almost undetectable transcription activity but open-chromatin state, and occupies most documented plant essential genes."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 2,
+            "text": "Transcription resistive is stamped by H3K36me with almost undetectable transcription activity but open-chromatin state, and occupies most documented plant essential genes."
+          },
+          {
+            "sentence_id": 3,
+            "text": "Mutating SDG8, previously known as the major H3K36 methyltransferase in Arabidopsis, surprisingly elevates 78.7% of H3K36me3-marked resistive loci, which accounts for 39.4% of the coding genome."
+          },
+          {
+            "sentence_id": 19,
+            "text": "SDG8, also known as EFS (EARLY FLOWERING IN SHORT DAYS), is reported as the main H3K36me3 methyltransferase in Arabidopsis, and its functional mutations have been shown to cause a global decrease in H3K36me3 levels15–17, resulting in numerous developmental defects17–21."
+          }
+        ],
+        "sentence_ids": [
+          2,
+          3,
+          19
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "substitution",
+          "level2": "mechanism_substitution"
+        },
+        "secondary_label": {
+          "level1": "addition",
+          "level2": "significance_addition"
+        },
+        "severity": "severe",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文称TR状态由H3K36me3标记（图3c），且SDG8突变‘elevates 78.7% of H3K36me3-marked resistive loci’（id=3），即TR状态受SDG8负调控；公众号却称‘在5种H3K36me3甲基转移酶协同作用中维持平衡’，将单因子负调控机制替换为多酶协同稳态机制，并添加‘维持平衡’这一未被论文论述的生理意义。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1（必需基因处于TR状态）：id=2（'Transcription resistive [...] occupies most documented plant essential genes'）直接支撑；分句2（TR状态由5种H3K36me3甲基转移酶协同维持）：id=19仅提SDG8为'main' methyltransferase；id=3显示SDG8突变导致TR位点H3K36me3升高（负调控），非协同维持；id=130提SDG725（SDG8同源物）敲降也引起H3K36me3上调，但未提‘5种’或‘协同’；review pool中id=18列'808 (ARABIDOPSIS TRITHORAX-RELATED 2)'等为H3K36甲基转移酶家族成员，但未提数量或协同；id=241提SDG26功能独立于甲基转移酶活性，反证非简单协同；故‘5种协同维持平衡’无支撑。",
+        "classification_reason": "primary_level2=mechanism_substitution：paper_expression='SDG8 mutation elevates TR loci'（单因子负向调控）→ article_expression='5种甲基转移酶协同作用中维持平衡’（多因子正向稳态调控），机制模型根本性替换；非omission（未删减，而是重构）；非addition（虽加‘平衡’但主干是机制替换）。",
+        "key_differences": [
+          {
+            "type": "mechanism_substitution",
+            "paper_expression": "mutating SDG8 [...] elevates 78.7% of H3K36me3-marked resistive loci",
+            "article_expression": "在拟南芥已知的5种H3K36me3甲基转移酶协同作用中维持平衡",
+            "description": "将SDG8主导的负反馈抑制机制，替换为5种酶共同参与的正向协同稳态机制，违背论文中SDG8失活导致TR增强的核心发现。"
+          },
+          {
+            "type": "significance_addition",
+            "paper_expression": "TR state is stamped by H3K36me with almost undetectable transcription activity",
+            "article_expression": "维持平衡",
+            "description": "论文从未使用‘维持平衡’描述TR状态的调控逻辑，该词暗示动态稳态生理意义，属未经支持的功能性解读添加。"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [
+            18,
+            241
+          ],
+          "notes": "rank1–5均未提‘5种’或‘协同’；id=18列出多个H3K36甲基转移酶名称但未提数量或协作；id=241指出SDG26功能不依赖甲基转移酶活性，削弱‘协同甲基化’假设；rank6（38）提SDG8抑制H3K36me3过度沉积，仍为单因子负调控"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "likely_retrieval_miss",
+          "reasoning": "论文中可能提及H3K36me3甲基转移酶家族成员数量（如Supplementary Table X），但review pool与top-5均缺失‘5种’具体枚举句及‘协同作用’表述；缺‘5种H3K36me3 methyltransferases’和‘cooperative maintenance’的明确组合句。",
+          "suggested_keywords": [
+            "5 H3K36 methyltransferases",
+            "cooperative",
+            "balance"
+          ],
+          "suggested_sentence_ranges": "Supplementary Tables; Discussion paragraph on enzyme redundancy"
+        },
+        "manual_check_hints": "可执行动作：核对 id=18（H3K36甲基转移酶列表）、id=241（SDG26非酶活功能）、Supplementary Materials中酶家族总结表；重点检索‘five’、‘cooperat*’、‘balance’。 脚本标记: 分析引用了但未列入 gold: 18,130,241",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P002-A001-C14",
+      "paper_id": "P002",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "进一步对单子叶植物水稻和哺乳动物小鼠的培养细胞进行类似的染色质状态分析发现，转录阻抗现象可能普遍存在于真核生物基因组中。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 235,
+            "text": "Moreover, this transcription-resistive state seems to be conserved among species (Extended Data Fig. 6 and Supplementary Fig. 4)."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 236,
+            "text": "It is well documented that H3K36me3 is associated with transcription-active genes and functions as a transcription elongation-coupled epigenetic marker7,8."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 234,
+            "text": "Importantly, the majority of resistive genes are essential for plant development (Fig. 2h) and disruption of the transcription-resistive state on these genes could cause severe plant phenotypes (Fig. 4h)."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 23,
+            "text": "We termed this chromatin state ‘transcriptional resistive’, which is distinctive from traditional transcription activation and transcription silencing."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 10,
+            "text": "Together, our results reveal that SDG8 is the primary sensor that suppresses excessive H3K36me, and uncovered that ‘transcription resistive’ is a conserved H3K36me-stamped novel transcription state in plants, highlighting the regulatory diversities and biological significance of H3K36 methylation in eukaryotes."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 235,
+            "text": "Moreover, this transcription-resistive state seems to be conserved among species (Extended Data Fig. 6 and Supplementary Fig. 4)."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 236,
+            "text": "It is well documented that H3K36me3 is associated with transcription-active genes and functions as a transcription elongation-coupled epigenetic marker7,8."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 234,
+            "text": "Importantly, the majority of resistive genes are essential for plant development (Fig. 2h) and disruption of the transcription-resistive state on these genes could cause severe plant phenotypes (Fig. 4h)."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 23,
+            "text": "We termed this chromatin state ‘transcriptional resistive’, which is distinctive from traditional transcription activation and transcription silencing."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 10,
+            "text": "Together, our results reveal that SDG8 is the primary sensor that suppresses excessive H3K36me, and uncovered that ‘transcription resistive’ is a conserved H3K36me-stamped novel transcription state in plants, highlighting the regulatory diversities and biological significance of H3K36 methylation in eukaryotes."
+          },
+          {
+            "rank": 6,
+            "sentence_id": 150,
+            "text": "Furthermore, we performed NET-seq using rice seedlings and the results showed much less transcription activity of Pol II on these H3K36me3-elevated genes (Extended Data Fig. 6c,f). By reanalyzing published FAIRE-seq data27, interestingly, we observed that these H3K36me3-elevated genes showed more open-chromatin states compared with H3K9me2-marked genes (Extended Data Fig. 6d,f), exhibiting a chromatin transcription-resistive state similar to those of C3 genes in Arabidopsis."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 24,
+            "text": "Our data reveal a previously undiscovered function of H3K36me3 and transcription regulation."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 22,
+            "text": "Furthermore, we unexpectedly found that a large proportion of the coding genome exists as a chromatin state that is open chromatin, marked by H3K36me3, occupied by RNA polymerase II, and looked similar to the ready-for-transcription state but with little to no transcription activity (similar to the level of silencing), even with heat stimulation."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 11,
+            "text": "to RNA polymerase II machinery."
+          },
+          {
+            "rank": 10,
+            "sentence_id": 9,
+            "text": "In contrast, transcription activation that is mainly located in the euchromatin shows a loose chromatin environment for easy access on long and intron-rich genes."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 235,
+            "text": "Moreover, this transcription-resistive state seems to be conserved among species (Extended Data Fig. 6 and Supplementary Fig. 4)."
+          },
+          {
+            "sentence_id": 10,
+            "text": "Together, our results reveal that SDG8 is the primary sensor that suppresses excessive H3K36me, and uncovered that ‘transcription resistive’ is a conserved H3K36me-stamped novel transcription state in plants, highlighting the regulatory diversities and biological significance of H3K36 methylation in eukaryotes."
+          },
+          {
+            "sentence_id": 150,
+            "text": "Furthermore, we performed NET-seq using rice seedlings and the results showed much less transcription activity of Pol II on these H3K36me3-elevated genes (Extended Data Fig. 6c,f). By reanalyzing published FAIRE-seq data27, interestingly, we observed that these H3K36me3-elevated genes showed more open-chromatin states compared with H3K9me2-marked genes (Extended Data Fig. 6d,f), exhibiting a chromatin transcription-resistive state similar to those of C3 genes in Arabidopsis."
+          }
+        ],
+        "sentence_ids": [
+          235,
+          10,
+          150
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "addition",
+          "level2": "significance_addition"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "severity": "mild",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文写‘this transcription-resistive state seems to be conserved among species’（id=235）并以水稻/小鼠数据为佐证（id=150, 163），但强调‘in plants’（id=10）；公众号推广为‘普遍存在于真核生物基因组中’，添加跨域普适性意义，且删减论文对植物特异性的限定（‘in plants’）。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1（水稻/小鼠分析）：id=150（水稻NET-seq/FAIRE-seq显示类似TR状态）、id=163（小鼠TR基因识别）直接支撑；分句2（转录阻抗现象普遍存在）：id=235写‘seems to be conserved among species’（保守性），id=10写‘a conserved H3K36me-stamped novel transcription state in plants’（限定于plants），未扩展至全真核生物；id=150仅分析水稻幼苗，id=163注明小鼠中TR基因‘not tightly associated with H3K36me modifications’，削弱跨域普适性。",
+        "classification_reason": "primary_level2=significance_addition：paper_expression='conserved among species' / 'in plants' → article_expression='普遍存在于真核生物基因组中'，将有限保守性推断升级为全真核域普适规律，添加论文未主张的宏观意义；非substitution（未改机制），非omission（删减是secondary）。",
+        "key_differences": [
+          {
+            "type": "significance_addition",
+            "paper_expression": "a conserved H3K36me-stamped novel transcription state in plants",
+            "article_expression": "可能普遍存在于真核生物基因组中",
+            "description": "将论文明确限定于‘plants’的结论，升格为涵盖所有真核生物的普适性命题，添加未经验证的演化广度意义。"
+          },
+          {
+            "type": "context_omission",
+            "paper_expression": "in plants (id=10); not tightly associated with H3K36me modifications (in mouse, id=163)",
+            "article_expression": "真核生物基因组",
+            "description": "删去论文对植物特异性（id=10）及小鼠中H3K36me关联性弱（id=163）的关键限定，使跨域推论失去边界约束。"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "rank1（235）和rank5（10）已覆盖conservation与plant limitation；rank6（150）提供水稻证据；top-5完整覆盖核心依据，无需补检"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=235（conserved among species）、id=10（in plants）、id=163（mouse not tightly associated）。 脚本标记: 分析引用了但未列入 gold: 163",
+        "needs_manual_review": true,
+        "review_focus": [
+          "primary_label"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P002-A001-C15",
+      "paper_id": "P002",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "此研究提出的“转录阻抗(Transcription Resistive)”概念突破了领域内长久以来形成的关于染色质状态“非活跃即沉默”的二元认知范式，鉴定出具有独特表观遗传标记与功能特性的第三类转录状态。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 1,
+            "text": "Here we report a new chromatin state, ‘transcription resistive’, which is differentiated from activation and silencing."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 233,
+            "text": "In this study, we identified a novel transcription state, termed ‘transcription resistive’, which shares active histone markers with transcriptionally active genes but displays the undetectable transcription activities of silencing genes (marked by H3K27me3 and H3K9me2)."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 249,
+            "text": "Future work is needed to reveal more conserved factors participating in ‘transcription resistive’ among species."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 103,
+            "text": "We termed this state ‘transcription resistive’, as the open-chromatin states seem to resist the transcription machinery; furthermore, ‘resistive’ shares the same suffix, ‘-tive’, as Active, Facultative and Constitutive (see below Fig. 3c)."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 152,
+            "text": "Given that a large portion of C3 genes display the transcription-resistive state (Fig. 2b,c), we moved to investigate the transcription-resistive genes in the wild-type Col-0 genome."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 1,
+            "text": "Here we report a new chromatin state, ‘transcription resistive’, which is differentiated from activation and silencing."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 233,
+            "text": "In this study, we identified a novel transcription state, termed ‘transcription resistive’, which shares active histone markers with transcriptionally active genes but displays the undetectable transcription activities of silencing genes (marked by H3K27me3 and H3K9me2)."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 249,
+            "text": "Future work is needed to reveal more conserved factors participating in ‘transcription resistive’ among species."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 103,
+            "text": "We termed this state ‘transcription resistive’, as the open-chromatin states seem to resist the transcription machinery; furthermore, ‘resistive’ shares the same suffix, ‘-tive’, as Active, Facultative and Constitutive (see below Fig. 3c)."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 152,
+            "text": "Given that a large portion of C3 genes display the transcription-resistive state (Fig. 2b,c), we moved to investigate the transcription-resistive genes in the wild-type Col-0 genome."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 1,
+            "text": "Here we report a new chromatin state, ‘transcription resistive’, which is differentiated from activation and silencing."
+          },
+          {
+            "sentence_id": 233,
+            "text": "In this study, we identified a novel transcription state, termed ‘transcription resistive’, which shares active histone markers with transcriptionally active genes but displays the undetectable transcription activities of silencing genes (marked by H3K27me3 and H3K9me2)."
+          },
+          {
+            "sentence_id": 103,
+            "text": "We termed this state ‘transcription resistive’, as the open-chromatin states seem to resist the transcription machinery; furthermore, ‘resistive’ shares the same suffix, ‘-tive’, as Active, Facultative and Constitutive (see below Fig. 3c)."
+          }
+        ],
+        "sentence_ids": [
+          1,
+          233,
+          103
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "addition",
+          "level2": "significance_addition"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文称‘a new chromatin state’‘differentiated from activation and silencing’，但未使用‘突破二元认知范式’‘第三类转录状态’等理论重构表述；也未提‘独特表观遗传标记与功能特性’的概括性断言（仅列H3K36me与低转录），且未限定‘领域内长久以来形成’。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1（‘突破二元认知范式’）：sentence_id=1说‘differentiated from activation and silencing’，属客观区分，无‘突破范式’评价；sentence_id=233对比active/silencing标记但未上升至‘范式’层级；sentence_id=103解释命名逻辑（-tive suffix），非理论批判。分句2（‘第三类’）：全文未出现‘third’或‘tertiary’等序数表述，仅用‘new’‘novel’‘distinctive’；top-5中无任何序数词或分类学层级声明。分句3（‘独特表观遗传标记与功能特性’）：sentence_id=233提‘shares active histone markers… but displays undetectable transcription activities’，是现象描述，非‘独特性’定性；sentence_id=2明确‘stamped by H3K36me with almost undetectable transcription activity but open-chromatin state’，但未宣称其为‘独特’（unique）——H3K36me在活跃基因亦存在，论文未排除重叠性。",
+        "classification_reason": "‘突破…二元认知范式’是典型 significance_addition：paper_expression=‘differentiated from activation and silencing’（中：区别于激活与沉默） vs article_expression=‘突破了领域内长久以来形成的关于染色质状态‘非活跃即沉默’的二元认知范式’（中：突破二元范式）；‘第三类’若存在应属 addition，但论文全篇无序数归类，故不构成独立 addition，而被 significance_addition 覆盖；‘长久以来形成’属 context_omission：paper 中无 temporal qualifier（如 long-standing, traditional, decades-old），而 article 加入‘长久以来’强化历史性判断，删减此限定将弱化主张强度，故 secondary_level2=context_omission。",
+        "key_differences": [
+          {
+            "type": "significance_addition",
+            "paper_expression": "Here we report a new chromatin state, ‘transcription resistive’, which is differentiated from activation and silencing.",
+            "article_expression": "此研究提出的“转录阻抗(Transcription Resistive)”概念突破了领域内长久以来形成的关于染色质状态“非活跃即沉默”的二元认知范式",
+            "description": "论文仅陈述新状态与既有两类的区别（differentiated），未使用‘突破范式’‘二元认知’等元理论评价语言；该添加赋予工作哲学/范式层面意义，超出原文实证范围。"
+          },
+          {
+            "type": "context_omission",
+            "paper_expression": "Here we report a new chromatin state...",
+            "article_expression": "领域内长久以来形成的...二元认知范式",
+            "description": "论文未对‘activation/silencing’二分法附加任何时间性、历史性或共识性修饰（如 long-standing consensus, classical dichotomy），article 添加‘长久以来形成’构成背景限定删减，隐含该二分法已被广泛接受且稳固，强化本研究颠覆性。"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "rank1–5覆盖核心定义（id=1,233,103）和命名依据（id=103），但无任何范式/历史性/序数表述；review pool中 id=23/22/150 均为现象复述，未提升至理论层级。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=1,233,103 是否含‘范式’‘第三类’‘长久以来’等表述；确认全文是否出现 third / tertiary / paradigm / longstanding。 脚本标记: 分析引用了但未列入 gold: 2",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label",
+          "secondary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P002-A001-C16",
+      "paper_id": "P002",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "这种处于“活跃”和“沉默”之间的中间态不仅重构了染色质功能分区理论，更揭示了基因表达调控网络的层级性，对染色质修饰的功能和基因组转录的状态进行了重新定义，开启了全新研究领域的序幕。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 1,
+            "text": "Here we report a new chromatin state, ‘transcription resistive’, which is differentiated from activation and silencing."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 232,
+            "text": "Active transcription often features open chromatin, Pol II enrichment and active histone modifications, while transcription silencing is tightly associated with compacted chromatin states and repressive histone modifications, such as H3K9me2 and H3K27me3 (Fig. 3c)."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 0,
+            "text": "many histone modifications such as H3 lysine 36 methylation (H3K36me)."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 2,
+            "text": "Transcription resistive is stamped by H3K36me with almost undetectable transcription activity but open-chromatin state, and occupies most documented plant essential genes."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 231,
+            "text": "The precise regulation of transcription is essential for faithful development among species."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 1,
+            "text": "Here we report a new chromatin state, ‘transcription resistive’, which is differentiated from activation and silencing."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 232,
+            "text": "Active transcription often features open chromatin, Pol II enrichment and active histone modifications, while transcription silencing is tightly associated with compacted chromatin states and repressive histone modifications, such as H3K9me2 and H3K27me3 (Fig. 3c)."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 0,
+            "text": "many histone modifications such as H3 lysine 36 methylation (H3K36me)."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 2,
+            "text": "Transcription resistive is stamped by H3K36me with almost undetectable transcription activity but open-chromatin state, and occupies most documented plant essential genes."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 231,
+            "text": "The precise regulation of transcription is essential for faithful development among species."
+          },
+          {
+            "rank": 6,
+            "sentence_id": 233,
+            "text": "In this study, we identified a novel transcription state, termed ‘transcription resistive’, which shares active histone markers with transcriptionally active genes but displays the undetectable transcription activities of silencing genes (marked by H3K27me3 and H3K9me2)."
+          },
+          {
+            "rank": 7,
+            "sentence_id": 23,
+            "text": "We termed this chromatin state ‘transcriptional resistive’, which is distinctive from traditional transcription activation and transcription silencing."
+          },
+          {
+            "rank": 8,
+            "sentence_id": 150,
+            "text": "Furthermore, we performed NET-seq using rice seedlings and the results showed much less transcription activity of Pol II on these H3K36me3-elevated genes (Extended Data Fig. 6c,f). By reanalyzing published FAIRE-seq data27, interestingly, we observed that these H3K36me3-elevated genes showed more open-chromatin states compared with H3K9me2-marked genes (Extended Data Fig. 6d,f), exhibiting a chromatin transcription-resistive state similar to those of C3 genes in Arabidopsis."
+          },
+          {
+            "rank": 9,
+            "sentence_id": 24,
+            "text": "Our data reveal a previously undiscovered function of H3K36me3 and transcription regulation."
+          },
+          {
+            "rank": 10,
+            "sentence_id": 22,
+            "text": "Furthermore, we unexpectedly found that a large proportion of the coding genome exists as a chromatin state that is open chromatin, marked by H3K36me3, occupied by RNA polymerase II, and looked similar to the ready-for-transcription state but with little to no transcription activity (similar to the level of silencing), even with heat stimulation."
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 1,
+            "text": "Here we report a new chromatin state, ‘transcription resistive’, which is differentiated from activation and silencing."
+          },
+          {
+            "sentence_id": 232,
+            "text": "Active transcription often features open chromatin, Pol II enrichment and active histone modifications, while transcription silencing is tightly associated with compacted chromatin states and repressive histone modifications, such as H3K9me2 and H3K27me3 (Fig. 3c)."
+          },
+          {
+            "sentence_id": 2,
+            "text": "Transcription resistive is stamped by H3K36me with almost undetectable transcription activity but open-chromatin state, and occupies most documented plant essential genes."
+          },
+          {
+            "sentence_id": 22,
+            "text": "Furthermore, we unexpectedly found that a large proportion of the coding genome exists as a chromatin state that is open chromatin, marked by H3K36me3, occupied by RNA polymerase II, and looked similar to the ready-for-transcription state but with little to no transcription activity (similar to the level of silencing), even with heat stimulation."
+          }
+        ],
+        "sentence_ids": [
+          1,
+          232,
+          2,
+          22
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "addition",
+          "level2": "significance_addition"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "mechanism_omission"
+        },
+        "severity": "severe",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文未提‘重构染色质功能分区理论’‘揭示层级性’‘重新定义’‘开启全新研究领域’等宏大意义；也未说明该状态如何‘揭示层级性’或‘对染色质修饰功能进行重新定义’；且未阐释‘基因表达调控网络的层级性’具体机制（如级联、反馈、时序），仅描述状态共存现象。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1（‘重构理论’‘揭示层级性’‘重新定义’‘开启新领域’）：sentence_id=1仅报告新状态；sentence_id=232描述active/silencing经典特征（对比基线），未提‘重构’；sentence_id=2和22描述状态特征（H3K36me+open+low-transcription），但无‘层级性’（hierarchy）、‘重新定义’（redefine）、‘开启领域’（pave way / open new field）等动词；top-5及review pool中无 theory / hierarchy / redefine / frontier 等关键词句。分句2（‘基因表达调控网络的层级性’）：sentence_id=22提到‘looked similar to ready-for-transcription state but with little to no transcription activity’，是状态并置观察，未建模为‘网络层级’（如 upstream regulator → resistive state → output）；sentence_id=24称‘previously undiscovered function of H3K36me3’，属功能拓展，非层级建模。",
+        "classification_reason": "‘重构理论’‘开启新领域’等属于 significance_addition：paper_expression=‘a new chromatin state’ vs article_expression=‘重构了...理论’‘开启了全新研究领域的序幕’；‘层级性’若被证实需机制证据（如调控因子→state→靶基因表达梯度），但论文仅呈现状态共现（co-occurrence），未验证因果或层级结构，故 article 表述属 significance_addition 而非 mechanism_substitution；‘机制删减’指 article 隐含该状态天然承载层级调控功能，但 paper 未提供任何机制支撑（如遗传互作、动力学建模、扰动实验），故 secondary_level2=mechanism_omission —— 因 article 将现象直接升格为‘揭示层级性’，而 paper 未讨论其调控机制。",
+        "key_differences": [
+          {
+            "type": "significance_addition",
+            "paper_expression": "Here we report a new chromatin state, ‘transcription resistive’, which is differentiated from activation and silencing.",
+            "article_expression": "这种处于“活跃”和“沉默”之间的中间态不仅重构了染色质功能分区理论，更揭示了基因表达调控网络的层级性，对染色质修饰的功能和基因组转录的状态进行了重新定义，开启了全新研究领域的序幕。",
+            "description": "论文仅完成状态鉴定与初步表征（what），article 却宣称其带来理论重构（theory）、网络层级（hierarchy）、概念重新定义（redefinition）和领域开创（new field）——四重意义添加，远超原文实证边界。"
+          },
+          {
+            "type": "mechanism_omission",
+            "paper_expression": "We unexpectedly found that a large proportion of the coding genome exists as a chromatin state that is open chromatin, marked by H3K36me3, occupied by RNA polymerase II, and looked similar to the ready-for-transcription state but with little to no transcription activity...",
+            "article_expression": "揭示了基因表达调控网络的层级性",
+            "description": "论文仅描述状态共存现象（open + Pol II + low transcription），未提出或验证任何层级调控机制（如上游TF调控resistive状态、resistive状态抑制下游基因、时序动态转换等），article 将现象直接等同于‘层级性’揭示，删减了机制验证这一关键限定。"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [
+            23,
+            24,
+            150
+          ],
+          "notes": "rank1–5中 id=1/232/2/22 均为现象描述；review pool中 id=23（‘distinctive from traditional...’）、id=24（‘previously undiscovered function’）、id=150（rice validation）仍属发现层面，无 hierarchy / theory / redefine 表述；池内无机制句。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=1,232,2,22 是否含 theory / hierarchy / redefine / frontier；检查全文 Methods/Results/Discussion 是否出现 network hierarchy / regulatory layer / redefinition 等术语。 脚本标记: 分析引用了但未列入 gold: 24",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label",
+          "secondary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    }
+  ],
+  "review_queue": {
+    "must_review_sample_ids": [
+      "P002-A001-C01",
+      "P002-A001-C03",
+      "P002-A001-C04",
+      "P002-A001-C06",
+      "P002-A001-C08",
+      "P002-A001-C11",
+      "P002-A001-C12",
+      "P002-A001-C13",
+      "P002-A001-C14",
+      "P002-A001-C15",
+      "P002-A001-C16"
+    ],
+    "notes": ""
+  }
+}

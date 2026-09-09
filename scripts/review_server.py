@@ -9,7 +9,7 @@
 
 - 数据源   : 任意 annotation draft JSON（含 samples + claim_zh + system_retrieval + analysis）
 - 审核结果 : 写回评测文件顶层 ``human_reviews`` 键，按审核人分列、多审核人并存（不互相覆盖）
-- 前端     : scripts/review_ui/index.html
+- 前端     : scripts/review_ui/recall.html（召回审核）+ distortion.html（失真审核），按文件名自动路由
 
 纯标准库 http.server，**不依赖 hallu / api_client / .env / API key**。
 失真分类体系为迁移用的内嵌副本，权威定义见 ``hallu/config.py``，改动需两边同步。
@@ -274,18 +274,27 @@ GUIDE: dict[str, Any] = {
 def discover_reviewables() -> list[Path]:
     """扫描 data/annotations 下的可审核文件。
 
-    约定：最终待审核版本统一存为 ``<PAPER>_<ARTICLE>_annotation_draft.json``，
-    只认这一种命名；_translated / _draft_2 / _readable 等中间产物一律不扫。
+    两类可审核文件：
+    - ``<PAPER>_<ARTICLE>_annotation_draft.json`` —— 召回审核（文件1）
+    - ``<PAPER>_<ARTICLE>_distortion_review.json`` —— 失真审核（文件2，由 regenerate_analysis.py 产出）
+
+    _translated / _draft_2 / _readable 等中间产物一律不扫。
     """
     base = ROOT / "data" / "annotations"
     if not base.exists():
         return []
-    out: list[Path] = []
-    for p in sorted(base.rglob("*_annotation_draft.json")):
-        if ".bak" in p.name:
-            continue
-        out.append(p)
-    return out
+    out: set[Path] = set()
+    for pattern in ("*_annotation_draft.json", "*_distortion_review.json"):
+        for p in base.rglob(pattern):
+            if ".bak" in p.name:
+                continue
+            out.add(p)
+    return sorted(out)
+
+
+def detect_mode(draft_path: Path) -> str:
+    """按文件名判定审核阶段：文件2 失真审核，否则召回审核。"""
+    return "distortion" if draft_path.name.endswith("_distortion_review.json") else "recall"
 
 
 # ---------------------------------------------------------------------------
@@ -375,6 +384,26 @@ def _pick_sample_fields(sample: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def _norm_manual_paragraphs(raw: Any) -> list[dict[str, str]]:
+    """规范化人工找回原文段落：保留 text（人工填）+ text_zh（脚本补的翻译）。
+
+    前端会回传完整对象（含 text_zh），这里只做白名单字段清洗，
+    避免把脚本已补好的翻译清掉。
+    """
+    out: list[dict[str, str]] = []
+    for item in raw or []:
+        if not isinstance(item, dict):
+            continue
+        text = str(item.get("text") or "").strip()
+        if not text:
+            continue
+        out.append({
+            "text": text,
+            "text_zh": str(item.get("text_zh") or "").strip(),
+        })
+    return out
+
+
 # ---------------------------------------------------------------------------
 # HTTP handler
 # ---------------------------------------------------------------------------
@@ -389,6 +418,7 @@ class ReviewHandler(BaseHTTPRequestHandler):
     sentences: dict[int, str] = {}
     draft_path: Path | None = None
     meta: dict[str, Any] = {}
+    mode: str = "recall"  # 'recall' | 'distortion'（由 main() 按文件名注入）
 
     def log_message(self, fmt: str, *args: Any) -> None:
         sys.stderr.write("[%s] %s\n" % (self.address_string(), fmt % args))
@@ -440,12 +470,19 @@ class ReviewHandler(BaseHTTPRequestHandler):
 
     def do_GET(self) -> None:
         path = urlparse(self.path).path
-        if path in ("/", "/index.html"):
-            html = UI_DIR / "index.html"
+        if path in ("/", "/index.html", "/recall.html", "/distortion.html"):
+            html_name = "distortion.html" if self.mode == "distortion" else "recall.html"
+            html = UI_DIR / html_name
             if html.exists():
                 self._send_file(html, "text/html; charset=utf-8")
             else:
                 self._send_json({"error": "前端文件缺失: %s" % html}, 500)
+        elif path == "/style.css":
+            css = UI_DIR / "style.css"
+            if css.exists():
+                self._send_file(css, "text/css; charset=utf-8")
+            else:
+                self._send_json({"error": "前端文件缺失: %s" % css}, 500)
         elif path == "/api/data":
             self._send_json(
                 {
@@ -473,21 +510,45 @@ class ReviewHandler(BaseHTTPRequestHandler):
         if not sample_id:
             self._send_json({"ok": False, "error": "缺少 sample_id"}, 400)
             return
-        # 只在白名单字段里取，避免写脏数据
-        record = {
-            "human_verified": bool(payload.get("human_verified")),
-            "evidence_level": str(payload.get("evidence_level") or "").strip(),
-            "primary_level2": str(payload.get("primary_level2") or "").strip(),
-            "secondary_level2": str(payload.get("secondary_level2") or "").strip(),
-            "severity": str(payload.get("severity") or "").strip(),
-            "uncovered_phenomenon": str(payload.get("uncovered_phenomenon") or "").strip(),
-            "note": str(payload.get("note") or "").strip(),
-            "gold_sentence_ids": [
+        # 合并语义：从已有记录出发，只更新 payload 里「显式出现」的白名单字段。
+        # 这样第一屏保存召回字段不会清掉第二屏的失真字段，也不会清掉
+        # regenerate_analysis.py 写回的 generated_analysis / 翻译。
+        existing = (self.human_reviews.get(reviewer) or {}).get(sample_id) or {}
+        record = dict(existing)
+
+        if "human_verified" in payload:
+            record["human_verified"] = bool(payload.get("human_verified"))
+        if "evidence_level" in payload:
+            record["evidence_level"] = str(payload.get("evidence_level") or "").strip()
+        if "primary_level2" in payload:
+            record["primary_level2"] = str(payload.get("primary_level2") or "").strip()
+        if "secondary_level2" in payload:
+            record["secondary_level2"] = str(payload.get("secondary_level2") or "").strip()
+        if "severity" in payload:
+            record["severity"] = str(payload.get("severity") or "").strip()
+        if "uncovered_phenomenon" in payload:
+            record["uncovered_phenomenon"] = str(payload.get("uncovered_phenomenon") or "").strip()
+        if "note" in payload:
+            record["note"] = str(payload.get("note") or "").strip()
+        if "gold_sentence_ids" in payload:
+            record["gold_sentence_ids"] = [
                 int(x) for x in (payload.get("gold_sentence_ids") or [])
                 if isinstance(x, int) or (isinstance(x, str) and x.strip().isdigit())
-            ],
-            "updated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        }
+            ]
+        if "recall_reviewed" in payload:
+            record["recall_reviewed"] = bool(payload.get("recall_reviewed"))
+        if "recall_note" in payload:
+            record["recall_note"] = str(payload.get("recall_note") or "").strip()
+        if "manual_retrieved_paragraphs" in payload:
+            record["manual_retrieved_paragraphs"] = _norm_manual_paragraphs(
+                payload.get("manual_retrieved_paragraphs")
+            )
+
+        # 召回步骤相关字段有更新时，刷新 recall_updated_at（脚本据此判断是否需二次生成）
+        if any(k in payload for k in ("gold_sentence_ids", "recall_reviewed", "recall_note", "manual_retrieved_paragraphs")):
+            record["recall_updated_at"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+        record["updated_at"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         # 更新内存：当前审核人名下这条样本的记录，不动其他人的
         self.human_reviews.setdefault(reviewer, {})[sample_id] = record
         self._persist()
@@ -535,7 +596,7 @@ def main() -> int:
     if args.list:
         files = discover_reviewables()
         if not files:
-            print("未找到可审核文件（data/annotations 下无 *_translated.json / *_draft_2.json）。")
+            print("未找到可审核文件（data/annotations 下无 *_annotation_draft.json / *_distortion_review.json）。")
         else:
             print("可审核的评测文件（共 %d 份）：" % len(files))
             for i, p in enumerate(files, 1):
@@ -572,12 +633,15 @@ def main() -> int:
         raise SystemExit("评测文件里没有 samples: %s" % draft_path)
 
     human_reviews = draft.get("human_reviews") or {}
+    mode = detect_mode(draft_path)
     meta = {
         "file": str(draft_path.relative_to(ROOT)) if str(draft_path).startswith(str(ROOT)) else str(draft_path),
         "paper_id": draft.get("paper_id") or "",
         "article_id": draft.get("article_id") or "",
         "sample_count": len(samples),
         "reviewers": sorted(human_reviews.keys()),
+        "mode": mode,
+        "kind": "distortion_review" if mode == "distortion" else "recall_draft",
     }
 
     handler = ReviewHandler
@@ -587,6 +651,7 @@ def main() -> int:
     handler.sentences = load_sentence_index(draft.get("paper_id") or "")
     handler.draft_path = draft_path
     handler.meta = meta
+    handler.mode = mode
 
     server = ThreadingHTTPServer(("127.0.0.1", args.port), handler)
     url = "http://127.0.0.1:%d/" % args.port
