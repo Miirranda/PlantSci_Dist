@@ -22,6 +22,7 @@
 import argparse
 import hashlib
 import json
+import os
 import random
 import re
 import sys
@@ -37,10 +38,34 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-# ── 有道 API 配置 ─────────────────────────────────────────────────────────────
-YOUDAO_APP_KEY = "79afc673b6d36195"
-YOUDAO_API_KEY = "V1SnSlfxhM3oyH6JxcsfM8w5os3MZf7B"
+# ── 有道 API 配置（密钥从环境变量读取，禁止写死进代码/仓库）─────────────────
 YOUDAO_API_URL = "https://openapi.youdao.com/api"
+
+
+def _load_youdao_credentials() -> tuple[str, str]:
+    """读取有道翻译凭据：优先环境变量，否则回退加载 arag-main/.env（已被 gitignore）。"""
+    app_key = os.getenv("YOUDAO_APP_KEY")
+    api_key = os.getenv("YOUDAO_API_KEY")
+    if not (app_key and api_key):
+        env_path = Path(__file__).resolve().parent.parent / "arag-main" / ".env"
+        if env_path.exists():
+            for line in env_path.read_text(encoding="utf-8").splitlines():
+                line = line.strip()
+                if not line or line.startswith("#") or "=" not in line:
+                    continue
+                k, _, v = line.partition("=")
+                os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+            app_key = os.getenv("YOUDAO_APP_KEY")
+            api_key = os.getenv("YOUDAO_API_KEY")
+    if not (app_key and api_key):
+        raise RuntimeError(
+            "缺少有道翻译凭据：请设置环境变量 YOUDAO_APP_KEY / YOUDAO_API_KEY，"
+            "或写入 arag-main/.env（模板见 arag-main/.env.example）"
+        )
+    return app_key, api_key
+
+
+YOUDAO_APP_KEY, YOUDAO_API_KEY = _load_youdao_credentials()
 
 CACHE_FILE = Path(__file__).resolve().parent.parent / ".translation_cache.json"
 
