@@ -50,52 +50,62 @@
           {
             "rank": 1,
             "sentence_id": 354,
-            "text": "A total of 202 rice quasi-tetraploid recombinant inbred lines were obtained through 12 generations of selfing by single-seed descent from reciprocal segmental allotetraploid rice, generated via intersubspecific hybridization (japonica cv."
+            "text": "A total of 202 rice quasi-tetraploid recombinant inbred lines were obtained through 12 generations of selfing by single-seed descent from reciprocal segmental allotetraploid rice, generated via intersubspecific hybridization (japonica cv.",
+            "text_zh": "利用粳稻亚种间杂交（japonica cv）获得的互易异源四倍体水稻，经12代单粒自交，获得了202个拟四倍体重组自交系。"
           },
           {
             "rank": 2,
             "sentence_id": 37,
-            "text": "Here we tested the above theoretical predictions by propagating the segmental allotetraploid rice plants via single-seed-descent selfing for 12 successive generations to generate tetraploid recombinant inbred lines (TRILs)."
+            "text": "Here we tested the above theoretical predictions by propagating the segmental allotetraploid rice plants via single-seed-descent selfing for 12 successive generations to generate tetraploid recombinant inbred lines (TRILs).",
+            "text_zh": "本研究对上述理论预测进行了验证，通过单粒自交连续12代，获得了四倍体重组自交系（trir）。"
           },
           {
             "rank": 3,
             "sentence_id": 101,
-            "text": "Taken together, a general trend of all the TRILs was that they were rapidly autotetraploidized to become quasi-autotetraploids after only 12 generations of successive selfing, despite having been derived from hybridization between two subspecies, and hence, starting as segmental allotetraploids."
+            "text": "Taken together, a general trend of all the TRILs was that they were rapidly autotetraploidized to become quasi-autotetraploids after only 12 generations of successive selfing, despite having been derived from hybridization between two subspecies, and hence, starting as segmental allotetraploids.",
+            "text_zh": "综上所述，所有trail的总体趋势是，尽管它们来自两个亚种之间的杂交，但在连续自交12代后，它们迅速地自四倍体化为准自四倍体，因此，它们开始时是片段异源四倍体。"
           },
           {
             "rank": 4,
             "sentence_id": 355,
-            "text": "Nipponbare × indica cv. 9311) followed by colchicine-induced whole-genome doubling (Extended Data Fig. 1a)."
+            "text": "Nipponbare × indica cv. 9311) followed by colchicine-induced whole-genome doubling (Extended Data Fig. 1a).",
+            "text_zh": "日本×指数cv。9311)，然后是秋水仙碱诱导的全基因组加倍（扩展数据图1a）。"
           },
           {
             "rank": 5,
             "sentence_id": 36,
-            "text": "This theoretical prediction, however, has not been empirically interrogated either."
+            "text": "This theoretical prediction, however, has not been empirically interrogated either.",
+            "text_zh": "然而，这一理论预测也没有经过实证检验。"
           },
           {
             "rank": 6,
             "sentence_id": 38,
-            "text": "We analysed genome compositions of a total of 202 phenotypically homogeneous and stable TRILs by whole-genome resequencing."
+            "text": "We analysed genome compositions of a total of 202 phenotypically homogeneous and stable TRILs by whole-genome resequencing.",
+            "text_zh": "我们通过全基因组重测序分析了总共202个表型均匀且稳定的trail的基因组组成。"
           },
           {
             "rank": 7,
             "sentence_id": 275,
-            "text": "We have reported that rampant homoeologous exchanges (HEs) occurred in the earlier selfed progenies (S4) of the synthetic segmental allotetraploids parented by the japonica and indica rice subspecies48."
+            "text": "We have reported that rampant homoeologous exchanges (HEs) occurred in the earlier selfed progenies (S4) of the synthetic segmental allotetraploids parented by the japonica and indica rice subspecies48.",
+            "text_zh": "我们已经报道了由粳稻和籼稻亚种亲本的合成片段异源四倍体的早期自交后代（S4）中发生了猖獗的同源交换（HEs）。"
           },
           {
             "rank": 8,
             "sentence_id": 100,
-            "text": "2 showed significantly more contribution by Nipponbare than 9311 (Fig. 2f)."
+            "text": "2 showed significantly more contribution by Nipponbare than 9311 (Fig. 2f).",
+            "text_zh": "2中Nipponbare的贡献明显大于9311（图2f）。"
           },
           {
             "rank": 9,
             "sentence_id": 215,
-            "text": "In principle, HE-mediated rapid homogenization of two divergent genomes would transform an allotetraploid or segmental allopolyploid into an autotetraploid containing a single genome with four identical copies of every chromosome, but each being a mosaic of the two parental genomes7,8."
+            "text": "In principle, HE-mediated rapid homogenization of two divergent genomes would transform an allotetraploid or segmental allopolyploid into an autotetraploid containing a single genome with four identical copies of every chromosome, but each being a mosaic of the two parental genomes7,8.",
+            "text_zh": "原则上，he介导的两个不同基因组的快速均质化可以将异源四倍体或片段异源多倍体转化为含有单个基因组的同源四倍体，每个染色体都有四个相同的拷贝，但每个拷贝都是两个亲本基因组的马赛克7,8。"
           },
           {
             "rank": 10,
             "sentence_id": 152,
-            "text": "We caution that the HR and HE numbers are the cumulative results of 12 consecutive generations, thus the difference is more likely due to a longer temporal window in tetraploids than in diploids before homozygosity was reached, rather than necessarily more recombination events per meiosis in the tetraploids."
+            "text": "We caution that the HR and HE numbers are the cumulative results of 12 consecutive generations, thus the difference is more likely due to a longer temporal window in tetraploids than in diploids before homozygosity was reached, rather than necessarily more recombination events per meiosis in the tetraploids.",
+            "text_zh": "我们注意到，HR和HE数是连续12代的累积结果，因此这种差异更可能是由于四倍体比二倍体在达到纯合之前有更长的时间窗口，而不是四倍体每次减数分裂中必然有更多的重组事件。"
           }
         ]
       },
@@ -218,17 +228,20 @@
           {
             "rank": 1,
             "sentence_id": 6,
-            "text": "Our findings comprise evidence supporting the evolutionary possibility of HE-catalysed ‘allo-to-auto’ polyploidy transitions in nature, Polyploidization, or whole-genome doubling (WGD), is a potent evolutionary force driving speciation and creating biodiversity1–5."
+            "text": "Our findings comprise evidence supporting the evolutionary possibility of HE-catalysed ‘allo-to-auto’ polyploidy transitions in nature, Polyploidization, or whole-genome doubling (WGD), is a potent evolutionary force driving speciation and creating biodiversity1–5.",
+            "text_zh": "我们的研究结果包括支持he催化的“同种异体到自体”多倍体在自然界中的进化可能性的证据，多倍体化或全基因组加倍（WGD）是驱动物种形成和创造生物多样性的强大进化力量1 - 5。"
           },
           {
             "rank": 2,
             "sentence_id": 292,
-            "text": "In contrast, our findings explicitly suggest that some of today’s extant autopolyploid species may have evolved from archaic allopolyploids through HEs, underscoring the need to redirect efforts towards looking for two or more, rather than one, of their possible diploid progenitors, followed by comparative genomic analyses."
+            "text": "In contrast, our findings explicitly suggest that some of today’s extant autopolyploid species may have evolved from archaic allopolyploids through HEs, underscoring the need to redirect efforts towards looking for two or more, rather than one, of their possible diploid progenitors, followed by comparative genomic analyses.",
+            "text_zh": "相比之下，我们的研究结果明确表明，今天现存的一些自多倍体物种可能是通过he从古老的异源多倍体进化而来的，强调有必要重新努力寻找两个或更多，而不是一个，他们可能的二倍体祖先，然后进行比较基因组分析。"
           },
           {
             "rank": 3,
             "sentence_id": 31,
-            "text": "Thus, HE-fuelled intersubgenomic segmental replacement, if it occurs freely and without strong purifying selection, would transform a single starting nascent allopolyploid to an autopolyploid swarm, especially under selfing."
+            "text": "Thus, HE-fuelled intersubgenomic segmental replacement, if it occurs freely and without strong purifying selection, would transform a single starting nascent allopolyploid to an autopolyploid swarm, especially under selfing.",
+            "text_zh": "因此，如果由he驱动的亚基因组间片段置换自由发生，且没有强烈的净化选择，则会将单个起始的新生异源多倍体转化为自交多倍体群体，尤其是在自交过程中。"
           }
         ]
       },
@@ -345,52 +358,62 @@
           {
             "rank": 1,
             "sentence_id": 275,
-            "text": "We have reported that rampant homoeologous exchanges (HEs) occurred in the earlier selfed progenies (S4) of the synthetic segmental allotetraploids parented by the japonica and indica rice subspecies48."
+            "text": "We have reported that rampant homoeologous exchanges (HEs) occurred in the earlier selfed progenies (S4) of the synthetic segmental allotetraploids parented by the japonica and indica rice subspecies48.",
+            "text_zh": "我们已经报道了由粳稻和籼稻亚种亲本的合成片段异源四倍体的早期自交后代（S4）中发生了猖獗的同源交换（HEs）。"
           },
           {
             "rank": 2,
             "sentence_id": 24,
-            "text": "Hitherto, the most clearly demonstrated genetic mechanism underlying polyploidy-induced rapid genomic change is homoeologous exchange (HE) due to meiotic homoeologous chromosome recombination25,35."
+            "text": "Hitherto, the most clearly demonstrated genetic mechanism underlying polyploidy-induced rapid genomic change is homoeologous exchange (HE) due to meiotic homoeologous chromosome recombination25,35.",
+            "text_zh": "迄今为止，最清楚证明多倍体诱导的快速基因组变化的遗传机制是由减数分裂同源染色体重组引起的同源交换（HE） 25,35。"
           },
           {
             "rank": 3,
             "sentence_id": 0,
-            "text": "Wendel & Theory predicts that in the absence of selection, a newly formed segmental allopolyploid will become ‘autopolyploidized’ if homoeologous exchanges (HEs) occur freely."
+            "text": "Wendel & Theory predicts that in the absence of selection, a newly formed segmental allopolyploid will become ‘autopolyploidized’ if homoeologous exchanges (HEs) occur freely.",
+            "text_zh": "Wendel & Theory预测，在没有选择的情况下，如果同源交换（HEs）自由发生，新形成的片段异源多倍体将成为“自多倍体”。"
           },
           {
             "rank": 4,
             "sentence_id": 28,
-            "text": "Accordingly, more HEs are expected to occur in allopolyploids formed between genetically less divergent parental taxa, such as in cases of segmental allopolyploids8,48."
+            "text": "Accordingly, more HEs are expected to occur in allopolyploids formed between genetically less divergent parental taxa, such as in cases of segmental allopolyploids8,48.",
+            "text_zh": "因此，预计在遗传差异较小的亲本类群之间形成的异源多倍体中会出现更多的he，例如在片段异源多倍体中8,48。"
           },
           {
             "rank": 5,
             "sentence_id": 34,
-            "text": "Unlike interspecific allopolyploids that often become meiotically stable, however, these rice lines were meiotically unstable and manifest rampant HEs in the early generations48."
+            "text": "Unlike interspecific allopolyploids that often become meiotically stable, however, these rice lines were meiotically unstable and manifest rampant HEs in the early generations48.",
+            "text_zh": "然而，不同于种间异源多倍体通常在减数分裂上稳定，这些水稻品系在减数分裂上不稳定，并且在早期世代表现出猖獗的he。"
           },
           {
             "rank": 6,
             "sentence_id": 27,
-            "text": "The occurrence of HE is thought to arise, at least in part, from insufficient genetic differentiation between homoeologous chromosomes and/or the absence of mechanisms that enforce exclusively homologous pairing during meiosis46,47."
+            "text": "The occurrence of HE is thought to arise, at least in part, from insufficient genetic differentiation between homoeologous chromosomes and/or the absence of mechanisms that enforce exclusively homologous pairing during meiosis46,47.",
+            "text_zh": "HE的发生被认为至少部分是由于同源染色体之间的遗传分化不足和/或减数分裂过程中缺乏强制同源配对的机制46,47。"
           },
           {
             "rank": 7,
             "sentence_id": 29,
-            "text": "It has been posited that HEs themselves lead to HEs by a ‘ratchet-like’ process, in that each additional HE would make homoeologous chromosomes more similar7."
+            "text": "It has been posited that HEs themselves lead to HEs by a ‘ratchet-like’ process, in that each additional HE would make homoeologous chromosomes more similar7.",
+            "text_zh": "有人认为，HE本身是通过“棘轮状”过程产生的，即每增加一个HE就会使同源染色体更加相似7。"
           },
           {
             "rank": 8,
             "sentence_id": 35,
-            "text": "Because each line is expected to be genomically mosaic due to HEs, and meiotically unstable due to high chromosome similarity, an intuitive outcome would be universal deterioration of fertility (fitness) in all lines7,8,50."
+            "text": "Because each line is expected to be genomically mosaic due to HEs, and meiotically unstable due to high chromosome similarity, an intuitive outcome would be universal deterioration of fertility (fitness) in all lines7,8,50.",
+            "text_zh": "由于HEs的存在，每个品系在基因组上都是嵌合的，而由于染色体高度相似，减数分裂不稳定，因此直观的结果将是所有品系的生育能力（适合度）普遍下降7,8,50。"
           },
           {
             "rank": 9,
             "sentence_id": 278,
-            "text": "Given that in theory, many different TRILs can be generated from HEs even starting from a single S0 segmental allotetraploid individual, and that each TRIL can become genetically homogeneous after relatively few generations of selfing, our results suggest that HE is a powerful mechanism whereby genetic and phenotypic diversity can be rapidly generated in newly formed allopolyploids."
+            "text": "Given that in theory, many different TRILs can be generated from HEs even starting from a single S0 segmental allotetraploid individual, and that each TRIL can become genetically homogeneous after relatively few generations of selfing, our results suggest that HE is a powerful mechanism whereby genetic and phenotypic diversity can be rapidly generated in newly formed allopolyploids.",
+            "text_zh": "从理论上讲，即使从单个50段异源四倍体个体开始，HE也可以产生许多不同的TRIL，并且每个TRIL可以在相对较少的自交代后变得遗传同质，我们的研究结果表明HE是一个强大的机制，可以在新形成的异源多倍体中快速产生遗传和表型多样性。"
           },
           {
             "rank": 10,
             "sentence_id": 277,
-            "text": "Here we find that each of the 202 TRILs had a unique genome composition and a distinct composite organismal phenotype (including fitness) due to differences in the number, location and length of fixed HEs."
+            "text": "Here we find that each of the 202 TRILs had a unique genome composition and a distinct composite organismal phenotype (including fitness) due to differences in the number, location and length of fixed HEs.",
+            "text_zh": "在这里，我们发现由于固定he的数量、位置和长度的差异，202个trir中的每一个都具有独特的基因组组成和不同的复合有机体表型（包括适应度）。"
           }
         ]
       },
@@ -502,17 +525,20 @@
           {
             "rank": 1,
             "sentence_id": 35,
-            "text": "Because each line is expected to be genomically mosaic due to HEs, and meiotically unstable due to high chromosome similarity, an intuitive outcome would be universal deterioration of fertility (fitness) in all lines7,8,50."
+            "text": "Because each line is expected to be genomically mosaic due to HEs, and meiotically unstable due to high chromosome similarity, an intuitive outcome would be universal deterioration of fertility (fitness) in all lines7,8,50.",
+            "text_zh": "由于HEs的存在，每个品系在基因组上都是嵌合的，而由于染色体高度相似，减数分裂不稳定，因此直观的结果将是所有品系的生育能力（适合度）普遍下降7,8,50。"
           },
           {
             "rank": 2,
             "sentence_id": 329,
-            "text": "Thus, it is expected that due to HE-catalysed homogenization, the quasi-autotetraploids (TRILs) we developed would exhibit exacerbated meiotic instability and reduced fertility."
+            "text": "Thus, it is expected that due to HE-catalysed homogenization, the quasi-autotetraploids (TRILs) we developed would exhibit exacerbated meiotic instability and reduced fertility.",
+            "text_zh": "因此，预计由于he催化的均质化，我们开发的准同源四倍体（TRILs）将表现出更大的减数分裂不稳定性和更低的生育能力。"
           },
           {
             "rank": 3,
             "sentence_id": 216,
-            "text": "This chromosomal homogeneity would most probably lead to multivalent formation and unbalanced gametes, the result being lowered fertility and fitness."
+            "text": "This chromosomal homogeneity would most probably lead to multivalent formation and unbalanced gametes, the result being lowered fertility and fitness.",
+            "text_zh": "这种染色体同质性很可能导致多价形成和配子不平衡，结果是生育能力和适应性降低。"
           }
         ]
       },
@@ -625,52 +651,62 @@
           {
             "rank": 1,
             "sentence_id": 0,
-            "text": "Wendel & Theory predicts that in the absence of selection, a newly formed segmental allopolyploid will become ‘autopolyploidized’ if homoeologous exchanges (HEs) occur freely."
+            "text": "Wendel & Theory predicts that in the absence of selection, a newly formed segmental allopolyploid will become ‘autopolyploidized’ if homoeologous exchanges (HEs) occur freely.",
+            "text_zh": "Wendel & Theory预测，在没有选择的情况下，如果同源交换（HEs）自由发生，新形成的片段异源多倍体将成为“自多倍体”。"
           },
           {
             "rank": 2,
             "sentence_id": 1,
-            "text": "Moreover, because selection against meiotic abnormalities is expected to be strong in the initial generations, we anticipate HEs to be uncommon in evolved segmental allopolyploids."
+            "text": "Moreover, because selection against meiotic abnormalities is expected to be strong in the initial generations, we anticipate HEs to be uncommon in evolved segmental allopolyploids.",
+            "text_zh": "此外，由于对减数分裂异常的选择在最初几代中预计会很强，我们预计he在进化的节段异源多倍体中并不常见。"
           },
           {
             "rank": 3,
             "sentence_id": 31,
-            "text": "Thus, HE-fuelled intersubgenomic segmental replacement, if it occurs freely and without strong purifying selection, would transform a single starting nascent allopolyploid to an autopolyploid swarm, especially under selfing."
+            "text": "Thus, HE-fuelled intersubgenomic segmental replacement, if it occurs freely and without strong purifying selection, would transform a single starting nascent allopolyploid to an autopolyploid swarm, especially under selfing.",
+            "text_zh": "因此，如果由he驱动的亚基因组间片段置换自由发生，且没有强烈的净化选择，则会将单个起始的新生异源多倍体转化为自交多倍体群体，尤其是在自交过程中。"
           },
           {
             "rank": 4,
             "sentence_id": 32,
-            "text": "This possibility, however, remains to be experimentally tested."
+            "text": "This possibility, however, remains to be experimentally tested.",
+            "text_zh": "然而，这种可能性仍有待实验检验。"
           },
           {
             "rank": 5,
             "sentence_id": 30,
-            "text": "As such, in theory, after a sufficient number of generations, all four copies in a still fertile tetraploid of every chromosomal segment would be derived from either, but not both, of the hybridizing parents; that is, each chromosome segment, the sizes of which are determined by recombination breakpoints, will become homozygous (homogeneous) for all four constituent copies."
+            "text": "As such, in theory, after a sufficient number of generations, all four copies in a still fertile tetraploid of every chromosomal segment would be derived from either, but not both, of the hybridizing parents; that is, each chromosome segment, the sizes of which are determined by recombination breakpoints, will become homozygous (homogeneous) for all four constituent copies.",
+            "text_zh": "因此，理论上，在足够数量的世代之后，每个染色体片段仍然可育的四倍体的所有四个副本将来自杂交亲本中的任何一个，而不是两个；也就是说，每个染色体片段，其大小由重组断点决定，对于所有四个组成拷贝来说都将成为纯合的（均匀的）。"
           },
           {
             "rank": 6,
             "sentence_id": 215,
-            "text": "In principle, HE-mediated rapid homogenization of two divergent genomes would transform an allotetraploid or segmental allopolyploid into an autotetraploid containing a single genome with four identical copies of every chromosome, but each being a mosaic of the two parental genomes7,8."
+            "text": "In principle, HE-mediated rapid homogenization of two divergent genomes would transform an allotetraploid or segmental allopolyploid into an autotetraploid containing a single genome with four identical copies of every chromosome, but each being a mosaic of the two parental genomes7,8.",
+            "text_zh": "原则上，he介导的两个不同基因组的快速均质化可以将异源四倍体或片段异源多倍体转化为含有单个基因组的同源四倍体，每个染色体都有四个相同的拷贝，但每个拷贝都是两个亲本基因组的马赛克7,8。"
           },
           {
             "rank": 7,
             "sentence_id": 286,
-            "text": "Thus, under circumstances where these two essential conditions (that is, moderate parental genetic divergence and absence of HPS) are met, HE by itself appears to be a potent driver of evolutionarily relevant diversification under polyploidy."
+            "text": "Thus, under circumstances where these two essential conditions (that is, moderate parental genetic divergence and absence of HPS) are met, HE by itself appears to be a potent driver of evolutionarily relevant diversification under polyploidy.",
+            "text_zh": "因此，在满足这两个基本条件（即亲本遗传分化适度和HPS缺失）的情况下，HE本身似乎是多倍体下进化相关多样化的有力驱动因素。"
           },
           {
             "rank": 8,
             "sentence_id": 216,
-            "text": "This chromosomal homogeneity would most probably lead to multivalent formation and unbalanced gametes, the result being lowered fertility and fitness."
+            "text": "This chromosomal homogeneity would most probably lead to multivalent formation and unbalanced gametes, the result being lowered fertility and fitness.",
+            "text_zh": "这种染色体同质性很可能导致多价形成和配子不平衡，结果是生育能力和适应性降低。"
           },
           {
             "rank": 9,
             "sentence_id": 292,
-            "text": "In contrast, our findings explicitly suggest that some of today’s extant autopolyploid species may have evolved from archaic allopolyploids through HEs, underscoring the need to redirect efforts towards looking for two or more, rather than one, of their possible diploid progenitors, followed by comparative genomic analyses."
+            "text": "In contrast, our findings explicitly suggest that some of today’s extant autopolyploid species may have evolved from archaic allopolyploids through HEs, underscoring the need to redirect efforts towards looking for two or more, rather than one, of their possible diploid progenitors, followed by comparative genomic analyses.",
+            "text_zh": "相比之下，我们的研究结果明确表明，今天现存的一些自多倍体物种可能是通过he从古老的异源多倍体进化而来的，强调有必要重新努力寻找两个或更多，而不是一个，他们可能的二倍体祖先，然后进行比较基因组分析。"
           },
           {
             "rank": 10,
             "sentence_id": 285,
-            "text": "However, it should be cautioned that one additional critical condition might also be required, that is, the absence of strong homoeologous pairing suppressor (HPSs) genes such as Ph1 in wheat66."
+            "text": "However, it should be cautioned that one additional critical condition might also be required, that is, the absence of strong homoeologous pairing suppressor (HPSs) genes such as Ph1 in wheat66.",
+            "text_zh": "然而，需要注意的是，可能还需要一个额外的关键条件，即缺乏强同源配对抑制基因（hps），如wheat66中的Ph1。"
           }
         ]
       },
@@ -764,7 +800,8 @@
           {
             "rank": 1,
             "sentence_id": 327,
-            "text": "Nevertheless, we acknowledge that the mechanisms underlying the exclusive retention of this 1.7-Mb segment of 9311 remains speculative and requires further experimental validation."
+            "text": "Nevertheless, we acknowledge that the mechanisms underlying the exclusive retention of this 1.7-Mb segment of 9311 remains speculative and requires further experimental validation.",
+            "text_zh": "尽管如此，我们承认9311的1.7 mb片段的独家保留机制仍然是推测性的，需要进一步的实验验证。"
           }
         ]
       },
@@ -867,52 +904,62 @@
           {
             "rank": 1,
             "sentence_id": 354,
-            "text": "A total of 202 rice quasi-tetraploid recombinant inbred lines were obtained through 12 generations of selfing by single-seed descent from reciprocal segmental allotetraploid rice, generated via intersubspecific hybridization (japonica cv."
+            "text": "A total of 202 rice quasi-tetraploid recombinant inbred lines were obtained through 12 generations of selfing by single-seed descent from reciprocal segmental allotetraploid rice, generated via intersubspecific hybridization (japonica cv.",
+            "text_zh": "利用粳稻亚种间杂交（japonica cv）获得的互易异源四倍体水稻，经12代单粒自交，获得了202个拟四倍体重组自交系。"
           },
           {
             "rank": 2,
             "sentence_id": 37,
-            "text": "Here we tested the above theoretical predictions by propagating the segmental allotetraploid rice plants via single-seed-descent selfing for 12 successive generations to generate tetraploid recombinant inbred lines (TRILs)."
+            "text": "Here we tested the above theoretical predictions by propagating the segmental allotetraploid rice plants via single-seed-descent selfing for 12 successive generations to generate tetraploid recombinant inbred lines (TRILs).",
+            "text_zh": "本研究对上述理论预测进行了验证，通过单粒自交连续12代，获得了四倍体重组自交系（trir）。"
           },
           {
             "rank": 3,
             "sentence_id": 33,
-            "text": "Earlier we reported that synthetic segmental allotetraploids derived by doubling the reciprocal F1 hybrids generated between the rice (Oryza sativa L.) subspecies japonica and indica have a notable level of restored fertility49, consistent with findings in other organisms, for example, yeast6."
+            "text": "Earlier we reported that synthetic segmental allotetraploids derived by doubling the reciprocal F1 hybrids generated between the rice (Oryza sativa L.) subspecies japonica and indica have a notable level of restored fertility49, consistent with findings in other organisms, for example, yeast6.",
+            "text_zh": "之前我们报道过，将水稻（Oryza sativa L.）亚种粳稻（japonica）和籼稻（indica L.）的F1杂交后代加倍获得的合成片段异体四倍体具有显著的育性恢复水平，这与其他生物（如酵母）的发现一致。"
           },
           {
             "rank": 4,
             "sentence_id": 233,
-            "text": "To evaluate the phenotypic consequences of variable genomic compositions of the TRILs, we measured 20 morphological and 3 physiological traits in the 202 TRILs along with their diploid parental cultivars (Nipponbare and 9311), autotetraploids of both parents (Nipponbare-4X and 9311-4X), reciprocal diploid F1 hybrids (N9-F1 and 9N-F1) and reciprocal S1 segmental allotetraploids (NN99-F1 and 99NN-F1) in 2 consecutive years (2021–2022) under normal paddy-field conditions, except for germination rate, which was assayed under controlled laboratory conditions (Fig. 6a–d, and Supplementary Tables 13 and 14)."
+            "text": "To evaluate the phenotypic consequences of variable genomic compositions of the TRILs, we measured 20 morphological and 3 physiological traits in the 202 TRILs along with their diploid parental cultivars (Nipponbare and 9311), autotetraploids of both parents (Nipponbare-4X and 9311-4X), reciprocal diploid F1 hybrids (N9-F1 and 9N-F1) and reciprocal S1 segmental allotetraploids (NN99-F1 and 99NN-F1) in 2 consecutive years (2021–2022) under normal paddy-field conditions, except for germination rate, which was assayed under controlled laboratory conditions (Fig. 6a–d, and Supplementary Tables 13 and 14).",
+            "text_zh": "为了评价trail基因变异对表型的影响，我们连续2年（2021-2022）在正常水田条件下测定了202个trail及其二倍体亲本品种（Nipponbare和9311）、双亲的同源四倍体（Nipponbare- 4x和9311- 4x）、互易二倍体F1杂交品种（N9-F1和9N-F1）和互易S1片段异源四倍体（NN99-F1和99n -F1）的20个形态和3个生理性状。除了发芽率外，发芽率是在受控的实验室条件下测定的（图6a-d，补充表13和14）。"
           },
           {
             "rank": 5,
             "sentence_id": 2,
-            "text": "Here we analysed the whole-genome composition of 202 phenotypically homogeneous and stable rice tetraploid recombinant inbred lines (TRILs) derived from Oryza sativa subsp. japonica subsp. indica hybridization/ whole-genome doubling."
+            "text": "Here we analysed the whole-genome composition of 202 phenotypically homogeneous and stable rice tetraploid recombinant inbred lines (TRILs) derived from Oryza sativa subsp. japonica subsp. indica hybridization/ whole-genome doubling.",
+            "text_zh": "本研究分析了202个表型均匀稳定的水稻四倍体重组自交系（trir）的全基因组组成。粳稻无性系种群。籼稻杂交/全基因组加倍。"
           },
           {
             "rank": 6,
             "sentence_id": 355,
-            "text": "Nipponbare × indica cv. 9311) followed by colchicine-induced whole-genome doubling (Extended Data Fig. 1a)."
+            "text": "Nipponbare × indica cv. 9311) followed by colchicine-induced whole-genome doubling (Extended Data Fig. 1a).",
+            "text_zh": "日本×指数cv。9311)，然后是秋水仙碱诱导的全基因组加倍（扩展数据图1a）。"
           },
           {
             "rank": 7,
             "sentence_id": 84,
-            "text": "The relative contributions of the two hybridizing parents in the TRILs were also different both genomewide and at individualchromosome levels (Fig. 2f)."
+            "text": "The relative contributions of the two hybridizing parents in the TRILs were also different both genomewide and at individualchromosome levels (Fig. 2f).",
+            "text_zh": "两个杂交亲本在trail中的相对贡献在全基因组和单个染色体水平上也不同（图2f）。"
           },
           {
             "rank": 8,
             "sentence_id": 36,
-            "text": "This theoretical prediction, however, has not been empirically interrogated either."
+            "text": "This theoretical prediction, however, has not been empirically interrogated either.",
+            "text_zh": "然而，这一理论预测也没有经过实证检验。"
           },
           {
             "rank": 9,
             "sentence_id": 32,
-            "text": "This possibility, however, remains to be experimentally tested."
+            "text": "This possibility, however, remains to be experimentally tested.",
+            "text_zh": "然而，这种可能性仍有待实验检验。"
           },
           {
             "rank": 10,
             "sentence_id": 234,
-            "text": "Results for the 19 morphological and 3 physiological traits fully concurred between the 2 years (Extended Data Fig. 5), with the key observation being a high level of diversity for all 23 measured traits (Extended Data Fig. 6)."
+            "text": "Results for the 19 morphological and 3 physiological traits fully concurred between the 2 years (Extended Data Fig. 5), with the key observation being a high level of diversity for all 23 measured traits (Extended Data Fig. 6).",
+            "text_zh": "19个形态性状和3个生理性状的结果在2年间完全一致（扩展数据图5），关键观察结果是所有23个测量性状的多样性水平很高（扩展数据图6）。"
           }
         ]
       },
@@ -1033,52 +1080,62 @@
           {
             "rank": 1,
             "sentence_id": 53,
-            "text": "Four TRILs showed the highest level of homogenization (96.6–97.8%), while 4 TRILs remained segmentally highly heterozygous, with only 36.8–54.7% of the genomic regions attaining homozygosity (all-four-copy segmental homogeneity) (Fig. 1e)."
+            "text": "Four TRILs showed the highest level of homogenization (96.6–97.8%), while 4 TRILs remained segmentally highly heterozygous, with only 36.8–54.7% of the genomic regions attaining homozygosity (all-four-copy segmental homogeneity) (Fig. 1e).",
+            "text_zh": "4个TRILs均质性最高（96.6-97.8%），而4个TRILs在片段上仍然是高度杂合的，只有36.8-54.7%的基因组区域达到纯合（全四拷贝片段同质性）（图1e）。"
           },
           {
             "rank": 2,
             "sentence_id": 38,
-            "text": "We analysed genome compositions of a total of 202 phenotypically homogeneous and stable TRILs by whole-genome resequencing."
+            "text": "We analysed genome compositions of a total of 202 phenotypically homogeneous and stable TRILs by whole-genome resequencing.",
+            "text_zh": "我们通过全基因组重测序分析了总共202个表型均匀且稳定的trail的基因组组成。"
           },
           {
             "rank": 3,
             "sentence_id": 70,
-            "text": "When all TRILs were considered together, chromosomes (Chrs.) 6 and 10 showed the highest and lowest degrees of homozygosity (91.3% and 61.6%, respectively) (Fig. 1f and Supplementary Table 2)."
+            "text": "When all TRILs were considered together, chromosomes (Chrs.) 6 and 10 showed the highest and lowest degrees of homozygosity (91.3% and 61.6%, respectively) (Fig. 1f and Supplementary Table 2).",
+            "text_zh": "当所有trir被放在一起考虑时，染色体（Chrs）。6和10的纯合度最高，分别为91.3%和61.6%（图1f和补充表2）。"
           },
           {
             "rank": 4,
             "sentence_id": 49,
-            "text": "We found that the vast majority of the tetraploid lines were largely autotetraploidized due to HE-propelled genomewide segmental homogenization, with an average homozygosity (defined as the proportion of chromosomal segments being 4:0 or 0:4 of parental alleles across the entire genome) of 84.1% (from 97.8% to 36.8%), and 81.7% of the lines (165 of 202) reaching 80% all-four-copy segmental homogeneity (Supplementary Table 1)."
+            "text": "We found that the vast majority of the tetraploid lines were largely autotetraploidized due to HE-propelled genomewide segmental homogenization, with an average homozygosity (defined as the proportion of chromosomal segments being 4:0 or 0:4 of parental alleles across the entire genome) of 84.1% (from 97.8% to 36.8%), and 81.7% of the lines (165 of 202) reaching 80% all-four-copy segmental homogeneity (Supplementary Table 1).",
+            "text_zh": "我们发现绝大多数四倍体系由于he推动的全基因组片段均质化，大部分是自四倍体化，平均纯合性（定义为整个基因组亲本等位基因的染色体片段比例为4:0或0:4）为84.1%（从97.8%到36.8%），81.7%的系（202个中的165个）全部四拷贝片段均质性达到80%（补充表1）。"
           },
           {
             "rank": 5,
             "sentence_id": 71,
-            "text": "In addition, in >20% of the TRILs (41 out of 202), 5 chromosomes (Chrs. 6, 8, 9, 11 and 12) became fully homozygous (Supplementary Table 2)."
+            "text": "In addition, in >20% of the TRILs (41 out of 202), 5 chromosomes (Chrs. 6, 8, 9, 11 and 12) became fully homozygous (Supplementary Table 2).",
+            "text_zh": "此外，在2010年20%的trail（202个trail中的41个）中，5条染色体（Chrs 6,8,9,11和12）完全纯合（补充表2）。"
           },
           {
             "rank": 6,
             "sentence_id": 59,
-            "text": "d, Density plot showing the distribution of genomic homozygosity of the TRILs according to crossing direction; dashed lines represent mean values."
+            "text": "d, Density plot showing the distribution of genomic homozygosity of the TRILs according to crossing direction; dashed lines represent mean values.",
+            "text_zh": "d， trail基因组纯合性按交叉方向分布的密度图；虚线表示平均值。"
           },
           {
             "rank": 7,
             "sentence_id": 61,
-            "text": "e, Circos plots displaying genomic composition of 8 TRILs, 4 each showing the highest (left) and lowest (right) genomic homozygosities."
+            "text": "e, Circos plots displaying genomic composition of 8 TRILs, 4 each showing the highest (left) and lowest (right) genomic homozygosities.",
+            "text_zh": "e， Circos图显示8个trail的基因组组成，每个trail显示最高（左）和最低（右）的基因组纯合性。"
           },
           {
             "rank": 8,
             "sentence_id": 52,
-            "text": "However, the degrees of homozygosity differed markedly across the TRILs."
+            "text": "However, the degrees of homozygosity differed markedly across the TRILs.",
+            "text_zh": "然而，trail的纯合子程度有显著差异。"
           },
           {
             "rank": 9,
             "sentence_id": 253,
-            "text": "We next assessed performance of the TRILs along with their two diploid parental cultivars, the diploid F1 hybrids (9N-F1 and N9-F1), the S1 segmental allotetraploids (NN99-S1 and 99NN-S1) and autotetraploids of both parents under two abiotic stress conditions, NaCl (salinity) and chlorate (KClO3) (sensitivity to this chemical is a reliable No. of quadrivalents per PMC No. of bivalents per PMC Chain Adjacent Alternate Ambiguous (%) (%) (%) (%) 1.29 ± 0.92 3.87 ± 1.36 0.81 ± 0.96 4.10 ± 1.80 3.87 ± 2.68 d (12.83%) ab (38.46%) a (8.01%) c (40.71%) ab 1.40 ± 1.02 3.63 ± 1.62 0.50 ± 0.74 4.13 ± 1.83 4.71 ± 3.28 d (14.47%) a (37.58%) a (5.18%) d (42.76%) ab 1.08 ± 1.01 2.08 ± 1.36 1.33 ± 1.00 2.89 ± 1.39 8.94 ± 3.67 a (14.66%) a (28.20%) b (18.05%) ab (39.10%) ab 0.96 ± 0.88 1.98 ± 1.31 1.52 ± 1.16 3.07 ± 1.17 8.83 ± 2.84 a (12.72%) ab (26.30%) b (20.23%) ab (40.75%) ab 1.42 ± 1.00 2.80 ± 1.28 0.51 ± 0.65 4.20 ± 1.54 6.13 ± 2.90 c (15.92%) a (31.34%) b (5.72%) cd (47.01%) a 1.15 ± 0.85 3.52 ± 1.40 0.74 ± 0.89 3.52 ± 1.47 6.15 ± 2.37 bc (12.86%) ab (39.42%) a (8.30%) c (39.42%) ab 0.72 ± 0.73 2.75 ± 1.28 1.31 ± 0.97 3.44 ± 1.36 7.17 ± 3.42 b (8.78%) b (33.45%) ab (15.88%) b (41.89%) ab 0.73 ± 0.98 2.38 ± 1.50 1.60 ± 0.98 2.82 ± 1.46 8.64 ± 2.69 a (9.73%) b (31.56%) b (21.24%) a (37.46%) b g h i m n o r s 100 1n 2n Normalized to mode 80 60 40 20 0 4 5 3 10 0 10 10 752 a NPB 9311 N9-F1 9N-F1 NPB-4X b NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 N = 12 N = 10 N = 12 N = 12 N = 12 N = 11 N = 8 N = 9 n = 29 n = 44 n = 41 n = 40 n = 26 n = 38 n = 24 n = 23 c NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 96.7% 97.5% 3.0% 2.3% 20.0% 37.5% 43.3% 44.6% e 150 mM NaCl 7 cm NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 TN9-81 T9N-29 Mock 150 mM NaCl, 7 d, recovered, 7 d h g 100% 100 Yield per plant (g) Survival rate (%) 75% 75 a b b b a 50% 50 c c cd cd c c d 25% 25 e e e 0% 0 NPB-4X 9311-4X N9-F1 9N-F1 NPB 9311 NPB 9311 NN99-S1 TN9-81 N9-F1 9N-F1 NPB-4X 99NN-S1 T9N-14 9311-4X Fig. 6 | Morphology and abiotic stress tolerance traits in diploid parents, F1 hybrids, autotetraploids, segmental allotetraploids and selected TRILs."
+            "text": "We next assessed performance of the TRILs along with their two diploid parental cultivars, the diploid F1 hybrids (9N-F1 and N9-F1), the S1 segmental allotetraploids (NN99-S1 and 99NN-S1) and autotetraploids of both parents under two abiotic stress conditions, NaCl (salinity) and chlorate (KClO3) (sensitivity to this chemical is a reliable No. of quadrivalents per PMC No. of bivalents per PMC Chain Adjacent Alternate Ambiguous (%) (%) (%) (%) 1.29 ± 0.92 3.87 ± 1.36 0.81 ± 0.96 4.10 ± 1.80 3.87 ± 2.68 d (12.83%) ab (38.46%) a (8.01%) c (40.71%) ab 1.40 ± 1.02 3.63 ± 1.62 0.50 ± 0.74 4.13 ± 1.83 4.71 ± 3.28 d (14.47%) a (37.58%) a (5.18%) d (42.76%) ab 1.08 ± 1.01 2.08 ± 1.36 1.33 ± 1.00 2.89 ± 1.39 8.94 ± 3.67 a (14.66%) a (28.20%) b (18.05%) ab (39.10%) ab 0.96 ± 0.88 1.98 ± 1.31 1.52 ± 1.16 3.07 ± 1.17 8.83 ± 2.84 a (12.72%) ab (26.30%) b (20.23%) ab (40.75%) ab 1.42 ± 1.00 2.80 ± 1.28 0.51 ± 0.65 4.20 ± 1.54 6.13 ± 2.90 c (15.92%) a (31.34%) b (5.72%) cd (47.01%) a 1.15 ± 0.85 3.52 ± 1.40 0.74 ± 0.89 3.52 ± 1.47 6.15 ± 2.37 bc (12.86%) ab (39.42%) a (8.30%) c (39.42%) ab 0.72 ± 0.73 2.75 ± 1.28 1.31 ± 0.97 3.44 ± 1.36 7.17 ± 3.42 b (8.78%) b (33.45%) ab (15.88%) b (41.89%) ab 0.73 ± 0.98 2.38 ± 1.50 1.60 ± 0.98 2.82 ± 1.46 8.64 ± 2.69 a (9.73%) b (31.56%) b (21.24%) a (37.46%) b g h i m n o r s 100 1n 2n Normalized to mode 80 60 40 20 0 4 5 3 10 0 10 10 752 a NPB 9311 N9-F1 9N-F1 NPB-4X b NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 N = 12 N = 10 N = 12 N = 12 N = 12 N = 11 N = 8 N = 9 n = 29 n = 44 n = 41 n = 40 n = 26 n = 38 n = 24 n = 23 c NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 96.7% 97.5% 3.0% 2.3% 20.0% 37.5% 43.3% 44.6% e 150 mM NaCl 7 cm NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 TN9-81 T9N-29 Mock 150 mM NaCl, 7 d, recovered, 7 d h g 100% 100 Yield per plant (g) Survival rate (%) 75% 75 a b b b a 50% 50 c c cd cd c c d 25% 25 e e e 0% 0 NPB-4X 9311-4X N9-F1 9N-F1 NPB 9311 NPB 9311 NN99-S1 TN9-81 N9-F1 9N-F1 NPB-4X 99NN-S1 T9N-14 9311-4X Fig. 6 | Morphology and abiotic stress tolerance traits in diploid parents, F1 hybrids, autotetraploids, segmental allotetraploids and selected TRILs.",
+            "text_zh": "接下来，我们评估了TRILs及其两个二倍体亲本品种，二倍体F1杂交品种（9N-F1和N9-F1）， S1段异源四倍体（NN99-S1和99NN-S1）和亲本同源四倍体在NaCl（盐度）和氯酸盐（KClO3）两种非生物胁迫条件下的表现。每个PMC的四分位每PMC链相邻交替模棱两可的现象  (%) (%) (%) (%) 1.29±0.92 - 3.87±1.36 0.81 0.96±4.10±1.80 3.87±2.68 d (12.83%) ab (38.46%) (8.01%) c (40.71%) ab 1.40±1.02 - 3.63±1.62 0.50 0.74±4.13±1.83 4.71±3.28 d (14.47%) (37.58%) (5.18%) d (42.76%) ab 1.08±1.01 - 2.08±1.36 1.33±1.00 - 2.89±1.39 - 8.94±3.67 b (14.66%) (28.20%) (18.05%) ab (39.10%) ab 0.96±0.88 - 1.98±1.31 1.52±1.16 - 3.07±1.17 - 8.83±2.84 b (12.72%) ab (26.30%) (20.23%) ab (40.75%)ab 1.42±1.00 - 2.80±1.28 0.51±0.65 - 4.20±1.54 - 6.13±2.90摄氏度(15.92%)(31.34%)b (5.72%) cd(47.01%) 1.15±0.85 - 3.52±1.40 0.74 0.89±3.52±1.47 6.15±2.37 bc (12.86%) ab (39.42%) (8.30%) c (39.42%) ab 0.72±0.73 - 2.75±1.28 1.31±0.97 - 3.44±1.36 - 7.17±3.42 b (8.78%) (33.45%) ab (15.88%) b (41.89%) ab 0.73±0.98 - 2.38±1.50 1.60±0.98 - 2.82±1.46 - 8.64±2.69 b (9.73%) (31.56%) (21.24%) (37.46%) b g h i m n o r s 100 1 n 2 n规范化模式80 60 40 20 0 4 5 3 10 010 752 9311 NPB N9-F1 9 n-f1 NPB-4X b NPB 9311 N9-F1 9 n-f1 NPB-4X 9311 - 4 - x NN99-S1 99 nn-s1 N = 12 N = 10 N = 12 N = 12 N = 12 N = 11 N = 8 N = 9 N = 29 N = 44 N = 41 N = 40 N = 26 N = 38 N = 24 N = 23 c NPB 9311 N9-F1 9 n-f1 NPB-4X 9311 - 4 - x NN99-S1 99 nn-s1 96.7% 97.5% 3.0% 2.3% 20.0% 37.5% 43.3% 44.6% e 150毫米氯化钠7厘米NPB 9311 N9-F1 9 n-f1 NPB-4X 9311 - 4 - x NN99-S1 99 nn-s1 tn9 - 81 T9N-29模拟150毫米氯化钠,7 d,恢复,7 d h g 100% 100单株产量(g)存活率（%）75% 75 ab b a 50% 50 c c c c c c cd 25% 25 e e e e 0% 0 NPB- 4x 9311- 4x N9-F1 9N-F1 NPB 9311 NPB 9311 NN99-S1 TN9-81 N9-F1 9N-F1 NPB- 4x 99NN-S1 T9N-14 9311- 4x图6 |二倍体亲本、F1杂交种、同源四倍体、片段异源四倍体和精选trir的形态和非生物耐受性性状"
           },
           {
             "rank": 10,
             "sentence_id": 2,
-            "text": "Here we analysed the whole-genome composition of 202 phenotypically homogeneous and stable rice tetraploid recombinant inbred lines (TRILs) derived from Oryza sativa subsp. japonica subsp. indica hybridization/ whole-genome doubling."
+            "text": "Here we analysed the whole-genome composition of 202 phenotypically homogeneous and stable rice tetraploid recombinant inbred lines (TRILs) derived from Oryza sativa subsp. japonica subsp. indica hybridization/ whole-genome doubling.",
+            "text_zh": "本研究分析了202个表型均匀稳定的水稻四倍体重组自交系（trir）的全基因组组成。粳稻无性系种群。籼稻杂交/全基因组加倍。"
           }
         ]
       },
@@ -1174,52 +1231,62 @@
           {
             "rank": 1,
             "sentence_id": 74,
-            "text": "We identified a total of 21,900 HE events in the 202 TRILs, which ranged from 61 to 201 among lines and averaged 108.4 ± 25.3 per line (Fig. 2a and Supplementary Table 1), again without significant difference between the two crossing directions (P = 0.22 by Mann–Whitney U-test, Fig. 2b)."
+            "text": "We identified a total of 21,900 HE events in the 202 TRILs, which ranged from 61 to 201 among lines and averaged 108.4 ± 25.3 per line (Fig. 2a and Supplementary Table 1), again without significant difference between the two crossing directions (P = 0.22 by Mann–Whitney U-test, Fig. 2b).",
+            "text_zh": "我们在202个trir中共发现了21,900个HE事件，在系间的范围为61 - 201，平均每系108.4±25.3（图2a和补充表1），两个交叉方向之间也没有显著差异（图2b， Mann-Whitney u检验P = 0.22）。"
           },
           {
             "rank": 2,
             "sentence_id": 96,
-            "text": "Different green letters above the green dots indicate contributions of 9311 vs. Nipponbare were 58.3% vs 41.7% when all TRILs were considered together (Fig. 2f)."
+            "text": "Different green letters above the green dots indicate contributions of 9311 vs. Nipponbare were 58.3% vs 41.7% when all TRILs were considered together (Fig. 2f).",
+            "text_zh": "绿点上方的不同绿色字母表示，当所有trir一起考虑时，9311对Nipponbare的贡献为58.3%对41.7%（图2f）。"
           },
           {
             "rank": 3,
             "sentence_id": 40,
-            "text": "Analysis of the TRILs led to the identification of several factors constraining genomic compositions of the mosaics, including genomewide overall asymmetric parental contribution and a single segment that was exclusively uniparental."
+            "text": "Analysis of the TRILs led to the identification of several factors constraining genomic compositions of the mosaics, including genomewide overall asymmetric parental contribution and a single segment that was exclusively uniparental.",
+            "text_zh": "通过对trail的分析，我们确定了几个限制嵌合体基因组组成的因素，包括全基因组的整体不对称亲本贡献和单片段的完全单亲本贡献。"
           },
           {
             "rank": 4,
             "sentence_id": 97,
-            "text": "This difference is statistically significant (P < 2.2 × 10−16 by Mann–Whitney U-test), indicating that, overall, 9311 and Nipponbare were the major and minor contributors, respectively, to the genomic compositions of the TRILs, a conclusion that holds irrespective of the crossing direction (P = 0.782, Mann–Whitney U-test; Supplementary Table 1)."
+            "text": "This difference is statistically significant (P < 2.2 × 10−16 by Mann–Whitney U-test), indicating that, overall, 9311 and Nipponbare were the major and minor contributors, respectively, to the genomic compositions of the TRILs, a conclusion that holds irrespective of the crossing direction (P = 0.782, Mann–Whitney U-test; Supplementary Table 1).",
+            "text_zh": "这一差异具有统计学意义（Mann-Whitney u检验P < 2.2 × 10−16），表明总体而言，9311和Nipponbare分别是trir基因组组成的主要贡献者和次要贡献者，这一结论与交叉方向无关（P = 0.782， Mann-Whitney u检验；补充表1）。"
           },
           {
             "rank": 5,
             "sentence_id": 297,
-            "text": "Nipponbare. Our analyses of transcriptome and methylome of the diploid F1 hybrids and the immediate-generation allotetraploids suggest that the asymmetrical parental contribution to the TRILs was not contributed by overall functional subgenome dominance (Supplementary Fig. 16), as proposed for many other systems71."
+            "text": "Nipponbare. Our analyses of transcriptome and methylome of the diploid F1 hybrids and the immediate-generation allotetraploids suggest that the asymmetrical parental contribution to the TRILs was not contributed by overall functional subgenome dominance (Supplementary Fig. 16), as proposed for many other systems71.",
+            "text_zh": "Nipponbare。我们对二倍体F1杂交种和即代异源四倍体的转录组和甲基组的分析表明，亲本对trail的不对称贡献并不像许多其他系统所提出的那样，是由整体功能亚基因组优势造成的（补充图16）。"
           },
           {
             "rank": 6,
             "sentence_id": 53,
-            "text": "Four TRILs showed the highest level of homogenization (96.6–97.8%), while 4 TRILs remained segmentally highly heterozygous, with only 36.8–54.7% of the genomic regions attaining homozygosity (all-four-copy segmental homogeneity) (Fig. 1e)."
+            "text": "Four TRILs showed the highest level of homogenization (96.6–97.8%), while 4 TRILs remained segmentally highly heterozygous, with only 36.8–54.7% of the genomic regions attaining homozygosity (all-four-copy segmental homogeneity) (Fig. 1e).",
+            "text_zh": "4个TRILs均质性最高（96.6-97.8%），而4个TRILs在片段上仍然是高度杂合的，只有36.8-54.7%的基因组区域达到纯合（全四拷贝片段同质性）（图1e）。"
           },
           {
             "rank": 7,
             "sentence_id": 233,
-            "text": "To evaluate the phenotypic consequences of variable genomic compositions of the TRILs, we measured 20 morphological and 3 physiological traits in the 202 TRILs along with their diploid parental cultivars (Nipponbare and 9311), autotetraploids of both parents (Nipponbare-4X and 9311-4X), reciprocal diploid F1 hybrids (N9-F1 and 9N-F1) and reciprocal S1 segmental allotetraploids (NN99-F1 and 99NN-F1) in 2 consecutive years (2021–2022) under normal paddy-field conditions, except for germination rate, which was assayed under controlled laboratory conditions (Fig. 6a–d, and Supplementary Tables 13 and 14)."
+            "text": "To evaluate the phenotypic consequences of variable genomic compositions of the TRILs, we measured 20 morphological and 3 physiological traits in the 202 TRILs along with their diploid parental cultivars (Nipponbare and 9311), autotetraploids of both parents (Nipponbare-4X and 9311-4X), reciprocal diploid F1 hybrids (N9-F1 and 9N-F1) and reciprocal S1 segmental allotetraploids (NN99-F1 and 99NN-F1) in 2 consecutive years (2021–2022) under normal paddy-field conditions, except for germination rate, which was assayed under controlled laboratory conditions (Fig. 6a–d, and Supplementary Tables 13 and 14).",
+            "text_zh": "为了评价trail基因变异对表型的影响，我们连续2年（2021-2022）在正常水田条件下测定了202个trail及其二倍体亲本品种（Nipponbare和9311）、双亲的同源四倍体（Nipponbare- 4x和9311- 4x）、互易二倍体F1杂交品种（N9-F1和9N-F1）和互易S1片段异源四倍体（NN99-F1和99n -F1）的20个形态和3个生理性状。除了发芽率外，发芽率是在受控的实验室条件下测定的（图6a-d，补充表13和14）。"
           },
           {
             "rank": 8,
             "sentence_id": 151,
-            "text": "We further quantified the numbers of accumulated HEs in TRILs and HRs in diploid recombinant inbred lines (DRILs) and found that HEs were twice as numerous as HRs, 108.42 vs 57.40 per line on average (Fig. 3d)."
+            "text": "We further quantified the numbers of accumulated HEs in TRILs and HRs in diploid recombinant inbred lines (DRILs) and found that HEs were twice as numerous as HRs, 108.42 vs 57.40 per line on average (Fig. 3d).",
+            "text_zh": "我们进一步量化了二倍体重组自交系（DRILs） trir和hr中he的累积数量，发现he是hr的两倍，平均每株108.42 vs 57.40（图3d）。"
           },
           {
             "rank": 9,
             "sentence_id": 75,
-            "text": "The 12 chromosomes manifested marked differences in the numbers of accumulated HEs (Fig. 2c)."
+            "text": "The 12 chromosomes manifested marked differences in the numbers of accumulated HEs (Fig. 2c).",
+            "text_zh": "12条染色体在he积累数量上存在显著差异（图2c）。"
           },
           {
             "rank": 10,
             "sentence_id": 95,
-            "text": "Error bars on both histograms and green dots represent s.e.m."
+            "text": "Error bars on both histograms and green dots represent s.e.m.",
+            "text_zh": "直方图上的误差条和绿点都代表s.e.m。"
           }
         ]
       },
@@ -1337,37 +1404,44 @@
           {
             "rank": 1,
             "sentence_id": 161,
-            "text": "Unexpectedly, based on the whole-genome resequencing data, we found that all 202 TRILs contained a single segment of variable length on Chr."
+            "text": "Unexpectedly, based on the whole-genome resequencing data, we found that all 202 TRILs contained a single segment of variable length on Chr.",
+            "text_zh": "出乎意料的是，基于全基因组重测序数据，我们发现所有202个trir在Chr上都包含一个可变长度的单个片段。"
           },
           {
             "rank": 2,
             "sentence_id": 174,
-            "text": "Together, the exclusive 9311 uniparental inheritance of this 1.7-Mb core segment of Chr."
+            "text": "Together, the exclusive 9311 uniparental inheritance of this 1.7-Mb core segment of Chr.",
+            "text_zh": "总之，这个1.7 mb的Chr核心段的独占9311单亲代继承。"
           },
           {
             "rank": 3,
             "sentence_id": 194,
-            "text": "b, Heat maps displaying the same chromosomal segment (as in a) in 6 randomly selected TRILs by mapping the resequencing reads against the parental Nipponbare and 9311 reference genomes, respectively, to test for potential influence of different reference a component of the DNA damage repair complex) (Supplementary Table 8)."
+            "text": "b, Heat maps displaying the same chromosomal segment (as in a) in 6 randomly selected TRILs by mapping the resequencing reads against the parental Nipponbare and 9311 reference genomes, respectively, to test for potential influence of different reference a component of the DNA damage repair complex) (Supplementary Table 8).",
+            "text_zh": "b，热图显示了6个随机选择的trail中相同的染色体片段（如a所示），分别针对亲本Nipponbare和9311参考基因组绘制重测序读数，以测试DNA损伤修复复合体的不同参考组分的潜在影响)（补充表8）。"
           },
           {
             "rank": 4,
             "sentence_id": 163,
-            "text": "After aligning sequences of the segments, the ‘core segment’ shared by all TRILs was delineated as 1.7-Mb in length and mapped to the position ‘Chr."
+            "text": "After aligning sequences of the segments, the ‘core segment’ shared by all TRILs was delineated as 1.7-Mb in length and mapped to the position ‘Chr.",
+            "text_zh": "在对片段序列进行比对后，所有trir共有的“核心片段”被划定为1.7 mb的长度，并映射到位置“Chr”。"
           },
           {
             "rank": 5,
             "sentence_id": 184,
-            "text": "Importantly, among the 9311-specific genes, 3 were found to have transposed from the original 1.7-Mb focal region to other genomic loci (rather than physical loss) in the Nipponbare genome (Fig. 4c and Supplementary Table 8)."
+            "text": "Importantly, among the 9311-specific genes, 3 were found to have transposed from the original 1.7-Mb focal region to other genomic loci (rather than physical loss) in the Nipponbare genome (Fig. 4c and Supplementary Table 8).",
+            "text_zh": "重要的是，在9311个特异性基因中，有3个被发现从最初的1.7 mb焦点区域转位到Nipponbare基因组中的其他基因组位点（而不是物理丢失）（图4c和补充表8）。"
           },
           {
             "rank": 6,
             "sentence_id": 197,
-            "text": "Together, our results suggest The ‘core segment’ on Chr."
+            "text": "Together, our results suggest The ‘core segment’ on Chr.",
+            "text_zh": "总之，我们的研究结果表明，Chr的“核心部分”。"
           },
           {
             "rank": 7,
             "sentence_id": 193,
-            "text": "The core segment shared by all 202 TRILs is delimited by two dashed vertical orange lines."
+            "text": "The core segment shared by all 202 TRILs is delimited by two dashed vertical orange lines.",
+            "text_zh": "所有202个trail共享的核心段由两条垂直的橙色虚线分隔。"
           }
         ]
       },
@@ -1497,52 +1571,62 @@
           {
             "rank": 1,
             "sentence_id": 152,
-            "text": "We caution that the HR and HE numbers are the cumulative results of 12 consecutive generations, thus the difference is more likely due to a longer temporal window in tetraploids than in diploids before homozygosity was reached, rather than necessarily more recombination events per meiosis in the tetraploids."
+            "text": "We caution that the HR and HE numbers are the cumulative results of 12 consecutive generations, thus the difference is more likely due to a longer temporal window in tetraploids than in diploids before homozygosity was reached, rather than necessarily more recombination events per meiosis in the tetraploids.",
+            "text_zh": "我们注意到，HR和HE数是连续12代的累积结果，因此这种差异更可能是由于四倍体比二倍体在达到纯合之前有更长的时间窗口，而不是四倍体每次减数分裂中必然有更多的重组事件。"
           },
           {
             "rank": 2,
             "sentence_id": 108,
-            "text": "We tabulated the chromosomal distribution and features of HRs in the diploid RILs and compared these to those of HEs from the 202 TRILs."
+            "text": "We tabulated the chromosomal distribution and features of HRs in the diploid RILs and compared these to those of HEs from the 202 TRILs.",
+            "text_zh": "我们将二倍体RILs中HRs的染色体分布和特征制成表格，并将其与202个trail中的HRs进行比较。"
           },
           {
             "rank": 3,
             "sentence_id": 151,
-            "text": "We further quantified the numbers of accumulated HEs in TRILs and HRs in diploid recombinant inbred lines (DRILs) and found that HEs were twice as numerous as HRs, 108.42 vs 57.40 per line on average (Fig. 3d)."
+            "text": "We further quantified the numbers of accumulated HEs in TRILs and HRs in diploid recombinant inbred lines (DRILs) and found that HEs were twice as numerous as HRs, 108.42 vs 57.40 per line on average (Fig. 3d).",
+            "text_zh": "我们进一步量化了二倍体重组自交系（DRILs） trir和hr中he的累积数量，发现he是hr的两倍，平均每株108.42 vs 57.40（图3d）。"
           },
           {
             "rank": 4,
             "sentence_id": 160,
-            "text": "This genic enrichment of HEs (in TRILs) but not of HRs (in DRILs) coincided with genomewide substantially more hypo-DNA methylation of the regions in the segmental allotetraploids (S0) than in the diploid F1 hybrids relative to the diploid parents (Supplementary Table 3 and Supplementary Results)."
+            "text": "This genic enrichment of HEs (in TRILs) but not of HRs (in DRILs) coincided with genomewide substantially more hypo-DNA methylation of the regions in the segmental allotetraploids (S0) than in the diploid F1 hybrids relative to the diploid parents (Supplementary Table 3 and Supplementary Results).",
+            "text_zh": "he（在TRILs中）而hr（在DRILs中）的基因富集与片段异体四倍体（S0）中区域的低dna甲基化在全基因组范围内比二倍体F1杂交体中相对于二倍体亲本有更多的低dna甲基化相吻合（补充表3和补充结果）。"
           },
           {
             "rank": 5,
             "sentence_id": 106,
-            "text": "We sought to interrogate whether and to what extent HEs at the tetraploid level would be similar to, or different from, HRs at the diploid level."
+            "text": "We sought to interrogate whether and to what extent HEs at the tetraploid level would be similar to, or different from, HRs at the diploid level.",
+            "text_zh": "我们试图探究四倍体水平的he是否和在多大程度上与二倍体水平的hr相似或不同。"
           },
           {
             "rank": 6,
             "sentence_id": 127,
-            "text": "1 2 3 4 5 6 7 transposable elements (MITEs) content, histone modifications by H3K27me3, H3K9ac, H3K4me3 and H3K36me3, and chromatin accessibility) exhibited significant positive correlations with the rates of both HEs and HRs, while three features (CGand CHG-methylation, and retrotransposon content) showed significant negative correlations with the rates of both HEs and HRs (Pearson correlation P < 0.01, Fig. 3b,c and Supplementary Figs. 4–10)."
+            "text": "1 2 3 4 5 6 7 transposable elements (MITEs) content, histone modifications by H3K27me3, H3K9ac, H3K4me3 and H3K36me3, and chromatin accessibility) exhibited significant positive correlations with the rates of both HEs and HRs, while three features (CGand CHG-methylation, and retrotransposon content) showed significant negative correlations with the rates of both HEs and HRs (Pearson correlation P < 0.01, Fig. 3b,c and Supplementary Figs. 4–10).",
+            "text_zh": "转座因子（MITEs）含量、H3K27me3、H3K9ac、H3K4me3和H3K36me3组蛋白修饰以及染色质可及性（染色质可及性）与HEs和hr的发生率均呈显著正相关，而三个特征（cgg和chg甲基化、反转录转座子含量）与HEs和hr的发生率均呈显著负相关（Pearson相关P < 0.01，图3b、c和补充图4 - 10）。"
           },
           {
             "rank": 7,
             "sentence_id": 218,
-            "text": "As controls, we also included the S1 segmental allotetraploids (NN99-S1 and 99NN-S1) and two sensu stricto autotetraploids (Nipponbare-4X and 9311-4X) from newly doubled diploid parental cultivars, Nipponbare and 9311."
+            "text": "As controls, we also included the S1 segmental allotetraploids (NN99-S1 and 99NN-S1) and two sensu stricto autotetraploids (Nipponbare-4X and 9311-4X) from newly doubled diploid parental cultivars, Nipponbare and 9311.",
+            "text_zh": "作为对照，我们还选择了来自新双倍二倍体亲本品种Nipponbare和9311的S1段异位四倍体（NN99-S1和99NN-S1）和两个严格感同源四倍体（Nipponbare- 4x和9311- 4x）。"
           },
           {
             "rank": 8,
             "sentence_id": 103,
-            "text": "Thus, F2 segregation populations and RILs can be obtained from sufficiently large number of F1 individuals to study homologous recombination (HR) at the diploid level."
+            "text": "Thus, F2 segregation populations and RILs can be obtained from sufficiently large number of F1 individuals to study homologous recombination (HR) at the diploid level.",
+            "text_zh": "因此，可以从足够数量的F1个体中获得F2分离群体和ril，从而在二倍体水平上研究同源重组（HR）。"
           },
           {
             "rank": 9,
             "sentence_id": 136,
-            "text": "b,c, Scatterplots displaying the correlations between either HE (b) or HR (c) rate with genomic and epigenomic features, including genomic similarity (defined in Methods), CG DNA methylation (mCG), chromatin accessibility correlations were highly consistent when both parental data were used separately (Supplementary Figs. 4–10)."
+            "text": "b,c, Scatterplots displaying the correlations between either HE (b) or HR (c) rate with genomic and epigenomic features, including genomic similarity (defined in Methods), CG DNA methylation (mCG), chromatin accessibility correlations were highly consistent when both parental data were used separately (Supplementary Figs. 4–10).",
+            "text_zh": "b,c，散点图显示HE (b)或HR (c)率与基因组和表观基因组特征之间的相关性，包括基因组相似性（在方法中定义），CG DNA甲基化（mCG），当两个亲本数据分别使用时，染色质可及性相关性高度一致（补充图4-10）。"
           },
           {
             "rank": 10,
             "sentence_id": 153,
-            "text": "This scenario is corroborated by our cytogenetically quantified chiasmata data, the cytological manifestation of crossover (CO), which showed that tetraploids had no more than approximately twice the number of chiasmata (including both HRs and HEs) of the diploids (Extended Data Fig. 2b–d)."
+            "text": "This scenario is corroborated by our cytogenetically quantified chiasmata data, the cytological manifestation of crossover (CO), which showed that tetraploids had no more than approximately twice the number of chiasmata (including both HRs and HEs) of the diploids (Extended Data Fig. 2b–d).",
+            "text_zh": "我们的细胞遗传学定量交叉数据证实了这种情况，交叉的细胞学表现（CO）表明，四倍体的交叉（包括hr和HEs）数量不超过二倍体的大约两倍（扩展数据图2b-d）。"
           }
         ]
       },
@@ -1665,52 +1749,62 @@
           {
             "rank": 1,
             "sentence_id": 220,
-            "text": "Of note, of the two high-fertility TRILs, one (T9N-14) did not show reduced bivalent frequency and increased total quadrivalent frequency than the most stable S1 segmental allotetraploids (NN99-S1 and 99NN-S1), while the other (TN9-81) showed only marginal differences; in contrast, both low-fertility TRILs (TN9-16 and TN9-17) showed substantially greater differences from the S1 segmental allotetraploids in both bivalent and quadrivalent pairing frequencies (Fig. 5c)."
+            "text": "Of note, of the two high-fertility TRILs, one (T9N-14) did not show reduced bivalent frequency and increased total quadrivalent frequency than the most stable S1 segmental allotetraploids (NN99-S1 and 99NN-S1), while the other (TN9-81) showed only marginal differences; in contrast, both low-fertility TRILs (TN9-16 and TN9-17) showed substantially greater differences from the S1 segmental allotetraploids in both bivalent and quadrivalent pairing frequencies (Fig. 5c).",
+            "text_zh": "值得注意的是，在两个高育性trir中，一个（T9N-14）没有表现出比最稳定的S1片段异源四倍体（NN99-S1和99NN-S1）降低的二价频率和增加的总四价频率，而另一个（TN9-81）仅表现出边际差异；相比之下，两种低育性trir （TN9-16和TN9-17）在二价和四价配对频率上都与S1片段异源四倍体表现出更大的差异（图5c）。"
           },
           {
             "rank": 2,
             "sentence_id": 333,
-            "text": "We further show that the restabilized meiosis of these two high-fertility TRILs is mainly due to concurrent higher levels of bivalent and the alternate-type quadrivalent pairing configurations compared with the low-fertility lines."
+            "text": "We further show that the restabilized meiosis of these two high-fertility TRILs is mainly due to concurrent higher levels of bivalent and the alternate-type quadrivalent pairing configurations compared with the low-fertility lines.",
+            "text_zh": "我们进一步表明，这两个高育性trir的重稳定减数分裂主要是由于与低育性系相比，二价和交替型四价配对构型同时较高。"
           },
           {
             "rank": 3,
             "sentence_id": 225,
-            "text": "Different chromosomal pairing configurations (adjacent quadrivalent, alternate quadrivalent, bivalent, chain and ambiguous) are indicated."
+            "text": "Different chromosomal pairing configurations (adjacent quadrivalent, alternate quadrivalent, bivalent, chain and ambiguous) are indicated.",
+            "text_zh": "不同的染色体配对构型（相邻四价，交替四价，二价，链式和歧义）表示。"
           },
           {
             "rank": 4,
             "sentence_id": 43,
-            "text": "These high-fertility TRILs also manifested high meiotic stability due to an increase of bivalent formation and the alternate-orientation type of quadrivalent configuration."
+            "text": "These high-fertility TRILs also manifested high meiotic stability due to an increase of bivalent formation and the alternate-orientation type of quadrivalent configuration.",
+            "text_zh": "由于二价结构的增加和四价结构的交替取向类型，这些高育性trir还表现出高的减数分裂稳定性。"
           },
           {
             "rank": 5,
             "sentence_id": 221,
-            "text": "More strikingly, of the quadrivalents that could be discernibly classified as chained, alternate and adjacent configurations, the alternate type, which is known as most likely to proceed to a 2:2 balanced chromosome segregation during anaphase13, showed similar frequencies between the two high-fertility TRILs and the S1 segmental allotetraploids, while both low-fertility TRILs and the sensu stricto autotetraploids (Nipponbare-4X and 9311-4X) showed significantly lower frequencies of this quadrivalent configuration (Fig. 5c)."
+            "text": "More strikingly, of the quadrivalents that could be discernibly classified as chained, alternate and adjacent configurations, the alternate type, which is known as most likely to proceed to a 2:2 balanced chromosome segregation during anaphase13, showed similar frequencies between the two high-fertility TRILs and the S1 segmental allotetraploids, while both low-fertility TRILs and the sensu stricto autotetraploids (Nipponbare-4X and 9311-4X) showed significantly lower frequencies of this quadrivalent configuration (Fig. 5c).",
+            "text_zh": "更引人注目的是，在可被区分为链式、交替型和相邻型的四对偶体中，交替型在晚期13最有可能进行2:2平衡的染色体分离，在两个高育性trir和S1段异源四倍体之间显示出相似的频率。而低育性trir和严格感同源四倍体（Nipponbare-4X和9311-4X）显示出明显较低的四价构型频率（图5c）。"
           },
           {
             "rank": 6,
             "sentence_id": 229,
-            "text": "Taken together, our data indicate that (1) meiotic instability is closely associated with fertility, as expected; (2) not all autotetraploidized TRILs necessarily show increased meiotic instability; rather, some can maintain, if not enhance, the level of meiotic stability of their segmental allotetraploid progenitors due to stabilized frequencies of both bivalent formation and the alternate type of quadrivalent configuration, which however is genomic context dependent."
+            "text": "Taken together, our data indicate that (1) meiotic instability is closely associated with fertility, as expected; (2) not all autotetraploidized TRILs necessarily show increased meiotic instability; rather, some can maintain, if not enhance, the level of meiotic stability of their segmental allotetraploid progenitors due to stabilized frequencies of both bivalent formation and the alternate type of quadrivalent configuration, which however is genomic context dependent.",
+            "text_zh": "综上所述，我们的数据表明：(1)减数分裂不稳定性与生育密切相关，正如预期的那样；(2)并非所有的自体四倍体trail都表现出减数分裂不稳定性；相反，由于二价形成和四价结构的交替类型的稳定频率，一些人可以维持（如果不能增强）其片段异源四倍体祖细胞的减数分裂稳定性水平，然而，这取决于基因组背景。"
           },
           {
             "rank": 7,
             "sentence_id": 246,
-            "text": "Representative figure from 3 independent experiments, n = 3 for each genotype."
+            "text": "Representative figure from 3 independent experiments, n = 3 for each genotype.",
+            "text_zh": "3个独立实验的代表性图，每个基因型n = 3。"
           },
           {
             "rank": 8,
             "sentence_id": 253,
-            "text": "We next assessed performance of the TRILs along with their two diploid parental cultivars, the diploid F1 hybrids (9N-F1 and N9-F1), the S1 segmental allotetraploids (NN99-S1 and 99NN-S1) and autotetraploids of both parents under two abiotic stress conditions, NaCl (salinity) and chlorate (KClO3) (sensitivity to this chemical is a reliable No. of quadrivalents per PMC No. of bivalents per PMC Chain Adjacent Alternate Ambiguous (%) (%) (%) (%) 1.29 ± 0.92 3.87 ± 1.36 0.81 ± 0.96 4.10 ± 1.80 3.87 ± 2.68 d (12.83%) ab (38.46%) a (8.01%) c (40.71%) ab 1.40 ± 1.02 3.63 ± 1.62 0.50 ± 0.74 4.13 ± 1.83 4.71 ± 3.28 d (14.47%) a (37.58%) a (5.18%) d (42.76%) ab 1.08 ± 1.01 2.08 ± 1.36 1.33 ± 1.00 2.89 ± 1.39 8.94 ± 3.67 a (14.66%) a (28.20%) b (18.05%) ab (39.10%) ab 0.96 ± 0.88 1.98 ± 1.31 1.52 ± 1.16 3.07 ± 1.17 8.83 ± 2.84 a (12.72%) ab (26.30%) b (20.23%) ab (40.75%) ab 1.42 ± 1.00 2.80 ± 1.28 0.51 ± 0.65 4.20 ± 1.54 6.13 ± 2.90 c (15.92%) a (31.34%) b (5.72%) cd (47.01%) a 1.15 ± 0.85 3.52 ± 1.40 0.74 ± 0.89 3.52 ± 1.47 6.15 ± 2.37 bc (12.86%) ab (39.42%) a (8.30%) c (39.42%) ab 0.72 ± 0.73 2.75 ± 1.28 1.31 ± 0.97 3.44 ± 1.36 7.17 ± 3.42 b (8.78%) b (33.45%) ab (15.88%) b (41.89%) ab 0.73 ± 0.98 2.38 ± 1.50 1.60 ± 0.98 2.82 ± 1.46 8.64 ± 2.69 a (9.73%) b (31.56%) b (21.24%) a (37.46%) b g h i m n o r s 100 1n 2n Normalized to mode 80 60 40 20 0 4 5 3 10 0 10 10 752 a NPB 9311 N9-F1 9N-F1 NPB-4X b NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 N = 12 N = 10 N = 12 N = 12 N = 12 N = 11 N = 8 N = 9 n = 29 n = 44 n = 41 n = 40 n = 26 n = 38 n = 24 n = 23 c NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 96.7% 97.5% 3.0% 2.3% 20.0% 37.5% 43.3% 44.6% e 150 mM NaCl 7 cm NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 TN9-81 T9N-29 Mock 150 mM NaCl, 7 d, recovered, 7 d h g 100% 100 Yield per plant (g) Survival rate (%) 75% 75 a b b b a 50% 50 c c cd cd c c d 25% 25 e e e 0% 0 NPB-4X 9311-4X N9-F1 9N-F1 NPB 9311 NPB 9311 NN99-S1 TN9-81 N9-F1 9N-F1 NPB-4X 99NN-S1 T9N-14 9311-4X Fig. 6 | Morphology and abiotic stress tolerance traits in diploid parents, F1 hybrids, autotetraploids, segmental allotetraploids and selected TRILs."
+            "text": "We next assessed performance of the TRILs along with their two diploid parental cultivars, the diploid F1 hybrids (9N-F1 and N9-F1), the S1 segmental allotetraploids (NN99-S1 and 99NN-S1) and autotetraploids of both parents under two abiotic stress conditions, NaCl (salinity) and chlorate (KClO3) (sensitivity to this chemical is a reliable No. of quadrivalents per PMC No. of bivalents per PMC Chain Adjacent Alternate Ambiguous (%) (%) (%) (%) 1.29 ± 0.92 3.87 ± 1.36 0.81 ± 0.96 4.10 ± 1.80 3.87 ± 2.68 d (12.83%) ab (38.46%) a (8.01%) c (40.71%) ab 1.40 ± 1.02 3.63 ± 1.62 0.50 ± 0.74 4.13 ± 1.83 4.71 ± 3.28 d (14.47%) a (37.58%) a (5.18%) d (42.76%) ab 1.08 ± 1.01 2.08 ± 1.36 1.33 ± 1.00 2.89 ± 1.39 8.94 ± 3.67 a (14.66%) a (28.20%) b (18.05%) ab (39.10%) ab 0.96 ± 0.88 1.98 ± 1.31 1.52 ± 1.16 3.07 ± 1.17 8.83 ± 2.84 a (12.72%) ab (26.30%) b (20.23%) ab (40.75%) ab 1.42 ± 1.00 2.80 ± 1.28 0.51 ± 0.65 4.20 ± 1.54 6.13 ± 2.90 c (15.92%) a (31.34%) b (5.72%) cd (47.01%) a 1.15 ± 0.85 3.52 ± 1.40 0.74 ± 0.89 3.52 ± 1.47 6.15 ± 2.37 bc (12.86%) ab (39.42%) a (8.30%) c (39.42%) ab 0.72 ± 0.73 2.75 ± 1.28 1.31 ± 0.97 3.44 ± 1.36 7.17 ± 3.42 b (8.78%) b (33.45%) ab (15.88%) b (41.89%) ab 0.73 ± 0.98 2.38 ± 1.50 1.60 ± 0.98 2.82 ± 1.46 8.64 ± 2.69 a (9.73%) b (31.56%) b (21.24%) a (37.46%) b g h i m n o r s 100 1n 2n Normalized to mode 80 60 40 20 0 4 5 3 10 0 10 10 752 a NPB 9311 N9-F1 9N-F1 NPB-4X b NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 N = 12 N = 10 N = 12 N = 12 N = 12 N = 11 N = 8 N = 9 n = 29 n = 44 n = 41 n = 40 n = 26 n = 38 n = 24 n = 23 c NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 96.7% 97.5% 3.0% 2.3% 20.0% 37.5% 43.3% 44.6% e 150 mM NaCl 7 cm NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 TN9-81 T9N-29 Mock 150 mM NaCl, 7 d, recovered, 7 d h g 100% 100 Yield per plant (g) Survival rate (%) 75% 75 a b b b a 50% 50 c c cd cd c c d 25% 25 e e e 0% 0 NPB-4X 9311-4X N9-F1 9N-F1 NPB 9311 NPB 9311 NN99-S1 TN9-81 N9-F1 9N-F1 NPB-4X 99NN-S1 T9N-14 9311-4X Fig. 6 | Morphology and abiotic stress tolerance traits in diploid parents, F1 hybrids, autotetraploids, segmental allotetraploids and selected TRILs.",
+            "text_zh": "接下来，我们评估了TRILs及其两个二倍体亲本品种，二倍体F1杂交品种（9N-F1和N9-F1）， S1段异源四倍体（NN99-S1和99NN-S1）和亲本同源四倍体在NaCl（盐度）和氯酸盐（KClO3）两种非生物胁迫条件下的表现。每个PMC的四分位每PMC链相邻交替模棱两可的现象  (%) (%) (%) (%) 1.29±0.92 - 3.87±1.36 0.81 0.96±4.10±1.80 3.87±2.68 d (12.83%) ab (38.46%) (8.01%) c (40.71%) ab 1.40±1.02 - 3.63±1.62 0.50 0.74±4.13±1.83 4.71±3.28 d (14.47%) (37.58%) (5.18%) d (42.76%) ab 1.08±1.01 - 2.08±1.36 1.33±1.00 - 2.89±1.39 - 8.94±3.67 b (14.66%) (28.20%) (18.05%) ab (39.10%) ab 0.96±0.88 - 1.98±1.31 1.52±1.16 - 3.07±1.17 - 8.83±2.84 b (12.72%) ab (26.30%) (20.23%) ab (40.75%)ab 1.42±1.00 - 2.80±1.28 0.51±0.65 - 4.20±1.54 - 6.13±2.90摄氏度(15.92%)(31.34%)b (5.72%) cd(47.01%) 1.15±0.85 - 3.52±1.40 0.74 0.89±3.52±1.47 6.15±2.37 bc (12.86%) ab (39.42%) (8.30%) c (39.42%) ab 0.72±0.73 - 2.75±1.28 1.31±0.97 - 3.44±1.36 - 7.17±3.42 b (8.78%) (33.45%) ab (15.88%) b (41.89%) ab 0.73±0.98 - 2.38±1.50 1.60±0.98 - 2.82±1.46 - 8.64±2.69 b (9.73%) (31.56%) (21.24%) (37.46%) b g h i m n o r s 100 1 n 2 n规范化模式80 60 40 20 0 4 5 3 10 010 752 9311 NPB N9-F1 9 n-f1 NPB-4X b NPB 9311 N9-F1 9 n-f1 NPB-4X 9311 - 4 - x NN99-S1 99 nn-s1 N = 12 N = 10 N = 12 N = 12 N = 12 N = 11 N = 8 N = 9 N = 29 N = 44 N = 41 N = 40 N = 26 N = 38 N = 24 N = 23 c NPB 9311 N9-F1 9 n-f1 NPB-4X 9311 - 4 - x NN99-S1 99 nn-s1 96.7% 97.5% 3.0% 2.3% 20.0% 37.5% 43.3% 44.6% e 150毫米氯化钠7厘米NPB 9311 N9-F1 9 n-f1 NPB-4X 9311 - 4 - x NN99-S1 99 nn-s1 tn9 - 81 T9N-29模拟150毫米氯化钠,7 d,恢复,7 d h g 100% 100单株产量(g)存活率（%）75% 75 ab b a 50% 50 c c c c c c cd 25% 25 e e e e 0% 0 NPB- 4x 9311- 4x N9-F1 9N-F1 NPB 9311 NPB 9311 NN99-S1 TN9-81 N9-F1 9N-F1 NPB- 4x 99NN-S1 T9N-14 9311- 4x图6 |二倍体亲本、F1杂交种、同源四倍体、片段异源四倍体和精选trir的形态和非生物耐受性性状"
           },
           {
             "rank": 9,
             "sentence_id": 244,
-            "text": "Representative figure from 5 independent inspections, n = 3 for each genotype."
+            "text": "Representative figure from 5 independent inspections, n = 3 for each genotype.",
+            "text_zh": "5个独立检验的代表性图，每个基因型n = 3。"
           },
           {
             "rank": 10,
             "sentence_id": 217,
-            "text": "To test this prediction, we compared meiotic chromosome behaviour at metaphase of meiosis I of two TRILs that showed the highest fertilities (TN9-81 and T9N-14) with two TRILs that showed the lowest fertilities (TN9-16 and TN9-17) among the 202 lines (Supplementary Table 12)."
+            "text": "To test this prediction, we compared meiotic chromosome behaviour at metaphase of meiosis I of two TRILs that showed the highest fertilities (TN9-81 and T9N-14) with two TRILs that showed the lowest fertilities (TN9-16 and TN9-17) among the 202 lines (Supplementary Table 12).",
+            "text_zh": "为了验证这一预测，我们比较了202个品系中两个育性最高的trir （TN9-81和T9N-14）和两个育性最低的trir （TN9-16和TN9-17）在减数分裂I中期的染色体行为（补充表12）。"
           }
         ]
       },
@@ -1841,52 +1935,62 @@
           {
             "rank": 1,
             "sentence_id": 233,
-            "text": "To evaluate the phenotypic consequences of variable genomic compositions of the TRILs, we measured 20 morphological and 3 physiological traits in the 202 TRILs along with their diploid parental cultivars (Nipponbare and 9311), autotetraploids of both parents (Nipponbare-4X and 9311-4X), reciprocal diploid F1 hybrids (N9-F1 and 9N-F1) and reciprocal S1 segmental allotetraploids (NN99-F1 and 99NN-F1) in 2 consecutive years (2021–2022) under normal paddy-field conditions, except for germination rate, which was assayed under controlled laboratory conditions (Fig. 6a–d, and Supplementary Tables 13 and 14)."
+            "text": "To evaluate the phenotypic consequences of variable genomic compositions of the TRILs, we measured 20 morphological and 3 physiological traits in the 202 TRILs along with their diploid parental cultivars (Nipponbare and 9311), autotetraploids of both parents (Nipponbare-4X and 9311-4X), reciprocal diploid F1 hybrids (N9-F1 and 9N-F1) and reciprocal S1 segmental allotetraploids (NN99-F1 and 99NN-F1) in 2 consecutive years (2021–2022) under normal paddy-field conditions, except for germination rate, which was assayed under controlled laboratory conditions (Fig. 6a–d, and Supplementary Tables 13 and 14).",
+            "text_zh": "为了评价trail基因变异对表型的影响，我们连续2年（2021-2022）在正常水田条件下测定了202个trail及其二倍体亲本品种（Nipponbare和9311）、双亲的同源四倍体（Nipponbare- 4x和9311- 4x）、互易二倍体F1杂交品种（N9-F1和9N-F1）和互易S1片段异源四倍体（NN99-F1和99n -F1）的20个形态和3个生理性状。除了发芽率外，发芽率是在受控的实验室条件下测定的（图6a-d，补充表13和14）。"
           },
           {
             "rank": 2,
             "sentence_id": 42,
-            "text": "Intriguingly, some lines showed high fertility and even gave rise to seed yield surpassing those of the diploid parental cultivars."
+            "text": "Intriguingly, some lines showed high fertility and even gave rise to seed yield surpassing those of the diploid parental cultivars.",
+            "text_zh": "有趣的是，有些品系的育性很高，甚至超过了二倍体亲本品种的种子产量。"
           },
           {
             "rank": 3,
             "sentence_id": 236,
-            "text": "Overall, all types of tetraploids showed reduced fertility and hence lower seed yield relative to their diploid parental cultivars, as expected; nonetheless, 2 TRILs (TN9-81 and T9N-14) showed significantly higher seed yields in both years under normal paddy-field conditions (Fig. 6g and Supplementary Fig. 13)."
+            "text": "Overall, all types of tetraploids showed reduced fertility and hence lower seed yield relative to their diploid parental cultivars, as expected; nonetheless, 2 TRILs (TN9-81 and T9N-14) showed significantly higher seed yields in both years under normal paddy-field conditions (Fig. 6g and Supplementary Fig. 13).",
+            "text_zh": "总的来说，所有类型的四倍体都表现出较低的育性，因此与二倍体亲本品种相比，种子产量更低，正如预期的那样；尽管如此，在正常稻田条件下，2个trir （TN9-81和T9N-14）的种子产量在这两年都有显著提高（图6g和补充图13）。"
           },
           {
             "rank": 4,
             "sentence_id": 357,
-            "text": "Phenotyping was conducted for 20 morphological and 3 physiological traits related to vegetative and reproductive growth, including fertility, over 2 consecutive years (2021–2022), except for germination rate, which was measured under controlled laboratory conditions."
+            "text": "Phenotyping was conducted for 20 morphological and 3 physiological traits related to vegetative and reproductive growth, including fertility, over 2 consecutive years (2021–2022), except for germination rate, which was measured under controlled laboratory conditions.",
+            "text_zh": "除发芽率在受控实验室条件下测量外，连续2年（2021-2022）对20个形态学性状和3个与营养和生殖生长相关的生理性状（包括育性）进行表型分析。"
           },
           {
             "rank": 5,
             "sentence_id": 253,
-            "text": "We next assessed performance of the TRILs along with their two diploid parental cultivars, the diploid F1 hybrids (9N-F1 and N9-F1), the S1 segmental allotetraploids (NN99-S1 and 99NN-S1) and autotetraploids of both parents under two abiotic stress conditions, NaCl (salinity) and chlorate (KClO3) (sensitivity to this chemical is a reliable No. of quadrivalents per PMC No. of bivalents per PMC Chain Adjacent Alternate Ambiguous (%) (%) (%) (%) 1.29 ± 0.92 3.87 ± 1.36 0.81 ± 0.96 4.10 ± 1.80 3.87 ± 2.68 d (12.83%) ab (38.46%) a (8.01%) c (40.71%) ab 1.40 ± 1.02 3.63 ± 1.62 0.50 ± 0.74 4.13 ± 1.83 4.71 ± 3.28 d (14.47%) a (37.58%) a (5.18%) d (42.76%) ab 1.08 ± 1.01 2.08 ± 1.36 1.33 ± 1.00 2.89 ± 1.39 8.94 ± 3.67 a (14.66%) a (28.20%) b (18.05%) ab (39.10%) ab 0.96 ± 0.88 1.98 ± 1.31 1.52 ± 1.16 3.07 ± 1.17 8.83 ± 2.84 a (12.72%) ab (26.30%) b (20.23%) ab (40.75%) ab 1.42 ± 1.00 2.80 ± 1.28 0.51 ± 0.65 4.20 ± 1.54 6.13 ± 2.90 c (15.92%) a (31.34%) b (5.72%) cd (47.01%) a 1.15 ± 0.85 3.52 ± 1.40 0.74 ± 0.89 3.52 ± 1.47 6.15 ± 2.37 bc (12.86%) ab (39.42%) a (8.30%) c (39.42%) ab 0.72 ± 0.73 2.75 ± 1.28 1.31 ± 0.97 3.44 ± 1.36 7.17 ± 3.42 b (8.78%) b (33.45%) ab (15.88%) b (41.89%) ab 0.73 ± 0.98 2.38 ± 1.50 1.60 ± 0.98 2.82 ± 1.46 8.64 ± 2.69 a (9.73%) b (31.56%) b (21.24%) a (37.46%) b g h i m n o r s 100 1n 2n Normalized to mode 80 60 40 20 0 4 5 3 10 0 10 10 752 a NPB 9311 N9-F1 9N-F1 NPB-4X b NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 N = 12 N = 10 N = 12 N = 12 N = 12 N = 11 N = 8 N = 9 n = 29 n = 44 n = 41 n = 40 n = 26 n = 38 n = 24 n = 23 c NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 96.7% 97.5% 3.0% 2.3% 20.0% 37.5% 43.3% 44.6% e 150 mM NaCl 7 cm NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 TN9-81 T9N-29 Mock 150 mM NaCl, 7 d, recovered, 7 d h g 100% 100 Yield per plant (g) Survival rate (%) 75% 75 a b b b a 50% 50 c c cd cd c c d 25% 25 e e e 0% 0 NPB-4X 9311-4X N9-F1 9N-F1 NPB 9311 NPB 9311 NN99-S1 TN9-81 N9-F1 9N-F1 NPB-4X 99NN-S1 T9N-14 9311-4X Fig. 6 | Morphology and abiotic stress tolerance traits in diploid parents, F1 hybrids, autotetraploids, segmental allotetraploids and selected TRILs."
+            "text": "We next assessed performance of the TRILs along with their two diploid parental cultivars, the diploid F1 hybrids (9N-F1 and N9-F1), the S1 segmental allotetraploids (NN99-S1 and 99NN-S1) and autotetraploids of both parents under two abiotic stress conditions, NaCl (salinity) and chlorate (KClO3) (sensitivity to this chemical is a reliable No. of quadrivalents per PMC No. of bivalents per PMC Chain Adjacent Alternate Ambiguous (%) (%) (%) (%) 1.29 ± 0.92 3.87 ± 1.36 0.81 ± 0.96 4.10 ± 1.80 3.87 ± 2.68 d (12.83%) ab (38.46%) a (8.01%) c (40.71%) ab 1.40 ± 1.02 3.63 ± 1.62 0.50 ± 0.74 4.13 ± 1.83 4.71 ± 3.28 d (14.47%) a (37.58%) a (5.18%) d (42.76%) ab 1.08 ± 1.01 2.08 ± 1.36 1.33 ± 1.00 2.89 ± 1.39 8.94 ± 3.67 a (14.66%) a (28.20%) b (18.05%) ab (39.10%) ab 0.96 ± 0.88 1.98 ± 1.31 1.52 ± 1.16 3.07 ± 1.17 8.83 ± 2.84 a (12.72%) ab (26.30%) b (20.23%) ab (40.75%) ab 1.42 ± 1.00 2.80 ± 1.28 0.51 ± 0.65 4.20 ± 1.54 6.13 ± 2.90 c (15.92%) a (31.34%) b (5.72%) cd (47.01%) a 1.15 ± 0.85 3.52 ± 1.40 0.74 ± 0.89 3.52 ± 1.47 6.15 ± 2.37 bc (12.86%) ab (39.42%) a (8.30%) c (39.42%) ab 0.72 ± 0.73 2.75 ± 1.28 1.31 ± 0.97 3.44 ± 1.36 7.17 ± 3.42 b (8.78%) b (33.45%) ab (15.88%) b (41.89%) ab 0.73 ± 0.98 2.38 ± 1.50 1.60 ± 0.98 2.82 ± 1.46 8.64 ± 2.69 a (9.73%) b (31.56%) b (21.24%) a (37.46%) b g h i m n o r s 100 1n 2n Normalized to mode 80 60 40 20 0 4 5 3 10 0 10 10 752 a NPB 9311 N9-F1 9N-F1 NPB-4X b NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 N = 12 N = 10 N = 12 N = 12 N = 12 N = 11 N = 8 N = 9 n = 29 n = 44 n = 41 n = 40 n = 26 n = 38 n = 24 n = 23 c NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 96.7% 97.5% 3.0% 2.3% 20.0% 37.5% 43.3% 44.6% e 150 mM NaCl 7 cm NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 TN9-81 T9N-29 Mock 150 mM NaCl, 7 d, recovered, 7 d h g 100% 100 Yield per plant (g) Survival rate (%) 75% 75 a b b b a 50% 50 c c cd cd c c d 25% 25 e e e 0% 0 NPB-4X 9311-4X N9-F1 9N-F1 NPB 9311 NPB 9311 NN99-S1 TN9-81 N9-F1 9N-F1 NPB-4X 99NN-S1 T9N-14 9311-4X Fig. 6 | Morphology and abiotic stress tolerance traits in diploid parents, F1 hybrids, autotetraploids, segmental allotetraploids and selected TRILs.",
+            "text_zh": "接下来，我们评估了TRILs及其两个二倍体亲本品种，二倍体F1杂交品种（9N-F1和N9-F1）， S1段异源四倍体（NN99-S1和99NN-S1）和亲本同源四倍体在NaCl（盐度）和氯酸盐（KClO3）两种非生物胁迫条件下的表现。每个PMC的四分位每PMC链相邻交替模棱两可的现象  (%) (%) (%) (%) 1.29±0.92 - 3.87±1.36 0.81 0.96±4.10±1.80 3.87±2.68 d (12.83%) ab (38.46%) (8.01%) c (40.71%) ab 1.40±1.02 - 3.63±1.62 0.50 0.74±4.13±1.83 4.71±3.28 d (14.47%) (37.58%) (5.18%) d (42.76%) ab 1.08±1.01 - 2.08±1.36 1.33±1.00 - 2.89±1.39 - 8.94±3.67 b (14.66%) (28.20%) (18.05%) ab (39.10%) ab 0.96±0.88 - 1.98±1.31 1.52±1.16 - 3.07±1.17 - 8.83±2.84 b (12.72%) ab (26.30%) (20.23%) ab (40.75%)ab 1.42±1.00 - 2.80±1.28 0.51±0.65 - 4.20±1.54 - 6.13±2.90摄氏度(15.92%)(31.34%)b (5.72%) cd(47.01%) 1.15±0.85 - 3.52±1.40 0.74 0.89±3.52±1.47 6.15±2.37 bc (12.86%) ab (39.42%) (8.30%) c (39.42%) ab 0.72±0.73 - 2.75±1.28 1.31±0.97 - 3.44±1.36 - 7.17±3.42 b (8.78%) (33.45%) ab (15.88%) b (41.89%) ab 0.73±0.98 - 2.38±1.50 1.60±0.98 - 2.82±1.46 - 8.64±2.69 b (9.73%) (31.56%) (21.24%) (37.46%) b g h i m n o r s 100 1 n 2 n规范化模式80 60 40 20 0 4 5 3 10 010 752 9311 NPB N9-F1 9 n-f1 NPB-4X b NPB 9311 N9-F1 9 n-f1 NPB-4X 9311 - 4 - x NN99-S1 99 nn-s1 N = 12 N = 10 N = 12 N = 12 N = 12 N = 11 N = 8 N = 9 N = 29 N = 44 N = 41 N = 40 N = 26 N = 38 N = 24 N = 23 c NPB 9311 N9-F1 9 n-f1 NPB-4X 9311 - 4 - x NN99-S1 99 nn-s1 96.7% 97.5% 3.0% 2.3% 20.0% 37.5% 43.3% 44.6% e 150毫米氯化钠7厘米NPB 9311 N9-F1 9 n-f1 NPB-4X 9311 - 4 - x NN99-S1 99 nn-s1 tn9 - 81 T9N-29模拟150毫米氯化钠,7 d,恢复,7 d h g 100% 100单株产量(g)存活率（%）75% 75 ab b a 50% 50 c c c c c c cd 25% 25 e e e e 0% 0 NPB- 4x 9311- 4x N9-F1 9N-F1 NPB 9311 NPB 9311 NN99-S1 TN9-81 N9-F1 9N-F1 NPB- 4x 99NN-S1 T9N-14 9311- 4x图6 |二倍体亲本、F1杂交种、同源四倍体、片段异源四倍体和精选trir的形态和非生物耐受性性状"
           },
           {
             "rank": 6,
             "sentence_id": 235,
-            "text": "Transgressive phenotypes were observed for 20 traits in at least 1 TRIL, and for 8 traits in >50% (129 out of 202) of the TRILs (Extended Data Fig. 6)."
+            "text": "Transgressive phenotypes were observed for 20 traits in at least 1 TRIL, and for 8 traits in >50% (129 out of 202) of the TRILs (Extended Data Fig. 6).",
+            "text_zh": "在至少1个TRIL中观察到20个性状的越轨表型，在bbb50%（202个TRIL中的129个）中观察到8个性状的越轨表型（扩展数据图6）。"
           },
           {
             "rank": 7,
             "sentence_id": 238,
-            "text": "We noted that when comparing the TRILs as two groups according to their crossing directions, 9 traits (flag-leaf length, primary-branch number, thousand-kernel weight, flag-leaf width, secondary-branch number, grain length, panicle length, spikelet number and tiller number) showed significant differences (Extended Data Fig. 7; P < 0.01 by (N9-F1 and 9N-F1), the parental autotetraploids (NPB-4X and 9311-4X), the first-generation reciprocal segmental allotetraploids (NN99-S1 and 99NNS1), two low-fertility TRILs (TN9-16 and TN9-17), and two high-fertility TRILs (TN9-81 and T9N-14), respectively."
+            "text": "We noted that when comparing the TRILs as two groups according to their crossing directions, 9 traits (flag-leaf length, primary-branch number, thousand-kernel weight, flag-leaf width, secondary-branch number, grain length, panicle length, spikelet number and tiller number) showed significant differences (Extended Data Fig. 7; P < 0.01 by (N9-F1 and 9N-F1), the parental autotetraploids (NPB-4X and 9311-4X), the first-generation reciprocal segmental allotetraploids (NN99-S1 and 99NNS1), two low-fertility TRILs (TN9-16 and TN9-17), and two high-fertility TRILs (TN9-81 and T9N-14), respectively.",
+            "text_zh": "我们注意到，将tril作为两组进行杂交时，旗叶长、一次枝数、千粒重、旗叶宽、二次枝数、粒长、穗长、小穗数和分蘖数等9个性状差异显著(扩展数据图7；（N9-F1和9N-F1）、亲本自身四倍体（NPB-4X和9311-4X）、第一代互易片段异源四倍体（NN99-S1和99NNS1）、2个低育性trail （TN9-16和TN9-17）和2个高育性trail （TN9-81和T9N-14）的差异均< 0.01。"
           },
           {
             "rank": 8,
             "sentence_id": 41,
-            "text": "In addition, HE-enabled segmental repatching of some whole chromosomes to one parent-state, which albeit occurring stochastically, may also cause biased genome composition."
+            "text": "In addition, HE-enabled segmental repatching of some whole chromosomes to one parent-state, which albeit occurring stochastically, may also cause biased genome composition.",
+            "text_zh": "此外，he激活的部分染色体片段修复到一个亲本状态，尽管是随机发生的，但也可能导致偏倚的基因组组成。"
           },
           {
             "rank": 9,
             "sentence_id": 43,
-            "text": "These high-fertility TRILs also manifested high meiotic stability due to an increase of bivalent formation and the alternate-orientation type of quadrivalent configuration."
+            "text": "These high-fertility TRILs also manifested high meiotic stability due to an increase of bivalent formation and the alternate-orientation type of quadrivalent configuration.",
+            "text_zh": "由于二价结构的增加和四价结构的交替取向类型，这些高育性trir还表现出高的减数分裂稳定性。"
           },
           {
             "rank": 10,
             "sentence_id": 45,
-            "text": "Moreover, we find that some high-yielding TRILs also showed transgressive resilience to two important abiotic stresses, although in their propagation process no such conditions were applied."
+            "text": "Moreover, we find that some high-yielding TRILs also showed transgressive resilience to two important abiotic stresses, although in their propagation process no such conditions were applied.",
+            "text_zh": "此外，我们发现一些高产trir在繁殖过程中也表现出对两种重要的非生物胁迫的入侵恢复能力，尽管在繁殖过程中没有施加这些条件。"
           }
         ]
       },
@@ -2007,52 +2111,62 @@
           {
             "rank": 1,
             "sentence_id": 268,
-            "text": "Nipponbare, while under KClO3 treatment (2 mM for 4 days), 13 TRILs showed significantly higher 753 sensitivity to KClO3 (denoting higher tolerance to N deficiency) than the more sensitive parent cv. 9311, with 3 TRILs showing better performance to both stresses, that is, transgressive phenotypes (Fig. 6e,f,h,i and Supplementary Fig. 14)."
+            "text": "Nipponbare, while under KClO3 treatment (2 mM for 4 days), 13 TRILs showed significantly higher 753 sensitivity to KClO3 (denoting higher tolerance to N deficiency) than the more sensitive parent cv. 9311, with 3 TRILs showing better performance to both stresses, that is, transgressive phenotypes (Fig. 6e,f,h,i and Supplementary Fig. 14).",
+            "text_zh": "在KClO3 （2 mM, 4 d）处理下，13个trir对KClO3的敏感性显著高于对KClO3敏感的亲本cv（表明对缺氮的耐受性更高）。9311，其中3个trir对两种胁迫都表现出更好的性能，即海侵表型（图6e、f、h、i和补充图14）。"
           },
           {
             "rank": 2,
             "sentence_id": 253,
-            "text": "We next assessed performance of the TRILs along with their two diploid parental cultivars, the diploid F1 hybrids (9N-F1 and N9-F1), the S1 segmental allotetraploids (NN99-S1 and 99NN-S1) and autotetraploids of both parents under two abiotic stress conditions, NaCl (salinity) and chlorate (KClO3) (sensitivity to this chemical is a reliable No. of quadrivalents per PMC No. of bivalents per PMC Chain Adjacent Alternate Ambiguous (%) (%) (%) (%) 1.29 ± 0.92 3.87 ± 1.36 0.81 ± 0.96 4.10 ± 1.80 3.87 ± 2.68 d (12.83%) ab (38.46%) a (8.01%) c (40.71%) ab 1.40 ± 1.02 3.63 ± 1.62 0.50 ± 0.74 4.13 ± 1.83 4.71 ± 3.28 d (14.47%) a (37.58%) a (5.18%) d (42.76%) ab 1.08 ± 1.01 2.08 ± 1.36 1.33 ± 1.00 2.89 ± 1.39 8.94 ± 3.67 a (14.66%) a (28.20%) b (18.05%) ab (39.10%) ab 0.96 ± 0.88 1.98 ± 1.31 1.52 ± 1.16 3.07 ± 1.17 8.83 ± 2.84 a (12.72%) ab (26.30%) b (20.23%) ab (40.75%) ab 1.42 ± 1.00 2.80 ± 1.28 0.51 ± 0.65 4.20 ± 1.54 6.13 ± 2.90 c (15.92%) a (31.34%) b (5.72%) cd (47.01%) a 1.15 ± 0.85 3.52 ± 1.40 0.74 ± 0.89 3.52 ± 1.47 6.15 ± 2.37 bc (12.86%) ab (39.42%) a (8.30%) c (39.42%) ab 0.72 ± 0.73 2.75 ± 1.28 1.31 ± 0.97 3.44 ± 1.36 7.17 ± 3.42 b (8.78%) b (33.45%) ab (15.88%) b (41.89%) ab 0.73 ± 0.98 2.38 ± 1.50 1.60 ± 0.98 2.82 ± 1.46 8.64 ± 2.69 a (9.73%) b (31.56%) b (21.24%) a (37.46%) b g h i m n o r s 100 1n 2n Normalized to mode 80 60 40 20 0 4 5 3 10 0 10 10 752 a NPB 9311 N9-F1 9N-F1 NPB-4X b NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 N = 12 N = 10 N = 12 N = 12 N = 12 N = 11 N = 8 N = 9 n = 29 n = 44 n = 41 n = 40 n = 26 n = 38 n = 24 n = 23 c NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 96.7% 97.5% 3.0% 2.3% 20.0% 37.5% 43.3% 44.6% e 150 mM NaCl 7 cm NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 TN9-81 T9N-29 Mock 150 mM NaCl, 7 d, recovered, 7 d h g 100% 100 Yield per plant (g) Survival rate (%) 75% 75 a b b b a 50% 50 c c cd cd c c d 25% 25 e e e 0% 0 NPB-4X 9311-4X N9-F1 9N-F1 NPB 9311 NPB 9311 NN99-S1 TN9-81 N9-F1 9N-F1 NPB-4X 99NN-S1 T9N-14 9311-4X Fig. 6 | Morphology and abiotic stress tolerance traits in diploid parents, F1 hybrids, autotetraploids, segmental allotetraploids and selected TRILs."
+            "text": "We next assessed performance of the TRILs along with their two diploid parental cultivars, the diploid F1 hybrids (9N-F1 and N9-F1), the S1 segmental allotetraploids (NN99-S1 and 99NN-S1) and autotetraploids of both parents under two abiotic stress conditions, NaCl (salinity) and chlorate (KClO3) (sensitivity to this chemical is a reliable No. of quadrivalents per PMC No. of bivalents per PMC Chain Adjacent Alternate Ambiguous (%) (%) (%) (%) 1.29 ± 0.92 3.87 ± 1.36 0.81 ± 0.96 4.10 ± 1.80 3.87 ± 2.68 d (12.83%) ab (38.46%) a (8.01%) c (40.71%) ab 1.40 ± 1.02 3.63 ± 1.62 0.50 ± 0.74 4.13 ± 1.83 4.71 ± 3.28 d (14.47%) a (37.58%) a (5.18%) d (42.76%) ab 1.08 ± 1.01 2.08 ± 1.36 1.33 ± 1.00 2.89 ± 1.39 8.94 ± 3.67 a (14.66%) a (28.20%) b (18.05%) ab (39.10%) ab 0.96 ± 0.88 1.98 ± 1.31 1.52 ± 1.16 3.07 ± 1.17 8.83 ± 2.84 a (12.72%) ab (26.30%) b (20.23%) ab (40.75%) ab 1.42 ± 1.00 2.80 ± 1.28 0.51 ± 0.65 4.20 ± 1.54 6.13 ± 2.90 c (15.92%) a (31.34%) b (5.72%) cd (47.01%) a 1.15 ± 0.85 3.52 ± 1.40 0.74 ± 0.89 3.52 ± 1.47 6.15 ± 2.37 bc (12.86%) ab (39.42%) a (8.30%) c (39.42%) ab 0.72 ± 0.73 2.75 ± 1.28 1.31 ± 0.97 3.44 ± 1.36 7.17 ± 3.42 b (8.78%) b (33.45%) ab (15.88%) b (41.89%) ab 0.73 ± 0.98 2.38 ± 1.50 1.60 ± 0.98 2.82 ± 1.46 8.64 ± 2.69 a (9.73%) b (31.56%) b (21.24%) a (37.46%) b g h i m n o r s 100 1n 2n Normalized to mode 80 60 40 20 0 4 5 3 10 0 10 10 752 a NPB 9311 N9-F1 9N-F1 NPB-4X b NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 N = 12 N = 10 N = 12 N = 12 N = 12 N = 11 N = 8 N = 9 n = 29 n = 44 n = 41 n = 40 n = 26 n = 38 n = 24 n = 23 c NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 96.7% 97.5% 3.0% 2.3% 20.0% 37.5% 43.3% 44.6% e 150 mM NaCl 7 cm NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 TN9-81 T9N-29 Mock 150 mM NaCl, 7 d, recovered, 7 d h g 100% 100 Yield per plant (g) Survival rate (%) 75% 75 a b b b a 50% 50 c c cd cd c c d 25% 25 e e e 0% 0 NPB-4X 9311-4X N9-F1 9N-F1 NPB 9311 NPB 9311 NN99-S1 TN9-81 N9-F1 9N-F1 NPB-4X 99NN-S1 T9N-14 9311-4X Fig. 6 | Morphology and abiotic stress tolerance traits in diploid parents, F1 hybrids, autotetraploids, segmental allotetraploids and selected TRILs.",
+            "text_zh": "接下来，我们评估了TRILs及其两个二倍体亲本品种，二倍体F1杂交品种（9N-F1和N9-F1）， S1段异源四倍体（NN99-S1和99NN-S1）和亲本同源四倍体在NaCl（盐度）和氯酸盐（KClO3）两种非生物胁迫条件下的表现。每个PMC的四分位每PMC链相邻交替模棱两可的现象  (%) (%) (%) (%) 1.29±0.92 - 3.87±1.36 0.81 0.96±4.10±1.80 3.87±2.68 d (12.83%) ab (38.46%) (8.01%) c (40.71%) ab 1.40±1.02 - 3.63±1.62 0.50 0.74±4.13±1.83 4.71±3.28 d (14.47%) (37.58%) (5.18%) d (42.76%) ab 1.08±1.01 - 2.08±1.36 1.33±1.00 - 2.89±1.39 - 8.94±3.67 b (14.66%) (28.20%) (18.05%) ab (39.10%) ab 0.96±0.88 - 1.98±1.31 1.52±1.16 - 3.07±1.17 - 8.83±2.84 b (12.72%) ab (26.30%) (20.23%) ab (40.75%)ab 1.42±1.00 - 2.80±1.28 0.51±0.65 - 4.20±1.54 - 6.13±2.90摄氏度(15.92%)(31.34%)b (5.72%) cd(47.01%) 1.15±0.85 - 3.52±1.40 0.74 0.89±3.52±1.47 6.15±2.37 bc (12.86%) ab (39.42%) (8.30%) c (39.42%) ab 0.72±0.73 - 2.75±1.28 1.31±0.97 - 3.44±1.36 - 7.17±3.42 b (8.78%) (33.45%) ab (15.88%) b (41.89%) ab 0.73±0.98 - 2.38±1.50 1.60±0.98 - 2.82±1.46 - 8.64±2.69 b (9.73%) (31.56%) (21.24%) (37.46%) b g h i m n o r s 100 1 n 2 n规范化模式80 60 40 20 0 4 5 3 10 010 752 9311 NPB N9-F1 9 n-f1 NPB-4X b NPB 9311 N9-F1 9 n-f1 NPB-4X 9311 - 4 - x NN99-S1 99 nn-s1 N = 12 N = 10 N = 12 N = 12 N = 12 N = 11 N = 8 N = 9 N = 29 N = 44 N = 41 N = 40 N = 26 N = 38 N = 24 N = 23 c NPB 9311 N9-F1 9 n-f1 NPB-4X 9311 - 4 - x NN99-S1 99 nn-s1 96.7% 97.5% 3.0% 2.3% 20.0% 37.5% 43.3% 44.6% e 150毫米氯化钠7厘米NPB 9311 N9-F1 9 n-f1 NPB-4X 9311 - 4 - x NN99-S1 99 nn-s1 tn9 - 81 T9N-29模拟150毫米氯化钠,7 d,恢复,7 d h g 100% 100单株产量(g)存活率（%）75% 75 ab b a 50% 50 c c c c c c cd 25% 25 e e e e 0% 0 NPB- 4x 9311- 4x N9-F1 9N-F1 NPB 9311 NPB 9311 NN99-S1 TN9-81 N9-F1 9N-F1 NPB- 4x 99NN-S1 T9N-14 9311- 4x图6 |二倍体亲本、F1杂交种、同源四倍体、片段异源四倍体和精选trir的形态和非生物耐受性性状"
           },
           {
             "rank": 3,
             "sentence_id": 260,
-            "text": "Nipponbare being more tolerant to salinity and less sensitive to chlorate (that is, less tolerant 35 cm 9311-4X NN99-S1 99NN-S1 TN9-81 T9N-14 d 1 cm 5 cm TN9-81 T9N-14 NPB 9311 N9-F1 9N-F1 N = 8 N = 11 NPB-4X n = 44 n = 34 9311-4X 2 cm TN9-81 T9N-14 NN99-S1 99NN-S1 TN9-81 T9N-14 80.0% 78.7% f 2 mM KClO3 7 cm NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 TN9-23 T9N-14 Mock 2 mM KClO3, 4 d, recovered, 7 d i Mock Mock 150 mM NaCl 2 mM KClO3 100% b a Survival rate (%) a a 75% c c 50% d d d cd e 25% e f g g 0% NN99-S1 99NN-S1 T9N-29 TN9-81 NPB N9-F1 9N-F1 99NN-S1 TN9-23 9311 NPB-4X 9311-4X NN99-S1 T9N-14 d, Grain length and grain width."
+            "text": "Nipponbare being more tolerant to salinity and less sensitive to chlorate (that is, less tolerant 35 cm 9311-4X NN99-S1 99NN-S1 TN9-81 T9N-14 d 1 cm 5 cm TN9-81 T9N-14 NPB 9311 N9-F1 9N-F1 N = 8 N = 11 NPB-4X n = 44 n = 34 9311-4X 2 cm TN9-81 T9N-14 NN99-S1 99NN-S1 TN9-81 T9N-14 80.0% 78.7% f 2 mM KClO3 7 cm NPB 9311 N9-F1 9N-F1 NPB-4X 9311-4X NN99-S1 99NN-S1 TN9-23 T9N-14 Mock 2 mM KClO3, 4 d, recovered, 7 d i Mock Mock 150 mM NaCl 2 mM KClO3 100% b a Survival rate (%) a a 75% c c 50% d d d cd e 25% e f g g 0% NN99-S1 99NN-S1 T9N-29 TN9-81 NPB N9-F1 9N-F1 99NN-S1 TN9-23 9311 NPB-4X 9311-4X NN99-S1 T9N-14 d, Grain length and grain width.",
+            "text_zh": "耐盐性较强，对氯酸盐较不敏感（即较不耐35 cm 9311- 4x NN99-S1 99NN-S1 TN9-81 T9N-14 d 1 cm 5 cm tn9 - f1 9N-F1 N = 8 N = 11 NPB- 4x N = 44 N = 34 9311- 1t9n -14 NN99-S1 99NN-S1 TN9-81 T9N-14 80.0% 78.7%） 7 cm NPB 9311 N9-F1 9N-F1 NPB- 4x 9311- 4x NN99-S1 99NN-S1 TN9-23 T9N-14模拟2 mM KClO3, 4 d，回收；7 d我模拟模拟150毫米氯化钠2毫米KClO3 100% b存活率(%)50% 75% c c d d d e cd e 25% f g g 0% NN99-S1 99 nn-s1 T9N-29 tn9 - 81 NPB N9-F1 9 n-f1 99 nn-s1 TN9-23 9311 NPB-4X 9311 - 4 x NN99-S1 T9N-14 d,一粒一粒的长度和宽度。"
           },
           {
             "rank": 4,
             "sentence_id": 267,
-            "text": "Results indicated that under NaCl (150 mM for 7 days) treatment, 10 TRILs exhibited greater tolerance than the more tolerant parent cv."
+            "text": "Results indicated that under NaCl (150 mM for 7 days) treatment, 10 TRILs exhibited greater tolerance than the more tolerant parent cv.",
+            "text_zh": "结果表明，在NaCl （150 mM，处理7 d）处理下，10个trir的耐受性高于耐受性较强的亲本。"
           },
           {
             "rank": 5,
             "sentence_id": 269,
-            "text": "Consistent results were obtained in 3 independent experiments."
+            "text": "Consistent results were obtained in 3 independent experiments.",
+            "text_zh": "3个独立实验结果一致。"
           },
           {
             "rank": 6,
             "sentence_id": 252,
-            "text": "Instead, genomic context (that is, the variably reshuffled genomic compositions due to HE-mediated mosaicism) is probably the major determinant."
+            "text": "Instead, genomic context (that is, the variably reshuffled genomic compositions due to HE-mediated mosaicism) is probably the major determinant.",
+            "text_zh": "相反，基因组环境（即，由于he介导的嵌合体而导致的基因组组成的可变重组）可能是主要的决定因素。"
           },
           {
             "rank": 7,
             "sentence_id": 261,
-            "text": "e,f, Illustration of traits reflecting tolerance to two abiotic stresses, 150 mM NaCl (e) and chlorate (2 mM KClO3) (f) by the various rice plant groups."
+            "text": "e,f, Illustration of traits reflecting tolerance to two abiotic stresses, 150 mM NaCl (e) and chlorate (2 mM KClO3) (f) by the various rice plant groups.",
+            "text_zh": "e,f，不同水稻类群对150 mM NaCl (e)和氯酸盐（2 mM KClO3） (f)两种非生物胁迫的耐受性性状图。"
           },
           {
             "rank": 8,
             "sentence_id": 259,
-            "text": "In this case, the two diploid parental cultivars are known to show different tolerances to these two stress conditions, with cv."
+            "text": "In this case, the two diploid parental cultivars are known to show different tolerances to these two stress conditions, with cv.",
+            "text_zh": "在这种情况下，已知两个二倍体亲本品种对这两种胁迫条件表现出不同的耐受性，其中cv。"
           },
           {
             "rank": 9,
             "sentence_id": 266,
-            "text": "to N deficiency) than cv. 9311 (refs. 61,62)."
+            "text": "to N deficiency) than cv. 9311 (refs. 61,62).",
+            "text_zh": "对氮缺乏的影响大于cv。9311(参考文献。61年,62年)。"
           },
           {
             "rank": 10,
             "sentence_id": 299,
-            "text": "754 a b c 100 Upregulated ST-TRIL2 SS-TRIL1 SS-TRIL2 ST-TRIL1 50 367 720 82 133 758 PC2: 13.3% 1007 466 214 39 0 322 129 104 353 142 396 −50 Downregulated ST-TRIL2 SS-TRIL1 −100 SS-TRIL2 ST-TRIL1 −100 0 100 200 581 740 PC1: 32.8% 64 83 505 138 23 762 191 Mock Salt stress 87 ST-TRIL1 ST-TRIL1 63 174 76 31 ST-TRIL2 ST-TRIL2 38 SS-TRIL1 SS-TRIL1 SS-TRIL2 SS-TRIL2 d –log2(fold change) 1.0 0.5 0 –0.5 –1.0 –1.5 ST-TRIL1 ST-TRIL2 SS-TRIL1 SS-TRIL2 Osrboh8 Osrboh1 Osrboh4 Osrboh2 Osrboh9 Osrboh3 Osrboh5 Osrboh6 Osrboh7 e f ST-TRILs uniquely upregulated Electron transfer 64 activity Oxidoreductase activity 25 25 27 Membrane 5,860 7,066 3,945 ST-TRIL1 ST-TRIL2 5 10 CHH hypermethylation CHH hypermethylation Rich factor Fig. 7 | Integrated transcriptome and methylome analyses of salt-tolerant and salt-sensitive TRILs."
+            "text": "754 a b c 100 Upregulated ST-TRIL2 SS-TRIL1 SS-TRIL2 ST-TRIL1 50 367 720 82 133 758 PC2: 13.3% 1007 466 214 39 0 322 129 104 353 142 396 −50 Downregulated ST-TRIL2 SS-TRIL1 −100 SS-TRIL2 ST-TRIL1 −100 0 100 200 581 740 PC1: 32.8% 64 83 505 138 23 762 191 Mock Salt stress 87 ST-TRIL1 ST-TRIL1 63 174 76 31 ST-TRIL2 ST-TRIL2 38 SS-TRIL1 SS-TRIL1 SS-TRIL2 SS-TRIL2 d –log2(fold change) 1.0 0.5 0 –0.5 –1.0 –1.5 ST-TRIL1 ST-TRIL2 SS-TRIL1 SS-TRIL2 Osrboh8 Osrboh1 Osrboh4 Osrboh2 Osrboh9 Osrboh3 Osrboh5 Osrboh6 Osrboh7 e f ST-TRILs uniquely upregulated Electron transfer 64 activity Oxidoreductase activity 25 25 27 Membrane 5,860 7,066 3,945 ST-TRIL1 ST-TRIL2 5 10 CHH hypermethylation CHH hypermethylation Rich factor Fig. 7 | Integrated transcriptome and methylome analyses of salt-tolerant and salt-sensitive TRILs.",
+            "text_zh": "754 a b c 100上调ST-TRIL2 SS-TRIL1 SS-TRIL2 ST-TRIL1 50 367 720 82 133 758 PC2: 13.3% 1007 466 214 39 0 322 129 104 353 142 396−50下调ST-TRIL2 SS-TRIL1−100 SS-TRIL2 ST-TRIL1−100 0 100 200 581 740 PC1：23 32.8% 64 83 505 138 762 191 87模拟盐胁迫ST-TRIL1 ST-TRIL1 63 174 76 31 ST-TRIL2 ST-TRIL2 38 SS-TRIL1 SS-TRIL1 SS-TRIL2 SS-TRIL2 d - log2(褶皱变化)1.0 - 0.5 0 -0.5 -1.0 -1.5 ST-TRIL1 ST-TRIL2 SS-TRIL1 SS-TRIL2 Osrboh8 Osrboh1 Osrboh4 Osrboh2 Osrboh9 Osrboh3 Osrboh5 Osrboh6 Osrboh7 e f ST-TRILs独特的调节电子转移64活动氧化还原酶活动25 25 27膜5860 7066 3945 ST-TRIL1 ST-TRIL2 5 10 CHH甲基化CHH丰富的甲基化因子图7耐盐和盐敏感trail的整合转录组和甲基组分析。"
           }
         ]
       },
@@ -2180,52 +2294,62 @@
           {
             "rank": 1,
             "sentence_id": 347,
-            "text": "We show here that these phenotypes include multiple transgressive agronomically important features, underscoring the potential agricultural application of HE-driven rapid crop germplasm innovation."
+            "text": "We show here that these phenotypes include multiple transgressive agronomically important features, underscoring the potential agricultural application of HE-driven rapid crop germplasm innovation.",
+            "text_zh": "我们在这里表明，这些表型包括多个越界的农学重要特征，强调了he驱动的快速作物种质创新的潜在农业应用。"
           },
           {
             "rank": 2,
             "sentence_id": 24,
-            "text": "Hitherto, the most clearly demonstrated genetic mechanism underlying polyploidy-induced rapid genomic change is homoeologous exchange (HE) due to meiotic homoeologous chromosome recombination25,35."
+            "text": "Hitherto, the most clearly demonstrated genetic mechanism underlying polyploidy-induced rapid genomic change is homoeologous exchange (HE) due to meiotic homoeologous chromosome recombination25,35.",
+            "text_zh": "迄今为止，最清楚证明多倍体诱导的快速基因组变化的遗传机制是由减数分裂同源染色体重组引起的同源交换（HE） 25,35。"
           },
           {
             "rank": 3,
             "sentence_id": 25,
-            "text": "Remarkably, although HE itself is often associated with unbalanced aneuploid gametes (hence reduced fertility), it has occurred ubiquitously in many naturally formed neoallopolyploid plant species7,36–45."
+            "text": "Remarkably, although HE itself is often associated with unbalanced aneuploid gametes (hence reduced fertility), it has occurred ubiquitously in many naturally formed neoallopolyploid plant species7,36–45.",
+            "text_zh": "值得注意的是，尽管HE本身通常与不平衡的非整倍体配子（因此生育能力降低）有关，但它在许多自然形成的新异源多倍体植物物种中普遍存在7,36 - 45。"
           },
           {
             "rank": 4,
             "sentence_id": 0,
-            "text": "Wendel & Theory predicts that in the absence of selection, a newly formed segmental allopolyploid will become ‘autopolyploidized’ if homoeologous exchanges (HEs) occur freely."
+            "text": "Wendel & Theory predicts that in the absence of selection, a newly formed segmental allopolyploid will become ‘autopolyploidized’ if homoeologous exchanges (HEs) occur freely.",
+            "text_zh": "Wendel & Theory预测，在没有选择的情况下，如果同源交换（HEs）自由发生，新形成的片段异源多倍体将成为“自多倍体”。"
           },
           {
             "rank": 5,
             "sentence_id": 1,
-            "text": "Moreover, because selection against meiotic abnormalities is expected to be strong in the initial generations, we anticipate HEs to be uncommon in evolved segmental allopolyploids."
+            "text": "Moreover, because selection against meiotic abnormalities is expected to be strong in the initial generations, we anticipate HEs to be uncommon in evolved segmental allopolyploids.",
+            "text_zh": "此外，由于对减数分裂异常的选择在最初几代中预计会很强，我们预计he在进化的节段异源多倍体中并不常见。"
           },
           {
             "rank": 6,
             "sentence_id": 275,
-            "text": "We have reported that rampant homoeologous exchanges (HEs) occurred in the earlier selfed progenies (S4) of the synthetic segmental allotetraploids parented by the japonica and indica rice subspecies48."
+            "text": "We have reported that rampant homoeologous exchanges (HEs) occurred in the earlier selfed progenies (S4) of the synthetic segmental allotetraploids parented by the japonica and indica rice subspecies48.",
+            "text_zh": "我们已经报道了由粳稻和籼稻亚种亲本的合成片段异源四倍体的早期自交后代（S4）中发生了猖獗的同源交换（HEs）。"
           },
           {
             "rank": 7,
             "sentence_id": 286,
-            "text": "Thus, under circumstances where these two essential conditions (that is, moderate parental genetic divergence and absence of HPS) are met, HE by itself appears to be a potent driver of evolutionarily relevant diversification under polyploidy."
+            "text": "Thus, under circumstances where these two essential conditions (that is, moderate parental genetic divergence and absence of HPS) are met, HE by itself appears to be a potent driver of evolutionarily relevant diversification under polyploidy.",
+            "text_zh": "因此，在满足这两个基本条件（即亲本遗传分化适度和HPS缺失）的情况下，HE本身似乎是多倍体下进化相关多样化的有力驱动因素。"
           },
           {
             "rank": 8,
             "sentence_id": 276,
-            "text": "However, whether HEs could become fixed to enable persistence of the homoeologue-recombinant genotypes that are self-sustainable remained unknown."
+            "text": "However, whether HEs could become fixed to enable persistence of the homoeologue-recombinant genotypes that are self-sustainable remained unknown.",
+            "text_zh": "然而，he是否可以固定以使同源重组基因型能够持续存在仍是未知的。"
           },
           {
             "rank": 9,
             "sentence_id": 285,
-            "text": "However, it should be cautioned that one additional critical condition might also be required, that is, the absence of strong homoeologous pairing suppressor (HPSs) genes such as Ph1 in wheat66."
+            "text": "However, it should be cautioned that one additional critical condition might also be required, that is, the absence of strong homoeologous pairing suppressor (HPSs) genes such as Ph1 in wheat66.",
+            "text_zh": "然而，需要注意的是，可能还需要一个额外的关键条件，即缺乏强同源配对抑制基因（hps），如wheat66中的Ph1。"
           },
           {
             "rank": 10,
             "sentence_id": 287,
-            "text": "We should acknowledge, however, that our current data cannot rule out the possibility of the presence of HPSs in the rice tetraploids because it is also possible that the intersubspecific subgenome divergence is insufficient to be discriminated by HPSs during meiotic pairing."
+            "text": "We should acknowledge, however, that our current data cannot rule out the possibility of the presence of HPSs in the rice tetraploids because it is also possible that the intersubspecific subgenome divergence is insufficient to be discriminated by HPSs during meiotic pairing.",
+            "text_zh": "然而，我们应该承认，我们目前的数据不能排除水稻四倍体中存在hps的可能性，因为在减数分裂配对过程中，亚种间亚基因组差异也可能不足以被hps区分。"
           }
         ]
       },
@@ -2316,52 +2440,62 @@
           {
             "rank": 1,
             "sentence_id": 0,
-            "text": "Wendel & Theory predicts that in the absence of selection, a newly formed segmental allopolyploid will become ‘autopolyploidized’ if homoeologous exchanges (HEs) occur freely."
+            "text": "Wendel & Theory predicts that in the absence of selection, a newly formed segmental allopolyploid will become ‘autopolyploidized’ if homoeologous exchanges (HEs) occur freely.",
+            "text_zh": "Wendel & Theory预测，在没有选择的情况下，如果同源交换（HEs）自由发生，新形成的片段异源多倍体将成为“自多倍体”。"
           },
           {
             "rank": 2,
             "sentence_id": 1,
-            "text": "Moreover, because selection against meiotic abnormalities is expected to be strong in the initial generations, we anticipate HEs to be uncommon in evolved segmental allopolyploids."
+            "text": "Moreover, because selection against meiotic abnormalities is expected to be strong in the initial generations, we anticipate HEs to be uncommon in evolved segmental allopolyploids.",
+            "text_zh": "此外，由于对减数分裂异常的选择在最初几代中预计会很强，我们预计he在进化的节段异源多倍体中并不常见。"
           },
           {
             "rank": 3,
             "sentence_id": 31,
-            "text": "Thus, HE-fuelled intersubgenomic segmental replacement, if it occurs freely and without strong purifying selection, would transform a single starting nascent allopolyploid to an autopolyploid swarm, especially under selfing."
+            "text": "Thus, HE-fuelled intersubgenomic segmental replacement, if it occurs freely and without strong purifying selection, would transform a single starting nascent allopolyploid to an autopolyploid swarm, especially under selfing.",
+            "text_zh": "因此，如果由he驱动的亚基因组间片段置换自由发生，且没有强烈的净化选择，则会将单个起始的新生异源多倍体转化为自交多倍体群体，尤其是在自交过程中。"
           },
           {
             "rank": 4,
             "sentence_id": 215,
-            "text": "In principle, HE-mediated rapid homogenization of two divergent genomes would transform an allotetraploid or segmental allopolyploid into an autotetraploid containing a single genome with four identical copies of every chromosome, but each being a mosaic of the two parental genomes7,8."
+            "text": "In principle, HE-mediated rapid homogenization of two divergent genomes would transform an allotetraploid or segmental allopolyploid into an autotetraploid containing a single genome with four identical copies of every chromosome, but each being a mosaic of the two parental genomes7,8.",
+            "text_zh": "原则上，he介导的两个不同基因组的快速均质化可以将异源四倍体或片段异源多倍体转化为含有单个基因组的同源四倍体，每个染色体都有四个相同的拷贝，但每个拷贝都是两个亲本基因组的马赛克7,8。"
           },
           {
             "rank": 5,
             "sentence_id": 32,
-            "text": "This possibility, however, remains to be experimentally tested."
+            "text": "This possibility, however, remains to be experimentally tested.",
+            "text_zh": "然而，这种可能性仍有待实验检验。"
           },
           {
             "rank": 6,
             "sentence_id": 30,
-            "text": "As such, in theory, after a sufficient number of generations, all four copies in a still fertile tetraploid of every chromosomal segment would be derived from either, but not both, of the hybridizing parents; that is, each chromosome segment, the sizes of which are determined by recombination breakpoints, will become homozygous (homogeneous) for all four constituent copies."
+            "text": "As such, in theory, after a sufficient number of generations, all four copies in a still fertile tetraploid of every chromosomal segment would be derived from either, but not both, of the hybridizing parents; that is, each chromosome segment, the sizes of which are determined by recombination breakpoints, will become homozygous (homogeneous) for all four constituent copies.",
+            "text_zh": "因此，理论上，在足够数量的世代之后，每个染色体片段仍然可育的四倍体的所有四个副本将来自杂交亲本中的任何一个，而不是两个；也就是说，每个染色体片段，其大小由重组断点决定，对于所有四个组成拷贝来说都将成为纯合的（均匀的）。"
           },
           {
             "rank": 7,
             "sentence_id": 216,
-            "text": "This chromosomal homogeneity would most probably lead to multivalent formation and unbalanced gametes, the result being lowered fertility and fitness."
+            "text": "This chromosomal homogeneity would most probably lead to multivalent formation and unbalanced gametes, the result being lowered fertility and fitness.",
+            "text_zh": "这种染色体同质性很可能导致多价形成和配子不平衡，结果是生育能力和适应性降低。"
           },
           {
             "rank": 8,
             "sentence_id": 275,
-            "text": "We have reported that rampant homoeologous exchanges (HEs) occurred in the earlier selfed progenies (S4) of the synthetic segmental allotetraploids parented by the japonica and indica rice subspecies48."
+            "text": "We have reported that rampant homoeologous exchanges (HEs) occurred in the earlier selfed progenies (S4) of the synthetic segmental allotetraploids parented by the japonica and indica rice subspecies48.",
+            "text_zh": "我们已经报道了由粳稻和籼稻亚种亲本的合成片段异源四倍体的早期自交后代（S4）中发生了猖獗的同源交换（HEs）。"
           },
           {
             "rank": 9,
             "sentence_id": 276,
-            "text": "However, whether HEs could become fixed to enable persistence of the homoeologue-recombinant genotypes that are self-sustainable remained unknown."
+            "text": "However, whether HEs could become fixed to enable persistence of the homoeologue-recombinant genotypes that are self-sustainable remained unknown.",
+            "text_zh": "然而，he是否可以固定以使同源重组基因型能够持续存在仍是未知的。"
           },
           {
             "rank": 10,
             "sentence_id": 6,
-            "text": "Our findings comprise evidence supporting the evolutionary possibility of HE-catalysed ‘allo-to-auto’ polyploidy transitions in nature, Polyploidization, or whole-genome doubling (WGD), is a potent evolutionary force driving speciation and creating biodiversity1–5."
+            "text": "Our findings comprise evidence supporting the evolutionary possibility of HE-catalysed ‘allo-to-auto’ polyploidy transitions in nature, Polyploidization, or whole-genome doubling (WGD), is a potent evolutionary force driving speciation and creating biodiversity1–5.",
+            "text_zh": "我们的研究结果包括支持he催化的“同种异体到自体”多倍体在自然界中的进化可能性的证据，多倍体化或全基因组加倍（WGD）是驱动物种形成和创造生物多样性的强大进化力量1 - 5。"
           }
         ]
       },
@@ -2484,52 +2618,62 @@
           {
             "rank": 1,
             "sentence_id": 9,
-            "text": "with implications for creating new polyploid crops."
+            "text": "with implications for creating new polyploid crops.",
+            "text_zh": "这对创造新的多倍体作物有启示。"
           },
           {
             "rank": 2,
             "sentence_id": 8,
-            "text": "There are at least two mutually inclusive explanations for a higher tendency of wide hybridization-WGD coupling than hybridization between more similar parents: (1) wide hybrids are more prone to producing unreduced gametes9–12 and (2) WGD restores normal meiosis by enhancing autosyndetic bivalent pairing, whereas multivalents and allosyndetic bivalent pairing lead to a higher frequency of meiotic abnormalities in polyploids derived from more similar diploid progenitors13."
+            "text": "There are at least two mutually inclusive explanations for a higher tendency of wide hybridization-WGD coupling than hybridization between more similar parents: (1) wide hybrids are more prone to producing unreduced gametes9–12 and (2) WGD restores normal meiosis by enhancing autosyndetic bivalent pairing, whereas multivalents and allosyndetic bivalent pairing lead to a higher frequency of meiotic abnormalities in polyploids derived from more similar diploid progenitors13.",
+            "text_zh": "与相似亲本杂交相比，宽杂交-WGD耦合的趋势更高，至少有两种相互包含的解释：(1)宽杂交更容易产生未减少的配子9 - 12；(2)WGD通过增强自合二价配对恢复正常的减数分裂，而多价和异合二价配对导致来自更相似二倍体祖先的多倍体减数分裂异常的频率更高13。"
           },
           {
             "rank": 3,
             "sentence_id": 10,
-            "text": "In addition to overcoming meiotic instabilities14,15, nascent polyploids also face challenges associated with establishment and/or persistence."
+            "text": "In addition to overcoming meiotic instabilities14,15, nascent polyploids also face challenges associated with establishment and/or persistence.",
+            "text_zh": "除了克服减数分裂的不稳定性14,15，新生多倍体还面临着与建立和/或持久性相关的挑战。"
           },
           {
             "rank": 4,
             "sentence_id": 46,
-            "text": "Together, our findings unravel an unexpected evolutionary potential of HE-catalysed ‘allo-to-auto’ polyploidy-type transition and point to the feasibility for rapid generation of new polyploid crops by induced WGD of diploid hybrids that are prezygotically compatible but postzygotically isolated (or largely so) at the homoploid level30–34."
+            "text": "Together, our findings unravel an unexpected evolutionary potential of HE-catalysed ‘allo-to-auto’ polyploidy-type transition and point to the feasibility for rapid generation of new polyploid crops by induced WGD of diploid hybrids that are prezygotically compatible but postzygotically isolated (or largely so) at the homoploid level30–34.",
+            "text_zh": "总之，我们的研究结果揭示了he催化的“同种异体到自异体”多倍体型转化的意想不到的进化潜力，并指出了通过诱导WGD快速产生新的多倍体作物的可行性，这些二倍体杂种在同倍体水平上是前合子相容性的，但在合子后分离（或很大程度上如此）。"
           },
           {
             "rank": 5,
             "sentence_id": 45,
-            "text": "Moreover, we find that some high-yielding TRILs also showed transgressive resilience to two important abiotic stresses, although in their propagation process no such conditions were applied."
+            "text": "Moreover, we find that some high-yielding TRILs also showed transgressive resilience to two important abiotic stresses, although in their propagation process no such conditions were applied.",
+            "text_zh": "此外，我们发现一些高产trir在繁殖过程中也表现出对两种重要的非生物胁迫的入侵恢复能力，尽管在繁殖过程中没有施加这些条件。"
           },
           {
             "rank": 6,
             "sentence_id": 336,
-            "text": "Indeed, this has been observed in synthetic polyploids of several other plant taxa after multigenerational selection for higher fertility13,74."
+            "text": "Indeed, this has been observed in synthetic polyploids of several other plant taxa after multigenerational selection for higher fertility13,74.",
+            "text_zh": "事实上，这已经在其他几个植物类群的合成多倍体中观察到，这些多倍体经过多代选择以获得更高的育性[13,74]。"
           },
           {
             "rank": 7,
             "sentence_id": 335,
-            "text": "Because meiosis stability is often causally linked to fertility in neopolyploidy, it may be suggested that autopolyploidy might rapidly evolve stable meiosis."
+            "text": "Because meiosis stability is often causally linked to fertility in neopolyploidy, it may be suggested that autopolyploidy might rapidly evolve stable meiosis.",
+            "text_zh": "由于减数分裂稳定性通常与新多倍体的育性有因果关系，这可能表明自多倍体可能迅速进化出稳定的减数分裂。"
           },
           {
             "rank": 8,
             "sentence_id": 337,
-            "text": "Together, it may be suggested that rapid evolution of meiotic stability in newly formed plant polyploids is probably a common biological property, consistent with the often recurrent and ubiquitous occurrence of historical WGDs in the entire plant kingdom1,5,23,75."
+            "text": "Together, it may be suggested that rapid evolution of meiotic stability in newly formed plant polyploids is probably a common biological property, consistent with the often recurrent and ubiquitous occurrence of historical WGDs in the entire plant kingdom1,5,23,75.",
+            "text_zh": "综上所述，新形成的植物多倍体减数分裂稳定性的快速进化可能是一种共同的生物学特性，这与整个植物界历史上经常反复出现和普遍存在的WGDs一致1,5,23,75。"
           },
           {
             "rank": 9,
             "sentence_id": 286,
-            "text": "Thus, under circumstances where these two essential conditions (that is, moderate parental genetic divergence and absence of HPS) are met, HE by itself appears to be a potent driver of evolutionarily relevant diversification under polyploidy."
+            "text": "Thus, under circumstances where these two essential conditions (that is, moderate parental genetic divergence and absence of HPS) are met, HE by itself appears to be a potent driver of evolutionarily relevant diversification under polyploidy.",
+            "text_zh": "因此，在满足这两个基本条件（即亲本遗传分化适度和HPS缺失）的情况下，HE本身似乎是多倍体下进化相关多样化的有力驱动因素。"
           },
           {
             "rank": 10,
             "sentence_id": 23,
-            "text": "Notwithstanding a burgeoning literature on the rapid genomic and expression-level changes accompanying polyploidy, the extent to which these mechanisms collectively generate evolutionarily meaningful phenotypic variation in newly formed polyploids remains fragmented, as well as mostly unobserved in natural settings."
+            "text": "Notwithstanding a burgeoning literature on the rapid genomic and expression-level changes accompanying polyploidy, the extent to which these mechanisms collectively generate evolutionarily meaningful phenotypic variation in newly formed polyploids remains fragmented, as well as mostly unobserved in natural settings.",
+            "text_zh": "尽管关于多倍体伴随的快速基因组和表达水平变化的文献不断涌现，但这些机制在新形成的多倍体中共同产生进化上有意义的表型变异的程度仍然是碎片化的，而且在自然环境中大多未被观察到。"
           }
         ]
       },

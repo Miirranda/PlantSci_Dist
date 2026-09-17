@@ -1,0 +1,366 @@
+[
+  {
+    "text": "nature plants Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation 5 1,6, Yong Yi1,6, Shengchao Ge 1,6, Zi Wang1, Zhangyu Wei1, 3, Haifeng Wang2, Yangwen Qian4, 1 & Yunfeng Liu In angiosperms, microRNA156 (miR156) acts as an intrinsic, endogenous developmental timer for the age-dependent transition from the juvenile to the adult phase1–3. However, the mechanisms modulating the age-dependent expression pattern of miR156 are still poorly understood4. In this Article, we report that circular RNAs (ciMIR156Ds) derived from pri-miR156d negatively regulate miR156 levels in an aging-dependent manner in rice. The ciMIR156D levels increase as plants age, which is inversely correlated with the changes of pri-miR156d and miR156 abundance. Consistent with this observation, ciMIR156Ds deficiency caused by a spontaneous mutation increases pri-miR156d and miR156 levels, resulting in a delayed heading phenotype, whereas ciMIR156Ds overexpression has opposite effects, demonstrating that ciMIR156Ds are negative regulators of miR156. We further show that ciMIR156Ds form R-loops with MIR156D at the region where they derive in an aging-dependent manner, which reduces the occupancy of DNA-dependent RNA polymerase II at that location and hence impedes pri-miR156d elongation. These findings reveal a mechanism for regulating heading date Flowering timing or heading date stands as a pivotal agronomic trait in rice cultivation, representing a critical transition from vegetative to reproductive growth.",
+    "section": "Front Matter",
+    "page": "1",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "0"
+  },
+  {
+    "text": "It determines the production cycle, geographic and seasonal adaptability of rice5–7. Agronomic yield traits such as spikelet number, grain yield per panicle and seed set are also associated with rice heading characteristics7. Therefore, the mechanisms regulating heading date hold notable importance in improving rice variety traits and enhancing yield potential. Aging is one of the crucial factors determining flowering time8, serving as an endogenous signal to suppress flowering during the juvenile phase while ensuring flowering during the adult phase without reliance on exogenous inductive factors9. The A full list of affiliations appears at the end of the paper. by refining the aging-dependent expression of miR156. microRNA156 (miR156) has been identified as a key signalling switch for the transition from vegetative to reproductive growth in the angiosperms and serves as a molecular marker of aging1–3. By targeting members of the SQUAMOSA PROMOTER BINDING PROTEIN (SBP/ SPL) family transcription factors for degradation, miR156 intricately regulates the expression of genes required for acquiring adult features, including the pivotal flower-timing gene MIR172, a target of SPLs. At the early developmental stage, high levels of miR156 repress SPL levels, maintaining the plant in the vegetative state. The miR156 levels decrease during shoot development, which leads to increased levels of SPLs, resulting in vegetative phase change. Although studies have 709 a b Nip sdh WT d e Nip NIL-sdh 200 bp pri-miR156d 100 bp 200 bp pri-miR156j 100 bp 200 bp pri-miR156a 100 bp 400 bp UBQ 200 bp h miR156dsdh miR156dSDH Nip NIL-sdh Fig. 1 | A deletion in MIR156D gene body increases the expression of miR156d and causes delayed heading date in sdh.",
+    "section": "Front Matter",
+    "page": "1",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "1"
+  },
+  {
+    "text": "a,b, Phenotypes of 98-day-old plants of wild-type plants (Gui649) and sdh mutants in the Gui649 genetic background (sdh) (a) and Nip and the near-isogenic line carrying sdh in the Nip genetic background (NIL-sdh) (b) grown under LD conditions. c, Diagram showing the SDH locus at the second chromosome. The numbers indicate the recombinants between the molecular markers. The grey boxes represent the genes located in the mapped region, while the yellow one indicates the coding region of pre-miR156d. d, The schematic diagram of a 133-bp nucleotide deletion within MIR156D in sdh mutant. Top: the DNA sequencing result of sdh. Bottom: the gene structure is represented by exons (boxes) and introns (lines). The green box in the first exon indicates the pre-miR156d coding region. The red dashed box indicates suggested that the aging-dependent decrease of miR156 abundance happens at transcriptional levels10–13, the underlying mechanisms are largely unknown4.",
+    "section": "Front Matter",
+    "page": "1",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "2"
+  },
+  {
+    "text": "Circular RNAs (circRNAs) are a class of non-coding RNAs containing the closed-loop structure. In animals, circRNAs play critical roles in regulating diverse biological processes via various functional mechanisms by interacting with proteins, RNAs and DNAs14. CircRNAs are also widely present in plants15,16. However, their functions remain to be investigated. From a population of Gui649, a japonica background restorer line (wild type, WT), we isolated the spontaneous mutant semidwarf and delayed heading date (sdh). Compared with WT, sdh exhibited semidwarf stature and delayed heading time; 10.6 days later under long-day (LD) conditions in Nanning, China (22° 50' N, 108° 17' E) during the summer season and 13.1 days later under short-day (SD) conditions in Lingshui, China (18° 31' N, 110° 03' E) during the winter season (Fig. 1a c 2 Mb NIL-sdh RM12590 RM12584 RM12593 RM12576 RM5869 RM3865 RM5553 RM6641 RM555 220 kb 6 4 2 1 1 3 4 5 8 f g miR156dSDH miR156dsdh NIL-sdh + STTM156 NIL-sdh NIL-sdh Nip Nip miR156 miR156 miR172 U6 U6 i NIL-sdh + Nip NIL-sdh OE-miR156d STTM156 the position of deleted nucleotides and the grey arrows represent the primers used for detecting sdh mutants. e, Transcript levels of pri-miR156s in Nip and NIL-sdh were analysed by RT–PCR. Ubiquitin (UBQ) was used as the control. f,g, The mature miR156 (f) or miR172 (g) were detected in the fifth leaves of various genotypic rice plants using RNA blotting. U6 was used as the loading control. h,i, Phenotypes of 91-day-old plants grown under LD conditions: Nip harbouring the p156D:miR156sdh (miR156sdh) and Nip harbouring the p156D:miR156SDH (miR156dSDH) (h); and NIL-sdh harbouring the p156D:STTM156 transgene (NIL-sdh+STTM156) and Nip harbouring the p35S:MIR156D transgene (OE-miR156d) (i). Phenotypic images were analysed by Image J v.1.53t. Scale bars, 2 cm. and Extended Data Fig. 1a).",
+    "section": "Front Matter",
+    "page": "2",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "3"
+  },
+  {
+    "text": "Additionally, sdh had an increased number of tillers compared with WT (Extended Data Fig. 1b). The sdh appeared to be a single dominant mutation, given the observations that the F1 plant resulting from the backcross between sdh and WT exhibited similar phenotypes to sdh, and that the ratio of plants displaying sdh phenotype to WT-like plants was ~2.5:1 (137:54, χ2 = 1.09, P = 0.5–0.1). To identify the sdh mutation, we generated a near-isogenic line (NIL) of sdh (NIL-sdh) in the background of japonica rice Nipponbare (Nip) by backcrossing sdh to Nip seven times. NIL-sdh displayed similar phenotypes to those of the original sdh (Fig. 1b and Extended Data Fig. 1c–e) and was used for subsequent analyses. Bulked segregant analysis (BSA) of F2 segregation plants displaying wild-type or sdh phenotype from the sdh × Nip cross showed that sdh was on the short arm of chromosome 2 (Extended Data Fig. 2a). Further map-based cloning analysis using a population derived from crossing NIL-sdh with the indica variety 9311 narrowed sdh to an 85.8-kilobase (kb) region (Fig. 1c), 710 a cDNA DNA cDNA DNA Nip sdh Nip Nip sdh Nip sdh 400 bp 200 bp c d NS 0.06 1st 2nd 3rd 4th 5th ** Relative pri-miR156d level miR156 0.04 U6 400 bp 300 bp ciMIR156Ds 200 bp 0.02 100 bp 300 bp UBQ 200 bp 0 1st Fig. 2 | CircRNAs derived from the sdh deletion region regulate the transcription of miR156.",
+    "section": "Front Matter",
+    "page": "2",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "4"
+  },
+  {
+    "text": "a, Agarose gel electrophoreses showing circRNA amplicons from RNase R-treated RNA extracted from Nip and NIL-sdh plants. Left: convergent primers were designed within the circRNA region and applied on both cDNA and genomic DNA samples of Nip and NIL-sdh plants. Right: divergent primers were used to amplify ciMIR156D-1, -2, -3 from cDNA and genomic DNA of Nip. The cDNA was produced from total RNA treated with RNase R and subject to reverse transcription. The blue, red and purple arrows indicate ciMIR156D-1, ciMIR156D-2 and ciMIR156D-3, respectively. Grey arrows indicate the convergent primers and divergent primers. b, Schematic diagram of three circRNAs generated from the second exon to the third exon of MIR156D. The gene structure is represented by exons (boxes) and introns (lines) and the green box in the first exon indicates the pre-miR156d coding region. The blue and pink boxes and yellow lines represent exons and introns, respectively, encompassing which contains six protein-coding genes and the non-coding MIR156D gene (Os02g0180800) (Extended Data Fig. 2b). Sequence analyses detected a 133-base pair (bp) nucleotide deletion (4512043–4512175) across the junction of the third exon and third intron of MIR156D, which was positioned at 710-bp downstream of the stem-loop coding region (Fig. 1d and Extended Data Fig. 2c). This deletion cosegregated with the sdh phenotypes and increased both pri-miR156d and miR156 levels in the flag leaf of NIL-sdh without altering the levels of other pri-miR156s relative to Nip (Fig. 1e,f and Extended Data Fig. 2d). Moreover, the transcript levels of SPLs, which are key regulators of flowering and tillering in rice17,18 and targets of miR156, were much lower in NIL-sdh compared with Nip (Extended Data Fig. 3a), suggesting that the deletion may cause developmental defects by increasing miR156 levels.",
+    "section": "Front Matter",
+    "page": "3",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "5"
+  },
+  {
+    "text": "To support this notion, we expressed a mutated copy of MIR156D harbouring the 133-bp deletion (miR156sdh) and a WT copy of MIR156D (miR156SDH) driven by its native promoter in Nip. Expression of miR156sdh, but not miR156SDH, increased accumulation of pri-miR156 and mature miR156 (Fig. 1g and Extended Data Fig. 3b), resulting in developmental defects similar to those of NIL-sdh (Fig. 1h and Extended Data Fig. 3c,d). In addition, we expressed an miR156 short tandem target mimic (STTM156) driven by the MIR156D promoter (Extended Data Fig. 3e) in NIL-sdh. Expression of STTM156 restored mature miR156 levels and rescued the developmental defects of NIL-sdh, when compared with Nip (Fig. 1i and Extended Data Fig. 3c,d,f). Furthermore, overexpression of MIR156D under the control of the 35S promoter dramatically delayed the heading date and increased tiller numbers in Nip (Fig. 1i and Extended Data Fig. 3c,d). Taken together, these results demonstrate that the 133-bp deletion increases miR156 levels, resulting in the developmental defects of sdh. Next, we sought to elucidate how sdh alters MIR156D expression. We noticed that there are seven predicted circRNAs in the MIR156D b sdh 400 bp 200 bp 100 bp ciMIR156D-1 ciMIR156D-3 ciMIR156D-2 e miR156 U6 OE-156dcirc-1 OE-156dcirc-1 Nip NIL-sdh NIL-sdh OE-156dcirc Nip Nip ** NIL-sdh ** ** 1st ** 1 0.78 1.17 ** * 3rd * NS 1 0.86 1.23 5th 1 0.93 1.67 2nd 3rd 4th 5th the circRNAs.",
+    "section": "Front Matter",
+    "page": "3",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "6"
+  },
+  {
+    "text": "Black lines indicate the BSJ of circRNAs. The dashed box indicates the deleted DNA region in the sdh mutant. c, RNA blot analysis of miR156 levels from the first to the fifth leaf blades. U6 was used as a loading control (the top two lines). The expression of ciMIR156Ds from leaves at various stages was detected by RT–qPCR after RNase R treatments and gel electrophoreses. UBQ was used as a normalization control (the bottom two lines). The ciMIR156Ds, circRNAs derived from MIR156D. d, The transcript levels of pri-miR156d in leaves of various genotypes determined by RT–qPCR. The relative transcript abundance is compared to the level of ubiquitin. Data are shown as mean ± s.d. of four technical replicates. *P < 0.05; **P < 0.01; NS, not significant using single-sided Student’s t-tests. e, RNA blot analysis of miR156 levels in leaves of three stages from various genotypes. U6 was used as a loading control. Band intensity was analysed by Quantity One 1-D v.4.6.8 (Bio-Rad). (ciMIR156Ds) coding region19–23 (Supplementary Data 1). Among them, we confirmed that three of these circRNAs—Os_ciR2088 (ciMIR156D-1), OSA_circ02437 (ciMIR156D-2) and OSA_circ02436 (ciMIR156D-3)—were expressed (Fig. 2a,b, Extended Data Fig. 4a and Supplementary Table 1). Because the sdh deletion spans the back-splicing junction (BSJ) that is essential for generating circRNAs from pri-miR156d (ref. 14), we suspected that it may impair circRNA production. Indeed, ciMIR156Ds were undetectable in sdh (Fig. 2a). This result led us to hypothesize that ciMIR156Ds may negatively regulate pri-miR156d expression. Indeed, the transcript levels of ciMIR156Ds were increased from the first to fifth leaves (peaked at the fourth leaf), which is reversibly correlated with changes of miR156 levels24,25 (Fig. 2c).",
+    "section": "Front Matter",
+    "page": "3",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "7"
+  },
+  {
+    "text": "Moreover, pri-miR156d levels were much higher from the second to fifth leaves in NIL-sdh than in Nip (Fig. 2d). Furthermore, expression of a DNA fragment covering the first exon to fourth exon (OE-156dcirc) of MIR156D, in which miR156 and miR156* sequences were mutated so that miR156 cannot be produced from this transgene, greatly increased ciMIR156D levels (Extended Data Fig. 4b,c). Increased ciMIR156D transcripts repressed the expression of pri-miR156d (Fig. 2d and Extended Data Fig. 5a) and miR156 (Fig. 2e), resulting in increased transcript levels of some SPLs genes (Extended Data Fig. 5c). It should be noted that despite the notably reduced pri-miR156d levels in the flag leaf (Extended Data Fig. 5a), miR156 levels in the flag leaf of OE-156dcirc plants did not decrease as much as pri-miR156d compared with Nip (Extended Data Fig. 5b), probably because miR156 levels may have reached the lowest threshold at this stage or due to the presence of other MIR156 genes. In agreement with this, miR172 levels were increased at the flag leaf of the OE-156dcirc lines (Extended Data Fig. 5b). As a control, we overexpressed a truncated linear ciMIR156D (OE-156dw/t 3rd intron), in which the third intron was removed to block ciMIR156D production. OE-156dw/t 3rd intron, whose transcript levels were similar to those from OE-156dcirc, had no obvious 711 a Chr. 2 Ruler 4511000 4512000 4513000 < < < < < < < miR156d structure P4 P3 P2 P5 ciMIR156D-1 circRNA ciMIR156D-2 ciMIR156D-3 300 Seedlings R-loops 0 300 Calli R-loops 0 24 young leaves 0 41 mature leaves 0 d f DRIP assay 0.20 4 Nip 2nd Nip 2nd 0.15 3 NIL-sdh 2nd NIL-sdh 2nd Input (%) Input (%) 0.10 2 0.05 1 0 0 P1 P2 P3 P4 P5 P6 P1 P2 P3 P4 P5 P6 g e DRIP assay 4 0.20 Nip 5th Nip 5th NIL-sdh 5th NIL-sdh 5th 3 0.15 Input (%) Input (%) 2 0.10 1 0.05 0 0 P1 P2 P3 P4 P5 P6 P1 P2 P3 P4 P5 P6 Fig. 3 | The formation of ciMIR156D-mediated R-loops hinders transcription elongation of MIR156D.",
+    "section": "Front Matter",
+    "page": "3",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "8"
+  },
+  {
+    "text": "a, Diagram of the localization of ciMIR156Ds, potential R-loops and the occupancy of Pol II at the MIR156D locus. The blue, yellow and purple lines indicate the positions of ciMIR156Ds at the MIR156D locus. The orange line indicates the peak of the R-loop at the MIR156D locus. R-loop peaks from seedlings (cyan) and calli (green) of Nip and the occupancy of Pol II at the MIR156D in young and mature leaves of Nip (yellow) were generated on the basis of the DRIP–seq and Pol II ChIP–seq data from refs. 31,34, respectively. The red dashed box indicates the nucleotide deletion in sdh. P1–P5 refer to the selected regions across the MIR156D gene for assays in d–g. b,c, Detection of circRNA– DNA hybrids by in vitro dot-blot assays with or without treatments of various nucleases in the set of WT Nip and Col (b) and the set of WT and sdh mutant (c). The purified circular circRNAs (1, ciMIR156D-1; 2, ciMIR156D-2; 3, ciMIR156D-3; 4, AtSEPs exon 5 circRNA; 5, circR5g05160) were incubated with genomic DNA from Nip, Arabidopsis (Col) or NIL-sdh (sdh). The DNAs were pretreated with RNase H to remove pre-existing R-loops as indicated in (b) and all samples in (c). The R-loops were detected using S9.6 antibody recognizing the RNA–DNA hybrid.",
+    "section": "Front Matter",
+    "page": "3",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "9"
+  },
+  {
+    "text": "effect on levels of pri-miR156d and miR156, as well as the heading date (Extended Data Figs. 5a,b and 6). Taken together, these results demonstrate that ciMIR156Ds represses the expression of MIR156D. Beside circRNAs, back-splicing could also induce nonsensemediated decay (NMD) which may affect pri-miR156d levels. To rule out this possibility, we generated a loss-of-function mutant of Os07g0495900, which encodes the orthologue gene of Arabidopsis b DNA pretreated with RNase H DNA Nip Nip Nip Nip Nip Col Nip Col circRNA – – 1 2 3 4 5 1 4514000 Untreated < < < P1 c Nip Nip Col sdh sdh sdh sdh circRNA 1 2 3 4 1 2 3 4 Untreated h Second Second Third Pre-miR156d exon intron exon Vegetative phase Pre-miR156d Second Second Third Pre-miR156d exon intron exon Reproductive phase circRNAs R-loop STOP d,e, R-loop signals at the circRNAs producing loci detected by the DRIP assays in the second (d) and fifth (e) leaves. Values are means ± s.d. of three technical replicates. P1–P6, the PCR fragments amplified with corresponding primer pairs. The leaves of NIL-sdh at the same growth stage with NIL were used as negative controls as they cannot produce ciMIR156Ds because of the DNA deletion of the circRNA generation region. f,g, The occupancy of Pol II at the MIR156D locus detected by ChIP followed by qPCR in second (f) and fifth (g) leaves. Values are means ± s.d. of four technical replicates. h, Model for ciMIR156D-mediated regulation of vegetative to reproductive phase transition by modulating temporal expression of miR156d. During the vegetative period, ciMIR156Ds levels are low so that pri-miR156d is normally transcribed and processed. As plants age, ciMIR156Ds levels are gradually increased to repress pri-miR156d transcription, ensuring proper vegetative to reproductive phase transition. Among three ciMIR156Ds, two form circRNA–DNA R-loops with their cognate DNAs, and thereby block pri-miR156d transcription elongation. Panel h created with BioRender.com.",
+    "section": "Front Matter",
+    "page": "4",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "10"
+  },
+  {
+    "text": "LBA1 (At5g47010) required for NMD26,27 and found that pri-miR156d and miR156 accumulation was not altered in this mutant relative to WT (Extended Data Fig. 7). Next, we asked how ciMIR156Ds repress miR156d levels. They could not function as an miRNA sponge because of the lack of a miR156 binding site or act on pri-miR156d RNA since they are derived from the same strand and do not have predicted complementary binding regions. Previous 712 reports have shown that certain nuclear-localized circRNAs can alter the expression of their parent genes28,29. Because ciMIR156Ds are also localized in the cell nucleus (Extended Data Fig. 8a), we reasoned that they might affect pri-miR156d transcription. On the basis of the observation that some circRNAs bind their cognate DNA to form a RNA–DNA hybrid or R-loop to modulate gene expression30, we next asked if ciMIR156Ds could form an R-loop with their cognate DNA. Indeed, the R-loops in the region spanning the second intron to third exon of MIR156D were found in data generated by rice DNA–RNA immunoprecipitation followed by sequencing (DRIP–seq)31 (Fig. 3a). Thus, we used dot blot with R-loop-specific antibodies to test if ciMIR156Ds could form R-loops in vitro. Incubation of R-loop free genomic DNA with ciMIR156D-1, ciMIR156D-2, ciMIR156D-3 and the positive control AtSEPs exon 5 circRNA30, but not the negative control circRNA5g05160 (ref. 22), generated signals (Fig. 3b). These signals were R-loop specific because they became undetectable after treatments with DNase I, which degrades DNA, or RNase H, which degrades RNA in RNA–DNA hybrids. Moreover, treatment with RNase R, which removes linear RNAs, showed that 49.8%, 45.5% and 34.7% of the total R-loop signal were generated by ciMIR156D-1, ciMIR156D-2 and ciMIR156D-3, respectively (Fig. 3b), suggesting that ciMIR156D-1 and ciMIR156D-2 exhibited a strong ability to form R-loops with their cognate DNAs, while ciMIR156D-3, which contains only the third exon, showed a weaker binding capacity. Notably, incubation of ciMIR156Ds with R-loop-free DNAs from sdh, which still contain substantial sequences complementary to ciMIR156Ds, did not generate R-loop signals (Fig. 3c), suggesting that the 133-bp deletion in sdh is crucial for R-loop formation. Supporting this result, ciMIR156D-3, which partially overlaps with the deleted region, formed a weaker R-loop with wild-type genomic DNA (Fig. 3b,c). Taken together, these results demonstrate that that ciMIR156Ds form R-loops with the DNA regions where they derive. Next, we used DRIP with antibodies recognizing RNA–DNA hybrids followed by quantitative polymerase chain reaction (qPCR) to validate in vivo ciMI156D-mediated R-loop formation in the second and fifth leaves. DRIP detected the enrichment of a circRNA–DNA R-loop in the region spanning both second intron and third exon of MIR156D in Nip but not in sdh (Fig. 3d,e). Moreover, the R-loop signals were higher in the fifth leaf than in the second leaf, which is consistent with the elevated ciMIR156D levels in respective leaves (Fig. 3d,e). Together with the in vitro results, these data reveal that ciMIR156D-1 and -2 form an R-loop with their cognate DNA in vivo. Next, we asked how the R-loop formed by ciMIR156Ds modulates pri-miR156 transcription. In plants, R-loops formed by circRNA–DNA pairing have been shown to modulate epigenetic modifications31,32. However, sdh did not substantially alter the levels of histone methylation or acetylation in either the miR156d coding region or the proximal region (Extended Data Fig. 8b,c). R-loops formed in gene bodies also can restrain RNA polymerase II (Pol II) extension rate during the elongation33. Indeed, chromatin immunoprecipitation (ChIP) data of Pol II showed that Pol II occupancy at the R-loop region of mature leaves (flag leaves)34, which had high ciMIR156D levels, was higher than that in ciMIR156D-low young leaves (seedling leaves) (Fig. 3a), suggesting that ciMIR156Ds may affect pri-miR156d elongation.",
+    "section": "Front Matter",
+    "page": "4",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "11"
+  },
+  {
+    "text": "To support this, we compared the Pol II occupancy at the MIR156D gene region in Nip and NIL-sdh in leaves of different stages. In the R-loop-rich fifth leaf (Fig. 3e), Pol II showed notably higher occupancy at the R-loop region in NIL-sdh relative to NIP (Fig. 3g). In contrast, in the R-loop-limited second leaf (Fig. 3d), the difference of Pol II occupancy between Nip and NIL-sdh was not substantial (Fig. 3f). These results reveal that ciMIR156D-1 and -2 affect pri-miR156d elongation in an R-loop-dependent manner. As the major contributor for miR156 production (Extended Data Fig. 9) in rice, the fluctuation of miR156d transcripts shall substantially impact on the miR156 level. In this study, we identified ciMIR156Ds derived from pri-miR156d as key regulators of heading date in rice. Two out of three ciMIR156Ds bind their cognate DNA locus, forming R-loops. The R-loops slow the transcriptional elongation of pri-miR156d, ultimately resulting in reduced accumulation of miR156. Notably, ciMIR156D levels increase from the first to fifth leaves, enabling them to modulate miR156 levels in an aging-dependent way. Indeed, lack of ciMIR156Ds causes delayed head date while overexpression of ciMIR156D results in earlier flowering time. How the ciMIR156D levels are modulated in an aging-dependent manner remains to be investigated. Intriguingly, circRNAs derived from MIR156 locus are also present in Arabidopsis and overlap with the R-loop at the region (Extended Data Fig. 10 and Supplementary Data 2), indicating that circRNA-mediated modulation of miR156 maybe a conserved mechanism to control the transition from the vegetative to reproductive stages. It has been reported that R-loops, formed near the transcription start site region of MIRNAs, promote cotranscriptional pri-miRNA processing35. This raised a possibility that R-loops formed by ciMIR156s may affect pri-miR156d processing, in addition to their role in transcription regulation. However, these R-loops were formed after pre-miR156d. Thus, their effect on pri-miRNA156d processing remains to be investigated. Multiple circRNAs have been shown to function through R-loop formation30,36, suggesting that they may extensively affect gene transcription through mediating R-loop formation. In agreement with this, we identified 460 circRNAs originating from 175 miRNA loci from rice circRNA database23 (Supplementary Data 3). Among them, 165 circRNAs from 78 miRNA loci potentially overlap with R-loops (Supplementary Data 4), suggesting that circRNA-mediated R-loop formation maybe a common mechanism in regulating miRNA levels.",
+    "section": "Front Matter",
+    "page": "5",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "12"
+  },
+  {
+    "text": "To develop the NILs of sdh, sdh was consecutively backcrossed (BC) seven times with Nipponbare. The plants resulting from self-pollination of the BC7 plants carrying SDH/sdh were used as NILs. The plant population resulting from self-pollination of BC3 plants carrying SDH/sdh (BC3F2) was used for BSA assay.",
+    "section": "Methods Plant materials",
+    "page": "5",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "13"
+  },
+  {
+    "text": "NIL-sdh was backcrossed with indica variety 9311 three times. The resulting BC3 plant carrying SDH/sdh (BC3F2) was self-pollinated to generate the fine mapping population. Using >3,000 BC3F2 plants, the SDH locus was mapped to a region between markers RM555 and RM5869 on chromosome 2, and further narrowed to an ~85.8-kb region flanked by markers RM12584 and RM1259. All plants were grown in the experimental field in Guangxi University in Nanning of Guangxi province or Lingshui of Hainan province, China. The sequences of the predicted genes in the candidate region were compared among the mapping parents. Markers used for genotyping are listed in Supplementary Data 5.",
+    "section": "Mapping of the sdh mutation",
+    "page": "5",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "14"
+  },
+  {
+    "text": "The 2,423-bp promoter of MIR156D was cloned into pRHE vector by in-fusion cloning to generate the pRHE-pro156d construct. The genomic region of MIR156D from first exon to fifth exon was amplified from DNA of Nip or NIL-sdh and fused with the sixth exon using fusion PCR to obtain the miR156dSDH or miR156sdh fragments, respectively. The miR156dSDH and miR156sdh were cloned into pRHE-pro156d, to generate pRHE-Pro156d::miR156SDH and pRHE-pro156d::miR156sdh, respectively. The STTM targeting miR156 was amplified using PCR and cloned into pRHE-pro156d. The genomic region of MIR156D from first exon to fifth exon was mutated by site-directed mutagenesis and was cloned into pRHV under the control of the ubiquitin promoter to generate ciMIR156D overexpression construct.",
+    "section": "Transgene constructs",
+    "page": "5",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "15"
+  },
+  {
+    "text": "RNA blot was performed as described in ref. 25. Briefly, after treatment with DNase I, 30 μg of total RNAs from various rice materials were separated by electrophoresis on 20% denaturing polyacrylamide gels, 713 transferred to a Hybond-N+ nylon membrane (Amersham Bioscience, GE Healthcare) and ultraviolet-crosslinked. After hybridization at 42 °C in ULTRAhyb-oligo hybridization buffer (Ambion) with a biotin-labelled (Invitrogen) probe, the membranes were washed twice at 40 °C in 2× SSC buffer and 0.5% SDS buffer for 30 min and for further biotin detection. Total RNA was extracted using the TRIzol reagent (Invitrogen) from sequentially developed leaves (first to fifth leaves) or flag leaf of 5-week-old rice.",
+    "section": "RNA blots",
+    "page": "5",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "16"
+  },
+  {
+    "text": "In vitro RNA transcription, circularization and purification were performed as described in ref. 37 with slight modifications. A total of 1 μg of PCR-amplified DNA fragments with T7 promoter were incubated with 2 μl of T7 RNA polymerase enzyme (Promega), 0.5 mM dNTPs, RNase inhibitor and 2 mM GMP to produce linear RNAs. After DNase I treatment, 50 μg of in vitro transcribed RNAs were incubated with T4 RNA ligase 2 (NEB) for in vitro circularization. Following elimination of linear RNAs with RNase R digestion, the resulting cirRNAs were purified with phenol–chloroform extraction and precipitated with ethanol. The purified circRNA was validated by PCR with divergent primers listed in Supplementary Data 5.",
+    "section": "In vitro RNA transcription, circularization and purification",
+    "page": "6",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "17"
+  },
+  {
+    "text": "The divergent and convergent primers were designed for corresponding circRNA sequences and BSJ sites. After reverse transcription using random primers, controls were amplified using complementary templates generated from linear RNA with convergent primers and divergent primers were used to detect the circRNAs. PCR products were dissected from gel and purified using the gel extraction kit (Tiangen DP209) for sequencing. The accumulations of the ciMIR156Ds in total RNA of the fourth leaf of Nip were measured by droplet digital PCR using automatic digital PCR system DQ24 (Sniper).",
+    "section": "CircRNA amplification, Sanger sequencing and quantitative analysis of circRNA",
+    "page": "6",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "18"
+  },
+  {
+    "text": "DRIP assay was carried out as described in ref. 32 with slight modifications. The nuclei isolated from rice leaves were used to extract genomic DNA through three rounds of phenol, phenol–chloroform and chloroform extraction followed by cold ethanol precipitation. Purified genomic DNA was sonicated into fragments of 100–300 bp. The 3-μg fragmented DNA was kept as inputs and 5-μg fragmented DNA with or without RNase H treatment was purified and incubated overnight at 4 °C with S9.6 antibody (1:200, Abcam ab234957) in IP buffer (10 mM NaPO4, 140 mM NaCl, 0.05% Triton X-100) followed by incubation with 50 μl of protein A/G dynabeads). After washing with IP buffer three times, the beads were eluted with 300 μl of elution buffer (50 mM Tris-HCl pH 8.0, 10 mM EDTA buffer, 0.5% SDS) twice at 65 °C for 30 min. The S9.6 antibody-bound DNA was then purified using phenol–chloroform extraction and pelleted with ethanol. DNA was resuspended for PCR assay. The percentage of immunoprecipitated DNA was calculated as fold-change over the input.",
+    "section": "DRIP assay",
+    "page": "6",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "19"
+  },
+  {
+    "text": "The histone methylation and acetylation assays were carried out as described in ref. 38 with slight modifications. Briefly, 1 g of the rice material was crosslinked in 1% formaldehyde. Then, nuclei were isolated and resuspended in nuclear lysis buffer. Following this step, DNA was interrupted with ultrasonic crusher and diluted with fivefold ChIP dilution buffer. After prehybridization the protein A/G dynabeads, antibodies recognizing H3K27ac (1:500, Abcam ab4729) or H3K27me3 (1:500, Abcam ab6002) were used for immunoprecipitation at 4 °C. After washing, DNAs were eluted, subjected to decrosslink and purified with phenol–chloroform extraction. The resulting DNAs were then precipitated with isoamyl alcohol and resuspended for PCR assay.",
+    "section": "Histone methylation and acetylation assay",
+    "page": "6",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "20"
+  },
+  {
+    "text": "Equal amount of in vitro synthesized circRNAs were incubated with the DNA template respectively, heated for 5 min at 65 °C in hybridization buffer (10 mM pH 7.5 Tris-HCl, 0.1 mM EDTA, varying NaCl concentrations) and slowly cooled down to room temperature for R-loop formation in vitro. Then 2 μl of reaction solution was spotted onto Hybond-N+ nylon membrane. After air-drying, the membrane was preblocked in 5% milk overnight at 4 °C and then incubated with S9.6 monoclonal antibody (1:1,000, Abcam ab234957), followed by incubation with goat anti-mouse-HRP secondary antibody (1:10,000, Abcam ab205719) to detect DNA–RNA hybrids loop. DNase I, RNase H and RNase R (NEB) treatments were performed according to manufacturer’s instruction using a standard hybridization buffer (10 mM Tris-HCl, pH 7.5, 50 mM NaCl, 0.1 mM EDTA)30. DNase I digests double-stranded DNA; the endoribonuclease RNase H degrades RNA in the RNA–DNA hybrids; the exoribonuclease RNase R degrades linear RNA, but not circular RNA.",
+    "section": "In vitro R-loop formation and detection assay",
+    "page": "6",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "21"
+  },
+  {
+    "text": "The cirRNA data of rice downloaded from Plantcircbase (v.7.0, http:// ibi.zju.edu.cn/plantcircbase/index.php)23 and BEDTools (v.2.28.0, https://bedtools.readthedocs.io/en/latest/index.html)39 were used to identify circRNAs located within a 2-kb range upstream and downstream of miRNAs. A total of 460 circRNAs were identified in this process. Subsequently, based on previously published rice R-loops peak data31, BEDTools were used to identify circRNAs that may potentially form R-loops with at least a 1-bp overlap between circRNA and R-loop peak, resulting in the identification of 165 circRNAs originating from 78 miRNAs, which may mediate R-loop formation.",
+    "section": "Bioinformatics validation of circRNAs-R-loop",
+    "page": "6",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "22"
+  },
+  {
+    "text": "GraphPad Prism v.9.0 was applied for the statistical analysis. At least three independent repeats had been performed with similar results for semiquantitative PCR with reverse transcription, agarose gel electrophoreses and RNA blots. For phenotypic studies of transgenic lines, at least three independent lines were analysed with similar phenotypes.",
+    "section": "Statistics and reproducibility",
+    "page": "6",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "23"
+  },
+  {
+    "text": "Further information on research design is available in the Nature Portfolio Reporting Summary linked to this article.",
+    "section": "Reporting summary",
+    "page": "6",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "24"
+  },
+  {
+    "text": "Publicly available datasets used in this study include PlantcircBase v.7.0 (http://ibi.zju.edu.cn/plantcircbase/index.php) and Bedtools v.2.28.0 (https://bedtools.readthedocs.io/en/latest/index.html). DRIP–seq data used for R-loop identification in this study are available via ref. 31 (accession no. GSE111944). Pol II ChIP–seq data used in this study are available via ref. 34. RNA-seq datasets of NIL-sdh and Nip are available via the Sequence Read Archive of the National Center for Biotechnology Information (accession nos. PRJNA1171578 and PRJNA1171724). All other data supporting the findings of this study are available in the paper and its Supplementary Information and Supplementary Data 1–6. Source data are provided with this paper.",
+    "section": "Data availability",
+    "page": "6",
+    "paper_id": "P005",
+    "title": "Circular RNAs derived from MIR156D promote rice heading by repressing transcription elongation of pri-miR156d through R-loop formation",
+    "authors": [
+      "Yuan Su",
+      "Yong Yi"
+    ],
+    "year": "2025",
+    "source_file": "P005.pdf",
+    "id": "25"
+  }
+]
