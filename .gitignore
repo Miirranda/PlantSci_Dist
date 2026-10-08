@@ -68,3 +68,10 @@ arag-main/arag-main/
 # Nested arag git metadata (do not commit)
 arag-main/.git_arag_backup/
 arag-main/.git/
+
+# Security-incident cleanup artifacts (do not commit)
+scripts/INCIDENT_SCAN_REPORT.txt
+scripts/SECURITY_INCIDENT_REVOKE.md
+scripts/_incident_extract_secrets.py
+scripts/_incident_scan_history.py
+scripts/run_history_cleanup.ps1
