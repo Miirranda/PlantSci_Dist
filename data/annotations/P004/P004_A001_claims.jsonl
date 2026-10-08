@@ -1,6 +1,2 @@
-{"claim_id": "C01", "claim_zh": "然而，传统模型仅依赖温湿度等气象因素，无法解释全球近60%的光合效率时空变异。", "claim_role": "paper_intro", "source_file": "P004_A001.md"}
-{"claim_id": "C02", "claim_zh": "本研究创新性地整合遥感观测、生态进化最优理论与可解释机器学习的方法，分析了全球120个生态系统站点通量数据，首次系统揭示了植物性状对生态系统光合效率的主导作用，为提升碳汇预测、应对气候变化提供了全新视角。", "claim_role": "paper_lead", "source_file": "P004_A001.md"}
-{"claim_id": "C03", "claim_zh": "研究成果突破传统认知，增加叶绿素含量、叶片寿命、比叶质量等性状，将模型解释力从36%（仅气象）提升至80%以上，水分供应与光照条件通过与植物性状的交互共同影响光合作用，证实了“性状-环境”协同机制，在森林、草原、农田等生态系统中具有普适性。", "claim_role": "paper_result", "source_file": "P004_A001.md"}
-{"claim_id": "C04", "claim_zh": "研究成果取得技术突破与未来价值，首次实现大尺度植物性状动态追踪，解决了传统地面测量的时空局限。", "claim_role": "paper_result", "source_file": "P004_A001.md"}
-{"claim_id": "C05", "claim_zh": "研究成果具有很好的应用前景，为森林碳汇监测、农业精准管理、干旱预警等提供了理论工具。", "claim_role": "paper_result", "source_file": "P004_A001.md"}
-{"claim_id": "C06", "claim_zh": "研究成果为地球系统模型注入了“植物智慧”，通过量化性状与生态系统光合效率的复杂关系，有望开发出更精准的动态植被模型，未来将结合新型卫星遥感与模型优化，大幅提升气候变化背景下的碳汇预测精度。", "claim_role": "paper_conclusion", "source_file": "P004_A001.md"}
+{"claim_id": "C01", "claim_zh": "光合效率是衡量植被将光能转化为生物质的关键指标，直接影响全球碳循环与粮食安全。", "claim_role": "paper_intro", "context_after": "然而，传统模型仅依赖温湿度等气象因素，无法解释全球近60%的光合效率时空变异。", "source_file": "P004_A001.md"}
+{"claim_id": "C02", "claim_zh": "然而，传统模型仅依赖温湿度等气象因素，无法解释全球近60%的光合效率时空变异。", "claim_role": "paper_intro", "context_before": "光合效率是衡量植被将光能转化为生物质的关键指标，直接影响全球碳循环与粮食安全。", "source_file": "P004_A001.md"}

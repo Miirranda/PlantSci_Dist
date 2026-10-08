@@ -885,6 +885,7 @@ def empty_doc(
             "标注草稿。审核顺序：claim → classify top-5 → review 6-10 → "
             "gold_retrieval → gold_classification → analysis → human_verified=true。"
             "生产由 scripts/generate_draft_from_pairs.py 生成；human_verified 全为 false。"
+            "若 analysis_pending=true，则仅含召回 top-10，尚未写失真分析。"
         ),
         "samples": [],
         "review_queue": {"must_review_sample_ids": [], "notes": ""},
@@ -1168,6 +1169,72 @@ def existing_sample_ids(doc: dict[str, Any] | None) -> set[str]:
     return out
 
 
+def is_analysis_pending(sample: dict[str, Any]) -> bool:
+    """召回草稿（--skip-analysis）尚未写过失真标签。"""
+    if sample.get("human_verified"):
+        return False
+    if sample.get("analysis_pending"):
+        return True
+    gc = sample.get("gold_classification") or {}
+    return not str(gc.get("evidence_level") or "").strip()
+
+
+def assemble_recall_sample(
+    pair: dict[str, Any],
+    *,
+    paper_id: str,
+    article_id: str,
+    source_type: str,
+) -> dict[str, Any]:
+    """只打包检索 top-10，不调模型写失真标签。召回前端可直接打开。"""
+    claim_id = pair["claim_id"]
+    return {
+        "sample_id": "%s-%s-%s" % (paper_id, article_id, claim_id),
+        "paper_id": paper_id,
+        "article_id": article_id,
+        "article_source_type": source_type,
+        "claim_zh": pair.get("claim_zh") or "",
+        "system_retrieval": build_system_retrieval(pair),
+        "gold_retrieval": {
+            "evidences": [],
+            "sentence_ids": [],
+            "is_answerable": None,
+        },
+        "gold_classification": {
+            "evidence_level": "",
+            "has_distortion": None,
+            "primary_label": None,
+            "secondary_label": None,
+            "severity": None,
+            "needs_manual_review": False,
+            "uncovered_phenomenon": "",
+            "reason": "",
+        },
+        "analysis": {
+            "evidence_judgement": "",
+            "classification_reason": "",
+            "key_differences": [],
+            "rag_review": {
+                "top5_is_best": None,
+                "better_in_review_pool": [],
+                "notes": "",
+            },
+            "unsupported_diagnosis": {
+                "verdict": "not_applicable",
+                "reasoning": "",
+                "suggested_keywords": [],
+                "suggested_sentence_ranges": "",
+            },
+            "manual_check_hints": "",
+            "needs_manual_review": False,
+            "review_focus": ["rag_top5"],
+            "ai_confidence": "",
+        },
+        "human_verified": False,
+        "analysis_pending": True,
+    }
+
+
 def print_summary(doc: dict[str, Any], token_stats: dict[str, int], failed: int) -> None:
     samples = doc.get("samples") or []
     print("\n==== 摘要 ====")
@@ -1218,6 +1285,11 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="覆盖本次范围内 human_verified=false 的已有样本（不覆盖已人工确认的）",
     )
+    p.add_argument(
+        "--skip-analysis",
+        action="store_true",
+        help="不调模型写失真标签，只把 pairs 的 top-10 打进草稿（召回审核用）",
+    )
     p.add_argument("--dry-run", action="store_true", help="只打印将发送的批，不调 API")
     return p
 
@@ -1250,9 +1322,11 @@ def main(argv: list[str] | None = None) -> int:
         else default_output_path(paper, article, selected, limit_n)
     )
     prompt_path = _resolve(args.prompt) if args.prompt else DEFAULT_PROMPT
-    if not prompt_path.exists():
-        raise SystemExit("找不到提示词: %s" % prompt_path)
-    system = load_system_prompt(prompt_path)
+    system = ""
+    if not args.skip_analysis:
+        if not prompt_path.exists():
+            raise SystemExit("找不到提示词: %s" % prompt_path)
+        system = load_system_prompt(prompt_path)
 
     sent_path = (
         _resolve(args.sentences) if args.sentences else default_sentences_path(paper)
@@ -1326,6 +1400,25 @@ def main(argv: list[str] | None = None) -> int:
         if removed:
             print("overwrite-unverified: 移除 %d 条未确认样本，将重生成" % removed)
 
+    if not args.skip_analysis:
+        pending_ids = {
+            str(s.get("sample_id") or "")
+            for s in (doc.get("samples") or [])
+            if is_analysis_pending(s)
+        }
+        if pending_ids & selected_ids:
+            kept = []
+            dropped = 0
+            for sample in doc.get("samples") or []:
+                sid = str(sample.get("sample_id") or "")
+                if sid in selected_ids and is_analysis_pending(sample):
+                    dropped += 1
+                    continue
+                kept.append(sample)
+            doc["samples"] = kept
+            if dropped:
+                print("召回草稿 %d 条将补写失真分析" % dropped)
+
     have = existing_sample_ids(doc)
     todo: list[dict[str, Any]] = []
     skipped = 0
@@ -1342,9 +1435,15 @@ def main(argv: list[str] | None = None) -> int:
         "范围 %d 条，跳过 %d，待生成 %d，batch-size=%d"
         % (len(selected), skipped, len(todo), args.batch_size)
     )
-    print("system 提示词 ≈ %d tok (%s)" % (estimate_tokens(system), prompt_path.name))
+    if args.skip_analysis:
+        print("模式: skip-analysis（只打包召回 top-10，不调模型）")
+    else:
+        print("system 提示词 ≈ %d tok (%s)" % (estimate_tokens(system), prompt_path.name))
 
     if args.dry_run:
+        if args.skip_analysis:
+            print("dry-run skip-analysis: 将写入 %d 条召回草稿" % len(todo))
+            return 0
         for i, batch in enumerate(chunks(todo, args.batch_size), 1):
             user = build_user_payload(
                 batch,
@@ -1373,6 +1472,21 @@ def main(argv: list[str] | None = None) -> int:
         refresh_doc(doc)
         atomic_write_json(out_path, doc)
         print("没有新条目需要生成")
+        return 0
+
+    if args.skip_analysis:
+        for pair in todo:
+            sample = assemble_recall_sample(
+                pair,
+                paper_id=paper,
+                article_id=article,
+                source_type=args.source_type,
+            )
+            doc.setdefault("samples", []).append(sample)
+            print("  pack %s" % sample["sample_id"])
+        refresh_doc(doc)
+        atomic_write_json(out_path, doc)
+        print("已写入召回草稿 %d 条 → %s" % (len(todo), out_path))
         return 0
 
     model = args.model.strip() or QWEN_MODEL

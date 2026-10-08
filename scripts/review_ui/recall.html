@@ -43,16 +43,26 @@
     </div>
 
     <!-- 观点句 -->
-    <div class="card claim-card">
-      <div class="card-title"><span class="dot"></span>观点句（公众号）</div>
-      <div class="claim-text" id="claimText">—</div>
+    <div class="card claim-card" id="claimCard">
+      <div class="card-title">
+        <span class="dot"></span>观点句（公众号）
+        <span class="claim-drop-badge" id="claimDropBadge" hidden>drop</span>
+      </div>
+      <div class="claim-version-label">原始观点句 <span class="claim-frozen">保存后也不会改这一句</span></div>
+      <div class="claim-text claim-original" id="claimOriginal">—</div>
+      <div class="claim-version-label">
+        规范后的观点句
+        <span class="claim-changed-badge" id="claimChangedBadge">未修改</span>
+        <span class="claim-edit-hint">双击可修改</span>
+        <button type="button" id="claimResetBtn" hidden>恢复为原始观点句</button>
+      </div>
+      <div class="claim-text claim-text-editable" id="claimText" title="双击编辑">—</div>
+      <textarea class="claim-edit" id="claimEditArea" hidden placeholder="修改后用于和论文原句配对的观点句…"></textarea>
       <div class="claim-meta" id="claimMeta"></div>
-    </div>
-
-    <!-- 召回证据 -->
-    <div class="card">
-      <div class="card-title"><span class="dot" style="background:#0f766e"></span>召回证据（论文原句 + 翻译）<span style="font-weight:400;text-transform:none;color:#94a3b8;font-size:11px;margin-left:6px">· 点「上下文」看该句前后各 3 句</span></div>
-      <div id="evList"></div>
+      <label class="claim-weak-box" title="勾选后本条自动标记为 drop，不进入失真判断">
+        <input type="checkbox" id="weakEvidenceCheck">
+        <span>weak evidence</span>
+      </label>
     </div>
 
     <!-- 召回操作 -->
@@ -60,7 +70,7 @@
       <div class="card-title"><span class="dot"></span>召回审核操作</div>
 
       <div class="op-group">
-        <div class="op-label">人工 gold_retrieval <small>(勾选上方证据句自动填充，也可手动补 sentence_id)</small></div>
+        <div class="op-label">人工 gold_retrieval <small>(勾选下方证据句自动填充，也可手动补 sentence_id)</small></div>
         <input type="text" id="goldInput" class="gold-input" placeholder="逗号分隔 sentence_id，如 2,15,27">
         <div class="gold-hint" id="goldHint"></div>
       </div>
@@ -72,8 +82,14 @@
 
       <div class="op-group">
         <div class="op-label">人工找回原文段落 <small>(空行分隔不同段落，作为额外证据句)</small></div>
-        <textarea class="note-area" id="manualParaArea" placeholder="粘贴论文中应被召回、但上面没出现的英文原句。一段可跨多行；不同段落之间用空行隔开"></textarea>
-        <div class="gold-hint">这些段落会与勾选句一起进入失真审核（文件2），并用于 AI 二次生成失真分析；中文翻译由脚本补。</div>
+        <textarea class="note-area" id="manualParaArea" placeholder="粘贴论文中应被召回、但下方证据句列表里没出现的英文原句。一段可跨多行；不同段落之间用空行隔开"></textarea>
+        <div class="gold-hint">这些段落会与勾选句一起进入失真审核（文件2），并用于 AI 二次生成失真分析。</div>
+      </div>
+
+      <div class="op-group">
+        <div class="op-label">人工找回段落中文翻译 <small>(空行分隔，按顺序与上方原文段落一一对应)</small></div>
+        <textarea class="note-area" id="manualZhArea" placeholder="按顺序填写每个找回段落对应的中文翻译，不同段落之间用空行隔开；第 1 段翻译对应第 1 段原文"></textarea>
+        <div class="gold-hint" id="manualZhHint"></div>
       </div>
 
       <div class="op-actions">
@@ -84,6 +100,18 @@
         </label>
         <span class="save-status" id="recallStatus"></span>
       </div>
+    </div>
+
+    <!-- 优化召回 -->
+    <div class="card" id="optimizedCard">
+      <div class="card-title"><span class="dot" style="background:#b45309"></span>优化召回<span style="font-weight:400;text-transform:none;color:#94a3b8;font-size:11px;margin-left:6px">· 从原文重新定位的连续证据，勾选与下方列表共用 gold</span></div>
+      <div id="optimizedBody"></div>
+    </div>
+
+    <!-- 召回证据 -->
+    <div class="card">
+      <div class="card-title"><span class="dot" style="background:#0f766e"></span>召回证据（论文原句 + 翻译）<span style="font-weight:400;text-transform:none;color:#94a3b8;font-size:11px;margin-left:6px">· 点「上下文」看该句前后各 3 句</span></div>
+      <div id="evList"></div>
     </div>
   </div>
 
@@ -97,6 +125,7 @@
 
 <div class="footer-hint">
   召回审核：<span class="kbd">S</span> 保存召回 · <span class="kbd">→</span> 保存并下一条 · <span class="kbd">←</span> 上一条
+  ｜ 双击「规范后的观点句」修改（<span class="kbd">Ctrl+Enter</span> 确认 · <span class="kbd">Esc</span> 取消）。原始句会单独保留 · 勾选 weak evidence 标记 drop，不进失真判断
   ｜ 勾选「召回审核已完成」后，运行 <span class="kbd">regenerate_analysis.py</span> 生成文件2 再进失真审核。
 </div>
 
@@ -115,12 +144,46 @@ const state = {
   manualParagraphs: [], // [{text, text_zh}] 人工找回原文段落
   recallReviewed: false,
   sentences: {}, // sentence_id -> 论文句表文本（用于展开上下文）
+  claimZh: '',
+  claimOriginal: '',
+  weakEvidence: false,
+  reviewDecision: 'keep',
+  editingClaim: false,
+  claimEditBackup: '',
 };
 const CTX_WINDOW = 3;
 
 const $ = id => document.getElementById(id);
 
 function myRecords() { return state.humanReviews[state.reviewer] || {}; }
+
+function isDropped(rec) {
+  if (!rec) return false;
+  if (rec.weak_evidence) return true;
+  return String(rec.review_decision || '').toLowerCase() === 'drop';
+}
+
+function isRecallDone(rec) {
+  return !!(rec && (rec.recall_reviewed || isDropped(rec)));
+}
+
+function claimOriginalText(s, r) {
+  const stored = r && String(r.claim_zh_original || '').trim();
+  if (stored) return stored;
+  return (s && s.claim_zh) || '';
+}
+
+function claimPairingText(s, r) {
+  const revised = r && String(r.claim_zh_revised || '').trim();
+  if (revised) return revised;
+  const edited = r && String(r.claim_zh || '').trim();
+  if (edited) return edited;
+  return claimOriginalText(s, r);
+}
+
+function displayClaimZh(s, r) {
+  return claimPairingText(s, r);
+}
 
 /* ================= 数据加载 ================= */
 async function load() {
@@ -134,12 +197,12 @@ async function load() {
   $('reviewerInput').value = state.reviewer;
   $('subtitle').textContent = `${data.meta.file || ''} · ${state.samples.length} 条样本`;
 
-  // 定位到当前审核人的第一条未审核
+  // 定位到当前审核人的第一条未审核（drop 视为已处理）
   let start = 0;
   const mine = myRecords();
   for (let i = 0; i < state.samples.length; i++) {
     const sid = state.samples[i].sample_id;
-    if (!mine[sid] || !mine[sid].recall_reviewed) { start = i; break; }
+    if (!isRecallDone(mine[sid])) { start = i; break; }
   }
   state.index = start;
   render();
@@ -154,10 +217,15 @@ function render() {
   const r = mine[s.sample_id] || {};
 
   // 恢复召回字段
+  exitClaimEditSilent();
   state.recallReviewed = !!r.recall_reviewed;
   state.recallNote = r.recall_note || '';
   state.manualParagraphs = (r.manual_retrieved_paragraphs || []).map(p => ({ text: p.text || '', text_zh: p.text_zh || '' }));
   state.goldIds = r.gold_sentence_ids ? r.gold_sentence_ids.slice() : (s.gold_retrieval?.sentence_ids || []).slice();
+  state.claimOriginal = claimOriginalText(s, r);
+  state.claimZh = claimPairingText(s, r);
+  state.weakEvidence = isDropped(r);
+  state.reviewDecision = state.weakEvidence ? 'drop' : 'keep';
   state.dirty = false;
   state.savedAt = null;
 
@@ -165,7 +233,7 @@ function render() {
   const n = state.samples.length;
   $('posText').textContent = `${state.index + 1}/${n}`;
   $('barFill').style.width = `${((state.index + 1) / n) * 100}%`;
-  const doneCount = Object.values(mine).filter(x => x.recall_reviewed).length;
+  const doneCount = Object.values(mine).filter(isRecallDone).length;
   $('doneText').textContent = `我的进度 ${doneCount}`;
   $('prevBtn').disabled = state.index === 0;
   $('nextBtn').disabled = state.index === n - 1;
@@ -174,15 +242,22 @@ function render() {
   renderOldNote(r);
 
   const metaHtml = claimMetaHtml(s);
-  $('claimText').textContent = s.claim_zh || '（无）';
+  $('claimOriginal').textContent = state.claimOriginal || '（无）';
+  $('claimText').textContent = state.claimZh || '（无）';
+  syncClaimBadge();
   $('claimMeta').innerHTML = metaHtml;
+  $('weakEvidenceCheck').checked = state.weakEvidence;
+  syncDropUI();
 
+  renderOptimized(s);
   renderEvidences(s);
   const aiGoldIds = s.gold_retrieval?.sentence_ids || [];
   $('goldHint').textContent = aiGoldIds.length ? `AI 金标句：${aiGoldIds.join(', ')}（供参考，可增删）` : 'AI 无金标句';
   syncGoldInput();
   $('recallNoteArea').value = state.recallNote;
   $('manualParaArea').value = manualParaToText();
+  $('manualZhArea').value = manualZhToText();
+  updateManualZhHint();
   $('recallDoneCheck').checked = state.recallReviewed;
 
   $('recallStatus').textContent = '';
@@ -210,6 +285,7 @@ function renderRefs(s) {
   $('refContent').innerHTML = items.map(it => {
     const rec = it.rec;
     const tags = [];
+    if (isDropped(rec)) tags.push('<span class="r-tag r-tag-drop">drop</span>');
     if (rec.recall_reviewed) tags.push('<span class="r-tag">已召回审核</span>');
     else tags.push('<span class="r-tag">召回未完成</span>');
     if (rec.gold_sentence_ids?.length) tags.push(`<span class="r-tag">gold:[${rec.gold_sentence_ids.join(',')}]</span>`);
@@ -244,6 +320,86 @@ function ctxSentences(sid) {
     rows.push({ sid: n + d, text: map[k], dir });
   }
   return rows;
+}
+
+const OPT_VERDICT_LABEL = {
+  supported: '找到证据',
+  partial: '部分支撑',
+  no_evidence: '无证据',
+};
+
+function sentenceText(sid) {
+  const map = state.sentences || {};
+  if (map[sid] != null && map[sid] !== '') return map[sid];
+  const keyed = map[String(sid)];
+  return keyed == null ? '' : keyed;
+}
+
+function optimizedSentenceRow(sid) {
+  const text = sentenceText(sid);
+  if (!text) return '';
+  const checked = state.goldIds.includes(sid) ? 'checked' : '';
+  return `<div class="ev-item">
+    <div class="ev-body"><div class="ev-en">${escapeHtml(text)}</div></div>
+    <div class="ev-side">
+      <label class="ev-check-box" title="勾选 = 该句应进人工 gold">
+        <input type="checkbox" class="ev-check" data-sid="${sid}" ${checked}>
+        <span class="ev-check-label">gold</span>
+      </label>
+      <div class="ev-sid">id=${sid}</div>
+    </div>
+  </div>`;
+}
+
+function renderOptimized(s) {
+  const box = $('optimizedBody');
+  if (!box) return;
+  const opt = s && s.optimized_recall;
+  if (!opt) {
+    box.innerHTML = '<div class="opt-empty">尚未生成优化召回</div>';
+    return;
+  }
+  const verdict = OPT_VERDICT_LABEL[opt.verdict] ? opt.verdict : 'no_evidence';
+  const review = opt.need_human_review ? '<span class="opt-flag">需人工复核</span>' : '';
+  let html = `<div class="opt-head">
+      <span class="opt-verdict opt-${verdict}">${escapeHtml(OPT_VERDICT_LABEL[verdict])}</span>
+      ${review}
+    </div>
+    <div class="opt-explain">${escapeHtml(opt.explanation || '')}</div>`;
+  const claim = String(opt.claim || '').trim();
+  if (claim && claim !== String(state.claimZh || '').trim()) {
+    html += `<div class="opt-claim-note">本结果针对的观点句：${escapeHtml(claim)}</div>`;
+  }
+  const evidences = Array.isArray(opt.evidences) ? opt.evidences : [];
+  if (verdict !== 'no_evidence' && evidences.length) {
+    html += evidences.map((ev, index) => {
+      let start = Number(ev.sentence_id_start);
+      let end = Number(ev.sentence_id_end);
+      if (Number.isFinite(start) && Number.isFinite(end) && end < start) {
+        const swap = start;
+        start = end;
+        end = swap;
+      }
+      const anchors = Array.isArray(ev.anchor_source) ? ev.anchor_source.join(', ') : '';
+      const conf = ev.confidence == null || ev.confidence === '' ? '' : String(ev.confidence);
+      let rows = '';
+      if (Number.isFinite(start) && Number.isFinite(end)) {
+        for (let sid = start; sid <= end; sid += 1) rows += optimizedSentenceRow(sid);
+      }
+      const body = rows
+        ? rows
+        : `<div class="opt-fallback ev-en">${escapeHtml(ev.evidence_text || '')}</div>`;
+      const meta = [
+        `证据 ${index + 1}`,
+        Number.isFinite(start) && Number.isFinite(end) ? `id ${start}–${end}` : '',
+        conf ? `置信度 ${conf}` : '',
+        anchors ? `锚点 ${anchors}` : '',
+      ].filter(Boolean).join(' · ');
+      return `<div class="opt-span"><div class="opt-span-meta">${escapeHtml(meta)}</div>${body}</div>`;
+    }).join('');
+  }
+  box.innerHTML = html;
+  box.querySelectorAll('.ev-check').forEach(cb => cb.addEventListener('change', onEvCheckChange));
 }
 
 function renderEvidences(s) {
@@ -301,6 +457,7 @@ function onEvCheckChange(e) {
   }
   state.goldIds.sort((a, b) => a - b);
   syncGoldInput();
+  syncEvChecks();
   state.dirty = true;
 }
 function onGoldInputChange(e) {
@@ -328,13 +485,121 @@ function onManualParaInput(e) {
   const blocks = raw.split(/\n\s*\n+/)
     .map(s => s.replace(/\s+/g, ' ').trim())
     .filter(Boolean);
-  const oldMap = {};
-  state.manualParagraphs.forEach(p => { oldMap[p.text] = p.text_zh || ''; });
-  state.manualParagraphs = blocks.map(text => ({ text, text_zh: oldMap[text] || '' }));
+  // 只更新原文段落；翻译按位置保留，不因原文改动而重写翻译框
+  state.manualParagraphs = blocks.map((text, i) => ({
+    text,
+    text_zh: (state.manualParagraphs[i] && state.manualParagraphs[i].text_zh) || '',
+  }));
+  updateManualZhHint();
   state.dirty = true;
 }
 function manualParaToText() {
   return state.manualParagraphs.map(p => p.text).join('\n\n');
+}
+function manualZhToText() {
+  return state.manualParagraphs.map(p => p.text_zh || '').join('\n\n');
+}
+function onManualZhInput(e) {
+  const raw = e.target.value;
+  // 与原文段落相同的空行分隔规则：按顺序一一对应（第 i 段翻译对应第 i 段原文）
+  const blocks = raw.split(/\n\s*\n+/)
+    .map(s => s.replace(/\s+/g, ' ').trim())
+    .filter(Boolean);
+  state.manualParagraphs.forEach((p, i) => { p.text_zh = blocks[i] || ''; });
+  updateManualZhHint();
+  state.dirty = true;
+}
+function updateManualZhHint() {
+  const el = $('manualZhHint');
+  if (!el) return;
+  const n = state.manualParagraphs.length;
+  const m = state.manualParagraphs.filter(p => (p.text_zh || '').trim()).length;
+  el.textContent = n
+    ? `原文共 ${n} 段，已填 ${m} 段翻译${m !== n ? '（请按顺序补齐，一一对应）' : ' ✓'}`
+    : '请先在上方「人工找回原文段落」填入原文，再按顺序填写对应翻译。';
+}
+
+/* ================= 观点句编辑 / drop ================= */
+function syncDropUI() {
+  const card = $('claimCard');
+  if (card) card.classList.toggle('dropped', state.weakEvidence);
+  const badge = $('claimDropBadge');
+  if (badge) badge.hidden = !state.weakEvidence;
+}
+
+function pairingChanged() {
+  return (state.claimZh || '').trim() !== (state.claimOriginal || '').trim();
+}
+
+function syncClaimBadge() {
+  const badge = $('claimChangedBadge');
+  const reset = $('claimResetBtn');
+  const changed = pairingChanged();
+  if (badge) {
+    badge.textContent = changed ? '已修改' : '未修改';
+    badge.classList.toggle('on', changed);
+  }
+  if (reset) reset.hidden = !changed;
+}
+
+function showClaimDisplay() {
+  const box = $('claimText');
+  const ta = $('claimEditArea');
+  if (box) {
+    box.hidden = false;
+    box.textContent = state.claimZh || '（无）';
+  }
+  if (ta) ta.hidden = true;
+  syncClaimBadge();
+  const current = state.samples[state.index];
+  if (current) renderOptimized(current);
+}
+
+function enterClaimEdit() {
+  if (state.editingClaim) return;
+  const box = $('claimText');
+  const ta = $('claimEditArea');
+  if (!box || !ta) return;
+  state.editingClaim = true;
+  state.claimEditBackup = state.claimZh || '';
+  box.hidden = true;
+  ta.hidden = false;
+  ta.value = state.claimZh || '';
+  ta.focus();
+  ta.setSelectionRange(ta.value.length, ta.value.length);
+}
+
+function exitClaimEditSilent() {
+  state.editingClaim = false;
+  const box = $('claimText');
+  const ta = $('claimEditArea');
+  if (box) box.hidden = false;
+  if (ta) ta.hidden = true;
+}
+
+function commitClaimEdit() {
+  if (!state.editingClaim) return;
+  const ta = $('claimEditArea');
+  const next = String(ta && ta.value || '').trim();
+  const committed = next || state.claimOriginal || '';
+  if (committed !== state.claimEditBackup) state.dirty = true;
+  state.claimZh = committed;
+  state.editingClaim = false;
+  showClaimDisplay();
+}
+
+function cancelClaimEdit() {
+  if (!state.editingClaim) return;
+  state.claimZh = state.claimEditBackup || '';
+  state.editingClaim = false;
+  showClaimDisplay();
+}
+
+function onWeakEvidenceChange(e) {
+  state.weakEvidence = !!e.target.checked;
+  state.reviewDecision = state.weakEvidence ? 'drop' : 'keep';
+  state.dirty = true;
+  syncDropUI();
 }
 
 /* ================= 保存 ================= */
@@ -347,6 +612,12 @@ function recallPayload() {
     manual_retrieved_paragraphs: state.manualParagraphs,
     gold_sentence_ids: state.goldIds,
     recall_reviewed: state.recallReviewed,
+    claim_zh: state.claimZh,
+    claim_zh_original: state.claimOriginal,
+    claim_zh_revised: state.claimZh,
+    claim_changed: pairingChanged(),
+    weak_evidence: state.weakEvidence,
+    review_decision: state.weakEvidence ? 'drop' : 'keep',
   };
 }
 
@@ -372,7 +643,7 @@ async function postSave(payload, onOk) {
 }
 
 function updateDoneText() {
-  const doneCount = Object.values(myRecords()).filter(x => x.recall_reviewed).length;
+  const doneCount = Object.values(myRecords()).filter(isRecallDone).length;
   $('doneText').textContent = `我的进度 ${doneCount}`;
 }
 
@@ -387,6 +658,7 @@ function requireReviewer() {
 
 async function saveRecall() {
   if (!requireReviewer()) return;
+  commitClaimEdit();
   const ok = await postSave(recallPayload());
   if (ok) {
     $('recallStatus').textContent = '已保存召回 ' + state.savedAt.toLocaleTimeString();
@@ -397,6 +669,7 @@ async function saveRecall() {
 
 async function saveRecallAndNext() {
   if (!requireReviewer()) return;
+  commitClaimEdit();
   const ok = await postSave(recallPayload());
   if (!ok) return;
   go(state.index + 1);
@@ -405,6 +678,7 @@ async function saveRecallAndNext() {
 /* ================= 导航 ================= */
 function go(index) {
   if (index < 0 || index >= state.samples.length) return;
+  commitClaimEdit();
   if (state.dirty) {
     if (!confirm('当前样本有未保存的修改，放弃修改并跳转？')) return;
   }
@@ -417,7 +691,7 @@ function nextTodo() {
   const mine = myRecords();
   for (let i = state.index + 1; i < state.samples.length; i++) {
     const sid = state.samples[i].sample_id;
-    if (!mine[sid] || !mine[sid].recall_reviewed) { go(i); return; }
+    if (!isRecallDone(mine[sid])) { go(i); return; }
   }
   alert('后面没有你未完成召回的样本了');
 }
@@ -440,7 +714,26 @@ $('jumpInput').addEventListener('keydown', e => { if (e.key === 'Enter') $('jump
 $('goldInput').addEventListener('input', onGoldInputChange);
 $('recallNoteArea').addEventListener('input', e => { state.recallNote = e.target.value; state.dirty = true; });
 $('manualParaArea').addEventListener('input', onManualParaInput);
+$('manualZhArea').addEventListener('input', onManualZhInput);
 $('recallDoneCheck').addEventListener('change', e => { state.recallReviewed = e.target.checked; state.dirty = true; });
+$('weakEvidenceCheck').addEventListener('change', onWeakEvidenceChange);
+$('claimText').addEventListener('dblclick', enterClaimEdit);
+$('claimResetBtn').addEventListener('click', () => {
+  if ((state.claimZh || '') === (state.claimOriginal || '')) return;
+  state.claimZh = state.claimOriginal || '';
+  state.dirty = true;
+  showClaimDisplay();
+});
+$('claimEditArea').addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    e.preventDefault();
+    cancelClaimEdit();
+  } else if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) {
+    e.preventDefault();
+    commitClaimEdit();
+  }
+});
+$('claimEditArea').addEventListener('blur', () => commitClaimEdit());
 $('reviewerInput').addEventListener('input', e => {
   state.reviewer = e.target.value.trim();
   localStorage.setItem('reviewer_name', state.reviewer);

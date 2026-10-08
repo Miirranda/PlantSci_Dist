@@ -737,6 +737,7 @@ def test_split_chinese_sentences():
         ("（图2b）黄瓜花发育过程空间转录组", False),
         ("表3 各细胞聚类的标记基因", False),
         ("1.黄瓜花、子房的进化和发育", False),
+        ("1、目前关于Ne1和Ne2是否存在直接互作以及它们如何诱发坏死的问题，仍存在争议。", True),
         ("公众号：iPlants", False),
         ("Nature Plants 2025", False),
         ("参考文献", False),

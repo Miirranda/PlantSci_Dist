@@ -1,0 +1,1070 @@
+{
+  "schema_version": "1.2",
+  "taxonomy_version": "distortion-v0.1",
+  "status": "draft",
+  "paper_id": "P004",
+  "article_id": "A001",
+  "article_source_type": "high_quality",
+  "index_version": "2026-09-15 11:26:30#c6ca67604a5d7fbd",
+  "generated_date": "2026-09-17",
+  "generation_mode": "resume",
+  "limit": "all",
+  "sample_count": 6,
+  "_description": "标注草稿。审核顺序：claim → classify top-5 → review 6-10 → gold_retrieval → gold_classification → analysis → human_verified=true。生产由 scripts/generate_draft_from_pairs.py 生成；human_verified 全为 false。",
+  "samples": [
+    {
+      "sample_id": "P004-A001-C01",
+      "paper_id": "P004",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "然而，传统模型仅依赖温湿度等气象因素，无法解释全球近60%的光合效率时空变异。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 1,
+            "text": "However, nearly 60% of the global spatiotemporal variance in terrestrial PE remains unexplained."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 10,
+            "text": "However, around 60% of the spatiotemporal variability in ecosystem-scale PE remains unexplained9,10, underscoring the urgent need to better understand the factors that control this essential process."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 30,
+            "text": "Our results show that climatic factors alone account for merely 36% of the spatiotemporal variance in daily PE (Fig. 1a,d), consistent with current understanding of environmental controls9,10."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 2,
+            "text": "Here we integrate remote sensing and eco-evolutionary optimality theory to derive key plant traits, alongside explainable machine learning and global eddy covariance observations, to uncover the drivers of daily PE variations."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 0,
+            "text": "1,2 2,7 , Bolun Li3, Benjamin Dechant 4,5, Mingzhu Xu2, 6, Sai Qu6, Guofang Miao 2, Jiye Leng7, Rong Shang 2, 10, Youngryel Ryu 11 & Photosynthetic efficiency (PE) quantifies the fraction of absorbed light used in photochemistry to produce chemical energy during photosynthesis and is essential for understanding ecosystem productivity and the global carbon cycle, particularly under conditions of vegetation stress."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 1,
+            "text": "However, nearly 60% of the global spatiotemporal variance in terrestrial PE remains unexplained.",
+            "text_zh": "然而，近60%的全球陆地PE时空变化仍未得到解释。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 10,
+            "text": "However, around 60% of the spatiotemporal variability in ecosystem-scale PE remains unexplained9,10, underscoring the urgent need to better understand the factors that control this essential process.",
+            "text_zh": "然而，在生态系统尺度上，大约60%的时空变异仍未得到解释9,10，这表明迫切需要更好地了解控制这一重要过程的因素。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 30,
+            "text": "Our results show that climatic factors alone account for merely 36% of the spatiotemporal variance in daily PE (Fig. 1a,d), consistent with current understanding of environmental controls9,10.",
+            "text_zh": "我们的研究结果表明，气候因素仅占每日PE时空变化的36%（图1a，d），这与目前对环境控制的理解一致9,10。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 2,
+            "text": "Here we integrate remote sensing and eco-evolutionary optimality theory to derive key plant traits, alongside explainable machine learning and global eddy covariance observations, to uncover the drivers of daily PE variations.",
+            "text_zh": "在这里，我们整合了遥感和生态进化最优理论，以获得关键的植物性状，以及可解释的机器学习和全球涡动相关观测，以揭示每日PE变化的驱动因素。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 0,
+            "text": "1,2 2,7 , Bolun Li3, Benjamin Dechant 4,5, Mingzhu Xu2, 6, Sai Qu6, Guofang Miao 2, Jiye Leng7, Rong Shang 2, 10, Youngryel Ryu 11 & Photosynthetic efficiency (PE) quantifies the fraction of absorbed light used in photochemistry to produce chemical energy during photosynthesis and is essential for understanding ecosystem productivity and the global carbon cycle, particularly under conditions of vegetation stress.",
+            "text_zh": "1、2、2、7，李博伦3，Benjamin Dechant 4,5，徐明柱2,6，瞿思6，苗国芳2，冷继业7，尚荣2,10，ryoungryel 11 &光合效率（Photosynthetic efficiency， PE）用于量化光合作用过程中吸收光产生化学能的比例，对了解生态系统生产力和全球碳循环至关重要，特别是在植被胁迫条件下。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 9,
+            "text": "carbon sequestration and developing sustainable strategies to mitigate climate change4–8.",
+            "text_zh": "碳固存和制定可持续战略以减缓气候变化4 - 8。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 11,
+            "text": "Integrating plant traits offers a promising path to advancing our knowledge of ecosystem PE.",
+            "text_zh": "整合植物性状为提高我们对生态系统PE的认识提供了一条有希望的途径。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 31,
+            "text": "In contrast, plant traits alone explain a substantial 67% of the variance (Fig. 1b,e), with static (growing season mean) plant traits contributing 36% (Extended Data Fig. 1).",
+            "text_zh": "相比之下，植物性状单独解释了67%的方差（图1b，e），静态（生长季节平均值）植物性状贡献了36%（扩展数据图1）。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 29,
+            "text": "To quantify the extent to which plant traits contribute to the variation in ecosystem PE across global biomes, we employed three scenarios: climatic factors only, plant traits only and a combination of all factors.",
+            "text_zh": "为了量化植物性状对全球生物群系生态系统PE变化的影响程度，我们采用了三种情景：仅气候因素、仅植物性状和所有因素的组合。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 32,
+            "text": "Although EEO-based traits reflect long-term climate acclimations, explicitly integrating them into models markedly enhances predictive performance, as machine learning models alone cannot fully capture these climate-driven transformations.",
+            "text_zh": "尽管基于eeo的特征反映了长期的气候适应，但将它们明确地整合到模型中可以显著提高预测性能，因为机器学习模型本身无法完全捕捉这些气候驱动的转变。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 1,
+            "text": "However, nearly 60% of the global spatiotemporal variance in terrestrial PE remains unexplained."
+          },
+          {
+            "sentence_id": 30,
+            "text": "Our results show that climatic factors alone account for merely 36% of the spatiotemporal variance in daily PE (Fig. 1a,d), consistent with current understanding of environmental controls9,10."
+          }
+        ],
+        "sentence_ids": [
+          1,
+          30
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "omission",
+          "level2": "mechanism_omission"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "evidence_uncertainty_omission"
+        },
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文明确指出‘climatic factors alone account for merely 36%’（id=30），故‘无法解释近60%’成立；但‘仅依赖温湿度等气象因素’删减了原文中实际包含的‘climatic factors’（含VPD、soil water、diffuse radiation等，见id=59），且未保留原文‘remains unexplained’所隐含的不确定性语义（id=1/10）。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1‘传统模型仅依赖温湿度等气象因素’：paper id=30说‘climatic factors alone’，但id=59显示该集合含VPD、ESI、SWC、diffuse radiation，非仅温湿度；分句2‘无法解释全球近60%的光合效率时空变异’：id=1直接支持‘nearly 60%... remains unexplained’；id=30佐证该比例源于‘climatic factors alone’解释力仅36%。top-5覆盖核心数值与主干表述（id=1,30），但未覆盖气候因子具体构成（id=59）及uncertainty措辞（id=1中remains unexplained）。",
+        "classification_reason": "‘机制删减’（mechanism_omission）：原文机制是‘climatic factors（多维）→ 36%解释力’，公众号压缩为‘温湿度等’，删减关键组分（VPD/SWC/diffuse radiation）；非‘magnitude_substitution’因60%数值准确；非‘relation_substitution’因未虚构因果；‘evidence_uncertainty_omission’为secondary：id=1中‘remains unexplained’含认识论留白，公众号‘无法解释’转为确定性断言，弱化原意。",
+        "key_differences": [
+          {
+            "type": "mechanism_omission",
+            "paper_expression": "climatic factors (e.g., VPD, ESI, SWC, diffuse radiation)",
+            "article_expression": "温湿度等气象因素",
+            "description": "删减气候因子具体维度，将多维气候驱动机制窄化为温湿度二元简化，掩盖水分可利用性与辐射散射等关键调控路径"
+          },
+          {
+            "type": "evidence_uncertainty_omission",
+            "paper_expression": "remains unexplained",
+            "article_expression": "无法解释",
+            "description": "‘remains unexplained’体现科学认知现状与开放性，‘无法解释’转为绝对能力否定，消解原文留白语义"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [
+            59
+          ],
+          "notes": "rank3（id=30）支撑36%/60%关系，但气候因子组成需id=59；id=59在review pool rank3但未进top-5"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=1（60% unexplained）、id=30（36% climatic alone）、id=59（climate factor list）。 脚本标记: 分析引用了但未列入 gold: 10,59",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label",
+          "secondary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P004-A001-C02",
+      "paper_id": "P004",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "本研究创新性地整合遥感观测、生态进化最优理论与可解释机器学习的方法，分析了全球120个生态系统站点通量数据，首次系统揭示了植物性状对生态系统光合效率的主导作用，为提升碳汇预测、应对气候变化提供了全新视角。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 2,
+            "text": "Here we integrate remote sensing and eco-evolutionary optimality theory to derive key plant traits, alongside explainable machine learning and global eddy covariance observations, to uncover the drivers of daily PE variations."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 104,
+            "text": "This integrative approach provides new insights into the intricate interplay between biological and environmental factors that drive photosynthetic processes at the ecosystem level."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 11,
+            "text": "Integrating plant traits offers a promising path to advancing our knowledge of ecosystem PE."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 60,
+            "text": "These findings highlight the crucial role of plant traits in influencing ecosystem PE across global biomes."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 6,
+            "text": "Overall, our findings demonstrate the potential of remote sensing and eco-evolutionary optimality theory to capture principal PE drivers, offering valuable tools for more accurately predicting ecosystem Plant photosynthesis is the fundamental process that sustains ecosystem function, drives the carbon cycle, regulates atmospheric carbon dioxide (CO2) levels and influences global climate dynamics1,2."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 2,
+            "text": "Here we integrate remote sensing and eco-evolutionary optimality theory to derive key plant traits, alongside explainable machine learning and global eddy covariance observations, to uncover the drivers of daily PE variations.",
+            "text_zh": "在这里，我们整合了遥感和生态进化最优理论，以获得关键的植物性状，以及可解释的机器学习和全球涡动相关观测，以揭示每日PE变化的驱动因素。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 104,
+            "text": "This integrative approach provides new insights into the intricate interplay between biological and environmental factors that drive photosynthetic processes at the ecosystem level.",
+            "text_zh": "这种综合方法为在生态系统水平上驱动光合作用过程的生物和环境因素之间复杂的相互作用提供了新的见解。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 11,
+            "text": "Integrating plant traits offers a promising path to advancing our knowledge of ecosystem PE.",
+            "text_zh": "整合植物性状为提高我们对生态系统PE的认识提供了一条有希望的途径。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 60,
+            "text": "These findings highlight the crucial role of plant traits in influencing ecosystem PE across global biomes.",
+            "text_zh": "这些发现强调了植物性状在影响全球生物群系生态系统PE中的关键作用。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 6,
+            "text": "Overall, our findings demonstrate the potential of remote sensing and eco-evolutionary optimality theory to capture principal PE drivers, offering valuable tools for more accurately predicting ecosystem Plant photosynthesis is the fundamental process that sustains ecosystem function, drives the carbon cycle, regulates atmospheric carbon dioxide (CO2) levels and influences global climate dynamics1,2.",
+            "text_zh": "总的来说，我们的研究结果证明了遥感和生态进化最优理论在捕获主要PE驱动因素方面的潜力，为更准确地预测生态系统提供了有价值的工具。植物光合作用是维持生态系统功能、驱动碳循环、调节大气二氧化碳（CO2）水平和影响全球气候动力学的基本过程1,2。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 45,
+            "text": "Our findings confirm that while plant traits are the primary drivers of ecosystem PE, factors such as water availability and light conditions (CIcloud) also play crucial roles in mediating carbon fluxes (Fig. 1a,d and Extended Data Fig. 3).",
+            "text_zh": "我们的研究结果证实，虽然植物性状是生态系统PE的主要驱动因素，但水分供应和光照条件（CIcloud）等因素在调节碳通量方面也起着至关重要的作用（图1a，d和扩展数据图3）。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 39,
+            "text": "Integrating plant traits derived from either RS or EEO considerably enhances the model’s ability to explain the variance in ecosystem PE, while also reducing estimation errors across multiple metrics (Fig. 2).",
+            "text_zh": "整合来自RS或EEO的植物性状大大提高了模型解释生态系统PE变异的能力，同时也减少了多个指标的估计误差（图2）。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 131,
+            "text": "This integration is essential for a comprehensive understanding of how ecosystem-scale photosynthesis responds to environmental changes.",
+            "text_zh": "这种整合对于全面理解生态系统尺度的光合作用如何响应环境变化至关重要。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 43,
+            "text": "These results highlight the efficacy of both RS and EEO methods in capturing the primary drivers of ecosystem PE, providing robust tools for tracking ecosystem productivity and detecting functional changes in response to climate change.",
+            "text_zh": "这些结果强调了RS和EEO方法在捕获生态系统PE的主要驱动因素方面的有效性，为跟踪生态系统生产力和检测响应气候变化的功能变化提供了强大的工具。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 27,
+            "text": "By leveraging data from the global eddy covariance network (120 sites, FLUXNET2015), we aim to understand the contributions of plant traits and climate to the variance in daily ecosystem PE during the growing season across various terrestrial ecosystems.",
+            "text_zh": "通过利用全球涡动相关网络（120个站点，FLUXNET2015）的数据，我们旨在了解植物性状和气候对不同陆地生态系统生长季节每日生态系统PE变化的贡献。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 2,
+            "text": "Here we integrate remote sensing and eco-evolutionary optimality theory to derive key plant traits, alongside explainable machine learning and global eddy covariance observations, to uncover the drivers of daily PE variations."
+          },
+          {
+            "sentence_id": 27,
+            "text": "By leveraging data from the global eddy covariance network (120 sites, FLUXNET2015), we aim to understand the contributions of plant traits and climate to the variance in daily ecosystem PE during the growing season across various terrestrial ecosystems."
+          },
+          {
+            "sentence_id": 104,
+            "text": "This integrative approach provides new insights into the intricate interplay between biological and environmental factors that drive photosynthetic processes at the ecosystem level."
+          },
+          {
+            "sentence_id": 60,
+            "text": "These findings highlight the crucial role of plant traits in influencing ecosystem PE across global biomes."
+          }
+        ],
+        "sentence_ids": [
+          2,
+          27,
+          104,
+          60
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "addition",
+          "level2": "significance_addition"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文未使用‘创新性地’‘首次系统揭示’‘全新视角’等评价性表述；‘全球120个生态系统站点’有依据（id=27），但‘主导作用’被强化（id=60称‘crucial role’，id=104称‘new insights’，均未达‘主导’程度）；‘提升碳汇预测、应对气候变化’属应用延伸（id=6提‘predicting ecosystem...’但未链接碳汇/气候应对）。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1‘创新性地整合...’：id=2描述方法整合，无‘innovative’修饰；分句2‘分析了全球120个...’：id=27明确‘120 sites, FLUXNET2015’；分句3‘首次系统揭示了植物性状...主导作用’：id=60称‘crucial role’，id=104称‘new insights’，但无‘first’‘systematically revealed’‘dominant’；分句4‘为提升碳汇预测、应对气候变化提供了全新视角’：id=6提‘predicting ecosystem...’，id=131提‘respond to environmental changes’，但无‘carbon sink’‘climate change mitigation’直接链接。top-5覆盖方法（id=2）、站点数（id=27）、role（id=60）、insights（id=104），但缺‘first’‘dominant’‘carbon sink’等添加项。",
+        "classification_reason": "‘significance_addition’（意义添加）：论文用‘new insights’（id=104）、‘crucial role’（id=60），公众号升级为‘创新性地’‘首次系统揭示’‘主导作用’‘全新视角’，属价值判断强化；非‘function_application_addition’因‘碳汇预测’‘应对气候变化’是应用延伸而非功能新增（论文未提碳汇建模或气候政策工具）；‘context_omission’为secondary：id=27限定‘growing season across various terrestrial ecosystems’，公众号删去生长季与陆地生态系统类型限定。",
+        "key_differences": [
+          {
+            "type": "significance_addition",
+            "paper_expression": "new insights",
+            "article_expression": "",
+            "description": "将谨慎学术表述（new insights / crucial role）升级为定性断言（创新性地 / 首次系统揭示 / 主导作用 / 全新视角），注入作者未作的价值判断"
+          },
+          {
+            "type": "context_omission",
+            "paper_expression": "during the growing season across various terrestrial ecosystems",
+            "article_expression": "全球120个生态系统站点",
+            "description": "删减‘生长季’时间限定与‘各类陆地生态系统’类型限定，泛化研究适用范围"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [
+            131
+          ],
+          "notes": "rank1（id=2）和rank10（id=27）支撑方法与站点数，但‘first’‘dominant’‘carbon sink’在pool中无对应（id=131提environmental changes但未到climate change mitigation）"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=2（方法整合）、id=27（120 sites）、id=60（crucial role）、id=104（new insights）。 脚本标记: 分析引用了但未列入 gold: 6,131",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P004-A001-C03",
+      "paper_id": "P004",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "研究成果突破传统认知，增加叶绿素含量、叶片寿命、比叶质量等性状，将模型解释力从36%（仅气象）提升至80%以上，水分供应与光照条件通过与植物性状的交互共同影响光合作用，证实了“性状-环境”协同机制，在森林、草原、农田等生态系统中具有普适性。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 5,
+            "text": "Water availability and light conditions are also critical in regulating PE, underscoring the need for an integrative approach that combines plant traits with climatic factors."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 102,
+            "text": "Our analyses identify plant traits as valuable contributors to ecosystem PE across diverse global biomes and various timescales."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 59,
+            "text": "In d–f, the contribution (SHAP value) of each feature is that the contribution of plant traits (for example, Chl, LL and Vcmax25), water availability metrics (ESI, soil water content (SWC) and VPD) and diffuse radiation remained solid in shaping ecosystem PE, albeit with varying feature importance across different PFTs (Extended Data Fig. 5)."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 11,
+            "text": "Integrating plant traits offers a promising path to advancing our knowledge of ecosystem PE."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 112,
+            "text": "This interaction between diffuse radiation and Chl vividly illustrates the necessity of considering both climatic factors and plant traits in tandem in ecosystem modelling."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 5,
+            "text": "Water availability and light conditions are also critical in regulating PE, underscoring the need for an integrative approach that combines plant traits with climatic factors.",
+            "text_zh": "水分供应和光照条件在调节PE方面也至关重要，这强调了将植物性状与气候因素结合起来的综合方法的必要性。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 102,
+            "text": "Our analyses identify plant traits as valuable contributors to ecosystem PE across diverse global biomes and various timescales.",
+            "text_zh": "我们的分析确定了植物性状在不同的全球生物群系和不同的时间尺度上对生态系统PE有价值的贡献。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 59,
+            "text": "In d–f, the contribution (SHAP value) of each feature is that the contribution of plant traits (for example, Chl, LL and Vcmax25), water availability metrics (ESI, soil water content (SWC) and VPD) and diffuse radiation remained solid in shaping ecosystem PE, albeit with varying feature importance across different PFTs (Extended Data Fig. 5).",
+            "text_zh": "在d-f中，每个特征的贡献（SHAP值）是植物性状（如Chl、LL和Vcmax25）、水分有效性指标（ESI、土壤含水量（SWC）和VPD）和漫射辐射在塑造生态系统PE方面的贡献仍然是稳定的，尽管在不同的PFTs中特征的重要性有所不同（扩展数据图5）。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 11,
+            "text": "Integrating plant traits offers a promising path to advancing our knowledge of ecosystem PE.",
+            "text_zh": "整合植物性状为提高我们对生态系统PE的认识提供了一条有希望的途径。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 112,
+            "text": "This interaction between diffuse radiation and Chl vividly illustrates the necessity of considering both climatic factors and plant traits in tandem in ecosystem modelling.",
+            "text_zh": "这种漫射辐射与Chl之间的相互作用生动地说明了在生态系统建模中同时考虑气候因子和植物性状的必要性。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 34,
+            "text": "The combination of climatic factors and plant traits provides the highest explanatory power (coefficient of determination (R2), 0.80) and the lowest uncertainty (root mean squared error (RMSE), 30.5%) (Fig. 1c,f). These findings highlight the importance of an integrative approach to enhance our understanding of ecosystem PE.",
+            "text_zh": "气候因子和植物性状的组合提供了最高的解释力（决定系数（R2）， 0.80）和最低的不确定性（均方根误差（RMSE）， 30.5%）（图1c，f）。这些发现强调了综合方法对增强我们对生态系统PE的理解的重要性。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 39,
+            "text": "Integrating plant traits derived from either RS or EEO considerably enhances the model’s ability to explain the variance in ecosystem PE, while also reducing estimation errors across multiple metrics (Fig. 2).",
+            "text_zh": "整合来自RS或EEO的植物性状大大提高了模型解释生态系统PE变异的能力，同时也减少了多个指标的估计误差（图2）。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 131,
+            "text": "This integration is essential for a comprehensive understanding of how ecosystem-scale photosynthesis responds to environmental changes.",
+            "text_zh": "这种整合对于全面理解生态系统尺度的光合作用如何响应环境变化至关重要。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 110,
+            "text": "Moreover, our results show that climatic variables influence photosynthesis indirectly through interactions with leaf traits.",
+            "text_zh": "此外，我们的研究结果表明，气候变量通过与叶片性状的相互作用间接影响光合作用。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 6,
+            "text": "Overall, our findings demonstrate the potential of remote sensing and eco-evolutionary optimality theory to capture principal PE drivers, offering valuable tools for more accurately predicting ecosystem Plant photosynthesis is the fundamental process that sustains ecosystem function, drives the carbon cycle, regulates atmospheric carbon dioxide (CO2) levels and influences global climate dynamics1,2.",
+            "text_zh": "总的来说，我们的研究结果证明了遥感和生态进化最优理论在捕获主要PE驱动因素方面的潜力，为更准确地预测生态系统提供了有价值的工具。植物光合作用是维持生态系统功能、驱动碳循环、调节大气二氧化碳（CO2）水平和影响全球气候动力学的基本过程1,2。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 34,
+            "text": "The combination of climatic factors and plant traits provides the highest explanatory power (coefficient of determination (R2), 0.80) and the lowest uncertainty (root mean squared error (RMSE), 30.5%) (Fig. 1c,f). These findings highlight the importance of an integrative approach to enhance our understanding of ecosystem PE."
+          },
+          {
+            "sentence_id": 59,
+            "text": "In d–f, the contribution (SHAP value) of each feature is that the contribution of plant traits (for example, Chl, LL and Vcmax25), water availability metrics (ESI, soil water content (SWC) and VPD) and diffuse radiation remained solid in shaping ecosystem PE, albeit with varying feature importance across different PFTs (Extended Data Fig. 5)."
+          },
+          {
+            "sentence_id": 110,
+            "text": "Moreover, our results show that climatic variables influence photosynthesis indirectly through interactions with leaf traits."
+          },
+          {
+            "sentence_id": 112,
+            "text": "This interaction between diffuse radiation and Chl vividly illustrates the necessity of considering both climatic factors and plant traits in tandem in ecosystem modelling."
+          }
+        ],
+        "sentence_ids": [
+          34,
+          59,
+          110,
+          112
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "substitution",
+          "level2": "magnitude_substitution"
+        },
+        "secondary_label": {
+          "level1": "substitution",
+          "level2": "mechanism_substitution"
+        },
+        "severity": "severe",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文称组合模型R²=0.80（id=34），但‘提升至80%以上’将点估计0.80曲解为≥0.80区间；‘增加叶绿素含量、叶片寿命、比叶质量等性状’将原文‘Chl, LL and Vcmax25’（id=59）中的Vcmax25（最大羧化速率）错误替换为‘比叶质量’（SLA）；‘性状-环境协同机制’原文为‘indirectly through interactions’（id=110）与‘interaction between diffuse radiation and Chl’（id=112），非普适性‘协同机制’，且未宣称‘森林、草原、农田等普适’（id=102仅说‘diverse global biomes’）。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1‘将模型解释力...提升至80%以上’：id=34明确‘R2=0.80’，为单点值，公众号‘80%以上’扩大为区间；分句2‘增加叶绿素含量、叶片寿命、比叶质量等性状’：id=59列‘Chl, LL and Vcmax25’，Vcmax25非SLA；分句3‘证实了‘性状-环境’协同机制’：id=110称‘influence indirectly through interactions’，id=112举‘diffuse radiation and Chl’特例，未升格为一般机制；分句4‘在森林、草原、农田等生态系统中具有普适性’：id=102称‘diverse global biomes’，未枚举具体类型。top-5中id=34支撑R²=0.80，id=59支撑性状列表，id=110/112支撑交互，但无SLA、无‘80%以上’、无‘普适性’表述。",
+        "classification_reason": "‘magnitude_substitution’（作用程度替换）：将精确R²=0.80替换为‘80%以上’，改变统计确定性；‘mechanism_substitution’（机制替换）：原文机制是‘气候因子通过与性状交互间接影响’（id=110）及‘diffuse radiation与Chl交互’（id=112）的具体路径，公众号泛化为抽象‘性状-环境协同机制’，并错误添加‘普适性’；非‘addition’因‘协同’在id=112有依据，但‘普适’属添加；‘比叶质量’属事实性错误替换（Vcmax25→SLA），故primary为magnitude_substitution（数值失真更严重）。",
+        "key_differences": [
+          {
+            "type": "magnitude_substitution",
+            "paper_expression": "coefficient of determination (R2), 0.80",
+            "article_expression": "提升至80%以上",
+            "description": "将单一确定值0.80替换为≥0.80的模糊区间，夸大模型性能稳定性"
+          },
+          {
+            "type": "mechanism_substitution",
+            "paper_expression": "climatic variables influence photosynthesis indirectly through interactions with leaf traits",
+            "article_expression": "性状-环境协同机制",
+            "description": "将原文限定性间接作用机制（id=110）与特例交互（id=112）升格为普适性抽象‘协同机制’，掩盖机制的条件性与路径特异性"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [
+            102
+          ],
+          "notes": "rank1（id=34）支撑R²=0.80，但‘以上’无依据；id=59在rank3，但Vcmax25未被识别为SLA；id=102在pool rank2但未进top-5，其‘diverse biomes’不等于‘forest/grassland/farmland’枚举"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=34（R²=0.80）、id=59（Chl/LL/Vcmax25）、id=110（indirect interactions）、id=112（diffuse radiation & Chl）。 脚本标记: 分析引用了但未列入 gold: 102",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label",
+          "secondary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P004-A001-C04",
+      "paper_id": "P004",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "研究成果取得技术突破与未来价值，首次实现大尺度植物性状动态追踪，解决了传统地面测量的时空局限。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 146,
+            "text": "Hyperspectral RS has shown notable promise in mapping global plant traits, with current operational missions (for example, EnMAP and GF-5) and upcoming missions (for example, SBG and CHIME)70 offering enhanced spatial–temporal resolution and accuracy, particularly for traits such as Chl, leaf nitrogen and LMA."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 21,
+            "text": "Linking plant traits to macroscale PE remains challenging due to the scarcity of spatiotemporally synchronized trait data and the difficulty of upscaling in situ measurements to align with eddy covariance flux observations31,32."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 145,
+            "text": "Additionally, EEO methods are predominantly driven by climate, making them less direct than approaches that consider light absorption features linked to leaf chemical composition."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 147,
+            "text": "Moreover, the integration of solar-induced fluorescence measurements has emerged as a powerful tool to directly assess plant photosynthetic activity, providing complementary insights into vegetation function71."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 20,
+            "text": "Despite their importance, these traits remain underexplored for estimating ecosystem-scale PE."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 146,
+            "text": "Hyperspectral RS has shown notable promise in mapping global plant traits, with current operational missions (for example, EnMAP and GF-5) and upcoming missions (for example, SBG and CHIME)70 offering enhanced spatial–temporal resolution and accuracy, particularly for traits such as Chl, leaf nitrogen and LMA.",
+            "text_zh": "高光谱遥感在绘制全球植物性状方面显示出显著的前景，目前的操作任务（如EnMAP和GF-5）和即将到来的任务（如SBG和CHIME）70提供了更高的时空分辨率和精度，特别是对Chl、叶氮和LMA等性状。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 21,
+            "text": "Linking plant traits to macroscale PE remains challenging due to the scarcity of spatiotemporally synchronized trait data and the difficulty of upscaling in situ measurements to align with eddy covariance flux observations31,32.",
+            "text_zh": "将植物性状与宏观尺度的PE联系起来仍然具有挑战性，因为缺乏时空同步的性状数据，而且难以将原位测量放大以与涡旋相关通量观测相一致31,32。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 145,
+            "text": "Additionally, EEO methods are predominantly driven by climate, making them less direct than approaches that consider light absorption features linked to leaf chemical composition.",
+            "text_zh": "此外，EEO方法主要受气候影响，因此与考虑与叶片化学成分相关的光吸收特征的方法相比，它们不那么直接。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 147,
+            "text": "Moreover, the integration of solar-induced fluorescence measurements has emerged as a powerful tool to directly assess plant photosynthetic activity, providing complementary insights into vegetation function71.",
+            "text_zh": "此外，太阳诱导荧光测量的集成已经成为直接评估植物光合活性的有力工具，为植被功能提供了补充见解71。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 20,
+            "text": "Despite their importance, these traits remain underexplored for estimating ecosystem-scale PE.",
+            "text_zh": "尽管它们很重要，但这些特征在估计生态系统规模PE方面仍未得到充分的探索。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 22,
+            "text": "Although efforts have been made to link plant traits with GPP31,33–35, debate persists about their effectiveness in predicting ecosystem functional properties36–38, which serve as unified metrics that describe ecosystem processes and responses in a comparable way, such as PE4,5.",
+            "text_zh": "尽管人们已经努力将植物性状与gpp31,33 - 35联系起来，但它们在预测生态系统功能特性方面的有效性仍存在争议（36 - 38），这些功能特性可以作为以可比方式描述生态系统过程和响应的统一指标，如pe4,5。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 4,
+            "text": "Key plant traits—including chlorophyll content, leaf longevity and leaf mass per area— consistently emerge as important factors across global biomes and temporal scales.",
+            "text_zh": "叶绿素含量、叶片寿命和叶质量等关键植物性状在全球生物群落和时间尺度上一直是重要的影响因素。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 5,
+            "text": "Water availability and light conditions are also critical in regulating PE, underscoring the need for an integrative approach that combines plant traits with climatic factors.",
+            "text_zh": "水分供应和光照条件在调节PE方面也至关重要，这强调了将植物性状与气候因素结合起来的综合方法的必要性。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 3,
+            "text": "Incorporating plant traits into our model increases the explained daily PE variance from 36% to 80% for C3 vegetation and from 54% to 84% for C4 vegetation compared with using climate data alone.",
+            "text_zh": "与单独使用气候数据相比，将植物性状纳入我们的模型将C3植被的解释日PE方差从36%增加到80%，C4植被的解释日PE方差从54%增加到84%。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 129,
+            "text": "However, these efforts are hindered by the limited availability of global plant trait data.",
+            "text_zh": "然而，这些努力受到全球植物性状数据有限可用性的阻碍。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 21,
+            "text": "Linking plant traits to macroscale PE remains challenging due to the scarcity of spatiotemporally synchronized trait data and the difficulty of upscaling in situ measurements to align with eddy covariance flux observations31,32."
+          },
+          {
+            "sentence_id": 129,
+            "text": "However, these efforts are hindered by the limited availability of global plant trait data."
+          },
+          {
+            "sentence_id": 146,
+            "text": "Hyperspectral RS has shown notable promise in mapping global plant traits, with current operational missions (for example, EnMAP and GF-5) and upcoming missions (for example, SBG and CHIME)70 offering enhanced spatial–temporal resolution and accuracy, particularly for traits such as Chl, leaf nitrogen and LMA."
+          }
+        ],
+        "sentence_ids": [
+          21,
+          129,
+          146
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "addition",
+          "level2": "significance_addition"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文未提「首次实现大尺度植物性状动态追踪」；「解决了传统地面测量的时空局限」属功能添加，且无对应验证表述。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1『研究成果取得技术突破与未来价值』：无直接支撑，属泛化评价（sentence_id=21/129 提及数据稀缺性，但未称『突破』）；分句2『首次实现大尺度植物性状动态追踪』：top-5 无任何『first』『novel』『for the first time』或『dynamic tracking』『time-resolved trait mapping』表述；retrieval_hint 明确提示缺失，补检关键词 large-scale, trait dynamics, time-resolved 未在 top-5 出现（id=146 提及 hyperspectral RS 有 enhanced spatiotemporal resolution，但未限定于『trait dynamics』或『tracking』）；分句3『解决了传统地面测量的时空局限』：sentence_id=21 指出 linking traits to macroscale PE is challenging due to scarcity of spatiotemporally synchronized trait data，暗示局限存在，但未宣称『已解决』；sentence_id=129 重申 limited availability of global plant trait data，反向印证问题未解。",
+        "classification_reason": "『首次实现』是典型 significance_addition（addition → significance_addition），因论文中无任何‘first’‘novel’‘pioneering’等标志性措辞；非 relation_substitution（未改因果/相关关系）、非 magnitude_substitution（未夸大效果程度）、非 mechanism_substitution（未替换机制）；『解决了……局限』属 function_application_addition（addition → function_application_addition），但 significance_addition 语义权重更高（‘首次’隐含更强主张），故为主类。context_omission 指删减了论文中强调的『data scarcity』这一关键背景限定（如 id=21/129），使『解决』显得无依据。",
+        "key_differences": [
+          {
+            "type": "significance_addition",
+            "paper_expression": "Linking plant traits to macroscale PE remains challenging due to the scarcity of spatiotemporally synchronized trait data...",
+            "article_expression": "首次实现大尺度植物性状动态追踪",
+            "description": "论文强调挑战与数据稀缺，文章断言‘首次实现’，添加原创性与完成性意义"
+          },
+          {
+            "type": "function_application_addition",
+            "paper_expression": "However, these efforts are hindered by the limited availability of global plant trait data.",
+            "article_expression": "解决了传统地面测量的时空局限",
+            "description": "论文指出数据受限是障碍，文章声称‘已解决’，添加未经验证的应用成效"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [
+            21,
+            129,
+            146
+          ],
+          "notes": "rank1/4/5（146/147/20）谈遥感能力提升，但未锚定‘trait dynamics’或‘tracking’；rank2/3（21/145）提挑战但未提解决方案；补检应聚焦 id=21/129/146 及其上下文图注或方法段"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "likely_retrieval_miss",
+          "reasoning": "缺明确表述 large-scale trait dynamics tracking、first-time implementation、solving spatial-temporal limitations of ground measurements；retrieval_hint 中关键词 large-scale, trait dynamics, time-resolved 未在 top-5 句中出现",
+          "suggested_keywords": [
+            "large-scale",
+            "trait dynamics",
+            "time-resolved",
+            "plant phenotyping"
+          ],
+          "suggested_sentence_ranges": "Methods section on RS processing; Figure captions for temporal trait maps; Discussion paragraph on data gaps vs. new capability"
+        },
+        "manual_check_hints": "重点核对 sentence_id=21（challenging due to scarcity）、129（limited availability）、146（enhanced spatiotemporal resolution）是否隐含动态追踪能力；检查 Methods 是否有 time-series trait extraction 描述。 脚本标记: key_differences 未覆盖 secondary context_omission",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P004-A001-C05",
+      "paper_id": "P004",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "研究成果具有很好的应用前景，为森林碳汇监测、农业精准管理、干旱预警等提供了理论工具。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 9,
+            "text": "carbon sequestration and developing sustainable strategies to mitigate climate change4–8."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 8,
+            "text": "Understanding and optimizing PE is essential for improving crop yields, enhancing productivity and improving Earth system models under climate change."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 10,
+            "text": "However, around 60% of the spatiotemporal variability in ecosystem-scale PE remains unexplained9,10, underscoring the urgent need to better understand the factors that control this essential process."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 6,
+            "text": "Overall, our findings demonstrate the potential of remote sensing and eco-evolutionary optimality theory to capture principal PE drivers, offering valuable tools for more accurately predicting ecosystem Plant photosynthesis is the fundamental process that sustains ecosystem function, drives the carbon cycle, regulates atmospheric carbon dioxide (CO2) levels and influences global climate dynamics1,2."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 5,
+            "text": "Water availability and light conditions are also critical in regulating PE, underscoring the need for an integrative approach that combines plant traits with climatic factors."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 9,
+            "text": "carbon sequestration and developing sustainable strategies to mitigate climate change4–8.",
+            "text_zh": "碳固存和制定可持续战略以减缓气候变化4 - 8。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 8,
+            "text": "Understanding and optimizing PE is essential for improving crop yields, enhancing productivity and improving Earth system models under climate change.",
+            "text_zh": "了解和优化PE对于提高作物产量、提高生产力和改进气候变化下的地球系统模型至关重要。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 10,
+            "text": "However, around 60% of the spatiotemporal variability in ecosystem-scale PE remains unexplained9,10, underscoring the urgent need to better understand the factors that control this essential process.",
+            "text_zh": "然而，在生态系统尺度上，大约60%的时空变异仍未得到解释9,10，这表明迫切需要更好地了解控制这一重要过程的因素。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 6,
+            "text": "Overall, our findings demonstrate the potential of remote sensing and eco-evolutionary optimality theory to capture principal PE drivers, offering valuable tools for more accurately predicting ecosystem Plant photosynthesis is the fundamental process that sustains ecosystem function, drives the carbon cycle, regulates atmospheric carbon dioxide (CO2) levels and influences global climate dynamics1,2.",
+            "text_zh": "总的来说，我们的研究结果证明了遥感和生态进化最优理论在捕获主要PE驱动因素方面的潜力，为更准确地预测生态系统提供了有价值的工具。植物光合作用是维持生态系统功能、驱动碳循环、调节大气二氧化碳（CO2）水平和影响全球气候动力学的基本过程1,2。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 5,
+            "text": "Water availability and light conditions are also critical in regulating PE, underscoring the need for an integrative approach that combines plant traits with climatic factors.",
+            "text_zh": "水分供应和光照条件在调节PE方面也至关重要，这强调了将植物性状与气候因素结合起来的综合方法的必要性。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 8,
+            "text": "Understanding and optimizing PE is essential for improving crop yields, enhancing productivity and improving Earth system models under climate change."
+          },
+          {
+            "sentence_id": 9,
+            "text": "carbon sequestration and developing sustainable strategies to mitigate climate change4–8."
+          },
+          {
+            "sentence_id": 6,
+            "text": "Overall, our findings demonstrate the potential of remote sensing and eco-evolutionary optimality theory to capture principal PE drivers, offering valuable tools for more accurately predicting ecosystem Plant photosynthesis is the fundamental process that sustains ecosystem function, drives the carbon cycle, regulates atmospheric carbon dioxide (CO2) levels and influences global climate dynamics1,2."
+          }
+        ],
+        "sentence_ids": [
+          8,
+          9,
+          6
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "addition",
+          "level2": "function_application_addition"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文提及 carbon sequestration、crop yields、Earth system models，但未具体指向『森林碳汇监测、农业精准管理、干旱预警』三项应用；删减了原文中『under climate change』等条件限定。"
+      },
+      "analysis": {
+        "evidence_judgement": "『森林碳汇监测』：sentence_id=9 提到 carbon sequestration，但未限定『森林』或『监测』；『农业精准管理』：sentence_id=8 提到 improving crop yields, enhancing productivity，但未提『精准管理』（precision management）；『干旱预警』：top-5 无 drought / early warning /预警 相关表述，sentence_id=5 提 water availability 是 regulating factor，但非预警工具；sentence_id=6 提 offering valuable tools for more accurately predicting ecosystem...，但未枚举具体应用场景。",
+        "classification_reason": "『森林碳汇监测、农业精准管理、干旱预警』均为论文未列出的具体应用方向，属 addition → function_application_addition；非 significance_addition（未加『首次/突破』），非 substitution（未替换机制或关系）；context_omission 指删减了 sentence_id=8/10 中的条件限定词『under climate change』及『urgent need』等不确定性背景，使应用前景显得更确定、更普适。",
+        "key_differences": [
+          {
+            "type": "function_application_addition",
+            "paper_expression": "Understanding and optimizing PE is essential for improving crop yields, enhancing productivity and improving Earth system models under climate change.",
+            "article_expression": "为森林碳汇监测、农业精准管理、干旱预警等提供了理论工具",
+            "description": "论文泛述 crop yields 和 Earth system models，文章具象化为三项特定应用，添加未被支持的功能指向"
+          },
+          {
+            "type": "context_omission",
+            "paper_expression": "under climate change",
+            "article_expression": "（无对应限定）",
+            "description": "删减原文中应用前提条件，使『理论工具』脱离气候变暖语境，扩大适用范围"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [
+            8,
+            9,
+            6
+          ],
+          "notes": "rank1–5 均未出现 forest, precision agriculture, drought, early warning 等词；id=8/9/6 是最相关支撑句，但仅提供宽泛领域（carbon, crops, models），未达具体应用层级"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "likely_retrieval_miss",
+          "reasoning": "缺 forest carbon monitoring, precision agriculture, drought early warning 等短语；retrieval_hint 中关键词 forest carbon monitoring, precision agriculture, drought early w 未在 top-5 出现",
+          "suggested_keywords": [
+            "forest carbon monitoring",
+            "precision agriculture",
+            "drought early warning"
+          ],
+          "suggested_sentence_ranges": "Discussion section on applications; Supplementary tables listing use cases; Policy implications paragraph"
+        },
+        "manual_check_hints": "核对 sentence_id=8/9/6 所在段落是否在后续展开具体应用场景；检查 Discussion 结尾或 Supplementary 是否有应用枚举。 脚本标记: 分析引用了但未列入 gold: 5,10",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P004-A001-C06",
+      "paper_id": "P004",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "研究成果为地球系统模型注入了“植物智慧”，通过量化性状与生态系统光合效率的复杂关系，有望开发出更精准的动态植被模型，未来将结合新型卫星遥感与模型优化，大幅提升气候变化背景下的碳汇预测精度。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 39,
+            "text": "Integrating plant traits derived from either RS or EEO considerably enhances the model’s ability to explain the variance in ecosystem PE, while also reducing estimation errors across multiple metrics (Fig. 2)."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 11,
+            "text": "Integrating plant traits offers a promising path to advancing our knowledge of ecosystem PE."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 3,
+            "text": "Incorporating plant traits into our model increases the explained daily PE variance from 36% to 80% for C3 vegetation and from 54% to 84% for C4 vegetation compared with using climate data alone."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 40,
+            "text": "Among all the traits, LMA and LL were particularly impactful across R2, RMSE, slope and mean absolute percentage error metrics."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 38,
+            "text": "To achieve this, we assessed the independent contributions of RS-based traits (Chl, CIclump and LAI) and EEO-based traits (LL, LMA and Vcmax normalized at 25 °C (Vcmax25)) by evaluating how each trait improves model performance when added to a baseline model using only climate variables (Fig. 2)."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 39,
+            "text": "Integrating plant traits derived from either RS or EEO considerably enhances the model’s ability to explain the variance in ecosystem PE, while also reducing estimation errors across multiple metrics (Fig. 2).",
+            "text_zh": "整合来自RS或EEO的植物性状大大提高了模型解释生态系统PE变异的能力，同时也减少了多个指标的估计误差（图2）。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 11,
+            "text": "Integrating plant traits offers a promising path to advancing our knowledge of ecosystem PE.",
+            "text_zh": "整合植物性状为提高我们对生态系统PE的认识提供了一条有希望的途径。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 3,
+            "text": "Incorporating plant traits into our model increases the explained daily PE variance from 36% to 80% for C3 vegetation and from 54% to 84% for C4 vegetation compared with using climate data alone.",
+            "text_zh": "与单独使用气候数据相比，将植物性状纳入我们的模型将C3植被的解释日PE方差从36%增加到80%，C4植被的解释日PE方差从54%增加到84%。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 40,
+            "text": "Among all the traits, LMA and LL were particularly impactful across R2, RMSE, slope and mean absolute percentage error metrics.",
+            "text_zh": "在所有性状中，LMA和LL在R2、RMSE、斜率和平均绝对百分比误差指标上的影响尤为显著。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 38,
+            "text": "To achieve this, we assessed the independent contributions of RS-based traits (Chl, CIclump and LAI) and EEO-based traits (LL, LMA and Vcmax normalized at 25 °C (Vcmax25)) by evaluating how each trait improves model performance when added to a baseline model using only climate variables (Fig. 2).",
+            "text_zh": "为了实现这一目标，我们评估了基于rs的性状（Chl， CIclump和LAI）和基于eeo的性状（LL， LMA和Vcmax在25°C下归一化（Vcmax25））的独立贡献，通过评估每个性状在仅使用气候变量添加到基线模型时如何提高模型性能（图2）。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 42,
+            "text": "The combined addition of all EEO traits outperformed the collective RS traits, and the integration of all plant traits (RS and EEO) delivered the best overall performance, underscoring the complementary strengths of these traits.",
+            "text_zh": "所有EEO性状的组合添加表现优于集体RS性状，而所有植物性状（RS和EEO）的组合表现最佳，说明了这些性状的互补优势。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 12,
+            "text": "Although primary climatic factors such as cloudiness index (CIcloud), temperature, soil moisture and vapour pressure deficit (VPD) are crucial11–13 and supported by well-documented of Education), Fujian Normal University, Fuzhou, China.",
+            "text_zh": "虽然主要气候因子如云量指数（CIcloud）、温度、土壤湿度和蒸汽压差（VPD）是至关重要的[11]，并得到了教育文献的充分支持。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 10,
+            "text": "However, around 60% of the spatiotemporal variability in ecosystem-scale PE remains unexplained9,10, underscoring the urgent need to better understand the factors that control this essential process.",
+            "text_zh": "然而，在生态系统尺度上，大约60%的时空变异仍未得到解释9,10，这表明迫切需要更好地了解控制这一重要过程的因素。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 4,
+            "text": "Key plant traits—including chlorophyll content, leaf longevity and leaf mass per area— consistently emerge as important factors across global biomes and temporal scales.",
+            "text_zh": "叶绿素含量、叶片寿命和叶质量等关键植物性状在全球生物群落和时间尺度上一直是重要的影响因素。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 2,
+            "text": "Here we integrate remote sensing and eco-evolutionary optimality theory to derive key plant traits, alongside explainable machine learning and global eddy covariance observations, to uncover the drivers of daily PE variations.",
+            "text_zh": "在这里，我们整合了遥感和生态进化最优理论，以获得关键的植物性状，以及可解释的机器学习和全球涡动相关观测，以揭示每日PE变化的驱动因素。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 39,
+            "text": "Integrating plant traits derived from either RS or EEO considerably enhances the model’s ability to explain the variance in ecosystem PE, while also reducing estimation errors across multiple metrics (Fig. 2)."
+          },
+          {
+            "sentence_id": 3,
+            "text": "Incorporating plant traits into our model increases the explained daily PE variance from 36% to 80% for C3 vegetation and from 54% to 84% for C4 vegetation compared with using climate data alone."
+          },
+          {
+            "sentence_id": 2,
+            "text": "Here we integrate remote sensing and eco-evolutionary optimality theory to derive key plant traits, alongside explainable machine learning and global eddy covariance observations, to uncover the drivers of daily PE variations."
+          }
+        ],
+        "sentence_ids": [
+          39,
+          3,
+          2
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "addition",
+          "level2": "significance_addition"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "mechanism_omission"
+        },
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "『注入“植物智慧”』为拟人化修辞添加，论文仅用『eco-evolutionary optimality (EEO) theory』；『有望开发出更精准的动态植被模型』属功能添加，且未提『动态植被模型』；删减了 EEO 与 RS 方法并用、需多源数据协同的关键机制。"
+      },
+      "analysis": {
+        "evidence_judgement": "『注入“植物智慧”』：sentence_id=2 提到 integrate remote sensing and eco-evolutionary optimality theory，但无 metaphorical expression；『更精准的动态植被模型』：top-5 无 dynamic vegetation model、improved VEG model、model optimization 等表述，sentence_id=39/3 仅说 improves model’s ability to explain variance、increases explained variance，未提模型类型升级；『结合新型卫星遥感与模型优化』：sentence_id=146 提 upcoming missions (SBG and CHIME)，但未与本研究模型优化绑定；『大幅提升碳汇预测精度』：sentence_id=3 给出 variance increase (36%→80%)，但针对 PE（photosynthetic efficiency），非 carbon sink（碳汇）——二者概念不等价，属 mechanism_omission（混淆光合效率与碳汇）。",
+        "classification_reason": "『植物智慧』是显著 significance_addition（添加拟人化、价值升华表述，论文仅用中性术语 EEO theory）；『动态植被模型』『碳汇预测』属 function_application_addition，但『植物智慧』语义更主观、失真度更高；mechanism_omission 指删减了论文强调的 RS + EEO 双路径（id=2/38/42）、trait complementarity（id=42）等核心机制，使『注入智慧』显得单薄且误导。",
+        "key_differences": [
+          {
+            "type": "significance_addition",
+            "paper_expression": "integrate remote sensing and eco-evolutionary optimality theory",
+            "article_expression": "为地球系统模型注入了“植物智慧”",
+            "description": "论文使用客观理论名称，文章替换为拟人化、价值负载的修辞‘植物智慧’，添加未被论文支持的意义维度"
+          },
+          {
+            "type": "mechanism_omission",
+            "paper_expression": "The combined addition of all EEO traits outperformed the collective RS traits, and the integration of all plant traits (RS and EEO) delivered the best overall performance, underscoring the complementary strengths of these traits.",
+            "article_expression": "（未提 RS+EEO 协同、互补性）",
+            "description": "删减论文强调的多源性状互补机制，弱化方法论基础，使‘智慧注入’失去支撑"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [
+            39,
+            3,
+            2,
+            42
+          ],
+          "notes": "rank1/3/5（39/3/38）支撑模型性能提升，但未提模型类型演进；rank4（40）和 rank6（42）更完整描述 trait complementarity，但未入 top-5"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "核对 sentence_id=2（integration statement）、39（model enhancement）、42（complementarity）是否支持‘动态植被模型’或‘碳汇预测’；确认 PE（photosynthetic efficiency）是否等同于 carbon sink。 脚本标记: 分析引用了但未列入 gold: 38,42,146",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    }
+  ],
+  "review_queue": {
+    "must_review_sample_ids": [
+      "P004-A001-C01",
+      "P004-A001-C02",
+      "P004-A001-C03",
+      "P004-A001-C04",
+      "P004-A001-C05",
+      "P004-A001-C06"
+    ],
+    "notes": ""
+  }
+}

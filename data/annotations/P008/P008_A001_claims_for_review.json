@@ -1,0 +1,924 @@
+{
+  "paper_id": "P008",
+  "article_id": "A001",
+  "guideline": "观点句抽取细则.md",
+  "task": "review_A_inclusion",
+  "instructions": "review_decision 默认 keep；发现不该进 Benchmark 时改为 drop 或 merge。不要改写 claim_zh。",
+  "sample_count": 90,
+  "missed_by_extractor": [
+    {
+      "claim_zh": "杂种坏死严重制约了小麦的遗传改良进程，不仅阻碍了优良性状的聚合，还导致基因资源难以充分利用，这一难题持续吸引着学者们对其遗传机制的深入探索。",
+      "note": "LLM 未收录；引言中的具体育种制约，偏松可 keep。非关键评测句，未手补。"
+    },
+    {
+      "claim_zh": "ABH家族蛋白在植物免疫中具有重要作用，例如植物免疫蛋白EDS1、PAD4。",
+      "note": "LLM 未收录；引言具体命题。非关键评测句，未手补。"
+    },
+    {
+      "claim_zh": "此外，拟南芥ABH蛋白DM3 (At3g61540)与NLR抗病蛋白DM2的遗传互作调控杂种坏死。",
+      "note": "LLM 未收录；引言具体命题。非关键评测句，未手补。"
+    }
+  ],
+  "samples": [
+    {
+      "claim_id": "C01",
+      "claim_zh": "植物中的杂种坏死(Hybrid necrosis)是指种间或种内杂交的子代中出现的一种遗传自身免疫综合症，常表现为叶片早衰、生长迟缓、矮化或不育等症状。",
+      "claim_role": "paper_intro",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C02",
+      "claim_zh": "早在100多年前，育种家首次报道了小麦中的杂种坏死现象(Sax, 1921)，Hermsen的研究揭示这种现象是由一对互补基因Necrosis 1 (Ne1)和Ne2控制(Hermsen, 1963)。",
+      "claim_role": "paper_intro",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C03",
+      "claim_zh": "值得关注的是，Ne2基因作为关键突破点已被成功克隆——该基因编码一种核苷酸结合的富含亮氨酸重复序列（NLR）免疫受体（Si et al., 2021a），同时被证实为小麦抗叶锈病基因Lr13/Lr22（Hewitt et al., 2021; Yan et al., 2021）。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C04",
+      "claim_zh": "然而，与之形成鲜明对比的是，尽管多个研究团队已实现对Ne1基因的精细定位，但其分子本质至今仍未得到解析，成为该领域亟待攻克的核心难题。",
+      "claim_role": "paper_intro",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C05",
+      "claim_zh": "本研究发现，由结构变异产生的α/β水解酶(ABH)蛋白Ne1通过激活自身免疫反应与Ne2共同诱发杂种坏死。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C06",
+      "claim_zh": "此外，本研究还发现Ne1基因的等位基因变异和拷贝数变异(CNV)共同赋予了小麦丰富的杂种坏死多样性。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C07",
+      "claim_zh": "前期，刘志勇和李在峰团队从小麦品系M114 (Ne1Ne1Ne2Ne2)中克隆了Ne2，并发现其与周麦22 (ZM，ne1ne1Ne2Ne2)中的抗叶锈病基因LrZH22/Lr13相同。",
+      "claim_role": "paper_method",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C08",
+      "claim_zh": "与此同时，凌宏清团队从郑农17 (ZN17，ne1ne1Ne2Ne2)和洋白麦(YBM，Ne1Ne1ne2ne2)衍生的分离群体中也发现了杂种坏死现象，并从ZN17中分离了Ne2基因，并且发现来自M114和ZN17中的Ne2序列完全一致。",
+      "claim_role": "paper_method",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C09",
+      "claim_zh": "表型鉴定发现，M114在灌浆期整株叶片已全部坏死;而F1 (M114×ZM)则仅表现出叶尖轻微的坏死症状; ZM为正常(图1a)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C10",
+      "claim_zh": "为了评估坏死症状，构建了一对NE1位点近等基因系NIL-ne1 (ne1ne1Ne2Ne2)和NIL-Ne1(Ne1Ne1Ne2Ne2) (图1b-c)。",
+      "claim_role": "paper_method",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C11",
+      "claim_zh": "DAB染色表明，过量的局部H₂O₂积累可能参与诱发叶片坏死，且该症状类似于病原体诱导的过敏性坏死症状(图1d)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C12",
+      "claim_zh": "前期，利用ZN17×YBM群体完成了Ne1的精细定位，发现定位区间在双亲间可能存在结构变异。随后，使用M114×ZM群体对Ne1进行分离，得到了类似的结果(图2a-d)。",
+      "claim_role": "paper_method",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C13",
+      "claim_zh": "随后，使用M114×ZM群体对Ne1进行分离，得到了类似的结果(图2a-d)。",
+      "claim_role": "paper_method",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C14",
+      "claim_zh": "依据IWGSC RefSeq v2.1参考基因组，发现Ne1定位区间存在一个约2.89 Mb的InDel，包含六个高可信度基因(TraesCS5B03G0561600-TraesCS5B03G0564000，图2b)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C15",
+      "claim_zh": "值得注意的是，TraesCS5B03G0561800编码α/β水解酶(Alpha/beta hydrolase，ABH.1)家族蛋白。ABH家族蛋白在植物免疫中具有重要作用，例如植物免疫蛋白EDS1、PAD4。此外，拟南芥ABH蛋白DM3 (At3g61540)与NLR抗病蛋白DM2的遗传互作调控杂种坏死。在Ne1定位区间，还存在一个同样编码ABH家族蛋白的TraesCS5B03G0565000 (ABH.2)，但前期研究发现，ZN17与YBM在ABH.2基因区域并不存在序列变异。因此，将ABH.1作为Ne1的最佳候选基因进行分析。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C16",
+      "claim_zh": "在Ne1定位区间，还存在一个同样编码ABH家族蛋白的TraesCS5B03G0565000 (ABH.2)，但前期研究发现，ZN17与YBM在ABH.2基因区域并不存在序列变异。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C17",
+      "claim_zh": "因此，将ABH.1作为Ne1的最佳候选基因进行分析。",
+      "claim_role": "paper_conclusion",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C18",
+      "claim_zh": "ABH.1编码一个ABH家族蛋白，包含水解酶结构域、AAA ATPase与vWA结构域以及膜蛋白酶YdiL结构域(图2f)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C19",
+      "claim_zh": "通过对ABH.1CS和ABH.1M114的序列比较，发现ABH.1M114的第六个外显子上有一个C/G的SNP，导致ABH.1中脯氨酸替换为丙氨酸(P691A) (图2e)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C20",
+      "claim_zh": "与ABH.1CS相比，ABH.1YBM的第五个外显子中观察到一个9 bp插入和一个3 bp缺失，导致ABH.1中氨基酸插入/缺失(DN423-424EAQF) (图2e)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C21",
+      "claim_zh": "为了验证ABH.1的功能，分别筛选了来自坏死植株NIL-Ne1和M114的4500和2360个M2家系，以寻找非坏死株系。最终，从NIL-Ne1和M114的EMS诱变群体中分别鉴定出11和14个M3非坏死突变体。",
+      "claim_role": "paper_method",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C22",
+      "claim_zh": "最终，从NIL-Ne1和M114的EMS诱变群体中分别鉴定出11和14个M3非坏死突变体。",
+      "claim_role": "paper_method",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C23",
+      "claim_zh": "随后，分别对非坏死突变体中的ABH.1和Ne2基因进行扩增和测序分析。",
+      "claim_role": "paper_method",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C24",
+      "claim_zh": "随后，分别对非坏死突变体中的ABH.1和Ne2基因进行扩增和测序分析。结果发现，NIL-Ne1衍生的5个非坏死突变体和M114衍生的6个非坏死突变体在ABH.1中显示出由EMS诱导的单核苷酸变化(G/C变为A/T) (图3a、b)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C25",
+      "claim_zh": "此外，3个NIL-Ne1衍生的非坏死突变体和6个M114衍生的非坏死突变体在Ne2中表现出错义突变。2个突变体在Ne2中携带导致提前终止密码子的无义突变(图3c、d)。从两个坏死材料背景中鉴定出的多个独立的EMS非坏死突变体表明，ABH.1很可能就是Ne1。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C26",
+      "claim_zh": "2个突变体在Ne2中携带导致提前终止密码子的无义突变(图3c、d)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C27",
+      "claim_zh": "从两个坏死材料背景中鉴定出的多个独立的EMS非坏死突变体表明，ABH.1很可能就是Ne1。",
+      "claim_role": "paper_conclusion",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C28",
+      "claim_zh": "为了进一步验证ABH.1的功能，分别使用ABH.1YBM和ABH.1M114等位基因进行了基因互补性实验。",
+      "claim_role": "paper_method",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C29",
+      "claim_zh": "为了进一步验证ABH.1的功能，分别使用ABH.1YBM和ABH.1M114等位基因进行了基因互补性实验。首先，利用农杆菌介导的方法将过表达载体proUbi::ABH.1YBM引入普通小麦品系Fielder (ne1ne1ne2ne2)中。结果发现，4个阳性转基因株系，均无叶片坏死症状(图4a)。",
+      "claim_role": "paper_method",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C30",
+      "claim_zh": "结果发现，4个阳性转基因株系，均无叶片坏死症状(图4a)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C31",
+      "claim_zh": "为了进一步确认ABH.1YBM在Ne2存在的情况下是否能诱导叶片坏死，将阳性转基因株系与ZZ6903 (ne1ne1Ne2Ne2)杂交。",
+      "claim_role": "paper_method",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C32",
+      "claim_zh": "为了进一步确认ABH.1YBM在Ne2存在的情况下是否能诱导叶片坏死，将阳性转基因株系与ZZ6903 (ne1ne1Ne2Ne2)杂交。结果发现，Fielder×ZZ6903衍生的F1植株正常生长，而ZZ6903与ABH.1YBM的阳性转基因株系衍生的F1后代均表现出叶片坏死症状(图4a)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C33",
+      "claim_zh": "此外，本研究还构建了ABH.1自身启动子的表达载体proABH.1M114::ABH.1M114，通过农杆菌介导的转化将该载体引入Fielder遗传背景下的Ne2过表达转基因株系OE-T1-1-1 (ne1ne1ne2ne2Ne2ZMNe2ZM，以下简称OENe2)和ZM×Fielder杂交F1后代(ne1ne1Ne2ne2)中。",
+      "claim_role": "paper_method",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C34",
+      "claim_zh": "结果发现，携带ABH.1M114的阳性转基因植株在OENe2转化事件中表现出明显的坏死(图4b)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C35",
+      "claim_zh": "同样，在ZM×Fielder转化事件中，携带ABH.1M114的阳性转基因植株在Ne2Ne2纯合时表现出叶片坏死，而在ne2ne2纯合时表现出正常叶片(图4b)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C36",
+      "claim_zh": "综上，多个独立EMS非坏死突变体和转基因实验的结果证实了ABH.1确实是Ne1。",
+      "claim_role": "paper_conclusion",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C37",
+      "claim_zh": "鉴于杂种坏死综合征与过敏性反应(HR)的相似性，以及Ne2作为高温叶锈病抗性基因Lr13的事实，暗示了杂种坏死与免疫反应之间的可能联系。",
+      "claim_role": "paper_intro",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C38",
+      "claim_zh": "通过对包括PR1、PR2、PR3、PR5和LOX2在内的病原体相关基因的表达分析，发现在近等基因系NIL-ne1和NIL-Ne1之间存在显著差异表达(图5a)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C39",
+      "claim_zh": "此外，与NIL-ne1相比，NIL-Ne1中水杨酸(SA)和茉莉酸(JA)这两种与植物免疫反应相关的植物激素水平显著升高(图5b)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C40",
+      "claim_zh": "这些发现暗示了自身免疫激活可能参与杂种坏死的发生。",
+      "claim_role": "paper_conclusion",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C41",
+      "claim_zh": "为了研究ABH.1的序列变异，利用540份六倍体小麦和157份四倍体小麦的全基因组重测序数据对ABH.1进行了单倍型分析。研究共鉴定出7种单倍型(图6a)，而366份小麦材料中缺乏ABH.1。",
+      "claim_role": "paper_method",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C42",
+      "claim_zh": "研究共鉴定出7种单倍型(图6a)，而366份小麦材料中缺乏ABH.1。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C43",
+      "claim_zh": "随后，利用540份六倍体小麦的全基因组重测序数据分析了NE1位点的结构变异，共鉴定出四种结构变异，即郑农17类型(ZN17-like，310份)、洋白麦类型(YBM-like，192份)、蚰子麦类型(YZM-like，29份)和婺源麦类型(WYM-like，9份) (图6b)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C44",
+      "claim_zh": "与ZN17-like相比，YBM-like、YZM-like和WYM-like材料分别携带1、2和3份2.89 Mb片段(图6b)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C45",
+      "claim_zh": "此外，还发现YZM-like或WYM-like亚型材料中的多个2.89 Mb片段并不完全相同，暗示了NE1区间内可能存在更加复杂的结构变异(图6c)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C46",
+      "claim_zh": "随后，研究以覆盖深度作为标准，利用540份六倍体小麦的全基因组重测序数据鉴定出了4种ABH.1基因的拷贝数变异(CNVs)，即CNV-0、CNV-1、CNV-2和CNV-3类型。",
+      "claim_role": "paper_method",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C47",
+      "claim_zh": "这些CNVs分别对应于ABH.1基因的0、1、2或3份拷贝，并且分别与4种结构变异ZN17-like、YBM-like、YZM-like和WYM-like彼此对应(图6d)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C48",
+      "claim_zh": "类似的ABH.1的拷贝数变异也在四倍体小麦中被发现，其中包括硬粒小麦和野生二粒小麦(图6e)，暗示ABH.1可能起源于野生二粒小麦。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C49",
+      "claim_zh": "因此，本研究对来自305份六倍体小麦的RNA-seq数据进行了统计分析，结果表明与CNV-1材料相比，CNV-2和CNV-3材料中的ABH.1具有更高的表达水平(图6f)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C50",
+      "claim_zh": "根据F1植株表现出的坏死严重程度，先前的研究表明至少存在三种Ne1等位基因，即Ne1w (弱)、Ne1m (中等)和Ne1s (强) (Vikas et al., 2013)。",
+      "claim_role": "paper_intro",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C51",
+      "claim_zh": "为了阐明ABH.1等位基因对杂种坏死的影响，本研究选择了代表不同ABH.1单倍型的小麦材料，包括中国春(CS，Hap1)、豫麦14 (YM14，Hap2)、洋白麦(YBM，Hap3)、PI 171028 (Hap4)和Mania (Hap5)，它们都属于CNV-1单倍型，并将它们与ZZ6903 (Hap0，CNV0，ne1ne1Ne2Ne2)进行杂交。",
+      "claim_role": "paper_method",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C52",
+      "claim_zh": "结果发现，YM14×ZZ6903和YBM×ZZ6903衍生的F1植株表现出与CS×ZZ6903相似(或略微严重)的坏死症状(图7)。CS之前被认为携带Ne1w等位基因。因此，ABH.1的Hap1、Hap2和Hap3单倍型很可能对应于Ne1w等位基因。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C53",
+      "claim_zh": "CS之前被认为携带Ne1w等位基因。",
+      "claim_role": "paper_intro",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C54",
+      "claim_zh": "因此，ABH.1的Hap1、Hap2和Hap3单倍型很可能对应于Ne1w等位基因。",
+      "claim_role": "paper_conclusion",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C55",
+      "claim_zh": "PI 171028×ZZ6903和Mania×ZZ6903的F1植株表现出极其严重的坏死症状，导致开花期叶片完全枯萎和死亡(图7)。这些结果表明，ABH.1的Hap4和Hap5单倍型可能对应于Ne1s等位基因。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C56",
+      "claim_zh": "这些结果表明，ABH.1的Hap4和Hap5单倍型可能对应于Ne1s等位基因。",
+      "claim_role": "paper_conclusion",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C57",
+      "claim_zh": "为了进一步研究ABH.1的拷贝数变异对杂种坏死程度的影响，本研究还利用属于Hap5单倍型和CNV-3类型的小麦品种PI 182704、Ripper和Hallam，分别与ZZ6903进行杂交(图7)。",
+      "claim_role": "paper_method",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C58",
+      "claim_zh": "与Mania×ZZ6903产生的F1植株相比，PI 182704×ZZ6903、Ripper×ZZ6903和Hallam×ZZ6903的F1植株表现出加剧的坏死症状。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C59",
+      "claim_zh": "这些发现表明，ABH.1的等位变异和拷贝数变异均影响杂种坏死多样性。",
+      "claim_role": "paper_conclusion",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C60",
+      "claim_zh": "ABH.1在CS的A、B、D亚基因组中均有同源基因。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C61",
+      "claim_zh": "ABH.1在CS的A、B、D亚基因组中均有同源基因。比较基因组分析表明，与CS的B亚基因组相比，NE1位点在A和D亚基因组的对应同源区域中存在明显的结构变异(图8a)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C62",
+      "claim_zh": "然而，NE1位点在六倍体小麦Fielder (ne1ne1)的A、B和D亚基因组的同源区域中表现出良好的微共线性(图8b)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C63",
+      "claim_zh": "对CS和Fielder的NE1区间的基因组序列比较表明，2.89 Mb插入片段与相邻基因区域(从IF4F.2到SP.8)具有很强的相似性(图8c)，表明该区域(2.89 Mb)可能源自复制和异位重组事件。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C64",
+      "claim_zh": "ABH.1与ABH.2的区别在于，ABH.1缺少ABH.2的N端1-105个氨基酸，而ABH.1则具有一个额外的17个氨基酸的预测信号肽，该信号肽在禾本科物种中是唯一的，且可能具有分泌活性。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C65",
+      "claim_zh": "序列分析显示ABH.1的启动子区域包含多个转座元件(TEs)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C66",
+      "claim_zh": "有趣的是，ABH.1的5'端上游区域的377 bp序列和第一外显子的57 bp序列与SP.5的3'下游区域的序列具有93.58%的相似性，而SP.5则是SP.1的同源基因(图8c和9)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C67",
+      "claim_zh": "对SP.5的3'下游序列的进一步分析表明，两个相邻片段，分别标记为片段A和片段B，分别与ABH.1的5'端和SP.1的3'下游片段相似，而这两个片段被TEs分隔(图9)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C68",
+      "claim_zh": "因此，本研究提出了关于ABH.1的一个假设性进化轨迹(图9)。",
+      "claim_role": "paper_conclusion",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "空概括：只说提出了进化轨迹，没写出轨迹是什么；具体内容在 C69–C71。",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C69",
+      "claim_zh": "在包含ABH.2、SP.4和SP.5基因的片段复制之后，整个SP.4基因以及ABH.2的启动子区域和第一外显子(315 bp)从复制的片段中丢失。随后，TEs插入到SP.5基因的3'下游区域。这些转座子随后与SP.5的一部分下游序列以及截短的ABH.2基因融合，形成一个新的功能基因ABH.1。",
+      "claim_role": "paper_conclusion",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C70",
+      "claim_zh": "随后，TEs插入到SP.5基因的3'下游区域。",
+      "claim_role": "paper_conclusion",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C71",
+      "claim_zh": "这些转座子随后与SP.5的一部分下游序列以及截短的ABH.2基因融合，形成一个新的功能基因ABH.1。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C72",
+      "claim_zh": "为了研究Ne1的地理分布，研究者分别利用Ne1和Ne2的检测标记Ne1-Select2128和Ne2-Select91对全球来源的四倍体和六倍体小麦进行了检测。",
+      "claim_role": "paper_method",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C73",
+      "claim_zh": "结果发现，Ne2在所有测试的四倍体(192份野生二粒，192份硬粒小麦，200份栽培二粒)小麦中均未检测到，而其在六倍体小麦中的存在比例为9.5% (50/527)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C74",
+      "claim_zh": "以上结果表明，Ne2可能来源于小麦六倍化之后。",
+      "claim_role": "paper_conclusion",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C75",
+      "claim_zh": "但是也可能是因为检测的四倍体数目或来源区域的局限性，导致我们并未在四倍体中检测到Ne2，因为先前有报道称四倍体间的杂交也会产生坏死症状。",
+      "claim_role": "paper_conclusion",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C76",
+      "claim_zh": "对北美普通小麦中ABH.1等位基因的频率分析表明，其频率显著低于欧洲和亚洲(图10a)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C77",
+      "claim_zh": "对北美普通小麦中ABH.1等位基因的频率分析表明，其频率显著低于欧洲和亚洲(图10a)。这可能与北美地区大量使用来自国际小麦玉米中心的携带Ne2/Lr13的抗病材料进行遗传改良有关。",
+      "claim_role": "paper_conclusion",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C78",
+      "claim_zh": "对中国普通小麦的地理分布分析表明，ABH.1在河南省的频率最高(51.76%)，而在山东省最低(11.27%) (图10a)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C79",
+      "claim_zh": "此外，ABH.1在现代品种和育种材料中的频率显著低于地方品种(图10b)，这表明ABH.1在中国小麦育种中可能受到了负向选择。这或许与Ne2/Lr13受到正向选择有关 (Si et al., 2021a)。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C80",
+      "claim_zh": "这或许与Ne2/Lr13受到正向选择有关 (Si et al., 2021a)。",
+      "claim_role": "paper_conclusion",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C81",
+      "claim_zh": "1、目前关于Ne1和Ne2是否存在直接互作以及它们如何诱发坏死的问题，仍存在争议。",
+      "claim_role": "paper_intro",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C82",
+      "claim_zh": "研究并未在烟草体系中鉴定到两者的直接互作(LUC和Co-IP)，主要的证据是瞬时共表达Ne1和Ne2后，并不诱发烟草叶片坏死。然而，是否在小麦中也是如此，仍需进一步验证。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C83",
+      "claim_zh": "然而，是否在小麦中也是如此，仍需进一步验证。",
+      "claim_role": "paper_conclusion",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C84",
+      "claim_zh": "先前研究中，Ne1和Ne2均被定义为显性或半显性。",
+      "claim_role": "paper_intro",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C85",
+      "claim_zh": "先前研究中，Ne1和Ne2均被定义为显性或半显性。但在ZN17×YBM衍生的剩余杂合系中，在极少分离系中Ne1或Ne2却表现为隐性，即Ne1ne1Ne2Ne2或Ne1Ne1Ne2ne2植株表型完全正常。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C86",
+      "claim_zh": "本研究仅简要分析了在Ne1编码序列一致的情况下，拷贝数变异对杂种坏死程度的影响。",
+      "claim_role": "paper_method",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C87",
+      "claim_zh": "然而，必然存在编码区一致，而启动子的差异改变Ne1的表达进而影响杂种坏死表型的情况。",
+      "claim_role": "paper_conclusion",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C88",
+      "claim_zh": "Ne1单倍型颇多，启动子区域更是丰富多变，后续研究困难重重。",
+      "claim_role": "paper_intro",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C89",
+      "claim_zh": "4、鉴于目前已公开的六倍体小麦基因组中未包含CNV-2或CNV-3类型的材料，因此CNV-2或CNV-3中多个2.89 Mb片段的排列方式尚不清楚。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C90",
+      "claim_zh": "这是否也从侧面说明NE1位点存在一些育种上的劣势基因，或者Ne1本身就是罪魁祸首？",
+      "claim_role": "paper_conclusion",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "drop",
+      "review_note": "反问套话，没有可独立核查的科学命题。",
+      "merge_into": ""
+    }
+  ]
+}

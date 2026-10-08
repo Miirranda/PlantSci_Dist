@@ -1,0 +1,1792 @@
+{
+  "schema_version": "1.2",
+  "taxonomy_version": "distortion-v0.1",
+  "status": "benchmark",
+  "paper_id": "P001",
+  "article_id": "A001",
+  "article_source_type": "high_quality",
+  "index_version": "2026-08-19 13:53:42#0d1325e8cd00f395",
+  "exported_at": "2026-09-17T17:19:27",
+  "sample_count": 51,
+  "samples": [
+    {
+      "sample_id": "P001-A001-C01",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "该研究通过空间转录组技术和细胞谱系追踪，首次揭示了黄瓜下位子房的发育机制，并阐明了KNOX1转录因子在葫芦科植物花器官发育和性别决定中的核心作用。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "1.In flowering plants, inferior ovaries are key morphological innovations that evolved multiple times from superior ovaries to protect female parts of the flower. However, the developmental mechanisms underlying inferior ovary formation remain largely unknown. Comparative spatial transcriptome mapping and cell lineage reconstructions in developing floral buds of cucumber and tomato, which have inferior and superior ovaries, respectively, revealed that inferior ovaries develop from accelerated receptacle growth resulting from the continuous activity of meristematic stems cells at the base of the cucumber floral organs.Genetic knockout of a receptacle-specific KNOX1 transcription factor in cucumber caused arrest in receptacle growth and yielded bisexual flowers with superior ovaries similar to those of tomato. Here we provide developmental and mechanistic insights into inferior ovary formation and sex determination in cucurbits.",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "moderate",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "addition",
+          "level2": "significance_addition"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "significance_addition",
+        "secondary_types": [
+          "context_omission"
+        ],
+        "is_accurate": false
+      }
+    },
+    {
+      "sample_id": "P001-A001-C02",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "在开花植物中，子房相对于其他花器官的位置是重要分类学特征之一。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          7,
+          8
+        ],
+        "paragraphs": [],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C03",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "根据子房与其他外轮花器官（萼片、花瓣、雄蕊）的相对位置关系，可分为上位子房（superior ovary）和下位子房（inferior ovary）。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          8,
+          7
+        ],
+        "paragraphs": [],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C04",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "下位子房被认为是被子植物多次独立进化出的关键创新性状，其结构可更好地保护雌蕊并为胚珠发育分配更多能量。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          0,
+          10,
+          9
+        ],
+        "paragraphs": [],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C05",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "葫芦科（Cucurbitaceae）植物（如黄瓜、西瓜、甜瓜等）果实均来源于下位子房，且多为单性花，但下位子房形成机制及其与性别决定机制的关系还尚未明确。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          4,
+          21
+        ],
+        "paragraphs": [
+          {
+            "text": "Based on anatomical and comparative studies, several early theories regarding the development and evolution of the inferior ovary have been proposed, while no single theory completely explains all morphological aspects of the inferior ovary. Some studies suggest that the evolution of floral organs was not linear but rather a gradual process from simplicity to complexity, with various parts of the floral organs fusing at different levels to form the inferior ovary5,6. Recently, it is suggested that the differential growth of the receptacle surrounding the gynoecium probably contributes to the varying patterns of ovary position2; nonetheless, the genetic basis of this important morphological innovation remains unresolved. The Cucurbitaceae family, as exemplified by cucumber (Cucumis sativus L.), melon (Cucumis melo), watermelon (Citrullus lanatus) and pumpkin (Cucurbita spp.), has numerous species with predominantly unisexual flowers. Notably, their fleshy fruits develop from inferior ovaries that originate from female floral buds (melon fruit may develop from bisexual flowers). Accordingly, the genetic and developmental mechanisms underlying inferior ovary formation have economic, as well as developmental importance. Elucidating inferior ovary formation in cucurbits has the potential to illuminate the evolution of this trait, enhance understanding of sex determination and fruit development, and provide valuable insights for future breeding programmes.",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "moderate",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "context_omission",
+        "secondary_types": [
+          "context_omission"
+        ],
+        "is_accurate": false
+      }
+    },
+    {
+      "sample_id": "P001-A001-C06",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "黄瓜（Cucumis sativus）和番茄（Solanum lycopersicum）具有相似花器官结构，但前者为下位子房和单性花，后者为上位子房和两性花，是研究子房位置和性别决定机制的理想模式植物。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          40
+        ],
+        "paragraphs": [
+          {
+            "text": "Cucumber and tomato have a similar floral structure (Extended Data Fig. 1a), but their differences in flower sex and ovary position make them excellent subjects for comparison (Extended Data Fig. 1b). Based on previous studies, we defined the different stages of floral bud development in cucumber and tomato10,11 (Supplementary Table 1) and examined the morphology of female floral buds of cucumber from floral meristem initiation to carpel fusion completion. After initiation, the cucumber floral meristem enlarges from the perimeter and becomes concave (Fig. 1b), then sepal, petal, stamen and carpel primordia are initiated sequentially on the inner regions of this ‘enlarged floral meristem’ (EFM) (Fig. 1b,c). With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig. 1b,c). The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c). By contrast, the floral meristem of tomato is convex, and the floral primordia sequentially initiate on its flank, with the carpels growing upwards to form superior ovaries (Fig. 1d, e).",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "addition",
+          "level2": "function_application_addition"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "function_application_addition",
+        "secondary_types": [],
+        "is_accurate": false
+      }
+    },
+    {
+      "sample_id": "P001-A001-C07",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "本研究首先构建了502个被子植物物种进化树，包含花性别和子房位置信息（图1a），其中单性花和子房下位性状在进化过程中独立出现多次，但在葫芦科植物及其近缘种中连锁出现，说明这两个性状可能来自于同一进化事件。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          36,
+          39,
+          261
+        ],
+        "paragraphs": [
+          {
+            "text": "We annotated the phylogenetic tree of angiosperms9, encompassing 502 species across 61 orders, with sex information and ovary positions (Fig. 1a). In extant angiosperms, bisexual flowers and superior ovaries represent ancestral states. Unisexual flowers and inferior ovaries originated independently multiple times during angiosperm evolution. However, they appeared simultaneously in the Cucurbitaceae and its closely related species Tetramelaceae and Begoniaceae (Fig. 1a), suggesting that the inferior ovary and unisexual flower may have originated from a single evolutionary event in the Cucurbitaceae.",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [
+          "context_omission"
+        ],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C08",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "为探究葫芦科植物子房下位发育进程，对黄瓜花发育过程进行了石蜡切片观察（图1b），同时以子房上位的番茄作为对比进行观察（图1d）。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          15,
+          27
+        ],
+        "paragraphs": [
+          {
+            "text": "Fig. 1 | The evolution and development of unisexual flower and inferior ovary in cucumber. a, The phylogenetic relationship of 502 species from 61 orders of angiosperms. b, The paraffin-embedded sections show the morphology of cucumber female floral development during developmental stages S1–S8. The arrows indicate the initiation of the floral primordia (prim). c, Schematic diagrams of female floral organ development in cucumber. The colours denote the corresponding floral organs. d, The paraffin-embedded sections showing the morphology of tomato floral development during S1–S8. The arrows indicate the initiation of the floral primordia. e, Schematic diagrams of floral organ development in tomato. The colours denote the corresponding floral organs. Scale bars, 500 μm (b and d).",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C09",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "结果发现，黄瓜发育过程中，分生组织边缘膨大、中间凹陷，并在膨大分生组织内部分化出萼片、花瓣、雄蕊和心皮原基（图1c）；而番茄花分生组织中间凸起，在其侧面形成各花器官原基（图1e）。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          42,
+          45
+        ],
+        "paragraphs": [
+          {
+            "text": "Cucumber and tomato have a similar floral structure (Extended Data Fig. 1a), but their differences in flower sex and ovary position make them excellent subjects for comparison (Extended Data Fig. 1b). Based on previous studies, we defined the different stages of floral bud development in cucumber and tomato10,11 (Supplementary Table 1) and examined the morphology of female floral buds of cucumber from floral meristem initiation to carpel fusion completion. After initiation, the cucumber floral meristem enlarges from the perimeter and becomes concave (Fig. 1b), then sepal, petal, stamen and carpel primordia are initiated sequentially on the inner regions of this ‘enlarged floral meristem’ (EFM) (Fig. 1b,c). With the rapid growth of the receptacle, the sepal, petal and stamen primordia are elevated to the floral apex, while the carpel remains inside the receptacle, thereby forming inferior ovaries (Fig. 1b,c). The formation of male floral buds in cucumber, induced by AgNO3, also featured an enlarged and concave floral meristem; however, the subsequent growth of the receptacle and carpel was arrested (Extended Data Fig. 1c). By contrast, the floral meristem of tomato is convex, and the floral primordia sequentially initiate on its flank, with the carpels growing upwards to form superior ovaries (Fig. 1d, e).",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C10",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "说明黄瓜子房下位形成的必要条件为：（1）花分生组织膨大，改变花器官轮相对位置；（2）花托迅速生长；（3）花托和心皮融合。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          46
+        ],
+        "paragraphs": [],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C11",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "为解析黄瓜子房下位基因调控网络，对黄瓜花芽分化S1-S8时期的纵截面和S8-4时期、花后0天（0 DAP）子房的横截面进行了Stereo-seq空间转录组测序。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "To dissect the underlying gene expression network driving the development of the inferior ovary of cucumber, we sampled floral buds at various stages, including S1–S8, and ovaries at 0 days post anthesis (DPA) for spatial transcriptomic analysis. Longitudinal sections were analysed, as well as a transverse section of S8-4 and two 0 DPA samples (Extended Data Fig. 2a), using a standard analytical procedure8. Datasets for individual sections were aggregated into bin 50, which had a diameter equal to that of an entire cell at 0 DPA (Extended Data Fig. 2b–d and Supplementary Table 2). The gene numbers and unique molecular identifier (UMI) counts in each bin 50 showed a high level of consistency (Extended Data Fig. 2e–g), without transcript signal spreading, as indicated by the UMI distribution (Supplementary Figs. 1–9), and all the floral bud samples at different stages could be continuously ordered along a pseudotime trajectory (Extended Data Fig. 2h).",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [
+          "context_omission"
+        ],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C12",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "经数据降维后，所有样品的细胞共被分为41个聚类（cluster）（图2a），通过特异性标记基因表达模式（图2b）及其空间分布（图2c）进一步验证了这些聚类的组织特异性。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "To acquire a global picture of clusters, we performed a spatially constrained clustering analysis7 (Extended Data Fig. 3b), revealing six superclusters of cells that could be putatively separated into tissues of the floral organs: putative FIM, epidermis, receptacle and conjunctive tissue, floral primordia and carpel, sepal and petal (Extended Data Fig. 2i). To further dissect cell-type composition, we conducted an unsupervised clustering analysis using Seurat12 (Fig. 2a, Extended Data Fig. 3a and Supplementary Fig. 10). This revealed 41 clusters with distinct locations, as shown by their uniform manifold approximation and projection (UMAP) and spatial information (Fig. 2a, Extended Data Fig. 2j–l and Supplementary Figs. 11–15). The tissue-specific identities of these clusters were confirmed by the expression of specific cell marker genes (Fig. 2b and Supplementary Table 3) and their spatialtemporal distribution (Fig. 2c, Extended Data Fig. 2m–o and Supplementary Figs. 16–19).",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C13",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "其中，cluster 26、27、28位于心皮和花托之间，分别将其命名为“连接原基”“连接组织早期”和“连接组织晚期”。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          70
+        ],
+        "paragraphs": [],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C14",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "S6-S8时期与心皮、花托以及连接组织相关的细胞聚类如图2d，其中连接组织不仅表达心皮和花托的标记基因（AG1、CRC），也特异性表达两性花发育基因ACS2（图2e），说明连接组织在子房发育和性别决定中可能同时起作用。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "Fig. 2 | Spatial transcriptome of developing cucumber female floral buds using Stereo-seq.d, A spatial depiction of the clusters related to carpel (cluster 3 and 4), conjunctive tissues (cluster 27 and 28) and receptacle tissues (cluster 9 and 10). We also observed three clusters (26, 27 and 28) situated between the carpel and receptacle at various stages of floral bud development, which we named conjunctive primordia, conjunctive tissue-early and conjunctive tissue-late, respectively (Fig. 2a–c). Besides the expression of marker genes in both carpel (CsAG1) and receptacle (CsCRC), the marker gene CsHANABA TARANU (CsHAN1) was exclusively expressed in cluster 27 (ref. 23) (Supplementary Fig. 18b). In contrast to previous recognition of expression in carpel, we observed that Cs1-aminocyclopropane-1-carboxylate synthase 2 (CsACS2)24, a gene for bisexual flower development, was specifically expressed in these clusters, suggesting that the conjunctive tissue plays a role in ovary development and sex determination (Fig. 2d,e and Supplementary Fig. 18c).",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "moderate",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "substitution",
+          "level2": "mechanism_substitution"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "mechanism_substitution",
+        "secondary_types": [
+          "context_omission"
+        ],
+        "is_accurate": false
+      }
+    },
+    {
+      "sample_id": "P001-A001-C15",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "利用空间转录组数据绘制了花器官发生轨迹，并根据cluster之间的关系重构细胞谱系（图3a）。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          93,
+          94
+        ],
+        "paragraphs": [
+          {
+            "text": "An understanding of the progression of cell lineages during a developmental process is necessary to elucidate the mechanisms of differentiation activity and their connection to pluripotency28,29. To identify the major cell lineages involved in cucumber floral bud organogenesis and the mechanisms of receptacle development, we used the spatial transcriptomic data (Extended Data Fig. 3c) to generate a trajectory of floral organogenesis (TOFO), drawing on methods from the trajectory of mammal embryogenesis (TOME) analysis30.",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C16",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "各细胞谱系的空间分布与其发育轨迹相同（图3b）。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          96,
+          97
+        ],
+        "paragraphs": [
+          {
+            "text": "The reconstructed cell lineage reveals inferred relationships between clusters across sections from S1 to S8-4 (Fig. 3a and Extended Data Fig. 4a). Based on the annotation and relationship of clusters, the trajectories were divided into groups corresponding to different tissues (Fig. 3a). We also examined their spatial distribution across sections, which revealed the spatiotemporal cell lineages for each supercluster (Fig. 3b). We found that although the production of sepal primordia was not captured, probably due to relatively small number of cells at the early stage, the cell lineage analysis indicated that the floral primordia sequentially differentiated into petal, stamen and carpel primordia (Fig. 3a) and that their distributions varied coincident with changes in floral buds morphology (Fig. 3b)13.",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "mild",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "substitution",
+          "level2": "relation_substitution"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "evidence_uncertainty_omission"
+        },
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "relation_substitution",
+        "secondary_types": [
+          "evidence_uncertainty_omission"
+        ],
+        "is_accurate": false
+      }
+    },
+    {
+      "sample_id": "P001-A001-C17",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "研究发现，S7后花基部分生组织（FIM）与花托原基活跃地进行细胞分裂（图3a），可能是花托快速生长从而导致与心皮融合的原因。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "We determined that after S7, the FIM and receptacle primordia generate cells that are actively undergoing the cell cycle, while G1/S phase cells transition to receptacle cells, suggesting a mechanism to maintain cell proliferation and support rapid receptacle growth (Fig. 3a). An analysis using Monocle2 (Extended Data Fig. 3d), along with the pseudotime curve, demonstrated the cell lineage from FIM to receptacle and then to conjunctive tissue (Fig. 3c,d). These insights and the organization information of the cell clusters, as shown in the schematic diagrams (Extended Data Fig. 4b,c), highlight the spatiotemporal structure of these functional hubs in the transect section (bottom) and longitudinal section (top) at various developmental stages of cucumber floral buds (Fig. 3e) and advance our understanding of the development basis of cucurbit female flower buds. We infer that in cucumber, the fruit flesh outside the carpel is mostly derived from the development of receptacle. Accordingly, the receptacle-derived tissue is important for the genetic improvement.",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "moderate",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "substitution",
+          "level2": "mechanism_substitution"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "evidence_uncertainty_omission"
+        },
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "mechanism_substitution",
+        "secondary_types": [
+          "evidence_uncertainty_omission"
+        ],
+        "is_accurate": false
+      }
+    },
+    {
+      "sample_id": "P001-A001-C18",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "拟时序分析发现，其发育顺序为：FIM-花托-连接组织（图3c-d）。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "An analysis using Monocle2 (Extended Data Fig. 3d), along with the pseudotime curve, demonstrated the cell lineage from FIM to receptacle and then to conjunctive tissue (Fig. 3c,d).",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C19",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "基于以上结果，推测黄瓜心皮外的果肉是由花托发育而来（图3e），因此花托及其相关组织的研究对遗传改良意义重大。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "These insights and the organization information of the cell clusters, as shown in the schematic diagrams (Extended Data Fig. 4b,c), highlight the spatiotemporal structure of these functional hubs in the transect section (bottom) and longitudinal section (top) at various developmental stages of cucumber floral buds (Fig. 3e) and advance our understanding of the development basis of cucurbit female flower buds. We infer that in cucumber, the fruit flesh outside the carpel is mostly derived from the development of receptacle. Accordingly, the receptacle-derived tissue is important for the genetic improvement.",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "mild",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "addition",
+          "level2": "significance_addition"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "significance_addition",
+        "secondary_types": [
+          "context_omission"
+        ],
+        "is_accurate": false
+      }
+    },
+    {
+      "sample_id": "P001-A001-C20",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "为探究花托起始形成过程中的基因动态表达和细胞基础，对S1-S4时期花芽进行近单细胞分辨率的无监督聚类分析，共分为7个cluster（图4a-b），其中花托原基（RP）和扩展花分生组织（EFM）的起始和发育决定着“凹”形花分生组织的形态发生。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "To understand the gene expression dynamics and cytological basis of the EFM in inferior ovary, we selected sections of floral buds from S1 to S4 stages and conducted unsupervised clustering analysis with near single-cell resolution (average cell diameter from S1 to S4 of 12.96 μm and bin30 diameter of 15 μm) (Fig. 4a and Extended Data Fig. 2c,d). This revealed seven clusters with distinct locations and expressed marker genes during early floral organ development (Fig. 4a,b and Supplementary Table 4): cluster 0, epidermis (cluster E); cluster 1, pedicel (cluster P); cluster 2, floral primordia (cluster FP); cluster 3, receptacle primordium (cluster RP); and cluster 5, FIM. Both cluster 3 and cluster 4 were distributed along the concave floral meristem, and cluster 4 showed preferential expression of the floral meristem marker gene LEAFY. Given the EFM in cucumber (Fig. 1b,c), we annotated cluster 4 as an EFM. The distribution of cluster 3 (RP) and cluster 4 (EFM) indicates that their initiation and development determine the morphogenesis of the enlarged and concave floral meristem.",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [
+          "context_omission"
+        ],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C21",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "RNA速率分析和拟时序分析揭示了这些cluster的发育轨迹：起源于花基部分生组织（FIM），分为3条发育路径，其中一条分化为表皮（E），另外两条经过扩展花分生组织（EFM）分别分化为花原基（FP）和花托原基（RP）（图4c-d）。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "RNA velocity and Monocle3 were used to study the early differentiation trajectories of these clusters (Extended Data Fig. 3d,e). Both methods yielded consistent trajectories originating from the FIM (Fig. 4c), highlighting three main developmental paths. One involved the differentiation of the epidermis. The other two originated from the FIM and passed through the EFM, with one leading to the formation of the floral primordia, then generating floral whorls, while the other gave rise to the receptacle primordium from the EFM (Fig. 4c). A pseudotime analysis using Monocle2 confirmed the resulting trajectories (Fig. 4d).",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": false
+      },
+      "gold_classification": {
+        "evidence_level": "Weak_Evidence",
+        "severity": "",
+        "has_distortion": null,
+        "primary_label": null,
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "",
+        "secondary_types": [],
+        "is_accurate": null
+      }
+    },
+    {
+      "sample_id": "P001-A001-C22",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "在拟时序分析中筛选出一些关键基因，其表达热图及空间定位见图4e-f，并对其中一些基因进行了RNA原位杂交验证（图4g）。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          115,
+          125,
+          154
+        ],
+        "paragraphs": [
+          {
+            "text": "Fig. 4 | Cell dynamics during receptacle initiation and development. e, A heat map of the dynamic changes in expression levels of pseudotime-dependent genes. The full list of genes is provided in Supplementary Table 5. f, A spatial visualization of selected genes obtained through Monocle2 analysis. g, In situ hybridization of AP1, KNAT2-like1, STM, STM-like and LEAFY. The arrowheads indicate the locations of gene expression in the tissue. Several key genes in these developmental paths were revealed by Monocle2 (Fig. 4e, Extended Data Fig. 5a and Supplementary Table 5), and their spatial expression distributions were investigated (Fig. 4f and Extended Data Fig. 5b). STM-like is highly expressed in the FIM region, which has been shown to be related to sex expression in cucumber31. While the floral identity genes, AP1 and LEAFY, are both expressed in the FIM and EFM and show expression at the apex of the elongated floral buds (Fig. 4f). AP1 is reported to promote floral meristem formation together with LEAFY and, subsequently, sepal formation14. The expanded expression pattern of these two genes at the apex region offered support for the notion that the floral meristem enlarges during development in cucumber (Fig. 4f). The floral identity genes PI and AP3 were identified in the trajectory leading to floral primordia development, and their expression coincided with the initiation sites of petals and stamens (Fig. 4f). Notably, in the trajectory leading to receptacle primordium development, KNAT2-like1 and ACO2 were expressed in the receptacle primordium from S1. ACO2 is involved in the synthesis of the hormone ethylene and in regulating the ethylene-mediated development of the gynoecium32. We also determined that ACO2 was coexpressed with MYO-INOSITOL-1-PHOSPHATE SYNTHASE 3 (MIPS3), which suppresses cell death33, suggesting a mechanism to mitigate ethylene-mediated programmed cell death. The expression of the genes BAS1, associated with brassinosteroids34, and the gene ETTIN related with auxin35,36 in the receptacle primordium, indicates roles of these phytohormones and their crosstalk in receptacle differentiation and development (Fig. 4f and Extended Data Fig. 5b). Next, the expression patterns of selected key marker genes, such as STM, STM-like, KNAT2-like1, ETTIN, AP1 and LEAFY, were verified by RNA in situ hybridization (Fig. 4g and Extended Data Fig. 5c).",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C23",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "根据细胞聚类位置，将这些cluster分为内部区域（FP）和外部区域（E、RP和EFM）（图4h）。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "Based on the clusters, we classified the cells of floral buds into the inner part (cluster floral primordia) and peripheral part (clusters E, RP and EFM) and measured their cell area and cell numbers (Fig. 4h). We determined that the initial morphological changes in the EFM reflect rapid cell proliferation in the peripheral region (Fig. 4i) and that cell expansion in this region from S2 to S5 contributed to subsequent meristem enlargement (Fig. 4j). This finding was supported by the preferential expression of known cell expansion-related genes37–40 in the peripheral region at S4 (Extended Data Fig. 5d).",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C24",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "通过统计内部和外部区域的细胞数量及面积发现，EFM初始形态变化是由于外部区域细胞快速增殖（图4i-j），从而促进外侧分生组织后续扩大。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          127,
+          126
+        ],
+        "paragraphs": [
+          {
+            "text": "Based on the clusters, we classified the cells of floral buds into the inner part (cluster floral primordia) and peripheral part (clusters E, RP and EFM) and measured their cell area and cell numbers (Fig. 4h). We determined that the initial morphological changes in the EFM reflect rapid cell proliferation in the peripheral region (Fig. 4i) and that cell expansion in this region from S2 to S5 contributed to subsequent meristem enlargement (Fig. 4j). This finding was supported by the preferential expression of known cell expansion-related genes37–40 in the peripheral region at S4 (Extended Data Fig. 5d).",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "moderate",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "substitution",
+          "level2": "mechanism_substitution"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "mechanism_substitution",
+        "secondary_types": [
+          "context_omission"
+        ],
+        "is_accurate": false
+      }
+    },
+    {
+      "sample_id": "P001-A001-C25",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "S5时期后，花托相关bin数量急剧上升（图5a），说明此阶段后花托快速生长。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          129
+        ],
+        "paragraphs": [
+          {
+            "text": "After S5, we observed the largest increase in the bin numbers of receptacle-related clusters (receptacle-early, cluster 9), indicating that the rapid growth of the receptacle after this stage is driven by another phase of cell proliferation (Fig. 5a).",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C26",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "为探究花托快速生长的调控机制，对花托及FIM相关cluster进行了细胞轨迹重建。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          136
+        ],
+        "paragraphs": [],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C27",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "3D UMAP散点图显示，这些细胞被重新聚类为6个cluster（图5b），根据标记基因，确定其中4个cluster与细胞周期相关（GO/G1、G2、S、M），另外2个分别为花托原基（RP）和花基部分生组织（FIM）（图5c）。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          137
+        ],
+        "paragraphs": [],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [
+          "context_omission"
+        ],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C28",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "根据其空间分布，发现花托细胞增殖主要由激活S期细胞活动调控（图5d）。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "To investigate the regulation of cell division during rapid receptacle growth, we reconstructed cell trajectories using clusters of the receptacle and FIM (Fig. 5b and Extended Data Fig. 3f). A UMAP three-dimensional (3D) scatterplot revealed six reclusters, four of which followed a cyclic pattern (S phase, G2 phase, G0/G1 phase and M phase) according to the assigned cell-cycle marker genes20, and the remaining two were annotated as receptacle primordium and FIM (Fig. 5c, Extended Data Fig. 6a,b and Supplementary Table 6). The distinct characteristics of cell-cycle phases were observed at different developmental stages, with S phase cells primarily concentrated in S8-1 and S8-2 (Fig. 5d). The target of rapamycin (TOR) kinase gene, which promotes the activation of S phase genes and meristems42, was found to predominantly expressed in S phase cells (Extended Data Fig. 6b). These findings support the notion that cell proliferation in the receptacle is regulated by the activation of meristematic activities in S phase cells.",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "evidence_uncertainty_omission"
+        },
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [
+          "evidence_uncertainty_omission"
+        ],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C29",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "在花发育轨迹中标注不同cluster上/下调表达基因，发现调控心皮器官决定和单性花表型的转录因子CRC在S4/5后的花托中高表达（图5e）。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          170,
+          219,
+          84
+        ],
+        "paragraphs": [
+          {
+            "text": "To pinpoint the key genes that regulate the cell proliferation and rapid growth of receptacles, we focused on those that were specifically upregulated or downregulated along the TOFO trajectory from each cluster (Fig. 5e, Extended Data Fig. 6c and Supplementary Tables 7 and 8)30. CRC, a TF known to determine carpel identity and mediate unisexual flower development22, was upregulated in the receptacles after S4/5. CRC also serves as a marker gene for the receptacle (Fig. 2b)22, and we confirmed its expression in the receptacle during stages S5–S8-4 (Supplementary Fig. 18a).",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [
+          "context_omission"
+        ],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C30",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "通过空间共表达模块分析筛选与CRC共表达的基因，结果显示共聚类到17个模块中（M1-M17）（图5f），其中M14分布于花托（图5h）。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "To identify genes that were coexpressed with CRC, we performed a spatial coexpression module analysis using Giotto43 (Extended Data Fig. 3g). This analysis revealed 17 coexpression modules (Fig. 5f, Supplementary Figs. 20 and 21 and Supplementary Table 9), of which module 14 was distributed in the receptacle.",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C31",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "在M14中与CRC高度相关的基因包括KNAT2-like1、ER、DIN10、CA1P等（图5g），其中KNAT2-like1和ER在细胞分裂S期富集表达，DIN10和CA1P影响碳水积累并加强吸收。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "To identify genes that were coexpressed with CRC, we performed a spatial coexpression module analysis using Giotto43 (Extended Data Fig. 3g). This analysis revealed 17 coexpression modules (Fig. 5f, Supplementary Figs. 20 and 21 and Supplementary Table 9), of which module 14 was distributed in the receptacle. This module included CRC, KNAT2-like1, ERECTA (ER), DARK INDUCIBLE 10 (DIN10), CA1P phosphatase and a putative small peptide gene, and their codistributions were verified (Fig. 5h and Supplementary Table 9). The presence of KNAT2-like1 in this module suggested its critical role not only in early receptacle initiation but also in subsequent cell proliferation. ER is involved in fine-tuning plant cell proliferation44, and the expression of KNAT2-like1 and ER was also predominantly enriched in S phase cells (Extended Data Fig. 6b), while DIN10 (ref. 45) and CA1P phosphatase46 affect carbohydrate accumulation and enhance sink strength (Fig. 5g,h and Extended Data Fig. 6d,e). Based on these findings, we proposed that, in cucumber, the rapid growth of the receptacle is centred around sink capacity signalling and integration of KNAT2-like1, CRC and ER to regulate cell proliferation, ultimately promoting receptacle development.",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "mechanism_omission"
+        },
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [
+          "mechanism_omission"
+        ],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C32",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "以上结果说明，花托的快速生长以“库”容量信号为核心，整合KNAT2-like1、CRC和ER来调节细胞增殖。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "To identify genes that were coexpressed with CRC, we performed a spatial coexpression module analysis using Giotto43 (Extended Data Fig. 3g). This analysis revealed 17 coexpression modules (Fig. 5f, Supplementary Figs. 20 and 21 and Supplementary Table 9), of which module 14 was distributed in the receptacle. This module included CRC, KNAT2-like1, ERECTA (ER), DARK INDUCIBLE 10 (DIN10), CA1P phosphatase and a putative small peptide gene, and their codistributions were verified (Fig. 5h and Supplementary Table 9). The presence of KNAT2-like1 in this module suggested its critical role not only in early receptacle initiation but also in subsequent cell proliferation. ER is involved in fine-tuning plant cell proliferation44, and the expression of KNAT2-like1 and ER was also predominantly enriched in S phase cells (Extended Data Fig. 6b), while DIN10 (ref. 45) and CA1P phosphatase46 affect carbohydrate accumulation and enhance sink strength (Fig. 5g,h and Extended Data Fig. 6d,e). Based on these findings, we proposed that, in cucumber, the rapid growth of the receptacle is centred around sink capacity signalling and integration of KNAT2-like1, CRC and ER to regulate cell proliferation, ultimately promoting receptacle development.",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C33",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "为探究KNAT2-like1基因功能，构建了黄瓜KNAT2-like1敲除突变体k-1和k-2（图6a）。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          185
+        ],
+        "paragraphs": [],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C34",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "k-1和k-2出现子房上位和双性花表型，而其回补株系（C-1、C-2）表型与野生型类似（图6b）。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "To elucidate the function of KNAT2-like1, CRISPR–Cas9 was used to generate two homozygous transgene-free loss-of-function mutant lines, k-1 (2 bp deletion) and k-2 (1 bp insertion) (Fig. 6a). Compared with the wild type (WT), the mutants exhibited a similar proportion of male flowers around 60%. However, the WT showed a proportion of female flowers around 30%, while in mutants, there was a significant decrease in the proportion of normal female flowers with inferior ovaries from 30% to 12% (Fig. 6b). Only at the lower nodes were some female flowoers present. Instead, a corresponding proportion of ‘superior ovary flowers’ appeared, exhibiting the phenotype of bisexual flowers with superior ovaries (Fig. 6b), which means that 60% of normal female flowers transformed into ‘superior ovary flowers’ in the mutants. This phenotype was complemented in the k-2 mutants by expression of KNAT2-like1 under its native promoter (Fig. 6b), indicating the trans\u0002formation of female flowers into ‘superior ovary flowers’ in the absence of KNAT2-like1 expression.",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [
+          "context_omission"
+        ],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C35",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "形态学观察显示，S5时期之前雄花、雌花和k-2（子房上位、双性花）之间并没有区别，而S5之后，k-2花托并没有快速生长并与心皮融合（图6c-d）。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "We did not observe morphological differences among male, female and abnormal superior ovary flower development before S5, when the carpel primordia initiated (Fig. 6c,d and Extended Data Fig. 7a,b). However, after that point, distinct ‘superior ovary flower’ morphogenesis was observed (Fig. 6c,d and Extended Data Fig. 7e), as the floral receptacle of the ‘superior ovary flower’ did not fuse with the carpel and elongate, while the carpel continued to grow, resulting in upward growth of the carpels. Developing ovules were observed after stage 10 (Fig. 6d and Extended Data Fig. 7e). Meanwhile, the stamen primordia still grew and increased in size in the ‘superior ovary flower’ (Fig. 6d and Extended Data Fig. 7e). The morphogenesis of ‘superior ovary flowers’ was also observed by 3D reconstruction using X-ray microcomputed tomography (micro-CT), which confirmed that, compared with female floral buds, the arrest of receptacle expansion and continuous upward growth of the carpel resulted in the formation of superior ovaries (Fig. 6e).",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C36",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "利用micro-CT技术对花发育过程进行3D重建，发现花托在S5后的停止扩展和心皮持续向上生长导致k-2黄瓜出现类似于番茄的子房上位性状（图6e）。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "To elucidate the function of KNAT2-like1, CRISPR–Cas9 was used to generate two homozygous transgene-free loss-of-function mutant lines, k-1 (2 bp deletion) and k-2 (1 bp insertion) (Fig. 6a).",
+            "text_zh": ""
+          },
+          {
+            "text": "We did not observe morphological differences among male, female and abnormal superior ovary flower development before S5, when the carpel primordia initiated (Fig. 6c,d and Extended Data Fig. 7a,b). However, after that point, distinct ‘superior ovary flower’ morphogenesis was observed (Fig. 6c,d and Extended Data Fig. 7e), as the floral receptacle of the ‘superior ovary flower’ did not fuse with the carpel and elongate, while the carpel continued to grow, resulting in upward growth of the carpels. Developing ovules were observed after stage 10 (Fig. 6d and Extended Data Fig. 7e). Meanwhile, the stamen primordia still grew and increased in size in the ‘superior ovary flower’ (Fig. 6d and Extended Data Fig. 7e). The morphogenesis of ‘superior ovary flowers’ was also observed by 3D reconstruction using X-ray microcomputed tomography (micro-CT), which confirmed that, compared with female floral buds, the arrest of receptacle expansion and continuous upward growth of the carpel resulted in the formation of superior ovaries (Fig. 6e).",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C37",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "花后果实形成过程中，突变体3个心皮柱头未完全融合，影响了授粉和种子产生（图6f）。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          201
+        ],
+        "paragraphs": [
+          {
+            "text": "Post anthesis, the k-1 and k-2 mutant flowers continued to grow such that ultimately the ovaries were located above the other floral organs, resulting in bisexual flowers with superior ovaries, similar to those of tomato. However, the three carpels did not fuse to form a normal stigma, thus preventing pollination and seeds production (Fig. 6f,g). We also investigated the expression activities of KNAT2-like1 in male, female and superior ovary flower buds at various stages by in situ hybridization. We found the specific expression of KNAT2-like1 in the expanding receptacle of female flower buds (Fig. 6h). We also showed the absence of expression of KNAT2-like1 male flower of WT and in superior ovary flower of k-2 mutant (Fig. 6h). These results indicate that the expression activity of KNAT2-like1 is associated with receptacle development.",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C38",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "此外，k-2果实胎座结构与黄瓜典型结构相反（图6g），这是由于野生型花托心皮近轴面融合，使内外侧模式发生变化，从而导致子房下位花性状（图6i）。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "To elucidate the function of KNAT2-like1, CRISPR–Cas9 was used to generate two homozygous transgene-free loss-of-function mutant lines, k-1 (2 bp deletion) and k-2 (1 bp insertion) (Fig. 6a).",
+            "text_zh": ""
+          },
+          {
+            "text": "In WT cucumber, the inferior ovary has a typical placenta, where the medial region is the abaxial side, and the lateral region is adaxial (Fig. 6g and Extended Data Fig. 7h)17. This positioning is reversed in the superior ovary mutants (Fig. 6g). The spatial expression patterns of known abaxial-specific genes, KAN-1, KAN-2 and AFO/FIL47,48, and an adaxial-specific gene, PHAVOLUTA (PHV)49, in normal inferior ovaries and aberrant superior ovaries were consistent with this change in placenta morphology (Extended Data Fig. 7i–k). We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary. By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig. 6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning.",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C39",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "原位杂交显示，KNAT2-like1在雌花扩展花托中特异性表达（图6h）。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "We also investigated the expression activities of KNAT2-like1 in male, female and superior ovary flower buds at various stages by in situ hybridization. We found the specific expression of KNAT2-like1 in the expanding receptacle of female flower buds (Fig. 6h). We also showed the absence of expression of KNAT2-like1 male flower of WT and in superior ovary flower of k-2 mutant (Fig. 6h). These results indicate that the expression activity of KNAT2-like1 is associated with receptacle development.",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C40",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "同时还构建了ER缺失突变体er和CRC缺失突变体crc，以及以上3个基因的双突、三突突变体。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "Given that KNAT2-like1, CRC and ER are in a coexpression module in the receptacle (Fig. 5f), we next investigated ER function by generating two ER-knockout mutants, erCR-1 (4 bp deletion) and erCR-2 (1 bp deletion) with a premature stop codon, using CRISPR–Cas9 (Extended Data Fig. 8a). Both er mutants exhibited dwarf in phenotypes and produced shorter fruits compared with the WT, consistent with the previous study (Extended Data Fig. 8c,d)50. Notably, in both er mutants, most female flowers transitioned to male flowers in the monoecious background (Extended Data Fig. 8b). CRISPR–Cas9 knockout of CRC (crc-1: −2 bp and crc-2: −7 bp) resulted in a complete female-to-male sexual transition (Extended Data Fig. 8e–g) as previously reported22.",
+            "text_zh": ""
+          },
+          {
+            "text": "To further elucidate the genetic interaction among KNAT2-like1, ER and CRC, we also generated double and triple mutants for phenotype analysis. Here, all plants lacking CRC function were androecious, whereas knat2-like1/er double mutants exhibited the same subandroecious traits as the er mutant (Extended Data Fig. 8h). These results indicated that CRC is epistatic to ER and KNAT2-like1, and ER is epistatic to KNAT2-like1. KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i). Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j). Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC.",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C41",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "表型显示，CRC较其他两个基因呈显性上位，ER较KNAT2-like1呈显性上位。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "To further elucidate the genetic interaction among KNAT2-like1, ER and CRC, we also generated double and triple mutants for phenotype analysis. Here, all plants lacking CRC function were androecious, whereas knat2-like1/er double mutants exhibited the same subandroecious traits as the er mutant (Extended Data Fig. 8h). These results indicated that CRC is epistatic to ER and KNAT2-like1, and ER is epistatic to KNAT2-like1. KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i). Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j). Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC.",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C42",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "以上结果说明，KNAT2-like1在花托生长、子房下位发育中起关键性作用，CRC、ER也可能参与其相互调控机制。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          221
+        ],
+        "paragraphs": [],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C43",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "为探究黄瓜花托发育的特殊性，作者又将S8时期knat2-like1缺失突变体花芽和番茄花芽一起进行空间转录组测序。",
+      "gold_retrieval": {
+        "sentence_ids": [
+          223
+        ],
+        "paragraphs": [],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C44",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "整合细胞聚类发现，番茄花芽无花基部分生组织（FIM）结构，花托位于心皮下方；knat2-like1突变体虽然有FIM，但花托停止扩张，心皮也向上生长（图7a-b）。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "The mutation of just KNAT2-like1 in cucumber simultaneously leads to the formation of bisexual flowers and superior ovaries, suggesting that during receptacle evolution a direct link was established between the development of the unisexual flowers and inferior ovaries. To investigate the specificity of cucumber receptacle development, floral buds of superior ovary mutants (knat2-like1) and tomato at S8 were collected to generate spatial transcriptomic data for comparative analysis (Supplementary Table 1).",
+            "text_zh": ""
+          },
+          {
+            "text": "In total, seven clusters were identified for both the superior ovary mutant and tomato. These clusters were annotated based on their distribution and the expression of marker genes (Fig. 7a,b, Extended Data Fig. 9a–e and Supplementary Tables 10 and 11) and then integrated into superclusters (Fig. 7b). Unlike cucumber, tomato lacks a specific FIM, and the receptacle is located below the carpel rather than in the surrounding position for cucumber. Although the superior ovary mutant still has an FIM, the arrested receptacle and upward carpel growth were observed (Fig. 7b).",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C45",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "而子房下位黄瓜FIM或花托中特异性表达的基因（如STM-like、KNAT2-like1、CRC等），在番茄中表达缺失、表达量少或表达异位（图7c）。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "We further compared the expression patterns of markers for each supercluster to compare their floral organ structures among cucumber, superior ovary mutant and tomato and found that in all the material AP3 and PI were expressed in petals and stamens, and AG showed specific expression in the carpel and stamen (Extended Data Fig. 9f). We further analysed the expression patterns of important genes in inferior ovary development, such as KNOX1 TF genes, CRC, ACO2 and ACS2, which show specific expression in the FIM, receptacle or conjunctive tissue (Fig. 7c). All KNOX1 TFs in cucumber were identified through sequence comparisons with other representative angiosperms species, of which CsSTM-like and CsKNAT2-like1 were present in the duplicated subclades of the KNOX1 family (Fig. 7d, Extended Data Fig. 10 and Supplementary Table 12). CsSTM-like, which does not have an orthologue in tomato, showed specific expression in the FIM of the cucumber WT and superior ovary mutant (Fig. 7c); KNAT2-like1 exhibited specific and high levels of expression in the cucumber receptacle (Fig. 7c). Although there is an orthologue of CsKNAT2-like1 in tomato (SlKN4), in comparison, SlKN4 showed little expression in the floral receptacle (Fig. 7c).",
+            "text_zh": ""
+          },
+          {
+            "text": "In Arabidopsis thaliana and tomato, CRC is a key gene in carpel development, and its expression is reported to be regulated by AG22. In contrast with the predominant expression of CsCRC in the receptacle of cucumber, there is a lack of expression in the superior ovary mutant,whereas SlCRC expression is enriched in the carpel (Fig. 7c), suggesting that a distinct expression pattern has evolved in cucumber. We also confirmed the absence of expression of the other receptacle marker genes, CsERECTA (ER), ACO2 and CsACS2, or of their orthologues, in the superior ovary mutant and tomato (Fig. 7c). Based on these findings, we propose that novel genes and new expression patterns were acquired in the FIM and receptacle, leading to the evolutionary innovation of an inferior ovary in the cucurbits.",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C46",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "通过黄瓜与其他几个代表性被子植物KNOX序列构建系统进化树，从而鉴定黄瓜KNOX转录因子，其中CsSTM-like在番茄中不存在直系同源基因（图7d）。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "We further compared the expression patterns of markers for each supercluster to compare their floral organ structures among cucumber, superior ovary mutant and tomato and found that in all the material AP3 and PI were expressed in petals and stamens, and AG showed specific expression in the carpel and stamen (Extended Data Fig. 9f). We further analysed the expression patterns of important genes in inferior ovary development, such as KNOX1 TF genes, CRC, ACO2 and ACS2, which show specific expression in the FIM, receptacle or conjunctive tissue (Fig. 7c). All KNOX1 TFs in cucumber were identified through sequence comparisons with other representative angiosperms species, of which CsSTM-like and CsKNAT2-like1 were present in the duplicated subclades of the KNOX1 family (Fig. 7d, Extended Data Fig. 10 and Supplementary Table 12). CsSTM-like, which does not have an orthologue in tomato, showed specific expression in the FIM of the cucumber WT and superior ovary mutant (Fig. 7c); KNAT2-like1 exhibited specific and high levels of expression in the cucumber receptacle (Fig. 7c). Although there is an orthologue of CsKNAT2-like1 in tomato (SlKN4), in comparison, SlKN4 showed little expression in the floral receptacle (Fig. 7c).",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C47",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "以上结果说明，FIM中新基因的出现和一些基因的新表达模式是黄瓜进化出子房下位这一性状的原因。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "The origins of novel complex traits are fundamental to evolutionary biology, and it has long been reported that gene duplication is an important source of genetic material for evolutionary novelty. For example, duplication events involving genes, such as MADS, SEU and YABBY, may have contributed to the evolution of the GRN for fruit development9. Here, we identified novel genes, STM-like and KNAT2-like1, and new expression patterns that have emerged in the FIM and receptacle, contributing to the evolution of inferior ovaries in cucumber. Our findings elucidate molecular mechanisms underlying inferior ovary development and highlight the importance of duplicated TFs in species diversification, adaptive genetic variation and the emergence of novel complex traits.",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C48",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "本研究通过空间转录组分析和细胞谱系重建，揭示了黄瓜下位子房的形成依赖于花托快速生长，这一过程由花基部分生组织（FIM）驱动。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "In flowering plants, inferior ovaries are key morphological innovations that evolved multiple times from superior ovaries to protect female parts of the flower. However, the developmental mechanisms underlying inferior ovary formation remain largely unknown. Comparative spatial transcriptome mapping and cell lineage reconstructions in developing floral buds of cucumber and tomato, which have inferior and superior ovaries, respectively, revealed that inferior ovaries develop from accelerated receptacle growth resulting from the continuous activity of meristematic stems cells at the base of the cucumber floral organs. Genetic knockout of a receptacle-specific KNOX1 transcription factor in cucumber caused arrest in receptacle growth and yielded bisexual flowers with superior ovaries similar to those of tomato. Here we provide developmental and mechanistic insights into inferior ovary formation and sex determination in cucurbits.",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    },
+    {
+      "sample_id": "P001-A001-C49",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "研究发现，黄瓜中一个花托特异表达的KNOX1转录因子（KNAT2-like1）在调控花托生长和子房位置中起关键作用。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "In WT cucumber, the inferior ovary has a typical placenta, where the medial region is the abaxial side, and the lateral region is adaxial (Fig. 6g and Extended Data Fig. 7h)17. This positioning is reversed in the superior ovary mutants (Fig. 6g). The spatial expression patterns of known abaxial-specific genes, KAN-1, KAN-2 and AFO/FIL47,48, and an adaxial-specific gene, PHAVOLUTA (PHV)49, in normal inferior ovaries and aberrant superior ovaries were consistent with this change in placenta morphology (Extended Data Fig. 7i–k). We inferred that in superior ovary flower mutants, loss of KNAT2-like1 expression causes an arrest in receptacle development, and continuous growth of the carpel results in the forming of a superior ovary. By contrast, in normal cucumber female floral buds acquiring KNAT2-like1 activity, the receptacle is fused with the adaxial side of the carpel, and the rapidly growing receptacle then wraps around the carpel, resulting in a change in lateral and medial patterning and forming an inferior ovary (Fig. 6i). Taken together, these findings highlight the pivotal role of KNAT2-like1 in receptacle development and ovary positioning.",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": false
+      },
+      "gold_classification": {
+        "evidence_level": "Weak_Evidence",
+        "severity": "none",
+        "has_distortion": null,
+        "primary_label": null,
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "",
+        "secondary_types": [],
+        "is_accurate": null
+      }
+    },
+    {
+      "sample_id": "P001-A001-C50",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "敲除KNAT2-like1，黄瓜花托生长受阻，导致下位子房转变为类似番茄的上位子房，同时部分雌花转变为两性花，表明KNAT2-like1不仅调控子房位置，还参与性别决定。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "Unisexual flowers and inferior ovaries have evolved independently multiple times throughout angiosperm evolution; however, in the Cucurbitaceae, both traits appear to have coevolved (Fig. 1a). The knockout of KNAT2-like1 resulted in the production of stamens and the development of a superior ovary due to the disrupted formation of the floral receptacle. Theses findings provide genetic evidence that both the promotion of the receptacle formation and the suppression of stamen development are orchestrated by a single KNOX1 TF. Accordingly, receptacle development and sex determination are closely linked in cucumber.",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": false
+      },
+      "gold_classification": {
+        "evidence_level": "Weak_Evidence",
+        "severity": "none",
+        "has_distortion": null,
+        "primary_label": null,
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "",
+        "secondary_types": [],
+        "is_accurate": null
+      }
+    },
+    {
+      "sample_id": "P001-A001-C51",
+      "paper_id": "P001",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "本研究揭示了KNAT2-like1与CRC和ER共表达调控花托快速生长从而导致子房下位及单性花的机制，为作物育种提供了新靶点。",
+      "gold_retrieval": {
+        "sentence_ids": [],
+        "paragraphs": [
+          {
+            "text": "To further elucidate the genetic interaction among KNAT2-like1, ER and CRC, we also generated double and triple mutants for phenotype analysis. Here, all plants lacking CRC function were androecious, whereas knat2-like1/er double mutants exhibited the same subandroecious traits as the er mutant (Extended Data Fig. 8h). These results indicated that CRC is epistatic to ER and KNAT2-like1, and ER is epistatic to KNAT2-like1. KNAT2-like1 was specifically expressed in the receptacle; however, besides expression in receptacle after S5, CRC and ER also showed overlapping expression with AG1 during carpel primordia initiation at S4 and S5 (Extended Data Fig. 8i). Our findings support a model in which the loss of function of any one of these three genes leads to receptacle arrest and promotes stamen development; however, compared with knat2-like1 mutants, carpel initiation is also repressed in crc and er, resulting in a female-to-male sexual transition (Extended Data Fig. 8j). Taken together, these findings indicate a key role for KNAT2-like1 in floral receptacle development and inferior ovary formation and suggest a regulatory mechanism involving genetic interaction with ER and CRC.",
+            "text_zh": ""
+          }
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "severity": "none",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "",
+        "primary_type": "no_distortion",
+        "secondary_types": [],
+        "is_accurate": true
+      }
+    }
+  ]
+}

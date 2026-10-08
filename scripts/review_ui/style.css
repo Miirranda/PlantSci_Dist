@@ -20,6 +20,9 @@
   --radius: 10px;
 }
 * { box-sizing: border-box; }
+html, body {
+  overscroll-behavior: none;
+}
 body {
   margin: 0;
   font-family: -apple-system, "Segoe UI", "Microsoft YaHei", Roboto, sans-serif;
@@ -100,13 +103,93 @@ body {
 .old-note-text { font-size: 12.5px; white-space: pre-wrap; word-break: break-word; background: #fafbfc; border: 1px solid #f1f5f9; border-radius: 6px; padding: 9px 11px; color: #334155; line-height: 1.7; }
 
 /* ---------- 观点句 ---------- */
+.claim-version-label {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  margin: 8px 0 4px; font-size: 12px; font-weight: 700; color: #475569;
+}
+.claim-version-label:first-of-type { margin-top: 0; }
+.claim-frozen { font-weight: 500; color: #94a3b8; }
+.claim-changed-badge {
+  font-size: 11px; font-weight: 700; padding: 1px 8px; border-radius: 999px;
+  background: #f1f5f9; color: #64748b;
+}
+.claim-changed-badge.on { background: #fff7ed; color: #c2410c; }
+#claimResetBtn {
+  margin-left: auto; border: 1px solid var(--border); background: #fff; border-radius: 8px;
+  padding: 3px 8px; font: inherit; font-size: 12px; cursor: pointer; color: #475569;
+}
+#claimResetBtn[hidden] { display: none !important; }
 .claim-text {
   font-size: 17px; font-weight: 600; line-height: 1.7;
   background: var(--primary-bg); border-left: 4px solid var(--primary);
   padding: 14px 16px; border-radius: 6px;
 }
+.claim-original {
+  font-size: 14.5px; font-weight: 500; color: #64748b;
+  background: #f8fafc; border-left-color: #cbd5e1;
+}
+.claim-text-editable { cursor: text; }
+.claim-text-editable:hover { outline: 1px dashed #93c5fd; }
+.claim-edit {
+  display: block; width: 100%; min-height: 88px;
+  font-size: 17px; font-weight: 600; line-height: 1.7; font-family: inherit;
+  color: var(--text); background: #fff;
+  border: 2px solid var(--primary); border-left-width: 4px;
+  padding: 14px 16px; border-radius: 6px; resize: vertical;
+}
+.claim-edit:focus { outline: none; }
+.claim-edit[hidden] { display: none !important; }
+.claim-inplace {
+  display: block; width: 100%;
+  font-size: 17px; font-weight: 600; line-height: 1.7; font-family: inherit;
+  color: var(--text); background: var(--primary-bg);
+  border: none; border-left: 4px solid var(--primary);
+  padding: 14px 16px; border-radius: 6px; resize: none; overflow: hidden;
+}
+.claim-inplace:focus { outline: 1px dashed #93c5fd; outline-offset: 2px; }
+#claimCorrectedBlock { margin-top: 12px; }
+#claimCorrectedBlock[hidden] { display: none !important; }
 .claim-meta { margin-top: 10px; font-size: 12px; color: var(--muted); }
 .claim-card { position: sticky; top: 0; z-index: 10; box-shadow: 0 4px 12px rgba(0,0,0,.08); }
+.claim-card.dropped .claim-text,
+.claim-card.dropped .claim-original {
+  background: #f1f5f9; border-left-color: #94a3b8; color: #64748b;
+}
+.claim-drop-badge {
+  display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: .04em;
+  padding: 1px 8px; border-radius: 999px; background: #e2e8f0; color: #475569;
+  text-transform: uppercase; margin-left: 2px;
+}
+.claim-drop-badge[hidden] { display: none !important; }
+.claim-edit-hint {
+  font-size: 11px; color: #94a3b8; font-weight: 400;
+  text-transform: none; letter-spacing: 0; margin-left: 6px;
+}
+.claim-weak-box {
+  display: inline-flex; align-items: center; gap: 6px; margin-top: 10px;
+  font-size: 13px; font-weight: 600; cursor: pointer; user-select: none; color: #475569;
+}
+.claim-weak-box input { width: 16px; height: 16px; cursor: pointer; accent-color: #64748b; }
+.r-tag-drop { background: #e2e8f0 !important; color: #475569 !important; }
+
+/* ---------- 优化召回 ---------- */
+.opt-empty { color: #94a3b8; font-size: 13.5px; }
+.opt-head { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.opt-verdict {
+  font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 999px;
+}
+.opt-supported { background: #dcfce7; color: #166534; }
+.opt-partial { background: #ffedd5; color: #9a3412; }
+.opt-no_evidence { background: #f1f5f9; color: #475569; }
+.opt-flag { font-size: 12px; font-weight: 600; color: #b45309; }
+.opt-explain { font-size: 13.5px; color: #334155; line-height: 1.55; white-space: pre-wrap; }
+.opt-claim-note {
+  margin-top: 8px; font-size: 13px; color: #9a3412; background: #fff7ed;
+  border-left: 3px solid #fdba74; padding: 8px 10px;
+}
+.opt-span { margin-top: 10px; border-top: 1px solid #f1f5f9; }
+.opt-span-meta { font-size: 12px; color: #64748b; padding: 8px 2px 0; }
+.opt-fallback { padding: 8px 12px 10px; }
 
 /* ---------- 证据句 ---------- */
 .ev-item { display: flex; gap: 12px; padding: 10px 12px; border-bottom: 1px solid #f1f5f9; }
@@ -207,7 +290,9 @@ body {
 
 .note-area { width: 100%; min-height: 64px; border: 1.5px solid var(--border); border-radius: 8px; padding: 9px 11px; font-size: 13px; font-family: inherit; resize: vertical; }
 .note-area:focus { outline: none; border-color: var(--primary); }
+#noteArea { min-height: 160px; }
 #manualParaArea { min-height: 200px; }
+#manualZhArea { min-height: 120px; }
 
 .gold-input { width: 100%; padding: 8px 11px; border: 1.5px solid var(--border); border-radius: 8px; font-size: 13px; font-family: inherit; }
 .gold-input:focus { outline: none; border-color: var(--primary); }
@@ -233,7 +318,7 @@ body {
 .step-note { font-size: 12px; color: var(--warn); margin: 0 0 10px; }
 
 /* ---------- 右侧失真指南 ---------- */
-.side-col { position: sticky; top: 12px; align-self: start; max-height: calc(100vh - 24px); overflow-y: auto; }
+.side-col { position: sticky; top: 12px; align-self: start; max-height: calc(100vh - 24px); overflow-y: auto; overscroll-behavior: none; }
 .guide-group { margin-bottom: 8px; }
 .guide-group-head {
   font-size: 12px; font-weight: 800; letter-spacing: .03em; padding: 4px 8px; border-radius: 5px; margin-bottom: 5px;
@@ -296,3 +381,100 @@ body {
 
 .kbd { font-family: ui-monospace, monospace; font-size: 11px; background: #eef2f7; padding: 1px 5px; border-radius: 4px; color: #475569; }
 .footer-hint { font-size: 11.5px; color: var(--muted); padding: 0 20px 20px; max-width: 1500px; margin: 0 auto; }
+
+/* ---------- 失真审核：主区对照，右栏判定 ---------- */
+.layout.distortion-layout {
+  grid-template-columns: minmax(0, 1fr) minmax(440px, 480px);
+  max-width: 1680px;
+}
+.distortion-layout .claim-card { position: static; box-shadow: none; }
+.distortion-page .footer-hint { max-width: 1680px; }
+.distortion-side .label-btn { padding: 6px 8px; font-size: 12px; }
+.distortion-side .op-section { margin-bottom: 10px; }
+#claimEditBtn {
+  border: 1px solid var(--border); background: #fff; border-radius: 8px;
+  padding: 3px 8px; font: inherit; font-size: 12px; cursor: pointer; color: #475569;
+}
+.guide-fold, .ai-fold { margin-bottom: 10px; }
+.guide-fold > summary, .ai-fold > summary {
+  cursor: pointer; font-size: 13px; font-weight: 700; color: #92400e;
+  background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px;
+}
+.ai-fold > summary { color: #5b21b6; margin-top: 8px; }
+.guide-fold .guide-card { margin-top: 8px; margin-bottom: 0; }
+.field-block { margin-bottom: 10px; }
+.field-block:last-child { margin-bottom: 0; }
+.pair-label {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 4px; font-size: 12px; font-weight: 700; color: #475569;
+}
+.field-original {
+  font-size: 12px; color: #94a3b8; background: #f8fafc; border-left: 3px solid #cbd5e1;
+  padding: 4px 8px; border-radius: 4px; margin-bottom: 4px; white-space: pre-wrap;
+}
+.ev-editable { cursor: text; white-space: pre-wrap; }
+.ev-editable:hover { outline: 1px dashed #99f6e4; }
+.field-inplace {
+  display: block; width: 100%; min-height: 1.6em; margin: 0; padding: 0;
+  border: none; background: transparent; resize: none; overflow: hidden;
+  font-family: inherit; font-size: 13.5px; line-height: 1.6; color: inherit;
+}
+.field-inplace:focus { outline: 1px dashed #99f6e4; outline-offset: 2px; }
+.field-reset {
+  margin-left: auto; border: 1px solid var(--border); background: #fff; border-radius: 8px;
+  padding: 2px 8px; font: inherit; font-size: 12px; cursor: pointer; color: #475569;
+}
+.field-reset[hidden] { display: none !important; }
+@media (max-width: 1100px) {
+  .layout.distortion-layout { grid-template-columns: 1fr; }
+  .layout.distortion-layout .side-col { position: static; max-height: none; overflow: visible; }
+}
+
+/* ---------- 召回整理审核 ---------- */
+.norm-page { max-width: 980px; margin: 0 auto; padding: 16px 16px 96px; }
+.norm-loading { color: var(--muted); padding: 24px 4px; }
+.norm-guide-body { font-size: 15px; line-height: 1.7; }
+.norm-claim { position: sticky; top: 0; z-index: 5; }
+.norm-claim .claim-text { font-size: 18px; }
+.norm-section { margin-top: 18px; }
+.norm-section h2 { font-size: 16px; margin: 0 0 6px; }
+.norm-section h3 { font-size: 14px; margin: 14px 0 8px; }
+.norm-note { margin: 0 0 10px; color: var(--muted); font-size: 13.5px; }
+.norm-unit { margin-bottom: 12px; }
+.norm-unit-meta { font-size: 12.5px; color: var(--muted); margin-bottom: 6px; }
+.norm-zh { font-size: 17px; line-height: 1.7; font-weight: 600; }
+.norm-zh.missing { color: var(--warn); font-weight: 500; }
+.norm-en { margin-top: 6px; font-size: 13px; line-height: 1.6; color: #475569; }
+.norm-en mark { background: #fde68a; color: inherit; padding: 0 2px; }
+.norm-roles, .norm-toggle { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; }
+.norm-role {
+  width: 100%; text-align: left; border: 1px solid var(--border); background: #fff;
+  border-radius: 8px; padding: 8px 10px; font-size: 14px; font-weight: 650; cursor: pointer;
+  font-family: inherit; color: var(--text);
+}
+.norm-role.on { border-color: var(--primary); background: var(--primary-bg); color: #1d4ed8; }
+.norm-role-help { font-size: 12px; color: var(--muted); margin-top: 3px; line-height: 1.45; }
+.norm-reason { margin-top: 8px; font-size: 12.5px; color: #475569; background: #f8fafc; border-radius: 8px; padding: 8px 10px; }
+.norm-table { display: flex; flex-direction: column; gap: 8px; }
+.norm-term-row { display: grid; grid-template-columns: 1.2fr 1.4fr .7fr auto; gap: 8px; align-items: center; }
+.norm-term-row.head { font-size: 12.5px; color: var(--muted); font-weight: 700; }
+.norm-term-row input {
+  width: 100%; border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font: inherit;
+}
+.norm-term-row button, .norm-add, .norm-gap-actions button {
+  border: 1px solid var(--border); background: #fff; border-radius: 8px; padding: 8px 12px;
+  font: inherit; cursor: pointer;
+}
+.norm-add { margin-top: 10px; }
+.norm-gap { display: flex; justify-content: space-between; gap: 12px; align-items: center; margin-bottom: 8px; }
+.norm-gap-actions { display: flex; gap: 8px; flex-shrink: 0; }
+.norm-savebar {
+  position: fixed; left: 0; right: 0; bottom: 0; background: #fff; border-top: 1px solid var(--border);
+  display: flex; align-items: center; gap: 10px; padding: 10px 16px; z-index: 20;
+}
+.norm-save-hint { color: var(--muted); font-size: 12.5px; }
+.nav button.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+@media (max-width: 720px) {
+  .norm-roles, .norm-toggle, .norm-term-row { grid-template-columns: 1fr; }
+  .norm-gap { flex-direction: column; align-items: stretch; }
+}

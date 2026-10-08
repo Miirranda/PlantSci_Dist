@@ -2768,5 +2768,220 @@
       "P003-A001-C17"
     ],
     "notes": ""
+  },
+  "human_reviews": {
+    "牟德兰": {
+      "P003-A001-C01": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": false,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [],
+        "recall_updated_at": "2026-09-18 19:37:23",
+        "updated_at": "2026-09-18 19:37:23"
+      },
+      "P003-A001-C02": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": true,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [
+          {
+            "text": "Our findings comprise evidence supporting the evolutionary possibility of HE-catalysed ‘allo-to-auto’ polyploidy transitions in nature, with implications for creating new polyploid crops.",
+            "text_zh": "我们的研究结果为HE催化的\"异源多倍体向自体多倍体\"转变的进化可能性提供了证据，并为创造新的多倍体作物提供了启示。"
+          }
+        ],
+        "recall_updated_at": "2026-09-18 19:38:52",
+        "updated_at": "2026-09-18 19:38:52"
+      },
+      "P003-A001-C03": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": false,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [],
+        "recall_updated_at": "2026-09-18 19:39:33",
+        "updated_at": "2026-09-18 19:39:33"
+      },
+      "P003-A001-C04": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": true,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [
+          {
+            "text": "Earlier we reported that synthetic segmental allotetraploids derived by doubling the reciprocal F1 hybrids generated between the rice (Oryza sativa L.) subspecies japonica and indica have a notable level of restored fertility49, consistent with findings in other organisms, for example, yeast6. Unlike interspecific allopolyploids that often become meiotically stable, however, these rice lines were meiotically unstable and manifest rampant HEs in the early generations48. Because each line is expected to be genomically mosaic due to HEs, and meiotically unstable due to high chromosome similarity, an intuitive outcome would be universal deterioration of fertility (fitness) in all lines7,8,50. This theoretical prediction, however, has not been empirically interrogated either.",
+            "text_zh": "此前我们报道，通过将水稻（Oryza sativa L.） japonica 和 indica 亚种之间产生的可逆 F1 杂交后代加倍获得的合成片段化同源四倍体，其恢复的生育力水平显著，与酵母等其他生物的研究结果一致49。然而，与其他种间异源多倍体常在减数分裂中稳定不同，这些水稻品系在减数分裂中不稳定，在早期世代表现出大量染色体易位（HEs）48。由于每条品系因易位而呈现基因组杂合性，且因染色体高度相似而减数分裂不稳定，因此直观上所有品系的生育力（适应度）应普遍下降7,8,50。然而，这一理论预测至今尚未得到实验证据的支持。"
+          }
+        ],
+        "recall_updated_at": "2026-09-18 19:50:55",
+        "updated_at": "2026-09-18 19:50:55"
+      },
+      "P003-A001-C05": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": true,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [
+          {
+            "text": "As such, in theory, after a sufficient number of generations, all four copies in a still fertile tetraploid of every chromosomal segment would be derived from either, but not both, of the hybridizing parents; that is, each chromosome segment, the sizes of which are determined by recombination breakpoints, will become homozygous (homogeneous) for all four constituent copies. Thus, HE-fuelled intersubgenomic segmental replacement, if it occurs freely and without strong purifying selection, would transform a single starting nascent allopolyploid to an autopolyploid swarm, especially under selfing. This possibility, however, remains to be experimentally tested.",
+            "text_zh": "因此，理论上说，经过足够多的世代后，每一个染色体片段中仍然可育的四倍体中的所有4个拷贝都将来自杂交亲本中的任何一个，而不是两者；也就是说，每一个染色体片段，其大小由重组断点决定，对于所有4个组成拷贝，都会变成纯合(同质)。因此，HE驱动的亚基因组间片段置换，如果自由发生且没有强烈的纯化选择，会将单一起始的异源多倍体转变为同源多倍体群体，尤其是在自交条件下。然而，这种可能性仍有待实验验证。"
+          }
+        ],
+        "recall_updated_at": "2026-09-18 19:53:07",
+        "updated_at": "2026-09-18 19:53:07"
+      },
+      "P003-A001-C06": {
+        "gold_sentence_ids": [
+          327
+        ],
+        "recall_reviewed": false,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [],
+        "recall_updated_at": "2026-09-18 19:53:18",
+        "updated_at": "2026-09-18 19:53:18"
+      },
+      "P003-A001-C07": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": true,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [
+          {
+            "text": "Plant materials and phenotyping A total of 202 rice quasi-tetraploid recombinant inbred lines were obtained through 12 generations of selfing by single-seed descent from reciprocal segmental allotetraploid rice, generated via intersubspecific hybridization (japonica cv. Nipponbare × indica cv. 9311) followed by colchicine-induced whole-genome doubling (Extended Data Fig. 1a).",
+            "text_zh": "利用粳稻株系亚种间杂交（japonica cv）获得的互易异源四倍体水稻，经12代单种自交，获得了202个拟四倍体重组自交系。日本×指数cv。9311)，然后是秋水仙碱诱导的全基因组加倍（扩展数据图1a）。"
+          }
+        ],
+        "recall_updated_at": "2026-09-18 19:57:18",
+        "updated_at": "2026-09-18 19:57:18"
+      },
+      "P003-A001-C08": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": true,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [
+          {
+            "text": "Based on whole-genome resequencing, we analysed genome compositions of 202 euploid tetraploid lines (2n = 48) identified by dual-colour oligo-fluorescence in situ hybridization (FISH) (for example, Fig. 1a–c), which had undergone 12 successive selfed generations via single-seed descent post segmental allotetraploidization (Extended Data Fig. 1a) between the japonica and indica subspecies49. These lines included both crossing directions of the diploid F1 hybrids before whole-genome doubling (WGD), with 102 lines of NN99, the japonica cultivar Nipponbare as the maternal parent (named TN9-1 to TN9-102), and 100 lines of 99NN, the indica cultivar 9311 as the maternal parent (named T9N-1 to T9N-100). We found that the vast majority of the tetraploid lines were largely autotetraploidized due to HE-propelled genomewide segmental homogenization, with an average homozygosity (defined as the proportion of chromosomal segments being 4:0 or 0:4 of parental alleles across the entire genome) of 84.1% (from 97.8% to 36.8%), and 81.7% of the lines (165 of 202) reaching 80% all-four-copy segmental homogeneity (Supplementary Table 1). Thus, these lines were quasi-autotetraploids in the form of tetraploid recombinant inbred lines (abbreviated as TRILs). These features did not differ discernibly when the TRILs were stratified into two groups according to crossing directions (P = 0.63 by Mann–Whitney U-test, Fig. 1d and Supplementary Table 1), suggesting that parent of origin and source of cytoplasm imposed little impact on overall progression and extent of segmental homozygosity. However, the degrees of homozygosity differed markedly across the TRILs. Four TRILs showed the highest level of homogenization (96.6–97.8%), while 4 TRILs remained segmentally highly heterozygous, with only 36.8–54.7% of the genomic regions attaining homozygosity (all-four-copy segmental homogeneity) (Fig. 1e).",
+            "text_zh": "我们发现，绝大多数四倍体株系由于HE推进的全基因组片段均一化而被大量同源四倍化，平均纯合度(染色体片段在整个基因组中的比例定义为亲本等位基因的4 : 0或0 : 4)为84 . 1 % (从97 . 8 % ~ 36 . 8 %)、81 . 7 %的株系( 202份中的165份)达到80 %的全4拷贝片段均一性(附表1)。因此，这些株系是以四倍体重组自交系(简写为TRILs)形式存在的准同源四倍体。这些特征在TRILs按交叉方向分为两组时无显著差异( P = 0 . 05 )。63经Mann - Whitney U检验，见图6 1d和补充表1 )，表明亲本来源和细胞质来源对片段纯合的整体进展和程度影响不大。然而，不同TRILs的纯合度存在明显差异。4个TRILs表现出最高水平的同质化( 96。6 ~ 97 . 8 %)，而4个TRILs仍保持片段高度杂合，仅有36 . 8 ~ 54 . 7 %的基因组区域达到纯合子(全4拷贝片段均一性) (图1e )。"
+          }
+        ],
+        "recall_updated_at": "2026-09-18 19:58:50",
+        "updated_at": "2026-09-18 19:58:50"
+      },
+      "P003-A001-C09": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": true,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [
+          {
+            "text": "The rapid autotetraploidization was underpinned by a single powerful mechanism, that is, homoeologous exchanges due to meiotic homoeologous chromosome recombination35. We identified a total of 21,900 HE events in the 202 TRILs, which ranged from 61 to 201 among lines and averaged 108.4 ± 25.3 per line (Fig. 2a and Supplementary Table 1), again without significant difference between the two crossing directions (P = 0.22 by Mann–Whitney U-test, Fig. 2b). The 12 chromosomes manifested marked differences in the numbers of accumulated HEs (Fig. 2c). Taking chromosome length (nt) into consideration, Chrs. 7 and 6 showed the highest (0.35 events per Mb) and lowest (0.21 events per Mb) numbers of HEs, respectively (Fig. 2c). Genomewide, there was no significant difference in the distribution of HEs between the crossing directions (P = 0.23 by one-sample t-test, Fig. 2d,e).",
+            "text_zh": ""
+          },
+          {
+            "text": "The relative contributions of the two hybridizing parents in the TRILs were also different both genomewide and at individualchromosome levels (Fig. 2f). Specifically, genomewide, the relative contributions of 9311 vs. Nipponbare were 58.3% vs 41.7% when all TRILs were considered together (Fig. 2f). This difference is statistically significant (P < 2.2 × 10−16 by Mann–Whitney U-test), indicating that, overall, 9311 and Nipponbare were the major and minor contributors, respectively, to the genomic compositions of the TRILs, a conclusion that holds irrespective of the crossing direction (P = 0.782, Mann–Whitney U-test; Supplementary Table 1). At the individual-chromosome level, considering all lines together, eight chromosomes (Chrs. 1, 3, 5, 6, 7, 8, 9 and 12) contained significantly more contributions from 9311 than from Nipponbare (P < 0.01, by Mann–Whitney U-test), Chrs. 4, 10 and 11 did not show significant differences between the two parental origins, and only Chr. 2 showed significantly more contribution by Nipponbare than 9311 (Fig. 2f).",
+            "text_zh": ""
+          }
+        ],
+        "recall_updated_at": "2026-09-18 20:04:08",
+        "updated_at": "2026-09-18 20:04:08"
+      },
+      "P003-A001-C10": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": true,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [
+          {
+            "text": "Unexpectedly, based on the whole-genome resequencing data, we found that all 202 TRILs contained a single segment of variable length on Chr. 6, for which all four copies were from 9311. After aligning sequences of the segments, the ‘core segment’ shared by all TRILs was delineated as 1.7-Mb in length and mapped to the position ‘Chr. 6, 7680000–9385000’ (Fig. 4a). We reasoned that this exclusively uniparentally derived segment was unlikely due to chance, given that the TRILs were derived from 202 independent S1 individuals involving reciprocal crosses. Indeed, the probability for all four copies of a given genomic region in all the 202 TRILs to be due to chance was extremely unlikely (P = 5.8 × 10−67, based on a probability density function test).",
+            "text_zh": "出乎意料的是，基于全基因组重测序数据，我们发现所有202个TRILs在Chr上都含有一段长度可变的单片段。6，其中4份均来自9311。对片段序列进行比对后，将所有TRILs共有的\"核心片段\"定义为1。7-Mb，并映射到位置' Chr。6，7680000 ~ 9385000 ' (图4A )。我们认为，由于TRILs是由202个独立的S1代正反交单株衍生而来，因此这种完全由单亲衍生的片段不太可能是偶然的。事实上，在所有202个TRILs中，给定基因组区域的所有4个拷贝都是偶然发生的概率是极不可能的( P = 5 . 8 × 10-67 ,基于概率密度函数检验)。 为了进一步验证这一结论，我们重新测序了TRILs中6个仍然可用的祖先S1个体和67个独立重建的S1整倍体个体，它们都只经历了一次减数分裂。我们发现，在73个S1个体中，有66个个体在焦点区域为杂合子；其余7个个体在该区域已经纯合，其中3个含有全4拷贝9311，4个含有全4拷贝日本晴(图4a )。值得注意的是，与其余表现出预期育性范围的个体相比，该地区4株全4拷贝日本晴植株均表现出严重的育性缺陷(补充图11和补充结果)。 这表明，在焦点区域具有全部4拷贝日本晴的四倍体确实发生在较早的世代，但由于较低的生殖适合度，会从后代中迅速净化。"
+          },
+          {
+            "text": "To further test this conclusion, we resequenced 6 still available ancestral S1 individuals of the TRILs and 67 independently reconstructed S1 euploid individuals, all of which had undergone only one meiosis. We found that 66 of the 73 S1 individuals were heterozygous at the focal region; the remaining 7 individuals were already homozygous at this region, 3 containing all-four-copy 9311 and 4 containing all-four-copy Nipponbare (Fig. 4a). Remarkably, compared with the remaining individuals, which showed an expected fertility range, the 4 plants with all-four-copy Nipponbare at this region manifested severe fertility defects (Supplementary Fig. 11 and Supplementary Results). This suggests that tetraploids with all four-copy Nipponbare at the focal region did occur in earlier generations but would be rapidly purged from progenies due to lower reproductive fitness.",
+            "text_zh": ""
+          },
+          {
+            "text": "We also reanalysed the whole-genome resequencing data for this focal region of an independent S4 population containing 202 individuals that were available from our previous study48. We found that although experiencing only three rounds of meiosis, 98% (199 out of 202) of the S4 individuals were already homozygous at the focal region with all four copies from 9311 (that is, no allele from Nipponbare), while the remaining 3 individuals were heterozygous at a 1:3 ratio of Nipponbare vs 9311 (Fig. 4a), suggesting strong preferential retention of this segment of 9311 already at the early generations in the tetraploids. We also ruled out a potential bias of reference genomes because using both those of 9311 and Nipponbare produced the same results (Fig. 4b). Together, the exclusive 9311 uniparental inheritance of this 1.7-Mb core segment of Chr. 6 was most probably due to strong positive selection.",
+            "text_zh": ""
+          }
+        ],
+        "recall_updated_at": "2026-09-18 20:10:53",
+        "updated_at": "2026-09-18 20:10:53"
+      },
+      "P003-A001-C11": {
+        "gold_sentence_ids": [
+          151,
+          108,
+          127,
+          136
+        ],
+        "recall_reviewed": false,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [],
+        "recall_updated_at": "2026-09-18 20:10:55",
+        "updated_at": "2026-09-18 20:10:55"
+      },
+      "P003-A001-C12": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": false,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [],
+        "recall_updated_at": "2026-09-18 20:14:18",
+        "updated_at": "2026-09-18 20:14:18"
+      },
+      "P003-A001-C13": {
+        "gold_sentence_ids": [
+          233,
+          236,
+          42
+        ],
+        "recall_reviewed": false,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [],
+        "recall_updated_at": "2026-09-18 20:17:20",
+        "updated_at": "2026-09-18 20:17:20"
+      },
+      "P003-A001-C14": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": true,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [
+          {
+            "text": "We next assessed performance of the TRILs along with their two diploid parental cultivars, the diploid F1 hybrids (9N-F1 and N9-F1), the S1 segmental allotetraploids (NN99-S1 and 99NN-S1) and autotetraploids of both parents under two abiotic stress conditions, NaCl (salinity) and chlorate (KClO3) (sensitivity to this chemical is a reliable indicator of tolerance to nitrogen (N) deficiency in rice)59,60. In this case, the two diploid parental cultivars are known to show different tolerances to these two stress conditions, with cv. Nipponbare being more tolerant to salinity and less sensitive to chlorate (that is, less tolerant to N deficiency) than cv. 9311 (refs. 61,62). Results indicated that under NaCl (150 mM for 7 days) treatment, 10 TRILs exhibited greater tolerance than the more tolerant parent cv. Nipponbare, while under KClO3 treatment (2 mM for 4 days), 13 TRILs showed significantly higher sensitivity to KClO3 (denoting higher tolerance to N deficiency) than the more sensitive parent cv. 9311, with 3 TRILs showing better performance to both stresses, that is, transgressive phenotypes (Fig. 6e,f,h,i and Supplementary Fig. 14). Consistent results were obtained in 3 independent experiments. Given that only a small proportion of the TRILs showed enhanced tolerance compared with both parents under either or both stress conditions and the S1 segmental allotetraploids showed tolerance levels intermediate of the diploid parents (Fig. 6e,f,h,i), our results indicate that neither WGD per se nor its coupling with a merger of intact parental subgenomes (hybridization) was sufficient to confer the stress-tolerant phenotypes; instead, the traits are apparently conditioned by specific genomic compositions enabled by the accumulated HEs at the tetraploid level. The emergence of the stress-tolerant traits in the TRILs is remarkable given the finite population size of the TRILs and the absence of purposeful selection in any of their preceding generations when potentiating genetic variations were apparently more attainable, that is, the HEs were segregating.",
+            "text_zh": "接下来，我们评估了TRILs与两种二倍体亲本品种（二倍体F1杂交种9N-F1和N9-F1）、S1片段化异四倍体（NN99-S1和99NN-S1）以及双亲的自体四倍体在两种非生物胁迫条件下的表现：NaCl（盐碱胁迫）和氯酸钾（KClO₃）（对这种化学物质的敏感性是水稻对氮（N）缺乏耐受性的可靠指标）59,60。在此情况下，已知两个二倍体亲本对这两种胁迫条件表现出不同的耐受性，其中Nipponbare品种对盐碱胁迫的耐受性更强，对氯酸钾的敏感性较低（即对氮缺乏的耐受性更差），而9311品种则相反（参考文献61,62）。结果表明，在NaCl处理条件下（150 mM，持续7天），10个TRILs表现出比耐受性较强的亲本Nipponbare更高的耐受性；而在KClO₃处理条件下（2 mM，持续4天），13个TRILs对KClO₃的敏感性显著高于较敏感的亲本9311（表明其对氮缺乏的耐受性更高），另有3个TRILs在两种胁迫下均表现出更好的性能，即表现出突破性表型（图6e,f,h,i及补充图14）。在三次独立实验中均获得了一致的结果。鉴于只有少数TRILs在单个或双重应激条件下表现出相较于双亲的耐受性增强，而S1片段化同源四倍体的耐受水平介于二倍体亲本之间（图6e,f,h,i），我们的结果表明，WGD本身及其与完整亲本子基因组融合（杂交）的结合，并不足以赋予抗逆表型；相反，这些特征显然由四倍体水平上积累的HEs所支持的特定基因组组成决定。考虑到TRILs种群规模有限，且在其前几代中并未进行有目的的选择——当时遗传变异的增强似乎更容易实现，即HEs正在发生分离——TRILs中出现抗逆性状的现象尤为引人注目。"
+          }
+        ],
+        "recall_updated_at": "2026-09-18 20:23:11",
+        "updated_at": "2026-09-18 20:23:11"
+      },
+      "P003-A001-C15": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": true,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [
+          {
+            "text": "A related issue is that the utilization of wild germplasm in crop breeding programmes entails extensive backcrossing to purge wild alleles of domestication syndrome-determining genes. In contrast, the approach we report here does not involve wild taxa, and as such, the stabilized TRILs used a ploidy difference from their hybridizing parental cultivars, which themselves are already highly adapted. Thus, the TRILs may more directly become novel crops if showing robust superior agronomic performance under a given agricultural setting. A classic example of allopolyploidization-enabled one-step creation of a ploidy-altered novel crop is the octaploid Triticale (BBAADDRR), which was achieved by hybridizing bread wheat (Triticum aestivum, BBAADD) with rye (Secale cereale, RR), both being domesticated crops. We note that in contrast to this classical approach in which each allopolyploidization event generates only one homogeneous ploidy-increased progeny line, our ‘allo-to-auto’ ploidy-type transition approach produces many different TRILs, each of which has a unique suite of composite phenotypes for breeders to evaluate. We show here that these phenotypes include multiple transgressive agronomically important features, underscoring the potential agricultural application of HE-driven rapid crop germplasm innovation.",
+            "text_zh": "一个相关的问题是，在作物育种计划中利用野生种质需要进行广泛的回交，以清除驯化综合症决定基因的野生等位基因。相比之下，我们在这里报告的方法并不涉及野生类群，因此，稳定的TRILs使用了与其杂交亲本品种的倍性差异，而这些品种本身已经高度适应。因此，如果TRILs在特定的农业环境下表现出强大的优异农艺性状，就可能更直接地成为新的作物。 异源多倍化一步法创制倍性改变的新型作物的一个经典例子是八倍体小黑麦( BBAADDRR )，它是由面包小麦(小麦Triticum aestivum , BBAADD)和黑麦(黑麦, RR)杂交而成，两者都是驯化作物。我们注意到，与每个异源多倍化事件只产生一个同质倍性增加的后代系的经典方法不同，我们的\"异源到自体\"倍性类型转变方法产生了许多不同的TRILs，其中每个TRILs都有一套独特的复合表型供育种家评估。我们在这里表明，这些表型包括多个超亲农艺重要特征，强调了HE驱动的快速作物种质创新的潜在农业应用。"
+          }
+        ],
+        "recall_updated_at": "2026-09-18 20:25:01",
+        "updated_at": "2026-09-18 20:25:01"
+      },
+      "P003-A001-C16": {
+        "gold_sentence_ids": [
+          275,
+          32,
+          31
+        ],
+        "recall_reviewed": false,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [],
+        "recall_updated_at": "2026-09-18 16:01:02",
+        "updated_at": "2026-09-18 16:01:02"
+      },
+      "P003-A001-C17": {
+        "gold_sentence_ids": [
+          46,
+          9
+        ],
+        "recall_reviewed": false,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [],
+        "recall_updated_at": "2026-09-18 16:01:03",
+        "updated_at": "2026-09-18 16:01:03"
+      }
+    }
   }
 }

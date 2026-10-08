@@ -1,0 +1,320 @@
+{
+  "paper_id": "P012",
+  "generated_at": "2026-09-25 10:31:25",
+  "model": "qwen-plus",
+  "claims": [
+    {
+      "sample_id": "P012-A001-C01",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 5,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 3,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P012-A001-C02",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 2,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 1,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P012-A001-C03",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 1,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": false,
+      "term_link_count": 0,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P012-A001-C05",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 2,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 2,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P012-A001-C06",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 4,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 6,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P012-A001-C08",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 8,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 2,
+      "term_gap_count": 1
+    },
+    {
+      "sample_id": "P012-A001-C09",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 3,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 3,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P012-A001-C10",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 2,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 2,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P012-A001-C11",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 2,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 3,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P012-A001-C12",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 7,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 3,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P012-A001-C13",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 1,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 2,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P012-A001-C14",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 1,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 2,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P012-A001-C15",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 1,
+      "auto_edits": [],
+      "citation_queue": [
+        {
+          "where": "manual:0",
+          "rule": "hyphen_number",
+          "surface": "transposition59–62",
+          "start": 132,
+          "end": 137,
+          "context": " are associated with TE transposition59–62."
+        }
+      ],
+      "term_table_needed": false,
+      "term_link_count": 0,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P012-A001-C16",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 8,
+      "auto_edits": [],
+      "citation_queue": [
+        {
+          "where": "manual:0",
+          "rule": "hyphen_number",
+          "surface": "peppers41–44",
+          "start": 1005,
+          "end": 1010,
+          "context": "the red fruit colour of peppers41–44. We identified "
+        }
+      ],
+      "term_table_needed": true,
+      "term_link_count": 4,
+      "term_gap_count": 1
+    },
+    {
+      "sample_id": "P012-A001-C17",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 5,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 4,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P012-A001-C18",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 2,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 1,
+      "term_gap_count": 1
+    },
+    {
+      "sample_id": "P012-A001-C19",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 4,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 2,
+      "term_gap_count": 1
+    },
+    {
+      "sample_id": "P012-A001-C20",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 3,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 3,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P012-A001-C21",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 2,
+      "auto_edits": [],
+      "citation_queue": [
+        {
+          "where": "manual:0",
+          "rule": "hyphen_number",
+          "surface": "calmodulin46–49",
+          "start": 333,
+          "end": 338,
+          "context": "ruiting the Ca2+ sensor calmodulin46–49 (Supplementary "
+        }
+      ],
+      "term_table_needed": true,
+      "term_link_count": 2,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P012-A001-C22",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 2,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 1,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P012-A001-C23",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 2,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 2,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P012-A001-C24",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 2,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 3,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P012-A001-C25",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 9,
+      "auto_edits": [],
+      "citation_queue": [
+        {
+          "where": "manual:0",
+          "rule": "hyphen_number",
+          "surface": ")53–55",
+          "start": 547,
+          "end": 552,
+          "context": "mild mottle virus (PMMoV)53–55. Non-pungency i"
+        },
+        {
+          "where": "manual:0",
+          "rule": "short_stem_comma",
+          "surface": "P1,2",
+          "start": 497,
+          "end": 500,
+          "context": " against the P0, P1 and P1,2 pathotypes of p"
+        }
+      ],
+      "term_table_needed": true,
+      "term_link_count": 6,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P012-A001-C26",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 1,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": false,
+      "term_link_count": 0,
+      "term_gap_count": 0
+    }
+  ],
+  "auto_edit_count": 0,
+  "queue_count": 5,
+  "api_ok": 24,
+  "api_failed": 0,
+  "api_reused": 0
+}

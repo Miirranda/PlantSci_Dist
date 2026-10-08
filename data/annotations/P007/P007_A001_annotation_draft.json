@@ -1,0 +1,1811 @@
+{
+  "schema_version": "1.2",
+  "taxonomy_version": "distortion-v0.1",
+  "status": "draft",
+  "paper_id": "P007",
+  "article_id": "A001",
+  "article_source_type": "high_quality",
+  "index_version": "2026-09-17 20:35:26#205faf77b6c623ad",
+  "generated_date": "2026-09-17",
+  "generation_mode": "resume",
+  "limit": "all",
+  "sample_count": 11,
+  "_description": "标注草稿。审核顺序：claim → classify top-5 → review 6-10 → gold_retrieval → gold_classification → analysis → human_verified=true。生产由 scripts/generate_draft_from_pairs.py 生成；human_verified 全为 false。",
+  "samples": [
+    {
+      "sample_id": "P007-A001-C01",
+      "paper_id": "P007",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "薄壁细胞（parenchyma cells）占次生组织的大部分，但其异质性和功能尚不明确。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 9,
+            "text": "These parenchymatic cells occupy the largest part of the secondary tissues1–3."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 121,
+            "text": "Since most secondary phloem tissue consists of parenchyma cells (Fig. 1a) but besides this we know very little about this cell type, we 881 carried out detailed analysis of the phloem parenchyma cell clusters."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 22,
+            "text": "Through extensive reporter analysis combined with mutant analysis, we also found that the xylem and phloem parenchyma cells function in supporting conductive tissue formation."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 46,
+            "text": "Secondary growth occurs almost exclusively in the radial dimension."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 187,
+            "text": "Since the phelloderm is adjacent to the mature phloem parenchyma in secondary tissues, we hypothesized that mature phloem parenchyma cells gradually obtain phelloderm identity."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 9,
+            "text": "These parenchymatic cells occupy the largest part of the secondary tissues1–3.",
+            "text_zh": "这些实质细胞占次级组织的大部分1 - 3。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 121,
+            "text": "Since most secondary phloem tissue consists of parenchyma cells (Fig. 1a) but besides this we know very little about this cell type, we 881 carried out detailed analysis of the phloem parenchyma cell clusters.",
+            "text_zh": "由于大多数次生韧皮部组织由薄壁细胞组成（图1a），但除此之外，我们对这种细胞类型知之甚少，因此我们对韧皮部薄壁细胞簇进行了详细的分析。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 22,
+            "text": "Through extensive reporter analysis combined with mutant analysis, we also found that the xylem and phloem parenchyma cells function in supporting conductive tissue formation.",
+            "text_zh": "通过广泛的报告细胞分析和突变体分析，我们还发现木质部和韧皮部薄壁细胞在支持传导性组织的形成中起作用。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 46,
+            "text": "Secondary growth occurs almost exclusively in the radial dimension.",
+            "text_zh": "次生生长几乎只发生在径向。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 187,
+            "text": "Since the phelloderm is adjacent to the mature phloem parenchyma in secondary tissues, we hypothesized that mature phloem parenchyma cells gradually obtain phelloderm identity.",
+            "text_zh": "由于次生组织中木栓层与成熟韧皮部薄壁细胞相邻，我们假设成熟韧皮部薄壁细胞逐渐获得了木栓层的身份。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 9,
+            "text": "These parenchymatic cells occupy the largest part of the secondary tissues1–3."
+          },
+          {
+            "sentence_id": 121,
+            "text": "Since most secondary phloem tissue consists of parenchyma cells (Fig. 1a) but besides this we know very little about this cell type, we 881 carried out detailed analysis of the phloem parenchyma cell clusters."
+          }
+        ],
+        "sentence_ids": [
+          9,
+          121
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "omission",
+          "level2": "evidence_uncertainty_omission"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "mechanism_omission"
+        },
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文用 'we know very little' 表达不确定性，公众号转述为 '尚不明确'（中性客观），弱化了作者主观认知局限；且删去 'besides this' 所暗示的'除占比大外几乎一无所知'这一关键语境；未提及其功能在支持导管组织形成中的实验证据（id=22）。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1‘薄壁细胞占次生组织的大部分’：id=9 直接支持（'occupy the largest part of the secondary tissues'）；分句2‘其异质性和功能尚不明确’：id=121 中 'we know very little about this cell type' 是核心支撑，但含主观认知限定（we know），而 claim 删除该主语及程度副词（very little → 尚不明确）；id=22 提供功能证据（supporting conductive tissue formation），claim 完全未体现，属机制删减。",
+        "classification_reason": "primary_level2='evidence_uncertainty_omission'：paper_expression='we know very little'（主观+程度强）→ article_expression='尚不明确'（客观化+程度弱化），属证据与不确定性删减；非 'context_omission' 因未删物种/条件，非 'significance_addition' 因未添加价值判断。secondary_level2='mechanism_omission'：paper_expression='function in supporting conductive tissue formation'（id=22）被完全省略，属关键功能机制删减。",
+        "key_differences": [
+          {
+            "type": "evidence_uncertainty_omission",
+            "paper_expression": "we know very little about this cell type",
+            "article_expression": "其异质性和功能尚不明确",
+            "description": "将第一人称主观认知（we know）和程度副词（very little）替换为中性模糊表述（尚不明确），弱化了作者对知识边界的坦诚声明"
+          },
+          {
+            "type": "mechanism_omission",
+            "paper_expression": "the xylem and phloem parenchyma cells function in supporting conductive tissue formation",
+            "article_expression": "其异质性和功能尚不明确",
+            "description": "论文已通过reporter+mutant实验证实薄壁细胞具有支持导管组织形成的功能，claim将其整体归入‘尚不明确’，删除已验证机制"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "rank1 (id=9) 和 rank2 (id=121) 共同构成完整支撑；id=22（rank3 in full pool）虽未进 top-5，但属关键机制句，已纳入 gold"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=9（占比）、id=121（认知局限）、id=22（功能机制）。 脚本标记: 分析引用了但未列入 gold: 22",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P007-A001-C02",
+      "paper_id": "P007",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "研究通过创新性地结合单细胞RNA测序和细胞谱系示踪技术，首次系统解析了拟南芥根次生生长过程中薄壁细胞的多样性及其动态调控机制。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 1,
+            "text": "Here we combined single-cell RNA sequencing analysis with lineage tracing to recreate developmental trajectories of the cell types in the Arabidopsis root undergoing secondary growth."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 24,
+            "text": "Taken together, our study demonstrates the diverse and dynamic nature of parenchyma cells in Arabidopsis secondary tissues."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 11,
+            "text": "Our study thus reveals the diversity of parenchyma cells and their capacity to undergo considerable identity changes during secondary growth."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 2,
+            "text": "By analysing 93 reporter lines, we were able to identify 20 different cell types or cell states, many of which have not been described before."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 0,
+            "text": "Although most of the secondary tissues are made up of parenchyma cells, which are also produced by both cambia, their diversity and function are poorly understood."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 1,
+            "text": "Here we combined single-cell RNA sequencing analysis with lineage tracing to recreate developmental trajectories of the cell types in the Arabidopsis root undergoing secondary growth.",
+            "text_zh": "在这里，我们将单细胞RNA测序分析与谱系追踪相结合，重现了拟南芥根系次生生长中细胞类型的发育轨迹。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 24,
+            "text": "Taken together, our study demonstrates the diverse and dynamic nature of parenchyma cells in Arabidopsis secondary tissues.",
+            "text_zh": "综上所述，我们的研究证明了拟南芥次生组织薄壁细胞的多样性和动态性。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 11,
+            "text": "Our study thus reveals the diversity of parenchyma cells and their capacity to undergo considerable identity changes during secondary growth.",
+            "text_zh": "因此，我们的研究揭示了薄壁细胞的多样性及其在次生生长过程中经历相当大的身份变化的能力。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 2,
+            "text": "By analysing 93 reporter lines, we were able to identify 20 different cell types or cell states, many of which have not been described before.",
+            "text_zh": "通过分析93个报告系，我们能够鉴定出20种不同的细胞类型或细胞状态，其中许多以前没有被描述过。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 0,
+            "text": "Although most of the secondary tissues are made up of parenchyma cells, which are also produced by both cambia, their diversity and function are poorly understood.",
+            "text_zh": "虽然大多数次生组织是由薄壁细胞组成的，但它们的多样性和功能尚不清楚。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 23,
+            "text": "Furthermore, lineage tracing analysis suggests that mature phloem parenchyma cells can change their cell identity to replenish the barrier upon injury.",
+            "text_zh": "此外，谱系示踪分析表明，成熟韧皮部薄壁细胞可以改变其细胞身份，以补充损伤后的屏障。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 10,
+            "text": "Parenchyma can be accelerated by jasmonate treatment or wounding.",
+            "text_zh": "茉莉酸处理或损伤可加速薄壁组织的形成。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 12,
+            "text": "consists of thin-walled living cells, and in many plant species, it is clear that these parenchyma cells have different functions1.",
+            "text_zh": "薄壁细胞由薄壁活细胞组成，在许多植物物种中，这些薄壁细胞显然具有不同的功能。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 26,
+            "text": "Secondary growth in the hypocotyl and root of Arabidopsis can be divided into two distinct phases.",
+            "text_zh": "拟南芥的下胚轴和根的次生生长可分为两个不同的阶段。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 25,
+            "text": "To explore cell type diversity during root secondary growth, we produced an scRNA-seq atlas.",
+            "text_zh": "为了探索根次生生长过程中的细胞类型多样性，我们制作了scRNA-seq图谱。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 1,
+            "text": "Here we combined single-cell RNA sequencing analysis with lineage tracing to recreate developmental trajectories of the cell types in the Arabidopsis root undergoing secondary growth."
+          },
+          {
+            "sentence_id": 0,
+            "text": "Although most of the secondary tissues are made up of parenchyma cells, which are also produced by both cambia, their diversity and function are poorly understood."
+          },
+          {
+            "sentence_id": 24,
+            "text": "Taken together, our study demonstrates the diverse and dynamic nature of parenchyma cells in Arabidopsis secondary tissues."
+          }
+        ],
+        "sentence_ids": [
+          1,
+          0,
+          24
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "addition",
+          "level2": "significance_addition"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "severity": "severe",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文未使用‘首次系统解析’；‘创新性地结合’夸大方法新颖性（论文仅陈述‘combined’）；‘拟南芥根次生生长过程中’被泛化为‘拟南芥根次生生长’，删去原文强调的‘transitioning from phase I to II’（id=28）等发育阶段限定；‘动态调控机制’超出论文‘identity changes’（id=11）和‘developmental trajectories’（id=1）的实证范围。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1‘研究通过创新性地结合单细胞RNA测序和细胞谱系示踪技术’：id=1 支持‘combined single-cell RNA sequencing analysis with lineage tracing’，但无‘创新性地’修饰；分句2‘首次系统解析’：全文无‘first’‘systematically’‘comprehensively’等表述，id=0 仅说‘poorly understood’，id=24 用‘demonstrates the diverse and dynamic nature’，属常规科学表述；分句3‘拟南芥根次生生长过程中’：id=1 明确限定为‘Arabidopsis root undergoing secondary growth’，但 id=28 补充关键背景‘transitioning from phase I to II’，claim 删去该发育阶段限定；分句4‘薄壁细胞的多样性及其动态调控机制’：id=11 提‘capacity to undergo considerable identity changes’，id=1 提‘developmental trajectories’，均未上升至‘调控机制’（regulatory mechanism）层级。",
+        "classification_reason": "primary_level2='significance_addition'：paper_expression='combined...to recreate developmental trajectories'（方法+目标）→ article_expression='创新性地结合...首次系统解析'（添加‘创新性’‘首次’‘系统’三重意义强化），属典型意义/重要性添加；非 'addition:function_application_addition' 因未提应用；非 'substitution:relation_substitution' 因未改因果关系。secondary_level2='context_omission'：paper_expression='transitioning from phase I to II'（id=28）是实验材料关键背景，claim 完全删去，属背景限定删减。",
+        "key_differences": [
+          {
+            "type": "significance_addition",
+            "paper_expression": "Here we combined single-cell RNA sequencing analysis with lineage tracing to recreate developmental trajectories",
+            "article_expression": "研究通过创新性地结合单细胞RNA测序和细胞谱系示踪技术，首次系统解析了……",
+            "description": "添加‘创新性地’‘首次’‘系统’三重修饰语，赋予研究以开创性地位，而论文仅作中性方法陈述"
+          },
+          {
+            "type": "context_omission",
+            "paper_expression": "30-day-old Arabidopsis roots that were transitioning from phase I to II",
+            "article_expression": "拟南芥根次生生长过程中",
+            "description": "删去实验材料的关键发育阶段限定（phase I to II transition），扩大结论适用范围"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [
+            28,
+            11
+          ],
+          "notes": "rank3 (id=11) 和 rank6 (id=28) 在 review pool 中更贴切，但未进 top-5；id=28 对应背景删减，id=11 对应机制夸大"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=1（方法）、id=0（知识现状）、id=24（结论强度）、id=28（发育阶段）、id=11（身份变化）。 脚本标记: gold_id_0_疑似脏句；分析引用了但未列入 gold: 11,28",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P007-A001-C03",
+      "paper_id": "P007",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "该研究通过单细胞测序鉴定出了次生根中全部细胞类型/状态，包括维管形成层（vascular cambium）和木栓形成层（phellogen/cork cambium）细胞，以及未报道的薄壁细胞亚群。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 180,
+            "text": "a, Cell types in the Arabidopsis root secondary tissues."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 24,
+            "text": "Taken together, our study demonstrates the diverse and dynamic nature of parenchyma cells in Arabidopsis secondary tissues."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 28,
+            "text": "For this study, we used 30-day-old Arabidopsis roots that were transitioning from phase I to II and thus producing all three xylem cell types, parenchyma, fibres and vessels (Fig. 1a and Extended Data Fig. 1a)."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 181,
+            "text": "Cell type classification was based on previous reports and data presented 10 (Fig. 1b)."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 26,
+            "text": "Secondary growth in the hypocotyl and root of Arabidopsis can be divided into two distinct phases."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 180,
+            "text": "a, Cell types in the Arabidopsis root secondary tissues.",
+            "text_zh": "a，拟南芥根次生组织的细胞类型。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 24,
+            "text": "Taken together, our study demonstrates the diverse and dynamic nature of parenchyma cells in Arabidopsis secondary tissues.",
+            "text_zh": "综上所述，我们的研究证明了拟南芥次生组织薄壁细胞的多样性和动态性。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 28,
+            "text": "For this study, we used 30-day-old Arabidopsis roots that were transitioning from phase I to II and thus producing all three xylem cell types, parenchyma, fibres and vessels (Fig. 1a and Extended Data Fig. 1a).",
+            "text_zh": "在这项研究中，我们使用了30天龄的拟南芥根，这些根正在从I期过渡到II期，因此产生了所有三种木质部细胞类型，薄壁细胞，纤维和血管（图1a和扩展数据图1a）。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 181,
+            "text": "Cell type classification was based on previous reports and data presented 10 (Fig. 1b).",
+            "text_zh": "细胞类型分类基于先前的报告和数据10（图1b）。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 26,
+            "text": "Secondary growth in the hypocotyl and root of Arabidopsis can be divided into two distinct phases.",
+            "text_zh": "拟南芥的下胚轴和根的次生生长可分为两个不同的阶段。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 68,
+            "text": "It appears that maturing xylem parenchyma corresponds to the good neighbour cells, since a specific reporter for these cells, PEROXIDASES47 879 a Xylem xp xv xf Phloem Vascular cambium Xylem parenchyma Phelloderm Companion cell Periderm Vessel Phellogen (cork cambium) Sieve element Fibre Phellem (cork) Phloem parenchyma c AT2G47780 pAT2G47780:erVenus e PBP1 (AT3G16420) pPBP1:erVenus Fig. 1 | Single-cell transcriptome profiling of the Arabidopsis mature root.",
+            "text_zh": "似乎成熟的木质部薄壁与邻近的细胞相对应，因为这些细胞有一个特定的报告细胞，peroxidas47 879 a木质部xp xv xf韧皮部维管束形成层木质部薄壁木质层伴生细胞周皮导管木质层（软木形成层）木质部纤维木质层（软木）韧皮部薄壁c AT2G47780 pAT2G47780:erVenus PBP1 (AT3G16420) pPBP1:erVenus图1 |拟拟opsis成熟根的单细胞转录组图谱。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 6,
+            "text": "This process is orchestrated by lateral meristems, the vascular cambium and the phellogen (cork cambium).",
+            "text_zh": "这一过程由侧生分生组织、维管形成层和木栓形成层（软木形成层）协调。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 1,
+            "text": "Here we combined single-cell RNA sequencing analysis with lineage tracing to recreate developmental trajectories of the cell types in the Arabidopsis root undergoing secondary growth.",
+            "text_zh": "在这里，我们将单细胞RNA测序分析与谱系追踪相结合，重现了拟南芥根系次生生长中细胞类型的发育轨迹。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 23,
+            "text": "Furthermore, lineage tracing analysis suggests that mature phloem parenchyma cells can change their cell identity to replenish the barrier upon injury.",
+            "text_zh": "此外，谱系示踪分析表明，成熟韧皮部薄壁细胞可以改变其细胞身份，以补充损伤后的屏障。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 29,
+            "text": "Sections of the first 2 cm below the root–hypocotyl junction were collected for protoplast isolation and subsequent transcriptome profiling (Fig. 1a).",
+            "text_zh": "收集根-下胚轴连接处以下2厘米处的切片，进行原生质体分离和随后的转录组分析（图1a）。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 6,
+            "text": "This process is orchestrated by lateral meristems, the vascular cambium and the phellogen (cork cambium)."
+          },
+          {
+            "sentence_id": 68,
+            "text": "It appears that maturing xylem parenchyma corresponds to the good neighbour cells, since a specific reporter for these cells, PEROXIDASES47 879 a Xylem xp xv xf Phloem Vascular cambium Xylem parenchyma Phelloderm Companion cell Periderm Vessel Phellogen (cork cambium) Sieve element Fibre Phellem (cork) Phloem parenchyma c AT2G47780 pAT2G47780:erVenus e PBP1 (AT3G16420) pPBP1:erVenus Fig. 1 | Single-cell transcriptome profiling of the Arabidopsis mature root."
+          },
+          {
+            "sentence_id": 1,
+            "text": "Here we combined single-cell RNA sequencing analysis with lineage tracing to recreate developmental trajectories of the cell types in the Arabidopsis root undergoing secondary growth."
+          }
+        ],
+        "sentence_ids": [
+          6,
+          68,
+          1
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "addition",
+          "level2": "function_application_addition"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "mechanism_omission"
+        },
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文明确提及 vascular cambium 和 phellogen 作为 lateral meristems（id=6），图注 id=68 清晰标注 'Vascular cambium' 和 'Phellogen (cork cambium)' 面板，且 id=1 说明使用 scRNA-seq 重建 cell types；但未声称「鉴定出全部细胞类型/状态」，亦未宣称薄壁细胞亚群为 '未报道'——该表述属功能/应用层面的过度引申。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1『通过单细胞测序鉴定出了次生根中全部细胞类型/状态』：id=1 支撑‘使用scRNA-seq’和‘重建cell types’，但无‘全部’限定；id=68 图注展示已标注类型，但未声明‘全覆盖’；top-5 中无‘all cell types’或‘comprehensive identification’类表述。分句2『包括维管形成层和木栓形成层细胞』：id=6（lateral meristems: vascular cambium and phellogen）+ id=68（图注直接标注）双重支撑，可核。分句3『以及未报道的薄壁细胞亚群』：id=24 提及 parenchyma 细胞多样性，id=180 展示 cell types 分类，但全文无‘previously unreported’‘novel’‘not previously described’等表述；review pool 中 id=68 含图注完整分类，但未提 novelty；补检关键词 'unreported parenchyma' 或 'novel parenchyma subpopulation' 在论文中未见。",
+        "classification_reason": "primary_level2=function_application_addition：因 claim_zh 中『鉴定出...全部』『未报道的...亚群』将方法能力（scRNA-seq）外推至结论性断言（complete cataloging + novelty claim），而论文仅呈现分类结果与动态特征（id=1/24/68），未作‘首次’‘全面’‘新发现’等应用级定性——addition 类强调‘论文未赋予该技术此功能层级结论’；非 significance_addition（因未加‘重要意义’），非 substitution（无关系/机制替换），非 omission（此处是添加而非删减）。",
+        "key_differences": [
+          {
+            "type": "function_application_addition",
+            "paper_expression": "Cell type classification was based on previous reports and data presented (Fig. 1b).",
+            "article_expression": "该研究通过单细胞测序鉴定出了次生根中全部细胞类型/状态，包括……以及未报道的薄壁细胞亚群。",
+            "description": "论文将分类归因于既有文献+本数据（非原创性发现声明）；公众号将技术直接等同于‘鉴定出全部’和‘未报道’，属对方法产出功能的不当升级。"
+          },
+          {
+            "type": "mechanism_omission",
+            "paper_expression": "Taken together, our study demonstrates the diverse and dynamic nature of parenchyma cells in Arabidopsis secondary tissues.",
+            "article_expression": "未报道的薄壁细胞亚群",
+            "description": "论文强调 parenchyma 的 diversity & dynamics（id=24），属表型描述；公众号删去该机制性限定（动态性、多样性），代之以静态存在性断言（‘未报道亚群’），弱化了生物学语境。"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [
+            68,
+            6
+          ],
+          "notes": "rank1–5 噪声大（如 id=180 仅标题式图注，id=181 引用前人工作）；id=68（图注含完整细胞类型列表+面板标注）和 id=6（lateral meristems 定义）更贴，但未进 top-5"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "likely_retrieval_miss",
+          "reasoning": "缺对‘unreported’或‘novel parenchyma subpopulation’的直接否定/肯定表述；论文中 parenchyma 相关描述集中于 id=24/68/180，均未使用 novelty 修饰词。",
+          "suggested_keywords": [
+            "unreported",
+            "novel",
+            "previously undescribed",
+            "parenchyma subpopulation"
+          ],
+          "suggested_sentence_ranges": "Methods section; Results paragraph describing Fig. 2/3 clusters; Discussion on parenchyma heterogeneity"
+        },
+        "manual_check_hints": "可执行动作：核对 id=6（lateral meristems）、id=68（图注全称）、id=24（parenchyma diversity）；重点排查 Discussion 是否有 novelty 声明。 脚本标记: 分析引用了但未列入 gold: 24,180",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P007-A001-C04",
+      "paper_id": "P007",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "结合后续实验验证，团队发现木质部与韧皮部薄壁细胞具有不同的成熟阶段，各阶段表现出独特的转录组特征和功能倾向。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 229,
+            "text": "Like the visibly differentiated xylem cell types, we found that the xylem parenchyma also undergoes several maturation steps."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 62,
+            "text": "These results thus suggest that the xylem parenchyma is not a homogenous tissue but is composed of cells in different maturation states."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 52,
+            "text": "We identified xylem fibres and xylem vessels at various stages of development in the dataset."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 230,
+            "text": "The phloem-side stem cell daughters obtain phloem identity before becoming phloem parenchyma cells, or they undergo formative divisions to form conductive phloem cells (sieve elements and companion cells) and CPP cells (Fig. 4b)."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 228,
+            "text": "Our data indicate that xylem-side stem cell daughters first obtain common xylem identity before specifying into one of three different cell types: vessels, parenchyma or fibre cells."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 229,
+            "text": "Like the visibly differentiated xylem cell types, we found that the xylem parenchyma also undergoes several maturation steps.",
+            "text_zh": "与明显分化的木质部细胞类型一样，我们发现木质部薄壁组织也经历了几个成熟步骤。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 62,
+            "text": "These results thus suggest that the xylem parenchyma is not a homogenous tissue but is composed of cells in different maturation states.",
+            "text_zh": "这些结果表明木质部薄壁组织不是一个同质组织，而是由不同成熟状态的细胞组成的。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 52,
+            "text": "We identified xylem fibres and xylem vessels at various stages of development in the dataset.",
+            "text_zh": "我们在数据集中确定了木质部纤维和木质部导管在不同的发育阶段。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 230,
+            "text": "The phloem-side stem cell daughters obtain phloem identity before becoming phloem parenchyma cells, or they undergo formative divisions to form conductive phloem cells (sieve elements and companion cells) and CPP cells (Fig. 4b).",
+            "text_zh": "韧皮部侧干细胞子细胞在成为韧皮部薄壁细胞之前获得韧皮部特性，或者它们经过形成性分裂形成导电韧皮部细胞（筛元件和伴细胞）和CPP细胞（图4b）。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 228,
+            "text": "Our data indicate that xylem-side stem cell daughters first obtain common xylem identity before specifying into one of three different cell types: vessels, parenchyma or fibre cells.",
+            "text_zh": "我们的数据表明木质部侧干细胞子细胞首先获得共同的木质部身份，然后指定为三种不同的细胞类型之一：血管细胞、薄壁细胞或纤维细胞。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 50,
+            "text": "Thus, when genes enriched in distinct clusters showed expression in the same cell type but at different distances from the vascular cambium, we deduced that these two clusters represent different maturation states of that cell type.",
+            "text_zh": "因此，当不同簇中富集的基因在同一细胞类型中表达，但距离维管形成层的距离不同时，我们推断这两个簇代表了该细胞类型的不同成熟状态。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 61,
+            "text": "In phase II roots, these reporters were also present in cells adjacent to vessels (Fig. 2c and Extended Data Fig. 4e,f).",
+            "text_zh": "在II期根中，这些报告细胞也存在于血管附近的细胞中（图2c和扩展数据图4e，f）。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 63,
+            "text": "To further characterize the different states, we performed Gene Ontology (GO) comparison of xylem parenchyma clusters.",
+            "text_zh": "为了进一步表征不同状态，我们对木质部薄壁组织簇进行了基因本体（GO）比较。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 53,
+            "text": "Subcluster 17_1 represents cells that have recently obtained vessel identity and initiated cell expansion (Supplementary Notes and Extended Data Fig. 3a,b) and are thus expressed in the xylem side of the cambium.",
+            "text_zh": "亚簇17_1代表最近获得导管身份并开始细胞扩增的细胞（补充说明和扩展数据图3a，b），因此在形成层木质部一侧表达。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 51,
+            "text": "We next analysed different cell types within the xylem domain by combining bioinformatic and reporter analyses.",
+            "text_zh": "接下来，我们结合生物信息学和报告基因分析分析了木质部区域内不同类型的细胞。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 229,
+            "text": "Like the visibly differentiated xylem cell types, we found that the xylem parenchyma also undergoes several maturation steps."
+          },
+          {
+            "sentence_id": 62,
+            "text": "These results thus suggest that the xylem parenchyma is not a homogenous tissue but is composed of cells in different maturation states."
+          },
+          {
+            "sentence_id": 230,
+            "text": "The phloem-side stem cell daughters obtain phloem identity before becoming phloem parenchyma cells, or they undergo formative divisions to form conductive phloem cells (sieve elements and companion cells) and CPP cells (Fig. 4b)."
+          },
+          {
+            "sentence_id": 63,
+            "text": "To further characterize the different states, we performed Gene Ontology (GO) comparison of xylem parenchyma clusters."
+          }
+        ],
+        "sentence_ids": [
+          229,
+          62,
+          230,
+          63
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "omission",
+          "level2": "mechanism_omission"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "evidence_uncertainty_omission"
+        },
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文明确区分木质部薄壁细胞存在多阶段成熟（229,62），但未提供韧皮部薄壁细胞具有不同成熟阶段的直接证据；230仅描述其身份获得与分裂路径，未提‘成熟阶段’；63仅对木质部薄壁细胞做GO比较；‘各阶段表现出独特的转录组特征和功能倾向’中‘功能倾向’在论文中仅以GO term富集间接体现，未明示‘功能倾向’这一推论性概括，且未覆盖韧皮部。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1‘木质部与韧皮部薄壁细胞具有不同的成熟阶段’：229+62支撑木质部部分（‘xylem parenchyma undergoes several maturation steps’/‘not a homogenous tissue but composed of cells in different maturation states’）；230描述phloem-side daughters身份获得与分裂路径（‘obtain phloem identity before becoming phloem parenchyma cells’），但无‘maturation steps’或‘stages’表述，未支撑‘韧皮部薄壁细胞具有不同成熟阶段’；分句2‘各阶段表现出独特的转录组特征’：论文用cluster差异表达+distance-from-cambium推断maturation states（50），但该逻辑未应用于phloem parenchyma；分句3‘功能倾向’：63仅对xylem parenchyma clusters做GO比较，未对phloem parenchyma进行同类分析，也未使用‘functional propensity’类表述。top-5中无phloem parenchyma maturation stages或transcriptional signature per stage的直接支撑。",
+        "classification_reason": "primary_level2=mechanism_omission：因论文未建立韧皮部薄壁细胞的成熟阶段模型（即缺失该机制），而claim将木质部机制直接平移至韧皮部，属关键机制缺位；非addition——‘发现…具有不同成熟阶段’是claim对研究结论的陈述，非添加新功能/应用；非substitution——未替换机制，而是完全缺失韧皮部侧机制；non-omission of context/evidence uncertainty：context（物种/组织）未删减，evidence uncertainty（如‘suggest’/‘deduce’）在229/62中已存在，但claim未弱化，故secondary=evidence_uncertainty_omission不成立；实际secondary应为context_omission？否——context完整；再查：claim中‘结合后续实验验证’隐含确定性，而论文62用‘suggest’、50用‘we deduced’，claim省略了这些不确定性表述，故secondary_level2=evidence_uncertainty_omission正确。",
+        "key_differences": [
+          {
+            "type": "mechanism_omission",
+            "paper_expression": "The phloem-side stem cell daughters obtain phloem identity before becoming phloem parenchyma cells, or they undergo formative divisions... (id=230)",
+            "article_expression": "木质部与韧皮部薄壁细胞具有不同的成熟阶段",
+            "description": "论文仅描述韧皮部前体细胞的身份获得与分裂命运，未定义或验证韧皮部薄壁细胞自身存在可区分的成熟阶段；该机制在木质部有支撑（229/62），在韧皮部完全缺失。"
+          },
+          {
+            "type": "evidence_uncertainty_omission",
+            "paper_expression": "These results thus suggest that the xylem parenchyma is not a homogenous tissue... (id=62); we deduced that these two clusters represent different maturation states... (id=50)",
+            "article_expression": "结合后续实验验证，团队发现……",
+            "description": "claim用‘发现’消解了论文中‘suggest’/‘deduced’等不确定性措辞，将推断性结论呈现为实证性发现。"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [
+            50,
+            63
+          ],
+          "notes": "rank5（228）讲xylem-side specification，不相关；rank6（50）含maturation states推断逻辑，rank8（63）含GO比较，二者更贴近但未进top-5；补检关键词phloem parenchyma + maturation无命中，证实韧皮部成熟阶段机制缺失。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "likely_retrieval_miss",
+          "reasoning": "论文中可能含phloem parenchyma maturation相关表述但未被检索覆盖（如图注或Methods中未被切分的句子）；当前pool中无phloem parenchyma clusters、maturation stages、transcriptional signatures per stage等组合表述。",
+          "suggested_keywords": [
+            "phloem parenchyma",
+            "maturation",
+            "clusters",
+            "transcriptional"
+          ],
+          "suggested_sentence_ranges": "Fig. 4b图注全文；Supplementary Notes中phloem parenchyma相关段落；Methods中clustering analysis for phloem cells"
+        },
+        "manual_check_hints": "重点核对id=230全句及图4b图注；检查Supplementary Notes是否提及phloem parenchyma maturation；确认Methods中是否对phloem parenchyma进行了独立聚类分析。",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P007-A001-C05",
+      "paper_id": "P007",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "木质部薄壁细胞可分为年轻态、过渡态和成熟态三类，其中过渡态细胞可能通过分泌过氧化物酶等物质，协助邻近导管细胞完成木质化（lignification），并参与长距离伤害信号传递。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 62,
+            "text": "These results thus suggest that the xylem parenchyma is not a homogenous tissue but is composed of cells in different maturation states."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 80,
+            "text": "Our study thus suggests that the maturing xylem parenchyma cells are associated with both wound signalling and vessel lignification."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 81,
+            "text": "To further investigate the function of xylem parenchyma cells, we examined a series of T-DNA insertion mutants whose corresponding genes are expressed preferentially in any of the states of xylem b Mature xylem Maturing xylem parenchyma 5 parenchyma 11 20 Formative division 18 Young xylem phloem Late diﬀerentiating vessel parenchyma 14 8 16 Fibre 17_2 15 Vessel identity cell/ 17_1 expanding vessel 21 Sieve element 2 6 19 13 Mature phloem Companion cell 7 parenchyma 1 10 9 CPP Vascular cambium 3 23 4 Periderm Lateral root primordium/meristem 12 High-quality cells 11,760 UMAP_2 Detected genes 21,700 3,160 Median genes per cell 22 MI 14,709 Median UMIs per cell UMAP_1 d AT2G13820 pAT2G13820:erVenus f VSP1 (AT5G24780) pVSP1:erVenus and confocal cross-sections of their promoter–reporter lines."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 79,
+            "text": "The mediator of the electric signal, GLR3.6 (a glutamate receptor-like protein31), shows peak expression in cluster 5 in our dataset (Extended Data Fig. 4h), implying a role of maturing xylem parenchyma in stress responses."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 67,
+            "text": "Vessel lignification occurs through both cell-autonomous process in the differentiating vessels and non-cell-autonomous process by the adjacent xylem parenchyma cells, known as ‘good neighbour’ cells29,30."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 62,
+            "text": "These results thus suggest that the xylem parenchyma is not a homogenous tissue but is composed of cells in different maturation states.",
+            "text_zh": "这些结果表明木质部薄壁组织不是一个同质组织，而是由不同成熟状态的细胞组成的。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 80,
+            "text": "Our study thus suggests that the maturing xylem parenchyma cells are associated with both wound signalling and vessel lignification.",
+            "text_zh": "因此，我们的研究表明成熟的木质部薄壁细胞与伤口信号和血管木质素化有关。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 81,
+            "text": "To further investigate the function of xylem parenchyma cells, we examined a series of T-DNA insertion mutants whose corresponding genes are expressed preferentially in any of the states of xylem b Mature xylem Maturing xylem parenchyma 5 parenchyma 11 20 Formative division 18 Young xylem phloem Late diﬀerentiating vessel parenchyma 14 8 16 Fibre 17_2 15 Vessel identity cell/ 17_1 expanding vessel 21 Sieve element 2 6 19 13 Mature phloem Companion cell 7 parenchyma 1 10 9 CPP Vascular cambium 3 23 4 Periderm Lateral root primordium/meristem 12 High-quality cells 11,760 UMAP_2 Detected genes 21,700 3,160 Median genes per cell 22 MI 14,709 Median UMIs per cell UMAP_1 d AT2G13820 pAT2G13820:erVenus f VSP1 (AT5G24780) pVSP1:erVenus and confocal cross-sections of their promoter–reporter lines.",
+            "text_zh": "为了进一步研究木质部薄壁细胞的功能，我们检查了一系列本文分别插入突变体的相应基因表达优先在任何州的木质部b成熟木质部成熟木薄壁组织5实质11 20形成部门18年轻木质部韧皮部晚区分船实质14 8 16纤维17 _2 15船身份cell / 17 _1扩大船21筛元素2 6 19 13成熟韧皮部伴细胞7实质1 10 9 CPP维管形成层3 23 4周侧根原基/分生组织12高质量UMAP_2检测到基因21,700 3,160每个细胞中位基因22 MI 14,709每个细胞中位UMIs UMAP_1 d AT2G13820 pAT2G13820:erVenus f VSP1 (AT5G24780) pVSP1:erVenus及其启动子报告细胞系的共聚焦断面。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 79,
+            "text": "The mediator of the electric signal, GLR3.6 (a glutamate receptor-like protein31), shows peak expression in cluster 5 in our dataset (Extended Data Fig. 4h), implying a role of maturing xylem parenchyma in stress responses.",
+            "text_zh": "电信号的中介GLR3.6（一种谷氨酸受体样蛋白31）在我们的数据集中的簇5中显示出峰值表达（扩展数据图4h），这意味着成熟的木质部薄壁组织在胁迫响应中起作用。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 67,
+            "text": "Vessel lignification occurs through both cell-autonomous process in the differentiating vessels and non-cell-autonomous process by the adjacent xylem parenchyma cells, known as ‘good neighbour’ cells29,30.",
+            "text_zh": "血管木质素化发生在分化血管中的细胞自主过程和相邻木质部薄壁细胞（称为“好邻居”细胞）的非细胞自主过程29,30。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 68,
+            "text": "It appears that maturing xylem parenchyma corresponds to the good neighbour cells, since a specific reporter for these cells, PEROXIDASES47 879 a Xylem xp xv xf Phloem Vascular cambium Xylem parenchyma Phelloderm Companion cell Periderm Vessel Phellogen (cork cambium) Sieve element Fibre Phellem (cork) Phloem parenchyma c AT2G47780 pAT2G47780:erVenus e PBP1 (AT3G16420) pPBP1:erVenus Fig. 1 | Single-cell transcriptome profiling of the Arabidopsis mature root.",
+            "text_zh": "似乎成熟的木质部薄壁与邻近的细胞相对应，因为这些细胞有一个特定的报告细胞，peroxidas47 879 a木质部xp xv xf韧皮部维管束形成层木质部薄壁木质层伴生细胞周皮导管木质层（软木形成层）木质部纤维木质层（软木）韧皮部薄壁c AT2G47780 pAT2G47780:erVenus PBP1 (AT3G16420) pPBP1:erVenus图1 |拟拟opsis成熟根的单细胞转录组图谱。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 229,
+            "text": "Like the visibly differentiated xylem cell types, we found that the xylem parenchyma also undergoes several maturation steps.",
+            "text_zh": "与明显分化的木质部细胞类型一样，我们发现木质部薄壁组织也经历了几个成熟步骤。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 66,
+            "text": "Differentially expressed genes in cluster 5 were predicted to be involved in phenylpropanoid biosynthesis and metabolic pathways that contribute to processes such as lignin biosynthesis and defence responses28 (Extended Data Fig. 4g).",
+            "text_zh": "据预测，簇5中的差异表达基因参与了苯丙素生物合成和代谢途径，这些途径有助于木质素生物合成和防御反应等过程28（扩展数据图4）。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 230,
+            "text": "The phloem-side stem cell daughters obtain phloem identity before becoming phloem parenchyma cells, or they undergo formative divisions to form conductive phloem cells (sieve elements and companion cells) and CPP cells (Fig. 4b).",
+            "text_zh": "韧皮部侧干细胞子细胞在成为韧皮部薄壁细胞之前获得韧皮部特性，或者它们经过形成性分裂形成导电韧皮部细胞（筛元件和伴细胞）和CPP细胞（图4b）。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 228,
+            "text": "Our data indicate that xylem-side stem cell daughters first obtain common xylem identity before specifying into one of three different cell types: vessels, parenchyma or fibre cells.",
+            "text_zh": "我们的数据表明木质部侧干细胞子细胞首先获得共同的木质部身份，然后指定为三种不同的细胞类型之一：血管细胞、薄壁细胞或纤维细胞。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 62,
+            "text": "These results thus suggest that the xylem parenchyma is not a homogenous tissue but is composed of cells in different maturation states."
+          },
+          {
+            "sentence_id": 80,
+            "text": "Our study thus suggests that the maturing xylem parenchyma cells are associated with both wound signalling and vessel lignification."
+          },
+          {
+            "sentence_id": 67,
+            "text": "Vessel lignification occurs through both cell-autonomous process in the differentiating vessels and non-cell-autonomous process by the adjacent xylem parenchyma cells, known as ‘good neighbour’ cells29,30."
+          },
+          {
+            "sentence_id": 66,
+            "text": "Differentially expressed genes in cluster 5 were predicted to be involved in phenylpropanoid biosynthesis and metabolic pathways that contribute to processes such as lignin biosynthesis and defence responses28 (Extended Data Fig. 4g)."
+          }
+        ],
+        "sentence_ids": [
+          62,
+          80,
+          67,
+          66
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "substitution",
+          "level2": "magnitude_substitution"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "evidence_uncertainty_omission"
+        },
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文称木质部薄壁细胞‘maturing’状态与lignification和wound signalling相关（80），并指出其作为‘good neighbour’参与非自主木质化（67），但未划分‘年轻态、过渡态、成熟态’三类，亦未指定‘过渡态’分泌过氧化物酶；claim 将‘maturing’（单态连续过程）替换为离散三态，并将‘peroxidases’（68中提及Peroxidases47）从‘a specific reporter for these cells’升格为‘分泌过氧化物酶等物质’的功能性因果陈述，属作用程度替换；同时删减原文‘suggests’‘implying’等不确定性表述。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1‘可分为年轻态、过渡态和成熟态三类’：id=62称‘different maturation states’（复数，未量化为三类），id=229称‘several maturation steps’（未命名阶段），无‘young/transitional/mature’三分法；该分类为新增结构。分句2‘过渡态细胞可能通过分泌过氧化物酶等物质，协助邻近导管细胞完成木质化’：id=67明确‘non-cell-autonomous process by adjacent xylem parenchyma’，id=68提及‘PEROXIDASES47’为reporter，id=66显示cluster 5富集phenylpropanoid/lignin biosynthesis基因——但‘分泌过氧化物酶’是机制细化，原文未确认分泌行为，仅以reporter和GO暗示潜在功能；‘协助完成木质化’将‘associated with’（80）强化为直接因果。分句3‘并参与长距离伤害信号传递’：id=79显示GLR3.6在cluster 5高表达，‘implying a role…in stress responses’，claim删去‘implying’，转为确定性‘参与’。",
+        "classification_reason": "primary_level2=magnitude_substitution：论文用‘maturing’（连续态）、‘associated with’（弱关联）、‘implying’（推测性）描述功能；claim改用离散三态命名（‘过渡态’）、‘通过分泌…协助完成’（强因果）、‘参与’（确定性动作），属作用程度升级；非addition（过氧化物酶在68有提及），非substitution（未换机制，仍围绕lignification/stress）；非omission（虽删不确定性，但主干失真源于程度强化）。secondary_level2=evidence_uncertainty_omission：删减‘suggests’（80）、‘implying’（79）、‘known as’（67）等原文中表推测/引用的限定词，使结论显得确凿。",
+        "key_differences": [
+          {
+            "type": "magnitude_substitution",
+            "paper_expression": "maturing xylem parenchyma cells are associated with both wound signalling and vessel lignification",
+            "article_expression": "过渡态细胞可能通过分泌过氧化物酶等物质，协助邻近导管细胞完成木质化",
+            "description": "论文用‘associated with’表示统计/表达关联，claim替换为‘通过分泌…协助完成’，将相关性升格为功能性因果链，且将‘maturing’替换为具象‘过渡态’，程度显著增强。"
+          },
+          {
+            "type": "evidence_uncertainty_omission",
+            "paper_expression": "Our study thus suggests that...",
+            "article_expression": "",
+            "description": "论文使用‘suggests’‘implying’表明结论为推论，claim删除全部不确定性标记，以确定性动词‘参与’呈现，削弱科学严谨性。"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [
+            68,
+            66,
+            79
+          ],
+          "notes": "rank2（id=80）和rank5（id=67）支撑核心关联，但rank3（id=81）为图注噪声，rank4（id=79）含implying，rank6（id=68）含PEROXIDASES47，后三者更贴切但未进top-5"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "核对 id=68（PEROXIDASES47 reporter）、id=66（cluster 5 GO）、id=79（GLR3.6表达）、id=80（association statement）；确认‘transition state’是否在Supplementary Notes或图例中有明确定义。 脚本标记: 分析引用了但未列入 gold: 68,79,229",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P007-A001-C06",
+      "paper_id": "P007",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "突变体实验证实，木质部薄壁细胞特异性基因的缺失会显著抑制次生导管形成，凸显其对输导系统的调控作用。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 90,
+            "text": "Even though the expression of these genes was low in the vessel cluster, nearly half of the examined single mutants (four out of nine mutants) showed a significant reduction in secondary vessel formation (Fig. 2e,f and Extended Data Fig. 4j,k)."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 89,
+            "text": "parenchyma maturation in the UMAP (Fig. 2d and Extended Data Fig. 4i)."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 91,
+            "text": "Indeed, secondary vessel formation was significantly decreased in the at4g30460 and arabidopsis protein kinase 1 (apk1a) loss-of-function mutants (Fig. 2e,f and Extended Data Fig. 4j,k), even when the reduced secondary growth in these mutants was taken into account."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 81,
+            "text": "To further investigate the function of xylem parenchyma cells, we examined a series of T-DNA insertion mutants whose corresponding genes are expressed preferentially in any of the states of xylem b Mature xylem Maturing xylem parenchyma 5 parenchyma 11 20 Formative division 18 Young xylem phloem Late diﬀerentiating vessel parenchyma 14 8 16 Fibre 17_2 15 Vessel identity cell/ 17_1 expanding vessel 21 Sieve element 2 6 19 13 Mature phloem Companion cell 7 parenchyma 1 10 9 CPP Vascular cambium 3 23 4 Periderm Lateral root primordium/meristem 12 High-quality cells 11,760 UMAP_2 Detected genes 21,700 3,160 Median genes per cell 22 MI 14,709 Median UMIs per cell UMAP_1 d AT2G13820 pAT2G13820:erVenus f VSP1 (AT5G24780) pVSP1:erVenus and confocal cross-sections of their promoter–reporter lines."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 107,
+            "text": "However, further studies are needed to explore how direct the link between xylem parenchyma and vessel production is."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 90,
+            "text": "Even though the expression of these genes was low in the vessel cluster, nearly half of the examined single mutants (four out of nine mutants) showed a significant reduction in secondary vessel formation (Fig. 2e,f and Extended Data Fig. 4j,k).",
+            "text_zh": "尽管这些基因在血管簇中的表达较低，但近一半被检测的单突变体（9个突变体中的4个）显示出二次血管形成的显著减少（图2e，f和扩展数据图4j，k）。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 89,
+            "text": "parenchyma maturation in the UMAP (Fig. 2d and Extended Data Fig. 4i).",
+            "text_zh": "UMAP中的薄壁组织成熟（图2d和扩展数据图4i）。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 91,
+            "text": "Indeed, secondary vessel formation was significantly decreased in the at4g30460 and arabidopsis protein kinase 1 (apk1a) loss-of-function mutants (Fig. 2e,f and Extended Data Fig. 4j,k), even when the reduced secondary growth in these mutants was taken into account.",
+            "text_zh": "事实上，即使考虑到at4g30460和拟南芥蛋白激酶1 （apk1a）功能丧失突变体的二次生长减少，次生血管形成也显著减少（图2e，f和扩展数据图4j，k）。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 81,
+            "text": "To further investigate the function of xylem parenchyma cells, we examined a series of T-DNA insertion mutants whose corresponding genes are expressed preferentially in any of the states of xylem b Mature xylem Maturing xylem parenchyma 5 parenchyma 11 20 Formative division 18 Young xylem phloem Late diﬀerentiating vessel parenchyma 14 8 16 Fibre 17_2 15 Vessel identity cell/ 17_1 expanding vessel 21 Sieve element 2 6 19 13 Mature phloem Companion cell 7 parenchyma 1 10 9 CPP Vascular cambium 3 23 4 Periderm Lateral root primordium/meristem 12 High-quality cells 11,760 UMAP_2 Detected genes 21,700 3,160 Median genes per cell 22 MI 14,709 Median UMIs per cell UMAP_1 d AT2G13820 pAT2G13820:erVenus f VSP1 (AT5G24780) pVSP1:erVenus and confocal cross-sections of their promoter–reporter lines.",
+            "text_zh": "为了进一步研究木质部薄壁细胞的功能，我们检查了一系列本文分别插入突变体的相应基因表达优先在任何州的木质部b成熟木质部成熟木薄壁组织5实质11 20形成部门18年轻木质部韧皮部晚区分船实质14 8 16纤维17 _2 15船身份cell / 17 _1扩大船21筛元素2 6 19 13成熟韧皮部伴细胞7实质1 10 9 CPP维管形成层3 23 4周侧根原基/分生组织12高质量UMAP_2检测到基因21,700 3,160每个细胞中位基因22 MI 14,709每个细胞中位UMIs UMAP_1 d AT2G13820 pAT2G13820:erVenus f VSP1 (AT5G24780) pVSP1:erVenus及其启动子报告细胞系的共聚焦断面。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 107,
+            "text": "However, further studies are needed to explore how direct the link between xylem parenchyma and vessel production is.",
+            "text_zh": "然而，木质部薄壁组织与导管产生之间的直接联系需要进一步的研究。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 106,
+            "text": "The orange arrowheads point at secondary growth.",
+            "text_zh": "橙色箭头指向次生生长。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 80,
+            "text": "Our study thus suggests that the maturing xylem parenchyma cells are associated with both wound signalling and vessel lignification.",
+            "text_zh": "因此，我们的研究表明成熟的木质部薄壁细胞与伤口信号和血管木质素化有关。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 92,
+            "text": "Taken together, our results indicate the existence of a diverse range of xylem parenchyma cells, and that one of their potential functions is to promote vessel formation during",
+            "text_zh": "综上所述，我们的研究结果表明木质部薄壁细胞的存在是多种多样的，它们的潜在功能之一是促进血管的形成"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 93,
+            "text": "a–c, Expression of AT1G03620 (a), AT5G07080 (b) and AT1G48750 (c) in young, mature and maturing xylem parenchyma clusters, respectively; and confocal cross-sections of their promoter–reporter lines.",
+            "text_zh": "a - c, AT1G03620 (a)、AT5G07080 (b)和AT1G48750 (c)分别在幼嫩、成熟和成熟木质部薄壁组织簇中的表达；以及它们的启动子-报告子线的共聚焦横截面。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 58,
+            "text": "The transcriptional reporter lines of genes predominantly expressed in cluster 8 (ROTUNDIFOLIA LIKE 6 (RTFL6), MIZU-KUSSEI 1 (MIZ1) and AT1G03620) showed high fluorescence signals in young xylem parenchyma cells adjacent to the meristematic zone and near the expanding vessels (Fig. 2a and Extended Data Fig. 4b).",
+            "text_zh": "在8簇中主要表达的基因转录报告系（ROTUNDIFOLIA LIKE 6 （RTFL6）、MIZU-KUSSEI 1 （MIZ1）和AT1G03620）在靠近分生区和扩张血管附近的幼嫩木质部薄壁细胞中显示出高荧光信号（图2a和扩展数据图4b）。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 90,
+            "text": "Even though the expression of these genes was low in the vessel cluster, nearly half of the examined single mutants (four out of nine mutants) showed a significant reduction in secondary vessel formation (Fig. 2e,f and Extended Data Fig. 4j,k)."
+          },
+          {
+            "sentence_id": 91,
+            "text": "Indeed, secondary vessel formation was significantly decreased in the at4g30460 and arabidopsis protein kinase 1 (apk1a) loss-of-function mutants (Fig. 2e,f and Extended Data Fig. 4j,k), even when the reduced secondary growth in these mutants was taken into account."
+          }
+        ],
+        "sentence_ids": [
+          90,
+          91
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "addition",
+          "level2": "significance_addition"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "mechanism_omission"
+        },
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "claim称‘突变体实验证实...凸显其对输导系统的调控作用’，其中‘调控作用’为论文未赋予的宏观功能意义（paper仅报告‘significant reduction in secondary vessel formation’，未上升至‘调控输导系统’层面）；同时删减了论文中关键机制限定——突变效应仅在特定基因（at4g30460, apk1a）中观察到，且作者强调‘further studies needed to explore how direct the link is’（107），claim却表述为普适性结论"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1（突变体缺失抑制次生导管形成）：sentence_id=90（'significant reduction in secondary vessel formation'）+91（'significantly decreased in at4g30460 and apk1a mutants'）直接支撑；分句2（凸显其对输导系统的调控作用）：id=90/91仅描述表型减少，未提‘调控’（regulation）或‘输导系统’（conducting system）；id=107明确说‘further studies needed to explore how direct the link... is’，反向削弱claim的确定性；top-5中无‘regulate conducting system’‘control transport’等表述。",
+        "classification_reason": "primary_level2='significance_addition'：因claim添加了论文未宣称的宏观意义——‘凸显其对输导系统的调控作用’（paper_expression: 'reduction in secondary vessel formation'；article_expression: '凸显其对输导系统的调控作用'），属意义/重要性添加（significance_addition）；非addition（未添加新功能实体）、非substitution（未改换关系）；secondary_level2='mechanism_omission'：claim删去了原文关键限定——效应仅见于部分基因突变（90中‘four out of nine mutants’、91中特指at4g30460/apk1a），且作者强调机制直接性尚不明确（107），claim却表述为木质部薄壁细胞基因缺失的普适性调控结论。",
+        "key_differences": [
+          {
+            "type": "significance_addition",
+            "paper_expression": "significant reduction in secondary vessel formation",
+            "article_expression": "凸显其对输导系统的调控作用",
+            "description": "将具体表型观察（导管形成减少）升格为宏观功能意义（调控输导系统）"
+          },
+          {
+            "type": "mechanism_omission",
+            "paper_expression": "nearly half of the examined single mutants (four out of nine) showed reduction... further studies needed to explore how direct the link is",
+            "article_expression": "木质部薄壁细胞特异性基因的缺失会显著抑制次生导管形成",
+            "description": "删去‘仅部分基因有效’及‘机制直接性待验证’的关键限定，使结论过度泛化"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [
+            107,
+            92
+          ],
+          "notes": "rank1–5中90/91为最直接证据，但92结尾被截断（'to promote vessel formation during...'），未完成；rank5（id=107）提供反向限定证据但未进top-5"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对id=107全文（'However, further studies are needed...'）；检查id=92末尾是否含‘regulation’或‘conducting system’。 脚本标记: 分析引用了但未列入 gold: 107",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P007-A001-C07",
+      "paper_id": "P007",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "该团队在韧皮部薄壁细胞（phloem parenchyma）中鉴定出导管相关薄壁细胞（CPP，Conductive Phloem-associated Parenchyma），通过非自主性机制（non-cell-autonomous recruitment）被邻近筛分子招募，支持韧皮部发育. PAPL转录因子在CPP 细胞高表达，缺失导致次生筛分子形成缺陷，证实CPP细胞在韧皮部发育中的潜在关键作用。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 131,
+            "text": "CPP identity is thus obtained because of recruitment by neighbouring conductive phloem cells in a cell-non-autonomous manner."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 231,
+            "text": "We discovered that CPP cells are also recruited from the parenchyma cell lineage by the adjacent conductive phloem cells."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 104,
+            "text": "In g–i, the white and yellow arrowheads indicate CPP cells originating from formative division and recruited from neighbouring cell lineages, respectively."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 137,
+            "text": "These findings suggest that PAPL genes are required for secondary conductive phloem formation."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 133,
+            "text": "The location of the CPP cells also reminded us of genes expressed in the cells surrounding the conductive phloem in primary roots such as PINEAPPLE (PAPL) transcription factors20."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 131,
+            "text": "CPP identity is thus obtained because of recruitment by neighbouring conductive phloem cells in a cell-non-autonomous manner.",
+            "text_zh": "因此，由于邻近的导电韧皮部细胞以细胞非自主的方式招募CPP，从而获得CPP身份。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 231,
+            "text": "We discovered that CPP cells are also recruited from the parenchyma cell lineage by the adjacent conductive phloem cells.",
+            "text_zh": "我们发现CPP细胞也被邻近的传导性韧皮部细胞从薄壁细胞系中招募。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 104,
+            "text": "In g–i, the white and yellow arrowheads indicate CPP cells originating from formative division and recruited from neighbouring cell lineages, respectively.",
+            "text_zh": "在g-i中，白色和黄色箭头分别表示CPP细胞起源于形成分裂和来自邻近细胞系。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 137,
+            "text": "These findings suggest that PAPL genes are required for secondary conductive phloem formation.",
+            "text_zh": "这些发现表明PAPL基因是次生导电韧皮部形成所必需的。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 133,
+            "text": "The location of the CPP cells also reminded us of genes expressed in the cells surrounding the conductive phloem in primary roots such as PINEAPPLE (PAPL) transcription factors20.",
+            "text_zh": "CPP细胞的位置也让我们想起了菠萝初生根导电韧皮部周围细胞中表达的基因，如菠萝转录因子（PAPL） 20。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 134,
+            "text": "In our UMAP, three PAPL genes showed high expression in cluster 2, and, consistently, fluorescence signals in their reporter lines were detected in CPP cells (Fig. 2i and Extended Data Fig. 5f).",
+            "text_zh": "在我们的UMAP中，三个PAPL基因在集群2中高表达，并且在CPP细胞中一致地检测到其报告系中的荧光信号（图2i和扩展数据图5f）。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 128,
+            "text": "Alternatively, these cells could be recruited by cell–cell-communication-based mechanisms from neighbouring conductive cells regardless of their lineage.",
+            "text_zh": "或者，这些细胞可以通过基于细胞-细胞通信的机制从邻近的传导细胞中招募，而不管它们的谱系如何。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 232,
+            "text": "As vascular cambium produces more phloem cells, the previously produced phloem parenchyma cells enlarge and become mature phloem parenchyma cells.",
+            "text_zh": "随着维管形成层产生更多的韧皮部细胞，原先产生的韧皮部薄壁细胞扩大，成为成熟的韧皮部薄壁细胞。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 230,
+            "text": "The phloem-side stem cell daughters obtain phloem identity before becoming phloem parenchyma cells, or they undergo formative divisions to form conductive phloem cells (sieve elements and companion cells) and CPP cells (Fig. 4b).",
+            "text_zh": "韧皮部侧干细胞子细胞在成为韧皮部薄壁细胞之前获得韧皮部特性，或者它们经过形成性分裂形成导电韧皮部细胞（筛元件和伴细胞）和CPP细胞（图4b）。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 103,
+            "text": "i, Expression of CDF4/PAPL2 and confocal cross-sections of its promoter–reporter line.",
+            "text_zh": "i， CDF4/PAPL2的表达及其启动子报告细胞系的共聚焦截面。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 131,
+            "text": "CPP identity is thus obtained because of recruitment by neighbouring conductive phloem cells in a cell-non-autonomous manner."
+          },
+          {
+            "sentence_id": 231,
+            "text": "We discovered that CPP cells are also recruited from the parenchyma cell lineage by the adjacent conductive phloem cells."
+          },
+          {
+            "sentence_id": 137,
+            "text": "These findings suggest that PAPL genes are required for secondary conductive phloem formation."
+          },
+          {
+            "sentence_id": 134,
+            "text": "In our UMAP, three PAPL genes showed high expression in cluster 2, and, consistently, fluorescence signals in their reporter lines were detected in CPP cells (Fig. 2i and Extended Data Fig. 5f)."
+          }
+        ],
+        "sentence_ids": [
+          131,
+          231,
+          137,
+          134
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "substitution",
+          "level2": "mechanism_substitution"
+        },
+        "secondary_label": {
+          "level1": "addition",
+          "level2": "significance_addition"
+        },
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文明确描述CPP为‘recruited by neighbouring conductive phloem cells’（非自主性招募），但claim将机制泛化为‘被邻近筛分子招募’——筛分子（sieve elements）是成熟导管细胞，而论文中‘neighbouring conductive phloem cells’特指未分化的前体/干细胞样细胞（如Fig. 4b中phloem-side stem cell daughters），非终末分化的筛分子；且‘证实CPP细胞在韧皮部发育中的潜在关键作用’属意义拔高：论文仅说PAPL缺失导致‘secondary conductive phloem formation’缺陷（id=137），未断言CPP本身‘关键’，更未使用‘potential key role’表述。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1（CPP定义与招募机制）：id=131（'recruitment by neighbouring conductive phloem cells in a cell-non-autonomous manner'）和id=231（'recruited from the parenchyma cell lineage by the adjacent conductive phloem cells'）共同支撑‘非自主性招募’及‘邻近韧皮部导管前体细胞’来源，但均未提‘sieve elements’；分句2（PAPL高表达）：id=134（'three PAPL genes showed high expression in cluster 2... detected in CPP cells'）直接支持；分句3（缺失表型）：id=137（'PAPL genes are required for secondary conductive phloem formation'）支持功能关联，但未升级为‘CPP细胞的关键作用’；分句4（‘潜在关键作用’）：全文无‘key role’‘critical’‘essential’等定性词，仅用‘required for’描述基因，且对象是secondary conductive phloem formation，非CPP细胞本身。",
+        "classification_reason": "primary_level2=mechanism_substitution：因论文‘neighbouring conductive phloem cells’（id=131/231）≠ claim‘邻近筛分子’（sieve elements）——前者是发育早期具有招募能力的前体细胞（见Fig. 4b），后者是终末分化、无已知招募功能的成熟细胞；若标‘relation_substitution’则错失机制主体替换本质；‘significance_addition’为secondary：因‘潜在关键作用’是论文未赋权的评价性升华（paper: 'required for...' → article: '证实...潜在关键作用'），符合addition类中‘significance_addition’定义（添加重要性判断）。",
+        "key_differences": [
+          {
+            "type": "mechanism_substitution",
+            "paper_expression": "recruited by neighbouring conductive phloem cells",
+            "article_expression": "被邻近筛分子招募",
+            "description": "将招募主体由‘邻近的导管前体细胞（conductive phloem cells）’错误替换为‘筛分子（sieve elements）’，混淆发育阶段与细胞功能。"
+          },
+          {
+            "type": "significance_addition",
+            "paper_expression": "PAPL genes are required for secondary conductive phloem formation",
+            "article_expression": "证实CPP细胞在韧皮部发育中的潜在关键作用",
+            "description": "将基因功能缺失表型（required for）升格为对CPP细胞本身的‘关键作用’定性，添加论文未赋予的层级意义。"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [
+            230,
+            104
+          ],
+          "notes": "rank1–5覆盖招募机制（131/231）和PAPL表达（134）及表型（137），但未含Fig. 4b对‘conductive phloem cells’发育阶段的明确定义（id=230: 'phloem-side stem cell daughters obtain phloem identity before becoming phloem parenchyma cells, or they undergo formative divisions to form... CPP cells'）；id=104图注亦提示CPP来源含‘recruited from neighbouring cell lineages’，比top-5更精准限定招募者身份。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=131/231/230/104 对‘neighbouring conductive phloem cells’的上下文定义；核对 id=137 是否提及CPP细胞作用而非PAPL基因功能。",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P007-A001-C08",
+      "paper_id": "P007",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "他们发现成熟韧皮部薄壁细胞具有转化为木栓内层细胞的潜能，而机械伤害可通过激活JA信号通路显著加速这一转化过程。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 10,
+            "text": "Parenchyma can be accelerated by jasmonate treatment or wounding."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 235,
+            "text": "Our data suggest that upon physical damage of the periderm, JA signalling is triggered, which in turn stimulates the accelerated transformation of mature phloem parenchyma into periderm cells to quickly reinforce the barrier."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 9,
+            "text": "These parenchymatic cells occupy the largest part of the secondary tissues1–3."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 11,
+            "text": "Our study thus reveals the diversity of parenchyma cells and their capacity to undergo considerable identity changes during secondary growth."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 236,
+            "text": "Since wounding caused more frequent cell transformation than JA treatment, we hypothesize that there are other factors than JA that promote the transformation."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 10,
+            "text": "Parenchyma can be accelerated by jasmonate treatment or wounding.",
+            "text_zh": "茉莉酸处理或损伤可加速薄壁组织的形成。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 235,
+            "text": "Our data suggest that upon physical damage of the periderm, JA signalling is triggered, which in turn stimulates the accelerated transformation of mature phloem parenchyma into periderm cells to quickly reinforce the barrier.",
+            "text_zh": "我们的数据表明，当周皮受到物理损伤时，JA信号被触发，这反过来刺激成熟韧皮部薄壁细胞加速转化为周皮细胞，从而迅速加强屏障。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 9,
+            "text": "These parenchymatic cells occupy the largest part of the secondary tissues1–3.",
+            "text_zh": "这些实质细胞占次级组织的大部分1 - 3。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 11,
+            "text": "Our study thus reveals the diversity of parenchyma cells and their capacity to undergo considerable identity changes during secondary growth.",
+            "text_zh": "因此，我们的研究揭示了薄壁细胞的多样性及其在次生生长过程中经历相当大的身份变化的能力。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 236,
+            "text": "Since wounding caused more frequent cell transformation than JA treatment, we hypothesize that there are other factors than JA that promote the transformation.",
+            "text_zh": "由于损伤引起的细胞转化比JA处理更频繁，我们假设除了JA还有其他因素促进了细胞转化。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 234,
+            "text": "We unexpectedly found that the mature phloem parenchyma cells gradually change their identity into phelloderm cells, the innermost cell type of the periderm.",
+            "text_zh": "我们意外地发现，成熟的韧皮部薄壁细胞逐渐转变为周皮最里面的细胞类型——木栓层细胞。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 203,
+            "text": "The results show that treatment with JA and SA accelerated the transformation of mature phloem parenchyma cells to periderm cells.",
+            "text_zh": "结果表明，JA和SA处理加速了成熟韧皮部薄壁细胞向周皮细胞的转化。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 204,
+            "text": "This accelerated transformation seems not to be caused by general growth retardation caused by JA and SA38,39, since abscisic acid (ABA), another stress hormone and growth inhibitor40, did not accelerate the transition, despite being able to slow down radial growth (Supplementary Notes).",
+            "text_zh": "这种加速的转变似乎不是由JA和SA38引起的一般生长迟缓引起的，39，因为脱落酸（ABA），另一种应激激素和生长抑制剂40，尽管能够减缓径向生长，但并没有加速转变（补充说明）。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 202,
+            "text": "To examine the potential role of JA and SA in this transformation, we performed a 3-week lineage tracing experiment upon JA or SA treatment (Supplementary Notes and Extended Data Fig. 7b,c).",
+            "text_zh": "为了研究JA和SA在这种转化中的潜在作用，我们对JA或SA进行了为期3周的谱系追踪实验（补充说明和扩展数据图7b，c）。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 224,
+            "text": "During normal development, the transformation from phloem parenchyma via phelloderm to phellogen is slow and sporadic, but this can be accelerated to reinforce the barrier in case of superficial injury.",
+            "text_zh": "在正常发育过程中，从韧皮部薄壁经木栓皮向木栓质的转变是缓慢和零星的，但在表面损伤的情况下，这一过程可以加速以加强屏障。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 234,
+            "text": "We unexpectedly found that the mature phloem parenchyma cells gradually change their identity into phelloderm cells, the innermost cell type of the periderm."
+          },
+          {
+            "sentence_id": 235,
+            "text": "Our data suggest that upon physical damage of the periderm, JA signalling is triggered, which in turn stimulates the accelerated transformation of mature phloem parenchyma into periderm cells to quickly reinforce the barrier."
+          },
+          {
+            "sentence_id": 224,
+            "text": "During normal development, the transformation from phloem parenchyma via phelloderm to phellogen is slow and sporadic, but this can be accelerated to reinforce the barrier in case of superficial injury."
+          }
+        ],
+        "sentence_ids": [
+          234,
+          235,
+          224
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "substitution",
+          "level2": "magnitude_substitution"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文指出‘wounding caused more frequent cell transformation than JA treatment’（id=236），即机械伤害效果强于JA处理；claim称‘机械伤害可通过激活JA信号通路显著加速这一转化过程’，将JA通路定位为伤害加速转化的‘主要/必要’机制，但论文明确说‘we hypothesize that there are other factors than JA that promote the transformation’（id=236），且‘JA treatment or wounding’并列（id=10），未确立JA为伤害下游唯一通路；此外，claim删减了‘次生根’这一关键解剖背景（论文所有证据均来自次生根，如id=234‘in the mature root’，id=224‘during normal development’指次生根发育），构成context_omission。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1（转化潜能）：id=234（'mature phloem parenchyma cells gradually change their identity into phelloderm cells'）直接支持；分句2（伤害加速）：id=224（'this can be accelerated to reinforce the barrier in case of superficial injury'）和id=235（'wounding... triggers JA signalling, which in turn stimulates the accelerated transformation'）共同支撑伤害与JA的关联，但id=235用‘which in turn’暗示JA是介导环节，而id=236立即补充‘other factors than JA’，削弱其唯一性；分句3（JA通路核心性）：id=10（'Parenchyma can be accelerated by jasmonate treatment or wounding'）为并列关系，未建立因果链；id=203显示JA/SA均加速，但id=204用ABA对照排除‘general growth retardation’，未排除JA外其他通路。",
+        "classification_reason": "primary_level2=magnitude_substitution：因claim用‘通过激活JA信号通路’将论文中‘JA is one of several accelerators (id=236)’替换为‘JA是伤害加速转化的主导/必要机制’，夸大JA通路的作用程度（从‘contributory’到‘causal-mediating’）；‘context_omission’为secondary：因全文语境限定于‘secondary root’（id=234/224/164），claim删去‘次生根’，泛化为无解剖限定的‘成熟韧皮部薄壁细胞’，违反论文空间约束。",
+        "key_differences": [
+          {
+            "type": "magnitude_substitution",
+            "paper_expression": "wounding caused more frequent cell transformation than JA treatment... there are other factors than JA that promote the transformation",
+            "article_expression": "机械伤害可通过激活JA信号通路显著加速这一转化过程",
+            "description": "将论文中JA作为‘非唯一加速因子’（id=236）替换为伤害效应的‘核心介导通路’，夸大其作用程度与必要性。"
+          },
+          {
+            "type": "context_omission",
+            "paper_expression": "in the mature root (id=234); during normal development (id=224)",
+            "article_expression": "成熟韧皮部薄壁细胞",
+            "description": "删减‘次生根’这一关键解剖学背景限定，使结论脱离论文实证范围。"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [
+            236,
+            203
+          ],
+          "notes": "rank1–5含id=235（JA介导假说）但缺id=236（多因子修正声明）；id=203提供JA/SA平行加速证据，强化‘非唯一性’，但未进top-5。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=234/224/236 确认‘次生根’背景与‘多因子’声明；核对 id=235与236逻辑衔接。 脚本标记: 分析引用了但未列入 gold: 10,164,203,204,236",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P007-A001-C09",
+      "paper_id": "P007",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "此外，研究首次在次生根中鉴定出芥子酶异细胞（MIs），拓展了人们对植物防御机制的认识。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 159,
+            "text": "Through analysis of the top differentially expressed genes of cluster 22 and the reporter lines, we identified the presence of myrosin idioblasts (MIs) within the mature phloem parenchyma region (Fig. 3b,c and Extended Data Fig. 6c,d)."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 158,
+            "text": "Additionally, cells in cluster 10 appear to be involved in carbohydrate metabolic processes, indicating a potential storage function of mature phloem parenchyma cells (Extended Data Fig. 6b)."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 160,
+            "text": "MIs are specialized parenchymal storage cells that play a key role in the glucosinolate– myrosinase defence system, unique to Brassicaceae plants, which provides protection against herbivory32–34."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 164,
+            "text": "This demonstrates that MIs exist in the mature root."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 163,
+            "text": "We used Coomassie brilliant blue (CBB) staining to visualize the MIs37, and CBB-stained cells were scattered in a similar area where TGG2and FAMA-positive cells were found (Fig. 3c)."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 159,
+            "text": "Through analysis of the top differentially expressed genes of cluster 22 and the reporter lines, we identified the presence of myrosin idioblasts (MIs) within the mature phloem parenchyma region (Fig. 3b,c and Extended Data Fig. 6c,d).",
+            "text_zh": "通过分析集群22和报告系的顶部差异表达基因，我们发现在成熟韧皮部薄壁区存在黑素异母细胞（MIs）（图3b，c和扩展数据图6c，d）。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 158,
+            "text": "Additionally, cells in cluster 10 appear to be involved in carbohydrate metabolic processes, indicating a potential storage function of mature phloem parenchyma cells (Extended Data Fig. 6b).",
+            "text_zh": "此外，簇10中的细胞似乎参与了碳水化合物代谢过程，表明成熟韧皮部薄壁细胞具有潜在的储存功能（扩展数据图6b）。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 160,
+            "text": "MIs are specialized parenchymal storage cells that play a key role in the glucosinolate– myrosinase defence system, unique to Brassicaceae plants, which provides protection against herbivory32–34.",
+            "text_zh": "MIs是一种特殊的实质储存细胞，在芥子油苷-黑芥子酶防御系统中起关键作用，是十字花科植物所特有的，它提供了对草食性的保护32 - 34。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 164,
+            "text": "This demonstrates that MIs exist in the mature root.",
+            "text_zh": "这说明MIs存在于成熟根中。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 163,
+            "text": "We used Coomassie brilliant blue (CBB) staining to visualize the MIs37, and CBB-stained cells were scattered in a similar area where TGG2and FAMA-positive cells were found (Fig. 3c).",
+            "text_zh": "我们使用考马西亮蓝（CBB）染色来显示MIs37，并且CBB染色的细胞分散在发现tgg2和fama阳性细胞的相似区域（图3c）。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 165,
+            "text": "We often detected promoter activities of TGG2 and FAMA, and CBB staining, in cells next to the sieve elements, the position occupied by the companion cells earlier in development (Fig. 3b,c and Extended Data Fig. 6c).",
+            "text_zh": "我们经常检测到TGG2和FAMA的启动子活性，并在筛选元件旁边的细胞中检测到CBB染色，这些细胞在发育早期被伴生细胞占据（图3b，c和扩展数据图6c）。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 159,
+            "text": "Through analysis of the top differentially expressed genes of cluster 22 and the reporter lines, we identified the presence of myrosin idioblasts (MIs) within the mature phloem parenchyma region (Fig. 3b,c and Extended Data Fig. 6c,d)."
+          },
+          {
+            "sentence_id": 164,
+            "text": "This demonstrates that MIs exist in the mature root."
+          }
+        ],
+        "sentence_ids": [
+          159,
+          164
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "addition",
+          "level2": "significance_addition"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "severity": "mild",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文明确在次生根中鉴定MIs（id=159: 'within the mature phloem parenchyma region'；id=164: 'MIs exist in the mature root'），但claim添加‘首次’——论文未声称‘首次’，且未对比既往文献（如Brassicaceae中MIs已有报道，id=160引述32–34）；同时删减‘次生根’背景（claim仅说‘次生根中’，但未强调该发现发生于‘成熟根’或‘次生生长组织’，而论文所有证据均锚定于次生根成熟区，id=159/164/163均指向mature root/phloem parenchyma region），构成context_omission。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1（MIs鉴定）：id=159（'identified the presence of myrosin idioblasts (MIs) within the mature phloem parenchyma region'）和id=164（'MIs exist in the mature root'）共同支撑次生根中MIs存在；分句2（‘首次’）：全文无‘first’‘novel’‘previously unreported’等表述，id=160引述既有文献（'unique to Brassicaceae plants... provides protection against herbivory32–34'），表明MIs本身非新发现；分句3（解剖背景）：id=159/164/163均限定于‘mature root’或‘mature phloem parenchyma region’，claim虽提‘次生根’，但未复现‘成熟’这一关键发育阶段限定（论文中‘mature’对应次生生长后期，非初生根或幼嫩组织）。",
+        "classification_reason": "primary_level2=significance_addition：因‘首次’是对科学优先权的断言，论文未作此声明，属添加意义（addition类）；‘context_omission’为secondary：因删减‘mature’（成熟）这一发育阶段限定，使‘次生根’背景不完整——次生根包含初生期与成熟期，而论文证据全在成熟区（id=159/164），‘mature’是功能活性（如CBB染色、TGG2表达）的前提。",
+        "key_differences": [
+          {
+            "type": "significance_addition",
+            "paper_expression": "Through analysis... we identified the presence of myrosin idioblasts (MIs) within the mature phloem parenchyma region",
+            "article_expression": "研究首次在次生根中鉴定出芥子酶异细胞（MIs）",
+            "description": "添加‘首次’这一优先权声明，论文未对比文献或使用任何首创性措辞。"
+          },
+          {
+            "type": "context_omission",
+            "paper_expression": "within the mature phloem parenchyma region (id=159); in the mature root (id=164)",
+            "article_expression": "在次生根中鉴定出",
+            "description": "删减‘成熟（mature）’这一关键发育阶段限定，模糊了MIs出现的具体组织状态。"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "top-5 fully covers core claims: id=159/164 for MIs identification, id=160 for Brassicaceae context (supports non-novelty of MIs), no better sentence outside top-5 needed."
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=159/164 是否含‘mature’；核对全文是否出现‘first’‘novel’等词。 脚本标记: 分析引用了但未列入 gold: 160,163",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P007-A001-C10",
+      "paper_id": "P007",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "该研究不仅首次绘制了拟南芥根次生生长单细胞转录图谱，揭示其动态分化和功能多样性，还提出薄壁细胞通过非细胞自主调控支持输导组织发育，并具有环境响应可塑性（如伤害诱导的周皮转化）。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 24,
+            "text": "Taken together, our study demonstrates the diverse and dynamic nature of parenchyma cells in Arabidopsis secondary tissues."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 26,
+            "text": "Secondary growth in the hypocotyl and root of Arabidopsis can be divided into two distinct phases."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 1,
+            "text": "Here we combined single-cell RNA sequencing analysis with lineage tracing to recreate developmental trajectories of the cell types in the Arabidopsis root undergoing secondary growth."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 180,
+            "text": "a, Cell types in the Arabidopsis root secondary tissues."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 43,
+            "text": "We generated and validated a transcriptome atlas of the Arabidopsis root undergoing secondary growth, allowing us to reveal shared and unique regulatory mechanisms driving vascular cambium and/or phellogen activity."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 24,
+            "text": "Taken together, our study demonstrates the diverse and dynamic nature of parenchyma cells in Arabidopsis secondary tissues.",
+            "text_zh": "综上所述，我们的研究证明了拟南芥次生组织薄壁细胞的多样性和动态性。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 26,
+            "text": "Secondary growth in the hypocotyl and root of Arabidopsis can be divided into two distinct phases.",
+            "text_zh": "拟南芥的下胚轴和根的次生生长可分为两个不同的阶段。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 1,
+            "text": "Here we combined single-cell RNA sequencing analysis with lineage tracing to recreate developmental trajectories of the cell types in the Arabidopsis root undergoing secondary growth.",
+            "text_zh": "在这里，我们将单细胞RNA测序分析与谱系追踪相结合，重现了拟南芥根系次生生长中细胞类型的发育轨迹。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 180,
+            "text": "a, Cell types in the Arabidopsis root secondary tissues.",
+            "text_zh": "a，拟南芥根次生组织的细胞类型。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 43,
+            "text": "We generated and validated a transcriptome atlas of the Arabidopsis root undergoing secondary growth, allowing us to reveal shared and unique regulatory mechanisms driving vascular cambium and/or phellogen activity.",
+            "text_zh": "我们生成并验证了拟南芥根系次生生长的转录组图谱，使我们能够揭示驱动维管形成层和/或木栓活性的共同和独特的调节机制。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 28,
+            "text": "For this study, we used 30-day-old Arabidopsis roots that were transitioning from phase I to II and thus producing all three xylem cell types, parenchyma, fibres and vessels (Fig. 1a and Extended Data Fig. 1a).",
+            "text_zh": "在这项研究中，我们使用了30天龄的拟南芥根，这些根正在从I期过渡到II期，因此产生了所有三种木质部细胞类型，薄壁细胞，纤维和血管（图1a和扩展数据图1a）。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 23,
+            "text": "Furthermore, lineage tracing analysis suggests that mature phloem parenchyma cells can change their cell identity to replenish the barrier upon injury.",
+            "text_zh": "此外，谱系示踪分析表明，成熟韧皮部薄壁细胞可以改变其细胞身份，以补充损伤后的屏障。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 25,
+            "text": "To explore cell type diversity during root secondary growth, we produced an scRNA-seq atlas.",
+            "text_zh": "为了探索根次生生长过程中的细胞类型多样性，我们制作了scRNA-seq图谱。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 2,
+            "text": "By analysing 93 reporter lines, we were able to identify 20 different cell types or cell states, many of which have not been described before.",
+            "text_zh": "通过分析93个报告系，我们能够鉴定出20种不同的细胞类型或细胞状态，其中许多以前没有被描述过。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 181,
+            "text": "Cell type classification was based on previous reports and data presented 10 (Fig. 1b).",
+            "text_zh": "细胞类型分类基于先前的报告和数据10（图1b）。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 1,
+            "text": "Here we combined single-cell RNA sequencing analysis with lineage tracing to recreate developmental trajectories of the cell types in the Arabidopsis root undergoing secondary growth."
+          },
+          {
+            "sentence_id": 43,
+            "text": "We generated and validated a transcriptome atlas of the Arabidopsis root undergoing secondary growth, allowing us to reveal shared and unique regulatory mechanisms driving vascular cambium and/or phellogen activity."
+          },
+          {
+            "sentence_id": 23,
+            "text": "Furthermore, lineage tracing analysis suggests that mature phloem parenchyma cells can change their cell identity to replenish the barrier upon injury."
+          }
+        ],
+        "sentence_ids": [
+          1,
+          43,
+          23
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "addition",
+          "level2": "significance_addition"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文未使用「首次绘制」；「薄壁细胞非细胞自主调控输导组织发育」无直接支持；「伤害诱导的周皮转化」仅见于 lineage tracing 提及 phloem parenchyma → barrier replenishment，未提 periderm/cork cambium 转化。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1（首次绘制单细胞图谱）：sentence_id=1 描述 'combined scRNA-seq with lineage tracing to recreate trajectories'，未含 'first' 或 'first atlas'；sentence_id=43 提及 'generated and validated a transcriptome atlas'，亦无 'first'。分句2（揭示动态分化与功能多样性）：sentence_id=24 'diverse and dynamic nature of parenchyma cells' 和 sentence_id=25 'produced an scRNA-seq atlas' 可支撑，但属合理压缩。分句3（薄壁细胞非细胞自主调控输导组织）：全文无 'non-cell-autonomous regulation of vascular tissue development' 表述；closest 是 sentence_id=43 'shared and unique regulatory mechanisms driving vascular cambium and/or phellogen activity' —— 主体为 cambium/phellogen 自身调控，非 parenchyma 对其调控。分句4（环境响应可塑性：伤害诱导周皮转化）：sentence_id=23 提到 'mature phloem parenchyma cells can change their cell identity to replenish the barrier upon injury'，其中 'barrier' 指 periderm-like structure，但未明确 'periderm formation'、'cork cambium activation' 或 'wounding-induced periderm conversion'；图注或方法中可能有更细描述（retrieval_hint 指向图号/锚），但 top-5 与 review pool 中 rank 1–10 均未出现该机制表述。",
+        "classification_reason": "‘首次绘制’属于 significance_addition：paper_expression='generated and validated a transcriptome atlas' / 'produced an scRNA-seq atlas' vs article_expression='首次绘制' —— '首次'赋予优先权与突破性意义，论文未宣称；而 context_omission 指删减关键限定，此处是添加未声明的元属性，故 primary=significance_addition。非细胞自主调控属 mechanism_substitution 的潜在候选，但因论文完全未提 parenchyma→vascular regulation 关系，实为无依据添加，故不归 substitution 而归 addition（function_application_addition 的变体：将 parenchyma 功能扩展至跨组织调控）。'伤害诱导的周皮转化' 属 evidence_uncertainty_omission 的干扰项，但主干缺失支撑，故不单独标 omission，而是强化 significance_addition 的覆盖范围（将 injury response 升格为明确的 periderm 转化事件）。",
+        "key_differences": [
+          {
+            "type": "significance_addition",
+            "paper_expression": "We generated and validated a transcriptome atlas... allowing us to reveal shared and unique regulatory mechanisms...",
+            "article_expression": "该研究不仅首次绘制了拟南芥根次生生长单细胞转录图谱",
+            "description": "论文使用中性动词 'generated and validated'，未加 'first' 限定；公众号添加「首次」赋予原创性断言，属意义层面添加。"
+          },
+          {
+            "type": "context_omission",
+            "paper_expression": "mature phloem parenchyma cells can change their cell identity to replenish the barrier upon injury",
+            "article_expression": "伤害诱导的周皮转化",
+            "description": "论文仅提 'replenish the barrier'（屏障再生），未确认该 barrier 即周皮（periderm），亦未提 cork cambium 激活或木质部/韧皮部外周组织向周皮的转分化；公众号将模糊屏障再生明确替换为解剖学确定的「周皮转化」，删减了原文的不确定性语境。"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [
+            23,
+            28
+          ],
+          "notes": "rank7 (id=23) supports injury response but lacks periderm terminology；rank6 (id=28) gives developmental context but no injury mechanism；retrieval_hint confirms wounding-induced periderm formation missing from top-5"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "likely_retrieval_miss",
+          "reasoning": "缺明确表述 'wounding-induced periderm formation' 或 'cork cambium activation upon injury'（尤其图注 b/c 面板或 Extended Data Fig. X 中可能含该描述）",
+          "suggested_keywords": [
+            "wounding-induced",
+            "periderm formation",
+            "cork cambium activation"
+          ],
+          "suggested_sentence_ranges": "Fig. 2b/c legend; Extended Data Fig. 5 caption; Methods section on injury assay"
+        },
+        "manual_check_hints": "核对 id=1（图谱构建）、id=43（atlas 生成与机制揭示）、id=23（损伤响应）；重点检查图注是否含 'periderm' 或 'cork cambium' 相关描述。 脚本标记: 分析引用了但未列入 gold: 24,25",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label",
+          "uncovered_phenomenon"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P007-A001-C11",
+      "paper_id": "P007",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "该研究成果对农作物抗逆育种、林木木材形成及块根类作物贮藏组织改良具有重要参考价值。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 247,
+            "text": "Storage organs consist of specialized secondary tissue produced by vascular cambium of several important crop species, such as cassava and sweet potato47,48."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 247,
+            "text": "Storage organs consist of specialized secondary tissue produced by vascular cambium of several important crop species, such as cassava and sweet potato47,48.",
+            "text_zh": "储存器官由几种重要作物的维管形成层产生的特殊次生组织组成，如木薯和甘薯47,48。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [],
+        "sentence_ids": [],
+        "is_answerable": false
+      },
+      "gold_classification": {
+        "evidence_level": "No_Evidence",
+        "has_distortion": null,
+        "primary_label": null,
+        "secondary_label": null,
+        "severity": null,
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文未提及抗逆育种、林木木材形成、贮藏组织改良等应用价值；核心断言在全文中无对应表述"
+      },
+      "analysis": {
+        "evidence_judgement": "claim 包含三个并列应用方向：①农作物抗逆育种；②林木木材形成；③块根类作物贮藏组织改良。review_evidences 中 rank1（id=247）仅描述贮藏器官由维管形成层产生，并列举木薯和甘薯，未提‘改良’；未覆盖‘抗逆育种’‘木材形成’；top-5 仅含 id=247，其余 rank2–5 未提供；补检关键词 wood formation, abiotic stress resistance, cambium regulation, crop 在 retrieval_hint 中明确提示语义检索未覆盖，且无 sentence_id 支持。",
+        "classification_reason": "因论文全文未出现任何关于育种应用、木材形成机制或组织改良意义的陈述，该 claim 属于论文完全未涉及的外推，不可核验；不满足 With_Evidence 前提，故不适用 addition/omission/substitution 等失真标签。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "top-5 仅 id=247，无其他相关句；review pool 未扩展"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "likely_retrieval_miss",
+          "reasoning": "缺 wood formation 相关句（如 vascular cambium → xylem differentiation）、abiotic stress resistance 相关句（如 drought/salt response in cambium）、cambium regulation in breeding context；补检关键词均未命中，且论文 Methods/Results/Discussion 中未见对应论述。",
+          "suggested_keywords": [
+            "wood formation",
+            "abiotic stress resistance",
+            "cambium regulation",
+            "crop"
+          ],
+          "suggested_sentence_ranges": "Discussion section, especially paragraphs discussing translational potential or future applications"
+        },
+        "manual_check_hints": "执行动作：通读 Discussion 全文，重点查找含 'breeding', 'wood', 'xylem', 'stress', 'application' 的句子；核查参考文献47/48原文是否被引申。 脚本标记: 分析引用了但未列入 gold: 247",
+        "needs_manual_review": true,
+        "review_focus": [
+          "evidence_level",
+          "gold_sentence_ids"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    }
+  ],
+  "review_queue": {
+    "must_review_sample_ids": [
+      "P007-A001-C01",
+      "P007-A001-C02",
+      "P007-A001-C03",
+      "P007-A001-C04",
+      "P007-A001-C05",
+      "P007-A001-C06",
+      "P007-A001-C07",
+      "P007-A001-C08",
+      "P007-A001-C09",
+      "P007-A001-C10",
+      "P007-A001-C11"
+    ],
+    "notes": ""
+  }
+}

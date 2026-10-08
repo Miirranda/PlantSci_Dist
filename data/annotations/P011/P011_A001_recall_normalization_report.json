@@ -1,0 +1,296 @@
+{
+  "paper_id": "P011",
+  "generated_at": "2026-09-25 10:25:02",
+  "model": "qwen-plus",
+  "claims": [
+    {
+      "sample_id": "P011-A001-C11",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 1,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": false,
+      "term_link_count": 0,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P011-A001-C12",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 1,
+      "auto_edits": [
+        {
+          "where": "gold:18",
+          "rule": "comma_cite",
+          "removed": "40,41",
+          "start": 253,
+          "end": 258,
+          "context": "biotic nitrogen fixation40,41."
+        }
+      ],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 4,
+      "term_gap_count": 1
+    },
+    {
+      "sample_id": "P011-A001-C13",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 1,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": false,
+      "term_link_count": 0,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P011-A001-C14",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 6,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 3,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P011-A001-C15",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 7,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 3,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P011-A001-C16",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 5,
+      "auto_edits": [
+        {
+          "where": "manual:0",
+          "rule": "comma_cite",
+          "removed": "1,30–33",
+          "start": 320,
+          "end": 327,
+          "context": "biotic nitrogen fixation1,30–33. Our observatio"
+        }
+      ],
+      "citation_queue": [
+        {
+          "where": "gold:290",
+          "rule": "hyphen_number",
+          "surface": "nodulation42–44",
+          "start": 258,
+          "end": 263,
+          "context": "observations in Lupinus nodulation42–44."
+        }
+      ],
+      "term_table_needed": false,
+      "term_link_count": 0,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P011-A001-C17",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 3,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": false,
+      "term_link_count": 0,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P011-A001-C18",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 6,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 3,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P011-A001-C19",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 2,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 2,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P011-A001-C20",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 5,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 3,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P011-A001-C21",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 2,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 2,
+      "term_gap_count": 1
+    },
+    {
+      "sample_id": "P011-A001-C22",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 3,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 3,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P011-A001-C23",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 4,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 4,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P011-A001-C24",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 4,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 3,
+      "term_gap_count": 1
+    },
+    {
+      "sample_id": "P011-A001-C25",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 5,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 4,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P011-A001-C26",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 4,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 3,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P011-A001-C28",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 4,
+      "auto_edits": [
+        {
+          "where": "manual:0",
+          "rule": "comma_cite",
+          "removed": "56,57",
+          "start": 124,
+          "end": 129,
+          "context": "ively regulate Fe uptake56,57. In soybean, bo"
+        }
+      ],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 3,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P011-A001-C29",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 11,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 6,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P011-A001-C31",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 3,
+      "auto_edits": [],
+      "citation_queue": [
+        {
+          "where": "manual:0",
+          "rule": "hyphen_number",
+          "surface": "MtNSP1–4",
+          "start": 274,
+          "end": 277,
+          "context": "en by the UBI promoter. MtNSP1–4×MYC and LjNSP1–"
+        },
+        {
+          "where": "manual:0",
+          "rule": "hyphen_number",
+          "surface": "LjNSP1–4",
+          "start": 291,
+          "end": 294,
+          "context": "moter. MtNSP1–4×MYC and LjNSP1–4×MYC completely "
+        }
+      ],
+      "term_table_needed": true,
+      "term_link_count": 5,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P011-A001-C32",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 6,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 4,
+      "term_gap_count": 0
+    },
+    {
+      "sample_id": "P011-A001-C33",
+      "reviewer": "牟德兰",
+      "api_status": "ok",
+      "unit_count": 1,
+      "auto_edits": [],
+      "citation_queue": [],
+      "term_table_needed": true,
+      "term_link_count": 1,
+      "term_gap_count": 0
+    }
+  ],
+  "auto_edit_count": 3,
+  "queue_count": 3,
+  "api_ok": 21,
+  "api_failed": 0,
+  "api_reused": 0
+}

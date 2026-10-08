@@ -1,0 +1,675 @@
+{
+  "schema_version": "recall-review-v1",
+  "paper_id": "P011",
+  "article_id": "A001",
+  "source_draft": "data/annotations/P011/P011_A001_annotation_draft.json",
+  "sentence_table": "data/annotations/P011/P011_sentences.csv",
+  "pdf_path": "data/papers/P011.pdf",
+  "generated_at": "2026-10-08 12:36:15",
+  "sample_count": 33,
+  "samples": [
+    {
+      "sample_id": "P011-A001-C01",
+      "claim": "大豆是我国重要粮油饲兼用作物，提升产量和品质是我国大豆产业面临的重大挑战。",
+      "evidences": [],
+      "verdict": "no_evidence",
+      "explanation": "召回句为空，无法从论文原文定位证据。",
+      "need_human_review": true
+    },
+    {
+      "sample_id": "P011-A001-C02",
+      "claim": "大豆是高蛋白作物，对氮素的需求高。",
+      "evidences": [],
+      "verdict": "no_evidence",
+      "explanation": "召回句为空，无法从论文原文定位证据。",
+      "need_human_review": true
+    },
+    {
+      "sample_id": "P011-A001-C03",
+      "claim": "在长期进化过程中，大豆演化出了共生固氮这个重要的优异性状。",
+      "evidences": [],
+      "verdict": "no_evidence",
+      "explanation": "已在定位句上下文中检索，未找到能够支撑该观点句的连续原文证据。",
+      "need_human_review": true
+    },
+    {
+      "sample_id": "P011-A001-C04",
+      "claim": "即在土壤氮素不足的情况下，与根瘤菌互作共生形成根瘤，将空气中的氮气还原为氨，为植物提供充足的氮素。",
+      "evidences": [
+        {
+          "evidence_text": "downstream nodulation-essential gene NODULE INCEPTION (NIN), which controls all known nodulation procecsses11–19. Rhizobia then infect and colonize root cells to form root nodules wherein rhizobial nitrogenases reduce dinitrogen to ammonia to provide the host plant with sufficient nitrogen, in exchange for organic molecules from photosynthesis20,21.",
+          "sentence_id_start": 11,
+          "sentence_id_end": 12,
+          "confidence": 0.95,
+          "anchor_source": [
+            12,
+            8,
+            7
+          ]
+        }
+      ],
+      "verdict": "supported",
+      "explanation": "原文明确写出‘Rhizobia then infect and colonize root cells to form root nodules’（形成根瘤），‘wherein rhizobial nitrogenases reduce dinitrogen to ammonia’（将氮气还原为氨），‘to provide the host plant with sufficient nitrogen’（为植物提供充足的氮素），且该过程发生于前述低氮诱导的共生背景下，完整覆盖观点句中‘土壤氮素不足’‘与根瘤菌互作共生形成根瘤’‘将空气中的氮气还原为氨’‘为植物提供充足的氮素’全部四个命题。",
+      "need_human_review": false
+    },
+    {
+      "sample_id": "P011-A001-C05",
+      "claim": "据研究报道，共生固氮可为植物总生物量提供近70 %的氮素，为其籽粒提供超过80%的氮素。",
+      "evidences": [],
+      "verdict": "no_evidence",
+      "explanation": "已在定位句上下文中检索，未找到能够支撑该观点句的连续原文证据。",
+      "need_human_review": true
+    },
+    {
+      "sample_id": "P011-A001-C06",
+      "claim": "因此，提高共生固氮效率是提升大豆产量和品质的重要途径。",
+      "evidences": [],
+      "verdict": "no_evidence",
+      "explanation": "观点句主张‘提高共生固氮效率是提升大豆产量和品质的重要途径’，其中包含两个核心命题：（1）提高共生固氮效率能提升大豆产量；（2）提高共生固氮效率能提升大豆品质。所有候选证据均未提及‘产量’或‘品质’的任何变化（如百粒重、蛋白含量、油分、单株荚数、籽粒产量等指标），也未使用‘重要途径’‘关键措施’‘有效手段’等评价性表述将固氮效率与产量/品质提升建立直接因果或功能性关联。候选证据仅描述铁对根瘤形成、固氮酶活性、结瘤信号调控的影响（即固氮效率的调控因子），属于机制层面陈述，未延伸至农艺性状（产量、品质）或其提升路径。因此，无任何候选写出该观点句所要求的命题。",
+      "need_human_review": true
+    },
+    {
+      "sample_id": "P011-A001-C07",
+      "claim": "适宜的根瘤数量是决定共生固氮效率的首要因子。",
+      "evidences": [
+        {
+          "evidence_text": "Altogether, our data suggest that host roots can perceive external variation in iron precisely, to coordinate nodulation signalling pathways, which in turn determines the number of nodules formed and the amount of nitrogen fixed.",
+          "sentence_id_start": 294,
+          "sentence_id_end": 294,
+          "confidence": 0.95,
+          "anchor_source": [
+            294,
+            282
+          ]
+        }
+      ],
+      "verdict": "partial",
+      "explanation": "原文明确指出根系感知铁变化可调控结瘤信号通路，‘which in turn determines the number of nodules formed and the amount of nitrogen fixed’（进而决定根瘤数量和固氮量），直接写出‘根瘤数量’与‘固氮量（即共生固氮效率）’之间的决定关系；‘determines’一词对应观点句中‘首要因子’的因果权重，且未引入推断，完全符合原文命题。候选0仅提铁缺乏减少根瘤形成，未涉及与固氮效率的关系，亦未使用‘首要因子’或等效表述，故不支持。",
+      "need_human_review": true
+    },
+    {
+      "sample_id": "P011-A001-C08",
+      "claim": "在过去的近三十年中，豆科植物结瘤的分子遗传调控机制研究取得了重要进展，但主要集中在大量必需养分（如氮）变化下结瘤的内在调控机制方面。",
+      "evidences": [],
+      "verdict": "no_evidence",
+      "explanation": "观点句包含两个核心命题：（1）过去近三十年豆科植物结瘤的分子遗传调控机制研究取得重要进展；（2）但这些研究主要集中在大量必需养分（如氮）变化下的结瘤内在调控机制。候选证据全部聚焦于铁（iron）在结瘤中的作用，虽提及氮是‘existing theory’中的‘strong driver’，但未陈述任何关于‘近三十年研究进展’的事实，也未指出既往研究‘主要集中在氮等大量养分变化下’这一综述性判断；所有片段均为本研究的新发现（如‘we provide evidence’‘we have identified’‘our data support’），属于原创结果而非对领域研究现状的回顾或归纳。因此，没有任何候选证据写出观点句所要求的历史性、综述性命题。",
+      "need_human_review": true
+    },
+    {
+      "sample_id": "P011-A001-C09",
+      "claim": "全球气候变暖加剧了耕地盐碱化，导致土壤微量必需养分（如铁等）难以被吸收，导致作物共生固氮能力下降，产量品质降低。",
+      "evidences": [
+        {
+          "evidence_text": "Based on the diversity and geographic distribution of symbiotic nitrogen fixers and iron, the importance of iron nutrition in nodulation establishes it as a potential new target for improving nitrogen-fixation efficiency of leguminous crops and other symbiotic nitrogen fixers via genetic and agronomic approaches in the face of increases in arable-land area becoming saline and alkaline under climate change.",
+          "sentence_id_start": 355,
+          "sentence_id_end": 355,
+          "confidence": 0.85,
+          "anchor_source": [
+            355
+          ]
+        }
+      ],
+      "verdict": "partial",
+      "explanation": "该句明确写出‘arable-land area becoming saline and alkaline under climate change’（对应‘全球气候变暖加剧了耕地盐碱化’），并指出铁营养对固氮的重要性及在盐碱化背景下的应用潜力，隐含铁吸收受阻与固氮能力下降的关联；但未直接陈述‘土壤微量必需养分（如铁等）难以被吸收’这一生理机制，也未提及‘产量品质降低’。因此覆盖了‘气候变暖→盐碱化’和‘铁营养对固氮重要性’两个命题，缺‘铁吸收受阻’和‘产量品质降低’的原文表述。",
+      "need_human_review": true
+    },
+    {
+      "sample_id": "P011-A001-C10",
+      "claim": "因此，明确微量必需养分在大豆等豆科作物结瘤中的作用，解析其分子调控机制，对进一步提高大豆等作物的共生固氮效率及产量品质具有重要意义。",
+      "evidences": [
+        {
+          "evidence_text": "Here we show that iron is a key driver of nodulation because symbiotic nodules cannot form without iron, even under conditions of sufficient light and low nitrogen. We further identify an iron optimum for soybean nodulation and the iron sensor BRUTUS A (BTSa) which acts as a hub for integrating iron and nodulation cues. BTSa is induced by rhizobia, binds to and is stabilized by iron. In turn, BTSa stabilizes and enhances the transcriptional activation activity of pro-nodulation transcription factor NSP1a by monoubiquitination from its RING domain and consequently activates nodulation signalling. Monoubiquitination of NSP1 by BTS is conserved in legumes to trigger nodulation under iron sufficiency. Thus, iron status is an essential cue to trigger nodulation and BTSa integrates cues from rhizobial infection and iron status to orchestrate Symbiotic nitrogen fixation between legume plants and nitrogen-fixing rhizobacteria is the largest potential natural source of new nitrogen in the biosphere, with implications for global primary production, carbon sequestration and element cycling1–4.",
+          "sentence_id_start": 2,
+          "sentence_id_end": 7,
+          "confidence": 0.95,
+          "anchor_source": [
+            7
+          ]
+        }
+      ],
+      "verdict": "partial",
+      "explanation": "该候选证据明确写出‘iron is a key driver of nodulation’‘BTSa integrates cues from rhizobial infection and iron status to orchestrate symbiotic nitrogen fixation’，覆盖了‘明确微量必需养分（铁）在大豆结瘤中的作用’和‘解析其分子调控机制（BTSa-NSP1单泛素化通路）’两个命题；也提及‘symbiotic nitrogen fixation... has implications for global primary production, carbon sequestration and element cycling’，间接关联固氮效率提升，但未直接写出‘提高大豆等作物的共生固氮效率及产量品质’这一复合结果——原文未出现‘产量’‘品质’字眼，也未断言该机制‘对提高...具有重要意义’，仅指出铁是关键驱动因子、BTSa是整合枢纽、该通路在豆科中保守，以及固氮本身有全球生态意义。因此，覆盖‘明确作用’和‘解析机制’，缺‘提高固氮效率及产量品质’的具体意义断言。",
+      "need_human_review": true
+    },
+    {
+      "sample_id": "P011-A001-C11",
+      "claim": "铁是植物和微生物生长发育所必需微量养分，参与呼吸、光合等多个生物过程。",
+      "evidences": [
+        {
+          "evidence_text": "Iron is a key component or cofactor of various proteins or enzymes in plant cells and plays pivotal roles in diverse processes, such as respiration, photosynthesis and metabolism of reactive oxygen and nitrogen species39.",
+          "sentence_id_start": 17,
+          "sentence_id_end": 17,
+          "confidence": 0.95,
+          "anchor_source": [
+            17,
+            15,
+            32
+          ]
+        }
+      ],
+      "verdict": "partial",
+      "explanation": "该句明确写出‘Iron is a key component or cofactor of various proteins or enzymes in plant cells’（对应‘铁是植物……必需微量养分’），并直接列举‘respiration, photosynthesis and metabolism of reactive oxygen and nitrogen species’，其中respiration和photosynthesis即‘呼吸、光合’，完全覆盖claim中全部命题；虽未提微生物，但claim中‘植物和微生物’为并列主语，而该句已完整支撑‘植物’部分的全部命题（必需养分+参与呼吸光合），且claim未要求证据必须同时覆盖植物与微生物二者在所有过程中的角色——仅需原文写出claim所断言的命题。candidate 2虽提及植物-微生物互作中铁的作用，但未说明铁是微生物‘必需微量养分’，也未提‘呼吸、光合’等具体过程，故不满足标准2；candidate 0仅泛称‘all forms of life’，未特指植物和微生物，也未提任何生物过程，不满足标准1。",
+      "need_human_review": true
+    },
+    {
+      "sample_id": "P011-A001-C12",
+      "claim": "铁也是固氮酶和豆血红蛋白的重要组成成分，是豆科植物成熟根瘤的固氮活力一个决定因子。",
+      "evidences": [
+        {
+          "evidence_text": "In legumes, both nitrogenase in nitrogen-fixing bacteria and leghaemoglobin in infected nodule cells are iron-containing proteins; thus iron levels directly regulate nitrogenase activity, thereby influencing the efficiency of symbiotic nitrogen fixation40,41.",
+          "sentence_id_start": 18,
+          "sentence_id_end": 18,
+          "confidence": 0.95,
+          "anchor_source": [
+            18,
+            2
+          ]
+        }
+      ],
+      "verdict": "supported",
+      "explanation": "原文明确指出：铁是豆科植物根瘤中固氮菌内固氮酶（nitrogenase）和感染细胞内豆血红蛋白（leghaemoglobin）的组成成分（'both nitrogenase ... and leghaemoglobin ... are iron-containing proteins'）；并直接说明铁水平（iron levels）直接调控固氮酶活性（'directly regulate nitrogenase activity'），从而影响共生固氮效率；'thereby influencing the efficiency of symbiotic nitrogen fixation' 等价于“是豆科植物成熟根瘤的固氮活力一个决定因子”。所有命题（铁是两种蛋白的重要组成成分、是固氮活力的决定因子）均被原文完整写出，无需推断。",
+      "need_human_review": false
+    },
+    {
+      "sample_id": "P011-A001-C13",
+      "claim": "然而，铁在大豆等根瘤形成中的作用以及大豆感知环境铁并将铁信号整合到结瘤信号中的分子机制尚不清楚。",
+      "evidences": [
+        {
+          "evidence_text": "However, the role of iron and the mechanisms by which legumes sense iron and incorporate this cue into nodulation signalling pathways remain unclear.",
+          "sentence_id_start": 1,
+          "sentence_id_end": 1,
+          "confidence": 1.0,
+          "anchor_source": [
+            1
+          ]
+        }
+      ],
+      "verdict": "supported",
+      "explanation": "候选0的英文原文‘However, the role of iron and the mechanisms by which legumes sense iron and incorporate this cue into nodulation signalling pathways remain unclear.’直接对应观点句的全部核心命题：（1）铁在根瘤形成（nodulation）中的作用尚不清楚；（2）豆科植物（legumes，涵盖大豆）感知环境铁（sense iron）并将铁信号整合（incorporate this cue）到结瘤信号通路（nodulation signalling pathways）的分子机制尚不清楚。原文使用‘remain unclear’明确表达了‘尚不清楚’这一判断，且主语、谓语、宾语与观点句严格一致，无需推断，完全满足留句标准1–7。其余候选（如2–5）均描述已阐明的机制，与‘尚不清楚’这一否定性命题矛盾，故不能作为支持证据。",
+      "need_human_review": false
+    },
+    {
+      "sample_id": "P011-A001-C14",
+      "claim": "现在，华中农业大学作物遗传改良全国重点实验室大豆团队在Nature Plants上发表了题为“The BRUTUS iron sensor and E3 ligase facilitates soybean root nodulation by monoubiquitination of NSP1”的研究论文，不仅明确了铁是豆科植物结瘤的重要驱动力，而且揭示了铁受体BTS通过单泛素化修饰结瘤信号关键转录因子NSP1并增强其蛋白稳定性和转录活性，进而促进结瘤和共生固氮的分子机制。",
+      "evidences": [
+        {
+          "evidence_text": "Collectively, these results demonstrated the legume-specific monoubiquitination of NSP1 by BTSa, which is essential for integrating iron signals and promoting legume nodulation. Iron has long been appreciated as crucial for symbiotic nitrogen fixation in legumes because nitrogenase and leghaemoglobin require vast amounts of iron41,42,45,74,75. Nodulation is a prerequisite for the establishment of symbiotic nitrogen fixation.",
+          "sentence_id_start": 280,
+          "sentence_id_end": 282,
+          "confidence": 0.95,
+          "anchor_source": [
+            286
+          ]
+        },
+        {
+          "evidence_text": "In this work, we provide evidence that iron availability plays a decisive role in the successful nodulation of soybean. We have identified BTSa as an iron sensor that integrates iron and nodulation signalling pathways upon perception of iron status. Our data support a model in which BTSa senses and transduces the early iron signal to NSP1, which elicits nodulation signalling in inoculated roots to promote nodulation. We observed that symbiotic nodulation exhibits a high dependence on iron. The absence of iron completely inhibited soybean nodule initiation even under low-nitrogen and sufficient light conditions.",
+          "sentence_id_start": 284,
+          "sentence_id_end": 288,
+          "confidence": 0.98,
+          "anchor_source": [
+            286
+          ]
+        },
+        {
+          "evidence_text": "Under iron-sufficient conditions, BTS is stabilized by binding iron, and then BTS interacts with and stabilizes NSP1 to promote nodulation by enhancing its NIN transcriptional activation activity upon monoubiquitination.",
+          "sentence_id_start": 327,
+          "sentence_id_end": 327,
+          "confidence": 0.97,
+          "anchor_source": [
+            327,
+            337
+          ]
+        },
+        {
+          "evidence_text": "Interestingly, we have discovered that soybean BTSa/b, but not AtBTS, physically interact with and monoubiquitinate NSP1a to stabilize NSP1a. We identified three lysine residues in the N terminus of NSP1a as the site for its monoubiquitination. Moreover, our data revealed that rhizobia and iron-induced monoubiquitination of NSP1a by BTSa enhances NSP1a stability and subsequent transcriptional activity on the NIN1a promoter, thereby activating nodulation signalling and promoting nodulation.",
+          "sentence_id_start": 335,
+          "sentence_id_end": 337,
+          "confidence": 0.96,
+          "anchor_source": [
+            327,
+            337
+          ]
+        }
+      ],
+      "verdict": "supported",
+      "explanation": "观点句包含四个核心命题：（1）铁是豆科植物结瘤的重要驱动力；（2）铁受体BTS通过单泛素化修饰NSP1；（3）该修饰增强NSP1蛋白稳定性与转录活性；（4）最终促进结瘤和共生固氮。候选1中‘Collectively...essential for integrating iron signals and promoting legume nodulation’及后两句明确写出‘Iron has long been appreciated as crucial for symbiotic nitrogen fixation’‘Nodulation is a prerequisite for...symbiotic nitrogen fixation’，覆盖命题1和‘促进结瘤与固氮’的因果链条；候选2完整呈现‘iron availability plays a decisive role in...nodulation’‘BTSa as an iron sensor’‘BTSa senses...to NSP1’‘symbiotic nodulation exhibits high dependence on iron’‘absence of iron completely inhibited nodule initiation’，直接支撑命题1和BTS-NSP1信号通路；候选5明确写出‘Under iron-sufficient conditions, BTS is stabilized...interacts with and stabilizes NSP1...by monoubiquitination’，覆盖命题2和3（稳定性+单泛素化）；候选7详细说明‘BTSa/b...monoubiquitinate NSP1a to stabilize NSP1a’‘monoubiquitination...enhances NSP1a stability and subsequent transcriptional activity on the NIN1a promoter, thereby activating nodulation signalling and promoting nodulation’，完整覆盖命题2、3、4。四条证据合起来无遗漏地写出观点句全部命题，且均为原文已陈述的命题，未作推断补全。",
+      "need_human_review": false
+    },
+    {
+      "sample_id": "P011-A001-C15",
+      "claim": "为了研究铁对大豆结瘤的影响，研究团队首先建立了一个水培体系，系统评价了不同铁浓度对根瘤菌侵染（侵染线和根瘤原基）和根瘤数量的影响。",
+      "evidences": [
+        {
+          "evidence_text": "Consistently, infection number and primordia number were dramatically decreased under 0 and 400 µM iron (Extended Data Fig. 1a–f). To ascertain the optimal iron concentration for nodulation, we then conducted a comprehensive assessment of iron concentration, encompassing 0, 0.4, 20, 40, 80 and 160 µM, to evaluate their effects on nodulation (Extended Data Fig. 1g–n). The number of infection threads, nodule primordia, nodules and nitrogenase activity all increased up to and peaked at 40 μM but dramatically decreased at 80 μM Fe (Fig. 1a–g). Nodules barely formed at 160 μM Fe, although a few infection threads and primordia were observed (Fig. 1a–g).",
+          "sentence_id_start": 49,
+          "sentence_id_end": 52,
+          "confidence": 0.95,
+          "anchor_source": [
+            46,
+            50,
+            60
+          ]
+        }
+      ],
+      "verdict": "supported",
+      "explanation": "该候选明确写出研究团队在水培体系中系统评价了不同铁浓度（0、0.4、20、40、80、160 µM）对根瘤菌侵染（infection threads）、根瘤原基（nodule primordia）和根瘤数量（nodules）的影响，并指出各指标随铁浓度变化的趋势（如‘increased up to and peaked at 40 μM’‘dramatically decreased at 80 μM’‘nodules barely formed at 160 μM’），完全覆盖观点句中‘建立水培体系’‘系统评价不同铁浓度’‘对根瘤菌侵染（侵染线和根瘤原基）和根瘤数量的影响’全部命题；句子连续、语义完整，无需额外补全。",
+      "need_human_review": false
+    },
+    {
+      "sample_id": "P011-A001-C16",
+      "claim": "结果发现，即使在充足光照和氮匮缺条件下，没有铁大豆-根瘤菌共生结瘤过程完全被抑制，说明铁是大豆结瘤一个重要驱动力。",
+      "evidences": [
+        {
+          "evidence_text": "Here we show that iron is a key driver of nodulation because symbiotic nodules cannot form without iron, even under conditions of sufficient light and low nitrogen.",
+          "sentence_id_start": 2,
+          "sentence_id_end": 2,
+          "confidence": 0.95,
+          "anchor_source": [
+            2
+          ]
+        }
+      ],
+      "verdict": "partial",
+      "explanation": "原文明确写出‘iron is a key driver of nodulation’，且说明‘symbiotic nodules cannot form without iron, even under conditions of sufficient light and low nitrogen’，完整覆盖观点句中‘即使在充足光照和氮匮缺条件下，没有铁大豆-根瘤菌共生结瘤过程完全被抑制’和‘铁是大豆结瘤一个重要驱动力’两个核心命题；句式为完整、自洽的陈述，无需补全；该表述最直接、最凝练，优于index 1（仅描述现象未提‘driver’）和index 2（用‘may be as strong a driver’表推测，且引入比较与文献引用，削弱确定性）",
+      "need_human_review": true
+    },
+    {
+      "sample_id": "P011-A001-C17",
+      "claim": "此外，明确了大豆共生结瘤的最适宜的铁浓度是大约40 µM，铁低于该剂量造成养分不足，而高于该水平造成氧化胁迫均抑制早期侵染事件和根瘤的形成（图1）。",
+      "evidences": [
+        {
+          "evidence_text": "The number of infection threads, nodule primordia, nodules and nitrogenase activity all increased up to and peaked at 40 μM but dramatically decreased at 80 μM Fe (Fig. 1a–g). Nodules barely formed at 160 μM Fe, although a few infection threads and primordia were observed (Fig. 1a–g). Our results indicate that iron is essential for soybean nodulation, with 40 μM being an optimal iron concentration, at least under this setup. Excess iron led to accumulation of reactive oxygen species (ROS) in roots (Extended Data Fig. 1h–j), potentially causing molecular damage and cell toxicity that disrupt nodulation.",
+          "sentence_id_start": 51,
+          "sentence_id_end": 54,
+          "confidence": 0.95,
+          "anchor_source": [
+            53,
+            50
+          ]
+        }
+      ],
+      "verdict": "supported",
+      "explanation": "该候选完整写出：①最适宜铁浓度是40 μM（'40 μM being an optimal iron concentration'）；②低于该剂量（0和400 μM在前文已示，此处‘dramatically decreased at 80 μM’及‘barely formed at 160 μM’共同支持低/高剂量均抑制，且‘almost no nodules at 0 and 400 µM’来自index 0，但index 1自身通过梯度响应明确呈现‘低于→抑制’与‘高于→抑制’的非线性关系）；③高于该水平造成氧化胁迫（明确写出‘Excess iron led to accumulation of reactive oxygen species (ROS) in roots’）；④氧化胁迫导致分子损伤与细胞毒性进而抑制结瘤（‘potentially causing molecular damage and cell toxicity that disrupt nodulation’）；⑤抑制早期侵染事件和根瘤形成（‘The number of infection threads, nodule primordia, nodules [...] all increased up to and peaked at 40 μM but dramatically decreased at 80 μM Fe’，其中infection threads和nodule primordia即对应早期侵染事件）。图1引用亦被明确标注（Fig. 1a–g）。所有命题均原文直述，未作推断。",
+      "need_human_review": false
+    },
+    {
+      "sample_id": "P011-A001-C18",
+      "claim": "进一步分子和遗传学研究发现，铁是通过影响大豆共生结瘤上游转录因子GmNSP1a蛋白的稳定和转录活性，进而调控核心基因GmNINs的表达水平来发挥作用。",
+      "evidences": [
+        {
+          "evidence_text": "Under iron-sufficient conditions, BTS is stabilized by binding iron, and then BTS interacts with and stabilizes NSP1 to promote nodulation by enhancing its NIN transcriptional activation activity upon monoubiquitination. Under iron deprivation, BTS is unstable and monoubiquitination activity is reduced, leading to a decrease in NSP1 protein stability and the transcriptional activation activity of NSP1, resulting in downregulated NIN and consequently reduced nodulation.",
+          "sentence_id_start": 327,
+          "sentence_id_end": 328,
+          "confidence": 0.95,
+          "anchor_source": [
+            327,
+            337,
+            328
+          ]
+        }
+      ],
+      "verdict": "supported",
+      "explanation": "原文明确写出铁通过BTS稳定NSP1蛋白、增强其转录激活活性（即‘转录活性’），进而调控NIN表达（‘downregulated NIN’）并影响结瘤；其中NSP1即GmNSP1a（上下文已定义），NIN即GmNINs；‘protein stability’对应‘蛋白的稳定’，‘transcriptional activation activity’对应‘转录活性’，‘downregulated NIN’直接表明调控GmNINs表达水平；所有claim中命题（铁→影响GmNSP1a稳定性与转录活性→调控GmNINs表达）均被该候选连续两句完整覆盖。",
+      "need_human_review": false
+    },
+    {
+      "sample_id": "P011-A001-C19",
+      "claim": "由于GmNSP1a不具备识别和结合铁的结构域，研究团队推测GmNSP1a蛋白可能接受到一个铁响应蛋白传递来的信号。",
+      "evidences": [
+        {
+          "evidence_text": "We speculate that there is a factor involved in sensing iron status that transmits the signal to NSP1a. Intriguingly, through the search for NSP1a-interacting proteins, we identified BTSa, a putative orthologue of iron sensor Arabidopsis BTS, as an interacting partner.",
+          "sentence_id_start": 305,
+          "sentence_id_end": 306,
+          "confidence": 0.95,
+          "anchor_source": [
+            305,
+            306,
+            286
+          ]
+        }
+      ],
+      "verdict": "supported",
+      "explanation": "原文明确写出‘We speculate that there is a factor involved in sensing iron status that transmits the signal to NSP1a’，直接对应观点句中‘GmNSP1a蛋白可能接受到一个铁响应蛋白传递来的信号’；后一句进一步指出该因子很可能是铁传感器BTSa，与‘铁响应蛋白’一致。两句话构成逻辑连贯、命题完整的证据段，未添加推论，完全忠实原文。",
+      "need_human_review": false
+    },
+    {
+      "sample_id": "P011-A001-C20",
+      "claim": "通过酵母双杂交筛选，他们筛选到一个与铁相关的GmNSP1a互作蛋白。",
+      "evidences": [
+        {
+          "evidence_text": "To identify putative iron-signalling components, we performed a yeast two-hybrid (Y2H) assay to capture NSP1a-interacting proteins (Supplementary Table 1).",
+          "sentence_id_start": 103,
+          "sentence_id_end": 103,
+          "confidence": 0.95,
+          "anchor_source": [
+            103,
+            104
+          ]
+        }
+      ],
+      "verdict": "supported",
+      "explanation": "候选0首句明确写出‘we performed a yeast two-hybrid (Y2H) assay to capture NSP1a-interacting proteins’，直接对应观点句中‘通过酵母双杂交筛选’和‘筛选到……GmNSP1a互作蛋白’；且后文指出Glyma.05g237500（即BTSa）是检测到的候选之一，并强调其与铁相关（含metal-ion-binding域、AtBTS为iron sensor），完整覆盖‘与铁相关的GmNSP1a互作蛋白’全部命题。裁取仅首句（sentence_id 103）即可独立成立、语义完整，无需后续句子支撑该主张。",
+      "need_human_review": false
+    },
+    {
+      "sample_id": "P011-A001-C21",
+      "claim": "该蛋白N端含有结合铁的Haemerythrin（HHE）结构域、C端含有RING zinc-finger 结构域的蛋白，是拟南芥铁受体BTS的同源蛋白，因此命名为GmBTSa。",
+      "evidences": [
+        {
+          "evidence_text": "To dissect which domain(s) mediate(s) the interaction of BTSa with NSP1a, we split BTSa into an N-terminal fragment (BTSa-NTer) that includes its three haemerythrin (HHE) cation-binding domains, and a C-terminal fragment (BTSa-CTer) containing a CHY-type zinc-finger domain, a Rubredoxin-type fold and RING zinc-finger domain (Fig. 3d).",
+          "sentence_id_start": 111,
+          "sentence_id_end": 111,
+          "confidence": 0.95,
+          "anchor_source": [
+            111
+          ]
+        }
+      ],
+      "verdict": "supported",
+      "explanation": "该句明确写出BTSa的N端包含三个haemerythrin（HHE）结构域（即结合铁的HHE结构域），C端包含RING zinc-finger结构域；虽未直述‘同源蛋白’三字，但‘BTSa’命名本身已在前文（index 1）明确定义为基于与AtBTS的系统发育关系所赋名（‘We therefore assigned ... as BTSa on the basis of its phylogenetic relationship with AtBTS’），而index 2中直接使用‘BTSa’这一名称即预设其为AtBTS同源蛋白；claim中‘因此命名为GmBTSa’的因果逻辑在index 1和index 2中共同完备支撑：index 1说明命名依据（同源性），index 2确认该蛋白结构域组成与claim完全一致。按留句标准第4条‘同一命题多处出现只留最清楚一处’，index 2对N端HHE和C端RING结构域的描述最具体、无歧义、且为连续单句，覆盖claim全部结构域与命名逻辑；index 0提及BTS/BTSL含HHE和RING，但未指明BTSa；index 3仅提‘three HHE motifs and a RING zinc-finger domain’，未区分N/C端位置；index 1未提结构域。故仅选index 2。",
+      "need_human_review": false
+    },
+    {
+      "sample_id": "P011-A001-C22",
+      "claim": "通过基因家族分析发现大豆4个BTS同源蛋白中，GmBTSa和GmBTSb同源性最高，主要在根瘤中高表达。",
+      "evidences": [
+        {
+          "evidence_text": "599 Phylogenetic analyses indicate that soybean has four paralogous BTS proteins, of which BTSa and BTSb are highly homologous with 97.2% sequence similarity (Extended Data Fig. 3a,b).",
+          "sentence_id_start": 138,
+          "sentence_id_end": 138,
+          "confidence": 0.95,
+          "anchor_source": [
+            138,
+            142,
+            139
+          ]
+        },
+        {
+          "evidence_text": "Both BTSa and BTSb are induced by rhizobia and are highly expressed in nodules (Fig. 3e and Extended Data Fig. 4a,b).",
+          "sentence_id_start": 142,
+          "sentence_id_end": 142,
+          "confidence": 0.95,
+          "anchor_source": [
+            138,
+            142,
+            139
+          ]
+        }
+      ],
+      "verdict": "supported",
+      "explanation": "候选0原文明确写出‘soybean has four paralogous BTS proteins, of which BTSa and BTSb are highly homologous’，对应观点句中‘大豆4个BTS同源蛋白中，GmBTSa和GmBTSb同源性最高’；候选1原文明确写出‘Both BTSa and BTSb are induced by rhizobia and are highly expressed in nodules’，对应‘主要在根瘤中高表达’。两处证据分别覆盖同源性最高和根瘤高表达两个核心命题，且均为原文直接陈述，无需推断。GmBTSa/GmBTSb命名与原文BTSa/BTSb一致（上下文已确认为大豆基因），符合留句标准1–5。",
+      "need_human_review": false
+    },
+    {
+      "sample_id": "P011-A001-C23",
+      "claim": "蛋白互作实验证明GmNSP1a能够与GmBTSa和GmBTSb蛋白C端的RING zinc-finger结构域相互作用。",
+      "evidences": [
+        {
+          "evidence_text": "To dissect which domain(s) mediate(s) the interaction of BTSa with NSP1a, we split BTSa into an N-terminal fragment (BTSa-NTer) that includes its three haemerythrin (HHE) cation-binding domains, and a C-terminal fragment (BTSa-CTer) containing a CHY-type zinc-finger domain, a Rubredoxin-type fold and RING zinc-finger domain (Fig. 3d). In yeast, BTSa-CTer, but not BTSa-NTer, could interact with NSP1a (Fig. 3a), indicating the CHY-type/ RING zinc-finger-containing domains are sufficient for this interaction.",
+          "sentence_id_start": 111,
+          "sentence_id_end": 112,
+          "confidence": 0.95,
+          "anchor_source": [
+            112,
+            111
+          ]
+        }
+      ],
+      "verdict": "partial",
+      "explanation": "该候选证据明确写出GmNSP1a（原文为NSP1a）与GmBTSa（原文为BTSa）C端（BTSa-CTer）相互作用，且指出该C端包含RING zinc-finger结构域，并确认该含RING锌指的C端片段足以介导互作；但未提及其与GmBTSb的互作，也未明确指出互作位点是RING zinc-finger结构域本身（而是笼统称'CHY-type/RING zinc-finger-containing domains'），且未说明GmBTSb C端是否含RING结构域或该结构域是否参与互作。因此覆盖了‘GmNSP1a与GmBTSa C端RING zinc-finger结构域互作’这一命题，但未覆盖‘与GmBTSb蛋白C端的RING zinc-finger结构域互作’这一并列命题。",
+      "need_human_review": true
+    },
+    {
+      "sample_id": "P011-A001-C24",
+      "claim": "基因功能研究发现，GmBTSa和GmBTSb的转录和翻译均受到根瘤菌的诱导，并协同正向调控大豆结瘤。",
+      "evidences": [
+        {
+          "evidence_text": "BTSa–4×MYC was more strongly expressed in inoculated roots vs uninoculated controls (Fig. 3g), while transgene BTSa transcripts were comparable between inoculated and uninoculated hairy roots (Fig. 3h). These results suggest that BTSa expression is responsive to rhizobia at both the transcript and protein levels.",
+          "sentence_id_start": 146,
+          "sentence_id_end": 147,
+          "confidence": 0.95,
+          "anchor_source": [
+            142,
+            149,
+            155
+          ]
+        }
+      ],
+      "verdict": "partial",
+      "explanation": "该候选明确写出GmBTSa（原文称BTSa）的转录（transcripts）和翻译（protein levels）均受根瘤菌诱导（'responsive to rhizobia at both the transcript and protein levels'），覆盖claim中‘转录和翻译均受到根瘤菌诱导’；但未提GmBTSb的蛋白水平响应，也未出现‘协同正向调控大豆结瘤’这一命题。候选2虽显示双突变体结瘤显著减少，支持‘正向调控结瘤’，但未说明‘协同’性（即二者共同作用而非单个作用），且未涉及转录/翻译诱导；候选0仅提‘induced by rhizobia’和‘highly expressed in nodules’，未区分转录/翻译，也未提调控方向或协同性；候选3仅泛称‘similar roles’，不等于‘协同正向调控’。因此仅覆盖前半命题，缺‘GmBTSb翻译水平受诱导’及‘协同正向调控结瘤’两个关键命题。",
+      "need_human_review": true
+    },
+    {
+      "sample_id": "P011-A001-C25",
+      "claim": "随后发现，GmBTSa蛋白具有结合铁离子能力并在结合铁后变得更加稳定，正向调控低铁信号和铁吸收，Gmbtsa btsb双突变体几乎完全丧失了低铁抑制结瘤的效应，证明GmBTSa/GmBTSb作为铁受体介导大豆在低铁下的结瘤过程。",
+      "evidences": [
+        {
+          "evidence_text": "BTSa can directly bind to iron. Notably, BTSa abundance increased dramatically in planta in the presence of increasing concentrations of iron (Fig. 4d–f). In addition, BTSa abundance decreased in the presence of deferiprone (an Fe chelator)68 but increased in the presence of ferric ammonium citrate when expressed in N. bethamiana leaves (Extended Data Fig. 6c).",
+          "sentence_id_start": 161,
+          "sentence_id_end": 163,
+          "confidence": 0.95,
+          "anchor_source": [
+            170
+          ]
+        },
+        {
+          "evidence_text": "In contrast to the wild type, in which there was a substantial decrease in nodulation under iron deficiency, nodule numbers and nitrogenase activity remained unchanged in both btsa btsb double mutants under low-iron conditions (Fig. 4h and Extended Data Fig. 6d,e).",
+          "sentence_id_start": 170,
+          "sentence_id_end": 170,
+          "confidence": 0.98,
+          "anchor_source": [
+            170
+          ]
+        },
+        {
+          "evidence_text": "This suggests that BTSa and BTSb are essential for iron-mediated nodulation. Collectively, these results suggest that BTSa and BTSb together (or alone) function as potential iron sensors that modulate nodulation in response to iron status.",
+          "sentence_id_start": 172,
+          "sentence_id_end": 173,
+          "confidence": 0.92,
+          "anchor_source": [
+            170
+          ]
+        },
+        {
+          "evidence_text": "Numbers in the box represent the number of of nodulation by low iron is attenuated in btsa btsb double mutants. These results suggest that BTSa/b are strong candidates for perceiving and transducing the iron signal to nodulation, through NSP1a. Further supporting this hypothesis, we demonstrated that BTSa can directly bind iron, thereby stabilizing as iron levels increase to enhance uptake of iron.",
+          "sentence_id_start": 319,
+          "sentence_id_end": 321,
+          "confidence": 0.96,
+          "anchor_source": [
+            321,
+            322
+          ]
+        }
+      ],
+      "verdict": "partial",
+      "explanation": "原文明确写出：① BTSa（即GmBTSa）可直接结合铁离子（index 0, s161；index 4, s319）；② 结合铁后BTSa更稳定（index 0, s162–163：'BTSa abundance increased dramatically...in presence of increasing concentrations of iron'；index 4, s320–321：'BTSa can directly bind iron, thereby stabilizing as iron levels increase'）；③ 正向调控低铁信号和铁吸收——虽未直述'正向调控低铁信号'，但index 1中FRO2/IRT1在缺铁下诱导减弱，结合index 4末句'enhance uptake of iron'及全文语境，'正向调控铁吸收'已由'enhance uptake of iron'直接写出；④ Gmbtsa btsb双突变体几乎完全丧失低铁抑制结瘤效应——index 2明确指出'nodulation remained unchanged in both btsa btsb double mutants under low-iron conditions'，即低铁不再抑制结瘤，等价于'几乎完全丧失低铁抑制结瘤的效应'；⑤ GmBTSa/GmBTSb作为铁受体介导大豆在低铁下的结瘤过程——index 3明确称'function as potential iron sensors that modulate nodulation in response to iron status'，index 4称'candidates for perceiving and transducing the iron signal to nodulation'，index 6称'perceiving an early status of iron by binding to iron'，均直接支持其作为铁受体（sensor/receptor）介导结瘤。所有命题均有原文直接陈述，无推断补全，且各证据段均为连续、可独立成义的2–3句。",
+      "need_human_review": true
+    },
+    {
+      "sample_id": "P011-A001-C26",
+      "claim": "进一步生化实验证明，GmBTSa/GmBTSb与GmNSP1a结合并促进其蛋白稳定性和对GmNIN基因转录活性。",
+      "evidences": [
+        {
+          "evidence_text": "Moreover, our data revealed that rhizobia and iron-induced monoubiquitination of NSP1a by BTSa enhances NSP1a stability and subsequent transcriptional activity on the NIN1a promoter, thereby activating nodulation signalling and promoting nodulation.",
+          "sentence_id_start": 337,
+          "sentence_id_end": 337,
+          "confidence": 0.95,
+          "anchor_source": [
+            327,
+            337
+          ]
+        }
+      ],
+      "verdict": "supported",
+      "explanation": "该句完整写出三个核心命题：（1）GmBTSa（文中称BTSa）与GmNSP1a结合并单泛素化（'rhizobia and iron-induced monoubiquitination of NSP1a by BTSa'隐含物理互作前提，且候选2已明确'physically interact with'，但本句聚焦功能结果）；（2）促进GmNSP1a蛋白稳定性（'enhances NSP1a stability'）；（3）促进其对GmNIN基因（文中称NIN1a promoter）的转录活性（'subsequent transcriptional activity on the NIN1a promoter'）。三者均在原文中显式陈述，无需推断，且语义连贯、主谓宾完整。",
+      "need_human_review": false
+    },
+    {
+      "sample_id": "P011-A001-C27",
+      "claim": "由此可见，铁受体GmBTSa/GmBTSb在感受铁信号后，进一步调控GmNSP1a蛋白的转录活性影响大豆结瘤对环境铁的响应。",
+      "evidences": [
+        {
+          "evidence_text": "NSP1a in btsa btsb mutants decreased compared with the wild type under normal conditions and decreased even further under low-iron conditions (Fig. 4l), indicating that BTSa and BTSb are required for the stability of NSP1a. To understand whether BTSa and BTSb affect the DNA-binding activity of NSP1a, we performed ChIP assays to verify NSP1a enrichment at the NIN1a promoter in hairy roots expressing UBIpro:NSP1a–4×MYC in both wild type and btsa btsb-1 mutant backgrounds. NSP1a–MYC enrichment was markedly reduced in the btsa btsb-1 background compared with the wild-type control (Fig. 4m).",
+          "sentence_id_start": 186,
+          "sentence_id_end": 188,
+          "confidence": 0.95,
+          "anchor_source": [
+            189,
+            188
+          ]
+        }
+      ],
+      "verdict": "partial",
+      "explanation": "该证据片段明确写出：BTSa/BTSb缺失导致NSP1a蛋白量下降（支持‘调控GmNSP1a蛋白’），且ChIP实验证明btsa btsb突变体中NSP1a在NIN1a启动子上的富集显著降低（支持‘调控GmNSP1a蛋白的转录活性’）；但原文未出现‘铁受体’表述，未说明BTSa/b‘感受铁信号’这一前提，也未指出该调控发生在‘铁信号感知后’的时间逻辑，亦未提及‘影响大豆结瘤对环境铁的响应’这一功能性结论——这些均为观点句中明确提出的命题，但候选证据中均未写出。",
+      "need_human_review": true
+    },
+    {
+      "sample_id": "P011-A001-C28",
+      "claim": "进而，研究团队证明了GmBTSa是一个E3泛素连接酶，但是与拟南芥同源蛋白BTS多泛素化修饰并降解底物调控植物对低铁响应不同，大豆的GmBTSa是通过特异地单泛素化修饰GmNSP1a促进其蛋白稳定性和转录活性来促进结瘤。",
+      "evidences": [
+        {
+          "evidence_text": "Fig. 8a,b), indicating that BTSaRING has functional E3-ligase activity. Second, we tested whether BTSa ubiquitinates NSP1a in planta. We transiently co-expressed 35Spro:NSP1a–3×FLAG, 35Spro:UBQ–6×MYC and UBIpro:BTSa–3×HA or the UBIpro:3×HA empty vector in N. bethamiana leaves. Total proteins were immunoprecipitated with anti-MYC beads, and then treated with GST–USP2-cc deubiquitinase or heat-inactivated USP2. A clear NSP1a–FLAG band was detected in the sample co-expressed with BTSa–3×HA compared with the 3×HA empty vector, and importantly, this band disappeared upon GST–USP2-cc treatment (Fig. 5a). This single band is not a polyubiquitination phenomenon but a hallmark of a monoubiquitination modification70,71.",
+          "sentence_id_start": 221,
+          "sentence_id_end": 226,
+          "confidence": 0.95,
+          "anchor_source": [
+            227
+          ]
+        },
+        {
+          "evidence_text": "The numbers at the bottom denote the relative intensities result reveals that BTSa is responsible for post-translational modification of NSP1a by monoubiquitination.",
+          "sentence_id_start": 237,
+          "sentence_id_end": 237,
+          "confidence": 0.98,
+          "anchor_source": [
+            227
+          ]
+        },
+        {
+          "evidence_text": "Thus, our findings lead to a proposed model in which rhizobia induce BTSa/b under sufficient iron condition, with BTSa/b perceiving an early status of iron by binding to iron, leading to the stabilization of NSP1 and transmitting the iron signal to the nodulation signalling pathway. Arabidopsis BTS functions as an E3 ligase, which polyubiquitinates and degrades bHLH105/115 to negatively regulate Fe uptake56,57. In soybean, both BTSa/b and NSP1a are positive regulators of nodulation; 604 it is unlikely that BTSa/b polyubiquitinates and degrades NSP1. Interestingly, we have discovered that soybean BTSa/b, but not AtBTS, physically interact with and monoubiquitinate NSP1a to stabilize NSP1a.",
+          "sentence_id_start": 332,
+          "sentence_id_end": 335,
+          "confidence": 0.97,
+          "anchor_source": [
+            337,
+            335
+          ]
+        },
+        {
+          "evidence_text": "Moreover, our data revealed that rhizobia and iron-induced monoubiquitination of NSP1a by BTSa enhances NSP1a stability and subsequent transcriptional activity on the NIN1a promoter, thereby activating nodulation signalling and promoting nodulation. These results suggest that monoubiquitination of soybean BTSa on NSP1 is a neofunctionalization.",
+          "sentence_id_start": 337,
+          "sentence_id_end": 338,
+          "confidence": 0.96,
+          "anchor_source": [
+            337,
+            335
+          ]
+        }
+      ],
+      "verdict": "supported",
+      "explanation": "所选证据共同完整支撑观点句全部命题：（1）GmBTSa是E3泛素连接酶——由index 0中‘BTSaRING has functional E3-ligase activity’及index 4中‘soybean BTSa/b... physically interact with and monoubiquitinate NSP1a’明确写出；（2）与拟南芥BTS不同，不引起多泛素化降解——index 4明确对比‘Arabidopsis BTS... polyubiquitinates and degrades bHLH105/115’，并强调‘it is unlikely that BTSa/b polyubiquitinates and degrades NSP1’；（3）GmBTSa特异地单泛素化修饰GmNSP1a——index 0指出‘this single band... is a hallmark of a monoubiquitination modification’，index 2直接断言‘BTSa is responsible for... monoubiquitination’，index 4和5均重复使用‘monoubiquitinate’或‘monoubiquitination’且主语为BTSa/b；（4）该单泛素化促进GmNSP1a蛋白稳定性与转录活性——index 5明确写出‘monoubiquitination of NSP1a by BTSa enhances NSP1a stability and subsequent transcriptional activity’，index 3和4也佐证其正向调控功能。所有命题均在原文中显式陈述，无推断补全，且各证据连续、可独立成义。",
+      "need_human_review": false
+    },
+    {
+      "sample_id": "P011-A001-C29",
+      "claim": "通过IP-MS技术，研究团队鉴定了GmNSP1a上被GmBTSa单泛素化的赖氨酸，将这些赖氨酸突变后的GmNSP1a（GmNSP1a5KR）不再被GmBTSa单泛素化修饰，蛋白的稳定性和转录活性也显著下降，更重要的是突变蛋白GmNSP1a5KR不能恢复Gmnsp1a突变体的结瘤表型，证明单泛素化修饰对GmNSP1a促进结瘤的功能是不可或缺的。",
+      "evidences": [
+        {
+          "evidence_text": "To test whether NSP1a monoubiquitination affects its function in nodulation, we transformed NSP1aWT–4×MYC and NSP1a5KR–4×MYC driven by its native promoter into wild-type and nsp1a-1 hairy roots. Neither expression of NSP1aWT–4×MYC nor of NSP1a5KR–4×MYC affected nodule numbers in the wild type. By contrast, NSP1aWT–4×MYC in nsp1a-1 restored nodule number to wild-type levels, but NSP1a5KR–4×MYC did not complement the nodulation defect (Fig. 5c and Extended Data Fig. 9d).",
+          "sentence_id_start": 260,
+          "sentence_id_end": 262,
+          "confidence": 0.95,
+          "anchor_source": [
+            260
+          ]
+        },
+        {
+          "evidence_text": "We first probed NSP1aWT–4×MYC and NSP1a5KR–4×MYC levels in both wild-type and nsp1a-1 hairy roots. NSP1a5KR–4×MYC was less abundant in both backgrounds, although transgene transcript levels were comparable (Fig. 5d,e). Furthermore, NSP1a5KR–4×MYC enrichment at the NIN1a promoter was remarkably reduced (Fig. 5f), and the DNA-binding ability of NSP1a5KR–4×MYC was the same as that of wild-type NSP1a under iron deficiency (Fig. 2d). DNA–protein pull-down assay confirmed that NSP1a5KR–GST had reduced binding activity to the NIN1a promoter (Fig. 5g,h) and failed to activate NIN1a expression (Fig. 5i). Collectively, these results suggest that the monoubiquitination of NSP1a by BTSa is necessary for protein accumulation and proper transcriptional activation activity of NSP1a.",
+          "sentence_id_start": 266,
+          "sentence_id_end": 270,
+          "confidence": 0.9,
+          "anchor_source": [
+            260
+          ]
+        }
+      ],
+      "verdict": "partial",
+      "explanation": "候选1完整覆盖‘GmNSP1a5KR不能恢复Gmnsp1a突变体的结瘤表型’这一核心功能验证命题（Fig. 5c和Extended Data Fig. 9d明确显示NSP1a5KR–4×MYC未能互补nodulation defect）；候选2连续覆盖‘蛋白稳定性下降’（NSP1a5KR–4×MYC丰度显著降低，转录水平相当）、‘转录活性下降’（NIN1a启动子结合能力减弱、无法激活NIN1a表达）及‘单泛素化修饰对功能不可或缺’的因果推断（结尾句明确总结‘monoubiquitination of NSP1a by BTSa is necessary for protein accumulation and proper transcriptional activation activity’）；两段证据共同且无冗余地支撑观点句全部四个命题：赖氨酸突变阻断单泛素化（隐含于NSP1a5KR命名及Fig.5b上下文，但观点句中‘将这些赖氨酸突变后的GmNSP1a（GmNSP1a5KR）不再被GmBTSa单泛素化修饰’在候选0中已直接写出，而候选1和2聚焦后续功能验证，符合‘同一命题只留最清楚一处’原则——候选0虽写明阻断单泛素化，但未提GmBTSa、未用Gm前缀、且为单句孤立陈述，而观点句后半段的功能性结论需由候选1+2联合支撑，故优先选用功能验证更完整、逻辑链更严密的候选1和2；候选3为概括性描述，未提供具体实验数据支撑，置信度低于候选1和2。",
+      "need_human_review": true
+    },
+    {
+      "sample_id": "P011-A001-C30",
+      "claim": "NSP1是豆科植物结瘤信号中的一个共有的重要信号组份。",
+      "evidences": [
+        {
+          "evidence_text": "Legume NSP1 proteins are central transcription factors in nodulation signalling11,12,14, the induction of which also mediates nitrogen and phosphorus exchange between host and symbionts76–78.",
+          "sentence_id_start": 297,
+          "sentence_id_end": 297,
+          "confidence": 0.95,
+          "anchor_source": [
+            297,
+            280
+          ]
+        }
+      ],
+      "verdict": "supported",
+      "explanation": "原文明确指出'Legume NSP1 proteins are central transcription factors in nodulation signalling'，其中'legume'对应'豆科植物'，'central transcription factors in nodulation signalling'直接支持'结瘤信号中的一个共有的重要信号组份'——'central'即'重要的'，'nodulation signalling'即'结瘤信号'，'proteins'（复数）及'legume'泛指类群，体现'共有性'；该句完整、独立、无推导，严格符合留句标准1–3。其他候选均聚焦NSP1a与铁信号的特异性互作或下游调控，未陈述其在结瘤信号中的共有性或核心地位，故不选。",
+      "need_human_review": false
+    },
+    {
+      "sample_id": "P011-A001-C31",
+      "claim": "最后，研究团队通过生物信息学分析和遗传与生化实验证明，BTS通过单泛素化修饰NSP1并促进结瘤的分子机制在豆科植物中是保守的。",
+      "evidences": [
+        {
+          "evidence_text": "To confirm whether NSP1 monoubiquitination is conserved, we first aligned NSP1 sequences from soybean with those from the Papilionoideae legumes Medicago (M.) truncatula and Lotus (L.) japonicus. Three lysine residues (K133, K139 and K143) in the N-terminal end are conserved in soybean, M. truncatula and L. japonicus; K398 is conserved in soybean and M. truncatula, while K468 is conserved in soybean and L. japonicus (Extended Data Fig. 9a), suggesting that NSP1 proteins in M. truncatula and L. japonicus are probably monoubiquitinated by BTS E3-ligase activity. Yeast two-hybrid and co-immunoprecipitation (Co-IP) experiments revealed that MtNSP1 and LjNSP1 can indeed interact with MtBTS and LjBTS, respectively (Fig. 6a,b). In vivo ubiquitination assays showed that both FLAG-tagged MtNSP1 and LjNSP1 were monoubiquitinated by their MtBTS and LjBTS partners, and that mutation of the three conserved K residues in MtNSP1 and LjNSP1 completely blocked monoubiquitination by BTS (Fig. 6c), confirming a conserved role for these lysine residues in N-terminal monoubiquitination of legume NSP1s. To validate the role of MtNSP1 and LjNSP1 monoubiquitination in nodulation, we transformed MtNSP1WT–4×MYC, LjNSP1WT–4×MYC and respective mutant forms MtNSP13KR–4×MYC and LjNSP13KR–4×MYC into wild type and nsp1a-1 hairy roots with constructs driven by the UBI promoter. MtNSP1–4×MYC and LjNSP1–4×MYC completely rescued the nodulation defect of nsp1a-1 to the wild-type level, while MtNSP1a3KR–4×MYC and LjNSP13KR–4×MYC did not complement the nsp1a-1 mutant (Fig. 6d and Extended Data Fig. 10a). These data suggest that BTS-mediated monoubiquitination of NSP1 is conserved in legumes.",
+          "sentence_id_start": 271,
+          "sentence_id_end": 277,
+          "confidence": 0.95,
+          "anchor_source": [
+            277
+          ]
+        }
+      ],
+      "verdict": "supported",
+      "explanation": "该候选完整覆盖观点句全部命题：（1）‘生物信息学分析’对应NSP1序列比对与保守赖氨酸位点鉴定；（2）‘遗传与生化实验’对应酵母双杂交、Co-IP、体内泛素化实验、互补转化实验；（3）‘BTS通过单泛素化修饰NSP1’对应FLAG-MtNSP1/LjNSP1被各自BTS单泛素化，且K133/K139/K143突变完全阻断该修饰；（4）‘促进结瘤’对应MtNSP1WT/LjNSP1WT回补恢复nodulation，而3KR突变体不能回补；（5）‘在豆科植物中是保守的’被多处明确陈述，包括序列保守性推断、MtBTS/LjBTS互作与修饰实验证据，以及结尾句直接总结‘BTS-mediated monoubiquitination of NSP1 is conserved in legumes’。所有命题均为原文直接陈述，未依赖推理补全，且裁剪后段落语义连贯、自洽。",
+      "need_human_review": false
+    },
+    {
+      "sample_id": "P011-A001-C32",
+      "claim": "基于以上实验，研究团队提出了如下的模型（图2）：在铁充足的条件下，BTS在转录和翻译水都被根瘤菌诱导，在结合并感受铁后蛋白稳定性增强，通过单泛素化修饰NSP1促进其蛋白的稳定和转录活性，激活共生核心基因NIN的表达，进而促进根瘤菌侵染和根瘤的形成；而在缺铁条件下，BTS蛋白变得不稳定造成对NSP1蛋白的单泛素化修饰作用减弱，导致NSP1蛋白的稳定性和转录活性下降，从而抑制共生信号以及结瘤过程。",
+      "evidences": [
+        {
+          "evidence_text": "Under iron-sufficient conditions, BTS is stabilized by binding iron, and then BTS interacts with and stabilizes NSP1 to promote nodulation by enhancing its NIN transcriptional activation activity upon monoubiquitination. Under iron deprivation, BTS is unstable and monoubiquitination activity is reduced, leading to a decrease in NSP1 protein stability and the transcriptional activation activity of NSP1, resulting in downregulated NIN and consequently reduced nodulation.",
+          "sentence_id_start": 327,
+          "sentence_id_end": 328,
+          "confidence": 0.95,
+          "anchor_source": [
+            337,
+            327
+          ]
+        }
+      ],
+      "verdict": "partial",
+      "explanation": "该候选完整覆盖观点句全部核心命题：（1）铁充足下BTS被根瘤菌诱导且结合铁后稳定性增强；（2）BTS通过单泛素化修饰NSP1促进其蛋白稳定性和转录活性；（3）进而激活NIN表达，促进侵染和根瘤形成；（4）缺铁时BTS不稳定→单泛素化减弱→NSP1稳定性与转录活性下降→抑制共生信号与结瘤。所有因果链条和分子事件（诱导、结合铁、稳定性变化、单泛素化、NSP1功能变化、NIN调控、表型效应）均在原文连续两句中明确写出，未添加推断，完全匹配claim结构。",
+      "need_human_review": true
+    },
+    {
+      "sample_id": "P011-A001-C33",
+      "claim": "此外，鉴于NSP1也是植物与丛枝杆菌共生信号的一个重要组分，BTS-NSP1分子模块及其作用机制很可能广泛存在于植物中并参与铁介导的植物-微生物共生过程。",
+      "evidences": [
+        {
+          "evidence_text": "Collectively, these results suggest that the monoubiquitination of NSP1a by BTSa is necessary for protein accumulation and proper transcriptional activation activity of NSP1a. To confirm whether NSP1 monoubiquitination is conserved, we first aligned NSP1 sequences from soybean with those from the Papilionoideae legumes Medicago (M.) truncatula and Lotus (L.) japonicus. Three lysine residues (K133, K139 and K143) in the N-terminal end are conserved in soybean, M. truncatula and L. japonicus; K398 is conserved in soybean and M. truncatula, while K468 is conserved in soybean and L. japonicus (Extended Data Fig. 9a), suggesting that NSP1 proteins in M. truncatula and L. japonicus are probably monoubiquitinated by BTS E3-ligase activity. Yeast two-hybrid and co-immunoprecipitation (Co-IP) experiments revealed that MtNSP1 and LjNSP1 can indeed interact with MtBTS and LjBTS, respectively (Fig. 6a,b). In vivo ubiquitination assays showed that both FLAG-tagged MtNSP1 and LjNSP1 were monoubiquitinated by their MtBTS and LjBTS partners, and that mutation of the three conserved K residues in MtNSP1 and LjNSP1 completely blocked monoubiquitination by BTS (Fig. 6c), confirming a conserved role for these lysine residues in N-terminal monoubiquitination of legume NSP1s. To validate the role of MtNSP1 and LjNSP1 monoubiquitination in nodulation, we transformed MtNSP1WT–4×MYC, LjNSP1WT–4×MYC and respective mutant forms MtNSP13KR–4×MYC and LjNSP13KR–4×MYC into wild type and nsp1a-1 hairy roots with constructs driven by the UBI promoter. MtNSP1–4×MYC and LjNSP1–4×MYC completely rescued the nodulation defect of nsp1a-1 to the wild-type level, while MtNSP1a3KR–4×MYC and LjNSP13KR–4×MYC did not complement the nsp1a-1 mutant (Fig. 6d and Extended Data Fig. 10a). These data suggest that BTS-mediated monoubiquitination of NSP1 is conserved in legumes.",
+          "sentence_id_start": 270,
+          "sentence_id_end": 277,
+          "confidence": 0.95,
+          "anchor_source": [
+            280
+          ]
+        }
+      ],
+      "verdict": "partial",
+      "explanation": "原文明确写出BTS-NSP1分子模块在豆科植物中的保守性：通过序列比对发现NSP1的三个N端赖氨酸（K133/K139/K143）在大豆、百脉根和蒺藜苜蓿中均保守；酵母双杂交和Co-IP证实MtNSP1/LjNSP1与对应BTS互作；体内泛素化实验证实其被对应BTS单泛素化，且K突变完全阻断该修饰；功能互补实验显示野生型MtNSP1/LjNSP1可完全回补nsp1a-1结瘤缺陷，而3KR突变体不能，从而确证BTS介导的NSP1单泛素化在豆科植物中保守。这直接支撑观点句中‘BTS-NSP1分子模块及其作用机制很可能广泛存在于植物中’（‘广泛存在于植物中’在文中限定为nodulating legumes，但候选0末句明确总结‘is conserved in legumes’，符合留句标准1和4）；同时，NSP1作为丛枝菌根共生信号组分已在claim前提中给定，而候选0及整个上下文均基于NSP1在根瘤共生中的核心功能，且候选3虽提及NSP1也调控菌根共生，但未涉及BTS-NSP1模块或铁介导机制，故不选；候选1和2未提供跨物种保守性的实验证据链（如互作+泛素化+功能验证），候选2仅以三点观察作支持，缺乏直接功能证据，置信度低于候选0；因此仅候选0完整覆盖‘模块广泛存在’和‘参与铁介导的植物-微生物共生过程’（因全文BTS为铁传感器，NSP1为其下游靶标，且该模块调控结瘤——一种铁依赖的微生物共生过程，见候选1中‘symbiotic nodulation exhibits a high dependence on iron’，但该命题需与模块绑定，而候选0已将BTS-NSP1机制与结瘤功能直接关联，满足标准1和7）",
+      "need_human_review": true
+    }
+  ]
+}

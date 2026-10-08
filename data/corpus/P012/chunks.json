@@ -1,0 +1,772 @@
+[
+  {
+    "text": "Here we present 11 high-quality Capsicum genome assemblies, including two gap-free genomes, covering four wild and all five domesticated pepper species. We reconstructed the ancestral karyotype and inferred the evolutionary trajectory of peppers. The expanded and variable genome sizes were attributed to differential transposable element accumulations, which shaped 3D chromatin architecture and introduced mutations associated with traits such as fruit orientation and colour. Using a chromatin accessibility atlas of Capsicum, we highlight the influence of transposable elements on regulatory element evolution. Furthermore, by constructing a haploblock map of 124 pepper core germplasms, we uncover frequent introgressions that facilitate the formation of sweet blocky pepper Pepper belongs to the genus Capsicum of the family Solanaceae. With a cultivation area of 3.70 million hectares and a production value of US$26 billion (2021, http://www.fao.org/faostat/), pepper is one of the world’s most important vegetable crops. Peppers are primarily used as fresh vegetables and spices and are popular for their pungency and high nutritional value1. Due to the physico-chemical properties of their secondary metabolites, such as capsaicinoids and carotenoids, peppers are also widely used in the production of various medicines, natural colours and cosmetics, as well as in raw materials for industrial coatings2,3.",
+    "section": "Front Matter",
+    "page": "1",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "0"
+  },
+  {
+    "text": "Capsicum comprises 5 domesticated pepper species and over 30 wild species4–7. These Capsicum species are clustered into two main and the acquisition of important traits such as resistance to pepper mild mottle virus. These findings on the genomic and functional evolution of Capsicum will benefit pepper breeding. groups: one is formed by the Andean clade, and the other includes the remaining species of the genus. The Andean clade may have had an independent origin and diverged earlier from the others in the Capsicum genus, a hypothesis that is supported by estimates of karyotype differences, genetic distance and geographical disjunction6,8,9. Species in the Andean clade possess 13 pairs of chromosomes (2n = 26), in contrast to the most of the other Capsicum species, which have 12 pairs of chromosomes (2n = 24), a common configuration found in most diploid Solanaceae species9,10. There is debate concerning the evolution of chromosome numbers in Capsicum, although most of the evidence suggests that species with 13 chromosome pairs were derived from species with 12 pairs11–14. Additionally, species in the Andean clade and Rural Affairs, Sino-Dutch Joint Laboratory of Horticultural Genomics, Institute of Vegetables and Flowers, Chinese Academy of Agricultural Sciences, Beijing, China. 2These authors contributed equally: Kang Zhang, Hailong Yu, Lingkui Zhang.",
+    "section": "Front Matter",
+    "page": "1",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "1"
+  },
+  {
+    "text": "359 have smaller genome sizes than other Capsicum species15,16. The variation in karyotype and genome size indicates the complexity of genome evolution within Capsicum. Evidence shows that the five domesticated pepper species—Capsi­ cum annuum L., C. frutescens L., C. chinense Jacq., C. baccatum L. and C. pubescens Ruiz & Pav.—were independently domesticated in different regions of Central and South America since at least 6000 bc4–7,17. Among them, C. annuum is the most widely cultivated one and has the highest economic value. The species includes many phenotypically diverse landraces that display variation in morphology, metabolites and yield18. In contrast, C. frutescens and C. chinense are mainly cultivated in certain countries or regions of America, Asia and Africa, while C. baccatum and C. pubescens are cultivated in Latin America4,16,19–21. It is generally phylogenetic branch, showing parallel evolution for various plant and fruit characteristics22,23. There are no interspecific barriers between the three species, and thus historical interbreeding may have occurred24,25. However, how the genetic communication between these species has shaped their genomes and whether C. chinense and C. frutescens have promoted the diversification of C. annuum are as yet unknown.",
+    "section": "Front Matter",
+    "page": "1",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "2"
+  },
+  {
+    "text": "Due to the crucial role of genome sequences in guiding functional genomics and gene mapping studies, a few pepper genomes have been assembled using the short-read (eight genomes) or long-read (eight genomes) sequencing technologies26–33. The majority of these assemblies were generated for the domesticated species, particularly C. annuum. Genomic studies have shown that the genome size of domesticated peppers exceeds 3.0 Gb, approximately three to four times larger than that of closely related species such as tomato and potato. Comparisons between pepper and other Solanaceae species have revealed that the differences in transposable element (TE) content account for the majority of genome size variation34–36. It is interesting to explore whether TE proliferation has played a role in the genome evolution and trait innovation of Capsicum species. Answering these questions requires a deep understanding of the genome composition of both wild and domesticated Capsicum species, a goal that cannot be achieved with the current limited number of high-quality genomes generated mainly for C. annuum. In this study, we assembled and analysed near-complete genomes of both wild and domesticated pepper species. We reconstructed the ancestral karyotype of pepper and inferred the trajectory of its karyotypic evolution. We show that extensive and differential TE accumulation not only shaped the genome architecture but also introduced mutations in genes associated with important traits in pepper. By constructing a chromatin accessibility map, we underscore the role of TEs in modulating gene expression regulation. Additionally, we found that recurrent introgressions accompanied the domestication of and trait evolution in C. annuum. These findings offer valuable avenues for further study of pepper biology and breeding and provide insights into genome evolution in other plants and crops.",
+    "section": "Front Matter",
+    "page": "2",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "3"
+  },
+  {
+    "text": "On the basis of the reported phylogeny18, we selected 11 pepper samples for genome assembly, including five wild and six domesticated peppers (Fig. 1a and Supplementary Tables 1 and 2). The five wild peppers included one C. rhomboideum from the Andean clade, one C. chacoense and one C. eximium, as well as two wild progenitors of C. annuum (C. annuum var. glabriusculum, PM1533 and Ac1979). The six domesticated peppers covered all five domesticated species, with two accessions showing the blocky (‘Qiemen’) and elongated (C5) fruit shapes for C. annuum and one accession for each of the other four domesticated species, C. frutescens, C. chinense, C. baccatum and C. pubescens. We generated both HiFi and ONT long reads for genome assembly. The average contig N50 and N90 lengths of these assemblies were 233.77 Mb and 116.86 Mb, respectively (Fig. 1b and Supplementary Table 3), indicating a high level of sequence continuity. Among these assemblies, C. rhomboideum exhibited the smallest genome size (1.80 Gb), roughly half that of the other pepper species, as confirmed by flow cytometry (Supplementary Fig. 1). The genome sizes of the other assemblies ranged from 3.04 to 3.88 Gb (Fig. 1c). K-mer analysis revealed that the completeness of all assemblies exceeded 99% (Supplementary Table 3). We then generated Hi-C data (Supplementary Table 2) and assigned contigs to pseudo-chromosomes. Notably, two assemblies (C. rhomboideum and C. annuum var. glabriusculum PM1533) reached the gap-free, telomere-to-telomere level, with all 24 telomeres fully assembled and no gaps remaining. Among the remaining assemblies, most (six out of nine) contained only six or fewer gaps, approaching a nearly gap-free level (Supplementary Table 3). These results indicate that the majority of pseudo-chromosomes (63.91%) were assembled as single contigs. The quality value scores of all assemblies were above 62 (Supplementary Table 3), meeting the standards for reference-grade genomes. Each assembly comprised 12 pseudo-chromosomes, except for C. rhomboideum, which had 13 (Fig. 1d).",
+    "section": "Results Near-complete assemblies of wild and domesticated peppers",
+    "page": "2",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "4"
+  },
+  {
+    "text": "TE sequences occupied 79.41–85.55% of these genomes, and on average 37,489 protein-coding genes were predicted (Supplementary Table 3). The BUSCO values indicate high completeness in genome assembly (97.09–98.20%) and gene prediction (97.14–98.51%).",
+    "section": "Results Near-complete assemblies of wild and domesticated peppers",
+    "page": "2",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "5"
+  },
+  {
+    "text": "We constructed a phylogenetic tree with tomato as the outgroup and revealed that C. rhomboideum from the Andean clade diverged first (approximately 9 million years ago (Ma)), and then the domesticated species C. pubescens, which represents the ancestral branch of left peppers (Fig. 1d). The remaining pepper species were divided into two clusters. Cluster one includes two wild species C. chacoense and C. eximium, and one domesticated species, C. baccatum; cluster two includes three domesticated species, C. frutescens, C. chinense and C. annuum. The dispersed phylogeny of the five domesticated species indicates multiple parallel domestication events. Although C. rhomboideum showed a markedly smaller genome size and a large phylogenetic distance from the other peppers, a 1:1 syntenic gene relationship and well-conserved chromosomal synteny were observed between it and the others (Fig. 1d). Similar phylogenetic structures and synteny relationships were obtained by integrating the previously reported high-quality pepper genomes (Supplementary Table 1 and Supplementary Figs. 2 and 3), further validating our results. The 13-chromosome Andean clade evolved from the 12-chromosome pepper ancestor. We selected the relatively ancestral genome C. pubescens as the representative of the 12-chromosome peppers and compared it with C. rhomboideum and other Solanaceae species, including golden berry, tomato and wolfberry, to identify chromosomal fission and fusion events on the basis of their genomic synteny (Supplementary Fig. 4). On this basis, we reconstructed the ancestral Capsicum karyotype (ACaK), which has 12 chromosomes (Methods). As shown in Fig. 2a, the ACaK contained 21 genomic blocks (GBs), including four GBs (C, J, K and O) that existed as four whole chromosomes across all investigated Capsicum genomes (Supplementary Table 4). Both C. rhomboideum and C. pubescens experienced three chromosomal reshuffling events (Fig. 2a and Extended Data Fig. 1).",
+    "section": "Karyotype-resolved evolutionary history of the Capsicum genus",
+    "page": "2",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "6"
+  },
+  {
+    "text": "Interestingly, in C. rhomboideum, the ACaK chromosome A12 was split into two parts, which were subsequently translocated with A4 and A8, forming two new chromosomes. This result shows that the 13-chromosome genome of the Andean clade evolved from the 12-chromosome ancestor. In addition, the karyotype changes between different pepper species matched well with their phylogenetic relationships (Fig. 2a and Extended Data Fig. 2). For instance, species in cluster two experienced a common translocation event between chromosome 3 (Chr03) and Chr09, while the C. annuum genomes feature an additional one between Chr01 and Chr08, leading to a longer Chr01 in C. annuum than in C. frutescens and C. chinense (Extended Data Fig. 2). 360 a Cpub Crho C. chacoense C. pubescens C. eximium C. minutiflorum C. cardenasii C. rhomboideum C. flexuosum C. baccatum Caga (Ac1979) Tree based on variome data C. galapagoense C. annuum var. glatriusculum C. chinense C. annuum C. frutescens Canz (Zunla-1) Canb (Qiemen) d Canz Cane Canb Caga 2n = 24 Cpub M B C D E F 2n = 26 Crho Tomato (Ma) 16 10 8 6 4 2 0 Fig. 1 | Characterization of the genomes assembled for Capsicum species and cultivars. a, The phylogeny and photos of selected Capsicum materials for genome assembling. The four-letter short names below the photos are abbreviations of the corresponding species/accessions. The domesticated species/accessions are shown in red, while species not included in this study are shown in grey. b, The NX values of assembled contigs for each accession (n = 12; in each box plot, the centre line indicates the median, the box limits indicate the first and third quartiles, and the whiskers extend to 1.5× the interquartile range (IQR)). NX indicates the contig length at which X% of the total genome assembly size is represented. c, The sequence composition of the assembled genomes. Transposable elements (TEs) are classified into five types: long terminal repeat-retrotransposons (LTR-RTs), long interspersed nuclear elements (LINEs), DNA transposons (DNAs), other annotated TEs (OtherType) The novel centromere of the 13th chromosome in C. rhomboideum evolved from the duplication–translocation of an ancestral centromere.",
+    "section": "Karyotype-resolved evolutionary history of the Capsicum genus",
+    "page": "2",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "7"
+  },
+  {
+    "text": "We used the centromere–centromere interaction pattern to predict the locations of centromeres (Methods). In pepper genomes with a Rabl configuration, the centromeres are nested together in the b 300 Length (Mb) 200 Crho (small genome) 100 0 N10 N20 N30 N40 N50 N60 N70 N80 N90 c Cagp (PM1533) 3 Length (Gb) 2 Cane (C5) 0 Crho Cpub Cexi Cbac Ccha Cchi Cfru Caga Cagp Canz Cane Canb TEs: LTRs LINEs DNAs OtherType Unknown Non-TE: CDS OtherSeq Cluster 2 Cluster 1 P R S I J K L A N O G H U Karyotype Syntenic alignments and unknown TEs (Unknown). Non-TE sequences are divided into coding sequences (CDSs) and other sequences (OtherSeq). d, The phylogenetic tree and the syntenic relationships among Capsicum genomes. The orange rectangles in the tree indicate the range of estimated divergence times. The ribbons indicate the syntenic segments identified between genomes, while the coloured boxes indicate the GBs (detailed in Fig. 2). The long-read-based genome assembly of C. annuum ‘Zunla-1’ that we recently obtained is also included. Canb, C. annuum ‘Qiemen’; Canz, C. annuum ‘Zunla-1’; Cane, C. annuum C5; Cagp, C. annuum var. glabriusculum PM1533; Caga, C. annuum var. glabriusculum Ac1979; Crho, C. rhomboideum; Cpub, C. pubescens; Ccha, C. chacoense; Cexi, C. eximium; Cbac, C. baccatum; Cchi, C. chinense; Cfru, C. frutescens. Full species and accession names are used in the text, while abbreviations are used in the figures for clarity.",
+    "section": "Karyotype-resolved evolutionary history of the Capsicum genus",
+    "page": "3",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "8"
+  },
+  {
+    "text": "nucleus, resulting in pronounced interaction signals in the Hi-C map37. On this basis, we successfully identified the positions of centromeres. These centromeres aligned perfectly with the CENH3 ChIP-seq signals33 (Supplementary Fig. 5). Comparison between C. pubescens and C. rhomboideum showed that a new centromere emerged in a 361 a ACaK Three translocations A1 A2 A3 A4 A5 A6 A7 A E A8 A12 A4 Q R C E A11 L F K A5 J A1 S B D I L P F A Q G T M I H G B M U C. pubescens 2 3 4 5 6 7 8 9 10 11 12 R M E Q G S C L F K J T O n = 12 N D B P U I H A 5 8 12 3 R Q S L T D U I A C. baccatum, C. eximium C. chacoense 2 3 4 5 6 7 8 9 10 11 12 2 3 4 5 6 7 8 9 10 11 12 R R D1 M M S1 E E Q Q G G S2 S C C L L F F K J K O O T T J N N D D2 B B U1 I P U P I A1 H H A2 A U2 b c C. rhomboideum Chromosome 4 13 A12 10 E R 5 S S Inherit T T 12 Ua Emerge U LTR/Gypsy LTR/copia LTR/OtherType M Unknown repeat Other repeat Non-repeat Fig. 2 | Karyotype and centromere evolution of Capsicum. a, The evolution of the karyotypes, which are represented by the composition of GBs indicated by different colours. The chromosomal rearrangement events are shown in the dashed boxes, with the involved genomic segments highlighted (red boxes). The chromosomes that experienced the rearrangement event are indicated in red. The number subscripts indicate the split GBs. The black ellipses denote repeat-rich region of GB U in the 13th chromosome of C. rhomboi­ deum (Fig. 2b). GB U was ancestrally located in ACaK chromosome A12 (R-S-T-U), while chromosomal fission and translocation associated it with GB M in the present Chr12 (Fig. 2b). The centromeres in Chr02 (GB C), Chr06 (GB J) and Chr10 (GB O) showed sequence similarity to the 13th centromere of C. rhomboideum (Fig. 2c,d). Interestingly, this 13th centromere showed the strongest Hi-C interaction with the centromere of Chr04 (Fig. 2e), which evolved from the same ancestral One fission, two translocations A8 A9 A10 A11 A12 R P A4 A12 A8 R S E O n = 12 N S H F L T T U G M + U C. rhomboideum 2 3 4 5 6 7 8 9 10 11 12 13 A E Q P U G L C K O J n = 13 S N D M I B H F T R 8 3 9 M L N D B A C. chinense, C. frutescens C. annuum 2 3 4 5 6 7 8 9 10 11 12 2 3 4 5 6 7 8 9 10 11 12 B2 R R M M D2 E E D2 Q Q G G S S C C L1 D1 D1 L F F K K O J O T T J B1 B A N2 N2 P U P U I I H H A N1 N1 L2 d e 1 Mb Chr13 Chr01 No.of Chr12 Chr12 interactions Chr02 Chr11 9,000 Chr10 Chr11 Chr09 7,000 Chr03 Chr08 5,000 Chr07 Chr10 Chr04 Chr06 Chr05 Chr09 Chr04 Chr05 Chr03 Chr08 Chr06 Chr02 Chr07 Chr01 Centromere LTR/unknown Alignment Chr03 Chr08 Chr09 Chr10 Chr13 Chr04 Chr06 Chr12 Chr02 Chr05 Chr11 Chr07 the centromeres.",
+    "section": "Karyotype-resolved evolutionary history of the Capsicum genus",
+    "page": "3",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "9"
+  },
+  {
+    "text": "b, The emergence of a new centromere for Chr12 of the Crho genome. c, The sequence composition of the centromeres in Crho. d, Circos plot showing the sequence alignment (ribbons) between the centromere of Chr12 and all the other centromeres in Crho. e, Hi-C interaction map between the centromeres of Crho. The dashed circle highlights the strongest interaction in Crho between Chr04 and Chr12. chromosome; this is probably a relic of the intra-chromosomal interactions. Taken together, these results suggest that a chromosome fission event followed by the emergence of a new centromere accompanied the rise of the 13-chromosome karyotype of the Andean clade peppers.",
+    "section": "Karyotype-resolved evolutionary history of the Capsicum genus",
+    "page": "4",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "10"
+  },
+  {
+    "text": "The expanded genome size and its variation among pepper genomes were largely attributed to differences in TE accumulation, especially 362 the long terminal repeat-retrotransposons (LTR-RTs) (Fig. 1c). Among LTR-RTs, the Gypsy superfamily played a major role, with sizes varying from 664 to 1,293 Mb (Supplementary Table 5). To get a glimpse of the historical TE proliferation events, we estimated the insertion times of TEs by full-length LTR-RTs38 (Fig. 3a,b, Extended Data Fig. 3 and Methods). The Copia full-length LTR-RTs in all Capsicum species except for C. rhomboideum showed an ancient proliferation (3.8 Ma) (Fig. 3b), which occurred after the divergence (9.0 Ma) between the Andean clade C. rhomboideum and other peppers. C. rhomboideum differs from other Capsicum species in the insertion pattern and strength of TEs. An insertion peak of the Athila family of Gypsy in Cpub coincided with the divergence time (1.8 Ma) between C. pubescens and other Capsicum species. We also observed a recent proliferation event of Gypsy (0.43 Ma), which was stronger in C. baccatum and C. eximium from cluster one, being correlated with their larger genome sizes. Species from cluster two showed an additional insertion peak of Copia, mainly those in the Ale family (Supplementary Table 5 and Extended Data Fig. 3). Meanwhile, these Capsicum genomes showed similar amounts of solo-LTRs, indicating that TE removal through homologous recombination functions similarly in these species (Supplementary Table 5). The LTR-RT scenario suggests that the differential accumulation of TEs from families such as Athila and Ale contributed to the diversity of genome expansion in peppers.",
+    "section": "Genomic variations associated with TE accumulation",
+    "page": "4",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "11"
+  },
+  {
+    "text": "The recently inserted Gypsy LTR-RTs were significantly enriched in the centromeres of most Capsicum species (Fig. 3c). The majority of these Gypsy LTR-RTs were from the CRM family, which was known as centromeric retrotransposons in maize39. However, this LTR-RT insertion pattern was absent in C. annuum (Fig. 3c,d, Extended Data Fig. 4 and Supplementary Fig. 6). Instead, C. annuum showed a higher density of Gypsy in gene-rich regions (Supplementary Fig. 7), further showing the different TE insertion landscapes among peppers. Interestingly, further comparison between C. rhomboideum and C. pubescens revealed a dramatic expansion of gene-syntenic regions (587 versus 1,733 Mb, 2.95-fold), which was stronger than the expansion of other regions— that is, the gene-sparse/centromere-proximal segments (1,130 versus 1,782 Mb, 1.58-fold; exemplified in Fig. 3c). In the syntenic regions, the expansion was associated with higher TE density and biased towards genomic regions with fewer genes (≤3 genes per 50 kb) (Fig. 3e and Supplementary Table 6), indicating the high plasticity of these regions. Through aligning these pepper genomes to the genome of C. annuum var. glabriusculum PM1533, we identified 493,267 structural variations (SVs) using SyRI40 (Methods), most of which were presence– absence variations (PAVs) (444,739) with sizes ranging from 50 bp to 493 kb. TEs occupied approximately 90% of these PAV sequences (Supplementary Table 7). This indicates that the frequent TE insertion/fractionation played a role in introducing sequence variation between pepper genomes, which might have affected the phenotypic diversity. For example, we previously identified the gene Up controlling fruit orientation, the variation of which was caused by a 579-bp TE sequence deletion in the C. annuum population18. Here we detected a new, larger deletion (8 kb) in the promoter region of Up in the Fig. 3 | Evolution of pepper genomes, the fruit orientation trait and 3D architecture associated with TE proliferations and rearrangements.",
+    "section": "Genomic variations associated with TE accumulation",
+    "page": "5",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "12"
+  },
+  {
+    "text": "a,b, The distribution of insertion times for Gypsy (a) and Copia (b) full-length retrotransposons. The line legends for the six reported high-quality Capsicum genomes, including three C. annuum (ann), are shown against a grey background. The blue box highlights the divergence between Cpub and other Capsicum species. c, Multiple genomic alignments between four genomes with Chr07 as an example. The ribbons indicate the syntenic segments. The dark blocks denote the centromeres. In the TE ratio (ii) and TE divergence (iii) rows, the orange, green and teal filled lines/dots denote the full-length Copia, Gypsy and other unknown types of TEs, respectively. The range of the TE divergence (iii) row is from 0 to 0.1, denoting the divergence between two LTRs. d, Distribution of the recently inserted (<2 Ma) full-length Gypsy (fl-Gypsy). e, Genomic size expansion of Cpub compared to Crho (in each box plot, the centre line indicates the median, the box C. chinense assembled genome but not in the other C. chinense accessions (Fig. 3f,g). Intriguingly, the fruit orientation of this accession (erect) also differed from those of the other C. chinense accessions (pendent) (Fig. 3h). We validated the 8-kb deletion through PCR amplification (Extended Data Fig. 5) and found that Up expression was significantly higher (P < 0.001) in the pendent accessions than in the erect one in both the fruit pedicel and placenta, as revealed by an RNA-seq assay (Fig. 3i). These results indicate independent and parallel sequence deletions in the upstream region of Up in both C. annuum18 and C. chinense genomes, which were associated with the variation in expression of Up. Additionally, the gene CCS encodes capsanthin–capsorubin synthase, an important enzyme in carotenoid pigment biosynthesis. CCS was fine mapped and functionally validated to control the red fruit colour of peppers41–44.",
+    "section": "Genomic variations associated with TE accumulation",
+    "page": "5",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "13"
+  },
+  {
+    "text": "We identified and validated 1.1-kb insertion of a Copia LTR-RT in the single coding exon of CCS in C. pubescens, correlating with yellow fruit colour rather than the typical red (Extended Data Fig. 6). This insertion caused a premature termination of CCS, as supported by RNA-seq data (Extended Data Fig. 6c).",
+    "section": "Genomic variations associated with TE accumulation",
+    "page": "5",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "14"
+  },
+  {
+    "text": "We identified the A/B compartments (Supplementary Table 8) and their switching events in Capsicum genomes using the Hi-C data (Methods). These genomes were spatially divided into two distinct compartments showing preferential interactions within types—the A and B compartments, which are associated with open and closed chromatin, respectively45. Considering the relatively stable karyotypes and A/B compartments of species in the two clusters (Fig. 2a and Supplementary Table 8), we focused on A/B switching events between two representative genomes of C. rhomboideum and C. pubescens. Examination of these events in chromosomes that experienced rearrangements revealed that the changes in chromosomal positions, from distal to proximal or vice versa, were strongly associated with A/B compartment switching. For example, GB L was located in ACaK chromosome A08 with its left end as a telomere and its right end spanning the centromere (Fig. 2a). The relative position of GB L remained unchanged in C. pubescens, while the right end was exposed as a peritelomeric region due to a translocation in C. rhomboideum. Notably, the right end of GB L was predicted as a B compartment in C. pubescens but as an A compartment in C. rhomboideum, showing that the C. pubescens–B versus C. rhomboideum–A switching event was promoted by this translocation in C. rhomboideum (Fig. 3j). As another example, the ACaK chromosome A12 was composed of GBs R, S, T and U, with the R and the left end of S located in the peritelomeric region. However, in C. rhomboideum, the R–S GB association was translocated and linked with GB E (Extended Data Fig. 1). This event moved the R–S GB association away from the peritelomeric region to the pericentromeric region and resulted in the A-to-B switching in C. rhomboideum (Supplementary Fig. 8a). A similar phenomenon was observed in Chr12 of C. rhomboideum (Supplementary Fig. 8b).",
+    "section": "Evolution of 3D chromosomal architecture",
+    "page": "5",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "15"
+  },
+  {
+    "text": "To investigate the influence of genome expansion, we characterized the A/B switching events in chromosomes without ancestral limits indicate the first and third quartiles, and the whiskers extend to 1.5× the IQR). The Crho genes were categorized into 50-kb bins. f, The Up gene related multiple genomic alignments among Capsicum genomes. g, The location of the SV associated with Up in the C. chinense population. Deletion is denoted by the dashed box. h, Difference in fruit orientation of two C. chinense accessions with different Up genotypes (indicated by the black arrows). i, Expression level of Up in fruit pedicel and placenta samples of these two accessions determined using RNA-seq. The data are presented as mean ± standard deviation (biological replicates, n = 3; two-sided Student’s t-test). Numbers above the bars indicate P values. j,k, Switching of A/B compartments (red boxes and ribbons) between the genomes of Cpub and Crho. Two types of chromosomes (Chr08 in j and Chr09 in k) are shown, representing those that experienced rearrangements and those that did not, respectively. Species and accession abbreviations are as defined in Fig. 1. 363 karyotype change but with large size variation between C. rhomboi­ deum and C. pubescens. Compared with C. rhomboideum, many more regions in C. pubescens showed the B-to-A switch (36.5 Mb) than vice versa (3.5 Mb), thus implying a greater conversion of genomic regions from an inactive to an active chromatin state (Supplementary Table 9).",
+    "section": "Evolution of 3D chromosomal architecture",
+    "page": "5",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "16"
+  },
+  {
+    "text": "a d Cpub diverged Number of Gypsy 2,000 100 1,000 Percentage of fl-Gypsy (%) 0 b Number of Copia 50 200 100 0 0 4 8 0 Insertion time (Ma) Cane Canb Canz Canb Cane Canz Caga Cpub Crho ann CA59 ann Dempsey ann G1-36576 bac PI 632928 pub Grif 1614 rho PI 645680 c Canz Cpub 3.81 fold (syn) Crho f h Chr12 Canb Canz Up 37.91 Mb 37.93 Mb Cpub g Up 8.1 kb Cchi genome Other C. chinense 1 kb j Chr08 L A Cpub (i) A/B compartment (ii) TE ratio Crho (iii) Gene density (iv) GB L Most of the switched regions were clustered in the much-expanded interstitial regions (located between the peritelomeric and pericentromeric regions) (Fig. 3k and Supplementary Fig. 9), showing the high plasticity of these regions. Taken together, these results suggest that both chromosomal structure changes and TE-induced genome e 8 Size expansion fold 4 n = 188 506 611 692 552 366 299 0 Caga Cpub Crho 2 3 4 5 6 7 ≥8 Number of genes per 50 kb In centromere In syntenic regions In other regions Chr07 3.31 fold (syn) 1.41 fold (other regions) (i) Gene density Copia Gypsy (ii) TE ratio Unknown (iii) TE divergence i 5.65 × 10–3 80 60 Erect Transcripts per million Pendent Erect (Cchi genome) 40 4.53 × 10–2 20 0 Pedicel Placenta Pendent (PI152225) k Chr09 N Compartment A: Large Small B: Large Small N A/B switch 364 expansion have promoted the evolution of Capsicum through altering the 3D genome architecture.",
+    "section": "Evolution of 3D chromosomal architecture",
+    "page": "6",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "17"
+  },
+  {
+    "text": "To investigate the variation in regulatory elements of genes, we conducted assays for transposase-accessible chromatin sequencing (ATAC-seq) for the leaf samples from all 11 assembled Capsicum genomes and C. annuum ‘Zunla-1’, and we identified 46,171 to 62,142 accessible chromatin regions (ACRs) (Fig. 4a,b and Supplementary Table 10). As expected, ACRs were enriched upstream of genes, and 71% of ACRs were located within 5 kb of gene boundaries (Fig. 4a,c). The ACR sequences were highly conserved among Capsicum species. Taking C. pubescens as the reference, 81% of the ACRs in the analysed genomes, except for C. rhomboideum, were successfully aligned onto their syntenic genomic regions in C. pubescens (Extended Data Fig. 7a). The gene transcription strength was strongly associated with the distance between genes and adjacent ACRs (Fig. 4d). We further found a significant depletion of DNA cytosine methylations within ACRs, and this effect decreased with increasing distance between ACRs and adjacent genes (Fig. 4e and Extended Data Fig. 7b). Although the genome size of C. pubescens was largely expanded relative to that of C. rhomboideum, the majority (74.41%, 2,762/3,712) of syntenic ACRs exhibited similar gene–ACR distances (less than twofold; Fig. 4f). For gene–ACR pairs with varied distances (at least twofold), most of them (83.55%, 320/383) were expanded in C. pubescens, and the size enlargement could be largely explained by the higher density of TEs (Fig. 4g). For example, a gene encoding ERF4 (a component bridging multiple hormone signal pathways) was surrounded by six conserved ACRs, and the distances between these ACRs and ERF4 were significantly increased in C. pubescens due to TE insertions (Fig. 4h). We then expanded the comparison to all assembled pepper genomes and identified 76,521 accessibility-conserved ACR (acACR) groups across multiple (≥2) genomes (Fig. 4i and Methods). Among them, 8,131 acACR groups that were conserved in all genomes were proximal to genes enriched in fundamental biological functions, such as photosynthesis, phosphorus metabolic process and regulation of metabolic process (Extended Data Fig. 7c). Furthermore, through comparing the expression of syntenic orthologous gene pairs with or without acACRs in pairwise pepper genomes, we revealed that the gene pairs with acACRs tended to be expressed more concordantly than those without (PCCwith − PCCwithout = 0.1461, where PCC represents the Pearson correlation coefficient, taking C. annuum ‘Zunla-1’ and C. baccatum as an example) (Supplementary Fig. 10). These results indicate the important regulatory role of acACRs in coordinating orthologous gene expression in different Capsicum species. We identified 2,761 annuum-specific ACRs that were present in more than three C. annuum genomes but absent in all of the other Capsicum species. Genes with annuum-specific ACRs had great chances to be expressed more highly than their syntenic genes in other Capsicum genomes (Fig. 4j). For example, a gene encoding the phytochrome PhyE had an annuum-specific ACR. It was constantly expressed in C. annuum genomes but not in other species, except for C. baccatum (Supplementary Table 11). We found a TE-containing SV flanking this ACR between C. annuum and other Capsicum species (Supplementary Fig. 11). Moreover, an 8.8-kb TE was inserted into this ACR in C. baccatum, and a new ACR developed on this sequence debris. Correspondingly, PhyE was even more highly expressed in C. baccatum than in C. annuum (P < 0.005; Supplementary Table 11). This example suggests that the TE-associated SVs might be involved in the evolution of ACRs and gene expression regulation. In addition, annuum-specific ACRs exhibited significantly higher TE content than common ACRs (P < 0.0001, Fig. 4k). We also observed a negative correlation between ACR conservation and the TE ratio in ACRs (PCC = −0.8402, P < 0.01) (Fig. 4l and Methods). These results might reflect the influence of the high variability of TEs on the conservation of ACRs.",
+    "section": "Regulatory elements rewired by TEs altered gene expression",
+    "page": "7",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "18"
+  },
+  {
+    "text": "To investigate whether and how SVs affect the conservation of ACRs, we focused on two types of SVs: translocation SVs (tSVs), which lead to position changes of ACRs, and PAVs, which impair the structure of ACRs. For tSVs, we identified acACRs whose relative positions to adjacent genes were altered by tSVs, and we found that the accessibility of most of these ACRs was eliminated (Fig. 4m,n). For example, only 24% of C. pubescens tSV-associated ACRs remained accessible in C. annuum ‘Zunla-1’, while the ratio was 75% for ACRs without tSVs. For PAVs, we identified ACRs that showed size variation (>50 bp and >20% of ACR size) to assess the impact of PAVs. The accessibility level of these ACRs was lower than that of ACRs showing little size variation (68.67% versus 78.06%) (Fig. 4m,n). The decrease was more pronounced for those showing larger size variation (>40% of ACR size, 49.49%). Furthermore, we compared the PAV ratio in binned ACR sequences between ACRs that survived the variation and those that did not. Notably, the ACRs that survived exhibited much lower PAV ratios around the summit regions than around the distal regions and also than the ACRs that did not survive (Fig. 4o,p). This suggests the crucial role of ACR summits, the direct binding sites of transcription factors, over the flanking regions.",
+    "section": "Regulatory elements rewired by TEs altered gene expression",
+    "page": "7",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "19"
+  },
+  {
+    "text": "To investigate fruit ACRs, we selected the fruits of C. pubescens, C. baccatum, C. chinense, C. annuum var. glabriusculum PM1533 and C. annuum ‘Zunla-1’ and ‘Qiemen’ as representatives, on the basis of their phylogenetic relationships and differences in fruit traits. A total of 49,862–61,899 fruit ACRs were identified, and approximately 26–41% of these fruit ACRs were not detected in leaf samples (Supplementary Table 10). The fruit ACRs were less conserved between genomes than the leaf ACRs—that is, more fruit ACRs were found to be species-specific (Extended Data Fig. 7d), which might be associated with the distinctive fruit traits in different peppers. For example, C. annuum ‘Qiemen’ with its specific blocky fruit shape developed unique fruit ACRs in the promoter of IQD21 and in the gene body of IQD18, both of which belong to a microtubule-associated protein family that play crucial roles in regulating fruit shape and seed germination through recruiting the Ca2+ sensor calmodulin46–49 (Supplementary Figs. 12a,b and 13). Both IQD21 and IQD18 had significantly (P < 0.005) higher expression in the fruit of ‘Qiemen’ than in other accessions with non-blocky fruit shapes (Supplementary Table 11). In addition, a ‘Qiemen’-specific fruit ACR was introduced by a TE insertion into the intronic region of CIPK24, an important gene involved in Ca2+-dependent ion homeostasis50 (Supplementary Fig. 12c). CIPK24 exhibited significantly (P < 0.0001) higher expression in ‘Qiemen’ fruit than in others (Supplementary Table 11).",
+    "section": "Regulatory elements rewired by TEs altered gene expression",
+    "page": "7",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "20"
+  },
+  {
+    "text": "To dissect the origin and genetic composition of the most cultivated and diverse C. annuum peppers, we generated deep resequencing data (>40× coverage) for a core collection of 124 pepper germplasms, including 81 C. annuum accessions (Supplementary Table 12)18. We used the IntroBlocker tool51 to reconstruct the haploblock map by evaluating binned divergence levels among accessions on the basis of identified variants (Methods). We found that most of these introgressed haploblocks in C. annuum were from C. frutescens (207 Mb, 6.70% of the genome), while the C. chinense-derived haploblocks were rare (4 Mb, 0.13%) (Fig. 5a and Supplementary Table 13), showing a high frequency of genetic exchange between C. frutescens and C. annuum. The C. frutescens-introgressed haploblocks were mostly located at the peritelomeric regions (Supplementary Fig. 14a) and showed higher gene density (27 genes per Mb) than the C. chinense-related haploblocks (6 genes per Mb) (Fig. 5a and Supplementary Table 13). For most segments of these C. frutescens haploblocks (186/207), the genetic distances between C. frutescens and C. annuum were significantly greater than those between C. annuum accessions (P < 0.05) (Supplementary Fig. 14b), suggesting that these haploblocks were introgressed from C. frutescens into C. annuum rather than the other way around. Furthermore, among the divergent haploblocks (803) between two assembled wild progenitors of C. annuum 365 a b c Size (Mb) 0 10 20 30 40 Canb −20 Gene-overlapped Cane Canz Distance to gene (kb) −10 >20 kb Caga 0 20 kb 1 kb 10 Normal 10 kb 5 kb Cpub TE Crho 20 0 0.50 1.00 0 20,000 40,000 60,000 0 Density (×10–4) TE ratio Number of ACRs f h 2 = 0.8 R distance in Cpub (bp)] 20 31,570 kb 31,580 kb y = −0.37 + 1.1x log2[ACR–gene No. of 15 Gene/TE neighbours ACR 500 10 400 300 200 5 100 0 0 5 10 15 20 log2[ACR–gene distance in Crho (kb)] g i j 9.87 × 10–22 1.11 × 10–78 1.0 400 with higher expression Cpub Number of genes Crho acACR groups Repeat ratio 10k Number of 0.5 200 5k 0 0 0 Crho longer Cpub longer 2 5 10 12 Intergenic size between Number of genomes ACR and gene m n 0.176 1.44 × 10–3 2.31 × 10–4 2.63 × 10–3 1.46 × 10–2 0.8 0.8 6.09 × 10–4 0.6 0.6 acACR ratio acACR ratio Caga Canz Canb 0.4 0.4 Cane Caga 0.2 0.2 0 0 Syntenic tSV >20% >40% Syntenic tSV >20% >40% PAV coverage PAV coverage Fig. 4 | Chromatin accessibility map of Capsicum and associations with TEs and SVs.",
+    "section": "Introgressions increased the genetic diversity of C. annuum",
+    "page": "7",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "21"
+  },
+  {
+    "text": "a, Number of ACRs at different distances from adjacent genes. b, Total size and TE ratio of ACRs. c, Distance distribution of ACRs to the translation start codon of the nearest genes. d, Median expression levels of genes with ACRs at different distances (n = 12; two-sided Student’s t-test; in each box plot, the centre line indicates the median, the box limits indicate the first and third quartiles, and the whiskers extend to 1.5× the IQR). TPM, transcripts per million. e, DNA methylation levels in and around ACRs and genes, using the C. annuum ‘Zunla-1’ genome as an example. f, Comparison of ACR–gene distances between Cpub and Crho. g, Repeat ratios of intergenic sequences between genes and ACRs with varied ACR–gene distance in Cpub and Crho. ‘Crho longer’ indicates ≥2× longer distances in Crho than in Cpub (n = 63), while ‘Cpub longer’ indicates the opposite (n = 320) (two-sided Student’s t-test; in each box plot, the centre line indicates the median, the box limits indicate the first and third quartiles, and the whiskers extend to 1.5× the IQR). h, Example of ACR conservation in regions expanded in (PM1533 and Ac1979), haploblocks more similar to those in PM1533 were found in a larger number of C. annuum cultivars (19 cultivars on average) than those more similar to Ac1979 (9 cultivars on average) (Fig. 5b).",
+    "section": "Introgressions increased the genetic diversity of C. annuum",
+    "page": "7",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "22"
+  },
+  {
+    "text": "This suggests that the wild progenitor group represented by, d e –8 2.14 × 10 1.00 Median expression level (TPM) 20 DNA methylation ratio 0.75 –11 15 5.02 × 10 CpG ACR CHG Gene CHH 0.50 10 –9 5.07 × 10 0.25 5 –4 1.78 × 10 –4 7.84 × 10 0 0 2 Overlap 1 5 10 20 >20 −5 −3 −1 00 3 5 Distance to ACRs (kb) Position relative to ACR/gene (kb) Cpub Chr10 31,590 kb 31,600 kb 31,610 kb 31,620 kb Gene/TE Gene (ERF4) ACR TE ACR 6,740 kb 6,750 kb Crho Chr10 k l Higher in annuum 0.8 Higher in others 0.4 TE ratio TE ratio 0.4 0.2 Control Specific 0 0 Conserved Specific All <5 kb <2 kb −5 −3 −1 0 0 3 5 ACR−gene Position relative to ACR (kb) ACR conservation level distance o p Summit Summit 0.7 Conserved Conserved 0.6 Lost Lost 0.6 Ratio of sequence Ratio of sequence covered by PAVs covered by PAVs 0.5 0.5 0.4 0.4 0.3 0.3 0.2 0.2 Reference: Cpub Reference: Cagp 0.1 0.1 5 10 15 20 5 10 15 20 Cpub compared with Crho for an ERF4 gene. i, Distribution of acACR groups in different numbers of Capsicum genomes. j, Genes with annuum-specific ACRs generally exhibit higher expression than their syntenic genes without ACRs in other Capsicum species. k, TE contents in and around annuum-specific ACRs and those not specific to C. annuum (control). l, TE contents in ACRs conserved in different numbers of genomes. m,n, Ratios of conserved ACRs when Cpub (m) or Cagp (n) was set as a reference (two-sided Student’s t-test). ACRs were categorized into three types: those located in syntenic regions (Syntenic), those with location changes but still conserved in sequences (tSV) and those located in syntenic regions but showing PAVs (>50 bp). o,p, PAV-covered sequence ratios of two types of ACRs, shown in bins. The solid lines indicate ACRs retaining accessibility; the dashed lines indicate ACRs with lost accessibility. The line colours follow the scheme in m and n. Numbers above the bars and box plots represent P values.",
+    "section": "Introgressions increased the genetic diversity of C. annuum",
+    "page": "8",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "23"
+  },
+  {
+    "text": "Species and accession abbreviations are as defined in Fig. 1. or closely related to, PM1533 probably had a broader genomic influence on C. annuum cultivars than the group represented by, or closely related to, Ac1979. In addition, the specific haploblocks of the blocky-fruit pepper were limited, in contrast to the considerable haploblocks specific to 366 a b d –20 4.31 × 10 80 24 Blocky Number of C. annuum 1,303 60 4 accessions 113 Caga 40 207 5,612 Size 20 Genes NonCommon blocky 0 Haploblocks into C. annuum Caga Diverged haploblocks (803) c e Caga 6 Diversified Ancestral 5 Chinese Haploblock ratio accessions 4 Blocky 3 Breeding 2 Landrace Blocky 1 Ancestral Cagp specific Caga specific Most other Wild C. annuum C. annuum Other 0 1 2 3 4 5 6 0 20 Mb 40 Mb 60 Mb f G-3 C. annuum C. chinense G-2 (L3) G-4 g Resistant Pamd050 Pamd051 Three blocky accessions carrying Cchi haploblocks in Chr11 (Pamd050, 051, 052) Pamd052 G-5 G-1 0 h Ancestral Landrace Breeding Blocky subgroup 1 (pungent) Blocky subgroup 2 (sweet) Chinese Diversified Haploblock HP1 Pun1 deletion Pungent Non-pungent Fig. 5 | Haploblock scenario of C. annuum and the evolution of resistanceand pungency-related haploblocks. a, Contributions of Cfru and Cchi haploblocks to C. annuum. Ancestral undifferentiated haploblocks (common) are shown in yellow. b, Contributions of diverged haploblocks from Cagp or Caga to the domesticated C. annuum population (n = 380 versus 194; two-sided Student’s t-test; in each box plot, the centre line indicates the median, the box limits indicate the first and third quartiles, the whiskers extend to 1.5× the IQR and the data points indicate outliers). Numbers above the bars indicate P value. c, Haploblock composition in six C. annuum groups based on the pepper variome (Supplementary Table 12). d, Centromeric region of Chr09 in blocky-fruited C. annuum (represented by Pamd032) contains haploblocks similar to those in Caga, Cagp and Cfru (represented by Pfru003). The coloured boxes denote the haploblocks, while the solid lines denote the genetic distances between Pamd032 and the other accessions.",
+    "section": "Introgressions increased the genetic diversity of C. annuum",
+    "page": "8",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "24"
+  },
+  {
+    "text": "Recent and ancient introgressions are indicated by solid and dashed arrows, respectively. e, Haploblock diversity in Chr11. The evolutionary trajectories Chr09: 110–220 Mb 120 Mb 140 Mb 160 Mb 180 Mb 200 Mb 220 Mb Chr11 80 Mb 100 Mb 120 Mb 140 Mb 160 Mb 180 Mb 200 Mb 220 Mb 240 Mb 260 Mb C. frutescens C. chinense C. annuum Ancestral Landrace Breeding Blocky Chinese Diversified L3 Versus Cchi (L3) Versus other blocky Introgression 2 Mb 4 Mb i Ancestral haplotype pool Haploblock HP1 ratio Haploblock HP1 Blocky fruit Other fruit shapes Pun1 deletion ratio Blocky subgroup 2 Pungent Sweet (sweet) Sweet blocky pepper Blocky subgroup 1 (pungent) of haploblocks are highlighted by red and yellow boxes and arrows. The Cchiderived haploblocks (orange) in three blocky accessions are marked by red circles. f, Phylogenetic tree of the L gene in C. annuum and Cchi accessions. Among the five clades, which correspond to five genotypes (G-1 to G-5), G-2 is the L3 genotype, with resistance to PMMoV. g, Introgressed segments (light red) in three blocky accessions that were deduced according to the genetic distances against the L3-carrying Cchi accession (orange) and other blocky accessions (green, control). h, Phylogenetic tree of the haploblock (152–153 Mb of Chr02) carrying Pun1. Group information for each accession is indicated by coloured circles. Pungent and non-pungent accessions are indicated by red and green dashed lines, respectively. Haplotypes carrying the deletion of Pun1 (red star) belong to a specific haploblock (light yellow background, named HP1). i, Evolution of Pun1-carrying haploblock in C. annuum. Different haploblocks are represented by coloured bars for illustrative purposes. The pie charts indicate the ratios of haploblock HP1 (green) in the populations. Species and accession abbreviations are as defined in Fig. 1.",
+    "section": "Introgressions increased the genetic diversity of C. annuum",
+    "page": "9",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "25"
+  },
+  {
+    "text": "367 the previously defined Chinese pepper groups18 (Fig. 5c). Intriguingly, the blocky pepper had a higher proportion of haploblocks with high similarity to Ac1979 than the other C. annuum cultivars did, indicating that the recent emergence of blocky peppers involved additional contributions from some wild progenitor of C. annuum. The haploblocks located in the peritelomeric regions showed high transition frequencies (Extended Data Fig. 8), while those in the pericentromeric and centromeric regions were relatively long and consecutive. With the assistance of these consecutive centro-haploblocks, we were able to identify the large genomic regions that diverged between different samples and to trace their origins, such as the regions in Chr02, Chr09 and Chr11. Among them, the centro-haploblocks in Chr09 and Chr11 corresponded to the reported fragments F9 and F11 in blocky pepper18, respectively. We here reveal that the series of centro-haploblocks in Chr09 (117–215 Mb) is composed of multiple genetic sources rather than a simple introgression from wild C. annuum. The left part shows higher similarity to the haploblocks of PM1533 than to those of Ac1979, the middle part shows higher similarity to those of Ac1979 and the right end probably represents the remnants of historical introgression from C. frutescens, with accumulated mutations over time (Fig. 5d). The combination of these haploblocks was highly conserved in the blocky peppers but was almost non-existent in other C. annuum samples (Supplementary Fig. 15). Meanwhile, a series of centro-haploblocks in Chr11 (72–160 Mb) was also conserved (named H1) in blocky pepper but was limited in others (Fig. 5e). Unexpectedly, H1 was inherited from the wild C. annuum (both PM1533 and Ac1979), suggesting that another combination of haploblocks (H2) that was dominant in non-blocky C. annuum was the derived haplotype. H2 became the major one, whereas H1—reduced to a minor haplotype— accompanied the divergence of blocky pepper.",
+    "section": "Introgressions increased the genetic diversity of C. annuum",
+    "page": "9",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "26"
+  },
+  {
+    "text": "In addition, the ancestral centro-haploblock in Chr02 (44–54 Mb) was almost fixed in blocky pepper but rarely occurred in others, especially not in the Chinese pepper groups18 (Extended Data Fig. 9). These results show that the divergence and formation of C. annuum cultivars were coupled with frequent genomic introgressions from wild C. annuum. Important genes previously reported to be associated with disease defence and non-pungency traits occur in these haploblocks dominant in blocky peppers (Supplementary Table 14). We observed that three blocky pepper accessions carried the C. chinense-derived haploblocks in Chr11, whereas none of the other C. annuum accessions possessed these haploblocks (Fig. 5e). Intriguingly, within these haploblocks, we identified a CC-NBS-LRR gene named L, known to confer resistance to Tobamovirus spp.52. The L gene introgressed from C. chinense was the L3 allele, one of the four known alleles (L1–L4). The L3 allele has been validated to mediate resistance against the P0, P1 and P1,2 pathotypes of pepper mild mottle virus (PMMoV)53–55. Both haploblock tracing and phylogenetic analysis suggested that the L3 allele originated from C. chinense accessions (Fig. 5e,f), while the sizes of these introgressed segments in these three accessions were determined to be from 1.87 to 3.70 Mb (Fig. 5g). The blocky pepper and the C. chinense accessions harbouring the L3 allele showed strong resistance to the P1,2 pathotype as revealed by the inoculation test (Extended Data Fig. 10a). It is noteworthy that L3 was located in the present genotype of a 493-kb PAV (Extended Data Fig. 10b), which might be associated with its rare appearance in the C. annuum population. Non-pungency is one of the most important traits of sweet blocky peppers. In the genomic region of the well-known Pun1 gene, we observed a blocky-pepper-dominant haploblock. Pun1 encodes a key enzyme in capsaicin biosynthesis, and a loss-of-function mutation in this gene results in non-pungent peppers56.",
+    "section": "Introgressions increased the genetic diversity of C. annuum",
+    "page": "10",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "27"
+  },
+  {
+    "text": "This blocky-pepper-dominant haploblock existed at a low frequency (19%) in the ancestral and landrace accessions of C. annuum. The deletion of Pun1 occurred and resulted in the polymorphism of this specific haploblock. Although this haploblock was nearly fixed in all blocky peppers, the Pun1 deletion genotype was consistently present in sweet blocky peppers but absent in pungent blocky peppers (Fig. 5h). This suggests that the inheritance of this haploblock from ancestral C. annuum accompanied the formation of blocky pepper, while the selection of the non-pungency trait for sweet blocky peppers led to the widespread presence of the Pun1 deletion allele in this haploblock (Fig. 5i). These results together indicate that these haploblocks specifically retained in blocky pepper contain gene candidates that contribute to the evolution and domestication of blocky pepper.",
+    "section": "Introgressions increased the genetic diversity of C. annuum",
+    "page": "10",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "28"
+  },
+  {
+    "text": "We generated chromosome-level genome assemblies for both wild and domesticated peppers with varied genome size. On the basis of these 11 newly assembled and eight individually reported high-quality pepper genomes, we reconstructed the ancestral karyotype of Capsicum, inferred the evolutionary trajectory of pepper genomes, and characterized the large fragment rearrangements and frequent introgression events, as well as the evolution of the 3D chromosomal architecture. We also revealed the genetic diversity of genes and regulatory elements shaped by SV during the speciation and domestication of Capsicum. Compared with most diploid Solanaceae species, the muchexpanded genome size of Capsicum has raised questions concerning how this pronounced genome expansion occurred and what the evolutionary and genetic consequences are. Previous studies comparing C. annuum with other Solanaceae species suffered from the effects of large phylogenetic distances26,27 and the limited number of high-quality pepper genomes. The wild C. rhomboideum assembled here shows a significantly smaller genome size (1.8 Gb), and it diverged from the ancestor of C. pubescens approximately 9.2 Ma, much shorter than the distance between Capsicum and tomato (16.0 Ma) or golden berry (15.5 Ma)57. Comparisons between C. rhomboideum and other pepper genomes revealed differences in TE accumulations that underlie genome size expansion and variation among Capsicum species, which could potentially be attributed to TE proliferation events, as well as other factors such as selective pressures and TE elimination. The activation of different TE families might be related to historical changes in ecological or geographical environmental factors, accidental interspecific hybridization (genomic shock) or other factors58. Although the rapid transposition of selfish TEs frequently introduced deleterious variations, the Capsicum species that survived may have benefited from TE transposition.",
+    "section": "Discussion",
+    "page": "10",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "29"
+  },
+  {
+    "text": "The TE-involved elongation of the interstitial regions and the chromosomal rearrangements affected the 3D genome architecture of pepper. Meanwhile, TE proliferations also introduced variations proximal to genes. These variations enriched the genetic diversity of genes controlling important traits, thereby contributing to phenotypic diversity in pepper. Much effort has been devoted to investigating the biological consequences of SVs, most of which are associated with TE transposition59–62. It is now acknowledged that SVs are able to exert their functions through inducing functional mutations, generating variation in copy number and manipulating gene expression61,63. However, little is known about the influence of TE-involved SVs on chromatin accessibility. We compiled a chromatin accessibility map for 12 Capsicum accessions, whose genomes showed size variation due to differential TE insertion. We demonstrated that the evolution of ACRs was closely related to TEs. Interspecies comparisons showed that SVs, both the macro type affecting the location and the micro type altering the sequence composition of ACRs, strongly affected the function of ACRs. These results suggest a new approach to how SVs are involved in the regulation of gene expression in plants and thus expand our knowledge of SV-mediated functional innovation.",
+    "section": "Discussion",
+    "page": "10",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "30"
+  },
+  {
+    "text": "Identifying the major factors involved in shaping the present Capsicum genomes and traits not only facilitates the interpretation of pepper species evolution but also inspires potential breeding strategies for pepper. Through building the haploblock landscape for C. annuum and sister species, we identified frequent introgression events between peppers. Introgressions from C. frutescens to C. annuum 368 might have facilitated the spread of TEs located in the introgressed segments (Supplementary Fig. 16), which could contribute to the genetic variations in the C. annuum population. We observed a high frequency of haploblock transitions and diverse haploblock combinations in the peritelomeric regions of C. annuum, suggesting that C. annuum may possess relatively high genetic diversity. Meanwhile, we uncovered the unbalanced contributions of sister species C. frutescens and C. chinense to the genetic repertoire of the current C. annuum cultivar population. These results suggest that the introduction of underutilized genetic materials such as C. chinense into C. annuum is a promising approach for increasing the haplotypic and thus phenotypic diversity of C. annuum. This is particularly important for tracing the origins of haploblocks in pepper germplasm, especially the elite breeding materials. Due to the reduced recombination rates in the pericentromeric regions, the centro-haploblocks were capable of being unambiguously distinguished. These fossil-like haploblocks provided an excellent opportunity to trace the domestication and breeding history of pepper. We thereby revealed the major ancestral donor and determined how the haploblocks were transmitted along with the diversification of pepper. For example, the reference C. annuum genome ‘Zunla-1’ exhibited a rare haploblock combination in the pericentromeric region of Chr02, shared with only two accessions (Pamd012 and 013), indicating potential historical hybridization among these accessions.",
+    "section": "Discussion",
+    "page": "10",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "31"
+  },
+  {
+    "text": "Another example is the introgressed L3-carrying haploblock from C. chinense into C. annuum, which probably introduced PMMoV resistance, although we cannot completely rule out the possibility that other loci within this introgressed fragment may also contribute to this resistance. We anticipate that with the accumulation of more resequencing data—particularly from C. annuum, C. annuum var. glabriusculum, C. chinense and C. frutescens—the deduced haploblock landscape will provide a more comprehensive understanding of the haploblock origins of C. annuum cultivars and play an increasingly important role in directing pepper breeding via the use of previously neglected genomic resources. We dissected the evolutionary trajectory of Capsicum species from two major aspects: the evolution of the genome architecture and the haploblock introgression/inheritance. We constructed a chromatin accessibility map for wild and domesticated peppers and described the regulatory variation of genes accompanying pepper genome evolution. Both the large-scale genomic and the micro-scale regulatory variations identified in this study highlight the importance of extensive and differential TE proliferation. These results provide a comprehensive evolutionary roadmap of Capsicum species that will benefit future breeding efforts, and they greatly deepen our understanding of how genome expansion leads to genomic and gene functional/regulatory evolution in plants.",
+    "section": "Discussion",
+    "page": "11",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "32"
+  },
+  {
+    "text": "The accessions for genome assembly were selected from our core collection at the Institute of Vegetables and Flowers in Beijing, China. The materials were planted in the greenhouse with at least three replicates. Young leaves of each accession were collected and then flash-frozen in liquid nitrogen. DNA was extracted from the leaves using the CTAB method. The PacBio HiFi libraries were constructed using the SMRTbell Express Template Prep Kit 2.0 and were sequenced on PacBio HiFi Revio or Sequel II sequencing platforms (Pacific Biosciences). The ONT libraries were constructed using the Ligation Sequencing Kit 1D (PM) and were sequenced on an Oxford Nanopore PromethION sequencer (Oxford Nanopore Technologies). Young fresh leaves of each accession were sampled for the construction of Hi-C libraries, which was then conducted following standard protocols using the Proximo Hi-C Plant Kit. The HindIII enzyme was used for treating the DNA. The libraries were sequenced on the Illumina HiSeq2000 platform. The 150-bp paired-end short reads were generated on the Illumina NovaSeq or DNBSEQ-T7 platform.",
+    "section": "Methods Plant materials and genome sequencing",
+    "page": "11",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "33"
+  },
+  {
+    "text": "The genome size and heterozygosity of each accession were estimated using Jellyfish (v.2.2.10) and GenomeScope (v.2.0) with the k-mer size set as 31 (ref. 64). Hifiasm (v.0.20.0) was used to assemble the HiFi reads, ONT reads and Hi-C reads into the haplotype-phased contigs with the parameters –dual-scaf; –telo-m, AAACCCT65. For the C. annuum C5 without ONT data, only HiFi and Hi-C reads were used for assembly. The Hi-C reads were aligned to the assembled contigs using Chromap (v.0.2.6)66, and the resultant alignment SAM files were sorted using SAMtools (v.1.16). We then used YaHS (v.1.1) for scaffolding the contigs with the parameter no-contig-ec67. Juicer (v.1.6)68 and Juicebox (v.2.18)69 were used to generate and visualize the interaction heat map, respectively, and the potential misassemblies were manually corrected. Alternatively, ONT-only contigs were generated using NextDenovo (v.2.4.0)70. The Nanopore-based contigs were further polished using NextPolish (v.1.3.0) with the assistance of short reads. The ONT-based contigs were aligned to the scaffolds of the assembled genomes using Nucmer (v.4.0.0) to identify potential misassemblies in these scaffolds71. SVs were manually identified, and the corresponding local Hi-C heat maps were revisited. To close the gaps remaining in the scaffolds, contigs of haplotypes and the ONT-based contigs were aligned to the scaffolds using Nucmer, and gaps were manually closed by replacing the gaps with the corresponding sequences from these contigs. The telomeric repeat motif AAACCCT was screened using Tandem Repeats Finder (v.4.09)72. The completeness of the assemblies was assessed using Merqury (v.1.3) from HiFi reads with the k-mer size set as 31 (ref. 73). BUSCO (v.3.0.2) analysis was performed with the embryophyta_odb 10 database.",
+    "section": "Genome assembly and scaffolding",
+    "page": "11",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "34"
+  },
+  {
+    "text": "RepeatModeler2 (v.2.0.4) with ‘-LTR’ was used to generate a nonredundant repeat library for each accession74. For the library, RepeatMasker (v.4.1.5) was used to identify and mask the repetitive sequences75. LTR_retriever (v.2.8), which integrates the results from LTR_Finder and LTR harvest, was used to better annotate the full-length LTR-RTs and to measure the pairwise divergence rate (K) between two LTRs of each retrotransposon76–78. The insertion times of these full-length LTR-RTs were estimated according to the formula K/2r, with a substitution rate (r) of 6.0 × 10−9, which was set on the basis of the divergence times between Capsicum species. The full-length LTR-RTs were further classified into families using TEsorter (v.1.4.6)79. Protein-coding genes were predicted on the basis of the gene models from ab initio, homologue-assistant and transcript-based approaches. The detailed methods were described in our previous study80. In brief, we generated the mRNA-seq data (approximately 6 Gb of Illumina paired-end data per sample) for leaves, roots, stems, fruits and flower organs from each accession. HISAT2 (v.2.2.0) followed by StringTie (v.2.1.0) and Trinity (v.2.12.0) were used to obtain the genome-assistant and ab initio transcript models, respectively81–83. Protein sequences of 12 species, including Arabidopsis thaliana, coffee, cacao and several Solanaceae species (tomato, potato and petunia) were collected for homologue-based prediction using Exonerate (v.2.2.0). The ab initio gene predictions were generated using Augustus (v.3.5.0) and GeneMark-ES (v.4.72), both of which included the results from the RNA-seq data84,85. EvidenceModeler (v.1.1.1) was used to integrate the gene models, and genes with incomplete structure were removed86. In addition to the newly assembled genomes, the previously released genome assemblies were also annotated to ensure comparability. The predicted proteins were aligned to the SWISS-PROT database (https:// www.uniprot.org) with E < 1 × 10−5, and the annotations of the top five hits were retained87. The proteins were also submitted to the InterPro database (https://www.ebi.ac.uk/interpro/) to annotate the functional domains and to assign the Gene Ontology terms88. 369",
+    "section": "Genome annotation",
+    "page": "11",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "35"
+  },
+  {
+    "text": "Syntenic gene pairs were identified across tomato, potato, physalis and 13 pepper genomes using mSynOrths (v.0.1; https://gitee.com/ zhanglingkui/msynorths) with the parameters m = 0.7, x = 10 and n = 5. Specifically, a homologous gene pair was defined as syntenic if its flanking genes were also homologous. Two syntenic pairs interrupted by fewer than 50 genes were grouped into a single syntenic segment. A valid syntenic fragment requires at least 10 gene pairs. Syntenic gene pairs identified between species were then clustered into syntenic gene families across all investigated species.",
+    "section": "Identification of syntenic gene families",
+    "page": "12",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "36"
+  },
+  {
+    "text": "Syntenic families containing members from all of the investigated species and accessions were used to construct a phylogenetic tree. Protein sequences of syntenic gene families were aligned with mafft (v.7.495)89 using the default parameters. The alignments were trimmed with trimAl90 (v.1.4.1; parameter automated1), and the trimmed sequences of each species or accession were concatenated into one sequence. On the basis of the concatenated sequence, a phylogenetic tree was constructed using RAxML91 (v.1.1.0; parameters -f, a; -N, 100; -m, PROTGAMMAJTT). The divergence times were inferred using the Compute Timetree function of MEGA X92, and several known divergence times obtained from Timetree (http://www.timetree.org/)57 were used as references to calibrate the divergence times among Capsicum accessions.",
+    "section": "Phylogenetic analyses",
+    "page": "12",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "37"
+  },
+  {
+    "text": "Protein sequences of homologous gene pairs were aligned using ParaAT (v.2.0)93. Protein alignments were then converted into coding sequence alignments using an in-house Perl script (available upon request). Synonymous (Ks) substitution rates were calculated on the basis of the coding sequence alignments using the method of Neil and Gojobori implemented in the KaKs_calculator (v.3.0)94.",
+    "section": "Ks analysis",
+    "page": "12",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "38"
+  },
+  {
+    "text": "Protein sequences from C. pubescens and C. rhomboideum were aligned to those of diploid Solanaceae species, including physalis, tomato and wolfberry. Rearrangement-related break points were identified through interspecies comparisons. Shared break points and corresponding genomic segments between C. pubescens and C. rhomboideum were considered ancestral before their divergence, while species-specific break points were considered independently generated post-divergence. To reconstruct the ACaK, the combination of genomic segments was optimized by minimizing necessary rearrangements. Segments unchanged during the speciation of C. pubescens and C. rhomboideum were labelled as GBs A to U according to their order in the ACaK. Using the ACaK system, rearrangements introduced during the evolution from C. pubescens to other Capsicum species were deduced through synteny comparisons.",
+    "section": "Reconstruction of the ancestral karyotype",
+    "page": "12",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "39"
+  },
+  {
+    "text": "Centromeres were identified on the basis of their exceptionally strong interaction in the Hi-C map. We used FAN-C (v.0.9.0) to calculate the interaction frequency between genomic bins with sizes ranging from 5 kb to 5 Mb (ref. 95). Potential centromere-related bins were roughly framed by selecting bins with the strongest inter-chromosomal interactions. Interaction heat maps of these bins across chromosomes were visualized, and the boundaries of these interaction hotspots were manually refined according to their interaction pattern. The exact centromeric boundaries in each chromosome were determined by averaging the positions from all-versus-all inter-chromosomal comparisons. We used publicly available CENH3 ChIP-seq data for C. annuum (PRJNA962192, National Center for Biotechnology Information) to validate the positioning of centromeres. Considering that this ChIP-seq dataset was generated for a domesticated C. annuum accession, the ChIP-seq reads were aligned to the C. annuum ‘Zunla-1’ genome using Bowtie2 (v.2.4.4). The bamCoverage function in deepTools (v.2.0) was used to calculate the normalized depth relative to the input sample with the parameters -of, bedgraph; –operation, ratio; –binSize, 100000; –smoothLength, 300000; –normalizeUsing, CPM; –scaleFactorsMethod, None96. Centromeric regions predicted in Capsicum genomes were extended 5 Mb upstream and downstream to evaluate their repeat composition.",
+    "section": "Centromere identification and comparison",
+    "page": "12",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "40"
+  },
+  {
+    "text": "Each of the assembled Capsicum genomes was aligned to the PM1533 genome using minimap2 (v.2.24-r1122) with the parameter -ax asm10 (ref. 97). SyRI (v.1.6) was used to detect the SVs with the default parameters40. For PAVs, only deletions or insertions larger than 50 bp were retained. The intersect function in BEDTools (v.2.30.0) was used to calculate the TE ratios in the SV-involved segments98.",
+    "section": "Identification of SVs",
+    "page": "12",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "41"
+  },
+  {
+    "text": "A/B compartments were identified using FAN-C with a 500-kb bin size. Inaccurately identified compartments were manually filtered out with the assistance of the Hi-C heat map and the AB eigenvector plot. Compartments smaller than 3 Mb were excluded from subsequent analysis. To identify A/B switches between C. pubescens and other assembled genomes, syntenic gene pairs in the A/B compartments were used as proxies, since direct bin comparisons were impractical due to size differences and extensive rearrangements. A bin in C. pubescens was classified as switched if over half of its genes had a different compartment status than their syntenic counterparts in another genome.",
+    "section": "Identification of A/B compartment switches",
+    "page": "12",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "42"
+  },
+  {
+    "text": "Young fresh leaves from 12 genome-assembled accessions and young fruits from C. pubescens, C. baccatum, C. chinense, C. annuum var. glabriusculum PM1533 and C. annuum ‘Zunla-1’ and ‘Qiemen’ were flash-frozen in liquid nitrogen. Two to three biological replicates were prepared per accession. Nuclei isolation followed a standard ATAC-seq protocol99. The Nextera DNA Library Preparation Kit (Illumina) was used for the transposition. The libraries were purified and sequenced on the Illumina Novaseq 6000 platform. The 150-bp paired-end sequencing data were aligned to genomes using BWA (v.0.7.17-r1188) with the default parameters100. The alignment files were sorted using SAMtools, and PCR duplicates were removed using the MarkDuplicates function in Picard (v.2.27.0)101. Alignments were filtered to retain properly paired fragments with MAPQ greater than 20. Genrich (v.0.6.1; https://github. com/jsh58/Genrich) was used for peak calling with parameters -j; -p, 0.01; -a, 100; -v; -f. The P values ranked at the top 5% were selected as the final cut-off, and Genrich was rerun with this P-value cut-off to predict the putative ACRs. Distances between ACRs and adjacent genes were called using Homer (v.5; http://homer.ucsd.edu/homer/ngs/peaks. html). To assess TE overrepresentation in ACRs, simulated ACRs matching length and density distributions were generated using the shuffle function in BEDTools. Repeat contents of real and simulated ACRs were then compared using the intersect function in BEDTools.",
+    "section": "ATAC-seq, peak calling and ACR characterization",
+    "page": "12",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "43"
+  },
+  {
+    "text": "To assess ACR sequence conservation, the sequences of ACRs from each accession were aligned to the C. pubescens genome using BLASTn with E < 1 × 10−5, and hits with the top five scores were retained. ACRs overlapping genes were excluded. Using syntenic segment information, syntenic target regions in the C. pubescens genome were identified for query ACRs. If the top-scoring hit matched the syntenic region, it was retained as a valid ‘syntenic hit’ (‘syn hit’). If not, subsequent hits were examined iteratively. If none of these hits matched the syntenic region, the top-scoring hit with identity and coverage higher than 80% was considered a valid ‘jumping hit’; otherwise, the ACR was considered ‘no hit’. Sequence conservation of ACRs was compared to those of randomly selected intergenic sequences with the same length distribution 370 using the shuffle function in BEDTools. The overlap of valid hits with C. pubescens ACRs was identified using the intersect function in BEDTools, and overlapping ACRs were defined as acACRs between the two genomes. For gene–ACR distance comparisons between C. pubescens and C. rhomboideum, only syntenic gene and ACR pairs were analysed, excluding gene-overlapping ACRs. Gene–ACR pairs with twofold distance changes (in the 5–50 kb range) were selected for further analysis. To compare repeat ratios in ACRs with different conservation levels, we generated several sets of C. pubescens ACRs according to their occurrence frequency across Capsicum accessions. Gene-overlapping ACRs were excluded to reduce the influence of repeat-sparse genic regions. The order of conservation from high to low as well as the methods for ACR set generation are detailed in Supplementary Table 15. The average repeat ratio in each ACR set was calculated.",
+    "section": "Comparison of ACRs across accessions",
+    "page": "12",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "44"
+  },
+  {
+    "text": "The acACR pairs between genome pairs were clustered into acACR groups. Orthologous acACR pairs sharing at least one common member were grouped together. To address potential false-positive acACR pairs inflating group sizes, the Markov Cluster algorithm (MCL; inflation, 2.0) was used to refine groups102. MCL distinguishes densely connected orthologous groups from sparsely connected ones and splits sparsely connected groups into separate groups. Unclustered ACRs were considered specific ACRs, while acACR groups containing members from all investigated genomes were considered core acACRs. The acACR groups containing members from at least three C. annuum accessions (C. annuum var. glabrius­ culum included) but none of the non-C. annuum accessions were defined as annuum-specific acACRs.",
+    "section": "Clustering of acACRs",
+    "page": "13",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "45"
+  },
+  {
+    "text": "ACRs were partitioned into ten bins, while their upstream and downstream flanking sequences (5 kb long) were divided into 100-bp bins with a step size of 10 bp. The repeat ratio in each bin was calculated, and the ratios were then averaged among the ACR sets. A similar analysis was conducted to determine the ratio of Gypsy LTR-RTs surrounding genes. To explore DNA methylation levels around ACRs and genes, we used previously generated DNA methylation data from the leaf organ of ‘Zunla-1’ (PRJCA025503, Genome Sequence Archive, https://ngdc. cncb.ac.cn/gsa/), which was aligned to the ‘Zunla-1’ genome using Bismark (v.0.20.0)103. Similarly, the 5-kb flanking regions of ACRs/ genes were divided into 100-bp bins, while the body regions of ACRs/ genes were partitioned into ten bins. The weighted methylation level was calculated for each bin.",
+    "section": "Determination of the repeat/DNA methylation ratios",
+    "page": "13",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "46"
+  },
+  {
+    "text": "C. pubescens ACRs were aligned to those of other Capsicum species, and hits were categorized as ‘syn’ or ‘jumping’ on the basis of prior criteria. Variants between C. pubescens and other accessions were identified using SyRI, with C. pubescens as the reference. C. pubescens ACRs showing sequence deletions (>50 bp, coverage >20%) in query genomes were considered to have PAVs; those with deletions <50 bp were considered to be without PAVs. The proportion of hit sequences occupied by PAVs was calculated using the coverage function in BEDTools. To evaluate the influence of location changes on the conservation of ACRs, hits without PAVs were retained to exclude the potential effects exerted by PAVs. The retained ‘syn’ and ‘jumping’ hits were considered the location-conserved and location-changed hits, respectively. To assess the influence of PAVs on ACR conservation, only ‘syn’ hits were analysed. For each type of hit, hits overlapping with ACRs in the corresponding accession were counted. To further estimate the positional influence of PAVs inside the ACRs on conservation, ACRs were partitioned into 20 bins centred on their predicted summits. Sequence deletion ratios for each bin were calculated and averaged for ACRs that retained or lost accessibility in the target species or accession.",
+    "section": "Analyses of the influences of SVs on ACRs",
+    "page": "13",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "47"
+  },
+  {
+    "text": "A total of 124 accessions were selected according to their phylogenetic relationships in our previous resequencing study18. For simplification, the previously defined nine C. annuum groups were merged into six groups (Supplementary Table 12). DNA was isolated from the leaves of these accessions using the aforementioned method, and the constructed libraries were sequenced on a DNBSEQ-T7 platform. In total, approximately 16.27 Tb of paired-end data were generated. The deep resequencing data for these selected accessions as well as the DNA sequencing data used for polishing the assemblies were aligned to the PM1533 genome using BWA, and variants were called using the HaplotypeCaller function of GATK (v.4.1.4.0)101. The raw VCF file was filtered using VCFtools (v.0.1.6) with the parameters –mac, 3; –minQ, 30; –max-missing, 0.9; –remove-indels; –min-meanDP, 10; –max-meanDP, 50; –minDP, 5; –maxDP, 80; –maf, 0.03 (ref. 104).",
+    "section": "Population resequencing and variant calling",
+    "page": "13",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "48"
+  },
+  {
+    "text": "To guide accession selection for accurately detecting introgressions on the basis of variants, potential interspecies introgressions were initially estimated using genome assemblies. Specifically, genes from PM1533 were BLASTn searched against non-C. annuum species, excluding C. rhomboideum. For each gene in PM1533, the best hit with an identity higher than 99.8% was identified, and the number of best hits were counted for each species within each 1-Mb bin. Bins containing more than five genes were considered potential introgressed bins if over 60% of the best hits originated from the same species. Since the majority of potential introgressed bins (255/276, 92%) were derived from C. frutescens or C. chinense, we selected 109 accessions from C. frute­ scens, C. chinense and C. annuum for downstream analyses. We used Introblocker (v.1.0.1) to identify the haploblocks with a bin size of 1 Mb in each accession using the semi-supervised mode. Introblocker was run with the parameters cluster_thr = 3,000 and smooth_thr = 2,000 to identify interspecies haplotypic differentiation and cluster_thr = 1,000 and smooth_thr = 600 to identify intraspecies haplotypic differentiation51. Ancient introgressions from C. frutescens or C. chinense to C. annuum were defined as haploblocks present in >80% of C. annuum accessions. Ancestral undifferentiated haploblocks—frequent in both C. frutescens and C. chinense (>80%)—were excluded. Meanwhile, haploblocks found exclusively in C. frutescens or C. chinense (with no limits on accession number) were defined as C. frutescensor C. chinense-contributed haploblocks. Genetic distances between accessions were calculated using plink embedded in Introblocker to examine whether C. frutescens-contributed haploblocks were derived from recent gene flow from C. annuum to C. frutescens. Distances between C. annuum and C. frutescens were compared to intra-C. annuum distances using Student’s t-test (P < 0.05). Chromosomal haploblock diversity and transitions were evaluated by partitioning chromosomes into 20 bins centred on centromeres.",
+    "section": "Construction and analysis of the haploblock map",
+    "page": "13",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "49"
+  },
+  {
+    "text": "Haploblocks dominantly found in blocky fruit peppers were screened on the basis of high frequency in blocky groups (≥12 accessions, 75%) and low frequency in other groups (≤16 accessions, 25%).",
+    "section": "Construction and analysis of the haploblock map",
+    "page": "13",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "50"
+  },
+  {
+    "text": "For the RNA-seq assay paralleling the ATAC-seq, RNA was isolated from the same samples used for ATAC-seq. Libraries were constructed using the VAHTS mRNA-seq v.2 Library Prep Kit (Illumina) and were sequenced on the Illumina Novaseq 6000 platform. To investigate the transcription of the Up gene in C. chinense accessions with different fruit orientations, the pedicel and placenta tissues were collected and flash-frozen in liquid nitrogen. Libraries were constructed using the Hieff NGS Ultima Dual-mode mRNA Library Prep Kit for Illumina and were sequenced on the DNBSEQ-T7 platform. The 150-bp paired-end data were aligned to the corresponding genomes using HISAT2, and gene quantification was conducted using featureCounts (v.2.0.3)81,105. TPMs calculated from each replicate were averaged as the gene expression levels. 371",
+    "section": "RNA-seq and data processing",
+    "page": "13",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "51"
+  },
+  {
+    "text": "To distinguish the genotypes of the L gene in C. annuum and C. chinense accessions, the resequenced data were aligned to the C. annuum ‘Qiemen’ genome, since the genomic segment carrying the L gene was absent in PM1533 due to the PAV. After the accessions without the segment were excluded, variants in VCF format were called using the mpileup function in SAMtools and the call function in BCFtools (v.1.13). The VCF file was converted to the PHYLIP alignment format, and a phylogenetic tree was constructed using IQ-TREE (v.2.1.4)106. The same methods were used to construct the phylogenetic tree of the haploblock carrying Pun1 (152–153 Mb in Chr02). To examine resistance to the P1,2 pathotype of PMMoV, plants were mechanically inoculated by rubbing the virus onto two true leaves with Carborundum −400 mesh when three or four leaves were fully expanded. After inoculation, the pepper seedlings were kept in a greenhouse maintained at 25–30 °C. To validate the SVs associated with the Up and CCS genes, primers spanning the variations were designed (Supplementary Table 16), and the genotypes were determined by the PCR-amplified fragment sizes.",
+    "section": "Phylogenetic analysis and validation of SVs",
+    "page": "14",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "52"
+  },
+  {
+    "text": "Further information on research design is available in the Nature Portfolio Reporting Summary linked to this article.",
+    "section": "Reporting summary",
+    "page": "14",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "53"
+  },
+  {
+    "text": "All sequencing data generated in this study have been deposited at the Genome Sequence Archive (https://ngdc.cncb.ac.cn/gsa/) under BioProject PRJCA019635. The genome assemblies with annotations are available at the Genome Warehouse (https://ngdc.cncb.ac.cn/gwh/) under the same BioProject ID, and the variation data are available via the Genome Variation Map (https://ngdc.cncb.ac.cn/gvm/) with accession number GVM000925. These assemblies can also be accessed at SolPGD (http://www.bioinformaticslab.cn/files/genomes/pepper_pan).",
+    "section": "Data availability",
+    "page": "14",
+    "paper_id": "P012",
+    "title": "Transposon proliferation drives genome architecture and regulatory evolution in wild and domesticated peppers",
+    "authors": [
+      "Kang Zhang",
+      "Hailong Yu"
+    ],
+    "year": "2025",
+    "source_file": "P012.pdf",
+    "id": "54"
+  }
+]

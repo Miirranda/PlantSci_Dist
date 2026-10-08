@@ -110,10 +110,13 @@ C. 不可充分核实：is_answerable=false，has_distortion=null，primary_leve
 
 ## 失真判定（仅 With；按序，Primary=含义变化最大者）
 
+> 下面 2–4 的 substitution / addition / omission 是 **level1 大类名，不是 primary_level2 的取值**。
+> primary_level2 必须从上方分类表选**完整 level2 slug**（如 significance_addition），禁止只写 addition / omission / substitution。
+
 1. 完全支持（含合理压缩/同义/术语通俗化/非关键细节/程度弱化/一般背景）→ no_distortion
-2. 改变已有科学关系（相关→因果、间接→直接、机制换成另一种）→ substitution
-3. 增加论文没有的功能/应用或「首次/突破」→ addition
-4. 删除重要限定（物种/条件/不确定性/关键机制）→ omission
+2. 改变已有科学关系（相关→因果、间接→直接、机制换成另一种）→ substitution 类（relation_substitution / magnitude_substitution / mechanism_substitution 之一）
+3. 增加论文没有的功能/应用或「首次/突破」→ addition 类（function_application_addition / significance_addition 之一）
+4. 删除重要限定（物种/条件/不确定性/关键机制）→ omission 类（context_omission / evidence_uncertainty_omission / mechanism_omission 之一）
 5. 第二个独立错误最多一条 secondary；同一变化禁止双标
 6. 冲突：substitution > addition > omission
 

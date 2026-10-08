@@ -45,6 +45,18 @@ def test_split_drops_wrapped_figure_caption():
     assert all(not t.startswith("图") for t in texts)
 
 
+def test_split_keeps_numbered_discussion_sentences():
+    """编号讨论项若已是完整科学句，不应被小标题规则丢掉。"""
+    text = """研究结论
+1、目前关于Ne1和Ne2是否存在直接互作以及它们如何诱发坏死的问题，仍存在争议。
+4、鉴于目前已公开的六倍体小麦基因组中未包含CNV-2或CNV-3类型的材料，因此排列方式尚不清楚。
+"""
+    cands = split_article_candidates(text)
+    texts = [c["text"] for c in cands]
+    assert any("直接互作" in t for t in texts)
+    assert any("CNV-2" in t for t in texts)
+
+
 def test_split_article_candidates_filters_figure_caption():
     cands = split_article_candidates(SAMPLE)
     texts = [c["text"] for c in cands]
@@ -92,19 +104,41 @@ def test_rule_drop_publication_meta_only():
     assert default_keep(meta) is False
 
 
-def test_rule_keep_mixed_meta_and_science():
+def test_rule_drop_mixed_meta_lead_without_specific_experiment():
     mixed = (
         "杨学勇团队在Nature Plants期刊上发表论文，首次揭示了黄瓜下位子房的发育机制。"
     )
     assert rule_drop_role(mixed) is None
-    assert default_keep(mixed) is True
+    assert default_keep(mixed) is False
+    assert heuristic_role(mixed) == "summary_overview"
 
 
 def test_rule_drop_fragment_and_discourse():
     assert rule_drop_role("（2）花托迅速生长") == "fragment"
     assert rule_drop_role("综上所述") == "discourse"
     assert rule_drop_role("下面我们来看") == "discourse"
-    assert rule_drop_role("综上所述，KNAT2-like1在花托生长中起关键性作用。") is None
+    specific_sum = "综上所述，KNAT2-like1在花托生长中起关键性作用。"
+    assert rule_drop_role(specific_sum) is None
+    assert default_keep(specific_sum) is True
+
+
+def test_rule_keep_specific_after_summary_prefix():
+    specific = "该研究证明KNAT2-like1调控花托生长。"
+    assert rule_drop_role(specific) is None
+    assert default_keep(specific) is True
+    indicated = "这项研究表明花托快速生长依赖FIM。"
+    assert rule_drop_role(indicated) is None
+    assert default_keep(indicated) is True
+
+
+def test_rule_drop_empty_overview_and_significance():
+    empty_lead = "该研究首次揭示了黄瓜下位子房的发育机制。"
+    assert rule_drop_role(empty_lead) is None
+    assert default_keep(empty_lead) is False
+    assert heuristic_role(empty_lead) == "summary_overview"
+    empty_sign = "该发现对作物育种具有重要启示。"
+    assert default_keep(empty_sign) is False
+    assert heuristic_role(empty_sign) == "significance"
 
 
 def test_apply_rule_filters_drops_meta_keeps_science():
@@ -169,7 +203,7 @@ def test_parse_decisions_empty_result_uses_heuristic():
     assert flags[2]["keep"] is False
 
 
-def test_dedup_summary_drops_near_duplicate_but_keeps_new_significance():
+def test_dedup_summary_drops_near_duplicate_including_significance_add_on():
     kept = [
         {
             "text": "敲除KNAT2-like1，黄瓜花托生长受阻，导致下位子房转变为类似番茄的上位子房。",
@@ -186,16 +220,20 @@ def test_dedup_summary_drops_near_duplicate_but_keeps_new_significance():
     ]
     result = dedup_summary_claims(kept)
     texts = [item["text"] for item in result]
-    assert len(result) == 2
+    assert len(result) == 1
     assert texts[0].startswith("敲除KNAT2-like1，黄瓜花托生长受阻")
-    assert "新靶点" in texts[1]
+    assert "新靶点" not in texts[0]
 
 
 def test_heuristic_role_uses_section():
     intro = "在开花植物中，子房相对于其他花器官的位置是重要分类学特征之一。"
     assert rule_drop_role(intro) is None
     assert heuristic_role(intro, "研究背景") == "paper_intro"
+    assert default_keep(intro, "研究背景") is True
     assert heuristic_role("以上结果说明花托快速生长由FIM驱动。", "总结与讨论") == "paper_conclusion"
+    method = "构建了黄瓜KNAT2-like1敲除突变体k-1和k-2。"
+    assert heuristic_role(method, "研究结果") == "paper_method"
+    assert default_keep(method, "研究结果") is True
 
 
 def test_build_claim_records_includes_role():
@@ -294,7 +332,7 @@ def test_export_locked_claims_drops_and_merges(tmp_path):
     assert "句乙" not in locked[0]["claim_zh"]
 
 
-def test_extract_skip_llm_drops_meta_and_keeps_intro(tmp_path):
+def test_extract_skip_llm_drops_empty_overview_keeps_intro_and_result(tmp_path):
     article = tmp_path / "a.md"
     article.write_text(
         """# 标题
@@ -308,6 +346,7 @@ def test_extract_skip_llm_drops_meta_and_keeps_intro(tmp_path):
 
 研究结果
 说明黄瓜子房下位形成的必要条件为：（1）花分生组织膨大；（2）花托迅速生长；（3）花托和心皮融合。
+构建了黄瓜KNAT2-like1敲除突变体k-1和k-2。
 """,
         encoding="utf-8",
     )
@@ -316,7 +355,8 @@ def test_extract_skip_llm_drops_meta_and_keeps_intro(tmp_path):
     claims = extract_claims_from_article(article, skip_llm_verify=True)
     texts = [c["claim_zh"] for c in claims]
     assert all("发表了题为" not in t for t in texts)
-    assert any("首次揭示" in t for t in texts)
+    assert all("首次揭示" not in t for t in texts)
     assert any("分类学特征" in t for t in texts)
     assert any("必要条件" in t and "花托迅速生长" in t for t in texts)
+    assert any("敲除突变体" in t for t in texts)
     assert all(not t.strip().startswith("（2）") for t in texts)

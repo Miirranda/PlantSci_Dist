@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>召回整理审核</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div>
+    <div class="title">召回整理审核</div>
+    <div class="subtitle" id="subtitle">加载中…</div>
+  </div>
+  <label class="reviewer-box">
+    <span>只看</span>
+    <select id="paperFilter">
+      <option value="">全部论文</option>
+    </select>
+  </label>
+  <div class="progress">
+    <span id="posText">0/0</span>
+    <span class="bar"><i id="barFill" style="width:0%"></i></span>
+    <span id="doneText">已核对 0</span>
+  </div>
+  <div class="nav">
+    <button id="prevBtn" type="button">← 上一条</button>
+    <button id="nextBtn" type="button">下一条 →</button>
+    <span class="jump">
+      <input id="jumpInput" type="number" min="1" placeholder="#">
+      <button id="jumpBtn" type="button">跳转</button>
+    </span>
+    <button id="todoBtn" type="button">只看未核对</button>
+  </div>
+</header>
+
+<main class="norm-page" id="page">
+  <p class="norm-loading">正在加载…</p>
+</main>
+
+<footer class="norm-savebar">
+  <button id="saveBtn" class="btn-primary" type="button">保存本条</button>
+  <button id="confirmBtn" class="btn-primary btn-advance" type="button">保存并标为已核对</button>
+  <span class="save-status" id="saveStatus"></span>
+  <span class="norm-save-hint">方向键可翻页。改过但没保存时，翻页会先问你。</span>
+</footer>
+
+<script>
+const ROLE_OPTIONS = [
+  ["support", "留下 · 支撑", "这句在证明观点句说的那件事。"],
+  ["qualifier", "留下 · 限定", "这句是条件、范围、例外或不确定说法。必须留下，否则看不出观点句有没有把话说满。"],
+  ["background", "不进入比对", "这句和这条观点无关。后面做失真判断时不用它，原文仍留在稿里。"],
+  ["unsure", "我还不确定", "先标这里，回头再看。"]
+];
+
+let allItems = [];
+let view = [];
+let cursor = 0;
+let dirty = false;
+let onlyTodo = false;
+let paperFilter = "";
+
+const $ = (id) => document.getElementById(id);
+
+function esc(text) {
+  return String(text == null ? "" : text);
+}
+
+function itemKey(item) {
+  return item.paper_id + "|" + item.sample_id;
+}
+
+function filtered() {
+  return allItems.filter((item) => {
+    if (paperFilter && item.paper_id !== paperFilter) return false;
+    if (onlyTodo && item.confirmed) return false;
+    return true;
+  });
+}
+
+function current() {
+  return view[cursor] || null;
+}
+
+async function loadData() {
+  const res = await fetch("/api/data");
+  const data = await res.json();
+  allItems = data.items || [];
+  const papers = [...new Set(allItems.map((item) => item.paper_id))];
+  const select = $("paperFilter");
+  papers.forEach((paper) => {
+    const opt = document.createElement("option");
+    opt.value = paper;
+    opt.textContent = paper;
+    select.appendChild(opt);
+  });
+  const done = allItems.filter((item) => item.confirmed).length;
+  $("subtitle").textContent = (data.meta && data.meta.hint) || "";
+  $("doneText").textContent = "已核对 " + done + "/" + allItems.length;
+  refreshView(true);
+}
+
+function refreshView(reset) {
+  const prevKey = current() ? itemKey(current()) : "";
+  view = filtered();
+  if (reset || !view.length) cursor = 0;
+  else {
+    const found = view.findIndex((item) => itemKey(item) === prevKey);
+    cursor = found >= 0 ? found : Math.min(cursor, view.length - 1);
+  }
+  dirty = false;
+  render();
+}
+
+function render() {
+  const item = current();
+  const doneInView = view.filter((row) => row.confirmed).length;
+  $("posText").textContent = view.length ? (cursor + 1) + "/" + view.length : "0/0";
+  $("barFill").style.width = view.length ? Math.round(((cursor + 1) / view.length) * 100) + "%" : "0%";
+  $("doneText").textContent = "已核对 " + allItems.filter((row) => row.confirmed).length + "/" + allItems.length;
+  $("todoBtn").classList.toggle("active", onlyTodo);
+  const page = $("page");
+  page.replaceChildren();
+  if (!item) {
+    const empty = document.createElement("p");
+    empty.className = "norm-loading";
+    empty.textContent = onlyTodo ? "未核对的都看完了。" : "没有可审核的条目。";
+    page.appendChild(empty);
+    return;
+  }
+  page.appendChild(guideCard());
+  page.appendChild(claimCard(item));
+  page.appendChild(unitSection(item));
+  page.appendChild(termSection(item));
+  page.appendChild(citationSection(item));
+  if (dirty) {
+    $("saveStatus").textContent = "有未保存的修改";
+    $("saveStatus").className = "save-status";
+  }
+}
+
+function guideCard() {
+  const card = document.createElement("section");
+  card.className = "card norm-guide";
+  const title = document.createElement("div");
+  title.className = "card-title";
+  title.textContent = "这一屏你要做什么";
+  const body = document.createElement("div");
+  body.className = "norm-guide-body";
+  body.textContent = "每条做两件事。第一，读每句中文，决定后面做失真判断时留不留。第二，看专有名词对照要不要，以及左右两边是不是同一件事。英文放在中文下面，只作对照。普通的“铁 / iron”这种翻译不用写进对照表。";
+  card.append(title, body);
+  return card;
+}
+
+function claimCard(item) {
+  const card = document.createElement("section");
+  card.className = "card claim-card norm-claim";
+  const title = document.createElement("div");
+  title.className = "card-title";
+  title.textContent = item.paper_id + " · " + item.sample_id + (item.confirmed ? " · 已核对" : " · 未核对");
+  const text = document.createElement("div");
+  text.className = "claim-text";
+  text.textContent = item.claim_zh || "（这条没有中文观点句）";
+  card.append(title, text);
+  return card;
+}
+
+function unitSection(item) {
+  const wrap = document.createElement("section");
+  wrap.className = "norm-section";
+  const head = document.createElement("h2");
+  head.textContent = "召回句：哪些留下";
+  const note = document.createElement("p");
+  note.className = "norm-note";
+  note.textContent = "先看中文。限定句（条件、范围、例外、不确定）不要排除，否则后面会漏判。";
+  wrap.append(head, note);
+  const groups = supportGroupNote(item);
+  if (groups) wrap.appendChild(groups);
+  (item.units || []).forEach((unit, index) => {
+    wrap.appendChild(unitCard(item, unit, index));
+  });
+  return wrap;
+}
+
+function supportGroupNote(item) {
+  const groups = (item.support_groups || []).filter((group) => group && group.length > 1);
+  if (!groups.length) return null;
+  const p = document.createElement("p");
+  p.className = "norm-note";
+  const labels = groups.map((group) => group.map((id) => unitLabel(item, id)).join("、")).join("；");
+  p.textContent = "模型认为下面几句要放在一起才撑得住这条观点，单独留一句可能不够：" + labels + "。";
+  return p;
+}
+
+function unitLabel(item, unitId) {
+  const index = (item.units || []).findIndex((unit) => unit.unit_id === unitId);
+  return index >= 0 ? "第 " + (index + 1) + " 句" : unitId;
+}
+
+function unitCard(item, unit, index) {
+  const card = document.createElement("article");
+  card.className = "card norm-unit role-" + (unit.role || "unsure");
+  const meta = document.createElement("div");
+  meta.className = "norm-unit-meta";
+  meta.textContent = "第 " + (index + 1) + " 句 · " + (unit.source === "manual" ? "你粘贴的段落" : "勾选的论文原句");
+  const zh = document.createElement("div");
+  zh.className = "norm-zh";
+  zh.textContent = unit.text_zh || "暂无中文。请先看下面英文的大意，或等翻译补上后再核这条。";
+  if (!unit.text_zh) zh.classList.add("missing");
+  const en = document.createElement("div");
+  en.className = "norm-en";
+  en.textContent = unit.text || "";
+  const roles = document.createElement("div");
+  roles.className = "norm-roles";
+  ROLE_OPTIONS.forEach(([value, label, help]) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "norm-role" + (unit.role === value ? " on" : "");
+    btn.textContent = label;
+    btn.title = help;
+    btn.addEventListener("click", () => {
+      unit.role = value;
+      dirty = true;
+      render();
+    });
+    const hint = document.createElement("div");
+    hint.className = "norm-role-help";
+    hint.textContent = help;
+    const box = document.createElement("div");
+    box.append(btn, hint);
+    roles.appendChild(box);
+  });
+  card.append(meta, zh, en, roles);
+  if (unit.reason) {
+    const reason = document.createElement("div");
+    reason.className = "norm-reason";
+    reason.textContent = "模型的理由：" + unit.reason;
+    card.appendChild(reason);
+  }
+  return card;
+}
+
+function termSection(item) {
+  const wrap = document.createElement("section");
+  wrap.className = "norm-section";
+  const head = document.createElement("h2");
+  head.textContent = "专有名词对照";
+  const note = document.createElement("p");
+  note.className = "norm-note";
+  note.textContent = "只有论文用了缩写、拉丁名或另一套专名，而观点句用了不同说法，后面可能被当成“内容被改了”时，才需要对照。普通翻译不用写。";
+  const toggle = document.createElement("div");
+  toggle.className = "norm-toggle";
+  [["no", "这条不需要对照表", false], ["yes", "这条需要对照表", true]].forEach(([key, label, value]) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "norm-role" + (Boolean(item.term_table_needed) === value ? " on" : "");
+    btn.textContent = label;
+    btn.addEventListener("click", () => {
+      item.term_table_needed = value;
+      dirty = true;
+      render();
+    });
+    toggle.appendChild(btn);
+  });
+  wrap.append(head, note, toggle);
+  if (!item.term_table_needed) return wrap;
+
+  const table = document.createElement("div");
+  table.className = "norm-table";
+  table.appendChild(termHead());
+  (item.term_links || []).forEach((link, index) => table.appendChild(termRow(item, link, index)));
+  wrap.appendChild(table);
+
+  const add = document.createElement("button");
+  add.type = "button";
+  add.className = "norm-add";
+  add.textContent = "加一对";
+  add.addEventListener("click", () => {
+    item.term_links = item.term_links || [];
+    item.term_links.push({ claim_surface: "", paper_surface: "", paper_abbr: "" });
+    dirty = true;
+    render();
+    const inputs = document.querySelectorAll(".norm-table input");
+    if (inputs.length) inputs[inputs.length - 3].focus();
+  });
+  wrap.appendChild(add);
+
+  const gaps = (item.term_gaps || []).filter((gap) => !gap.discarded);
+  if (gaps.length) {
+    const gapTitle = document.createElement("h3");
+    gapTitle.textContent = "模型拿不准、还没写进表的";
+    wrap.appendChild(gapTitle);
+    gaps.forEach((gap) => wrap.appendChild(gapCard(item, gap)));
+  }
+  return wrap;
+}
+
+function termHead() {
+  const row = document.createElement("div");
+  row.className = "norm-term-row head";
+  ["观点句里的说法", "论文里的说法", "缩写（可空）", ""].forEach((text) => {
+    const cell = document.createElement("div");
+    cell.textContent = text;
+    row.appendChild(cell);
+  });
+  return row;
+}
+
+function termRow(item, link, index) {
+  const row = document.createElement("div");
+  row.className = "norm-term-row";
+  [["claim_surface", "例如：转座子"], ["paper_surface", "例如：transposable elements"], ["paper_abbr", "例如：TE"]].forEach(([key, placeholder]) => {
+    const input = document.createElement("input");
+    input.value = link[key] || "";
+    input.placeholder = placeholder;
+    input.addEventListener("input", () => {
+      link[key] = input.value;
+      dirty = true;
+      $("saveStatus").textContent = "有未保存的修改";
+      $("saveStatus").className = "save-status";
+    });
+    row.appendChild(input);
+  });
+  const del = document.createElement("button");
+  del.type = "button";
+  del.textContent = "删除";
+  del.addEventListener("click", () => {
+    item.term_links.splice(index, 1);
+    dirty = true;
+    render();
+  });
+  row.appendChild(del);
+  return row;
+}
+
+function gapCard(item, gap) {
+  const card = document.createElement("div");
+  card.className = "card norm-gap";
+  const text = document.createElement("div");
+  text.textContent = (gap.claim_surface || "（没写具体词）") + (gap.reason ? " — " + gap.reason : "");
+  const actions = document.createElement("div");
+  actions.className = "norm-gap-actions";
+  const take = document.createElement("button");
+  take.type = "button";
+  take.textContent = "补进对照表";
+  take.addEventListener("click", () => {
+    item.term_links = item.term_links || [];
+    item.term_links.push({
+      claim_surface: gap.claim_surface || "",
+      paper_surface: gap.paper_surface || "",
+      paper_abbr: gap.paper_abbr || ""
+    });
+    gap.discarded = true;
+    dirty = true;
+    render();
+  });
+  const drop = document.createElement("button");
+  drop.type = "button";
+  drop.textContent = "丢掉";
+  drop.addEventListener("click", () => {
+    gap.discarded = true;
+    dirty = true;
+    render();
+  });
+  actions.append(take, drop);
+  card.append(text, actions);
+  return card;
+}
+
+function citationSection(item) {
+  const queue = item.citation_queue || [];
+  if (!queue.length) return document.createDocumentFragment();
+  const wrap = document.createElement("section");
+  wrap.className = "norm-section";
+  const head = document.createElement("h2");
+  head.textContent = "可疑的编号";
+  const note = document.createElement("p");
+  note.className = "norm-note";
+  note.textContent = "单词后面粘着的数字，可能是参考文献编号，也可能是基因名、株系号。看中文意思再决定。选“删掉数字”会在保存时从英文里去掉这些数字。";
+  wrap.append(head, note);
+  queue.forEach((entry, index) => wrap.appendChild(citationCard(item, entry, index)));
+  return wrap;
+}
+
+function citationCard(item, entry, index) {
+  const card = document.createElement("article");
+  card.className = "card norm-cite";
+  const kind = document.createElement("div");
+  kind.className = "norm-unit-meta";
+  kind.textContent = entry.rule === "short_stem_comma" ? "短字母后面的逗号数字" : "带横线的数字";
+  const zh = document.createElement("div");
+  zh.className = "norm-zh";
+  const owner = (item.units || []).find((unit) => unit.unit_id === entry.unit_id);
+  zh.textContent = (owner && owner.text_zh) || "这句还没有中文，请对照下面的英文片段。";
+  const en = document.createElement("div");
+  en.className = "norm-en";
+  appendHighlighted(en, entry.context || entry.surface || "", entry.surface || "");
+  const actions = document.createElement("div");
+  actions.className = "norm-toggle";
+  [["citation", "这是参考文献编号，删掉数字"], ["keep", "这不是引用，保留"]].forEach(([value, label]) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "norm-role" + (entry.decision === value ? " on" : "");
+    btn.textContent = entry.applied && value === "citation" ? "数字已删除" : label;
+    btn.addEventListener("click", () => {
+      entry.decision = value;
+      dirty = true;
+      render();
+    });
+    actions.appendChild(btn);
+  });
+  card.append(kind, zh, en, actions);
+  return card;
+}
+
+function appendHighlighted(parent, context, surface) {
+  if (!surface || !context.includes(surface)) {
+    parent.textContent = context;
+    return;
+  }
+  const at = context.indexOf(surface);
+  parent.append(document.createTextNode(context.slice(0, at)));
+  const mark = document.createElement("mark");
+  mark.textContent = surface;
+  parent.appendChild(mark);
+  parent.append(document.createTextNode(context.slice(at + surface.length)));
+}
+
+function go(next) {
+  if (dirty && !window.confirm("这一条还有没保存的修改，确定离开吗？")) return;
+  cursor = next;
+  dirty = false;
+  render();
+  window.scrollTo(0, 0);
+}
+
+async function save(confirmReviewed) {
+  const item = current();
+  if (!item) return;
+  const undecided = (item.citation_queue || []).filter((entry) => !entry.decision);
+  if (confirmReviewed && undecided.length) {
+    $("saveStatus").textContent = "还有可疑编号没选。先选“删掉数字”或“保留”，再标已核对。";
+    $("saveStatus").className = "save-status";
+    return;
+  }
+  const unsure = (item.units || []).filter((unit) => unit.role === "unsure");
+  if (confirmReviewed && unsure.length && !window.confirm("还有 " + unsure.length + " 句标着“我还不确定”。仍要标成已核对吗？")) return;
+  $("saveStatus").textContent = "正在保存…";
+  $("saveStatus").className = "save-status";
+  const payload = {
+    paper_id: item.paper_id,
+    sample_id: item.sample_id,
+    reviewer: item.reviewer,
+    confirmed: Boolean(confirmReviewed || item.confirmed),
+    term_table_needed: Boolean(item.term_table_needed),
+    units: (item.units || []).map((unit) => ({ unit_id: unit.unit_id, role: unit.role })),
+    term_links: item.term_links || [],
+    term_gaps: item.term_gaps || [],
+    citation_decisions: (item.citation_queue || []).map((entry, index) => ({
+      index: index,
+      decision: entry.decision || ""
+    }))
+  };
+  if (confirmReviewed) payload.confirmed = true;
+  const res = await fetch("/api/save", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload)
+  });
+  const data = await res.json();
+  if (!data.ok) {
+    $("saveStatus").textContent = data.error || "保存失败";
+    $("saveStatus").className = "save-status";
+    return;
+  }
+  if (data.item) {
+    const at = allItems.findIndex((row) => itemKey(row) === itemKey(item));
+    if (at >= 0) allItems[at] = data.item;
+    view[cursor] = data.item;
+  }
+  dirty = false;
+  render();
+  $("saveStatus").textContent = confirmReviewed ? "已保存，并标为已核对" : "已保存";
+  $("saveStatus").className = "save-status ok";
+}
+
+$("prevBtn").addEventListener("click", () => { if (cursor > 0) go(cursor - 1); });
+$("nextBtn").addEventListener("click", () => { if (cursor < view.length - 1) go(cursor + 1); });
+$("jumpBtn").addEventListener("click", () => {
+  const n = parseInt($("jumpInput").value, 10);
+  if (n >= 1 && n <= view.length) go(n - 1);
+});
+$("todoBtn").addEventListener("click", () => {
+  if (dirty && !window.confirm("这一条还有没保存的修改，确定离开吗？")) return;
+  onlyTodo = !onlyTodo;
+  refreshView(true);
+});
+$("paperFilter").addEventListener("change", () => {
+  if (dirty && !window.confirm("这一条还有没保存的修改，确定离开吗？")) {
+    $("paperFilter").value = paperFilter;
+    return;
+  }
+  paperFilter = $("paperFilter").value;
+  refreshView(true);
+});
+$("saveBtn").addEventListener("click", () => save(false));
+$("confirmBtn").addEventListener("click", () => save(true));
+document.addEventListener("keydown", (event) => {
+  const tag = (event.target.tagName || "").toLowerCase();
+  if (tag === "input" || tag === "textarea" || tag === "select") return;
+  if (event.key === "ArrowLeft" && cursor > 0) go(cursor - 1);
+  if (event.key === "ArrowRight" && cursor < view.length - 1) go(cursor + 1);
+});
+
+loadData().catch((err) => {
+  $("page").textContent = "加载失败：" + err;
+});
+</script>
+</body>
+</html>

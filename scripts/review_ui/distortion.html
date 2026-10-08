@@ -6,7 +6,7 @@
 <title>失真审核</title>
 <link rel="stylesheet" href="/style.css">
 </head>
-<body>
+<body class="distortion-page">
 
 <header class="topbar">
   <div>
@@ -33,31 +33,46 @@
   </div>
 </header>
 
-<div class="layout">
+<div class="layout distortion-layout">
   <div class="main-col">
 
-    <!-- 观点句 -->
+    <!-- 观点句：微调句始终可改；有失真时再出无失真改写 -->
     <div class="card claim-card">
-      <div class="card-title"><span class="dot"></span>观点句（公众号）</div>
-      <div class="claim-text" id="claimText">—</div>
-      <div class="claim-meta" id="claimMeta"></div>
+      <div class="claim-version-label">
+        观点句
+        <span class="claim-edit-hint">可删去不必要的代词、连词等，不改事实</span>
+        <span class="claim-changed-badge" id="claimChangedBadge">未修改</span>
+      </div>
+      <textarea class="claim-inplace" id="claimEditArea" rows="1" placeholder="观点句…"></textarea>
+      <div id="claimCorrectedBlock" hidden>
+        <div class="claim-version-label">
+          无失真改写
+          <span class="claim-edit-hint">把观点句改成没有失真的句子</span>
+          <span class="claim-changed-badge" id="claimCorrectedBadge">未改写</span>
+        </div>
+        <textarea class="claim-inplace" id="claimCorrectedArea" rows="1" placeholder="把观点句改成没有失真的句子…"></textarea>
+      </div>
     </div>
 
-    <!-- 证据句（勾选 + 人工找回 + 翻译） -->
+    <!-- 召回论文原句：英文 / 中文各自可编辑，原文留在后端 -->
     <div class="card">
-      <div class="card-title"><span class="dot" style="background:#0f766e"></span>证据句（勾选 gold + 人工找回 + 翻译）</div>
+      <div class="card-title"><span class="dot" style="background:#0f766e"></span>召回论文原句（中英双语）</div>
       <div id="reviewedEvList"></div>
     </div>
+  </div>
 
-    <!-- AI 辅助分析 -->
-    <div class="card">
-      <div class="card-title"><span class="dot" style="background:#7c3aed"></span>AI 辅助分析<span id="aiFreshBadge"></span></div>
-      <div id="aiContent"></div>
+  <aside class="side-col distortion-side">
+    <div class="card" style="margin-bottom:10px">
+      <div class="card-title"><span class="dot" style="background:#7c3aed"></span>AI 审核建议<span id="aiFreshBadge"></span></div>
+      <div id="aiSideContent"></div>
+      <details class="ai-fold" id="aiFold">
+        <summary>关键差异与判定说明</summary>
+        <div id="aiDetailContent"></div>
+      </details>
     </div>
 
-    <!-- 人工审核操作（失真类别） -->
     <div class="op-section">
-      <div class="card-title"><span class="dot"></span>人工审核操作 · 失真类别</div>
+      <div class="card-title"><span class="dot"></span>失真审核</div>
 
       <div class="op-group">
         <div class="op-label">证据充分性 <small>(evidence_level)</small></div>
@@ -98,24 +113,20 @@
         <span class="save-status" id="saveStatus"></span>
       </div>
     </div>
-  </div>
 
-  <!-- 右栏：AI 结论 + 失真判断指南 -->
-  <aside class="side-col">
-    <div class="card" style="margin-bottom:10px">
-      <div class="card-title"><span class="dot" style="background:#7c3aed"></span>AI 结论</div>
-      <div id="aiSideContent"></div>
-    </div>
-    <div class="card" style="margin-bottom:10px">
-      <div class="card-title"><span class="dot" style="background:#d97706"></span>失真判断指南</div>
-      <div id="guideContent"></div>
-    </div>
+    <details class="guide-fold" id="guideFold">
+      <summary>失真判断指南（展开后点类型即可选中）</summary>
+      <div class="card guide-card">
+        <div id="guideContent"></div>
+      </div>
+    </details>
   </aside>
 </div>
 
 <div class="footer-hint">
   失真审核：<span class="kbd">←</span> 上一条 · <span class="kbd">→</span> 保存并下一条 · <span class="kbd">S</span> 保存 ·
   <span class="kbd">1-9</span> 选失真类型 · <span class="kbd">D</span> 标记完成
+  ｜ 观点句和论文原句可直接修改。原文单独保留。
 </div>
 
 <script>
@@ -126,6 +137,7 @@ const EL_ZH = { With_Evidence: '有证据', Weak_Evidence: '证据弱', No_Evide
 
 /* ================= 状态 ================= */
 const state = {
+  allSamples: [],
   samples: [],
   taxonomy: null,
   meta: null,
@@ -135,11 +147,49 @@ const state = {
   dirty: false,
   savedAt: null,
   el: '', primary: '', secondary: '', severity: '', uncovered: '', note: '', done: false,
+  claimZh: '',
+  claimEntry: '',
+  claimCorrected: '',
+  evidenceItems: [],
 };
 
 const $ = id => document.getElementById(id);
 
 function myRecords() { return state.humanReviews[state.reviewer] || {}; }
+function isDropped(rec) {
+  if (!rec) return false;
+  if (rec.weak_evidence) return true;
+  return String(rec.review_decision || '').toLowerCase() === 'drop';
+}
+function claimEntryText(s) {
+  return (s && String(s.claim_zh || '').trim()) || '';
+}
+function claimWorkingText(s, r) {
+  if (r && Object.prototype.hasOwnProperty.call(r, 'claim_zh_revised')) {
+    return String(r.claim_zh_revised || '');
+  }
+  const edited = r && String(r.claim_zh || '').trim();
+  if (edited) return edited;
+  return claimEntryText(s);
+}
+function fieldChanged(original, revised) {
+  const next = String(revised || '').trim();
+  return !!next && next !== String(original || '').trim();
+}
+function shownField(original, revised) {
+  return fieldChanged(original, revised) ? String(revised).trim() : (original || '');
+}
+function applyDropFilter() {
+  const mine = myRecords();
+  const currentId = state.samples[state.index] && state.samples[state.index].sample_id;
+  state.samples = (state.allSamples || []).filter(s => !isDropped(mine[s.sample_id]));
+  if (state.meta) {
+    $('subtitle').textContent = `${state.meta.file || ''} · ${state.samples.length} 条样本`;
+  }
+  let idx = currentId ? state.samples.findIndex(s => s.sample_id === currentId) : 0;
+  if (idx < 0) idx = 0;
+  state.index = idx;
+}
 function labelZh(slug) {
   if (!slug) return '未选类型';
   if (slug === state.taxonomy.no_distortion) return '无失真';
@@ -150,13 +200,13 @@ function labelZh(slug) {
 async function load() {
   const res = await fetch('/api/data');
   const data = await res.json();
-  state.samples = data.samples;
+  state.allSamples = data.samples || [];
   state.taxonomy = data.taxonomy;
   state.meta = data.meta;
   state.humanReviews = data.human_reviews || {};
   state.reviewer = localStorage.getItem('reviewer_name') || '';
   $('reviewerInput').value = state.reviewer;
-  $('subtitle').textContent = `${data.meta.file || ''} · ${state.samples.length} 条样本`;
+  applyDropFilter();
 
   buildGuide();
   buildSelectors();
@@ -322,6 +372,8 @@ function buildSelectors() {
   $('reviewerInput').addEventListener('input', e => {
     state.reviewer = e.target.value.trim();
     localStorage.setItem('reviewer_name', state.reviewer);
+    applyDropFilter();
+    render();
   });
 }
 
@@ -334,6 +386,7 @@ function setPrimary(v) {
     state.severity = 'moderate';
   }
   refreshOpUI();
+  syncCorrectedDisplay(false);
 }
 function setSecondary(v) { state.secondary = v; state.dirty = true; refreshOpUI(); }
 function setSeverity(v) { state.severity = v; state.dirty = true; refreshOpUI(); }
@@ -353,11 +406,35 @@ function refreshOpUI() {
 /* ================= 渲染当前样本 ================= */
 function render() {
   const s = state.samples[state.index];
-  if (!s) return;
+  if (!s) {
+    $('posText').textContent = `0/${state.samples.length}`;
+    $('barFill').style.width = '0%';
+    const claim = $('claimEditArea');
+    if (claim) {
+      claim.readOnly = true;
+      claim.value = '（当前审核人没有可失真判断的样本）';
+      fitTextarea(claim);
+    }
+    const corrected = $('claimCorrectedBlock');
+    if (corrected) corrected.hidden = true;
+    $('reviewedEvList').innerHTML = '';
+    $('aiSideContent').innerHTML = '';
+    $('aiDetailContent').innerHTML = '';
+    $('saveStatus').textContent = '';
+    $('prevBtn').disabled = true;
+    $('nextBtn').disabled = true;
+    return;
+  }
 
   const mine = myRecords();
   const r = mine[s.sample_id] || {};
   const gen = r.generated_analysis || {};
+
+  state.claimEntry = claimEntryText(s);
+  state.claimZh = claimWorkingText(s, r);
+  state.claimCorrected = String(r.claim_zh_corrected || '').trim();
+  if (state.claimCorrected === String(state.claimZh || '').trim()) state.claimCorrected = '';
+  state.evidenceItems = loadEvidenceItems(r);
 
   // 预选（AI 二次生成建议为默认值，本人已存值优先）
   state.el = r.evidence_level || gen.evidence_level || '';
@@ -373,16 +450,14 @@ function render() {
   const n = state.samples.length;
   $('posText').textContent = `${state.index + 1}/${n}`;
   $('barFill').style.width = `${((state.index + 1) / n) * 100}%`;
-  const doneCount = Object.values(mine).filter(x => x.human_verified).length;
+  const doneCount = state.samples.filter(x => mine[x.sample_id] && mine[x.sample_id].human_verified).length;
   $('doneText').textContent = `我的进度 ${doneCount}`;
   $('prevBtn').disabled = state.index === 0;
   $('nextBtn').disabled = state.index === n - 1;
 
-  $('claimText').textContent = s.claim_zh || '（无）';
-  $('claimMeta').innerHTML = `<span>sample_id: ${escapeHtml(s.sample_id)}</span>`;
+  syncClaimFields(true);
 
-  renderReviewedEvidences(s);
-  renderAI(s, gen);
+  renderReviewedEvidences();
   renderAISide(s, gen);
   $('noteArea').value = state.note;
   $('doneCheck').checked = state.done;
@@ -391,91 +466,282 @@ function render() {
   $('saveStatus').textContent = '';
 }
 
-/* 证据句：文件2 里冻结的勾选 gold 句 + 人工找回段落（带翻译） */
-function renderReviewedEvidences(s) {
-  const r = myRecords()[s.sample_id] || {};
-  const gold = r.gold_evidences || [];
-  const manual = r.manual_retrieved_paragraphs || [];
+function loadEvidenceItems(r) {
   const items = [];
-  for (const g of gold) {
-    items.push({ kind: 'gold', sentence_id: g.sentence_id, text: g.text || '', text_zh: g.text_zh || '' });
+  let manualIndex = 0;
+  for (const g of (r.gold_evidences || [])) {
+    items.push({
+      kind: 'gold',
+      sentence_id: g.sentence_id,
+      manualIndex: null,
+      text: g.text || '',
+      text_zh: g.text_zh || '',
+      textRevised: g.text_revised || '',
+      textZhRevised: g.text_zh_revised || '',
+    });
   }
-  for (const p of manual) {
-    items.push({ kind: 'manual', sentence_id: null, text: p.text || '', text_zh: p.text_zh || '' });
+  for (const p of (r.manual_retrieved_paragraphs || [])) {
+    items.push({
+      kind: 'manual',
+      sentence_id: null,
+      manualIndex: manualIndex,
+      text: p.text || '',
+      text_zh: p.text_zh || '',
+      textRevised: p.text_revised || '',
+      textZhRevised: p.text_zh_revised || '',
+    });
+    manualIndex += 1;
   }
+  return items;
+}
+
+function fitTextarea(ta) {
+  if (!ta) return;
+  ta.style.height = 'auto';
+  ta.style.height = ta.scrollHeight + 'px';
+}
+
+function claimPairingChanged() {
+  return (state.claimZh || '').trim() !== (state.claimEntry || '').trim();
+}
+
+function correctedIsFollowing() {
+  return !String(state.claimCorrected || '').trim();
+}
+
+function hasDistortionType() {
+  const primary = state.primary || '';
+  if (!primary || !state.taxonomy) return false;
+  return primary !== state.taxonomy.no_distortion;
+}
+
+function syncClaimBadge() {
+  const badge = $('claimChangedBadge');
+  const changed = claimPairingChanged();
+  if (badge) {
+    badge.textContent = changed ? '已修改' : '未修改';
+    badge.classList.toggle('on', changed);
+  }
+}
+
+function syncCorrectedBadge() {
+  const badge = $('claimCorrectedBadge');
+  if (!badge) return;
+  const on = !correctedIsFollowing();
+  badge.textContent = on ? '已改写' : '未改写';
+  badge.classList.toggle('on', on);
+}
+
+function syncCorrectedDisplay(force) {
+  const block = $('claimCorrectedBlock');
+  if (!block) return;
+  const show = hasDistortionType();
+  block.hidden = !show;
+  if (!show) return;
+  const ta = $('claimCorrectedArea');
+  if (!ta) return;
+  if (!force && document.activeElement === ta) {
+    syncCorrectedBadge();
+    return;
+  }
+  const shown = String(state.claimCorrected || '').trim() || state.claimZh || '';
+  if (ta.value !== shown) ta.value = shown;
+  fitTextarea(ta);
+  syncCorrectedBadge();
+}
+
+function syncClaimFields(force) {
+  const ta = $('claimEditArea');
+  if (ta) {
+    ta.readOnly = false;
+    if (force || document.activeElement !== ta) {
+      ta.value = state.claimZh || '';
+    }
+    fitTextarea(ta);
+  }
+  syncClaimBadge();
+  syncCorrectedDisplay(!!force);
+}
+
+function onClaimInput() {
+  const ta = $('claimEditArea');
+  if (!ta || ta.readOnly) return;
+  state.claimZh = ta.value;
+  const base = String(state.claimZh || '').trim();
+  const corrected = String(state.claimCorrected || '').trim();
+  if (!corrected || corrected === base) state.claimCorrected = '';
+  state.dirty = true;
+  const box = $('claimCorrectedArea');
+  if (correctedIsFollowing() && box && document.activeElement !== box) {
+    box.value = ta.value;
+    fitTextarea(box);
+  }
+  syncClaimBadge();
+  syncCorrectedBadge();
+  fitTextarea(ta);
+}
+
+function commitClaimText() {
+  const ta = $('claimEditArea');
+  if (!ta || ta.readOnly) return;
+  const prev = String(state.claimZh || '').trim();
+  const next = String(ta.value || '').trim();
+  if (next !== prev) state.dirty = true;
+  state.claimZh = next;
+  const corrected = String(state.claimCorrected || '').trim();
+  if (!corrected || corrected === next) state.claimCorrected = '';
+  if (ta.value !== state.claimZh) ta.value = state.claimZh;
+  fitTextarea(ta);
+  syncClaimBadge();
+  syncCorrectedDisplay(false);
+}
+
+function onCorrectedInput() {
+  const ta = $('claimCorrectedArea');
+  if (!ta) return;
+  const trimmed = String(ta.value || '').trim();
+  const base = String(state.claimZh || '').trim();
+  state.claimCorrected = (trimmed && trimmed !== base) ? trimmed : '';
+  state.dirty = true;
+  syncCorrectedBadge();
+  fitTextarea(ta);
+}
+
+function commitCorrectedText() {
+  const block = $('claimCorrectedBlock');
+  const ta = $('claimCorrectedArea');
+  if (!ta || !block || block.hidden) return;
+  const trimmed = String(ta.value || '').trim();
+  const base = String(state.claimZh || '').trim();
+  if (!trimmed || trimmed === base) {
+    state.claimCorrected = '';
+    if (ta.value !== (state.claimZh || '')) ta.value = state.claimZh || '';
+  } else {
+    state.claimCorrected = trimmed;
+    if (ta.value !== trimmed) ta.value = trimmed;
+  }
+  fitTextarea(ta);
+  syncCorrectedBadge();
+}
+
+function correctedPayloadValue() {
+  const text = String(state.claimCorrected || '').trim();
+  const base = String(state.claimZh || '').trim();
+  if (!text || text === base) return '';
+  return text;
+}
+
+function fieldBlock(idx, field, label, original, revised) {
+  const shown = shownField(original, revised);
+  return `<div class="field-block">
+    <div class="pair-label">${label}</div>
+    <textarea class="field-inplace ${field === 'en' ? 'ev-en' : 'ev-zh'}" data-field="${field}" data-idx="${idx}" rows="1">${escapeHtml(shown)}</textarea>
+  </div>`;
+}
+
+/* 证据句：展示工作稿；text / text_zh 原文只留在记录里 */
+function renderReviewedEvidences() {
+  const items = state.evidenceItems || [];
   if (!items.length) {
     $('reviewedEvList').innerHTML = '<div style="color:#94a3b8">（暂无证据句——该样本可能尚未完成召回审核或未二次生成，请先运行 regenerate_analysis.py）</div>';
     return;
   }
-  $('reviewedEvList').innerHTML = items.map(e => {
+  $('reviewedEvList').innerHTML = items.map((e, idx) => {
     const isManual = e.kind === 'manual';
     const rank = isManual ? '人工' : '★';
     const sid = isManual ? '人工找回' : `id=${e.sentence_id}`;
-    const zh = e.text_zh ? escapeHtml(e.text_zh) : '<span class="ev-zh pending">（待补翻译）</span>';
     return `<div class="ev-item ${isManual ? 'manual' : ''}">
       <div class="ev-rank">${rank}</div>
       <div class="ev-body">
-        <div class="ev-en">${escapeHtml(e.text)}</div>
-        <div class="ev-zh">${zh}</div>
+        ${fieldBlock(idx, 'en', '论文原句（英文）', e.text, e.textRevised)}
+        ${fieldBlock(idx, 'zh', '论文原句（中文）', e.text_zh, e.textZhRevised)}
       </div>
       <div class="ev-sid">${sid}</div>
     </div>`;
   }).join('');
+  $('reviewedEvList').querySelectorAll('textarea[data-field]').forEach(fitTextarea);
 }
 
-function renderAI(s, gen) {
+function evidenceOriginal(item, field) {
+  return field === 'en' ? item.text : item.text_zh;
+}
+
+function evidenceRevised(item, field) {
+  return field === 'en' ? item.textRevised : item.textZhRevised;
+}
+
+function setEvidenceRevised(item, field, stored) {
+  if (field === 'en') item.textRevised = stored;
+  else item.textZhRevised = stored;
+}
+
+function storeEvidenceDraft(ta) {
+  const item = state.evidenceItems[Number(ta.dataset.idx)];
+  if (!item) return;
+  const field = ta.dataset.field;
+  const original = evidenceOriginal(item, field);
+  const next = String(ta.value || '').trim();
+  const stored = (!next || next === String(original || '').trim()) ? '' : next;
+  const prev = evidenceRevised(item, field);
+  if (shownField(original, stored) !== shownField(original, prev)) state.dirty = true;
+  setEvidenceRevised(item, field, stored);
+  fitTextarea(ta);
+}
+
+function onEvidenceInput(ta) {
+  storeEvidenceDraft(ta);
+}
+
+function commitEvidenceField(ta) {
+  if (!ta || ta.tagName !== 'TEXTAREA') return;
+  storeEvidenceDraft(ta);
+}
+
+function renderAISide(s, gen) {
   const hasGen = !!(gen && gen.generated_at);
   const badge = hasGen
     ? '<span class="stage-badge fresh">已基于人工召回二次生成</span>'
-    : '<span class="stage-badge stale">未二次生成（请先运行 regenerate_analysis.py）</span>';
+    : '<span class="stage-badge stale">未二次生成</span>';
   $('aiFreshBadge').innerHTML = badge;
 
   if (!hasGen) {
-    $('aiContent').innerHTML = '<div style="color:#94a3b8;font-size:13px">该样本尚未二次生成失真分析。请回到文件1 完成召回审核后运行脚本生成文件2。</div>';
+    $('aiSideContent').innerHTML = '<div style="color:#94a3b8;font-size:13px">该样本尚未二次生成失真分析。请回到文件1 完成召回审核后运行 regenerate_analysis.py。</div>';
+    $('aiDetailContent').innerHTML = '';
     return;
   }
 
   const lv = gen.evidence_level;
-  const lvZh = EL_ZH[lv] || lv;
+  const lvKey = String(lv || '').split('_')[0];
+  const lvZh = EL_ZH[lv] || lv || '';
   const priZh = labelZh(gen.primary_label?.level2);
   const secZh = gen.secondary_label?.level2 ? labelZh(gen.secondary_label.level2) : null;
   const hasDistortion = !!(gen.primary_label && gen.primary_label.level2);
-
   let html = `<div class="ai-verdict">
-    <span class="chip el-${lv}">${lvZh || '—'}</span>
+    <span class="chip el-${lvKey}">${escapeHtml(lvZh || '—')}</span>
     ${hasDistortion ? `<span class="chip">失真类型：${escapeHtml(priZh)}</span>` : '<span class="chip">AI 判：无失真</span>'}
     ${secZh ? `<span class="chip">次要：${escapeHtml(secZh)}</span>` : ''}
-    ${gen.severity ? `<span class="chip">严重度：${escapeHtml(gen.severity)}</span>` : ''}
+    ${gen.severity ? `<span class="chip">严重度：${escapeHtml(SEV_ZH[gen.severity] || gen.severity)}</span>` : ''}
     ${gen.ai_confidence ? `<span class="chip conf-${gen.ai_confidence}">置信 ${escapeHtml(gen.ai_confidence)}</span>` : ''}
   </div>`;
+  if (gen.classification_reason) html += block('AI 一句结论', gen.classification_reason);
+  $('aiSideContent').innerHTML = html;
 
-  html += '<div class="ai-grid">';
-  if (gen.evidence_judgement) html += block('证据判定 (evidence_judgement)', gen.evidence_judgement);
-  if (gen.classification_reason) html += block('分类理由 (classification_reason)', gen.classification_reason);
-  html += '</div>';
-
+  let detail = '';
+  if (gen.evidence_judgement) detail += block('证据判定', gen.evidence_judgement);
   const kdf = gen.key_differences || [];
   if (kdf.length) {
-    html += '<div style="margin-top:10px"><div class="k" style="font-size:12px;color:var(--muted);font-weight:700">关键差异 (key_differences)</div>';
+    detail += '<div class="k" style="font-size:12px;color:var(--muted);font-weight:700;margin-top:8px">关键差异</div>';
     for (const d of kdf) {
       const typeZh = labelZh(d.type);
-      html += `<div class="kdf">
+      detail += `<div class="kdf">
         <div class="t">${escapeHtml(typeZh || '')} <span style="font-weight:400;color:#94a3b8">(${escapeHtml(d.type || '')})</span></div>
         ${d.paper_expression ? `<div class="row"><span class="lab">论文：</span>${escapeHtml(d.paper_expression)}</div>` : ''}
         ${d.article_expression ? `<div class="row"><span class="lab">公众号：</span>${escapeHtml(d.article_expression)}</div>` : ''}
         ${d.description ? `<div class="row"><span class="lab">说明：</span>${escapeHtml(d.description)}</div>` : ''}
       </div>`;
     }
-    html += '</div>';
   }
-  $('aiContent').innerHTML = html;
-}
-
-function renderAISide(s, gen) {
-  let html = '';
-  if (gen && gen.classification_reason) html += block('AI 一句结论 (classification_reason)', gen.classification_reason);
-  if (!html) html = '<div style="color:#94a3b8;font-size:13px">（无）</div>';
-  $('aiSideContent').innerHTML = html;
+  $('aiDetailContent').innerHTML = detail || '<div style="color:#94a3b8;font-size:13px">（无更多说明）</div>';
 }
 
 function block(k, v) {
@@ -485,6 +751,7 @@ function block(k, v) {
 /* ================= 保存 ================= */
 function distortionPayload() {
   const s = state.samples[state.index];
+  if (!s) return null;
   return {
     reviewer: state.reviewer,
     sample_id: s.sample_id,
@@ -495,6 +762,18 @@ function distortionPayload() {
     severity: state.severity,
     uncovered_phenomenon: state.uncovered,
     note: state.note,
+    claim_zh_revised: state.claimZh,
+    claim_zh_corrected: correctedPayloadValue(),
+    gold_evidence_revisions: state.evidenceItems.filter(e => e.kind === 'gold').map(e => ({
+      sentence_id: e.sentence_id,
+      text_revised: fieldChanged(e.text, e.textRevised) ? e.textRevised : '',
+      text_zh_revised: fieldChanged(e.text_zh, e.textZhRevised) ? e.textZhRevised : '',
+    })),
+    manual_paragraph_revisions: state.evidenceItems.filter(e => e.kind === 'manual').map(e => ({
+      index: e.manualIndex,
+      text_revised: fieldChanged(e.text, e.textRevised) ? e.textRevised : '',
+      text_zh_revised: fieldChanged(e.text_zh, e.textZhRevised) ? e.textZhRevised : '',
+    })),
   };
 }
 
@@ -520,7 +799,8 @@ async function postSave(payload, onOk) {
 }
 
 function updateDoneText() {
-  const doneCount = Object.values(myRecords()).filter(x => x.human_verified).length;
+  const mine = myRecords();
+  const doneCount = state.samples.filter(x => mine[x.sample_id] && mine[x.sample_id].human_verified).length;
   $('doneText').textContent = `我的进度 ${doneCount}`;
 }
 
@@ -533,9 +813,18 @@ function requireReviewer() {
   return true;
 }
 
+function flushEdits() {
+  commitClaimText();
+  commitCorrectedText();
+  document.querySelectorAll('#reviewedEvList textarea[data-field]').forEach(commitEvidenceField);
+}
+
 async function saveDistortion() {
   if (!requireReviewer()) return;
-  const ok = await postSave(distortionPayload());
+  flushEdits();
+  const payload = distortionPayload();
+  if (!payload) return;
+  const ok = await postSave(payload);
   if (ok) {
     $('saveStatus').textContent = '已保存 ' + state.savedAt.toLocaleTimeString();
     $('saveStatus').classList.add('ok');
@@ -544,7 +833,10 @@ async function saveDistortion() {
 
 async function saveAndNext() {
   if (!requireReviewer()) return;
-  const ok = await postSave(distortionPayload());
+  flushEdits();
+  const payload = distortionPayload();
+  if (!payload) return;
+  const ok = await postSave(payload);
   if (!ok) return;
   go(state.index + 1);
 }
@@ -552,6 +844,7 @@ async function saveAndNext() {
 /* ================= 导航 ================= */
 function go(index) {
   if (index < 0 || index >= state.samples.length) return;
+  flushEdits();
   if (state.dirty) {
     if (!confirm('当前样本有未保存的修改，放弃修改并跳转？')) return;
   }
@@ -584,6 +877,30 @@ $('jumpBtn').onclick = () => {
   if (!isNaN(v)) go(v - 1);
 };
 $('jumpInput').addEventListener('keydown', e => { if (e.key === 'Enter') $('jumpBtn').click(); });
+$('claimEditArea').addEventListener('input', onClaimInput);
+$('claimEditArea').addEventListener('blur', () => commitClaimText());
+$('claimCorrectedArea').addEventListener('input', onCorrectedInput);
+$('claimCorrectedArea').addEventListener('blur', () => commitCorrectedText());
+
+$('reviewedEvList').addEventListener('input', e => {
+  if (e.target.matches && e.target.matches('textarea[data-field]')) onEvidenceInput(e.target);
+});
+$('reviewedEvList').addEventListener('focusin', e => {
+  if (e.target.matches && e.target.matches('textarea[data-field]')) e.target.dataset.backup = e.target.value;
+});
+$('reviewedEvList').addEventListener('keydown', e => {
+  if (!e.target.matches || !e.target.matches('textarea[data-field]')) return;
+  if (e.key !== 'Escape') return;
+  e.preventDefault();
+  e.stopPropagation();
+  const backup = e.target.dataset.backup;
+  if (backup === undefined) return;
+  e.target.value = backup;
+  commitEvidenceField(e.target);
+});
+$('reviewedEvList').addEventListener('focusout', e => {
+  if (e.target.matches && e.target.matches('textarea[data-field]')) commitEvidenceField(e.target);
+});
 
 document.addEventListener('keydown', e => {
   if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') return;

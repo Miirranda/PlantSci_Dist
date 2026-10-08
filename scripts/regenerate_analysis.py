@@ -11,7 +11,10 @@
 
 增量：若文件2 已存在且该记录 ``generated_analysis`` 未过期（``recall_updated_at <=
 generated_at``），沿用其分析与已填失真字段；加 ``--force`` 强制重生成全部分析。
-召回改动（``recall_updated_at`` 变新）会使旧失真字段失效并被清空。
+召回改动（``recall_updated_at`` 变新）会重新生成分析，但保留 ``claim_zh_original``、
+文本修订稿（``text_revised`` / ``text_zh_revised``）以及已填写的失真标注。
+``claim_zh_original`` 首次取文件1 记录中的同名字段，否则取文件1 样本的 ``claim_zh``，
+之后不再覆盖。``samples[].claim_zh`` 仍是配对用句子，不是永久原文。
 
 用法::
 
@@ -224,10 +227,168 @@ def gather_evidence(
 # ---------------------------------------------------------------------------
 
 
-def _build_user(sample: dict[str, Any], gold: list[dict[str, str]], manual: list[dict[str, str]]) -> str:
+def _is_dropped(rec: dict[str, Any] | None) -> bool:
+    """weak evidence 勾选或 review_decision=drop 的观点句不进入失真判断。"""
+    if not rec:
+        return False
+    if rec.get("weak_evidence"):
+        return True
+    return str(rec.get("review_decision") or "").strip().lower() == "drop"
+
+
+def _claim_zh(sample: dict[str, Any], rec: dict[str, Any] | None = None) -> str:
+    """配对用的观点句：改过就用修改版，否则用公众号原文。"""
+    sample_claim = str(sample.get("claim_zh") or "").strip()
+    if not rec:
+        return sample_claim
+    if rec.get("claim_changed"):
+        revised = str(rec.get("claim_zh_revised") or rec.get("claim_zh") or "").strip()
+        if revised:
+            return revised
+    original = str(rec.get("claim_zh_original") or sample_claim).strip()
+    edited = str(rec.get("claim_zh") or "").strip()
+    if edited and edited != original:
+        return edited
+    return original or sample_claim
+
+
+def _file1_claim_original(sample: dict[str, Any], rec: dict[str, Any] | None) -> str:
+    """公众号原文：文件1 记录里已冻结的句子优先，否则用样本 claim_zh。"""
+    if rec:
+        frozen = str(rec.get("claim_zh_original") or "").strip()
+        if frozen:
+            return frozen
+    return str((sample or {}).get("claim_zh") or "").strip()
+
+
+def _frozen_claim_original(
+    sample: dict[str, Any],
+    rec: dict[str, Any] | None,
+    existing: dict[str, Any] | None,
+) -> str:
+    """文件2 里已经写下的原文不再改；没有时从文件1 抄一次。"""
+    if existing:
+        frozen = str(existing.get("claim_zh_original") or "").strip()
+        if frozen:
+            return frozen
+    return _file1_claim_original(sample, rec)
+
+
+_KEPT_DISTORTION_FIELDS = (
+    "evidence_level",
+    "primary_level2",
+    "secondary_level2",
+    "severity",
+    "uncovered_phenomenon",
+    "note",
+    "human_verified",
+)
+
+
+def _recall_nodistortion_rewrite(rec: dict[str, Any] | None) -> str:
+    """召回阶段改写成的无失真句。只有和公众号原文不同时才算。"""
+    if not rec or not rec.get("claim_changed"):
+        return ""
+    revised = str(rec.get("claim_zh_revised") or "").strip()
+    original = str(rec.get("claim_zh_original") or "").strip()
+    if revised and original and revised != original:
+        return revised
+    return ""
+
+
+def _stamp_claim_fields(
+    record: dict[str, Any],
+    sample: dict[str, Any],
+    rec: dict[str, Any] | None,
+    existing: dict[str, Any] | None,
+    *,
+    judgment_from_original: bool = False,
+) -> None:
+    """写入永久原文和工作稿。只有失真界面存过的 claim_zh_revised 才在重跑时保留。
+
+    P011 的召回改写是「无失真版本」，不作为失真判断句，改写入 claim_zh_corrected。
+    """
+    original = _frozen_claim_original(sample, rec, existing)
+    if judgment_from_original:
+        record["claim_zh_original"] = original
+        record["claim_zh"] = original
+        record["claim_changed"] = False
+        record.pop("claim_zh_revised", None)
+        rewrite = _recall_nodistortion_rewrite(rec)
+        if rewrite:
+            record["claim_zh_corrected"] = rewrite
+        elif not str(record.get("claim_zh_corrected") or "").strip():
+            record.pop("claim_zh_corrected", None)
+        return
+    revised = ""
+    if existing:
+        revised = str(existing.get("claim_zh_revised") or "").strip()
+    working = revised or _claim_zh(sample, rec)
+    record["claim_zh_original"] = original
+    record["claim_zh"] = working
+    record["claim_changed"] = working != original
+    if revised:
+        record["claim_zh_revised"] = revised
+    else:
+        record.pop("claim_zh_revised", None)
+
+
+def _reattach_text_revisions(
+    fresh: list[dict[str, Any]],
+    old: Any,
+    key_fn: Any,
+) -> list[dict[str, Any]]:
+    """把旧记录上的 text_revised / text_zh_revised 贴回新原文，不改 text / text_zh。"""
+    old_map: dict[Any, dict[str, Any]] = {}
+    if isinstance(old, list):
+        for index, item in enumerate(old):
+            if isinstance(item, dict):
+                old_map[key_fn(item, index)] = item
+    out: list[dict[str, Any]] = []
+    for index, item in enumerate(fresh):
+        merged = {
+            key: value
+            for key, value in item.items()
+            if key not in ("text_revised", "text_zh_revised")
+        }
+        prev = old_map.get(key_fn(item, index))
+        if prev:
+            for field, original_key in (("text_revised", "text"), ("text_zh_revised", "text_zh")):
+                revised = str(prev.get(field) or "").strip()
+                original = str(merged.get(original_key) or "").strip()
+                if revised and revised != original:
+                    merged[field] = revised
+        out.append(merged)
+    return out
+
+
+def _gold_rev_key(item: dict[str, Any], index: int) -> tuple[str, str]:
+    return ("gold", str(item.get("sentence_id")))
+
+
+def _manual_rev_key(item: dict[str, Any], index: int) -> tuple[str, int]:
+    return ("manual", index)
+
+
+def _copy_distortion_labels(record: dict[str, Any], *sources: dict[str, Any] | None) -> None:
+    """按顺序采用第一份已经写过的失真字段。文件2 优先，否则保留文件1 里的人工结果。"""
+    for key in _KEPT_DISTORTION_FIELDS:
+        for source in sources:
+            if source and key in source:
+                record[key] = source[key]
+                break
+
+
+def _build_user(
+    sample: dict[str, Any],
+    gold: list[dict[str, str]],
+    manual: list[dict[str, str]],
+    rec: dict[str, Any] | None = None,
+    claim_text: str | None = None,
+) -> str:
     return json.dumps(
         {
-            "claim_zh": sample.get("claim_zh") or "",
+            "claim_zh": claim_text if claim_text is not None else _claim_zh(sample, rec),
             "gold_evidences": gold,
             "manual_evidences": manual,
         },
@@ -328,7 +489,10 @@ def main() -> int:
     doc = json.loads(draft_path.read_text(encoding="utf-8"))
     samples = doc.get("samples") or []
     human_reviews = doc.get("human_reviews") or {}
-    sentence_table = load_sentence_table(doc.get("paper_id") or "")
+    paper_id = str(doc.get("paper_id") or "")
+    # 只有 P011 在召回阶段把部分观点句改成了无失真版本。失真初稿仍按公众号原文生成。
+    judgment_from_original = paper_id == "P011"
+    sentence_table = load_sentence_table(paper_id)
     system = load_system_prompt(DEFAULT_PROMPT)
     model = args.model.strip() or QWEN_MODEL
 
@@ -340,16 +504,22 @@ def main() -> int:
         except Exception:
             existing_reviews = {}
 
-    # 收集 recall_reviewed 记录，并判定是否 stale（需要重新 gather + 生成）
+    # 收集 recall_reviewed 且未 drop 的记录，并判定是否 stale（需要重新 gather + 生成）
     targets: list[tuple[dict[str, Any], str, dict[str, Any], dict[str, Any], bool]] = []
     skipped = 0
+    dropped_n = 0
     for sample in samples:
         sid = sample.get("sample_id") or ""
         for reviewer, recs in human_reviews.items():
             if args.reviewer and reviewer != args.reviewer:
                 continue
             rec = (recs or {}).get(sid)
-            if not rec or not rec.get("recall_reviewed"):
+            if not rec:
+                continue
+            if _is_dropped(rec):
+                dropped_n += 1
+                continue
+            if not rec.get("recall_reviewed"):
                 continue
             existing = (existing_reviews.get(reviewer) or {}).get(sid) or {}
             gen = existing.get("generated_analysis") or {}
@@ -360,9 +530,14 @@ def main() -> int:
             if not stale:
                 skipped += 1
 
-    print("文件1 = %s" % draft_path)
-    print("文件2 = %s" % out_path)
-    print("recall_reviewed 共 %d 条，需二次生成 %d 条，跳过（未改动）%d 条" % (len(targets), len(targets) - skipped, skipped))
+    print("文件1 = %s" % draft_path, flush=True)
+    print("文件2 = %s" % out_path, flush=True)
+    if judgment_from_original:
+        print("P011：失真初稿使用公众号原文；召回阶段的无失真改写写入 claim_zh_corrected", flush=True)
+    print(
+        "recall_reviewed 共 %d 条（另 drop %d 条已过滤），需二次生成 %d 条，跳过（未改动）%d 条"
+        % (len(targets), dropped_n, len(targets) - skipped, skipped)
+    )
 
     if not targets:
         print("没有 recall_reviewed 记录，无可生成内容")
@@ -384,22 +559,36 @@ def main() -> int:
     for sample, reviewer, rec, existing, stale in targets:
         sid = sample.get("sample_id") or ""
         if not stale:
-            new_reviews.setdefault(reviewer, {})[sid] = dict(existing)
+            copied = dict(existing)
+            _stamp_claim_fields(copied, sample, rec, existing, judgment_from_original=judgment_from_original)
+            copied["weak_evidence"] = False
+            copied["review_decision"] = "keep"
+            new_reviews.setdefault(reviewer, {})[sid] = copied
             continue
         gold, manual = gather_evidence(sample, rec, sentence_table)
+        gold_fresh = [
+            {"sentence_id": g["sentence_id"], "text": g["text"], "text_zh": g["text_zh"]} for g in gold
+        ]
         record: dict[str, Any] = {
             "gold_sentence_ids": [int(x) for x in (rec.get("gold_sentence_ids") or [])],
-            "gold_evidences": [
-                {"sentence_id": g["sentence_id"], "text": g["text"], "text_zh": g["text_zh"]} for g in gold
-            ],
+            "gold_evidences": _reattach_text_revisions(
+                gold_fresh, existing.get("gold_evidences"), _gold_rev_key
+            ),
             "recall_note": str(rec.get("recall_note") or ""),
-            "manual_retrieved_paragraphs": manual,
+            "manual_retrieved_paragraphs": _reattach_text_revisions(
+                manual, existing.get("manual_retrieved_paragraphs"), _manual_rev_key
+            ),
             "recall_reviewed": True,
             "recall_updated_at": rec.get("recall_updated_at") or "",
+            "weak_evidence": False,
+            "review_decision": "keep",
         }
+        _stamp_claim_fields(record, sample, rec, existing, judgment_from_original=judgment_from_original)
+        _copy_distortion_labels(record, existing, rec)
         new_reviews.setdefault(reviewer, {})[sid] = record
-        user = _build_user(sample, gold, manual)
-        print("  生成 %s @%s（gold=%d manual=%d）…" % (sid, reviewer, len(gold), len(manual)))
+        claim_text = _file1_claim_original(sample, rec) if judgment_from_original else None
+        user = _build_user(sample, gold, manual, rec, claim_text)
+        print("  生成 %s @%s（gold=%d manual=%d）…" % (sid, reviewer, len(gold), len(manual)), flush=True)
         try:
             raw = _call(client, system=system, user=user, model=model, max_tokens=args.max_tokens, timeout=args.timeout)
             record["generated_analysis"] = _coerce(raw)
@@ -407,15 +596,31 @@ def main() -> int:
         except Exception as exc:  # noqa: BLE001
             print("    [ERR] %s: %s" % (sid, exc))
 
+    kept_pairing: dict[str, str] = {}
+    kept_original: dict[str, str] = {}
+    for sample, reviewer, rec, existing, stale in targets:
+        sid = str(sample.get("sample_id") or "")
+        if sid and sid not in kept_pairing:
+            kept_original[sid] = _file1_claim_original(sample, rec)
+            kept_pairing[sid] = kept_original[sid] if judgment_from_original else _claim_zh(sample, rec)
+
+    out_samples: list[dict[str, str]] = []
+    for s in samples:
+        sid = str(s.get("sample_id") or "")
+        if sid in kept_pairing:
+            out_samples.append({
+                "sample_id": sid,
+                "claim_zh": kept_pairing[sid],
+                "claim_zh_original": kept_original[sid],
+            })
+
     out_doc: dict[str, Any] = {
         "schema_version": "1.3",
         "kind": "distortion_review",
         "paper_id": doc.get("paper_id") or "",
         "article_id": doc.get("article_id") or "",
         "source_draft": draft_path.name,
-        "samples": [
-            {"sample_id": s.get("sample_id") or "", "claim_zh": s.get("claim_zh") or ""} for s in samples
-        ],
+        "samples": out_samples,
         "human_reviews": new_reviews,
     }
     atomic_write(out_path, out_doc)

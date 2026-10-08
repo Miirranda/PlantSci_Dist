@@ -1,0 +1,394 @@
+[
+  {
+    "text": "Jinhua Mao1 , Jinsong Wang1 , Jiaqiang Liao1,2 Jinlong Peng1,2 and Shuli Niu1,2 , Xingliang Xu1, Dashuan Tian1 , Ruiyang Zhang1 ,",
+    "section": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "page": "1",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "0"
+  },
+  {
+    "text": "\u0001 Elucidating plant nitrogen (N) acquisition is crucial for understanding plant N strategies and Author for correspondence: ecosystem productivity. However, the variation in plant N uptake preference and its controlEmail: sniu@igsnrr.ac.cn ling factors on a global scale remain unclear. \u0001 We conducted a global synthesis to explore plant N preference patterns and driving factors. +), nitrate (NO3 \u0003), and glycine N to \u0001 Globally, the average contributions of ammonium (NH4 the total plant N uptake were 41.6 \u0004 1.1%, 32.8 \u0004 1.2%, and 25.6 \u0004 0.9%, respectively. However, plant N uptake preferences differed signiﬁcantly among climatic regions and vegetation types. Soil NH4 doi: 10.1111/nph.70030 whereas NO3 signiﬁcantly higher NO3 Key words: ammonium, nitrate, nitrogen + was the most preferred N form by plants in (sub)tropical regions, \u0003 preference was signiﬁcantly higher in high-latitude than low-latitude regions. \u0003 preference, with Plant functional type was one of the most important factors driving NO3 \u0003 preference of nonwoody species than broadleaf-evergreen, conifer, and shrub species. Organic N preference was lowest in (sub)tropics and signiﬁcantly lower deposition, nitrogen uptake preference, than that in temperate and alpine regions.",
+    "section": "Summary",
+    "page": "1",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "1"
+  },
+  {
+    "text": "organic nitrogen, stable isotopes. \u0001 This study shows clear climatic patterns and different inﬂuencing factors of plant NH4 \u0003 preference, which can contribute to the accurate prediction of N constraints on ecosystem productivity and soil carbon dynamics.",
+    "section": "Summary",
+    "page": "1",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "2"
+  },
+  {
+    "text": "Nitrogen (N) is the primary nutrient element limiting the growth and productivity of terrestrial plants (Mason et al., 2022). Plant preference for different soil N forms is one of the most critical strategies for acquiring soil N resources because it can mitigate N competition among plants, maintain plant growth, and contribute to ecosystem carbon (C) sequestration (McKane et al., 2002). However, the relative importance of different soil N for plants is poorly understood. Between soil ammonium +–N) and nitrate N (NO3 \u0003–N), which have been conN (NH4 sidered the main sources of N for plants, plants may prefer NH4 \u0003 uptake due to its lower energy cost and faster uptake to NO3 assimilation (County et al., 2015; Moreau et al., 2019). However, + nutrition often induces a growth-limiting stress known as ammonium syndrome, which may offset the energy-saving + uptake over NO3 \u0003 (Britto & Kronadvantage of NH4 zucker, 2013). Accordingly, some plant species, such as Ericaceae + uptake (Pearson & or spruce, have been found to prefer NH4 Stewart, 1993; Britto & Kronzucker, 2013), whereas, many fast-growing annual grasses and some pioneer woody plants have \u0003 uptake (Pearson & Stewart, 1993; Yi been found to prefer NO3 \u0003 is more mobile than NH4 +; thereet al., 2023). Moreover, NO3 fore, it can move more easily to the root surface, presumably 972 giving plants a better chance of N uptake (Zhou et al., 2021).",
+    "section": "Introduction",
+    "page": "1",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "3"
+  },
+  {
+    "text": "These physiological costs and physical limitations constrain plant strategies in opposite directions, leading to considerable uncertainty regarding the relative importance of soil NH4 uptake for different plant species. In addition to NH4 \u0003, plants have recently been shown to directly assimilate soil organic N (N€asholm et al., 2009; Inselsbacher & Wanek, 2021). For instance, using 15N labelled model amino acid, previous studies have shown direct organic N uptake by a variety of plant species in arctic (Nordin et al., 2004), boreal (Persson & N€asholm, 2008; N€asholm et al., 2009), alpine (Miller & Bowman, 2003; Xu et al., 2006) and temperate ecosystems (Rains & Bledsoe, 2007). However, our knowledge of the global +, patterns of plant N uptake preferences for three N forms (NH4 \u0003, and organic N) remains limited. The limited understanding of plant N uptake preference may be partly due to the complex interactions between plant N acquisition and multiple factors (Moreau et al., 2019). Plant N acquisition strategies depend on various biotic and abiotic factors, such as plant functional types (Andersen et al., 2017; Hill et al., 2019), soil properties (Nordin et al., 2004; Zhang et al., 2016), and climatic conditions (Hill et al., 2011; Boczulak et al., 2014). Plant functional types represent the key functional strategies of plants in relation to their environment and provide important insights into plant ecological responses and adaptations to highly variable habitats (Gillison, 2013).",
+    "section": "Introduction",
+    "page": "1",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "4"
+  },
+  {
+    "text": "Although research on plant N uptake preference strategies has been conducted for various plant species and terrestrial ecosystems (Harrison et al., 2008; Britto & Kronzucker, 2013; Liu et al., 2017), general patterns of the N uptake preference of terrestrial plants at the species level remain unclear. Soil N availability is considered a key factor inﬂuencing plant N uptake preferences, as it provides N resources from the soil to plants (Zhang et al., 2021). It is plausible that dominant plant species have evolved unique N uptake strategies to maximize their N acquisition in different climate zones, with different soil N form availability (Mason et al., 2022). In particular, in environments with severely limited soil N, such as alpine and boreal regions, there are notable differences in plant N uptake prefer- \u0003 or organic N) to ences for different soil N forms (NH4 mitigate strong competition for N (McKane et al., 2002). However, this is not always the case. In fact, plant N uptake preferences for different soil N forms in natural ecosystems often vary between study sites regardless of N-rich (Liu et al., 2017; Gurmesa et al., 2019) or N-limited conditions (Liu et al., 2018; Zhang et al., 2021). Therefore, plant N uptake may be signiﬁcantly inﬂuenced by factors other than soil N availability. For instance, changes in temperature directly affect plant N acquisition (Warren, 2009; Boczulak et al., 2014; Hu et al., 2024) due to temperature-dependent active transport of soil N at the root–soil interface (Bassirirad, 2000). Temperature can also indirectly affect plant N preference by inﬂuencing microbial activity and N cycling rates (Dawes et al., 2017; Lie et al., 2020), which, in turn, can alter the availability of different soil N forms and competition for soil N between plants and microbes (Kuzyakov & Xu, 2013). However, few studies have investigated the effects of temperature on plant N preference.",
+    "section": "Introduction",
+    "page": "2",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "5"
+  },
+  {
+    "text": "Soil water content is another important factor affecting plant N absorption. Previous theoretical and experimental studies have demonstrated that root N uptake is constrained by the rate of N transport toward the root surface (Oyewole et al., 2016; McMurtrie & N€asholm, 2018). A high rate of transport toward the root surface enhances root N uptake by reducing the opportunity for soil microbes to intercept dissolved N and steepening the N concentration gradient in the rhizosphere adjacent to the root surface (McMurtrie & N€asholm, 2018; Henriksson et al., 2021). \u0003 is more mobile than NH4 + in the soil solution, However, as NO3 soil water content may differently inﬂuence plant N preference. Thus, multiple drivers of plant N uptake under different conditions should be identiﬁed to gain a better understanding of the relative importance of different forms of N to plants. Along a 3000 km transect spanning temperate and alpine grasslands with 18 species, a recent study found that, among multiple factors, soil N availability controls the uptake of different forms of N by plants (Liu et al., 2024). However, on the global scale, with highly variable climatic conditions and species types, the factors driving plant N uptake preference remain unclear. In this study, we compiled a global dataset of 101 publications on the N uptake strategies of different plant species in natural terrestrial ecosystems. The objectives of this study were (1) to 14698137, 2025, 3, Downloaded from https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70030, Wiley Online Library on [15/09/2026].",
+    "section": "Introduction",
+    "page": "2",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "6"
+  },
+  {
+    "text": "See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License Research 973 investigate the global pattern of plant preference for different forms of N and (2) to explore the main driving factors behind the different N uptake preferences of plants around the world. We hypothesized that, on a global scale, plant N uptake preferences for different soil N forms vary across climatic regions. Speciﬁcally, we + uptake is preferred under warm hypothesized that (H1) soil NH4 conditions (e.g. in the tropics), whereas organic N uptake is preferred under cold conditions (e.g. in boreal and alpine regions), because the soil N cycle is faster and N availability is higher in warmer regions than in colder regions, and (H2) soil N availability is the primary factor regulating plant N uptake preference because it provides N resources from the soil to plants.",
+    "section": "Introduction",
+    "page": "2",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "7"
+  },
+  {
+    "text": "Data collection and calculation Peer-reviewed journal articles reporting the application of 15N tracer methods to investigate plant N uptake strategies were identiﬁed by entering the following keywords in Google Scholar, the ISI Web of Knowledge, and the China Knowledge Resource Integrated Database: ‘nitrogen uptake’, ‘nitrogen preference’, ‘nitrogen strategy’, ‘nitrogen dynamics’, ‘plant nitrogen’, ‘soil nitrogen’, ‘ammonium’, ‘nitrate’, ‘organic nitrogen’, ‘15N labeling’, ‘stable nitrogen isotope’, and ‘microbial competition’. The reference lists of relevant articles were referred to in retrieving more pertinent articles. To increase data comparability, the following criteria were applied to select appropriate observations from the initial set of articles retrieved: (1) studies containing 15N uptake rates and/or the relative contribution of N forms to plant N nutrients by 15N labelling method were selected, and other methods (such as 15N natural abundance and concentration dilution) to explore plant N uptake strategies were excluded; (2) only the data from experiments with short isotopic exposure times were included to avoid transformations between 15NH4 \u0003, and studies that used the 15N tracer method to and 15NO3 explore long-term plant N retention, such as that of Templer et al. (2012), were excluded; (3) analyses restricted to species in natural plant communities in unfertilized soils were selected; (4) studies focusing on species-level N uptake but not on community-level N uptake were included; (5) as glycine (the smallest of amino acid, comprising 29% of the pool of amino-N) is a putative organic N source for plants, data using other organic N forms to represent organic N uptake were excluded from the database to make results comparable; and (6) for studies wherein uptake rates or the relative contribution of uptake rates were not directly available, we ﬁrst calculated the uptake rates by dividing the 15N uptake pools by the 15N labelling time and root biomass.",
+    "section": "Materials and Methods",
+    "page": "2",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "8"
+  },
+  {
+    "text": "\u0003, and glycine) The uptake rates of each N form (NH4 were normalized to the sum of the uptake rates of the three forms to calculate their relative contributions to the total N uptake (Mckane et al., 2002; Xu et al., 2011). Based on these criteria, 101 publications were selected to estimate the uptake rates of different N forms (Supporting Information Notes S1). Of the 101 publications, 67 included all three N forms simultaneously. As our aim was to explore plant N 974 \u0003, and organic N were considered preference when NH4 simultaneously, we extracted 1008 observations from the 67 publications to estimate the relative contributions of the three N forms to plant N uptake. Study sites were located from 3°58 0 S to 68.63°00 0 N, covering a wide range of mean annual precipitation (MAP) (110–4600 mm yr\u00031) and mean annual temperature (MAT) (\u00039.6–26.6°C); the distribution of data points is shown in Fig. S1. Furthermore, as absorbing roots are mostly distributed in the topsoil, we focused on root N uptake strategies in the topsoil. The data on N uptake in the 0–10-cm soil layer accounted for more than 80% of the total dataset. Both ﬁeld and pot studies were included to estimate the global average of plant N preference because the relative contributions of all three N forms did not differ signiﬁcantly between the two experimental approaches (Fig. S2). However, only ﬁeld studies were included in the analysis of plant N preference across climatic conditions and their relationships with the environment because the plants included in the pot studies were grown in a controlled environment and, thus, did not reﬂect the inﬂuence of the local climate (Liang et al., 2023). Site-speciﬁc details, such as geographical location (latitude and longitude) and climatic factors (MAT and MAP), were also extracted. If local climate data were not reported in the original paper, MAT and MAP were obtained from the WorldClim dataset (http://www.world clim.org/). Ecosystem type, climate zone, and plant type were collected from the articles referred to in this study.",
+    "section": "Materials and Methods",
+    "page": "2",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "9"
+  },
+  {
+    "text": "The ecosystems were categorized as forests, grasslands, or tundra. Wetlands and heathlands were classiﬁed as ‘others’ because of several observations of these ecosystems. The climate zones were classiﬁed into (sub)tropical, temperate, boreal, alpine, and Arctic zones, as described in a previous study (Hou et al., 2020). According to plant functional types, plants were categorized into nonwoody, shrub, conifer, broadleaf-deciduous, and broadleaf-evergreen species (Verheijen et al., 2015). In addition, an array of soil variables was recorded, including soil physicochemical properties (bulk density, water content, and pH) and soil nutrients (organic C content, total N content, C : N ratio, + content, NO3 \u0003 content, and NH4 ++NO3 \u0003) ratio). Unreported soil properties were extracted from SOILGRIDS250M 2.0 (https://soilgrids.org) using location information, as in another study (Wang et al., 2022). Statistical analysis One-way analysis of variance (ANOVA) and post hoc analyses were performed to compare plant uptake rates and relative contributions among the three soil N forms. Differences in the N form contributions among ecosystem types, climate zones, and plant types were also analyzed using one-way ANOVA. Like in several previous studies (Wang et al., 2021; Yao et al., 2024), we used a linear mixed-effect model to evaluate the bivariate relationships of plant N uptake preference with variables deﬁned as climate, soil nutrient, and soil physicochemical properties. The following equation was used: Y = b0 + b1 9 X + p + e, where Y is the plant N uptake preference variable; X is the independent variable; b0 is the intercept; b1 is the ﬁxed coefﬁcient; p is the random 14698137, 2025, 3, Downloaded from https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70030, Wiley Online Library on [15/09/2026].",
+    "section": "Materials and Methods",
+    "page": "3",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "10"
+  },
+  {
+    "text": "See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License effect of ‘site’, accounting for the autocorrelation among observations within the site (Wang et al., 2021); and e is the sampling error. The linear mixed-effect model was performed by the maximum likelihood estimation using the LME4 package in R (Bates et al., 2015). To assess the robustness of the relationships between plant N uptake preference and driving variables and clarify the relative importance of variables, a model selection analysis, based on the corrected Akaike information criterion, was used. Speciﬁcally, the importance of each variable as the sum of the Akaike weights was calculated using the GLMULTI package, and a cutoff of 0.8 was set to distinguish between the important and unimportant variables (Calcagno & Mazancourt, 2010), as in several previous studies (Cheng et al., 2022; Zhou et al., 2022). In order to verify the robustness of the results, a multivariate linear mixed model and hierarchical partitioning analysis were also used to assess the importance of factors to predict plant N uptake preference (Jin et al., 2024; Teng et al., 2024). To quantify the direct and indirect effects of multiple driving variables on plant N preferences, a structural equation model (SEM) was then used. This approach can partition the direct and indirect effects that one variable may have on another and is therefore useful for exploring complex relationships in natural ecosystems (Grace, 2006; Chen et al., 2019). SEM testing was performed using the PIECEWISESEM and LME4 packages in R. Directional-separation tests were applied to check for any missing signiﬁcant paths and for unnecessary insigniﬁcant paths that needed to be excluded.",
+    "section": "Materials and Methods",
+    "page": "3",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "11"
+  },
+  {
+    "text": "The ﬁnal model was selected using the Akaike information criterion and P-values (P > 0.05 was considered adequate). Two SEMs were independently run using the same procedure described above to quantify the effects of multi- \u0003 uptake preferences. The ple variables on plant NH4 SEM of organic N was not run because there were no signiﬁcant relationships between glycine preference and most of the factors. Data were tested for normality and log-transformed when required before statistical analyses. All analyses were performed using the R software (v.4.1.0, R Core Team, 2020), and signiﬁcance was set at P < 0.05.",
+    "section": "Materials and Methods",
+    "page": "3",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "12"
+  },
+  {
+    "text": "Global patterns of plant N uptake preference + to plant N uptake The relative contribution of soil NH4 (41.6 \u0004 1.1%) was signiﬁcantly higher than that of NO3 (32.8 \u0004 1.2%) and glycine N (25.6 \u0004 0.9%) (Fig. 1a). Corre- + was signiﬁcantly spondingly, the average uptake rate of NH4 \u0003 and glycine N (Fig. 1b). Plant N higher than that of NO3 uptake preferences varied signiﬁcantly with the climate zone + was sigand biome type (Fig. 2a–f). The contribution of NH4 niﬁcantly higher in (sub)tropical regions (65.6 \u0004 1.8%) than in (39.4 \u0004 2.4%, 44.4 \u0004 3.3%, other climate zones 32.3 \u0004 1.3%, and 39.4 \u0004 3.2% in temperate, boreal, alpine, \u0003 preand Arctic climate zones, respectively) (Fig. 2a). Plant NO3 ference was highest in alpine regions (42.1 \u0004 1.7%) and lowest \u0003 preference in (sub)tropical regions (15.4 \u0004 1.7%). Plant NO3 showed similar levels between Arctic (36.4 \u0004 3.9%), boreal Fig. 1 Relative contribution (%) of soil nitrogen \u0003, and glycine N) (N) forms (NH4 (mean \u0004 SE) to plant N uptakes (a) and uptake rates of N forms (b) at the global scale. The relative contribution was directly reported or indirectly calculated by dividing the uptake rates of each N form by the sum of the uptake rates of the three forms. Different letters on the top of error bars represent signiﬁcant differences among soil N forms (P < 0.05, one-way analysis of variance with post-hoc test).",
+    "section": "Results",
+    "page": "3",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "13"
+  },
+  {
+    "text": "(34.3 \u0004 3.6%), and temperate regions (32.4 \u0004 2.9%) (Fig. 2b). Furthermore, plant preference for glycine N was lowest in (sub) tropical regions (19.1 \u0004 1.6%), which was signiﬁcantly lower than that in temperate and alpine regions (Fig. 2c). + was higher in Regarding biome types, the preference for NH4 forests (53.6 \u0004 2.1%) than in grasslands (32.2 \u0004 1.4%) and tundra ecosystems (34.9 \u0004 3.1%) (Fig. 2d). By contrast, the pre- \u0003 was higher in grasslands (42.5 \u0004 1.9%) and ference for NO3 tundra (42.2 \u0004 3.8%) than in forests (21.2 \u0004 2.0%) (Fig. 2e). Meanwhile, the preference for organic N did not differ signiﬁcantly between biome types (Fig. 2f). Changes in plant N uptake preference across different plant functional groups Plant N uptake preference varied signiﬁcantly between different plant functional groups according to the statistical analysis results of one-way ANOVA (Fig. 3). Broadleaf-evergreen species had the +, while nonwoody species had the lowhighest preference for NH4 + (Fig. 3a). Conversely, the preference of est preference for NH4 \u0003 was signiﬁcantly higher than that of nonwoody species for NO3 other plant functional types (broadleaf-evergreen, conifer, and shrub species) (Fig. 3b). Preference for organic N did not differ signiﬁcantly between plant functional types (Fig. 3c).",
+    "section": "Results",
+    "page": "4",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "14"
+  },
+  {
+    "text": "Effects of climate, soil, and plant functional group on plant N uptake preference \u0003 uptake was signiﬁcantly Plant preference for NH4 correlated with climatic factors and soil properties (Fig. 4). The + was positively correlated with MAT preference for NH4 \u0003) ratio (Fig. 4g), (Fig. 4a), MAP (Fig. 4d), NH4 and C : N ratio (Fig. 4j), but negatively correlated with soil pH \u0003 increased signiﬁ- (Fig. 4m). By contrast, the preference for NO3 cantly with soil pH (Fig. 4n); however, it decreased with increas- \u0003) ratio (Fig. 4h), C : ing MAT (Fig. 4b), NH4 N ratio (Fig. 4k), and soil moisture (Fig. 4q). Model selection analysis showed that among the multiple abiotic and biotic (plant functional type) factors, MAT and 14698137, 2025, 3, Downloaded from https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70030, Wiley Online Library on [15/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License Research 975 \u0003) ratio were the most important drivers of + preference (Fig. 5a,c), whereas MAT, soil water content, \u0003) ratio, and plant functional type were the \u0003 preference (Fig. 5b,d). Consistently, main drivers of NO3 the results of the multivariate linear mixed model also showed \u0003) were the two main that MAT and soil NH4 + uptake preference, while both envirdeterminants of plant NH4 onmental factors and plant functional types were signiﬁcant dri- \u0003 uptake preference (Fig. S3). Plant preference vers of plant NO3 for organic N uptake showed insigniﬁcant relationships with most of the factors (Figs 4, S4).",
+    "section": "Results",
+    "page": "4",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "15"
+  },
+  {
+    "text": "+–N is the Our study showed that, on a global scale, soil NH4 \u0003–N, major contributor to plant N uptake, followed by NO3 although organic N is also an important N resource for plants. \u0003 preference The considerable variation in plant NH4 between different regions and biomes (Fig. 2) is mainly due to their different climate and soil properties, as well as different plant functional groups (Fig. 3). These results enrich the current knowledge on plant N uptake strategies and ecosystem N cycling. Most land models (such as CABLE and CLM4) simulate plant N acquisition based only on plant N demand and soil N availability without considering the effects of plant N preference strategies (Thornton et al., 2007; Wang et al., 2010; Zaehle et al., 2014). Based on our ﬁndings, we recommend incorporating plant N preference into C–N models to better assess N cycling and its impact on land C balance. Different plant N uptake preference among climate zones Our ﬁrst hypothesis was supported by the signiﬁcant differences in preferences of plants for different soil N sources, reinforcing the idea that natural selection causes species to diverge into highly specialized niches for N consumption (McKane et al., 2002; \u0003 than Moreau et al., 2019). Plants usually absorb less NO3 + because of the additional C required for NO3 \u0003 uptake (Britto & Kronzucker, 2013; Zou et al., 2020). However, our 976 Fig. 2 Relative contribution of different soil nitrogen (N) forms (NH4 14698137, 2025, 3, Downloaded from https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70030, Wiley Online Library on [15/09/2026].",
+    "section": "Discussion",
+    "page": "4",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "16"
+  },
+  {
+    "text": "See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License \u0003, and glycine N) to plant N uptake varied with climate zones (i.e. subtropical, temperate, boreal, alpine, and arctic) (a–c) and biome types (i.e. forest, grassland, tundra, and other ecosystems) (d–f). Box plots indicate the medians (horizontal lines), ﬁrst and third quartiles (boxes). The black diamond in each box is the mean value, and jittered points represent individual observations. Values in parentheses represent sample sizes, which are the same for different N forms because only data from studies that used three different N forms simultaneously were analyzed. Different lowercase letters at the top of the boxes indicate signiﬁcant differences among respective groups (P < 0.05, oneway analysis of variance with post-hoc test). results are inconsistent with a recent study that found a slightly \u0003 to plant N uptake than that of higher contribution of NO3 + (Liu et al., 2024). Unlike our ﬁndings, which focus on natural ecosystems without human interference (e.g. N fertilizer addition), the results of Liu et al. (2024) include data from arable soils. In intensively managed agricultural soils, mineral N and, \u0003 are the most abundant forms of available N especially, NO3 \u0003 is the predominant form of N taken (Wir\u0002en et al., 1997). NO3 up by most crops, such as maize (Zea mays L.), wheat (Triticum aestivum L.) (Crawford & Glass, 1998; Gao et al., 2022). This may explain the inconsistent results between the two studies.",
+    "section": "Discussion",
+    "page": "5",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "17"
+  },
+  {
+    "text": "Meanwhile, we found that plant N preference for soil NH4 \u0003 varied across climate zones (Fig. 2). The signiﬁcantly + in (sub)tropical zones than in higher plant preference for NH4 boreal, alpine, and Arctic regions is consistent with previous the- + uptake ories that warm conditions are favorable for plant NH4 (Houlton et al., 2007; Liu et al., 2017). The varying plant prefer- + among different climatic regions may be partly ence for NH4 due to their differential N availability. Decomposition (more + availability) and leaching rates of NO3 \u0003 are higher in (sub)tropical regions than in high-latitude regions, leading to a + relative availability. This provides plants more higher NH4 +, a; NO3 Fig. 3 Relative contribution of different soil N forms (NH4 14698137, 2025, 3, Downloaded from https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70030, Wiley Online Library on [15/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License Research 977 \u0003, b; and glycine N, c) to plant N uptake varied with plant functional types. Box plots indicate the medians (horizontal lines), ﬁrst and third quartiles (boxes). The black diamond in each box is the mean value, and jittered points represent individual observations. Different lowercase letters at the top of the boxes indicate signiﬁcant differences among respective groups (P < 0.05, one-way analysis of variance with post-hoc test).",
+    "section": "Discussion",
+    "page": "5",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "18"
+  },
+  {
+    "text": "\u0003–N, and glycine N to plant nitrogen (N) uptake in relation to mean annual temperature (MAT, a–c), mean annual +–N, NO3 Fig. 4 Contribution of soil NH4 \u0003) ratio (g–i), soil C : N ratio (j–l), pH (m–o), and soil moisture (p–r) at the global scale. Regression lines precipitation (MAP, d–f), soil NH4 and shaded areas depict the best-ﬁt trendline and the 95% conﬁdence interval of the linear regression, respectively. Solid lines represent signiﬁcant correlations at P < 0.05 based on the maximum likelihood test, and dashed lines represent insigniﬁcant correlations at P > 0.05. 978 Fig. 5 Model-averaged importance of potential predictor variables for plant NH4 14698137, 2025, 3, Downloaded from https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70030, Wiley Online Library on [15/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License + (a) and NO3 \u0003 (b) uptake preference based on the sum of Akaike weights + (c) and NO3 \u0003 (d) preference derived from the model selection analysis. Structural equation modelling (SEM) showing the multiple relationships of NH4 with driving factors at the global scale. In (c, d), the values are the standardized path coefﬁcients from the model. The orange lines are the positive relationships, and the blue lines are the negative relationships, respectively. Arrows represent a directional inﬂuence of one variable upon another. The numbers beside the arrows are standardized path coefﬁcients. The thickness of the arrows is proportional to the magnitude of the standardized path coefﬁcients. R2 stands for the amount of variation interpreted by variables, and the signiﬁcant level is set at *, P < 0.05; **, P < 0.01; ***, P < 0.001 based \u0003), the ratio of soil on structural equation model analysis. MAP, mean annual precipitation; MAT, mean annual temperature; NH4 ammonium N to ammonium plus nitrate N; soil C : N, the ratio between soil organic carbon and total nitrogen.",
+    "section": "Discussion",
+    "page": "6",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "19"
+  },
+  {
+    "text": "Soil BD, soil bulk density; Soil water, soil water content; Soil pH, soil pH values; PFT, plant functional types. The glycine preference (organic N) was not included in the ﬁgure due to its insensitivity to most environmental factors. + uptake in (sub)tropical regions (Britto & opportunities for NH4 Kronzucker, 2013; Zou et al., 2020). Furthermore, high temperatures in (sub)tropical regions may lead to high diffusive + pre- +, which may contribute to a higher NH4 ﬂuxes of soil NH4 ference in (sub)tropical regions than in other climate zones, as has extremely low mobility in the soil (County et al., 2015). \u0003 preference was higher in the alpine and Arctic Plant NO3 zones than in lower latitudes (Fig. 2). This result is consistent with some previous studies (Choudhary et al., 2016; Liu \u0003 in et al., 2018) that emphasize the important role of soil NO3 plant N uptake in the Arctic tundra, but in contrast to other studies that reported a low soil nitriﬁcation rate associated with \u0003, which is unfavorable for plant NO3 undetectable soil NO3 uptake (McKane et al., 2002; Nordin et al., 2004). These con- \u0003 availabilﬂicting results suggest that factors other than soil NO3 \u0003 preference. We ity play a dominant role in driving plant NO3 \u0003 preference in propose the following reasons for the high NO3 +, negatively charged cold regions. First, compared with NH4 \u0003 adheres poorly to the negatively charged surfaces of clay minerals and soil organic matter.",
+    "section": "Discussion",
+    "page": "7",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "20"
+  },
+  {
+    "text": "Hence, being more mobile than \u0003 can more easily move to the root surface, increasing the likelihood of its uptake (Zhou et al., 2021), especially in high-latitude ecosystems, where soil N availability is limited (Du et al., 2020; Mason et al., 2022). By contrast, in (sub)tropical regions, where the amount of rainfall is usually high (Adler \u0003 is easily lost through leaching, which et al., 2017), soil NO3 \u0003 contribution to plant N uptake. In line may result in a low NO3 with this, our results highlighted the signiﬁcant effect of soil \u0003 uptake preference (Fig. 5), providwater content on plant NO3 ing robust evidence that soil moisture plays an important role in \u0003 uptake preference (Houlton et al., 2007). Second, in plant NO3 the present study, most plants in high-latitude ecosystems (alpine and Arctic) were nonwoody species with a signiﬁcantly higher \u0003 uptake (Fig. 3), which may have contribuproportion of NO3 \u0003 preference at high latitudes, as plant functed to the high NO3 tional types played an important role in regulating the variations \u0003 preference (Figs 5, S3). The variation in NO3 of plant NO3 preference between plant functional types may be due to the unique functions and life strategies of different plant species. For \u0003 is much easier example, previous evidence has shown that NO3 + (Boudsocq et al., 2012; to store in plant tissues than NH4 Hachiya & Sakakibara, 2016). Nonwoody plants are less susceptible to pathogens than woody plants (Jiang et al., 2024). A \u0003 uptake rate may allow nonwoody species to invest higher NO3 more N in defense-related secondary metabolites. These results suggest that further studies on different plant functional groups across broad climatic regions are warranted to further verify the climatic patterns observed in the current study. It has been suggested that compared with low-latitude ecosystems, plants in high-latitude ecosystems rely more on soil dissolved organic N, where much of the N pool is bound to organic matter and must be depolymerized by soil microorganisms whose activity is limited by low temperatures (N€asholm et al., 2009; Britto & Kronzucker, 2013; Hu et al., 2024). In partial support of this hypothesis, we found that compared with other climatic regions, the preference for glycine was lowest in (sub)tropical regions (Fig. 2), which typically have abundant soil inorganic N sources (Du et al., 2020; Mason et al., 2022). However, there were insigniﬁcant differences in organic N preference between subtropical and boreal or arctic regions. Similarly, no signiﬁcant changes in organic N uptake were also observed among biomes or plant functional types. The reason for the patterns of plant organic absorption may be partly due to the effect of soil water content. Soil moisture can signiﬁcantly change plant glycine N absorption by affecting glycine diffusion and migration from the soil to plant roots (McMurtrie & N€asholm, 2018; Liang et al., 2022). In the current study, we found that among multiple environmental factors, soil water content was the most important determinant of plant preference for organic N uptake (Figs 4, S5a). However, there were no signiﬁcant differences in soil water content among biomes or plant functional types (Fig. S5b,c), which may result in insigniﬁcant changes in organic N uptake among biomes or plant functional types. It is worth noting that the signiﬁcance and explanatory power of the current environmental variables for organic N are low (Fig. 4). This suggests that there are other factors (e.g. soil microbial competition, plant physiology, and mycorrhizal symbiosis) (N€asholm et al., 2009; T€unnermann et al., 2025) that regulate the patterns of organic N uptake. Unfortunately, these factors could not be included in the current analysis due to a lack of data in the literature.",
+    "section": "Discussion",
+    "page": "7",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "21"
+  },
+  {
+    "text": "Inﬂuences of climate factors and soil properties on plant N uptake preference Temperature can signiﬁcantly affect plant uptake of different N forms by changing root transport properties for different N forms (Tegeder & Masclaux-Daubresse, 2017; Lee et al., 2024) or by mediating ion movement through the roots (Bassirirad, 2000; Kuster et al., 2016; Sanders-DeMott et al., 2018). An increase in temperature can increase N diffusion in soil because solute diffusion rates in a liquid medium are proportionally related to temperature (Kelly & Mays, 1999; Inselsbacher & N€asholm, 2012). + in soils increase There is evidence that diffusive ﬂuxes of NH4 14698137, 2025, 3, Downloaded from https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70030, Wiley Online Library on [15/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License Research 979 signiﬁcantly with increasing soil temperature (Inselsbacher & + (BasN€asholm, 2012), thereby enhancing plant uptake of NH4 sirirad, 2000; Warren, 2009). Furthermore, warming stimulates microbial activity, leading to accelerated N mineralization and + availability (Risch et al., 2019), which may increased soil NH4 + preferexplain the positive correlations between MAT and NH4 \u0003 moves easily through the ence (Figs 4, 5). By contrast, as NO3 soil solution, temperature-induced diffusion and mass ﬂow \u0003 loss, resulting in a negative correlation increase the risk of NO3 \u0003 preference (Figs 4, 5). Overall, the sigbetween MAT and NO3 niﬁcantly different correlations of MAT on plant NH4 \u0003 uptake preferences suggest that species composition may change under global warming due to the signiﬁcant difference in N nutrient and growth between plant species. However, to date, only a few experimental studies have been conducted to determine how warming may affect plant N uptake strategies (Boczu- lak et al., 2014; Kuster et al., 2016).",
+    "section": "Discussion",
+    "page": "8",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "22"
+  },
+  {
+    "text": "Therefore, more empirical studies are needed to better understand plant N uptake strategies and N-induced plant C storage under global warming. Although the regulation of plant N preference is commonly attributed to soil N availability (Nordin et al., 2004; Britto & Kronzucker, 2013), we found that the proportions of N forms in + or NO3 \u0003 preference (Figs 4, 5). the soil also regulate plant NH4 The importance of the relative availability of soil N forms in driv- + or NO3 \u0003 extends our traditional ing plant preference for NH4 understanding of plant N uptake strategies, which mainly depend on soil N content (Schimel & Bennett, 2004; Niu et al., 2016). This ﬁnding suggests that we cannot judge the utilization ability and fractional contribution of a given N resource to plants based on soil N availability alone. A number of recent studies have revealed signiﬁcant spatial variability in the shifts in N deposition composition (i.e. NHx/NOy) (Li et al., 2016; Yu et al., 2019), which may lead to changes in soil N form availability and distinct fates of plants with different N preferences and associated ecosystem functions, particularly plant C sinks. Soil water availability is also a crucial factor driving plant N uptake due to nitrogen–water interactions (Wang et al., 2013; Wu et al., 2022). It has been noted that plants prefer NO3 uptake under dry soil conditions, whereas plants prefer NH4 uptake in wetter soil environments (Houlton et al., 2007; Wang & Macko, 2011).",
+    "section": "Discussion",
+    "page": "8",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "23"
+  },
+  {
+    "text": "Our results support those of previous studies showing a signiﬁcant negative correlation between soil water con- \u0003 uptake preference, which may be partly due tent and plant NO3 \u0003. The higher mobility of NO3 to the high mobility of soil NO3 in the soil and its faster transport within plants enhance \u0003 diffusion to the root surface and transport to aboveground plant parts (County et al., 2015), resulting in a higher NO3 uptake preference under dry conditions. However, under wet \u0003. Thereconditions, there is a high risk of leaching losses of NO3 \u0003 preference. fore, soil water content negatively affects plant NO3 Study limitations and implications for future research This synthesis revealed global patterns and drivers of plant N acquisition preference across various ecosystems and climatic regions, but further studies are needed to fully understand these 980 aspects. First, the uneven distribution of study sites across different climate zones in the current study may lead to biases in the average plant N preference (e.g. overestimation of glycine N uptake preference due to signiﬁcantly more data in alpine and temperate regions with greater organic N preference than that in subtropical regions) on a global scale (Persson & N€asholm, 2008). In addition, the pattern of plant preference for organic N uptake in our study was based on glycine. Recent studies have suggested that plants can take up different organic N forms besides amino acids (Liu et al., 2017; Moreau et al., 2019). Therefore, the conclusions drawn from a simple glycine model may not fully reﬂect the potential organic N uptake by plants (Warren, 2013). To accurately assess the ecological signiﬁcance and importance of organic N as a plant N resource, further experiments using multiple organic N forms labelled with 13C–15N in broader climatic regions are recommended.",
+    "section": "Discussion",
+    "page": "8",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "24"
+  },
+  {
+    "text": "Additionally, it is unclear whether plant N preference strategies and the factors regulating such strategies are consistent between the species and ecosystem levels. More ﬁeld observations of N preference at community and ecosystem scales are needed to further extend our ﬁndings. Second, although we have done our best to include factors to clarify the drivers inﬂuencing the variations of plant N uptake preference, a signiﬁcant proportion of the variability in plant N preference remains unexplained, in part due to the limited data on soil microorganisms. Soil microorganisms strongly control plant N uptake (Hill & Jones, 2019). In the short term, microbes are more efﬁcient than plants at inorganic and organic N uptake (Harrison et al., 2008). This may be due to the rapid growth rates and high surface-area-to-volume ratios of microorganisms compared with plant roots in different ecosystems (Kuzyakov & Xu, 2013). Experiments have shown that plants can compete with soil + (Mckane microbes for amino acids as well as for NH4 et al., 2002), contrary to the previous speculation. In this study, soil microbial biomass N showed insigniﬁcant correlations with plant N uptake preference (Fig. S6), which may be partly due to limited data (less than one ﬁfth of the studies included information on microbial biomass). To fully understand how plants take up N, it is important to understand how N interacts with microorganisms. Therefore, further studies using 15N tracers are needed to compare how plants take up N and how microorganisms immobilize it at the same time. Furthermore, although we have considered the role of plant functional types on plant N preference, the role of phylogeny in driving plant N preference is still an open question. To better understand plant N preference strategy and underlying mechanisms under environmental change, further investigation of plant N preference responses in a phylogenetic context is needed.",
+    "section": "Discussion",
+    "page": "9",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "25"
+  },
+  {
+    "text": "In summary, this study is one of the ﬁrst to investigate the global patterns and driving factors of the relative importance of different soil N forms for plant N uptake using a 15N tracer. Our results showed clear climatic patterns of plant preference for soil \u0003 and low preference for organic N in (sub)tropical zones. Furthermore, we found that different factors determine plant N preference strategies for different soil N forms. Plant + uptake preference was mainly regulated by MAT and soil \u0003 uptake preference \u0003) ratio, whereas NO3 was mainly driven by both environmental factors (MAT, soil 14698137, 2025, 3, Downloaded from https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70030, Wiley Online Library on [15/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License \u0003)) and plant functional water content, NH4 types. These results extend our traditional understanding of plant N uptake strategies, which mainly focus on soil N richness. As +-N and NO3 \u0003-N is uneven the atmospheric deposition of NH4 in most areas and climate warming continues to increase, it is critical to clearly identify plant N preference to predict N limitation to C sequestration in the face of increasing global change.",
+    "section": "Discussion",
+    "page": "9",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "26"
+  },
+  {
+    "text": "The data that support the ﬁndings of plant N preferences are available in the Supporting Information of this article (Table S1).",
+    "section": "Data availability",
+    "page": "9",
+    "paper_id": "P006",
+    "title": "Plant nitrogen uptake preference and drivers in natural ecosystems at the global scale",
+    "authors": [
+      "Jinhua Mao",
+      "Jinsong Wang"
+    ],
+    "year": "2026",
+    "source_file": "P006.pdf",
+    "id": "27"
+  }
+]

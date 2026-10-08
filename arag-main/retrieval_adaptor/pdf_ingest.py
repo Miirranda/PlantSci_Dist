@@ -1257,12 +1257,18 @@ def is_claim_like(text: str, *, min_chars: int = 8) -> bool:
 
     图注（"图1 黄瓜单性花与子房下位的进化和发育"）和编号小标题（"1.黄瓜花、子房的进化
     和发育"）在长度上与断言无异，但没有可核查的内容，逐条送进检索纯属浪费 API 调用。
+
+    编号讨论项若已是带句末标点的完整科学句（如「1、目前关于 Ne1 和 Ne2……仍存在争议。」），
+    则保留，避免被小标题规则误杀。
     """
     stripped = text.strip()
     if len(stripped) < min_chars:
         return False
     if any(pattern.match(stripped) for pattern in NON_CLAIM_PATTERNS):
-        return False
+        compact = re.sub(r"\s+", "", stripped)
+        # 纯图注/编号标题：无句末标点，或过短。完整科学句即使以「1、」「图3」起头也保留。
+        if len(compact) < 40 or not re.search(r"[。！？!?]", stripped):
+            return False
     # 至少要有中文，且不是纯数字/符号
     return bool(re.search(r"[\u4e00-\u9fff]", stripped))
 

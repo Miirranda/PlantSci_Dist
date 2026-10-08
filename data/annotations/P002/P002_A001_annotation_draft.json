@@ -2598,5 +2598,232 @@
       "P002-A001-C16"
     ],
     "notes": ""
+  },
+  "human_reviews": {
+    "牟德兰": {
+      "P002-A001-C01": {
+        "gold_sentence_ids": [
+          22,
+          23,
+          150,
+          232
+        ],
+        "recall_reviewed": false,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [],
+        "recall_updated_at": "2026-09-17 21:32:54",
+        "updated_at": "2026-09-17 21:32:54"
+      },
+      "P002-A001-C02": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": true,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [
+          {
+            "text": "In this study, we started with the genome-wide characterization of H3K36me3 and surprisingly observed that mutation of SDG8 can lead to substantially elevated levels of H3K36me3 in the coding genome of Arabidopsis. Furthermore, we unexpectedly found that a large proportion of the coding genome exists as a chromatin state that is open chromatin, marked by H3K36me3, occupied by RNA polymerase II, and looked similar to the ready-for-transcription state but with little to no transcription activity (similar to the level of silencing), even with heat stimulation. We termed this chromatin state ‘transcriptional resistive’, which is distinctive from traditional transcription activation and transcription silencing. Our data reveal a previously undiscovered function of H3K36me3 and transcription regulation.",
+            "text_zh": ""
+          },
+          {
+            "text": "SDG8 limits H3K36me at a large portion of the coding genome To dissect the functions of the H3K36 methyltransferases in Arabidopsis on catalysing different forms of H3K36 methylation (Fig. 1a), we started with the analysis of H3K36me3 chromatin immunoprecipitation and sequencing (ChIP-seq) using Arabidopsis seedlings and profiled the enrichment signal on protein-coding genes (Fig. 1b and Extended Data Fig. 1a). Relative to the wild type (WT), the mutants sdg4, sdg25, sdg26 and atxr2 (see materials for more details) showed decreased levels of H3K36me3 around the transcription start site (TSS); however, the sdg8 (efs-3)19 mutant displayed increased levels of H3K36me3 from the TSS to the gene bodies (Fig. 1b). We identified a series of protein-coding genes with differential H3K36me3 modification [DMGs, log2(fold-change (FC)) > 1.4 or <−1.4, FDR (false discovery rate) < 0.05] in these five mutants, and found that only the sdg8 mutant showed a larger portion of increased DMGs than decreased DMGs (Fig. 1c and Extended Data Fig. 1b). These results were further validated by ChIP–qPCR (Extended Data Fig. 1d). Furthermore, we checked and compared the numbers of DMGs among mutants of other HMTs that are responsible for H3K4me3, H3K9me2, H3K27me1 and H3K27me3 in Arabidopsis. No other mutants of HMTs could lead to numerous upregulated DMGs as the sdg8 mutant does (Fig. 1c). Therefore, the observation that highly elevated H3K36me3 levels exist in the sdg8 mutant encouraged us to explore the extended functions of SDG8.",
+            "text_zh": ""
+          }
+        ],
+        "recall_updated_at": "2026-09-17 21:39:36",
+        "updated_at": "2026-09-17 21:39:36"
+      },
+      "P002-A001-C03": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": true,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [
+          {
+            "text": "SDG8 limits H3K36me at a large portion of the coding genome To dissect the functions of the H3K36 methyltransferases in Arabidopsis on catalysing different forms of H3K36 methylation (Fig. 1a), we started with the analysis of H3K36me3 chromatin immunoprecipitation and sequencing (ChIP-seq) using Arabidopsis seedlings and profiled the enrichment signal on protein-coding genes (Fig. 1b and Extended Data Fig. 1a). Relative to the wild type (WT), the mutants sdg4, sdg25, sdg26 and atxr2 (see materials for more details) showed decreased levels of H3K36me3 around the transcription start site (TSS); however, the sdg8 (efs-3)19 mutant displayed increased levels of H3K36me3 from the TSS to the gene bodies (Fig. 1b). We identified a series of protein-coding genes with differential H3K36me3 modification [DMGs, log2(fold-change (FC)) > 1.4 or <−1.4, FDR (false discovery rate) < 0.05] in these five mutants, and found that only the sdg8 mutant showed a larger portion of increased DMGs than decreased DMGs (Fig. 1c and Extended Data Fig. 1b). These results were further validated by ChIP–qPCR (Extended Data Fig. 1d). Furthermore, we checked and compared the numbers of DMGs among mutants of other HMTs that are responsible for H3K4me3, H3K9me2, H3K27me1 and H3K27me3 in Arabidopsis. No other mutants of HMTs could lead to numerous upregulated DMGs as the sdg8 mutant does (Fig. 1c). Therefore, the observation that highly elevated H3K36me3 levels exist in the sdg8 mutant encouraged us to explore the extended functions of SDG8.",
+            "text_zh": ""
+          }
+        ],
+        "recall_updated_at": "2026-09-17 21:42:58",
+        "updated_at": "2026-09-17 21:42:58"
+      },
+      "P002-A001-C04": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": true,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [
+          {
+            "text": "To further determine the regulatory role of SDG8 in H3K36me3, we carried out in-depth analysis and clustered all the protein-coding genes on the basis of the H3K36me3 enrichment in the sdg8 mutant compared with wild-type Col-0 (Fig. 1d and Methods). The genes in Cluster 1 showed a total absence of H3K36me3 modifications (C1, totally SDG8 dependent, n = 1,670), and Cluster 2 genes displayed decreased H3K36me3 levels in the sdg8 mutant (C2, partially SDG8 dependent, n = 1,236). However, the genes in Cluster 3 (C3, SDG8 restraining, n = 10,710) exhibited the accumulated H3K36me3 levels around the TSS in the absence of SDG8 (Fig. 1d and Extended Data Fig. 1d). More than half of protein-coding genes in the Arabidopsis genome were marked by H3K36me3 modifications, and 78.7% of these belong to Cluster 3 (Fig. 1e), indicating a potential role of SDG8 in inhibiting the excessive deposition of H3K36me3 in genes. To confirm this observation, we purchased another two H3K36me3 antibodies from Active Motif (AM_61902 and AM_61022 in Supplementary Fig. 1) and performed the ChIP-seq and data analysis. The data using these two H3K36me3 antibodies could still generate clustered genes similar to those in Fig. 1d (Supplementary Fig. 1), further confirming our findings that H3K36me3 levels were increased in C3 genes of the sdg8 mutant.",
+            "text_zh": ""
+          }
+        ],
+        "recall_updated_at": "2026-09-17 21:57:00",
+        "updated_at": "2026-09-17 21:57:00"
+      },
+      "P002-A001-C05": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": true,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [
+          {
+            "text": "To further determine the regulatory role of SDG8 in H3K36me3, we carried out in-depth analysis and clustered all the protein-coding genes on the basis of the H3K36me3 enrichment in the sdg8 mutant compared with wild-type Col-0 (Fig. 1d and Methods). The genes in Cluster 1 showed a total absence of H3K36me3 modifications (C1, totally SDG8 dependent, n = 1,670), and Cluster 2 genes displayed decreased H3K36me3 levels in the sdg8 mutant (C2, partially SDG8 dependent, n = 1,236). However, the genes in Cluster 3 (C3, SDG8 restraining, n = 10,710) exhibited the accumulated H3K36me3 levels around the TSS in the absence of SDG8 (Fig. 1d and Extended Data Fig. 1d). More than half of protein-coding genes in the Arabidopsis genome were marked by H3K36me3 modifications, and 78.7% of these belong to Cluster 3 (Fig. 1e), indicating a potential role of SDG8 in inhibiting the excessive deposition of H3K36me3 in genes. To confirm this observation, we purchased another two H3K36me3 antibodies from Active Motif (AM_61902 and AM_61022 in Supplementary Fig. 1) and performed the ChIP-seq and data analysis. The data using these two H3K36me3 antibodies could still generate clustered genes similar to those in Fig. 1d (Supplementary Fig. 1), further confirming our findings that H3K36me3 levels were increased in C3 genes of the sdg8 mutant.",
+            "text_zh": ""
+          },
+          {
+            "text": "Since C3 genes comprise the majority of H3K36me3 (78.7% of total H3K36me3-marked genes, Fig. 1e), we were curious about their transcription state. First, we evaluated the open-chromatin states via the assay for transposase-accessible chromatin with high-throughput sequencing (ATAC-seq), and found that comparable levels were displayed in the wild type and sdg8 mutant (Fig. 2b). To precisely determine the transcription state of C3 genes, we performed native elongating transcripts sequencing (NET-seq) that can capture the nascent transcripts by RNA polymerase on chromatin22. The NET-seq results uncovered that there was a decreased activity of transcriptional elongated Pol II (Ser2P Pol II) at C1 and C2 genes in sdg8 compared with wild type (Fig. 2c), in line with their decrease in H3K36me3 (Fig. 1d), indicating that the C1 and C2 genes are marked by the transcription-coupled H3K36me3. Unexpectedly, almost no activity of Ser2P Pol II was observed on C3 genes in both wild-type Col-0 and sdg8 mutant (Fig. 2c), which is inconsistent with the well-known functions of H3K36me3 in enhancing transcription elongation7,8.",
+            "text_zh": ""
+          }
+        ],
+        "recall_updated_at": "2026-09-17 21:57:10",
+        "updated_at": "2026-09-17 21:57:10"
+      },
+      "P002-A001-C06": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": true,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [
+          {
+            "text": "Since C3 genes comprise the majority of H3K36me3 (78.7% of total H3K36me3-marked genes, Fig. 1e), we were curious about their transcription state. First, we evaluated the open-chromatin states via the assay for transposase-accessible chromatin with high-throughput sequencing (ATAC-seq), and found that comparable levels were displayed in the wild type and sdg8 mutant (Fig. 2b). To precisely determine the transcription state of C3 genes, we performed native elongating transcripts sequencing (NET-seq) that can capture the nascent transcripts by RNA polymerase on chromatin22. The NET-seq results uncovered that there was a decreased activity of transcriptional elongated Pol II (Ser2P Pol II) at C1 and C2 genes in sdg8 compared with wild type (Fig. 2c), in line with their decrease in H3K36me3 (Fig. 1d), indicating that the C1 and C2 genes are marked by the transcription-coupled H3K36me3. Unexpectedly, almost no activity of Ser2P Pol II was observed on C3 genes in both wild-type Col-0 and sdg8 mutant (Fig. 2c), which is inconsistent with the well-known functions of H3K36me3 in enhancing transcription elongation7,8.",
+            "text_zh": ""
+          }
+        ],
+        "recall_updated_at": "2026-09-17 21:59:13",
+        "updated_at": "2026-09-17 21:59:13"
+      },
+      "P002-A001-C07": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": false,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [],
+        "recall_updated_at": "2026-09-17 22:01:35",
+        "updated_at": "2026-09-17 22:01:35"
+      },
+      "P002-A001-C08": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": true,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [
+          {
+            "text": "Given that a large portion of C3 genes display the transcription-resistive state (Fig. 2b,c), we moved to investigate the transcription-resistive genes in the wild-type Col-0 genome. The protein-coding genes with Pol II binding (Pol II ChIP-seq) or open-chromatin state (ATAC-seq) but ultra-low Ser2P signal (NET-seq with anti-Pol II Ser2P antibody), and without H3K27me3 markers (facultative genes) were defined as transcription-resistive genes (see details in Supplementary Fig. 3). In a parallel manner, the protein-coding genes with Pol II binding or open-chromatin state (ATAC-seq) and high Ser2P signal were defined as transcription-activation genes (see details in Supplementary Fig. 3 legends). H3K27me3-marked facultative genes were used as a control. Overall, we identified 4,375 TA genes and 12,911 TR genes in the genome (Supplementary Fig. 3). Permutation test showed that the TR and TA genes are both negatively associated with repressive chromatin markers but highly positively associated with transcriptionally active chromatin markers (Fig. 3a). Notably, the TR genes show much more correlation of methylation of H3K36 modifications than TA genes, especially the H3K36me3 modification (Fig. 3a), suggesting that the methylation on H3K36 could mark a large number of protein-coding genes with the newly defined chromatin state, transcription resistive",
+            "text_zh": ""
+          }
+        ],
+        "recall_updated_at": "2026-09-17 22:02:21",
+        "updated_at": "2026-09-17 22:02:21"
+      },
+      "P002-A001-C09": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": true,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [
+          {
+            "text": "Given that a large portion of C3 genes display the transcription-resistive state (Fig. 2b,c), we moved to investigate the transcription-resistive genes in the wild-type Col-0 genome. The protein-coding genes with Pol II binding (Pol II ChIP-seq) or open-chromatin state (ATAC-seq) but ultra-low Ser2P signal (NET-seq with anti-Pol II Ser2P antibody), and without H3K27me3 markers (facultative genes) were defined as transcription-resistive genes (see details in Supplementary Fig. 3). In a parallel manner, the protein-coding genes with Pol II binding or open-chromatin state (ATAC-seq) and high Ser2P signal were defined as transcription-activation genes (see details in Supplementary Fig. 3 legends). H3K27me3-marked facultative genes were used as a control. Overall, we identified 4,375 TA genes and 12,911 TR genes in the genome (Supplementary Fig. 3). Permutation test showed that the TR and TA genes are both negatively associated with repressive chromatin markers but highly positively associated with transcriptionally active chromatin markers (Fig. 3a). Notably, the TR genes show much more correlation of methylation of H3K36 modifications than TA genes, especially the H3K36me3 modification (Fig. 3a), suggesting that the methylation on H3K36 could mark a large number of protein-coding genes with the newly defined chromatin state, transcription resistive",
+            "text_zh": ""
+          }
+        ],
+        "recall_updated_at": "2026-09-17 22:02:40",
+        "updated_at": "2026-09-17 22:02:40"
+      },
+      "P002-A001-C10": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": true,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [
+          {
+            "text": "Overall, we identified 4,375 TA genes and 12,911 TR genes in the genome (Supplementary Fig. 3). Permutation test showed that the TR and TA genes are both negatively associated with repressive chromatin markers but highly positively associated with transcriptionally active chromatin markers (Fig. 3a). Notably, the TR genes show much more correlation of methylation of H3K36 modifications than TA genes, especially the H3K36me3 modification (Fig. 3a), suggesting that the methylation on H3K36 could mark a large number of protein-coding genes with the newly defined chromatin state, transcription resistive.",
+            "text_zh": ""
+          }
+        ],
+        "recall_updated_at": "2026-09-17 22:03:56",
+        "updated_at": "2026-09-17 22:03:56"
+      },
+      "P002-A001-C11": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": true,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [
+          {
+            "text": "To provide notable insights into the biological functional relevance of the TR genes, we performed integrated analysis of H3K36me3 ChIP-seq, Pol II ChIP and RNA stability on TA and TR genes. The coding genes are categorized into 4 quartiles (q1 to q4 genes) on the basis of the mRNA half-lives data (Extended Data Fig. 8a). We then plotted the H3K36me3 ChIP-seq signals on q1–q4 genes, which are accompanied by increased mRNA stabilization, and observed that H3K36me3 correlates with increased transcript half-life (Extended Data Fig. 8b). Moreover, the TR genes, which accumulated more H3K36me3 than TA genes (Fig. 3a), were also associated with increased transcript half-life (Extended Data Fig. 8c). Together, these results indicate that H3K36me3 could serve as a chromatin signal to stabilize TR transcripts.",
+            "text_zh": ""
+          }
+        ],
+        "recall_updated_at": "2026-09-17 22:10:19",
+        "updated_at": "2026-09-17 22:10:19"
+      },
+      "P002-A001-C12": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": true,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [
+          {
+            "text": "In detail, we defined a group of protein-coding genes as transcription resistive, accounting for 47.5% of total protein-coding genes in the Arabidopsis genome, and showing active chromatin states similar to transcription-activation genes (n = 4,375, accounting for 16.1% of protein-coding genes) (Fig. 3b,c) but with little to no transcription activities similar to heterochromatin, including the H3K9me2-marked constitutive heterochromatin genes (n = 259, accounting for 1% of protein-coding genes) and H3K27me3-marked facultative heterochromatin genes (n = 6,280, accounting for 23.1% of protein-coding genes) (Fig. 3b,c). Moreover, using similar parameters, we identified 7,198 TR genes in the mouse (Mus musculus) genome (Supplementary Fig. 4a), although they are not tightly associated with H3K36me modifications (Supplementary Fig. 4b,c, see details in the Discussion).",
+            "text_zh": ""
+          }
+        ],
+        "recall_updated_at": "2026-09-17 22:11:26",
+        "updated_at": "2026-09-17 22:11:26"
+      },
+      "P002-A001-C13": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": true,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [
+          {
+            "text": "To check whether the observation above is conserved among species, we analysed published H3K36me3 ChIP-seq data in Oryza sativa26. H3K36me3 enrichment in the knockdown mutant of SDG725, the closest homologue to Arabidopsis SDG8 (Extended Data Fig. 6a), showed upregulation in a subset of protein-coding genes (n = 1,739, Extended Data Fig. 6b,e), suggesting the conserved role of SDG725 in inhibiting H3K36me3 deposition. Furthermore, we performed NET-seq using rice seedlings and the results showed much less transcription activity of Pol II on these H3K36me3-elevated genes (Extended Data Fig. 6c,f). By reanalyzing published FAIRE-seq data27, interestingly, we observed that these H3K36me3-elevated genes showed more open-chromatin states compared with H3K9me2-marked genes (Extended Data Fig. 6d,f), exhibiting a chromatin transcription-resistive state similar to those of C3 genes in Arabidopsis. Moreover, these H3K36me3-elevated genes are enriched in ‘metabolic process’ (Extended Data Fig. 6e,g), which is also similar to the ‘biological process’ of C3 genes in Arabidopsis (Extended Data Fig. 6e,g).",
+            "text_zh": ""
+          }
+        ],
+        "recall_updated_at": "2026-09-17 22:18:29",
+        "updated_at": "2026-09-17 22:18:29"
+      },
+      "P002-A001-C14": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": true,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [
+          {
+            "text": "To check whether the observation above is conserved among species, we analysed published H3K36me3 ChIP-seq data in Oryza sativa26. H3K36me3 enrichment in the knockdown mutant of SDG725, the closest homologue to Arabidopsis SDG8 (Extended Data Fig. 6a), showed upregulation in a subset of protein-coding genes (n = 1,739, Extended Data Fig. 6b,e), suggesting the conserved role of SDG725 in inhibiting H3K36me3 deposition. Furthermore, we performed NET-seq using rice seedlings and the results showed much less transcription activity of Pol II on these H3K36me3-elevated genes (Extended Data Fig. 6c,f). By reanalyzing published FAIRE-seq data27, interestingly, we observed that these H3K36me3-elevated genes showed more open-chromatin states compared with H3K9me2-marked genes (Extended Data Fig. 6d,f), exhibiting a chromatin transcription-resistive state similar to those of C3 genes in Arabidopsis. Moreover, these H3K36me3-elevated genes are enriched in ‘metabolic process’ (Extended Data Fig. 6e,g), which is also similar to the ‘biological process’ of C3 genes in Arabidopsis (Extended Data Fig. 6e,g).",
+            "text_zh": ""
+          },
+          {
+            "text": "Eukaryotic euchromatin is the less-compact chromatin and is modified by many histone modifications such as H3 lysine 36 methylation (H3K36me). Here we report a new chromatin state, ‘transcription resistive’, which is differentiated from activation and silencing. Transcription resistive is stamped by H3K36me with almost undetectable transcription activity but open-chromatin state, and occupies most documented plant essential genes. Mutating SDG8, previously known as the major H3K36 methyltransferase in Arabidopsis, surprisingly elevates 78.7% of H3K36me3-marked resistive loci, which accounts for 39.4% of the coding genome. Genetically, SDG8 prevents H3K36me activity of SDG4 at short and intronless genes to secure plant fertility, while it collaborates with other H3K36me methyltransferases on long and intron-rich genes. Together, our results reveal that SDG8 is the primary sensor that suppresses excessive H3K36me, and uncovered that ‘transcription resistive’ is a conserved H3K36me-stamped novel transcription state in plants, highlighting the regulatory diversities and biological significance of H3K36 methylation in eukaryotes.",
+            "text_zh": ""
+          },
+          {
+            "text": "In detail, we defined a group of protein-coding genes as transcription resistive, accounting for 47.5% of total protein-coding genes in the Arabidopsis genome, and showing active chromatin states similar to transcription-activation genes (n = 4,375, accounting for 16.1% of protein-coding genes) (Fig. 3b,c) but with little to no transcription activities similar to heterochromatin, including the H3K9me2-marked constitutive heterochromatin genes (n = 259, accounting for 1% of protein-coding genes) and H3K27me3-marked facultative heterochromatin genes (n = 6,280, accounting for 23.1% of protein-coding genes) (Fig. 3b,c). Moreover, using similar parameters, we identified 7,198 TR genes in the mouse (Mus musculus) genome (Supplementary Fig. 4a), although they are not tightly associated with H3K36me modifications (Supplementary Fig. 4b,c, see details in the Discussion).",
+            "text_zh": ""
+          }
+        ],
+        "recall_updated_at": "2026-09-17 22:26:44",
+        "updated_at": "2026-09-17 22:26:44"
+      },
+      "P002-A001-C15": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": true,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [
+          {
+            "text": "Eukaryotic euchromatin is the less-compact chromatin and is modified by many histone modifications such as H3 lysine 36 methylation (H3K36me). Here we report a new chromatin state, ‘transcription resistive’, which is differentiated from activation and silencing. Transcription resistive is stamped by H3K36me with almost undetectable transcription activity but open-chromatin state, and occupies most documented plant essential genes. Mutating SDG8, previously known as the major H3K36 methyltransferase in Arabidopsis, surprisingly elevates 78.7% of H3K36me3-marked resistive loci, which accounts for 39.4% of the coding genome. Genetically, SDG8 prevents H3K36me activity of SDG4 at short and intronless genes to secure plant fertility, while it collaborates with other H3K36me methyltransferases on long and intron-rich genes. Together, our results reveal that SDG8 is the primary sensor that suppresses excessive H3K36me, and uncovered that ‘transcription resistive’ is a conserved H3K36me-stamped novel transcription state in plants, highlighting the regulatory divers",
+            "text_zh": ""
+          },
+          {
+            "text": "The precise regulation of transcription is essential for faithful development among species. Active transcription often features open chromatin, Pol II enrichment and active histone modifications, while transcription silencing is tightly associated with compacted chromatin states and repressive histone modifications, such as H3K9me2 and H3K27me3 (Fig. 3c). In this study, we identified a novel transcription state, termed ‘transcription resistive’, which shares active histone markers with transcriptionally active genes but displays the undetectable transcription activities of silencing genes (marked by H3K27me3 and H3K9me2). Importantly, the majority of resistive genes are essential for plant development (Fig. 2h) and disruption of the transcription-resistive state on these genes could cause severe plant phenotypes (Fig. 4h). Moreover, this transcription-resistive state seems to be conserved among species (Extended Data Fig. 6 and Supplementary Fig. 4).",
+            "text_zh": ""
+          }
+        ],
+        "recall_updated_at": "2026-09-17 22:30:36",
+        "updated_at": "2026-09-17 22:30:36"
+      },
+      "P002-A001-C16": {
+        "gold_sentence_ids": [],
+        "recall_reviewed": true,
+        "recall_note": "",
+        "manual_retrieved_paragraphs": [
+          {
+            "text": "Eukaryotic euchromatin is the less-compact chromatin and is modified by many histone modifications such as H3 lysine 36 methylation (H3K36me). Here we report a new chromatin state, ‘transcription resistive’, which is differentiated from activation and silencing. Transcription resistive is stamped by H3K36me with almost undetectable transcription activity but open-chromatin state, and occupies most documented plant essential genes. Mutating SDG8, previously known as the major H3K36 methyltransferase in Arabidopsis, surprisingly elevates 78.7% of H3K36me3-marked resistive loci, which accounts for 39.4% of the coding genome. Genetically, SDG8 prevents H3K36me activity of SDG4 at short and intronless genes to secure plant fertility, while it collaborates with other H3K36me methyltransferases on long and intron-rich genes. Together, our results reveal that SDG8 is the primary sensor that suppresses excessive H3K36me, and uncovered that ‘transcription resistive’ is a conserved H3K36me-stamped novel transcription state in plants, highlighting the regulatory divers",
+            "text_zh": ""
+          }
+        ],
+        "recall_updated_at": "2026-09-17 22:30:37",
+        "updated_at": "2026-09-17 22:30:37"
+      }
+    }
   }
 }

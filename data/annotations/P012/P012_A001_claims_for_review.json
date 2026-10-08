@@ -1,0 +1,270 @@
+{
+  "paper_id": "P012",
+  "article_id": "A001",
+  "guideline": "观点句抽取细则.md",
+  "task": "review_A_inclusion",
+  "instructions": "review_decision 默认 keep；发现不该进 Benchmark 时改为 drop 或 merge。不要改写 claim_zh。",
+  "sample_count": 26,
+  "samples": [
+    {
+      "claim_id": "C01",
+      "claim_zh": "近日，中国农业科学院蔬菜花卉研究所蔬菜分子设计育种创新团队和茄科蔬菜育种创新团队，构建了野生和栽培辣椒高质量基因组，解析了辣椒的染色体核型、基因组三维结构与基因表达调控元件的演化特征，发现了转座子驱动的结构变异和高频渐渗事件对辣椒重要性状形成的重要贡献。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C02",
+      "claim_zh": "辣椒属包含30多个种，包括5个栽培种和众多野生种，遗传多样性丰富，但演化路线尚不明确。",
+      "claim_role": "paper_intro",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C03",
+      "claim_zh": "辣椒基因组多超过3Gb，约为番茄的四倍，基因组重复序列多。",
+      "claim_role": "paper_intro",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C04",
+      "claim_zh": "这些重复序列是否会影响其基因组演化和性状的形成？",
+      "claim_role": "paper_intro",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C05",
+      "claim_zh": "本研究利用HiFi和ONT测序技术完成了11个辣椒基因组的高质量组装，contig的N50平均达到了230 Mb以上。",
+      "claim_role": "paper_method",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C06",
+      "claim_zh": "这些材料包括了一年生辣椒、灌木辣椒、中国辣椒、下垂辣椒、茸毛辣椒全部5个栽培种，以及起源于美洲安第斯山脉区域的约1200万年前分化的远缘野生种C. rhomboideum等5 个野生种材料。",
+      "claim_role": "paper_method",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C07",
+      "claim_zh": "其中C. rhomboideum 基因组最小，仅有1.80 Gb，约为其他辣椒基因组的一半。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C08",
+      "claim_zh": "绝大部分基因组的gap数少于6个，C. rhomboideum 和一年生辣椒野生种PM1533 的基因组达到了从端粒到端粒的无间隙（T2T，gap free）水平，为后续分析提供了高质量的基因组序列。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C09",
+      "claim_zh": "通过系统发育分析，发现C. rhomboideum作为安第斯类群野生辣椒的代表，最早分化，其次是茸毛辣椒，其他辣椒分为两个主要分支。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C10",
+      "claim_zh": "基于进化关系和基因组共线性，重建了辣椒属的祖先核型。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C11",
+      "claim_zh": "明确了辣椒属祖先具有12对染色体，C. rhomboideum的13对染色体是由12对染色体重排而来，回答了关于辣椒祖先染色体数目的争议。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C12",
+      "claim_zh": "比较染色体三维区室（compartment），发现染色体重排事件引起了三维区室的转变，揭示了染色体重排和三维结构变化间的联系。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C13",
+      "claim_zh": "不同辣椒基因组中的转座子（TE）爆发事件存在明显差异。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C14",
+      "claim_zh": "茸毛辣椒、下垂辣椒等基因组中Gypsy类型逆转座子的近期爆发，导致其基因组相对更大。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C15",
+      "claim_zh": "这些TE插入事件带来了大量的基因组间结构变异（SVs）。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C16",
+      "claim_zh": "其中，中国辣椒中调控果实朝向的 Up 基因的启动子区域出现了 8 kb 缺失，抑制了该基因的表达，果实朝向从朝下变为朝上；茸毛辣椒中控制辣椒红素合成的关键基因 CCS编码区出现了TE插入而提前终止，使果色由红变黄。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C17",
+      "claim_zh": "研究构建了辣椒属的染色质可及性图谱，揭示了调控元件的动态变化模式。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C18",
+      "claim_zh": "染色质可及性是决定基因被“开关调控”的重要因子，这些开放染色质区域 (ACRs)在辣椒基因组膨大过程中是否受到了TE的影响尚不清楚。",
+      "claim_role": "paper_intro",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C19",
+      "claim_zh": "通过跨辣椒种的ACR比较发现，ACR的产生与消失都与TE密切相关。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C20",
+      "claim_zh": "辣椒种特异的ACR显著富集TEs，祖先ACR的保守性与TE密度负相关；同时，ACR中的结构变异会降低其保守性。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C21",
+      "claim_zh": "研究发现了甜椒中IQD等果形调控基因的高表达伴随着新ACR的产生，提示这些新ACR可能促进了甜椒的果形变化。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C22",
+      "claim_zh": "最后，完成了124 份辣椒核心种质的深度重测序，构建了辣椒群体的单体型图谱。",
+      "claim_role": "paper_method",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C23",
+      "claim_zh": "发现了一年生辣椒中含有灌木辣椒的大量基因组渐渗片段，以及一年生辣椒群体内单体型存在显著分化。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C24",
+      "claim_zh": "其中，较晚形成的甜椒（Blocky）类型存在典型的种间渐渗和种内单体型分化现象。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C25",
+      "claim_zh": "比如，辣椒轻斑驳病毒（PMMoV）抗性基因L位点在一年生辣椒群体中具有单体型多样性，部分甜椒品种从中国辣椒中导入了L3基因型，获得了PMMoV的抗性性状；另外，甜椒辣味缺失也与辣椒素合成调控基因Pun1位点所在单体型的逐步选择和分化相关。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C26",
+      "claim_zh": "这些单体型片段的渐渗和分化极大地丰富了一年生辣椒的遗传和性状变异。",
+      "claim_role": "paper_conclusion",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    }
+  ]
+}

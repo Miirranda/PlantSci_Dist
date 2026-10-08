@@ -1,15 +1,16 @@
-"""观点句提取（arag 前端）：规则分句 + 规则筛除 + LLM 角色核验。
+"""观点句提取（arag 前端）：规则分句 + 规则筛除 + LLM 核验。
 
-任务口径：抽的是公众号里**转述本篇论文科学内容**的句子，供下游对照论文
-做信息失真分类。不是「像不像科学事实」。
+任务口径：默认保留公众号里转述本篇论文科学内容的句子。
+只丢掉**明显不具体的空概括 / 空评价**以及刊头、套话、图注、残句。
+不是「尽量只留最具体的一句」。
 
 流程：
   1. 清洗 Markdown
   2. 按句号 / 问号 / 叹号 / 换行切句（编号清单不按分号切开）
   3. 规则粗滤标题、图注；合并跨行编号项
   4. 规则高精度筛除：纯发表元信息、残句、纯过渡套话
-  5. LLM 按角色分类（paper_* keep；其余 drop）；失败时按启发式偏严
-  6. 总结段与前文近重复去重
+  5. LLM 默认 keep，只对明显空概括/空评价/噪声 drop；失败时按启发式偏松
+  6. 总结段与前文近重复去重（空意义评价不算新内容）
   7. 输出带上下文与 claim_role 的 claims
 """
 
@@ -64,7 +65,17 @@ _DISCOURSE_PREFIX = re.compile(
     r"^\s*(下面我们来看|接下来(?:我们)?(?:来看)?|值得注意的是|"
     r"综上所述|由此可见|总而言之|我们可以看出|让我们来看)[，,]?"
 )
-_SIGNIFICANCE = re.compile(r"(首次|新靶点|育种|意义重大|为作物|突破|核心作用)")
+_SUMMARY_LEAD = re.compile(
+    r"^\s*(综上|总之|总体而言|该研究证明|这项研究表明|研究揭示)"
+)
+_LEAD_SUMMARY_CUE = re.compile(r"(首次揭示|首次阐明|首次发现|核心作用)")
+_SPECIFIC_CONTENT = re.compile(
+    r"(敲除|突变体|表型|上调|下调|导致|切片|测序|CRISPR|"
+    r"原位杂交|共表达|聚类|构建.{0,40}突变|"
+    r"调控|表达|生长|融合|位于|分为|必要条件|依赖|驱动|"
+    r"分类学|直系同源|等位|FIM|原基|分生组织)"
+)
+_SIGNIFICANCE_ONLY = re.compile(r"(具有重要启示|意义重大|为作物育种|新靶点|具有重要意义)")
 
 KEEP_ROLES = frozenset(
     {
@@ -73,6 +84,7 @@ KEEP_ROLES = frozenset(
         "paper_conclusion",
         "paper_lead",
         "paper_intro",
+        "stacked_claims",
     }
 )
 DROP_ROLES = frozenset(
@@ -82,47 +94,85 @@ DROP_ROLES = frozenset(
         "discourse",
         "caption_heading",
         "fragment",
+        "summary_overview",
+        "significance",
+        "too_macro",
     }
 )
 
-CLAIM_VERIFY_SYSTEM = """你是植物科学领域的学术审稿人。系统已经把科普文章切成候选句子。
-你的任务是给每句标一个角色，判断它是否在向读者转述**本篇论文的科学内容**（不是「像不像科学事实」）。
+CLAIM_VERIFY_SYSTEM = """你是植物科学领域的文本筛选助手。系统已经把公众号文章切成候选句子。
+请判断每句是否适合作为「论文转述观点句」纳入评测集。
 
-删掉这句，读者对「这篇论文说了什么」的理解会不会变？会 → paper_*；只会少一个无关知识点 → 不抽。
+口径要松：默认保留。只要句子在转述本篇论文的科学内容（结果、方法、具体结论、引言中的具体命题），就 keep。
+只丢掉**很明显不具体的空概括 / 空评价**，以及刊头、套话、图注、残句。
+不要因为句子在研究背景、像导语、句首有「该研究证明」、或并列了几个具体结论就丢掉。
+
+禁止改写原文，禁止发明新句子。
+
+## 判定顺序
+1. 明显空概括 / 空评价 / 噪声 → drop
+2. 其余转述科学内容的句子 → keep
+
+## 保留（默认 keep）
+- 具体实验结果、机制、因果、表型、数值
+- 具体方法、材料、实验设计
+- 可对上论文某一段的实验结论（包括「以上结果表明……」后接具体机制）
+- 引言/背景里的具体科学命题（定义、位置关系、进化事实），不是空话
+- 导语里写出了具体机制/对象/变化的句子
+- 用「并 / 同时 / 还 / 此外」并列多个**具体**结论的句子（不要因并列而 drop）
+- 「该研究证明 / 这项研究表明 / 综上」后半仍有具体基因、表型、方向性变化 → keep
+
+## 排除（必须明显不具体才 drop）
+- 空概括：只说「揭示了……机制/规律/图景」，没写出机制是什么、对象发生了什么变化
+- 空评价：只说重要启示、新靶点、意义重大，没有具体实验内容
+- 噪声：纯刊头（团队/期刊/题名/DOI）、纯套话、图注、残句、与本文无关的课外常识
 
 ## 角色（必须从下列选一个）
 
-keep（进入检索与失真分类）：
-- paper_lead：导语/标题句，概括本文发现、方法或「首次/核心作用」等意义评价
+keep：
 - paper_result：本文实验结果、机制、因果、表型、数值
-- paper_method：本文方法、材料、实验设计（测序、切片、突变体构建等）
-- paper_conclusion：本文结论、机制总括、应用/育种意义
-- paper_intro：转述论文引言的科学框架（性状定义、进化背景、模式植物选择、研究空白）。研究背景/引言里对这些内容的陈述，即使读起来像科普，也标 paper_intro，不要标 textbook_bg
+- paper_method：本文方法、材料、实验设计
+- paper_conclusion：具体实验结论（不是空总括）
+- paper_lead：导语，且含具体科学内容
+- paper_intro：转述论文引言的具体命题
 
 drop：
-- publication_meta：纯发表元信息（团队、机构、期刊、题名报道、DOI），无科学转述
-- textbook_bg：作者另加的学科常识，与本文研究对象/问题无关，不是在复述论文引言
-- discourse：纯过渡套话（下面我们来看、综上所述），无可核查命题
+- summary_overview：空概括（该研究首次揭示了……发育机制，但没说机制是什么）
+- significance：空意义评价（该发现对 XX 具有重要启示）
+- too_macro：没有任何具体科学命题的空泛句
+- publication_meta：纯发表元信息
+- textbook_bg：作者另加、与本文无关的学科常识
+- discourse：纯过渡套话
 - caption_heading：图注、分节标题
-- fragment：过碎、无法独立核查的残句（如单独的「（2）花托迅速生长」）
+- fragment：无法独立核查的残句（如单独的「（2）花托迅速生长」）
+
+## 边界
+- 宁可 keep，不要误杀。拿不准时 keep。
+- 混合句（元信息 + 具体科学断言）→ keep；元信息 + 空概括 → drop
+- 不要按小节名一刀切：研究背景里的具体命题标 paper_intro 并 keep
 
 ## 正反例
-- publication_meta / drop：「杨学勇团队在 Nature Plants 发表了题为……的研究论文」
-- paper_lead / keep：「该研究……首次揭示了黄瓜下位子房的发育机制」
-- paper_intro / keep：「下位子房被认为是被子植物多次独立进化出的关键创新性状」（引言框架）
-- textbook_bg / drop：本文讲黄瓜子房，却插入「光合作用把光能转化为化学能」
+- paper_result / keep：「敲除 KNAT2-like1 导致黄瓜花托生长受阻，下位子房转变为上位子房。」
+- paper_method / keep：「构建了黄瓜 KNAT2-like1 敲除突变体 k-1 和 k-2（图6a）。」
+- paper_conclusion / keep：「以上结果表明，花托细胞增殖主要由激活 S 期细胞活动调控。」
+- paper_result / keep：「该研究证明，敲除 KNAT2-like1 导致花托停止扩张。」
+- paper_result / keep：「KNAT2-like1 调控花托生长，同时还参与心皮融合，此外还影响雌花发育。」
+- paper_intro / keep：「下位子房被认为是被子植物多次独立进化出的关键创新性状。」
+- paper_lead / keep：「该研究首次发现 FIM 驱动花托快速生长。」
+- summary_overview / drop：「该研究首次揭示了黄瓜下位子房的发育机制。」
+- significance / drop：「该发现对作物育种具有重要启示。」
+- publication_meta / drop：「杨学勇团队在 Nature Plants 发表了题为……的研究论文。」
 - fragment / drop：「（2）花托迅速生长」
-- 混合句（元信息+科学发现）→ 标 paper_lead 或 paper_result，keep，不要因单位名丢掉整句
 
 ## 硬性规则
 1. 只对给定候选句判决，禁止改写原文，禁止发明新句子。
 2. 每个输入 id 都必须给出一条决策。
-3. keep 必须与角色一致：paper_* → true，其余 → false。
+3. keep 必须与角色一致：paper_result / paper_method / paper_conclusion / paper_lead / paper_intro → true，其余 → false。
 4. 严格输出 JSON：
 {
   "decisions": [
-    {"id": 1, "role": "paper_lead", "keep": true, "reason": "简短理由"},
-    {"id": 2, "role": "publication_meta", "keep": false, "reason": "简短理由"}
+    {"id": 1, "role": "paper_result", "keep": true, "reason": "简短理由"},
+    {"id": 2, "role": "summary_overview", "keep": false, "reason": "简短理由"}
   ]
 }
 """
@@ -203,6 +253,28 @@ def _is_discourse_only(text: str) -> bool:
     return bool(leftover) is False
 
 
+def _has_specific_content(text: str) -> bool:
+    """后半是否还有可核查的具体科学内容（不是空概括）。"""
+    return bool(_SPECIFIC_CONTENT.search(text))
+
+
+def _is_empty_overview(text: str) -> bool:
+    """明显空概括或空评价：标志词后没有具体对象、变化或机制。"""
+    stripped = text.strip()
+    leftover = _SUMMARY_LEAD.sub("", stripped).strip("，,。；; ")
+    if _SUMMARY_LEAD.match(stripped):
+        return not _has_specific_content(leftover)
+    if _LEAD_SUMMARY_CUE.search(stripped) and not _has_specific_content(stripped):
+        return True
+    if _SIGNIFICANCE_ONLY.search(stripped) and not _has_specific_content(stripped):
+        return True
+    return False
+
+
+def _is_method_sentence(text: str) -> bool:
+    return bool(re.search(r"(测序|构建.{0,40}突变|CRISPR|切片|杂交|实验设计)", text))
+
+
 def rule_drop_role(text: str) -> str | None:
     """规则层高精度 drop。无法高置信判断时返回 None（交给 LLM）。"""
     if _is_publication_meta_only(text):
@@ -215,15 +287,12 @@ def rule_drop_role(text: str) -> str | None:
 
 
 def default_keep(text: str, section: str = "") -> bool:
-    """LLM 漏判或整批失败时的偏严默认：像论文转述的句子才留。"""
+    """LLM 漏判或整批失败时偏松：噪声和明显空概括才丢，其余留。"""
     if rule_drop_role(text):
         return False
-    stripped = text.strip()
-    if section in _INTRO_SECTIONS or section in _SUMMARY_SECTIONS:
-        return len(stripped) >= 12
-    if _SCIENCE_PREDICATE.search(stripped) and len(stripped) >= 20:
-        return True
-    return len(stripped) >= 40
+    if _is_empty_overview(text):
+        return False
+    return len(text.strip()) >= 8
 
 
 def heuristic_role(text: str, section: str = "") -> str:
@@ -231,14 +300,20 @@ def heuristic_role(text: str, section: str = "") -> str:
     dropped = rule_drop_role(text)
     if dropped:
         return dropped
+    if _is_empty_overview(text):
+        if _SIGNIFICANCE_ONLY.search(text):
+            return "significance"
+        return "summary_overview"
     if section in _INTRO_SECTIONS:
         return "paper_intro"
+    if _is_method_sentence(text):
+        return "paper_method"
     if section in _SUMMARY_SECTIONS:
         return "paper_conclusion"
-    if re.search(r"(测序|构建.{0,8}突变|CRISPR|切片|杂交|实验设计)", text):
-        return "paper_method"
-    if re.search(r"(首次|揭示了|以上结果说明|综上所述)", text):
-        return "paper_conclusion" if section in _SUMMARY_SECTIONS else "paper_lead"
+    if re.search(r"(以上结果说明|以上结果表明)", text):
+        return "paper_conclusion"
+    if re.search(r"(该研究|本研究).{0,16}(首次|揭示)", text):
+        return "paper_lead"
     return "paper_result"
 
 
@@ -365,18 +440,12 @@ def _containment_overlap(a: str, b: str) -> float:
     return inter / min(len(grams_a), len(grams_b))
 
 
-def _has_new_significance(text: str, earlier: str) -> bool:
-    current = set(_SIGNIFICANCE.findall(text))
-    prev = set(_SIGNIFICANCE.findall(earlier))
-    return bool(current - prev)
-
-
 def dedup_summary_claims(
     kept: list[dict[str, Any]],
     *,
     overlap_threshold: float = 0.75,
 ) -> list[dict[str, Any]]:
-    """总结/讨论段若与前文近重复则丢掉，除非补了新的意义/机制总括。"""
+    """总结/讨论段若与前文近重复则丢掉。空意义评价不算新内容。"""
     retained: list[dict[str, Any]] = []
     earlier_texts: list[str] = []
     for item in kept:
@@ -385,8 +454,7 @@ def dedup_summary_claims(
         if section in _SUMMARY_SECTIONS and earlier_texts:
             best_prev = max(earlier_texts, key=lambda prev: _containment_overlap(text, prev))
             if _containment_overlap(text, best_prev) >= overlap_threshold:
-                if not _has_new_significance(text, best_prev):
-                    continue
+                continue
         retained.append(item)
         earlier_texts.append(text)
     return retained
@@ -481,7 +549,8 @@ def verify_candidates_with_llm(
             section = str(item.get("section") or "").strip() or "正文"
             lines.append("%d. [%s] %s" % (item["cand_id"], section, item["text"]))
         prompt = (
-            "请对下列候选句逐条给出 role，并据此 keep（true/false）。"
+            "请对下列候选句逐条给出 role 与 keep。"
+            "默认保留转述科学内容的句子；只对明显空概括、空评价或噪声标 drop。"
             "禁止改写，禁止新增句子。\n\n"
             + "\n".join(lines)
         )
@@ -501,7 +570,7 @@ def verify_candidates_with_llm(
                 raw = client.ask(prompt, system=CLAIM_VERIFY_SYSTEM, model=model)
                 result = extract_json(raw)
             except Exception as exc2:
-                print("  [arag.claim_extractor] 降级解析也失败，本批按启发式偏严保留: %s" % exc2)
+                print("  [arag.claim_extractor] 降级解析也失败，本批按启发式偏松保留: %s" % exc2)
                 result = {"decisions": []}
 
         flags = _parse_decisions(result, batch)
@@ -555,7 +624,7 @@ def extract_claims_from_article(
     """从 Markdown 文章提取转述本篇论文科学内容的观点句。
 
     Args:
-        skip_llm_verify: True 时只做规则切分 + 规则筛除 + 总结去重（调试/离线）。
+        skip_llm_verify: True 时只做规则切分 + 噪声筛除 + 启发式 keep + 总结去重（调试/离线）。
         batch_size: LLM 核验批大小，默认读环境变量 CLAIM_VERIFY_BATCH_SIZE。
 
     Returns:
@@ -584,10 +653,14 @@ def extract_claims_from_article(
     if skip_llm_verify:
         kept = []
         for item in filtered:
+            text = str(item["text"])
+            section = str(item.get("section") or "")
+            if not default_keep(text, section):
+                continue
             enriched = dict(item)
-            enriched["role"] = heuristic_role(str(item["text"]), str(item.get("section") or ""))
+            enriched["role"] = heuristic_role(text, section)
             kept.append(enriched)
-        print("  [arag.claim_extractor] 跳过 LLM 核验，保留规则通过的候选")
+        print("  [arag.claim_extractor] 跳过 LLM 核验，按启发式偏松保留")
     else:
         if client is None:
             client = QwenClient(verbose=False)
@@ -639,16 +712,17 @@ def save_claims_json(claims: list[dict[str, Any]], path: str | Path) -> Path:
     out.parent.mkdir(parents=True, exist_ok=True)
     payload = []
     for claim in claims:
-        payload.append(
-            {
-                "id": claim.get("claim_id") or claim.get("id"),
-                "claim_text": claim.get("claim_zh") or claim.get("claim_text") or "",
-                "claim_role": claim.get("claim_role", ""),
-                "context_before": claim.get("context_before", ""),
-                "context_after": claim.get("context_after", ""),
-                "section": claim.get("section", ""),
-            }
-        )
+        row = {
+            "id": claim.get("claim_id") or claim.get("id"),
+            "claim_text": claim.get("claim_zh") or claim.get("claim_text") or "",
+            "claim_role": claim.get("claim_role", ""),
+            "section": claim.get("section", ""),
+        }
+        if claim.get("context_before"):
+            row["context_before"] = claim["context_before"]
+        if claim.get("context_after"):
+            row["context_after"] = claim["context_after"]
+        payload.append(row)
     out.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     return out
 
@@ -706,8 +780,8 @@ def export_locked_claims_from_review(
     - merge：把原文并入 merge_into 指向的句子（追加到目标 claim_zh），自身不单独保留
     - 空或未知：按 keep（与默认策略一致）
 
-    若提供 source_claims（含 context_*），按 claim_id 对齐补全上下文；否则只输出审 A 字段。
-    输出重新编号为 C01..Cn，并刷新 context_before/after。
+    若提供 source_claims，按 claim_id 对齐补全 section / claim_role / source_file；
+    否则只输出审 A 字段。输出重新编号为 C01..Cn。
     """
     review_path = Path(review_path)
     payload = json.loads(review_path.read_text(encoding="utf-8"))
@@ -766,17 +840,14 @@ def export_locked_claims_from_review(
             }
         )
 
-    # 重新编号并写上下文
+    # 重新编号
     records: list[dict[str, Any]] = []
-    texts = [str(item["text"]) for item in kept_raw]
     for index, item in enumerate(kept_raw):
         records.append(
             {
                 "claim_id": "C%02d" % (index + 1),
                 "claim_zh": item["text"],
                 "claim_role": item.get("role") or "",
-                "context_before": texts[index - 1] if index > 0 else "",
-                "context_after": texts[index + 1] if index + 1 < len(texts) else "",
                 "section": item.get("section") or "",
                 "source_file": item.get("source_file") or "",
                 "original_claim_id": item.get("original_claim_id") or "",

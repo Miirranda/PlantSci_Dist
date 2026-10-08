@@ -1,0 +1,1406 @@
+{
+  "schema_version": "1.2",
+  "taxonomy_version": "distortion-v0.1",
+  "status": "draft",
+  "paper_id": "P006",
+  "article_id": "A001",
+  "article_source_type": "high_quality",
+  "index_version": "2026-09-17 20:11:32#d88156a38ae2f723",
+  "generated_date": "2026-09-17",
+  "generation_mode": "full",
+  "limit": "all",
+  "sample_count": 10,
+  "_description": "标注草稿。审核顺序：claim → classify top-5 → review 6-10 → gold_retrieval → gold_classification → analysis → human_verified=true。生产由 scripts/generate_draft_from_pairs.py 生成；human_verified 全为 false。",
+  "samples": [
+    {
+      "sample_id": "P006-A001-C01",
+      "paper_id": "P006",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "本文阐明植物氮（N）的获取对于解析植物氮策略和生态系统生产力至关重要。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 0,
+            "text": "\u0001 Elucidating plant nitrogen (N) acquisition is crucial for understanding plant N strategies and Author for correspondence: ecosystem productivity."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 1,
+            "text": "However, the variation in plant N uptake preference and its controlEmail: sniu@igsnrr.ac.cn ling factors on a global scale remain unclear."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 209,
+            "text": "To fully understand how plants take up N, it is important to understand how N interacts with microorganisms."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 38,
+            "text": "Thus, multiple drivers of plant N uptake under different conditions should be identiﬁed to gain a better understanding of the relative importance of different forms of N to plants."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 195,
+            "text": "fore, soil water content negatively affects plant NO3 Study limitations and implications for future research This synthesis revealed global patterns and drivers of plant N acquisition preference across various ecosystems and climatic regions, but further studies are needed to fully understand these 980 aspects."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 0,
+            "text": "\u0001 Elucidating plant nitrogen (N) acquisition is crucial for understanding plant N strategies and Author for correspondence: ecosystem productivity.",
+            "text_zh": "阐明植物氮素获取对于理解植物氮素策略和生态系统生产力的对应关系至关重要。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 1,
+            "text": "However, the variation in plant N uptake preference and its controlEmail: sniu@igsnrr.ac.cn ling factors on a global scale remain unclear.",
+            "text_zh": "然而，在全球范围内，植物氮吸收偏好的变化及其控制因素尚不清楚。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 209,
+            "text": "To fully understand how plants take up N, it is important to understand how N interacts with microorganisms.",
+            "text_zh": "为了充分了解植物如何吸收氮，了解氮如何与微生物相互作用是很重要的。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 38,
+            "text": "Thus, multiple drivers of plant N uptake under different conditions should be identiﬁed to gain a better understanding of the relative importance of different forms of N to plants.",
+            "text_zh": "因此，应该确定不同条件下植物吸收氮的多个驱动因素，以更好地了解不同形式的氮对植物的相对重要性。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 195,
+            "text": "fore, soil water content negatively affects plant NO3 Study limitations and implications for future research This synthesis revealed global patterns and drivers of plant N acquisition preference across various ecosystems and climatic regions, but further studies are needed to fully understand these 980 aspects.",
+            "text_zh": "该研究揭示了不同生态系统和气候区域植物氮获取偏好的全球格局和驱动因素，但需要进一步的研究来充分了解这980个方面。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 208,
+            "text": "In this study, soil microbial biomass N showed insigniﬁcant correlations with plant N uptake preference (Fig. S6), which may be partly due to limited data (less than one ﬁfth of the studies included information on microbial biomass).",
+            "text_zh": "在本研究中，土壤微生物生物量N与植物氮吸收偏好的相关性不显著（图S6），部分原因可能是数据有限（不到五分之一的研究包含了微生物生物量的信息）。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 210,
+            "text": "Therefore, further studies using 15N tracers are needed to compare how plants take up N and how microorganisms immobilize it at the same time.",
+            "text_zh": "因此，需要利用15N示踪剂进行进一步的研究，比较植物如何同时吸收N和微生物如何固定N。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 39,
+            "text": "Along a 3000 km transect spanning temperate and alpine grasslands with 18 species, a recent study found that, among multiple factors, soil N availability controls the uptake of different forms of N by plants (Liu et al., 2024).",
+            "text_zh": "最近的一项研究发现，在横跨温带和高寒草原的18个物种的3000公里样带中，在多种因素中，土壤氮有效性控制着植物对不同形式氮的吸收（Liu et al., 2024）。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 37,
+            "text": "\u0003 is more mobile than NH4 + in the soil solution, However, as NO3 soil water content may differently inﬂuence plant N preference.",
+            "text_zh": "硝态氮在土壤溶液中的流动性强于铵态氮，但由于硝态氮的土壤含水量对植物氮偏好的影响不同。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 194,
+            "text": "Thereconditions, there is a high risk of leaching losses of NO3 \u0003 preference.",
+            "text_zh": "在这种条件下，有较高的NO3浸出损失风险\u0003优先。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 0,
+            "text": "\u0001 Elucidating plant nitrogen (N) acquisition is crucial for understanding plant N strategies and Author for correspondence: ecosystem productivity."
+          }
+        ],
+        "sentence_ids": [
+          0
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "severity": "none",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "claim 与 sentence_id=0 完全对应：'Elucidating plant nitrogen (N) acquisition is crucial for understanding plant N strategies and ecosystem productivity.' → '本文阐明植物氮（N）的获取对于解析植物氮策略和生态系统生产力至关重要。' 属于准确直译+术语规范化（'elucidating'→'阐明'，'crucial'→'至关重要'），无添加、删减或替换。"
+      },
+      "analysis": {
+        "evidence_judgement": "整句 claim 可由 sentence_id=0 单独、完整支撑；'elucidating...is crucial for...' 与 '阐明...对于...至关重要' 语义等价；top-5 中 rank1 即为该句，覆盖充分。",
+        "classification_reason": "no_distortion：'阐明'是 'elucidating' 的标准学术中译；'至关重要' 对应 'crucial'，程度未放大（非'极其/根本性'）；'解析' 是 'understanding' 在植物生理语境下的合理动词化表达；无 mechanism/context/evidence uncertainty 删减；未添加应用、首次、意义延伸等成分。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": ""
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=0。 脚本标记: gold_id_0_疑似脏句",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P006-A001-C02",
+      "paper_id": "P006",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "然而，全球范围内植物氮吸收偏好的变化及其控制因素仍不清楚。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 1,
+            "text": "However, the variation in plant N uptake preference and its controlEmail: sniu@igsnrr.ac.cn ling factors on a global scale remain unclear."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 40,
+            "text": "However, on the global scale, with highly variable climatic conditions and species types, the factors driving plant N uptake preference remain unclear."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 0,
+            "text": "\u0001 Elucidating plant nitrogen (N) acquisition is crucial for understanding plant N strategies and Author for correspondence: ecosystem productivity."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 2,
+            "text": "\u0001 We conducted a global synthesis to explore plant N preference patterns and driving factors."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 111,
+            "text": "These results enrich the current knowledge on plant N uptake strategies and ecosystem N cycling."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 1,
+            "text": "However, the variation in plant N uptake preference and its controlEmail: sniu@igsnrr.ac.cn ling factors on a global scale remain unclear.",
+            "text_zh": "然而，在全球范围内，植物氮吸收偏好的变化及其控制因素尚不清楚。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 40,
+            "text": "However, on the global scale, with highly variable climatic conditions and species types, the factors driving plant N uptake preference remain unclear.",
+            "text_zh": "然而，在全球范围内，由于气候条件和物种类型的高度变化，驱动植物氮吸收偏好的因素尚不清楚。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 0,
+            "text": "\u0001 Elucidating plant nitrogen (N) acquisition is crucial for understanding plant N strategies and Author for correspondence: ecosystem productivity.",
+            "text_zh": "阐明植物氮素获取对于理解植物氮素策略和生态系统生产力的对应关系至关重要。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 2,
+            "text": "\u0001 We conducted a global synthesis to explore plant N preference patterns and driving factors.",
+            "text_zh": "我们进行了全球综合研究，以探讨植物对氮的偏好模式及其驱动因素。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 111,
+            "text": "These results enrich the current knowledge on plant N uptake strategies and ecosystem N cycling.",
+            "text_zh": "这些结果丰富了目前对植物氮吸收策略和生态系统氮循环的认识。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 39,
+            "text": "Along a 3000 km transect spanning temperate and alpine grasslands with 18 species, a recent study found that, among multiple factors, soil N availability controls the uptake of different forms of N by plants (Liu et al., 2024).",
+            "text_zh": "最近的一项研究发现，在横跨温带和高寒草原的18个物种的3000公里样带中，在多种因素中，土壤氮有效性控制着植物对不同形式氮的吸收（Liu et al., 2024）。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 41,
+            "text": "In this study, we compiled a global dataset of 101 publications on the N uptake strategies of different plant species in natural terrestrial ecosystems.",
+            "text_zh": "在这项研究中，我们收集了101篇关于自然陆地生态系统中不同植物物种氮吸收策略的出版物。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 21,
+            "text": "The limited understanding of plant N uptake preference may be partly due to the complex interactions between plant N acquisition and multiple factors (Moreau et al., 2019).",
+            "text_zh": "对植物氮吸收偏好的了解有限，部分原因可能是植物氮获取与多种因素之间复杂的相互作用（Moreau et al., 2019）。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 172,
+            "text": "In the current study, we found that among multiple environmental factors, soil water content was the most important determinant of plant preference for organic N uptake (Figs 4, S5a).",
+            "text_zh": "在目前的研究中，我们发现在多个环境因素中，土壤含水量是植物对有机氮吸收偏好的最重要决定因素（图4，S5a）。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 20,
+            "text": "However, our knowledge of the global +, patterns of plant N uptake preferences for three N forms (NH4 \u0003, and organic N) remains limited.",
+            "text_zh": "然而，我们对全球+，植物对三种N形式（NH4 \u0003和有机N）的氮吸收偏好模式的了解仍然有限。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 1,
+            "text": "However, the variation in plant N uptake preference and its controlEmail: sniu@igsnrr.ac.cn ling factors on a global scale remain unclear."
+          }
+        ],
+        "sentence_ids": [
+          1
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "severity": "none",
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "claim 与 sentence_id=1 完全一致：'However, the variation in plant N uptake preference and its control factors on a global scale remain unclear.' → '然而，全球范围内植物氮吸收偏好的变化及其控制因素仍不清楚。' 属于逐词精准转述，无信息增删或语义偏移。"
+      },
+      "analysis": {
+        "evidence_judgement": "claim 为单一分句，sentence_id=1 完整覆盖全部成分：'variation...and its control factors' → '变化及其控制因素'；'on a global scale' → '全球范围内'；'remain unclear' → '仍不清楚'；rank1 即为该句，支撑充分。",
+        "classification_reason": "no_distortion：'uptake preference' 译为'吸收偏好'符合植物营养学惯例（非'摄取/获取偏好'）；'control factors' 译为'控制因素'准确（非'主导/决定因素'，未升级因果强度）；'remain unclear' 未弱化为'尚不完全清楚'，亦未强化为'完全未知'，保留原不确定性表述。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": ""
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=1。",
+        "needs_manual_review": false,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P006-A001-C03",
+      "paper_id": "P006",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "作者开展了一项全球综合研究，以探索植物对氮元素的偏好模式和驱动因素。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 2,
+            "text": "\u0001 We conducted a global synthesis to explore plant N preference patterns and driving factors."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 195,
+            "text": "fore, soil water content negatively affects plant NO3 Study limitations and implications for future research This synthesis revealed global patterns and drivers of plant N acquisition preference across various ecosystems and climatic regions, but further studies are needed to fully understand these 980 aspects."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 43,
+            "text": "See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License Research 973 investigate the global pattern of plant preference for different forms of N and (2) to explore the main driving factors behind the different N uptake preferences of plants around the world."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 213,
+            "text": "In summary, this study is one of the ﬁrst to investigate the global patterns and driving factors of the relative importance of different soil N forms for plant N uptake using a 15N tracer."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 1,
+            "text": "However, the variation in plant N uptake preference and its controlEmail: sniu@igsnrr.ac.cn ling factors on a global scale remain unclear."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 2,
+            "text": "\u0001 We conducted a global synthesis to explore plant N preference patterns and driving factors.",
+            "text_zh": "我们进行了全球综合研究，以探讨植物对氮的偏好模式及其驱动因素。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 195,
+            "text": "fore, soil water content negatively affects plant NO3 Study limitations and implications for future research This synthesis revealed global patterns and drivers of plant N acquisition preference across various ecosystems and climatic regions, but further studies are needed to fully understand these 980 aspects.",
+            "text_zh": "该研究揭示了不同生态系统和气候区域植物氮获取偏好的全球格局和驱动因素，但需要进一步的研究来充分了解这980个方面。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 43,
+            "text": "See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License Research 973 investigate the global pattern of plant preference for different forms of N and (2) to explore the main driving factors behind the different N uptake preferences of plants around the world.",
+            "text_zh": "有关使用规则，请参阅Wiley在线图书馆的条款和条件（https://onlinelibrary.wiley.com/terms-and-conditions）；研究973调查了全球植物对不同形式氮的偏好模式，并(2)探索了世界各地植物不同氮吸收偏好背后的主要驱动因素。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 213,
+            "text": "In summary, this study is one of the ﬁrst to investigate the global patterns and driving factors of the relative importance of different soil N forms for plant N uptake using a 15N tracer.",
+            "text_zh": "综上所述，本研究是首次利用15N示踪剂研究不同土壤氮素形态对植物氮素吸收相对重要性的全球格局和驱动因素之一。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 1,
+            "text": "However, the variation in plant N uptake preference and its controlEmail: sniu@igsnrr.ac.cn ling factors on a global scale remain unclear.",
+            "text_zh": "然而，在全球范围内，植物氮吸收偏好的变化及其控制因素尚不清楚。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 215,
+            "text": "Furthermore, we found that different factors determine plant N preference strategies for different soil N forms.",
+            "text_zh": "此外，我们发现不同因素决定了植物对不同土壤氮素形态的偏好策略。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 3,
+            "text": "+), nitrate (NO3 \u0003), and glycine N to \u0001 Globally, the average contributions of ammonium (NH4 the total plant N uptake were 41.6 \u0004 1.1%, 32.8 \u0004 1.2%, and 25.6 \u0004 0.9%, respectively.",
+            "text_zh": "+)、硝态氮（NO3 \u0003）和甘氨酸氮对\u0001的平均贡献在全球范围内分别为41.6 \u0004 1.1%、32.8 \u0004 1.2%和25.6 \u0004 0.9%。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 194,
+            "text": "Thereconditions, there is a high risk of leaching losses of NO3 \u0003 preference.",
+            "text_zh": "在这种条件下，有较高的NO3浸出损失风险\u0003优先。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 196,
+            "text": "First, the uneven distribution of study sites across different climate zones in the current study may lead to biases in the average plant N preference (e.g. overestimation of glycine N uptake preference due to signiﬁcantly more data in alpine and temperate regions with greater organic N preference than that in subtropical regions) on a global scale (Persson & N€asholm, 2008).",
+            "text_zh": "首先，在目前的研究中，不同气候带的研究地点分布不均匀，可能导致全球范围内植物对氮的平均偏好存在偏差（例如，由于有机氮偏好较大的高山和温带地区的数据明显多于亚热带地区，因此高估了甘氨酸氮吸收偏好）（Persson & N€asholm, 2008）。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 214,
+            "text": "Our results showed clear climatic patterns of plant preference for soil \u0003 and low preference for organic N in (sub)tropical zones.",
+            "text_zh": "结果表明，亚热带植物对土壤\u0003的偏好明显，对有机氮的偏好较低。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 2,
+            "text": "\u0001 We conducted a global synthesis to explore plant N preference patterns and driving factors."
+          }
+        ],
+        "sentence_ids": [
+          2
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "severity": "none",
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "claim 与 sentence_id=2 完全匹配：'We conducted a global synthesis to explore plant N preference patterns and driving factors.' → '作者开展了一项全球综合研究，以探索植物对氮元素的偏好模式和驱动因素。' 'global synthesis' 译为'全球综合研究'为标准学术表达；'explore' 译为'探索'未越界；'preference patterns and driving factors' 与中文表述完全对应。"
+      },
+      "analysis": {
+        "evidence_judgement": "整句 claim 由 sentence_id=2 独立、完整支撑；'conducted a global synthesis' → '开展了一项全球综合研究'（'synthesis' 在生态学中特指整合多源数据的荟萃分析，'综合研究'为规范译法）；'explore...patterns and driving factors' → '探索...模式和驱动因素'，动宾结构与语义均一致；rank1 即为该句。",
+        "classification_reason": "no_distortion：'global synthesis' 未误译为'全球综述'（后者指 narrative review）；'driving factors' 未升级为'关键/核心驱动因子'（未添加 significance_addition）；未添加'首次''系统性''创新性'等修饰；未删减'plant N'限定（即氮元素特指植物氮，非泛指环境氮）。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": ""
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=2。",
+        "needs_manual_review": false,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P006-A001-C04",
+      "paper_id": "P006",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "在全球范围内，铵（NH4+）、硝酸盐（NO3-）和甘氨酸-N对植物氮吸收总量的平均贡献率分别为 41.6 ± 1.1 %、32.8 ± 1.2 % 和 25.6 ± 0.9 %。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 3,
+            "text": "+), nitrate (NO3 \u0003), and glycine N to \u0001 Globally, the average contributions of ammonium (NH4 the total plant N uptake were 41.6 \u0004 1.1%, 32.8 \u0004 1.2%, and 25.6 \u0004 0.9%, respectively."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 85,
+            "text": "Global patterns of plant N uptake preference + to plant N uptake The relative contribution of soil NH4 (41.6 \u0004 1.1%) was signiﬁcantly higher than that of NO3 (32.8 \u0004 1.2%) and glycine N (25.6 \u0004 0.9%) (Fig. 1a)."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 4,
+            "text": "However, plant N uptake preferences differed signiﬁcantly among climatic regions and vegetation types."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 2,
+            "text": "\u0001 We conducted a global synthesis to explore plant N preference patterns and driving factors."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 90,
+            "text": "Plant NO3 showed similar levels between Arctic (36.4 \u0004 3.9%), boreal Fig. 1 Relative contribution (%) of soil nitrogen \u0003, and glycine N) (N) forms (NH4 (mean \u0004 SE) to plant N uptakes (a) and uptake rates of N forms (b) at the global scale."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 3,
+            "text": "+), nitrate (NO3 \u0003), and glycine N to \u0001 Globally, the average contributions of ammonium (NH4 the total plant N uptake were 41.6 \u0004 1.1%, 32.8 \u0004 1.2%, and 25.6 \u0004 0.9%, respectively.",
+            "text_zh": "+)、硝态氮（NO3 \u0003）和甘氨酸氮对\u0001的平均贡献在全球范围内分别为41.6 \u0004 1.1%、32.8 \u0004 1.2%和25.6 \u0004 0.9%。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 85,
+            "text": "Global patterns of plant N uptake preference + to plant N uptake The relative contribution of soil NH4 (41.6 \u0004 1.1%) was signiﬁcantly higher than that of NO3 (32.8 \u0004 1.2%) and glycine N (25.6 \u0004 0.9%) (Fig. 1a).",
+            "text_zh": "土壤NH4 （41.6 \u0004 1.1%）的相对贡献显著高于NO3 （32.8 \u0004 1.2%）和甘氨酸N (25.6 \u0004 0.9%)（图1a）。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 4,
+            "text": "However, plant N uptake preferences differed signiﬁcantly among climatic regions and vegetation types.",
+            "text_zh": "然而，不同气候区域和植被类型的植物氮吸收偏好存在显著差异。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 2,
+            "text": "\u0001 We conducted a global synthesis to explore plant N preference patterns and driving factors.",
+            "text_zh": "我们进行了全球综合研究，以探讨植物对氮的偏好模式及其驱动因素。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 90,
+            "text": "Plant NO3 showed similar levels between Arctic (36.4 \u0004 3.9%), boreal Fig. 1 Relative contribution (%) of soil nitrogen \u0003, and glycine N) (N) forms (NH4 (mean \u0004 SE) to plant N uptakes (a) and uptake rates of N forms (b) at the global scale.",
+            "text_zh": "植物NO3在北极（36.4 \u0004 3.9%）、北方（图1）之间表现出相似的水平。在全球尺度上，土壤氮的相对贡献（%）\u0003和甘氨酸N (N)形式（NH4（平均\u0004 SE））对植物N吸收(a)和N形式吸收率(b)的贡献（%）相似。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 86,
+            "text": "Corre- + was signiﬁcantly spondingly, the average uptake rate of NH4 \u0003 and glycine N (Fig. 1b).",
+            "text_zh": "Corre- +显著响应，NH4 \u0003和甘氨酸N的平均吸收率（图1b）。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 48,
+            "text": "To increase data comparability, the following criteria were applied to select appropriate observations from the initial set of articles retrieved: (1) studies containing 15N uptake rates and/or the relative contribution of N forms to plant N nutrients by 15N labelling method were selected, and other methods (such as 15N natural abundance and concentration dilution) to explore plant N uptake strategies were excluded; (2) only the data from experiments with short isotopic exposure times were included to avoid transformations between 15NH4 \u0003, and studies that used the 15N tracer method to and 15NO3 explore long-term plant N retention, such as that of Templer et al. (2012), were excluded; (3) analyses restricted to species in natural plant communities in unfertilized soils were selected; (4) studies focusing on species-level N uptake but not on community-level N uptake were included; (5) as glycine (the smallest of amino acid, comprising 29% of the pool of amino-N) is a putative organic N source for plants, data using other organic N forms to represent organic N uptake were excluded from the database to make results comparable; and (6) for studies wherein uptake rates or the relative contribution of uptake rates were not directly available, we ﬁrst calculated the uptake rates by dividing the 15N uptake pools by the 15N labelling time and root biomass.",
+            "text_zh": "为了增加数据的可比性，我们采用以下标准从最初检索到的文章中选择合适的观察结果：(1)通过15N标记法选择含有15N吸收速率和/或N形态对植物N养分的相对贡献的研究，排除其他探索植物N吸收策略的方法（如15N自然丰度和浓度稀释）；(2)为了避免15NH4 \u0003之间的转化，只纳入了同位素暴露时间较短的实验数据，并排除了使用15N示踪法与15NO3探索植物长期N保留的研究，如Templer等（2012）；(3)选择未施肥土壤中天然植物群落的物种分析；(4)主要研究物种水平氮吸收而非群落水平氮吸收；(5)由于甘氨酸（最小的氨基酸，占氨基氮库的29%）是假定的植物有机氮来源，因此使用其他有机氮形式表示有机氮吸收的数据从数据库中排除，以使结果具有可比性；(6)对于无法直接获得吸收速率或吸收速率相对贡献的研究，我们首先通过将15N吸收库除以15N标记时间和根系生物量来计算吸收速率。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 89,
+            "text": "Plant NO3 ference was highest in alpine regions (42.1 \u0004 1.7%) and lowest \u0003 preference in (sub)tropical regions (15.4 \u0004 1.7%).",
+            "text_zh": "高寒地区植物NO3偏好最高（42.1 \u0004 1.7%），亚热带地区最低（15.4 \u0004 1.7%）。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 91,
+            "text": "The relative contribution was directly reported or indirectly calculated by dividing the uptake rates of each N form by the sum of the uptake rates of the three forms.",
+            "text_zh": "通过直接报告或间接计算各形态氮的吸收率除以三种形态吸收率之和的相对贡献。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 47,
+            "text": "The reference lists of relevant articles were referred to in retrieving more pertinent articles.",
+            "text_zh": "在检索更相关的文章时，参考了相关文章的参考书目。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 3,
+            "text": "+), nitrate (NO3 \u0003), and glycine N to \u0001 Globally, the average contributions of ammonium (NH4 the total plant N uptake were 41.6 \u0004 1.1%, 32.8 \u0004 1.2%, and 25.6 \u0004 0.9%, respectively."
+          }
+        ],
+        "sentence_ids": [
+          3
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "severity": "none",
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "数值与误差范围完全一致；句式为标准科学表述，无添加/删减/替换。"
+      },
+      "analysis": {
+        "evidence_judgement": "claim 全句为单一数值断言：三项贡献率及标准误。sentence_id=3 完整呈现 '41.6 ± 1.1%, 32.8 ± 1.2%, and 25.6 ± 0.9%'，且明确主语 'the average contributions ... to the total plant N uptake'，与 claim 中'对植物氮吸收总量的平均贡献率'严格对应；top-5 中 rank1 即为该句，支撑充分。",
+        "classification_reason": "paper_expression: 'the average contributions of ammonium (NH4+), nitrate (NO3−), and glycine N to the total plant N uptake were 41.6 ± 1.1%, 32.8 ± 1.2%, and 25.6 ± 0.9%, respectively.'；article_expression: '在全球范围内，铵（NH4+）、硝酸盐（NO3-）和甘氨酸-N对植物氮吸收总量的平均贡献率分别为 41.6 ± 1.1 %、32.8 ± 1.2 % 和 25.6 ± 0.9 %。' —— 中英文术语、数值、误差表达、逻辑主谓宾结构完全一致；无机制/背景/不确定性删减，无功能/意义添加，无关系/程度/机制替换。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "rank1 完全匹配；其余 top-5 句子（85,4,2,90）均为图注、方法或分区域数据，不构成更优支撑。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=3 的完整句（含标点与单位空格）。",
+        "needs_manual_review": false,
+        "review_focus": [
+          "gold_sentence_ids"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P006-A001-C05",
+      "paper_id": "P006",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "然而，植物氮吸收偏好在不同气候区域和植被类型之间存在显著差异。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 4,
+            "text": "However, plant N uptake preferences differed signiﬁcantly among climatic regions and vegetation types."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 30,
+            "text": "Therefore, plant N uptake may be signiﬁcantly inﬂuenced by factors other than soil N availability."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 40,
+            "text": "However, on the global scale, with highly variable climatic conditions and species types, the factors driving plant N uptake preference remain unclear."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 44,
+            "text": "We hypothesized that, on a global scale, plant N uptake preferences for different soil N forms vary across climatic regions."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 87,
+            "text": "Plant N higher than that of NO3 uptake preferences varied signiﬁcantly with the climate zone + was sigand biome type (Fig. 2a–f)."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 4,
+            "text": "However, plant N uptake preferences differed signiﬁcantly among climatic regions and vegetation types.",
+            "text_zh": "然而，不同气候区域和植被类型的植物氮吸收偏好存在显著差异。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 30,
+            "text": "Therefore, plant N uptake may be signiﬁcantly inﬂuenced by factors other than soil N availability.",
+            "text_zh": "因此，植物氮素吸收可能受到土壤氮素有效性以外的其他因素的显著影响。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 40,
+            "text": "However, on the global scale, with highly variable climatic conditions and species types, the factors driving plant N uptake preference remain unclear.",
+            "text_zh": "然而，在全球范围内，由于气候条件和物种类型的高度变化，驱动植物氮吸收偏好的因素尚不清楚。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 44,
+            "text": "We hypothesized that, on a global scale, plant N uptake preferences for different soil N forms vary across climatic regions.",
+            "text_zh": "我们假设，在全球范围内，植物对不同土壤氮形态的吸收偏好因气候区域而异。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 87,
+            "text": "Plant N higher than that of NO3 uptake preferences varied signiﬁcantly with the climate zone + was sigand biome type (Fig. 2a–f).",
+            "text_zh": "高于NO3吸收偏好的植物氮素随气候带+标志和生物群系类型变化显著（图2a-f）。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 129,
+            "text": "The varying plant prefer- + among different climatic regions may be partly ence for NH4 due to their differential N availability.",
+            "text_zh": "不同气候区植物对- +的偏好不同，部分原因可能是由于它们对N的有效性不同。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 98,
+            "text": "Changes in plant N uptake preference across different plant functional groups Plant N uptake preference varied signiﬁcantly between different plant functional groups according to the statistical analysis results of one-way ANOVA (Fig. 3).",
+            "text_zh": "单因素方差分析（one-way ANOVA）统计分析结果显示，植物氮素吸收偏好在不同功能组间差异显著（图3）。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 196,
+            "text": "First, the uneven distribution of study sites across different climate zones in the current study may lead to biases in the average plant N preference (e.g. overestimation of glycine N uptake preference due to signiﬁcantly more data in alpine and temperate regions with greater organic N preference than that in subtropical regions) on a global scale (Persson & N€asholm, 2008).",
+            "text_zh": "首先，在目前的研究中，不同气候带的研究地点分布不均匀，可能导致全球范围内植物对氮的平均偏好存在偏差（例如，由于有机氮偏好较大的高山和温带地区的数据明显多于亚热带地区，因此高估了甘氨酸氮吸收偏好）（Persson & N€asholm, 2008）。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 161,
+            "text": "The variation in NO3 of plant NO3 preference between plant functional types may be due to the unique functions and life strategies of different plant species.",
+            "text_zh": "不同功能类型植物NO3偏好的差异可能与不同植物的独特功能和生命策略有关。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 31,
+            "text": "For instance, changes in temperature directly affect plant N acquisition (Warren, 2009; Boczulak et al., 2014; Hu et al., 2024) due to temperature-dependent active transport of soil N at the root–soil interface (Bassirirad, 2000).",
+            "text_zh": "例如，温度的变化直接影响植物氮的获取（Warren, 2009; Boczulak et al., 2014; Hu et al., 2024），因为土壤氮在根-土界面的主动运输依赖于温度（Bassirirad, 2000）。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 4,
+            "text": "However, plant N uptake preferences differed signiﬁcantly among climatic regions and vegetation types."
+          }
+        ],
+        "sentence_ids": [
+          4
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "severity": "none",
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "claim 与 sentence_id=4 完全同义，仅中文语序微调（'然而'前置 vs 'However,'后置），无信息增删或语义偏移。"
+      },
+      "analysis": {
+        "evidence_judgement": "claim 全句为单一因果无关的差异性陈述。sentence_id=4 原文 'However, plant N uptake preferences differed significantly among climatic regions and vegetation types.' 直接对应：'climatic regions' = '气候区域'，'vegetation types' = '植被类型'，'differed significantly' = '存在显著差异'；'However' 与'然而'语用等价；top-5 rank1 即为此句，支撑确凿。",
+        "classification_reason": "paper_expression: 'differed significantly among climatic regions and vegetation types'；article_expression: '在不同气候区域和植被类型之间存在显著差异' —— 无省略限定（如未删'plant N uptake preferences'主语）、无添加意义（未加'首次发现'或'重要突破'）、无替换关系（未将'差异'曲解为'因果'或'主导'）；'however'作为转折连词，在中文中前置'然而'属常规转译，非失真。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "rank1 完全匹配；rank2–5 均为假设、驱动因素或机制讨论，不构成更优支撑。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=4 原句是否含'plant N uptake preferences'主语及'significantly'副词。",
+        "needs_manual_review": false,
+        "review_focus": [
+          "gold_sentence_ids"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P006-A001-C06",
+      "paper_id": "P006",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "在（亚）热带地区，土壤中的 NH4+ 是植物最偏好的氮形式，而在高纬度地区，植物对 NO3- 的偏好明显高于低纬度地区。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 5,
+            "text": "Soil NH4 doi: 10.1111/nph.70030 whereas NO3 signiﬁcantly higher NO3 Key words: ammonium, nitrate, nitrogen + was the most preferred N form by plants in (sub)tropical regions, \u0003 preference was signiﬁcantly higher in high-latitude than low-latitude regions."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 44,
+            "text": "We hypothesized that, on a global scale, plant N uptake preferences for different soil N forms vary across climatic regions."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 4,
+            "text": "However, plant N uptake preferences differed signiﬁcantly among climatic regions and vegetation types."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 215,
+            "text": "Furthermore, we found that different factors determine plant N preference strategies for different soil N forms."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 6,
+            "text": "\u0003 preference, with Plant functional type was one of the most important factors driving NO3 \u0003 preference of nonwoody species than broadleaf-evergreen, conifer, and shrub species."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 5,
+            "text": "Soil NH4 doi: 10.1111/nph.70030 whereas NO3 signiﬁcantly higher NO3 Key words: ammonium, nitrate, nitrogen + was the most preferred N form by plants in (sub)tropical regions, \u0003 preference was signiﬁcantly higher in high-latitude than low-latitude regions.",
+            "text_zh": "土壤NH4 doi: 10.1111/nph。关键词：铵态氮、硝态氮、氮+是（亚热带）地区植物最偏好的氮形态，\u0003高纬度地区植物对氮的偏好显著高于低纬度地区。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 44,
+            "text": "We hypothesized that, on a global scale, plant N uptake preferences for different soil N forms vary across climatic regions.",
+            "text_zh": "我们假设，在全球范围内，植物对不同土壤氮形态的吸收偏好因气候区域而异。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 4,
+            "text": "However, plant N uptake preferences differed signiﬁcantly among climatic regions and vegetation types.",
+            "text_zh": "然而，不同气候区域和植被类型的植物氮吸收偏好存在显著差异。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 215,
+            "text": "Furthermore, we found that different factors determine plant N preference strategies for different soil N forms.",
+            "text_zh": "此外，我们发现不同因素决定了植物对不同土壤氮素形态的偏好策略。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 6,
+            "text": "\u0003 preference, with Plant functional type was one of the most important factors driving NO3 \u0003 preference of nonwoody species than broadleaf-evergreen, conifer, and shrub species.",
+            "text_zh": "植物功能类型是导致非木本树种比阔叶常绿、针叶树和灌木树种更偏爱NO3 \u0003的最重要因素之一。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 196,
+            "text": "First, the uneven distribution of study sites across different climate zones in the current study may lead to biases in the average plant N preference (e.g. overestimation of glycine N uptake preference due to signiﬁcantly more data in alpine and temperate regions with greater organic N preference than that in subtropical regions) on a global scale (Persson & N€asholm, 2008).",
+            "text_zh": "首先，在目前的研究中，不同气候带的研究地点分布不均匀，可能导致全球范围内植物对氮的平均偏好存在偏差（例如，由于有机氮偏好较大的高山和温带地区的数据明显多于亚热带地区，因此高估了甘氨酸氮吸收偏好）（Persson & N€asholm, 2008）。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 43,
+            "text": "See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License Research 973 investigate the global pattern of plant preference for different forms of N and (2) to explore the main driving factors behind the different N uptake preferences of plants around the world.",
+            "text_zh": "有关使用规则，请参阅Wiley在线图书馆的条款和条件（https://onlinelibrary.wiley.com/terms-and-conditions）；研究973调查了全球植物对不同形式氮的偏好模式，并(2)探索了世界各地植物不同氮吸收偏好背后的主要驱动因素。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 45,
+            "text": "Speciﬁcally, we + uptake is preferred under warm hypothesized that (H1) soil NH4 conditions (e.g. in the tropics), whereas organic N uptake is preferred under cold conditions (e.g. in boreal and alpine regions), because the soil N cycle is faster and N availability is higher in warmer regions than in colder regions, and (H2) soil N availability is the primary factor regulating plant N uptake preference because it provides N resources from the soil to plants.",
+            "text_zh": "具体来说，在温暖的假设（H1）土壤NH4条件下（例如在热带），有机氮吸收优先，而在寒冷的条件下（例如在寒带和高寒地区），有机氮吸收优先，因为温暖地区的土壤氮循环比寒冷地区更快，氮有效性更高，（H2）土壤氮有效性是调节植物氮吸收偏好的主要因素，因为它从土壤向植物提供氮资源。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 3,
+            "text": "+), nitrate (NO3 \u0003), and glycine N to \u0001 Globally, the average contributions of ammonium (NH4 the total plant N uptake were 41.6 \u0004 1.1%, 32.8 \u0004 1.2%, and 25.6 \u0004 0.9%, respectively.",
+            "text_zh": "+)、硝态氮（NO3 \u0003）和甘氨酸氮对\u0001的平均贡献在全球范围内分别为41.6 \u0004 1.1%、32.8 \u0004 1.2%和25.6 \u0004 0.9%。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 160,
+            "text": "Second, in plant NO3 the present study, most plants in high-latitude ecosystems (alpine and Arctic) were nonwoody species with a signiﬁcantly higher \u0003 uptake (Fig. 3), which may have contribuproportion of NO3 \u0003 preference at high latitudes, as plant functed to the high NO3 tional types played an important role in regulating the variations \u0003 preference (Figs 5, S3).",
+            "text_zh": "其次，在本研究的植物NO3中，高纬度生态系统（高山和北极）中的大多数植物都是非木本物种，它们的\u0003吸收率明显更高（图3），这可能对高纬度地区的NO3 \u0003偏好有贡献，因为高NO3功能类型的植物在调节\u0003偏好的变化中起着重要作用（图5，S3）。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 5,
+            "text": "Soil NH4 doi: 10.1111/nph.70030 whereas NO3 signiﬁcantly higher NO3 Key words: ammonium, nitrate, nitrogen + was the most preferred N form by plants in (sub)tropical regions, \u0003 preference was signiﬁcantly higher in high-latitude than low-latitude regions."
+          }
+        ],
+        "sentence_ids": [
+          5
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "severity": "none",
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "claim 两分句均被 sentence_id=5 精确覆盖：'(sub)tropical regions'→'（亚）热带地区'，'NH4+ was the most preferred N form'→'NH4+ 是植物最偏好的氮形式'，'NO3− preference was significantly higher in high-latitude than low-latitude regions'→'植物对 NO3− 的偏好明显高于低纬度地区'。"
+      },
+      "analysis": {
+        "evidence_judgement": "claim 含两个并列地理比较断言：(1) （亚）热带地区 NH4+ 最偏好；(2) 高纬度地区 NO3− 偏好 > 低纬度地区。sentence_id=5 原文 'whereas NO3− preference was significantly higher in high-latitude than low-latitude regions' 与第二分句完全对应；前半句 'Soil NH4+ was the most preferred N form by plants in (sub)tropical regions' 与第一分句完全对应；'whereas' 表对比，与 claim 中'而'逻辑一致；top-5 rank1 即为此句，支撑完整。",
+        "classification_reason": "paper_expression: 'Soil NH4+ was the most preferred N form by plants in (sub)tropical regions, whereas NO3− preference was significantly higher in high-latitude than low-latitude regions.'；article_expression: '在（亚）热带地区，土壤中的 NH4+ 是植物最偏好的氮形式，而在高纬度地区，植物对 NO3− 的偏好明显高于低纬度地区。' —— 'most preferred' → '最偏好'，'significantly higher' → '明显高于'，地理术语一一对应；无添加应用（如'因此应增施铵肥'）、无删减关键限定（如未删'by plants'主语或'significantly'程度副词）、无机制替换（未将'preference'曲解为'吸收速率'或'转运蛋白表达'）。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "rank1 完全匹配；rank2–5 为假设、方法或混杂因素讨论，不提供更直接地理偏好对比。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=5 是否同时包含两个地理分句及'whereas'连接。",
+        "needs_manual_review": false,
+        "review_focus": [
+          "gold_sentence_ids"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P006-A001-C07",
+      "paper_id": "P006",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "植物功能类型是驱动植物NO3-偏好的最重要因素之一，非木质物种的 NO3-偏好明显高于常绿阔叶树、针叶树和灌木物种。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 6,
+            "text": "\u0003 preference, with Plant functional type was one of the most important factors driving NO3 \u0003 preference of nonwoody species than broadleaf-evergreen, conifer, and shrub species."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 100,
+            "text": "Conversely, the preference of est preference for NH4 \u0003 was signiﬁcantly higher than that of nonwoody species for NO3 other plant functional types (broadleaf-evergreen, conifer, and shrub species) (Fig. 3b)."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 7,
+            "text": "Organic N preference was lowest in (sub)tropics and signiﬁcantly lower deposition, nitrogen uptake preference, than that in temperate and alpine regions."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 5,
+            "text": "Soil NH4 doi: 10.1111/nph.70030 whereas NO3 signiﬁcantly higher NO3 Key words: ammonium, nitrate, nitrogen + was the most preferred N form by plants in (sub)tropical regions, \u0003 preference was signiﬁcantly higher in high-latitude than low-latitude regions."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 161,
+            "text": "The variation in NO3 of plant NO3 preference between plant functional types may be due to the unique functions and life strategies of different plant species."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 6,
+            "text": "\u0003 preference, with Plant functional type was one of the most important factors driving NO3 \u0003 preference of nonwoody species than broadleaf-evergreen, conifer, and shrub species.",
+            "text_zh": "植物功能类型是导致非木本树种比阔叶常绿、针叶树和灌木树种更偏爱NO3 \u0003的最重要因素之一。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 100,
+            "text": "Conversely, the preference of est preference for NH4 \u0003 was signiﬁcantly higher than that of nonwoody species for NO3 other plant functional types (broadleaf-evergreen, conifer, and shrub species) (Fig. 3b).",
+            "text_zh": "相反，对于NO3其他植物功能类型（阔叶常绿、针叶树和灌木物种），est对NH4 \u0003的偏好显著高于非木本物种（图3b）。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 7,
+            "text": "Organic N preference was lowest in (sub)tropics and signiﬁcantly lower deposition, nitrogen uptake preference, than that in temperate and alpine regions.",
+            "text_zh": "有机氮偏好在亚热带地区最低，沉降、氮吸收偏好显著低于温带和高寒地区。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 5,
+            "text": "Soil NH4 doi: 10.1111/nph.70030 whereas NO3 signiﬁcantly higher NO3 Key words: ammonium, nitrate, nitrogen + was the most preferred N form by plants in (sub)tropical regions, \u0003 preference was signiﬁcantly higher in high-latitude than low-latitude regions.",
+            "text_zh": "土壤NH4 doi: 10.1111/nph。关键词：铵态氮、硝态氮、氮+是（亚热带）地区植物最偏好的氮形态，\u0003高纬度地区植物对氮的偏好显著高于低纬度地区。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 161,
+            "text": "The variation in NO3 of plant NO3 preference between plant functional types may be due to the unique functions and life strategies of different plant species.",
+            "text_zh": "不同功能类型植物NO3偏好的差异可能与不同植物的独特功能和生命策略有关。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 64,
+            "text": "According to plant functional types, plants were categorized into nonwoody, shrub, conifer, broadleaf-deciduous, and broadleaf-evergreen species (Verheijen et al., 2015).",
+            "text_zh": "根据植物的功能类型，将植物分为非木本、灌木、针叶树、阔叶-落叶和阔叶-常绿物种（Verheijen et al., 2015）。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 101,
+            "text": "Preference for organic N did not differ signiﬁcantly between plant functional types (Fig. 3c).",
+            "text_zh": "植物功能类型对有机氮的偏好没有显著差异（图3c）。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 99,
+            "text": "Broadleaf-evergreen species had the +, while nonwoody species had the lowhighest preference for NH4 + (Fig. 3a).",
+            "text_zh": "阔叶常绿物种对NH4 +的偏好最低，而非木本物种对NH4 +的偏好最低（图3a）。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 107,
+            "text": "Consistently, main drivers of NO3 the results of the multivariate linear mixed model also showed \u0003) were the two main that MAT and soil NH4 + uptake preference, while both envirdeterminants of plant NH4 onmental factors and plant functional types were signiﬁcant dri- \u0003 uptake preference (Fig. S3).",
+            "text_zh": "同样，多元线性混合模型的结果也显示\u0003) NO3的主要驱动因素是MAT和土壤NH4 +吸收偏好，而植物NH4环境因子和植物功能类型的环境决定因素都是\u0003吸收偏好的显著驱动因素（图S3）。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 4,
+            "text": "However, plant N uptake preferences differed signiﬁcantly among climatic regions and vegetation types.",
+            "text_zh": "然而，不同气候区域和植被类型的植物氮吸收偏好存在显著差异。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 6,
+            "text": "\u0003 preference, with Plant functional type was one of the most important factors driving NO3 \u0003 preference of nonwoody species than broadleaf-evergreen, conifer, and shrub species."
+          }
+        ],
+        "sentence_ids": [
+          6
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "substitution",
+          "level2": "magnitude_substitution"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文句6明确写‘Plant functional type was one of the most important factors driving NO3− preference’，但未量化‘最重要之一’的排序强度；公众号加了‘最’字级强调（‘最重要因素之一’→隐含排名前1–3），且将‘nonwoody species than broadleaf-evergreen, conifer, and shrub species’直接转述为‘非木质物种的NO3−偏好明显高于……’，而原文未出现‘明显高于’这一程度副词，仅靠比较结构隐含差异，未提供统计显著性或效应值支撑‘明显’。"
+      },
+      "analysis": {
+        "evidence_judgement": "主断言‘植物功能类型是驱动NO3−偏好的最重要因素之一’：由sentence_id=6完整支撑（‘one of the most important factors’）；次断言‘非木质物种NO3−偏好明显高于常绿阔叶树、针叶树和灌木’：sentence_id=6含比较结构（‘preference of nonwoody species than ...’），但无‘significantly higher’或‘markedly’等程度修饰，‘明显’属额外强化；top-5中rank2（id=100）讲NH4+偏好对比，不支撑NO3−；rank3/4/5均无关NO3−跨功能型比较。",
+        "classification_reason": "‘明显高于’对应 paper_expression: ‘preference of nonwoody species than ...’（无程度副词） vs article_expression: ‘明显高于’；属 magnitude_substitution（作用程度替换），因原文仅陈述比较关系，未提供统计显著性或量级描述；非 substitution.mechanism（机制未变）、非 addition.function_application（未添加新应用）、非 omission.context（气候/土壤背景未删）。",
+        "key_differences": [
+          {
+            "type": "magnitude_substitution",
+            "paper_expression": "preference of nonwoody species than broadleaf-evergreen, conifer, and shrub species",
+            "article_expression": "非木质物种的 NO3-偏好明显高于常绿阔叶树、针叶树和灌木物种",
+            "description": "原文为中性比较结构，未含‘明显’所要求的统计显著性或效应强度支撑；公众号添加程度副词，夸大差异可感知性。"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "rank1（id=6）已覆盖全部核心信息；其余top-5无更优NO3−跨功能型比较句。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=6 全句，确认是否含 significance marker 或 effect size。 脚本标记: key_differences 未覆盖 secondary context_omission；分析引用了但未列入 gold: 100",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P006-A001-C08",
+      "paper_id": "P006",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "有机氮偏好在（亚）热带地区最低，明显低于温带和高寒地区。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 7,
+            "text": "Organic N preference was lowest in (sub)tropics and signiﬁcantly lower deposition, nitrogen uptake preference, than that in temperate and alpine regions."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 94,
+            "text": "Furthermore, plant preference for glycine N was lowest in (sub) tropical regions (19.1 \u0004 1.6%), which was signiﬁcantly lower than that in temperate and alpine regions (Fig. 2c)."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 196,
+            "text": "First, the uneven distribution of study sites across different climate zones in the current study may lead to biases in the average plant N preference (e.g. overestimation of glycine N uptake preference due to signiﬁcantly more data in alpine and temperate regions with greater organic N preference than that in subtropical regions) on a global scale (Persson & N€asholm, 2008)."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 89,
+            "text": "Plant NO3 ference was highest in alpine regions (42.1 \u0004 1.7%) and lowest \u0003 preference in (sub)tropical regions (15.4 \u0004 1.7%)."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 6,
+            "text": "\u0003 preference, with Plant functional type was one of the most important factors driving NO3 \u0003 preference of nonwoody species than broadleaf-evergreen, conifer, and shrub species."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 7,
+            "text": "Organic N preference was lowest in (sub)tropics and signiﬁcantly lower deposition, nitrogen uptake preference, than that in temperate and alpine regions.",
+            "text_zh": "有机氮偏好在亚热带地区最低，沉降、氮吸收偏好显著低于温带和高寒地区。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 94,
+            "text": "Furthermore, plant preference for glycine N was lowest in (sub) tropical regions (19.1 \u0004 1.6%), which was signiﬁcantly lower than that in temperate and alpine regions (Fig. 2c).",
+            "text_zh": "此外，植物对甘氨酸N的偏好在（亚）热带地区最低（19.1 \u0004 1.6%），显著低于温带和高寒地区（图2c）。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 196,
+            "text": "First, the uneven distribution of study sites across different climate zones in the current study may lead to biases in the average plant N preference (e.g. overestimation of glycine N uptake preference due to signiﬁcantly more data in alpine and temperate regions with greater organic N preference than that in subtropical regions) on a global scale (Persson & N€asholm, 2008).",
+            "text_zh": "首先，在目前的研究中，不同气候带的研究地点分布不均匀，可能导致全球范围内植物对氮的平均偏好存在偏差（例如，由于有机氮偏好较大的高山和温带地区的数据明显多于亚热带地区，因此高估了甘氨酸氮吸收偏好）（Persson & N€asholm, 2008）。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 89,
+            "text": "Plant NO3 ference was highest in alpine regions (42.1 \u0004 1.7%) and lowest \u0003 preference in (sub)tropical regions (15.4 \u0004 1.7%).",
+            "text_zh": "高寒地区植物NO3偏好最高（42.1 \u0004 1.7%），亚热带地区最低（15.4 \u0004 1.7%）。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 6,
+            "text": "\u0003 preference, with Plant functional type was one of the most important factors driving NO3 \u0003 preference of nonwoody species than broadleaf-evergreen, conifer, and shrub species.",
+            "text_zh": "植物功能类型是导致非木本树种比阔叶常绿、针叶树和灌木树种更偏爱NO3 \u0003的最重要因素之一。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 4,
+            "text": "However, plant N uptake preferences differed signiﬁcantly among climatic regions and vegetation types.",
+            "text_zh": "然而，不同气候区域和植被类型的植物氮吸收偏好存在显著差异。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 93,
+            "text": "(34.3 \u0004 3.6%), and temperate regions (32.4 \u0004 2.9%) (Fig. 2b).",
+            "text_zh": "（34.3 \u0004 3.6%）和温带地区（32.4 \u0004 2.9%）（图2b）。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 95,
+            "text": "+ was higher in Regarding biome types, the preference for NH4 forests (53.6 \u0004 2.1%) than in grasslands (32.2 \u0004 1.4%) and tundra ecosystems (34.9 \u0004 3.1%) (Fig. 2d).",
+            "text_zh": "就生物群系类型而言，森林（53.6 \u0004 2.1%）对NH4的偏好高于草原（32.2 \u0004 1.4%）和苔原生态系统（34.9 \u0004 3.1%）（图2d）。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 195,
+            "text": "fore, soil water content negatively affects plant NO3 Study limitations and implications for future research This synthesis revealed global patterns and drivers of plant N acquisition preference across various ecosystems and climatic regions, but further studies are needed to fully understand these 980 aspects.",
+            "text_zh": "该研究揭示了不同生态系统和气候区域植物氮获取偏好的全球格局和驱动因素，但需要进一步的研究来充分了解这980个方面。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 197,
+            "text": "In addition, the pattern of plant preference for organic N uptake in our study was based on glycine.",
+            "text_zh": "此外，本研究中植物对有机氮吸收的偏好模式以甘氨酸为基础。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 7,
+            "text": "Organic N preference was lowest in (sub)tropics and signiﬁcantly lower deposition, nitrogen uptake preference, than that in temperate and alpine regions."
+          }
+        ],
+        "sentence_ids": [
+          7
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "severity": "none",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "claim_zh与sentence_id=7完全一致：‘有机氮偏好在（亚）热带地区最低，明显低于温带和高寒地区’ ←→ ‘Organic N preference was lowest in (sub)tropics and significantly lower ... than that in temperate and alpine regions.’；‘明显低于’对应‘significantly lower’，术语、地理单元、比较关系均严格匹配。"
+      },
+      "analysis": {
+        "evidence_judgement": "整句 claim 可由 sentence_id=7 单句完全支撑：‘lowest in (sub)tropics’ = ‘在（亚）热带地区最低’；‘significantly lower than that in temperate and alpine regions’ = ‘明显低于温带和高寒地区’；top-5中rank2（id=94）为glycine N子类，属有机氮下位概念，不冲突但非必要；rank1已充分。",
+        "classification_reason": "‘明显低于’与‘significantly lower’为标准学术中文-英文程度副词对译，无语义增减或替换；非 omission（未删限定条件）、非 addition（未加首次/应用）、非 substitution（关系仍为比较，非因果）。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "rank1（id=7）即原始支撑句，无需补检。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=7 原文拼写与标点是否含歧义（如‘alpine’是否等同‘高寒’）。 脚本标记: 分析引用了但未列入 gold: 94",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P006-A001-C09",
+      "paper_id": "P006",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "这项研究阐述了植物对 NH4+ 和 NO3- 偏好的气候模式和不同影响因素，有助于准确预测氮对生态系统生产力和土壤碳动态的限制作用。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 9,
+            "text": "\u0001 This study shows clear climatic patterns and different inﬂuencing factors of plant NH4 \u0003 preference, which can contribute to the accurate prediction of N constraints on ecosystem productivity and soil carbon dynamics."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 5,
+            "text": "Soil NH4 doi: 10.1111/nph.70030 whereas NO3 signiﬁcantly higher NO3 Key words: ammonium, nitrate, nitrogen + was the most preferred N form by plants in (sub)tropical regions, \u0003 preference was signiﬁcantly higher in high-latitude than low-latitude regions."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 9,
+            "text": "\u0001 This study shows clear climatic patterns and different inﬂuencing factors of plant NH4 \u0003 preference, which can contribute to the accurate prediction of N constraints on ecosystem productivity and soil carbon dynamics.",
+            "text_zh": "本研究揭示了植物NH4 \u0003偏好的明确气候模式和不同影响因子，有助于准确预测氮素对生态系统生产力和土壤碳动态的约束。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 5,
+            "text": "Soil NH4 doi: 10.1111/nph.70030 whereas NO3 signiﬁcantly higher NO3 Key words: ammonium, nitrate, nitrogen + was the most preferred N form by plants in (sub)tropical regions, \u0003 preference was signiﬁcantly higher in high-latitude than low-latitude regions.",
+            "text_zh": "土壤NH4 doi: 10.1111/nph。关键词：铵态氮、硝态氮、氮+是（亚热带）地区植物最偏好的氮形态，\u0003高纬度地区植物对氮的偏好显著高于低纬度地区。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 9,
+            "text": "\u0001 This study shows clear climatic patterns and different inﬂuencing factors of plant NH4 \u0003 preference, which can contribute to the accurate prediction of N constraints on ecosystem productivity and soil carbon dynamics."
+          }
+        ],
+        "sentence_ids": [
+          9
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "addition",
+          "level2": "function_application_addition"
+        },
+        "secondary_label": null,
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文句9写‘which can contribute to the accurate prediction of N constraints on ecosystem productivity and soil carbon dynamics’，‘can contribute to’表潜在助益；公众号转述为‘有助于准确预测……限制作用’，虽语义接近，但删去情态动词‘can’及‘contribute to’的弱化限定，隐含更强的功能确定性；且将‘N constraints’直译为‘氮对……的限制作用’，未保留原文‘constraints on’的被动受控关系（即氮是限制因子，而非氮主动施加限制），构成 function_application_addition（功能/应用添加）。"
+      },
+      "analysis": {
+        "evidence_judgement": "claim主干‘阐述气候模式和影响因素’←→ sentence_id=9首半句‘This study shows clear climatic patterns and different influencing factors of plant NH4+ preference’；‘有助于准确预测……’←→ ‘which can contribute to the accurate prediction of N constraints...’；‘N constraints on ecosystem productivity and soil carbon dynamics’在id=9中完整出现；top-5中rank2（id=5）仅讲区域偏好分布，不涉及预测功能。",
+        "classification_reason": "paper_expression: ‘can contribute to the accurate prediction of N constraints’（能力性、间接性、非保证性） vs article_expression: ‘有助于准确预测……限制作用’（中文‘有助于’较‘can contribute to’更常用于肯定语境，且省略‘can’削弱不确定性）；属 function_application_addition（添加确定性应用功能），非 significance_addition（未加‘首次/突破’）、非 relation_substitution（未将相关变因果）。",
+        "key_differences": [
+          {
+            "type": "function_application_addition",
+            "paper_expression": "can contribute to the accurate prediction of N constraints on ecosystem productivity and soil carbon dynamics",
+            "article_expression": "有助于准确预测氮对生态系统生产力和土壤碳动态的限制作用",
+            "description": "删去情态动词‘can’，弱化原意的条件性与不确定性；‘有助于’在科普语境中易被理解为实际已具备该预测能力，超出原文‘contribute to’的辅助性定位。"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "rank1（id=9）即唯一支撑句；无更优替代。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=9 全句，确认‘can contribute to’是否为全文唯一功能表述。 脚本标记: 分析引用了但未列入 gold: 5",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P006-A001-C10",
+      "paper_id": "P006",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "这一全球性综合分析以及牛教授团队近年来开展的研究，为生态系统氮循环及其对全球变化的响应提供了新见解。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 111,
+            "text": "These results enrich the current knowledge on plant N uptake strategies and ecosystem N cycling."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 183,
+            "text": "Overall, the sigbetween MAT and NO3 niﬁcantly different correlations of MAT on plant NH4 \u0003 uptake preferences suggest that species composition may change under global warming due to the signiﬁcant difference in N nutrient and growth between plant species."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 110,
+            "text": "\u0003 preference The considerable variation in plant NH4 between different regions and biomes (Fig. 2) is mainly due to their different climate and soil properties, as well as different plant functional groups (Fig. 3)."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 112,
+            "text": "Most land models (such as CABLE and CLM4) simulate plant N acquisition based only on plant N demand and soil N availability without considering the effects of plant N preference strategies (Thornton et al., 2007; Wang et al., 2010; Zaehle et al., 2014)."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 111,
+            "text": "These results enrich the current knowledge on plant N uptake strategies and ecosystem N cycling.",
+            "text_zh": "这些结果丰富了目前对植物氮吸收策略和生态系统氮循环的认识。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 183,
+            "text": "Overall, the sigbetween MAT and NO3 niﬁcantly different correlations of MAT on plant NH4 \u0003 uptake preferences suggest that species composition may change under global warming due to the signiﬁcant difference in N nutrient and growth between plant species.",
+            "text_zh": "综上所述，MAT与NO3之间的显著差异与植物NH4 \u0003吸收偏好的相关性表明，在全球变暖下，由于植物物种间N养分和生长的显著差异，物种组成可能发生变化。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 110,
+            "text": "\u0003 preference The considerable variation in plant NH4 between different regions and biomes (Fig. 2) is mainly due to their different climate and soil properties, as well as different plant functional groups (Fig. 3).",
+            "text_zh": "植物NH4在不同地区和不同生物群系之间存在较大差异（图2），主要是由于不同地区的气候和土壤性质以及不同的植物功能群（图3）。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 112,
+            "text": "Most land models (such as CABLE and CLM4) simulate plant N acquisition based only on plant N demand and soil N availability without considering the effects of plant N preference strategies (Thornton et al., 2007; Wang et al., 2010; Zaehle et al., 2014).",
+            "text_zh": "大多数土地模型（如CABLE和CLM4）仅基于植物氮需求和土壤氮有效性来模拟植物氮获取，而没有考虑植物氮偏好策略的影响（Thornton等，2007；Wang等，2010；Zaehle等，2014）。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 111,
+            "text": "These results enrich the current knowledge on plant N uptake strategies and ecosystem N cycling."
+          }
+        ],
+        "sentence_ids": [
+          111
+        ],
+        "is_answerable": false
+      },
+      "gold_classification": {
+        "evidence_level": "Weak_Evidence",
+        "has_distortion": null,
+        "primary_label": null,
+        "secondary_label": null,
+        "severity": null,
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文未提及「牛教授团队近年来开展的研究」；「全球性综合分析」仅对应本研究，但「以及……」构成并列主语，暗示两项独立工作，论文无支撑。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1『这一全球性综合分析』：sentence_id=111 中 'These results' 指代本研究，可支撑；分句2『以及牛教授团队近年来开展的研究』：review_evidences top-5 无任何含 Niu/team/recent/collaborative 的表述；retrieval_hint 明确提示语义检索未覆盖，需手工复核；分句3『为……提供了新见解』：111 中 'enrich the current knowledge' 属弱等价（非'新见解'程度），且未限定'氮循环对全球变化的响应'——183 提及 MAT（mean annual temperature）与 NO3-/NH4+ 吸收偏好的关联，隐含全球变暖响应，但未提炼为'对全球变化的响应'这一概括性短语；综上，核心并列结构与宏观结论均无法充分核实。",
+        "classification_reason": "不可判失真（has_distortion=null），因关键断言『牛教授团队近年来开展的研究』在论文中完全无对应，且『为……提供了新见解』缺乏直接、完整支撑句。'enrich the current knowledge' ≠ 'provides new insights'（前者强调知识增量，后者强调原创性洞见），但此差异属 Weak 范畴，不触发 With_Evidence 下的 substitution/addition 判定；相邻类 significance_addition 不适用，因无证据表明论文声称该研究具有'新见解'级意义，亦未否认。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [],
+          "notes": "rank1–4 均未出现 Niu、team、recent、collaborative 等关键词；rank2/3 描述 MAT 相关发现，但未归因于团队或近年工作"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "likely_retrieval_miss",
+          "reasoning": "缺明确指代 'Niu's team' 或 'recent collaborative study' 的句子（如作者署名行、致谢段、方法段提及合作背景）；retrieval_hint 所建议关键词在 top-5 中全未出现",
+          "suggested_keywords": [
+            "Niu",
+            "team",
+            "recent study",
+            "collaborative research"
+          ],
+          "suggested_sentence_ranges": "引言末段、方法部分首段、致谢段、作者贡献声明"
+        },
+        "manual_check_hints": "手工复核全文含 'Niu' 的句子（尤其作者列表、致谢、方法描述）；重点检查引言是否提及团队前期工作。",
+        "needs_manual_review": true,
+        "review_focus": [
+          "evidence_level"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    }
+  ],
+  "review_queue": {
+    "must_review_sample_ids": [
+      "P006-A001-C01",
+      "P006-A001-C07",
+      "P006-A001-C08",
+      "P006-A001-C09",
+      "P006-A001-C10"
+    ],
+    "notes": ""
+  }
+}

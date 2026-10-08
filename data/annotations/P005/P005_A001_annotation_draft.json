@@ -1,0 +1,1872 @@
+{
+  "schema_version": "1.2",
+  "taxonomy_version": "distortion-v0.1",
+  "status": "draft",
+  "paper_id": "P005",
+  "article_id": "A001",
+  "article_source_type": "high_quality",
+  "index_version": "2026-09-15 11:27:18#fe6401eb133eeea0",
+  "generated_date": "2026-09-17",
+  "generation_mode": "full",
+  "limit": "all",
+  "sample_count": 13,
+  "_description": "标注草稿。审核顺序：claim → classify top-5 → review 6-10 → gold_retrieval → gold_classification → analysis → human_verified=true。生产由 scripts/generate_draft_from_pairs.py 生成；human_verified 全为 false。",
+  "samples": [
+    {
+      "sample_id": "P005-A001-C01",
+      "paper_id": "P005",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "本研究揭示了一种通过环形RNA精细调控年龄开花途径分子钟miR156的新颖机制，为培育抽穗期多样化的水稻品种提供了新的理论依据。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 11,
+            "text": "by refining the aging-dependent expression of miR156."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 12,
+            "text": "microRNA156 (miR156) has been identified as a key signalling switch for the transition from vegetative to reproductive growth in the angiosperms and serves as a molecular marker of aging1–3."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 150,
+            "text": "Intriguingly, circRNAs derived from MIR156 locus are also present in Arabidopsis and overlap with the R-loop at the region (Extended Data Fig. 10 and Supplementary Data 2), indicating that circRNA-mediated modulation of miR156 maybe a conserved mechanism to control the transition from the vegetative to reproductive stages."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 5,
+            "text": "These findings reveal a mechanism for regulating heading date Flowering timing or heading date stands as a pivotal agronomic trait in rice cultivation, representing a critical transition from vegetative to reproductive growth."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 4,
+            "text": "We further show that ciMIR156Ds form R-loops with MIR156D at the region where they derive in an aging-dependent manner, which reduces the occupancy of DNA-dependent RNA polymerase II at that location and hence impedes pri-miR156d elongation."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 11,
+            "text": "by refining the aging-dependent expression of miR156.",
+            "text_zh": "通过细化miR156的衰老依赖性表达。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 12,
+            "text": "microRNA156 (miR156) has been identified as a key signalling switch for the transition from vegetative to reproductive growth in the angiosperms and serves as a molecular marker of aging1–3.",
+            "text_zh": "microRNA156 （miR156）已被确定为被子植物从营养生长向生殖生长过渡的关键信号开关，并作为衰老的分子标记物1 - 3。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 150,
+            "text": "Intriguingly, circRNAs derived from MIR156 locus are also present in Arabidopsis and overlap with the R-loop at the region (Extended Data Fig. 10 and Supplementary Data 2), indicating that circRNA-mediated modulation of miR156 maybe a conserved mechanism to control the transition from the vegetative to reproductive stages.",
+            "text_zh": "有趣的是，来自MIR156位点的circrna也存在于拟南芥中，并且在该区域与R-loop重叠（扩展数据图10和补充数据2），这表明circrna介导的MIR156调节可能是控制从营养阶段向生殖阶段过渡的保守机制。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 5,
+            "text": "These findings reveal a mechanism for regulating heading date Flowering timing or heading date stands as a pivotal agronomic trait in rice cultivation, representing a critical transition from vegetative to reproductive growth.",
+            "text_zh": "这些发现揭示了抽穗期调控机制，开花时间或抽穗期是水稻栽培的关键农艺性状，代表了从营养生长到生殖生长的关键转变。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 4,
+            "text": "We further show that ciMIR156Ds form R-loops with MIR156D at the region where they derive in an aging-dependent manner, which reduces the occupancy of DNA-dependent RNA polymerase II at that location and hence impedes pri-miR156d elongation.",
+            "text_zh": "我们进一步表明，cimir156d与MIR156D在它们以衰老依赖的方式产生的区域形成r环，这减少了dna依赖的RNA聚合酶II在该位置的占用，从而阻碍了pri-miR156d的延伸。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 144,
+            "text": "In this study, we identified ciMIR156Ds derived from pri-miR156d as key regulators of heading date in rice.",
+            "text_zh": "在这项研究中，我们确定了pri-miR156d衍生的cimir156d是水稻抽穗日期的关键调节因子。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 70,
+            "text": "The ciMIR156Ds, circRNAs derived from MIR156D.",
+            "text_zh": "cimir156d，源自MIR156D的环状rna。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 0,
+            "text": "However, the mechanisms modulating the age-dependent expression pattern of miR156 are still poorly understood4.",
+            "text_zh": "然而，调节miR156的年龄依赖性表达模式的机制仍然知之甚少。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 34,
+            "text": "f,g, The mature miR156 (f) or miR172 (g) were detected in the fifth leaves of various genotypic rice plants using RNA blotting.",
+            "text_zh": "f,g，利用RNA印迹法在不同基因型水稻的第5叶中检测到成熟的miR156 (f)或miR172 (g)。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 63,
+            "text": "We noticed that there are seven predicted circRNAs in the MIR156D b sdh 400 bp 200 bp 100 bp ciMIR156D-1 ciMIR156D-3 ciMIR156D-2 e miR156 U6 OE-156dcirc-1 OE-156dcirc-1 Nip NIL-sdh NIL-sdh OE-156dcirc Nip Nip ** NIL-sdh ** ** 1st ** 1 0.78 1.17 ** * 3rd * NS 1 0.86 1.23 5th 1 0.93 1.67 2nd 3rd 4th 5th the circRNAs.",
+            "text_zh": "我们注意到MIR156D中有7个预测的circrna，分别是：sdh 400 bp 200 bp 100 bp ciMIR156D-1 ciMIR156D-3 ciMIR156D-2 e miR156 U6 ee -156dcirc-1 ee -156dcirc-1 Nip NIL-sdh NIL-sdh ee -156dcirc Nip Nip ** NIL-sdh ** **第1 ** 1 0.78 1.17 ** * 3 * NS 1 0.86 1.23第5 1 0.93 1.67第23 4 5 circrna。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 144,
+            "text": "In this study, we identified ciMIR156Ds derived from pri-miR156d as key regulators of heading date in rice."
+          },
+          {
+            "sentence_id": 150,
+            "text": "Intriguingly, circRNAs derived from MIR156 locus are also present in Arabidopsis and overlap with the R-loop at the region (Extended Data Fig. 10 and Supplementary Data 2), indicating that circRNA-mediated modulation of miR156 maybe a conserved mechanism to control the transition from the vegetative to reproductive stages."
+          },
+          {
+            "sentence_id": 4,
+            "text": "We further show that ciMIR156Ds form R-loops with MIR156D at the region where they derive in an aging-dependent manner, which reduces the occupancy of DNA-dependent RNA polymerase II at that location and hence impedes pri-miR156d elongation."
+          },
+          {
+            "sentence_id": 5,
+            "text": "These findings reveal a mechanism for regulating heading date Flowering timing or heading date stands as a pivotal agronomic trait in rice cultivation, representing a critical transition from vegetative to reproductive growth."
+          }
+        ],
+        "sentence_ids": [
+          144,
+          150,
+          4,
+          5
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "addition",
+          "level2": "significance_addition"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "mechanism_omission"
+        },
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文未称‘新颖机制’（novel mechanism）；仅说‘reveal a mechanism’，且强调保守性（conserved）；‘为培育抽穗期多样化的水稻品种提供新理论依据’属应用与意义延伸，论文未提育种应用或品种多样性。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1‘揭示…新颖机制’：paper用‘reveal a mechanism’（id=5）+ ‘conserved mechanism’（id=150），无‘novel’；分句2‘为培育…提供新理论依据’：全文未出现breeding、variety diversification、theoretical basis for cultivation等表述；id=144仅称‘key regulators of heading date in rice’，id=4描述R-loop阻断Pol II elongation，属机制细节支撑；id=5定义heading date为关键农艺性状，但未链接至育种目标。",
+        "classification_reason": "‘新颖机制’是典型 significance_addition：paper expression = 'a mechanism' / 'a conserved mechanism'；article_expression = '一种…新颖机制' —— 'novel' is absent in paper and adds scientific weight not claimed. Not substitution: no mechanism replacement; not omission alone: the added term changes evaluative stance, not just deletes context.",
+        "key_differences": [
+          {
+            "type": "significance_addition",
+            "paper_expression": "These findings reveal a mechanism for regulating heading date",
+            "article_expression": "本研究揭示了一种…新颖机制",
+            "description": "添加‘新颖’一词赋予该机制原创性/突破性评价，而论文仅陈述机制存在并提示其在拟南芥与水稻中可能保守（id=150），未作新颖性宣称。"
+          },
+          {
+            "type": "mechanism_omission",
+            "paper_expression": "ciMIR156Ds form R-loops with MIR156D… which reduces the occupancy of DNA-dependent RNA polymerase II… and hence impedes pri-miR156d elongation",
+            "article_expression": "通过环形RNA精细调控…miR156",
+            "description": "原文明确R-loop介导的Pol II占位减少→pri-miR156d转录延伸受阻这一因果链（id=4），而观点句简化为模糊的‘精细调控’，删减了核心分子事件（R-loop + Pol II + elongation inhibition）及因果逻辑。"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [
+            144,
+            150
+          ],
+          "notes": "rank1–2 (id=11/12) discuss miR156 aging-dependence but not circRNA mechanism; id=144 (rank6) directly states 'key regulators of heading date in rice' — more precise than top5 for rice-specific claim; id=150 (rank3) supports conservation but not novelty."
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=144（水稻抽穗期关键调控子）、id=150（保守性）、id=4（R-loop-Pol II-elongation机制链）、id=5（抽穗期定义）。",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label",
+          "secondary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P005-A001-C02",
+      "paper_id": "P005",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "开花时间或抽穗期是水稻栽培中的关键农艺性状，代表着从营养生长向生殖生长的关键转变。它决定了水稻的生产周期、地理和季节适应性。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 5,
+            "text": "These findings reveal a mechanism for regulating heading date Flowering timing or heading date stands as a pivotal agronomic trait in rice cultivation, representing a critical transition from vegetative to reproductive growth."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 6,
+            "text": "It determines the production cycle, geographic and seasonal adaptability of rice5–7."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 5,
+            "text": "These findings reveal a mechanism for regulating heading date Flowering timing or heading date stands as a pivotal agronomic trait in rice cultivation, representing a critical transition from vegetative to reproductive growth.",
+            "text_zh": "这些发现揭示了抽穗期调控机制，开花时间或抽穗期是水稻栽培的关键农艺性状，代表了从营养生长到生殖生长的关键转变。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 6,
+            "text": "It determines the production cycle, geographic and seasonal adaptability of rice5–7.",
+            "text_zh": "它决定了水稻的生产周期、地理适应性和季节适应性5 - 7。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 5,
+            "text": "These findings reveal a mechanism for regulating heading date Flowering timing or heading date stands as a pivotal agronomic trait in rice cultivation, representing a critical transition from vegetative to reproductive growth."
+          },
+          {
+            "sentence_id": 6,
+            "text": "It determines the production cycle, geographic and seasonal adaptability of rice5–7."
+          }
+        ],
+        "sentence_ids": [
+          5,
+          6
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "severity": "none",
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "两分句均被论文直接支持：id=5明确定义抽穗期为关键农艺性状及营养→生殖转变；id=6明确说明其决定生产周期、地理与季节适应性。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1‘开花时间或抽穗期是水稻栽培中的关键农艺性状…’完全对应id=5首句；分句2‘它决定了水稻的生产周期、地理和季节适应性’完全对应id=6全句；无压缩失当、无术语误译、无程度夸大。",
+        "classification_reason": "paper expression = 'Flowering timing or heading date stands as a pivotal agronomic trait...' + 'It determines the production cycle, geographic and seasonal adaptability...' matches article_expression verbatim in meaning and scope. No addition/substitution/omission affecting scientific content.",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "rank1 (id=5) and rank2 (id=6) are exact matches — no better alternatives in review pool."
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=5 和 id=6。",
+        "needs_manual_review": false,
+        "review_focus": [
+          "none"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P005-A001-C03",
+      "paper_id": "P005",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "小穗数、每穗籽粒产量和结实率等农艺产量性状也与水稻抽穗特性相关。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 7,
+            "text": "Agronomic yield traits such as spikelet number, grain yield per panicle and seed set are also associated with rice heading characteristics7."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 6,
+            "text": "It determines the production cycle, geographic and seasonal adaptability of rice5–7."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 8,
+            "text": "Therefore, the mechanisms regulating heading date hold notable importance in improving rice variety traits and enhancing yield potential."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 9,
+            "text": "Aging is one of the crucial factors determining flowering time8, serving as an endogenous signal to suppress flowering during the juvenile phase while ensuring flowering during the adult phase without reliance on exogenous inductive factors9."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 5,
+            "text": "These findings reveal a mechanism for regulating heading date Flowering timing or heading date stands as a pivotal agronomic trait in rice cultivation, representing a critical transition from vegetative to reproductive growth."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 7,
+            "text": "Agronomic yield traits such as spikelet number, grain yield per panicle and seed set are also associated with rice heading characteristics7.",
+            "text_zh": "颖花数、每穗粒数和结实率等农艺产量性状也与水稻抽穗性状有关。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 6,
+            "text": "It determines the production cycle, geographic and seasonal adaptability of rice5–7.",
+            "text_zh": "它决定了水稻的生产周期、地理适应性和季节适应性5 - 7。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 8,
+            "text": "Therefore, the mechanisms regulating heading date hold notable importance in improving rice variety traits and enhancing yield potential.",
+            "text_zh": "因此，抽穗期调控机制对改善水稻品种性状和提高产量潜力具有重要意义。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 9,
+            "text": "Aging is one of the crucial factors determining flowering time8, serving as an endogenous signal to suppress flowering during the juvenile phase while ensuring flowering during the adult phase without reliance on exogenous inductive factors9.",
+            "text_zh": "衰老是决定开花时间的关键因素之一，它作为一种内源信号，在不依赖外源诱导因素的情况下，抑制幼期开花，同时保证成虫期开花。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 5,
+            "text": "These findings reveal a mechanism for regulating heading date Flowering timing or heading date stands as a pivotal agronomic trait in rice cultivation, representing a critical transition from vegetative to reproductive growth.",
+            "text_zh": "这些发现揭示了抽穗期调控机制，开花时间或抽穗期是水稻栽培的关键农艺性状，代表了从营养生长到生殖生长的关键转变。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 4,
+            "text": "We further show that ciMIR156Ds form R-loops with MIR156D at the region where they derive in an aging-dependent manner, which reduces the occupancy of DNA-dependent RNA polymerase II at that location and hence impedes pri-miR156d elongation.",
+            "text_zh": "我们进一步表明，cimir156d与MIR156D在它们以衰老依赖的方式产生的区域形成r环，这减少了dna依赖的RNA聚合酶II在该位置的占用，从而阻碍了pri-miR156d的延伸。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 7,
+            "text": "Agronomic yield traits such as spikelet number, grain yield per panicle and seed set are also associated with rice heading characteristics7."
+          }
+        ],
+        "sentence_ids": [
+          7
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "severity": "none",
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "‘小穗数、每穗籽粒产量和结实率等农艺产量性状也与水稻抽穗特性相关’与id=7完全一致：'Agronomic yield traits such as spikelet number, grain yield per panicle and seed set are also associated with rice heading characteristics'。"
+      },
+      "analysis": {
+        "evidence_judgement": "整句claim为单一分句，id=7提供逐词对应英文原句，术语准确（spikelet number → 小穗数；grain yield per panicle → 每穗籽粒产量；seed set → 结实率；associated with rice heading characteristics → 与水稻抽穗特性相关），无省略关键限定，无添加因果或机制。",
+        "classification_reason": "paper expression = 'Agronomic yield traits such as spikelet number, grain yield per panicle and seed set are also associated with rice heading characteristics' is semantically identical to article_expression. 'Associated' is correctly rendered as '相关', not overstated as '决定' or '调控'.",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "rank1 (id=7) is verbatim support; other top5 ids (6,8,9,5) discuss related concepts (adaptability, importance, aging) but do not list these specific yield traits."
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=7。",
+        "needs_manual_review": false,
+        "review_focus": [
+          "none"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P005-A001-C04",
+      "paper_id": "P005",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "因此，抽穗期调控机制对改良水稻品种性状和提高产量潜力具有重要意义。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 8,
+            "text": "Therefore, the mechanisms regulating heading date hold notable importance in improving rice variety traits and enhancing yield potential."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 5,
+            "text": "These findings reveal a mechanism for regulating heading date Flowering timing or heading date stands as a pivotal agronomic trait in rice cultivation, representing a critical transition from vegetative to reproductive growth."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 9,
+            "text": "Aging is one of the crucial factors determining flowering time8, serving as an endogenous signal to suppress flowering during the juvenile phase while ensuring flowering during the adult phase without reliance on exogenous inductive factors9."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 7,
+            "text": "Agronomic yield traits such as spikelet number, grain yield per panicle and seed set are also associated with rice heading characteristics7."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 4,
+            "text": "We further show that ciMIR156Ds form R-loops with MIR156D at the region where they derive in an aging-dependent manner, which reduces the occupancy of DNA-dependent RNA polymerase II at that location and hence impedes pri-miR156d elongation."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 8,
+            "text": "Therefore, the mechanisms regulating heading date hold notable importance in improving rice variety traits and enhancing yield potential.",
+            "text_zh": "因此，抽穗期调控机制对改善水稻品种性状和提高产量潜力具有重要意义。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 5,
+            "text": "These findings reveal a mechanism for regulating heading date Flowering timing or heading date stands as a pivotal agronomic trait in rice cultivation, representing a critical transition from vegetative to reproductive growth.",
+            "text_zh": "这些发现揭示了抽穗期调控机制，开花时间或抽穗期是水稻栽培的关键农艺性状，代表了从营养生长到生殖生长的关键转变。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 9,
+            "text": "Aging is one of the crucial factors determining flowering time8, serving as an endogenous signal to suppress flowering during the juvenile phase while ensuring flowering during the adult phase without reliance on exogenous inductive factors9.",
+            "text_zh": "衰老是决定开花时间的关键因素之一，它作为一种内源信号，在不依赖外源诱导因素的情况下，抑制幼期开花，同时保证成虫期开花。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 7,
+            "text": "Agronomic yield traits such as spikelet number, grain yield per panicle and seed set are also associated with rice heading characteristics7.",
+            "text_zh": "颖花数、每穗粒数和结实率等农艺产量性状也与水稻抽穗性状有关。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 4,
+            "text": "We further show that ciMIR156Ds form R-loops with MIR156D at the region where they derive in an aging-dependent manner, which reduces the occupancy of DNA-dependent RNA polymerase II at that location and hence impedes pri-miR156d elongation.",
+            "text_zh": "我们进一步表明，cimir156d与MIR156D在它们以衰老依赖的方式产生的区域形成r环，这减少了dna依赖的RNA聚合酶II在该位置的占用，从而阻碍了pri-miR156d的延伸。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 6,
+            "text": "It determines the production cycle, geographic and seasonal adaptability of rice5–7.",
+            "text_zh": "它决定了水稻的生产周期、地理适应性和季节适应性5 - 7。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 144,
+            "text": "In this study, we identified ciMIR156Ds derived from pri-miR156d as key regulators of heading date in rice.",
+            "text_zh": "在这项研究中，我们确定了pri-miR156d衍生的cimir156d是水稻抽穗日期的关键调节因子。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 145,
+            "text": "Two out of three ciMIR156Ds bind their cognate DNA locus, forming R-loops.",
+            "text_zh": "三个cimir156d中有两个结合其同源DNA位点，形成r环。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 143,
+            "text": "As the major contributor for miR156 production (Extended Data Fig. 9) in rice, the fluctuation of miR156d transcripts shall substantially impact on the miR156 level.",
+            "text_zh": "miR156d转录本作为水稻中miR156产生的主要贡献者（扩展数据图9），其波动将对miR156水平产生实质性影响。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 55,
+            "text": "Moreover, the transcript levels of SPLs, which are key regulators of flowering and tillering in rice17,18 and targets of miR156, were much lower in NIL-sdh compared with Nip (Extended Data Fig. 3a), suggesting that the deletion may cause developmental defects by increasing miR156 levels.",
+            "text_zh": "此外，与Nip相比，NIL-sdh中SPLs的转录水平要低得多，SPLs是水稻开花和分蘖的关键调控因子17,18和miR156的靶点（扩展数据图3a），这表明缺失可能通过增加miR156的水平而导致发育缺陷。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 8,
+            "text": "Therefore, the mechanisms regulating heading date hold notable importance in improving rice variety traits and enhancing yield potential."
+          }
+        ],
+        "sentence_ids": [
+          8
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "addition",
+          "level2": "significance_addition"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文 sentence_id=8 明确表述 'hold notable importance'，但 claim 中'具有重要意义'属合理转述；问题在于'因此'——该因果链在论文中未建立：前文未说明本研究发现直接导出该意义，而是泛泛陈述机制重要性。'因此'隐含逻辑推导，属添加意义；同时删减了原文中'notable'这一程度限定（→ context_omission）。"
+      },
+      "analysis": {
+        "evidence_judgement": "Claim 全句为单一分句，核心断言为'抽穗期调控机制…具有重要意义'。sentence_id=8 直接支撑该断言（'hold notable importance in improving…'）。其余 top-5 句子（5,9,7,4）均不涉及'importance'评价：5讲表型重要性、9讲aging与开花关系、7讲产量性状关联、4讲分子机制，均不构成对'意义'的直接支持。top-5 覆盖核心断言，但未覆盖'因此'所暗示的因果前提。",
+        "classification_reason": "primary_level2='significance_addition'：因'因此'强行建立本研究结论→应用意义的因果链，而论文仅孤立陈述机制重要性（'Therefore, the mechanisms…hold notable importance'），该'Therefore'指代前文综述性背景，非本文新发现所致；'significance_addition'特指添加论文未赋予该发现的意义层级。非'magnitude_substitution'：'重要意义'与'notable importance'程度基本一致；非'function_application_addition'：'改良品种性状/提高产量潜力'在 sentence_id=8 中已明确出现，属原文内容。",
+        "key_differences": [
+          {
+            "type": "significance_addition",
+            "paper_expression": "Therefore, the mechanisms regulating heading date hold notable importance in improving rice variety traits and enhancing yield potential.",
+            "article_expression": "因此，抽穗期调控机制对改良水稻品种性状和提高产量潜力具有重要意义。",
+            "description": "'因此'在文章中制造了虚假因果：将本研究发现（ciMIR156Ds调控抽穗）直接等同于该机制的应用意义来源，而论文中该重要性陈述是独立于本研究发现的通用论述（见引言段落逻辑），未声明本工作'揭示了该意义'或'为此提供依据'。"
+          },
+          {
+            "type": "context_omission",
+            "paper_expression": "hold notable importance",
+            "article_expression": "具有重要意义",
+            "description": "删减了'notable'这一程度限定词，弱化了原文强调的显著性，属于背景限定删减（context_omission），因'notable'修饰重要性的强度，属语境性限定。"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "rank1（id=8）即为最直接支撑句，无需补检。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=8 全句及前文逻辑衔接（确认其'Therefore'指代对象）。",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P005-A001-C05",
+      "paper_id": "P005",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "衰老是决定开花时间的关键因素之一，作为内源信号在幼年期抑制开花，同时确保成年期无需依赖外源诱导因素即可开花。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 9,
+            "text": "Aging is one of the crucial factors determining flowering time8, serving as an endogenous signal to suppress flowering during the juvenile phase while ensuring flowering during the adult phase without reliance on exogenous inductive factors9."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 8,
+            "text": "Therefore, the mechanisms regulating heading date hold notable importance in improving rice variety traits and enhancing yield potential."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 10,
+            "text": "The A full list of affiliations appears at the end of the paper."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 9,
+            "text": "Aging is one of the crucial factors determining flowering time8, serving as an endogenous signal to suppress flowering during the juvenile phase while ensuring flowering during the adult phase without reliance on exogenous inductive factors9.",
+            "text_zh": "衰老是决定开花时间的关键因素之一，它作为一种内源信号，在不依赖外源诱导因素的情况下，抑制幼期开花，同时保证成虫期开花。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 8,
+            "text": "Therefore, the mechanisms regulating heading date hold notable importance in improving rice variety traits and enhancing yield potential.",
+            "text_zh": "因此，抽穗期调控机制对改善水稻品种性状和提高产量潜力具有重要意义。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 10,
+            "text": "The A full list of affiliations appears at the end of the paper.",
+            "text_zh": "完整的附属机构列表出现在论文的末尾。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 9,
+            "text": "Aging is one of the crucial factors determining flowering time8, serving as an endogenous signal to suppress flowering during the juvenile phase while ensuring flowering during the adult phase without reliance on exogenous inductive factors9."
+          }
+        ],
+        "sentence_ids": [
+          9
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "severity": "none",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "claim 完全复述 sentence_id=9 原文，包括'衰老是关键因素之一'、'内源信号'、'幼年期抑制开花'、'成年期无需外源诱导'全部要素，无增删替换，术语对应准确（flowering time → 开花时间，juvenile/adult phase → 幼年期/成年期），属忠实转述。"
+      },
+      "analysis": {
+        "evidence_judgement": "claim 为单一分句，所有子命题（衰老是关键因素、作为内源信号、幼年期抑制、成年期不依赖外源）均被 sentence_id=9 逐字覆盖。rank1 即为该句，top-5 中 rank3（id=10）为无关 affiliations，其余未提供更优支撑。top-5 完全覆盖。",
+        "classification_reason": "no_distortion：claim 与 paper_expression 'Aging is one of the crucial factors determining flowering time8, serving as an endogenous signal to suppress flowering during the juvenile phase while ensuring flowering during the adult phase without reliance on exogenous inductive factors9.' 在语义、逻辑关系、限定条件上完全一致；无任何 addition/substitution/omission。非'mechanism_omission'：'suppress flowering'与'抑制开花'、'without reliance on exogenous inductive factors'与'无需依赖外源诱导因素'均为精确对应。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "rank1（id=9）即为唯一且完整支撑句。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=9 全句。 脚本标记: 分析引用了但未列入 gold: 10",
+        "needs_manual_review": true,
+        "review_focus": [
+          "none"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P005-A001-C06",
+      "paper_id": "P005",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "微小RNA156（miR156）已被确定为被子植物从营养生长向生殖生长转变的关键信号开关，并作为衰老的分子标记。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 12,
+            "text": "microRNA156 (miR156) has been identified as a key signalling switch for the transition from vegetative to reproductive growth in the angiosperms and serves as a molecular marker of aging1–3."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 13,
+            "text": "By targeting members of the SQUAMOSA PROMOTER BINDING PROTEIN (SBP/ SPL) family transcription factors for degradation, miR156 intricately regulates the expression of genes required for acquiring adult features, including the pivotal flower-timing gene MIR172, a target of SPLs."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 11,
+            "text": "by refining the aging-dependent expression of miR156."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 25,
+            "text": "The red dashed box indicates suggested that the aging-dependent decrease of miR156 abundance happens at transcriptional levels10–13, the underlying mechanisms are largely unknown4."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 10,
+            "text": "The A full list of affiliations appears at the end of the paper."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 12,
+            "text": "microRNA156 (miR156) has been identified as a key signalling switch for the transition from vegetative to reproductive growth in the angiosperms and serves as a molecular marker of aging1–3.",
+            "text_zh": "microRNA156 （miR156）已被确定为被子植物从营养生长向生殖生长过渡的关键信号开关，并作为衰老的分子标记物1 - 3。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 13,
+            "text": "By targeting members of the SQUAMOSA PROMOTER BINDING PROTEIN (SBP/ SPL) family transcription factors for degradation, miR156 intricately regulates the expression of genes required for acquiring adult features, including the pivotal flower-timing gene MIR172, a target of SPLs.",
+            "text_zh": "通过靶向SQUAMOSA启动子结合蛋白（SBP/ SPL）家族转录因子的降解成员，miR156复杂地调节获得成人特征所需的基因的表达，包括关键的开花时间基因MIR172， SPLs的靶标。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 11,
+            "text": "by refining the aging-dependent expression of miR156.",
+            "text_zh": "通过细化miR156的衰老依赖性表达。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 25,
+            "text": "The red dashed box indicates suggested that the aging-dependent decrease of miR156 abundance happens at transcriptional levels10–13, the underlying mechanisms are largely unknown4.",
+            "text_zh": "红色虚线框表明，miR156丰度的衰老依赖性下降发生在转录水平上，其潜在机制在很大程度上是未知的。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 10,
+            "text": "The A full list of affiliations appears at the end of the paper.",
+            "text_zh": "完整的附属机构列表出现在论文的末尾。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 24,
+            "text": "The green box in the first exon indicates the pre-miR156d coding region.",
+            "text_zh": "第一个外显子的绿色框表示pre-miR156d编码区。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 147,
+            "text": "Notably, ciMIR156D levels increase from the first to fifth leaves, enabling them to modulate miR156 levels in an aging-dependent way.",
+            "text_zh": "值得注意的是，ciMIR156D水平从第一叶到第五叶增加，使它们能够以衰老依赖的方式调节miR156水平。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 148,
+            "text": "Indeed, lack of ciMIR156Ds causes delayed head date while overexpression of ciMIR156D results in earlier flowering time.",
+            "text_zh": "事实上，缺乏ciMIR156D会导致开花日期延迟，而过表达ciMIR156D会导致开花时间提前。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 146,
+            "text": "The R-loops slow the transcriptional elongation of pri-miR156d, ultimately resulting in reduced accumulation of miR156.",
+            "text_zh": "r环减缓了pri-miR156d的转录延伸，最终导致miR156的积累减少。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 2,
+            "text": "The ciMIR156D levels increase as plants age, which is inversely correlated with the changes of pri-miR156d and miR156 abundance.",
+            "text_zh": "随着植株年龄的增长，ciMIR156D水平升高，与pri-miR156d和miR156丰度的变化呈负相关。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 12,
+            "text": "microRNA156 (miR156) has been identified as a key signalling switch for the transition from vegetative to reproductive growth in the angiosperms and serves as a molecular marker of aging1–3."
+          }
+        ],
+        "sentence_ids": [
+          12
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "severity": "none",
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "claim 中'微小RNA156（miR156）已被确定为被子植物从营养生长向生殖生长转变的关键信号开关，并作为衰老的分子标记'与 sentence_id=12 'microRNA156 (miR156) has been identified as a key signalling switch for the transition from vegetative to reproductive growth in the angiosperms and serves as a molecular marker of aging1–3.' 完全对应，括号注释、术语（营养/生殖生长）、功能定位（关键信号开关）、角色（衰老分子标记）均一致，引用标注亦保留。"
+      },
+      "analysis": {
+        "evidence_judgement": "claim 为单一分句，含两个并列谓语：'已被确定为…关键信号开关' + '并作为…分子标记'。sentence_id=12 同时支撑二者（'has been identified as…' + 'serves as…'）。top-5 中 rank1 即为该句，其余句子（13,11,25,10）均不重复该双重断言：13讲靶向机制、11讲表达调控、25讲丰度变化机制未知、10为作者单位。top-5 完全覆盖。",
+        "classification_reason": "no_distortion：'已被确定为'精准对应 'has been identified as'；'被子植物' = 'angiosperms'；'营养生长向生殖生长转变' = 'transition from vegetative to reproductive growth'；'关键信号开关' = 'key signalling switch'；'衰老的分子标记' = 'molecular marker of aging'。无任何程度弱化、限定删减或机制替换。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "rank1（id=12）即为唯一支撑句，无噪声。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=12 全句。",
+        "needs_manual_review": false,
+        "review_focus": [
+          "none"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P005-A001-C07",
+      "paper_id": "P005",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "通过靶向降解SQUAMOSA启动子结合蛋白（SBP/SPL）家族转录因子成员，miR156精细调控包括关键开花基因MIR172（SPL的靶基因）在内的成年特征相关基因表达。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 13,
+            "text": "By targeting members of the SQUAMOSA PROMOTER BINDING PROTEIN (SBP/ SPL) family transcription factors for degradation, miR156 intricately regulates the expression of genes required for acquiring adult features, including the pivotal flower-timing gene MIR172, a target of SPLs."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 12,
+            "text": "microRNA156 (miR156) has been identified as a key signalling switch for the transition from vegetative to reproductive growth in the angiosperms and serves as a molecular marker of aging1–3."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 14,
+            "text": "At the early developmental stage, high levels of miR156 repress SPL levels, maintaining the plant in the vegetative state."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 55,
+            "text": "Moreover, the transcript levels of SPLs, which are key regulators of flowering and tillering in rice17,18 and targets of miR156, were much lower in NIL-sdh compared with Nip (Extended Data Fig. 3a), suggesting that the deletion may cause developmental defects by increasing miR156 levels."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 11,
+            "text": "by refining the aging-dependent expression of miR156."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 13,
+            "text": "By targeting members of the SQUAMOSA PROMOTER BINDING PROTEIN (SBP/ SPL) family transcription factors for degradation, miR156 intricately regulates the expression of genes required for acquiring adult features, including the pivotal flower-timing gene MIR172, a target of SPLs.",
+            "text_zh": "通过靶向SQUAMOSA启动子结合蛋白（SBP/ SPL）家族转录因子的降解成员，miR156复杂地调节获得成人特征所需的基因的表达，包括关键的开花时间基因MIR172， SPLs的靶标。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 12,
+            "text": "microRNA156 (miR156) has been identified as a key signalling switch for the transition from vegetative to reproductive growth in the angiosperms and serves as a molecular marker of aging1–3.",
+            "text_zh": "microRNA156 （miR156）已被确定为被子植物从营养生长向生殖生长过渡的关键信号开关，并作为衰老的分子标记物1 - 3。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 14,
+            "text": "At the early developmental stage, high levels of miR156 repress SPL levels, maintaining the plant in the vegetative state.",
+            "text_zh": "在发育早期，高水平的miR156抑制SPL水平，维持植物的营养状态。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 55,
+            "text": "Moreover, the transcript levels of SPLs, which are key regulators of flowering and tillering in rice17,18 and targets of miR156, were much lower in NIL-sdh compared with Nip (Extended Data Fig. 3a), suggesting that the deletion may cause developmental defects by increasing miR156 levels.",
+            "text_zh": "此外，与Nip相比，NIL-sdh中SPLs的转录水平要低得多，SPLs是水稻开花和分蘖的关键调控因子17,18和miR156的靶点（扩展数据图3a），这表明缺失可能通过增加miR156的水平而导致发育缺陷。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 11,
+            "text": "by refining the aging-dependent expression of miR156.",
+            "text_zh": "通过细化miR156的衰老依赖性表达。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 54,
+            "text": "This deletion cosegregated with the sdh phenotypes and increased both pri-miR156d and miR156 levels in the flag leaf of NIL-sdh without altering the levels of other pri-miR156s relative to Nip (Fig. 1e,f and Extended Data Fig. 2d).",
+            "text_zh": "这种缺失与sdh表型共分离，增加了NIL-sdh旗叶中pri-miR156d和miR156的水平，而不改变相对于Nip的其他pri-miR156s的水平（图1e，f和扩展数据图2d）。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 43,
+            "text": "Further map-based cloning analysis using a population derived from crossing NIL-sdh with the indica variety 9311 narrowed sdh to an 85.8-kilobase (kb) region (Fig. 1c), 710 a cDNA DNA cDNA DNA Nip sdh Nip Nip sdh Nip sdh 400 bp 200 bp c d NS 0.06 1st 2nd 3rd 4th 5th ** Relative pri-miR156d level miR156 0.04 U6 400 bp 300 bp ciMIR156Ds 200 bp 0.02 100 bp 300 bp UBQ 200 bp 0 1st Fig. 2 | CircRNAs derived from the sdh deletion region regulate the transcription of miR156.",
+            "text_zh": "进一步使用人口来自穿越NIL-sdh图谱克隆分析籼稻品种9311 sdh缩小到一个85.8千碱基(kb)区域(图1 c), 710年cDNA DNA互补DNA夹sdh捏捏sdh夹sdh 400 bp 200个基点c d NS 0.06 1日2日3日4日5日* *相对pri-miR156d miR156 0.04 U6 400 bp 300 bp ciMIR156Ds 200 bp 0.02 100个基点300 bp UBQ 200 bp 0 1图2 | CircRNAs源自miR156的sdh删除区域调节转录。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 34,
+            "text": "f,g, The mature miR156 (f) or miR172 (g) were detected in the fifth leaves of various genotypic rice plants using RNA blotting.",
+            "text_zh": "f,g，利用RNA印迹法在不同基因型水稻的第5叶中检测到成熟的miR156 (f)或miR172 (g)。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 42,
+            "text": "Bulked segregant analysis (BSA) of F2 segregation plants displaying wild-type or sdh phenotype from the sdh × Nip cross showed that sdh was on the short arm of chromosome 2 (Extended Data Fig. 2a).",
+            "text_zh": "对来自sdh × Nip杂交的F2分离植株进行的大量分离分析（BSA）显示，sdh位于2号染色体的短臂上（扩展数据图2a）。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 33,
+            "text": "Ubiquitin (UBQ) was used as the control.",
+            "text_zh": "以Ubiquitin （UBQ）作为对照。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 13,
+            "text": "By targeting members of the SQUAMOSA PROMOTER BINDING PROTEIN (SBP/ SPL) family transcription factors for degradation, miR156 intricately regulates the expression of genes required for acquiring adult features, including the pivotal flower-timing gene MIR172, a target of SPLs."
+          }
+        ],
+        "sentence_ids": [
+          13
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "severity": "none",
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "claim 与 sentence_id=13 完全对应：靶向降解 SBP/SPL 成员、精细调控成年特征相关基因（含 MIR172）、MIR172 是 SPL 的靶基因；术语通俗化（如 'intricately regulates' → '精细调控'）和括号补充（'SQUAMOSA PROMOTER BINDING PROTEIN (SBP/SPL)' → 'SQUAMOSA启动子结合蛋白（SBP/SPL）'）属合理转述。"
+      },
+      "analysis": {
+        "evidence_judgement": "整句 claim 可由 sentence_id=13 单句完整支撑：'By targeting members of the SQUAMOSA PROMOTER BINDING PROTEIN (SBP/ SPL) family transcription factors for degradation' → '靶向降解SQUAMOSA启动子结合蛋白（SBP/SPL）家族转录因子成员'；'miR156 intricately regulates the expression of genes required for acquiring adult features, including the pivotal flower-timing gene MIR172, a target of SPLs' → 'miR156精细调控包括关键开花基因MIR172（SPL的靶基因）在内的成年特征相关基因表达'。top-5 中 rank1=13 完全覆盖，无歧义。",
+        "classification_reason": "no_distortion 成立：'intricately regulates' 译为'精细调控'是标准学术中译；'genes required for acquiring adult features' → '成年特征相关基因'为等价压缩；'pivotal flower-timing gene MIR172, a target of SPLs' → '关键开花基因MIR172（SPL的靶基因）'保留全部逻辑关系（靶标关系、功能定位）。非失真类如 'mechanism_simplification'（已禁用）或 'certainty_amplification' 不适用，因原文无模糊表述需强化；'relation_substitution' 落败：未将'靶基因'误作'上游激活者'等。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": ""
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=13。",
+        "needs_manual_review": false,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P005-A001-C08",
+      "paper_id": "P005",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "在发育早期，高水平的miR156抑制SPL水平，维持植株营养生长状态。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 14,
+            "text": "At the early developmental stage, high levels of miR156 repress SPL levels, maintaining the plant in the vegetative state."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 13,
+            "text": "By targeting members of the SQUAMOSA PROMOTER BINDING PROTEIN (SBP/ SPL) family transcription factors for degradation, miR156 intricately regulates the expression of genes required for acquiring adult features, including the pivotal flower-timing gene MIR172, a target of SPLs."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 15,
+            "text": "The miR156 levels decrease during shoot development, which leads to increased levels of SPLs, resulting in vegetative phase change."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 86,
+            "text": "Increased ciMIR156D transcripts repressed the expression of pri-miR156d (Fig. 2d and Extended Data Fig. 5a) and miR156 (Fig. 2e), resulting in increased transcript levels of some SPLs genes (Extended Data Fig. 5c)."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 87,
+            "text": "It should be noted that despite the notably reduced pri-miR156d levels in the flag leaf (Extended Data Fig. 5a), miR156 levels in the flag leaf of OE-156dcirc plants did not decrease as much as pri-miR156d compared with Nip (Extended Data Fig. 5b), probably because miR156 levels may have reached the lowest threshold at this stage or due to the presence of other MIR156 genes."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 14,
+            "text": "At the early developmental stage, high levels of miR156 repress SPL levels, maintaining the plant in the vegetative state.",
+            "text_zh": "在发育早期，高水平的miR156抑制SPL水平，维持植物的营养状态。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 13,
+            "text": "By targeting members of the SQUAMOSA PROMOTER BINDING PROTEIN (SBP/ SPL) family transcription factors for degradation, miR156 intricately regulates the expression of genes required for acquiring adult features, including the pivotal flower-timing gene MIR172, a target of SPLs.",
+            "text_zh": "通过靶向SQUAMOSA启动子结合蛋白（SBP/ SPL）家族转录因子的降解成员，miR156复杂地调节获得成人特征所需的基因的表达，包括关键的开花时间基因MIR172， SPLs的靶标。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 15,
+            "text": "The miR156 levels decrease during shoot development, which leads to increased levels of SPLs, resulting in vegetative phase change.",
+            "text_zh": "在茎部发育过程中，miR156水平降低，导致SPLs水平升高，导致营养阶段的变化。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 86,
+            "text": "Increased ciMIR156D transcripts repressed the expression of pri-miR156d (Fig. 2d and Extended Data Fig. 5a) and miR156 (Fig. 2e), resulting in increased transcript levels of some SPLs genes (Extended Data Fig. 5c).",
+            "text_zh": "增加的ciMIR156D转录物抑制了pri-miR156d（图2d和扩展数据图5a）和miR156（图2e）的表达，导致一些SPLs基因的转录水平增加（扩展数据图5c）。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 87,
+            "text": "It should be noted that despite the notably reduced pri-miR156d levels in the flag leaf (Extended Data Fig. 5a), miR156 levels in the flag leaf of OE-156dcirc plants did not decrease as much as pri-miR156d compared with Nip (Extended Data Fig. 5b), probably because miR156 levels may have reached the lowest threshold at this stage or due to the presence of other MIR156 genes.",
+            "text_zh": "值得注意的是，尽管旗叶中的pri-miR156d水平明显降低（扩展数据图5a），但与Nip相比，ee -156dcirc植物旗叶中的miR156水平降低的幅度没有pri-miR156d那么大（扩展数据图5b），这可能是因为miR156水平在这一阶段可能已经达到了最低阈值，或者是由于其他miR156基因的存在。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 85,
+            "text": "Furthermore, expression of a DNA fragment covering the first exon to fourth exon (OE-156dcirc) of MIR156D, in which miR156 and miR156* sequences were mutated so that miR156 cannot be produced from this transgene, greatly increased ciMIR156D levels (Extended Data Fig. 4b,c).",
+            "text_zh": "此外，覆盖MIR156D的第1外显子至第4外显子的DNA片段（OE-156dcirc）的表达，其中miR156和miR156*序列发生突变，从而无法从该转基因产生miR156，从而大大增加了ciMIR156D水平（扩展数据图4b，c）。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 12,
+            "text": "microRNA156 (miR156) has been identified as a key signalling switch for the transition from vegetative to reproductive growth in the angiosperms and serves as a molecular marker of aging1–3.",
+            "text_zh": "microRNA156 （miR156）已被确定为被子植物从营养生长向生殖生长过渡的关键信号开关，并作为衰老的分子标记物1 - 3。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 113,
+            "text": "As plants age, ciMIR156Ds levels are gradually increased to repress pri-miR156d transcription, ensuring proper vegetative to reproductive phase transition.",
+            "text_zh": "随着植物年龄的增长，cimir156d水平逐渐升高，从而抑制pri-miR156d的转录，确保植物从营养阶段过渡到生殖阶段。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 11,
+            "text": "by refining the aging-dependent expression of miR156.",
+            "text_zh": "通过细化miR156的衰老依赖性表达。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 114,
+            "text": "Among three ciMIR156Ds, two form circRNA–DNA R-loops with their cognate DNAs, and thereby block pri-miR156d transcription elongation.",
+            "text_zh": "在三个cimir156d中，两个与同源dna形成环状rna - dna r -环，从而阻断pri-miR156d的转录延伸。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 14,
+            "text": "At the early developmental stage, high levels of miR156 repress SPL levels, maintaining the plant in the vegetative state."
+          }
+        ],
+        "sentence_ids": [
+          14
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "severity": "none",
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "claim 与 sentence_id=14 字面一致：'At the early developmental stage, high levels of miR156 repress SPL levels, maintaining the plant in the vegetative state.' → '在发育早期，高水平的miR156抑制SPL水平，维持植株营养生长状态。' 属直译，无增删替换。"
+      },
+      "analysis": {
+        "evidence_judgement": "claim 为单一分句，sentence_id=14 提供逐词对应支撑：'At the early developmental stage' → '在发育早期'；'high levels of miR156 repress SPL levels' → '高水平的miR156抑制SPL水平'；'maintaining the plant in the vegetative state' → '维持植株营养生长状态'。top-5 rank1=14 完全覆盖，无冗余或缺失。",
+        "classification_reason": "no_distortion 成立：'vegetative state' 标准译法即'营养生长状态'（非'营养期'或'幼年态'等偏差译法）；'repress' 译'抑制'准确（非'下调'或'阻断'等程度失当词）。相邻类如 'magnitude_substitution' 落败：未将'repress'升级为'完全阻断'；'context_omission' 落败：未删减'early developmental stage'这一关键时间限定。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": ""
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=14。",
+        "needs_manual_review": false,
+        "review_focus": [
+          "gold_sentence_ids"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P005-A001-C09",
+      "paper_id": "P005",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "随着茎发育，miR156水平下降导致SPL水平升高，引发营养阶段转变。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 15,
+            "text": "The miR156 levels decrease during shoot development, which leads to increased levels of SPLs, resulting in vegetative phase change."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 16,
+            "text": "Although studies have"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 14,
+            "text": "At the early developmental stage, high levels of miR156 repress SPL levels, maintaining the plant in the vegetative state."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 55,
+            "text": "Moreover, the transcript levels of SPLs, which are key regulators of flowering and tillering in rice17,18 and targets of miR156, were much lower in NIL-sdh compared with Nip (Extended Data Fig. 3a), suggesting that the deletion may cause developmental defects by increasing miR156 levels."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 113,
+            "text": "As plants age, ciMIR156Ds levels are gradually increased to repress pri-miR156d transcription, ensuring proper vegetative to reproductive phase transition."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 15,
+            "text": "The miR156 levels decrease during shoot development, which leads to increased levels of SPLs, resulting in vegetative phase change.",
+            "text_zh": "在茎部发育过程中，miR156水平降低，导致SPLs水平升高，导致营养阶段的变化。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 16,
+            "text": "Although studies have",
+            "text_zh": "尽管研究表明"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 14,
+            "text": "At the early developmental stage, high levels of miR156 repress SPL levels, maintaining the plant in the vegetative state.",
+            "text_zh": "在发育早期，高水平的miR156抑制SPL水平，维持植物的营养状态。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 55,
+            "text": "Moreover, the transcript levels of SPLs, which are key regulators of flowering and tillering in rice17,18 and targets of miR156, were much lower in NIL-sdh compared with Nip (Extended Data Fig. 3a), suggesting that the deletion may cause developmental defects by increasing miR156 levels.",
+            "text_zh": "此外，与Nip相比，NIL-sdh中SPLs的转录水平要低得多，SPLs是水稻开花和分蘖的关键调控因子17,18和miR156的靶点（扩展数据图3a），这表明缺失可能通过增加miR156的水平而导致发育缺陷。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 113,
+            "text": "As plants age, ciMIR156Ds levels are gradually increased to repress pri-miR156d transcription, ensuring proper vegetative to reproductive phase transition.",
+            "text_zh": "随着植物年龄的增长，cimir156d水平逐渐升高，从而抑制pri-miR156d的转录，确保植物从营养阶段过渡到生殖阶段。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 54,
+            "text": "This deletion cosegregated with the sdh phenotypes and increased both pri-miR156d and miR156 levels in the flag leaf of NIL-sdh without altering the levels of other pri-miR156s relative to Nip (Fig. 1e,f and Extended Data Fig. 2d).",
+            "text_zh": "这种缺失与sdh表型共分离，增加了NIL-sdh旗叶中pri-miR156d和miR156的水平，而不改变相对于Nip的其他pri-miR156s的水平（图1e，f和扩展数据图2d）。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 114,
+            "text": "Among three ciMIR156Ds, two form circRNA–DNA R-loops with their cognate DNAs, and thereby block pri-miR156d transcription elongation.",
+            "text_zh": "在三个cimir156d中，两个与同源dna形成环状rna - dna r -环，从而阻断pri-miR156d的转录延伸。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 112,
+            "text": "During the vegetative period, ciMIR156Ds levels are low so that pri-miR156d is normally transcribed and processed.",
+            "text_zh": "在营养期，cimir156d水平较低，因此pri-miR156d正常转录和加工。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 12,
+            "text": "microRNA156 (miR156) has been identified as a key signalling switch for the transition from vegetative to reproductive growth in the angiosperms and serves as a molecular marker of aging1–3.",
+            "text_zh": "microRNA156 （miR156）已被确定为被子植物从营养生长向生殖生长过渡的关键信号开关，并作为衰老的分子标记物1 - 3。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 13,
+            "text": "By targeting members of the SQUAMOSA PROMOTER BINDING PROTEIN (SBP/ SPL) family transcription factors for degradation, miR156 intricately regulates the expression of genes required for acquiring adult features, including the pivotal flower-timing gene MIR172, a target of SPLs.",
+            "text_zh": "通过靶向SQUAMOSA启动子结合蛋白（SBP/ SPL）家族转录因子的降解成员，miR156复杂地调节获得成人特征所需的基因的表达，包括关键的开花时间基因MIR172， SPLs的靶标。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 15,
+            "text": "The miR156 levels decrease during shoot development, which leads to increased levels of SPLs, resulting in vegetative phase change."
+          }
+        ],
+        "sentence_ids": [
+          15
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "severity": "none",
+        "needs_manual_review": false,
+        "uncovered_phenomenon": "",
+        "reason": "claim 与 sentence_id=15 完全匹配：'The miR156 levels decrease during shoot development, which leads to increased levels of SPLs, resulting in vegetative phase change.' → '随着茎发育，miR156水平下降导致SPL水平升高，引发营养阶段转变。' 'shoot development' 译'茎发育'虽略窄于'地上部发育'，但在水稻语境中茎为 shoot 主体，属合理术语适配。"
+      },
+      "analysis": {
+        "evidence_judgement": "claim 为因果链三段式（茎发育→miR156↓→SPL↑→营养阶段转变），sentence_id=15 原文 'during shoot development' → '随着茎发育'（'shoot' 在禾本科常指茎叶同源结构，'茎发育'可接受）；'miR156 levels decrease' → 'miR156水平下降'；'leads to increased levels of SPLs' → '导致SPL水平升高'；'resulting in vegetative phase change' → '引发营养阶段转变'（'vegetative phase change' 即营养阶段转变，标准译法）。top-5 rank1=15 完全覆盖。",
+        "classification_reason": "no_distortion 成立：'shoot development' 译'茎发育'属领域内可接受的简化（对比 '地上部发育' 更冗长，且图注/上下文中 shoot 多指茎）；'vegetative phase change' 与'营养阶段转变'为学界通用对应译法。'mechanism_simplification'（禁用）不适用；'relation_substitution' 落败：未将'leads to'误作'is sufficient to cause'等强因果。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": ""
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=15。",
+        "needs_manual_review": false,
+        "review_focus": [
+          "gold_sentence_ids"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P005-A001-C10",
+      "paper_id": "P005",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "尽管研究表明miR156丰度的年龄依赖性减少发生在转录水平，但其潜在机制尚不明确。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 25,
+            "text": "The red dashed box indicates suggested that the aging-dependent decrease of miR156 abundance happens at transcriptional levels10–13, the underlying mechanisms are largely unknown4."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 0,
+            "text": "However, the mechanisms modulating the age-dependent expression pattern of miR156 are still poorly understood4."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 149,
+            "text": "How the ciMIR156D levels are modulated in an aging-dependent manner remains to be investigated."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 24,
+            "text": "The green box in the first exon indicates the pre-miR156d coding region."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 1,
+            "text": "In this Article, we report that circular RNAs (ciMIR156Ds) derived from pri-miR156d negatively regulate miR156 levels in an aging-dependent manner in rice."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 25,
+            "text": "The red dashed box indicates suggested that the aging-dependent decrease of miR156 abundance happens at transcriptional levels10–13, the underlying mechanisms are largely unknown4.",
+            "text_zh": "红色虚线框表明，miR156丰度的衰老依赖性下降发生在转录水平上，其潜在机制在很大程度上是未知的。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 0,
+            "text": "However, the mechanisms modulating the age-dependent expression pattern of miR156 are still poorly understood4.",
+            "text_zh": "然而，调节miR156的年龄依赖性表达模式的机制仍然知之甚少。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 149,
+            "text": "How the ciMIR156D levels are modulated in an aging-dependent manner remains to be investigated.",
+            "text_zh": "ciMIR156D水平如何以衰老依赖的方式调节仍有待研究。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 24,
+            "text": "The green box in the first exon indicates the pre-miR156d coding region.",
+            "text_zh": "第一个外显子的绿色框表示pre-miR156d编码区。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 1,
+            "text": "In this Article, we report that circular RNAs (ciMIR156Ds) derived from pri-miR156d negatively regulate miR156 levels in an aging-dependent manner in rice.",
+            "text_zh": "在这篇文章中，我们报道了pri-miR156d衍生的环状rna （ciMIR156Ds）在水稻中以衰老依赖的方式负向调节miR156水平。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 146,
+            "text": "The R-loops slow the transcriptional elongation of pri-miR156d, ultimately resulting in reduced accumulation of miR156.",
+            "text_zh": "r环减缓了pri-miR156d的转录延伸，最终导致miR156的积累减少。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 148,
+            "text": "Indeed, lack of ciMIR156Ds causes delayed head date while overexpression of ciMIR156D results in earlier flowering time.",
+            "text_zh": "事实上，缺乏ciMIR156D会导致开花日期延迟，而过表达ciMIR156D会导致开花时间提前。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 150,
+            "text": "Intriguingly, circRNAs derived from MIR156 locus are also present in Arabidopsis and overlap with the R-loop at the region (Extended Data Fig. 10 and Supplementary Data 2), indicating that circRNA-mediated modulation of miR156 maybe a conserved mechanism to control the transition from the vegetative to reproductive stages.",
+            "text_zh": "有趣的是，来自MIR156位点的circrna也存在于拟南芥中，并且在该区域与R-loop重叠（扩展数据图10和补充数据2），这表明circrna介导的MIR156调节可能是控制从营养阶段向生殖阶段过渡的保守机制。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 11,
+            "text": "by refining the aging-dependent expression of miR156.",
+            "text_zh": "通过细化miR156的衰老依赖性表达。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 145,
+            "text": "Two out of three ciMIR156Ds bind their cognate DNA locus, forming R-loops.",
+            "text_zh": "三个cimir156d中有两个结合其同源DNA位点，形成r环。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 25,
+            "text": "The red dashed box indicates suggested that the aging-dependent decrease of miR156 abundance happens at transcriptional levels10–13, the underlying mechanisms are largely unknown4."
+          },
+          {
+            "sentence_id": 0,
+            "text": "However, the mechanisms modulating the age-dependent expression pattern of miR156 are still poorly understood4."
+          }
+        ],
+        "sentence_ids": [
+          25,
+          0
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "severity": "none",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文明确指出miR156丰度的年龄依赖性减少发生在转录水平，且机制‘largely unknown’/‘poorly understood’，与中文句完全一致；无添加、删减或替换。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1‘miR156丰度的年龄依赖性减少发生在转录水平’由sentence_id=25（'the aging-dependent decrease of miR156 abundance happens at transcriptional levels'）完整支撑；分句2‘潜在机制尚不明确’由sentence_id=25（'the underlying mechanisms are largely unknown'）和sentence_id=0（'mechanisms ... are still poorly understood'）双重支撑；top-5覆盖全部核心断言。",
+        "classification_reason": "‘largely unknown’与‘尚不明确’、‘poorly understood’与‘尚不明确’均为标准学术同义表达；未出现‘首次’‘突破’‘全新’等addition类措辞，未删减‘aging-dependent’等限定（context_omission不成立），未将‘transcriptional levels’错误替换为‘post-transcriptional’（relation_substitution不成立）。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "rank1–2已提供最直接支撑；rank3/4/5为间接或无关句（如pre-miR156d编码区、研究报道主句），但不影响核心判定。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=25 和 id=0。 脚本标记: gold_id_0_疑似脏句",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P005-A001-C11",
+      "paper_id": "P005",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "该团队首次报道了来源于水稻pri-miR156d的环状RNA（ciMIR156Ds）通过与其模板DNA形成R-loop的方式负调控miR156水平的全新分子机理。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 1,
+            "text": "In this Article, we report that circular RNAs (ciMIR156Ds) derived from pri-miR156d negatively regulate miR156 levels in an aging-dependent manner in rice."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 129,
+            "text": "Taken together, these results demonstrate that that ciMIR156Ds form R-loops with the DNA regions where they derive."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 152,
+            "text": "This raised a possibility that R-loops formed by ciMIR156s may affect pri-miR156d processing, in addition to their role in transcription regulation."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 121,
+            "text": "On the basis of the observation that some circRNAs bind their cognate DNA to form a RNA–DNA hybrid or R-loop to modulate gene expression30, we next asked if ciMIR156Ds could form an R-loop with their cognate DNA."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 114,
+            "text": "Among three ciMIR156Ds, two form circRNA–DNA R-loops with their cognate DNAs, and thereby block pri-miR156d transcription elongation."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 1,
+            "text": "In this Article, we report that circular RNAs (ciMIR156Ds) derived from pri-miR156d negatively regulate miR156 levels in an aging-dependent manner in rice.",
+            "text_zh": "在这篇文章中，我们报道了pri-miR156d衍生的环状rna （ciMIR156Ds）在水稻中以衰老依赖的方式负向调节miR156水平。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 129,
+            "text": "Taken together, these results demonstrate that that ciMIR156Ds form R-loops with the DNA regions where they derive.",
+            "text_zh": "综上所述，这些结果表明，cimir156d与它们产生的DNA区域形成r -环。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 152,
+            "text": "This raised a possibility that R-loops formed by ciMIR156s may affect pri-miR156d processing, in addition to their role in transcription regulation.",
+            "text_zh": "这提出了一种可能性，即由ciMIR156s形成的r环除了在转录调节中发挥作用外，还可能影响pri-miR156d的加工。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 121,
+            "text": "On the basis of the observation that some circRNAs bind their cognate DNA to form a RNA–DNA hybrid or R-loop to modulate gene expression30, we next asked if ciMIR156Ds could form an R-loop with their cognate DNA.",
+            "text_zh": "在观察到一些环状rna结合其同源DNA形成RNA-DNA杂交或r环来调节基因表达30的基础上，我们接下来询问ciMIR156Ds是否可以与其同源DNA形成r环。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 114,
+            "text": "Among three ciMIR156Ds, two form circRNA–DNA R-loops with their cognate DNAs, and thereby block pri-miR156d transcription elongation.",
+            "text_zh": "在三个cimir156d中，两个与同源dna形成环状rna - dna r -环，从而阻断pri-miR156d的转录延伸。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 150,
+            "text": "Intriguingly, circRNAs derived from MIR156 locus are also present in Arabidopsis and overlap with the R-loop at the region (Extended Data Fig. 10 and Supplementary Data 2), indicating that circRNA-mediated modulation of miR156 maybe a conserved mechanism to control the transition from the vegetative to reproductive stages.",
+            "text_zh": "有趣的是，来自MIR156位点的circrna也存在于拟南芥中，并且在该区域与R-loop重叠（扩展数据图10和补充数据2），这表明circrna介导的MIR156调节可能是控制从营养阶段向生殖阶段过渡的保守机制。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 144,
+            "text": "In this study, we identified ciMIR156Ds derived from pri-miR156d as key regulators of heading date in rice.",
+            "text_zh": "在这项研究中，我们确定了pri-miR156d衍生的cimir156d是水稻抽穗日期的关键调节因子。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 135,
+            "text": "In plants, R-loops formed by circRNA–DNA pairing have been shown to modulate epigenetic modifications31,32.",
+            "text_zh": "在植物中，环状rna - dna配对形成的r环已被证明可以调节表观遗传修饰31,32。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 157,
+            "text": "Among them, 165 circRNAs from 78 miRNA loci potentially overlap with R-loops (Supplementary Data 4), suggesting that circRNA-mediated R-loop formation maybe a common mechanism in regulating miRNA levels.",
+            "text_zh": "其中，来自78个miRNA位点的165个circrna可能与R-loop重叠（补充数据4），这表明circrna介导的R-loop形成可能是调节miRNA水平的共同机制。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 200,
+            "text": "Equal amount of in vitro synthesized circRNAs were incubated with the DNA template respectively, heated for 5 min at 65 °C in hybridization buffer (10 mM pH 7.5 Tris-HCl, 0.1 mM EDTA, varying NaCl concentrations) and slowly cooled down to room temperature for R-loop formation in vitro.",
+            "text_zh": "将等量体外合成的环状rna分别与DNA模板孵育，在杂交缓冲液（10 mM pH 7.5 Tris-HCl, 0.1 mM EDTA，不同NaCl浓度）中65°C加热5分钟，然后缓慢冷却至室温，体外形成r环。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 1,
+            "text": "In this Article, we report that circular RNAs (ciMIR156Ds) derived from pri-miR156d negatively regulate miR156 levels in an aging-dependent manner in rice."
+          },
+          {
+            "sentence_id": 129,
+            "text": "Taken together, these results demonstrate that that ciMIR156Ds form R-loops with the DNA regions where they derive."
+          },
+          {
+            "sentence_id": 114,
+            "text": "Among three ciMIR156Ds, two form circRNA–DNA R-loops with their cognate DNAs, and thereby block pri-miR156d transcription elongation."
+          }
+        ],
+        "sentence_ids": [
+          1,
+          129,
+          114
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "addition",
+          "level2": "significance_addition"
+        },
+        "secondary_label": {
+          "level1": "omission",
+          "level2": "context_omission"
+        },
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文未使用‘首次报道’‘全新分子机理’等表述；‘novel’仅出现在引文标注中（如ref30），非本文自述；且‘全新’忽略论文中提及的植物R-loop已有研究（如sentence_id=135,150），构成背景限定删减。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1‘来源于水稻pri-miR156d的环状RNA（ciMIR156Ds）’由sentence_id=1（'circular RNAs (ciMIR156Ds) derived from pri-miR156d'）支撑；分句2‘通过与其模板DNA形成R-loop的方式负调控miR156水平’由sentence_id=129（'ciMIR156Ds form R-loops with the DNA regions where they derive'）和sentence_id=114（'two form circRNA–DNA R-loops ... and thereby block pri-miR156d transcription elongation'）联合支撑；但‘首次报道’‘全新分子机理’在全部paper_sentences中无对应表述（检索补检确认：retrieval_hint所提first identification / novel regulatory mechanism均未在正文主述中出现；ref30为前人工作，非本文宣称）。",
+        "classification_reason": "‘首次报道’（first report / first identification）在论文中完全缺失——sentence_id=1用‘we report that...’属常规研究陈述，不蕴含‘首次’；‘全新分子机理’（novel regulatory mechanism）未被论文自称，而sentence_id=135/150明确指出R-loop在植物中已有功能报道（'have been shown to modulate...' / 'maybe a conserved mechanism'），故‘全新’属significance_addition；同时删减了‘conserved across species’及‘in plants’等背景限定，构成context_omission。",
+        "key_differences": [
+          {
+            "type": "significance_addition",
+            "paper_expression": "In this Article, we report that circular RNAs (ciMIR156Ds) derived from pri-miR156d negatively regulate miR156 levels in an aging-dependent manner in rice.",
+            "article_expression": "该团队首次报道了……全新分子机理。",
+            "description": "‘report’ ≠ ‘first report’；论文未声明优先权或首创性；‘novel’未用于描述本机制，反在讨论中强调保守性。"
+          },
+          {
+            "type": "context_omission",
+            "paper_expression": "Intriguingly, circRNAs derived from MIR156 locus are also present in Arabidopsis and overlap with the R-loop [...] indicating that circRNA-mediated modulation of miR156 maybe a conserved mechanism...",
+            "article_expression": "全新分子机理",
+            "description": "删去‘conserved mechanism’‘also present in Arabidopsis’等跨物种背景，将机制窄化为水稻特有‘全新’发现。"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [
+            135,
+            150
+          ],
+          "notes": "rank1–5未含‘first’‘novel’等关键词；池内rank7（id=135）和rank6（id=150）明确提供保守性背景，但未进top-5。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "likely_retrieval_miss",
+          "reasoning": "缺对‘first identification’‘novel mechanism’的显式否定或肯定表述；补检应聚焦摘要/引言末段/讨论首句是否含priority claim；当前paper_sentences中无任何‘first’‘novel’修饰本机制。",
+          "suggested_keywords": [
+            "first identification",
+            "novel regulatory mechanism",
+            "circRNA R-loop"
+          ],
+          "suggested_sentence_ranges": "abstract; introduction last paragraph; discussion first paragraph"
+        },
+        "manual_check_hints": "可执行动作：核对 id=1, 129, 114；重点检查摘要、引言结尾、讨论开头是否含‘first’‘novel’；比对 id=135/150 的保守性陈述。 脚本标记: 分析引用了但未列入 gold: 135,150",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P005-A001-C12",
+      "paper_id": "P005",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "该研究发现ciMIR156D水平随植物年龄增长而增加，并能降低pri-miR156d和miR156的水平，启动水稻开花抽穗进程。ciMIR156Ds与MIR156D在母基因形成R-loop，该结构减少了RNA聚合酶II的转录延伸，从而阻碍了pri-miR156d的合成。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 4,
+            "text": "We further show that ciMIR156Ds form R-loops with MIR156D at the region where they derive in an aging-dependent manner, which reduces the occupancy of DNA-dependent RNA polymerase II at that location and hence impedes pri-miR156d elongation."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 147,
+            "text": "Notably, ciMIR156D levels increase from the first to fifth leaves, enabling them to modulate miR156 levels in an aging-dependent way."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 134,
+            "text": "Next, we asked how the R-loop formed by ciMIR156Ds modulates pri-miR156 transcription."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 4,
+            "text": "We further show that ciMIR156Ds form R-loops with MIR156D at the region where they derive in an aging-dependent manner, which reduces the occupancy of DNA-dependent RNA polymerase II at that location and hence impedes pri-miR156d elongation.",
+            "text_zh": "我们进一步表明，cimir156d与MIR156D在它们以衰老依赖的方式产生的区域形成r环，这减少了dna依赖的RNA聚合酶II在该位置的占用，从而阻碍了pri-miR156d的延伸。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 147,
+            "text": "Notably, ciMIR156D levels increase from the first to fifth leaves, enabling them to modulate miR156 levels in an aging-dependent way.",
+            "text_zh": "值得注意的是，ciMIR156D水平从第一叶到第五叶增加，使它们能够以衰老依赖的方式调节miR156水平。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 134,
+            "text": "Next, we asked how the R-loop formed by ciMIR156Ds modulates pri-miR156 transcription.",
+            "text_zh": "接下来，我们询问了由ciMIR156Ds形成的r环如何调节pri-miR156的转录。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 147,
+            "text": "Notably, ciMIR156D levels increase from the first to fifth leaves, enabling them to modulate miR156 levels in an aging-dependent way."
+          },
+          {
+            "sentence_id": 4,
+            "text": "We further show that ciMIR156Ds form R-loops with MIR156D at the region where they derive in an aging-dependent manner, which reduces the occupancy of DNA-dependent RNA polymerase II at that location and hence impedes pri-miR156d elongation."
+          }
+        ],
+        "sentence_ids": [
+          147,
+          4
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": false,
+        "primary_label": {
+          "level1": "",
+          "level2": "no_distortion"
+        },
+        "secondary_label": null,
+        "severity": "none",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "‘ciMIR156D水平随植物年龄增长而增加’由sentence_id=147（'ciMIR156D levels increase from the first to fifth leaves’）支持；‘形成R-loop…减少RNA聚合酶II占用…阻碍pri-miR156d延伸’由sentence_id=4完整支撑；‘降低miR156水平’隐含于‘negatively regulate miR156 levels’（id=1）及机制闭环中；‘启动开花抽穗’由id=148（'lack of ciMIR156Ds causes delayed heading date’）反向证实，属合理推论。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1‘ciMIR156D水平随植物年龄增长而增加’由sentence_id=147直接支撑；分句2‘能降低pri-miR156d和miR156的水平’中，miR156部分由sentence_id=1（'negatively regulate miR156 levels'）支撑，pri-miR156d部分由sentence_id=4（'impedes pri-miR156d elongation'）支撑；分句3‘启动水稻开花抽穗进程’由sentence_id=148（'lack of ciMIR156Ds causes delayed heading date’ → loss-of-function delays heading ⇒ gain-of-function promotes it）提供强因果支持；分句4‘R-loop减少Pol II占用，阻碍pri-miR156d合成’由sentence_id=4（'reduces the occupancy of DNA-dependent RNA polymerase II [...] and hence impedes pri-miR156d elongation'）逐词对应；top-5中id=4/147/134已覆盖全部主干。",
+        "classification_reason": "‘increase from first to fifth leaves’即年龄依赖性上升；‘impedes pri-miR156d elongation’即阻碍合成（elongation是转录合成关键步骤）；‘delayed heading date’与‘启动抽穗’为同一因果链正反表述；无程度夸大（magnitude_substitution）、无机制替换（mechanism_substitution）、无关键限定删除（如未删‘aging-dependent’）。",
+        "key_differences": [],
+        "rag_review": {
+          "top5_is_best": true,
+          "better_in_review_pool": [],
+          "notes": "rank1–3（id=4,147,134）精准匹配三核心断言；rank2（id=147）和rank1（id=4）为不可替代金标句。"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "not_applicable",
+          "reasoning": "",
+          "suggested_keywords": [],
+          "suggested_sentence_ranges": ""
+        },
+        "manual_check_hints": "可执行动作：核对 id=147 和 id=4；验证 id=148 是否支持‘启动抽穗’推论。 脚本标记: 分析引用了但未列入 gold: 1,134,148",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids"
+        ],
+        "ai_confidence": "high"
+      },
+      "human_verified": false
+    },
+    {
+      "sample_id": "P005-A001-C13",
+      "paper_id": "P005",
+      "article_id": "A001",
+      "article_source_type": "high_quality",
+      "claim_zh": "这些发现揭示了一种通过环形RNA精细调控年龄开花途径分子钟miR156的新颖机制，为培育抽穗期多样化的水稻品种提供了新的理论依据。",
+      "system_retrieval": {
+        "classify_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 12,
+            "text": "microRNA156 (miR156) has been identified as a key signalling switch for the transition from vegetative to reproductive growth in the angiosperms and serves as a molecular marker of aging1–3."
+          },
+          {
+            "rank": 2,
+            "sentence_id": 5,
+            "text": "These findings reveal a mechanism for regulating heading date Flowering timing or heading date stands as a pivotal agronomic trait in rice cultivation, representing a critical transition from vegetative to reproductive growth."
+          },
+          {
+            "rank": 3,
+            "sentence_id": 11,
+            "text": "by refining the aging-dependent expression of miR156."
+          },
+          {
+            "rank": 4,
+            "sentence_id": 150,
+            "text": "Intriguingly, circRNAs derived from MIR156 locus are also present in Arabidopsis and overlap with the R-loop at the region (Extended Data Fig. 10 and Supplementary Data 2), indicating that circRNA-mediated modulation of miR156 maybe a conserved mechanism to control the transition from the vegetative to reproductive stages."
+          },
+          {
+            "rank": 5,
+            "sentence_id": 13,
+            "text": "By targeting members of the SQUAMOSA PROMOTER BINDING PROTEIN (SBP/ SPL) family transcription factors for degradation, miR156 intricately regulates the expression of genes required for acquiring adult features, including the pivotal flower-timing gene MIR172, a target of SPLs."
+          }
+        ],
+        "review_evidences": [
+          {
+            "rank": 1,
+            "sentence_id": 12,
+            "text": "microRNA156 (miR156) has been identified as a key signalling switch for the transition from vegetative to reproductive growth in the angiosperms and serves as a molecular marker of aging1–3.",
+            "text_zh": "microRNA156 （miR156）已被确定为被子植物从营养生长向生殖生长过渡的关键信号开关，并作为衰老的分子标记物1 - 3。"
+          },
+          {
+            "rank": 2,
+            "sentence_id": 5,
+            "text": "These findings reveal a mechanism for regulating heading date Flowering timing or heading date stands as a pivotal agronomic trait in rice cultivation, representing a critical transition from vegetative to reproductive growth.",
+            "text_zh": "这些发现揭示了抽穗期调控机制，开花时间或抽穗期是水稻栽培的关键农艺性状，代表了从营养生长到生殖生长的关键转变。"
+          },
+          {
+            "rank": 3,
+            "sentence_id": 11,
+            "text": "by refining the aging-dependent expression of miR156.",
+            "text_zh": "通过细化miR156的衰老依赖性表达。"
+          },
+          {
+            "rank": 4,
+            "sentence_id": 150,
+            "text": "Intriguingly, circRNAs derived from MIR156 locus are also present in Arabidopsis and overlap with the R-loop at the region (Extended Data Fig. 10 and Supplementary Data 2), indicating that circRNA-mediated modulation of miR156 maybe a conserved mechanism to control the transition from the vegetative to reproductive stages.",
+            "text_zh": "有趣的是，来自MIR156位点的circrna也存在于拟南芥中，并且在该区域与R-loop重叠（扩展数据图10和补充数据2），这表明circrna介导的MIR156调节可能是控制从营养阶段向生殖阶段过渡的保守机制。"
+          },
+          {
+            "rank": 5,
+            "sentence_id": 13,
+            "text": "By targeting members of the SQUAMOSA PROMOTER BINDING PROTEIN (SBP/ SPL) family transcription factors for degradation, miR156 intricately regulates the expression of genes required for acquiring adult features, including the pivotal flower-timing gene MIR172, a target of SPLs.",
+            "text_zh": "通过靶向SQUAMOSA启动子结合蛋白（SBP/ SPL）家族转录因子的降解成员，miR156复杂地调节获得成人特征所需的基因的表达，包括关键的开花时间基因MIR172， SPLs的靶标。"
+          },
+          {
+            "rank": 6,
+            "sentence_id": 4,
+            "text": "We further show that ciMIR156Ds form R-loops with MIR156D at the region where they derive in an aging-dependent manner, which reduces the occupancy of DNA-dependent RNA polymerase II at that location and hence impedes pri-miR156d elongation.",
+            "text_zh": "我们进一步表明，cimir156d与MIR156D在它们以衰老依赖的方式产生的区域形成r环，这减少了dna依赖的RNA聚合酶II在该位置的占用，从而阻碍了pri-miR156d的延伸。"
+          },
+          {
+            "rank": 7,
+            "sentence_id": 25,
+            "text": "The red dashed box indicates suggested that the aging-dependent decrease of miR156 abundance happens at transcriptional levels10–13, the underlying mechanisms are largely unknown4.",
+            "text_zh": "红色虚线框表明，miR156丰度的衰老依赖性下降发生在转录水平上，其潜在机制在很大程度上是未知的。"
+          },
+          {
+            "rank": 8,
+            "sentence_id": 0,
+            "text": "However, the mechanisms modulating the age-dependent expression pattern of miR156 are still poorly understood4.",
+            "text_zh": "然而，调节miR156的年龄依赖性表达模式的机制仍然知之甚少。"
+          },
+          {
+            "rank": 9,
+            "sentence_id": 63,
+            "text": "We noticed that there are seven predicted circRNAs in the MIR156D b sdh 400 bp 200 bp 100 bp ciMIR156D-1 ciMIR156D-3 ciMIR156D-2 e miR156 U6 OE-156dcirc-1 OE-156dcirc-1 Nip NIL-sdh NIL-sdh OE-156dcirc Nip Nip ** NIL-sdh ** ** 1st ** 1 0.78 1.17 ** * 3rd * NS 1 0.86 1.23 5th 1 0.93 1.67 2nd 3rd 4th 5th the circRNAs.",
+            "text_zh": "我们注意到MIR156D中有7个预测的circrna，分别是：sdh 400 bp 200 bp 100 bp ciMIR156D-1 ciMIR156D-3 ciMIR156D-2 e miR156 U6 ee -156dcirc-1 ee -156dcirc-1 Nip NIL-sdh NIL-sdh ee -156dcirc Nip Nip ** NIL-sdh ** **第1 ** 1 0.78 1.17 ** * 3 * NS 1 0.86 1.23第5 1 0.93 1.67第23 4 5 circrna。"
+          },
+          {
+            "rank": 10,
+            "sentence_id": 43,
+            "text": "Further map-based cloning analysis using a population derived from crossing NIL-sdh with the indica variety 9311 narrowed sdh to an 85.8-kilobase (kb) region (Fig. 1c), 710 a cDNA DNA cDNA DNA Nip sdh Nip Nip sdh Nip sdh 400 bp 200 bp c d NS 0.06 1st 2nd 3rd 4th 5th ** Relative pri-miR156d level miR156 0.04 U6 400 bp 300 bp ciMIR156Ds 200 bp 0.02 100 bp 300 bp UBQ 200 bp 0 1st Fig. 2 | CircRNAs derived from the sdh deletion region regulate the transcription of miR156.",
+            "text_zh": "进一步使用人口来自穿越NIL-sdh图谱克隆分析籼稻品种9311 sdh缩小到一个85.8千碱基(kb)区域(图1 c), 710年cDNA DNA互补DNA夹sdh捏捏sdh夹sdh 400 bp 200个基点c d NS 0.06 1日2日3日4日5日* *相对pri-miR156d miR156 0.04 U6 400 bp 300 bp ciMIR156Ds 200 bp 0.02 100个基点300 bp UBQ 200 bp 0 1图2 | CircRNAs源自miR156的sdh删除区域调节转录。"
+          }
+        ]
+      },
+      "gold_retrieval": {
+        "evidences": [
+          {
+            "sentence_id": 4,
+            "text": "We further show that ciMIR156Ds form R-loops with MIR156D at the region where they derive in an aging-dependent manner, which reduces the occupancy of DNA-dependent RNA polymerase II at that location and hence impedes pri-miR156d elongation."
+          },
+          {
+            "sentence_id": 11,
+            "text": "by refining the aging-dependent expression of miR156."
+          },
+          {
+            "sentence_id": 150,
+            "text": "Intriguingly, circRNAs derived from MIR156 locus are also present in Arabidopsis and overlap with the R-loop at the region (Extended Data Fig. 10 and Supplementary Data 2), indicating that circRNA-mediated modulation of miR156 maybe a conserved mechanism to control the transition from the vegetative to reproductive stages."
+          }
+        ],
+        "sentence_ids": [
+          4,
+          11,
+          150
+        ],
+        "is_answerable": true
+      },
+      "gold_classification": {
+        "evidence_level": "With_Evidence",
+        "has_distortion": true,
+        "primary_label": {
+          "level1": "substitution",
+          "level2": "mechanism_substitution"
+        },
+        "secondary_label": {
+          "level1": "addition",
+          "level2": "significance_addition"
+        },
+        "severity": "moderate",
+        "needs_manual_review": true,
+        "uncovered_phenomenon": "",
+        "reason": "论文明确描述 ciMIR156Ds 通过 R-loop 抑制 RNA Pol II 占据、阻断 pri-miR156d 延伸（id=4），属转录水平调控；公众号称‘精细调控年龄开花途径分子钟miR156’，将机制泛化为‘分子钟’调控（无 clock 相关证据），且‘精细调控’隐含多层级/动态微调语义，远超论文所证单一 R-loop 转录抑制机制；后半句‘为培育抽穗期多样化品种提供新理论依据’属应用意义添加，论文未提育种价值。"
+      },
+      "analysis": {
+        "evidence_judgement": "分句1‘揭示…环形RNA精细调控年龄开花途径分子钟miR156的新颖机制’：id=4（R-loop→Pol II occupancy→pri-miR156d elongation inhibition）支撑环形RNA调控miR156的转录机制；id=11（‘by refining the aging-dependent expression of miR156’）支撑年龄依赖性；但‘分子钟’（molecular clock）在全文未出现，top-5及review池中无任何clock、circadian、oscillation、rhythmic等表述；‘精细调控’在论文中无对应——原文用‘impedes’‘reduces’等确定性动词描述单点阻断，非‘fine-tuning’语义。分句2‘为培育…提供新理论依据’：全文无育种、抽穗期多样化、品种设计等应用指向，属外部引申。",
+        "classification_reason": "primary_level2=mechanism_substitution：因论文机制是‘R-loop介导的转录延伸抑制’（id=4），而claim替换为‘分子钟调控’（无clock证据），属机制层面的实质性替换（substitution > addition > omission）；不是mechanism_omission（未删减原机制），也不是relation_substitution（未改因果/相关关系）。secondary_level2=significance_addition：因‘为培育抽穗期多样化的水稻品种提供新的理论依据’在论文中完全未涉及功能/应用/育种意义，属典型significance_addition（添加重要性/意义），非function_application_addition（未提具体技术应用如‘可直接用于基因编辑’）。",
+        "key_differences": [
+          {
+            "type": "mechanism_substitution",
+            "paper_expression": "ciMIR156Ds form R-loops [...] which reduces the occupancy of DNA-dependent RNA polymerase II [...] and hence impedes pri-miR156d elongation (id=4)",
+            "article_expression": "通过环形RNA精细调控年龄开花途径分子钟miR156",
+            "description": "论文描述单一、确定的转录延伸阻断机制；claim替换为‘分子钟’这一全新调控范式（无证据），且‘精细调控’夸大机制复杂度与精度"
+          },
+          {
+            "type": "significance_addition",
+            "paper_expression": "",
+            "article_expression": "为培育抽穗期多样化的水稻品种提供了新的理论依据",
+            "description": "论文未讨论育种应用、品种多样性或理论指导价值；该句纯属外部意义添加"
+          }
+        ],
+        "rag_review": {
+          "top5_is_best": false,
+          "better_in_review_pool": [
+            4
+          ],
+          "notes": "rank1–5中id=4（R-loop机制）未进top-5（rank6），但它是支撑核心机制的唯一完整句；id=11（aging-dependent refinement）和id=150（conserved mechanism）仅部分支撑，无法替代id=4"
+        },
+        "unsupported_diagnosis": {
+          "verdict": "likely_retrieval_miss",
+          "reasoning": "‘molecular clock’在全文未出现；语义检索未覆盖该关键词，且review池中无任何含clock/circadian/rhythmic的句子（约需补检Methods或Discussion中潜在表述，但当前pool缺失）",
+          "suggested_keywords": [
+            "circRNA",
+            "miR156",
+            "aging pathway",
+            "molecular clock"
+          ],
+          "suggested_sentence_ranges": "Discussion末段、Supplementary Notes中关于时序调控的讨论"
+        },
+        "manual_check_hints": "重点核对id=4（R-loop机制）、id=11（aging-dependent refinement）、id=150（conserved mechanism）；手工复核Discussion是否提及‘molecular clock’或节律性调控；确认图注（如Extended Data Fig. 10）有无clock相关描述。",
+        "needs_manual_review": true,
+        "review_focus": [
+          "gold_sentence_ids",
+          "primary_label"
+        ],
+        "ai_confidence": "medium"
+      },
+      "human_verified": false
+    }
+  ],
+  "review_queue": {
+    "must_review_sample_ids": [
+      "P005-A001-C01",
+      "P005-A001-C04",
+      "P005-A001-C05",
+      "P005-A001-C10",
+      "P005-A001-C11",
+      "P005-A001-C12",
+      "P005-A001-C13"
+    ],
+    "notes": ""
+  }
+}

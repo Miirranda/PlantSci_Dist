@@ -171,6 +171,12 @@ def _clean_sample(sample: dict[str, Any], *, keep_analysis: bool) -> dict[str, A
             _first(retrieval.get("evidences"), gold.get("sentences"))
         )
 
+    paragraphs = [
+        {"text": p.get("text") or "", "text_zh": p.get("text_zh") or ""}
+        for p in (retrieval.get("paragraphs") or gold.get("paragraphs") or [])
+        if isinstance(p, dict) and (p.get("text") or "").strip()
+    ]
+
     evidence_level = _first(
         classification.get("evidence_level"),
         gold.get("evidence_level"),
@@ -253,10 +259,18 @@ def _clean_sample(sample: dict[str, Any], *, keep_analysis: bool) -> dict[str, A
         bool(sentence_ids) or str(evidence_level or "") != "No_Evidence",
     )
 
-    claim_zh = unwrap_readable_text(
-        str(_first(sample.get("claim_zh"), sample.get("claim_text"), "") or "")
+    original = unwrap_readable_text(
+        str(_first(sample.get("claim_zh_original"), sample.get("claim_zh"), sample.get("claim_text"), "") or "")
     ).strip()
-    claim_zh = re.sub(r"\s+", " ", claim_zh)
+    revised = unwrap_readable_text(str(sample.get("claim_zh_revised") or "")).strip()
+    if "claim_changed" in sample:
+        changed = bool(sample.get("claim_changed"))
+    else:
+        changed = bool(revised and revised != original)
+    pairing = revised if changed and revised else original
+    claim_zh = re.sub(r"\s+", " ", pairing)
+    claim_original = re.sub(r"\s+", " ", original)
+    claim_revised = re.sub(r"\s+", " ", revised) if changed else ""
 
     row: dict[str, Any] = {
         "sample_id": str(
@@ -271,8 +285,12 @@ def _clean_sample(sample: dict[str, Any], *, keep_analysis: bool) -> dict[str, A
         "article_id": str(sample.get("article_id") or ""),
         "article_source_type": str(sample.get("article_source_type") or ""),
         "claim_zh": claim_zh,
+        "claim_zh_original": claim_original,
+        "claim_zh_revised": claim_revised,
+        "claim_changed": changed,
         "gold_retrieval": {
             "sentence_ids": sentence_ids,
+            "paragraphs": paragraphs,
             "is_answerable": bool(is_answerable),
         },
         "gold_classification": gold_clf,

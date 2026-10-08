@@ -1,0 +1,400 @@
+{
+  "paper_id": "P011",
+  "article_id": "A001",
+  "reviewer": "牟德兰",
+  "sample_count": 15,
+  "source_draft": "data/annotations/P011/P011_A001_annotation_draft.json",
+  "source_review": "data/annotations/P011/P011_A001_recall_review.json",
+  "summary": {
+    "counts": {
+      "找句一致": 5,
+      "模型更宽": 6,
+      "未能替代": 4
+    },
+    "human_drop": 10,
+    "claim_changed": 4,
+    "model_only": 5,
+    "with_human_sentences": 6
+  },
+  "conclusion": "人工实际找出论文句的 6 条里，只有 2 条被终版证据盖全，4 条没盖全，还不能大部分代替手工找句。另有 5 条人工没有认定句子，模型仍给出了证据，drop 和改句仍要人把关。",
+  "samples": [
+    {
+      "sample_id": "P011-A001-C01",
+      "claim": "大豆是我国重要粮油饲兼用作物，提升产量和品质是我国大豆产业面临的重大挑战。",
+      "claim_changed": false,
+      "dropped": true,
+      "verdict": "no_evidence",
+      "need_human_review": true,
+      "model_missing": false,
+      "human_gold_ids": [],
+      "manual_sentence_ids": [],
+      "model_sentence_ids": [],
+      "hit_ids": [],
+      "missed_ids": [],
+      "extra_ids": [],
+      "location_class": "找句一致"
+    },
+    {
+      "sample_id": "P011-A001-C02",
+      "claim": "大豆是高蛋白作物，对氮素的需求高。",
+      "claim_changed": false,
+      "dropped": true,
+      "verdict": "no_evidence",
+      "need_human_review": true,
+      "model_missing": false,
+      "human_gold_ids": [],
+      "manual_sentence_ids": [],
+      "model_sentence_ids": [],
+      "hit_ids": [],
+      "missed_ids": [],
+      "extra_ids": [],
+      "location_class": "找句一致"
+    },
+    {
+      "sample_id": "P011-A001-C03",
+      "claim": "在长期进化过程中，大豆演化出了共生固氮这个重要的优异性状。",
+      "claim_changed": false,
+      "dropped": true,
+      "verdict": "no_evidence",
+      "need_human_review": true,
+      "model_missing": false,
+      "human_gold_ids": [],
+      "manual_sentence_ids": [],
+      "model_sentence_ids": [],
+      "hit_ids": [],
+      "missed_ids": [],
+      "extra_ids": [],
+      "location_class": "找句一致"
+    },
+    {
+      "sample_id": "P011-A001-C04",
+      "claim": "即在土壤氮素不足的情况下，与根瘤菌互作共生形成根瘤，将空气中的氮气还原为氨，为植物提供充足的氮素。",
+      "claim_changed": false,
+      "dropped": true,
+      "verdict": "supported",
+      "need_human_review": false,
+      "model_missing": false,
+      "human_gold_ids": [],
+      "manual_sentence_ids": [],
+      "model_sentence_ids": [
+        12
+      ],
+      "hit_ids": [],
+      "missed_ids": [],
+      "extra_ids": [
+        12
+      ],
+      "location_class": "模型更宽"
+    },
+    {
+      "sample_id": "P011-A001-C05",
+      "claim": "据研究报道，共生固氮可为植物总生物量提供近70 %的氮素，为其籽粒提供超过80%的氮素。",
+      "claim_changed": false,
+      "dropped": true,
+      "verdict": "no_evidence",
+      "need_human_review": true,
+      "model_missing": false,
+      "human_gold_ids": [],
+      "manual_sentence_ids": [],
+      "model_sentence_ids": [],
+      "hit_ids": [],
+      "missed_ids": [],
+      "extra_ids": [],
+      "location_class": "找句一致"
+    },
+    {
+      "sample_id": "P011-A001-C06",
+      "claim": "因此，提高共生固氮效率是提升大豆产量和品质的重要途径。",
+      "claim_changed": false,
+      "dropped": true,
+      "verdict": "supported",
+      "need_human_review": false,
+      "model_missing": false,
+      "human_gold_ids": [],
+      "manual_sentence_ids": [],
+      "model_sentence_ids": [
+        294
+      ],
+      "hit_ids": [],
+      "missed_ids": [],
+      "extra_ids": [
+        294
+      ],
+      "location_class": "模型更宽"
+    },
+    {
+      "sample_id": "P011-A001-C07",
+      "claim": "适宜的根瘤数量是决定共生固氮效率的首要因子。",
+      "claim_changed": false,
+      "dropped": true,
+      "verdict": "supported",
+      "need_human_review": false,
+      "model_missing": false,
+      "human_gold_ids": [],
+      "manual_sentence_ids": [
+        282,
+        283
+      ],
+      "model_sentence_ids": [
+        294
+      ],
+      "hit_ids": [],
+      "missed_ids": [
+        282,
+        283
+      ],
+      "extra_ids": [
+        294
+      ],
+      "location_class": "未能替代"
+    },
+    {
+      "sample_id": "P011-A001-C08",
+      "claim": "在过去的近三十年中，豆科植物结瘤的分子遗传调控机制研究取得了重要进展，但主要集中在大量必需养分（如氮）变化下结瘤的内在调控机制方面。",
+      "claim_changed": false,
+      "dropped": true,
+      "verdict": "partial",
+      "need_human_review": true,
+      "model_missing": false,
+      "human_gold_ids": [],
+      "manual_sentence_ids": [],
+      "model_sentence_ids": [
+        287,
+        288,
+        289,
+        290
+      ],
+      "hit_ids": [],
+      "missed_ids": [],
+      "extra_ids": [
+        287,
+        288,
+        289,
+        290
+      ],
+      "location_class": "模型更宽"
+    },
+    {
+      "sample_id": "P011-A001-C09",
+      "claim": "全球气候变暖加剧了耕地盐碱化，导致土壤微量必需养分（如铁等）难以被吸收，导致作物共生固氮能力下降，产量品质降低。",
+      "claim_changed": false,
+      "dropped": true,
+      "verdict": "partial",
+      "need_human_review": true,
+      "model_missing": false,
+      "human_gold_ids": [],
+      "manual_sentence_ids": [],
+      "model_sentence_ids": [
+        15,
+        16,
+        18,
+        20,
+        21,
+        355
+      ],
+      "hit_ids": [],
+      "missed_ids": [],
+      "extra_ids": [
+        15,
+        16,
+        18,
+        20,
+        21,
+        355
+      ],
+      "location_class": "模型更宽"
+    },
+    {
+      "sample_id": "P011-A001-C10",
+      "claim": "因此，明确微量必需养分在大豆等豆科作物结瘤中的作用，解析其分子调控机制，对进一步提高大豆等作物的共生固氮效率及产量品质具有重要意义。",
+      "claim_changed": false,
+      "dropped": true,
+      "verdict": "supported",
+      "need_human_review": false,
+      "model_missing": false,
+      "human_gold_ids": [],
+      "manual_sentence_ids": [],
+      "model_sentence_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        351,
+        352,
+        354,
+        355
+      ],
+      "hit_ids": [],
+      "missed_ids": [],
+      "extra_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        351,
+        352,
+        354,
+        355
+      ],
+      "location_class": "模型更宽"
+    },
+    {
+      "sample_id": "P011-A001-C11",
+      "claim": "铁是植物和微生物生长发育所必需微量养分，参与呼吸、光合等多个生物过程。",
+      "claim_changed": true,
+      "dropped": false,
+      "verdict": "supported",
+      "need_human_review": false,
+      "model_missing": false,
+      "human_gold_ids": [
+        17
+      ],
+      "manual_sentence_ids": [],
+      "model_sentence_ids": [
+        17
+      ],
+      "hit_ids": [
+        17
+      ],
+      "missed_ids": [],
+      "extra_ids": [],
+      "location_class": "找句一致"
+    },
+    {
+      "sample_id": "P011-A001-C12",
+      "claim": "铁也是固氮酶和豆血红蛋白的重要组成成分，是豆科植物成熟根瘤的固氮活力一个决定因子。",
+      "claim_changed": true,
+      "dropped": false,
+      "verdict": "supported",
+      "need_human_review": false,
+      "model_missing": false,
+      "human_gold_ids": [
+        18
+      ],
+      "manual_sentence_ids": [],
+      "model_sentence_ids": [
+        18,
+        281
+      ],
+      "hit_ids": [
+        18
+      ],
+      "missed_ids": [],
+      "extra_ids": [
+        281
+      ],
+      "location_class": "模型更宽"
+    },
+    {
+      "sample_id": "P011-A001-C13",
+      "claim": "然而，铁在大豆等根瘤形成中的作用以及大豆感知环境铁并将铁信号整合到结瘤信号中的分子机制尚不清楚。",
+      "claim_changed": true,
+      "dropped": false,
+      "verdict": "supported",
+      "need_human_review": false,
+      "model_missing": false,
+      "human_gold_ids": [],
+      "manual_sentence_ids": [
+        0,
+        1,
+        2
+      ],
+      "model_sentence_ids": [
+        1
+      ],
+      "hit_ids": [
+        1
+      ],
+      "missed_ids": [
+        0,
+        2
+      ],
+      "extra_ids": [],
+      "location_class": "未能替代"
+    },
+    {
+      "sample_id": "P011-A001-C14",
+      "claim": "现在，华中农业大学作物遗传改良全国重点实验室大豆团队在Nature Plants上发表了题为“The BRUTUS iron sensor and E3 ligase facilitates soybean root nodulation by monoubiquitination of NSP1”的研究论文，不仅明确了铁是豆科植物结瘤的重要驱动力，而且揭示了铁受体BTS通过单泛素化修饰结瘤信号关键转录因子NSP1并增强其蛋白稳定性和转录活性，进而促进结瘤和共生固氮的分子机制。",
+      "claim_changed": true,
+      "dropped": false,
+      "verdict": "no_evidence",
+      "need_human_review": true,
+      "model_missing": false,
+      "human_gold_ids": [],
+      "manual_sentence_ids": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "model_sentence_ids": [],
+      "hit_ids": [],
+      "missed_ids": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "extra_ids": [],
+      "location_class": "未能替代"
+    },
+    {
+      "sample_id": "P011-A001-C15",
+      "claim": "为了研究铁对大豆结瘤的影响，研究团队首先建立了一个水培体系，系统评价了不同铁浓度对根瘤菌侵染（侵染线和根瘤原基）和根瘤数量的影响。",
+      "claim_changed": false,
+      "dropped": false,
+      "verdict": "supported",
+      "need_human_review": false,
+      "model_missing": false,
+      "human_gold_ids": [],
+      "manual_sentence_ids": [
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_sentence_ids": [
+        47,
+        50,
+        51,
+        52
+      ],
+      "hit_ids": [
+        47,
+        50,
+        51,
+        52
+      ],
+      "missed_ids": [
+        46,
+        48,
+        49
+      ],
+      "extra_ids": [],
+      "location_class": "未能替代"
+    }
+  ]
+}

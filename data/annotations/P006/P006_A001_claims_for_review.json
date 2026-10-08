@@ -1,0 +1,130 @@
+{
+  "paper_id": "P006",
+  "article_id": "A001",
+  "guideline": "观点句抽取细则.md",
+  "task": "review_A_inclusion",
+  "instructions": "review_decision 默认 keep；发现不该进 Benchmark 时改为 drop 或 merge。不要改写 claim_zh。",
+  "sample_count": 12,
+  "samples": [
+    {
+      "claim_id": "C01",
+      "claim_zh": "不同植物物种通常有互补的资源获取策略，以维持其生长和生产力，避免资源竞争。",
+      "claim_role": "paper_intro",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C02",
+      "claim_zh": "氮是限制陆生植物生长的主要营养元素。",
+      "claim_role": "paper_intro",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C03",
+      "claim_zh": "该文进行了一项全球综合研究，探讨植物偏好的氮素形态及其决定因素。",
+      "claim_role": "paper_lead",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C04",
+      "claim_zh": "阐明植物氮（N）的获取对于解析植物氮策略和生态系统生产力至关重要。",
+      "claim_role": "paper_intro",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C05",
+      "claim_zh": "然而，全球范围内植物氮吸收偏好的变化及其控制因素仍不清楚。",
+      "claim_role": "paper_intro",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C06",
+      "claim_zh": "作者开展了一项全球综合研究，以探索植物对氮元素的偏好模式和驱动因素。",
+      "claim_role": "paper_lead",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C07",
+      "claim_zh": "在全球范围内，铵（NH4+）、硝酸盐（NO3-）和甘氨酸-N对植物氮吸收总量的平均贡献率分别为 41.6 ± 1.1 %、32.8 ± 1.2 % 和 25.6 ± 0.9 %。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C08",
+      "claim_zh": "然而，植物氮吸收偏好在不同气候区域和植被类型之间存在显著差异。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C09",
+      "claim_zh": "在（亚）热带地区，土壤中的 NH4+ 是植物最偏好的氮形式，而在高纬度地区，植物对 NO3- 的偏好明显高于低纬度地区。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C10",
+      "claim_zh": "植物功能类型是驱动植物NO3-偏好的最重要因素之一，非木质物种的 NO3-偏好明显高于常绿阔叶树、针叶树和灌木物种。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C11",
+      "claim_zh": "有机氮偏好在（亚）热带地区最低，明显低于温带和高寒地区。",
+      "claim_role": "paper_result",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    },
+    {
+      "claim_id": "C12",
+      "claim_zh": "这项研究阐述了植物对 NH4+ 和 NO3- 偏好的气候模式和不同影响因素，有助于准确预测氮对生态系统生产力和土壤碳动态的限制作用。",
+      "claim_role": "paper_conclusion",
+      "section": "",
+      "system_keep": true,
+      "review_decision": "keep",
+      "review_note": "",
+      "merge_into": ""
+    }
+  ]
+}
